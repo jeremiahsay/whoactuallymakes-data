@@ -1,0 +1,87 @@
+{
+ "schema": "wam-data/v1",
+ "generated": "2026-11-03",
+ "started": "2026-11-02",
+ "count": {
+  "correction": 2,
+  "update": 2,
+  "clarification": 0
+ },
+ "items": [
+  {
+   "id": "c-2026-11-03-dog-food-2025-register",
+   "on": "2026-11-03",
+   "kind": "update",
+   "page": "/kirkland-signature/dog-food/",
+   "what": "Who makes Kirkland Signature dog food",
+   "was": "The only public record we'd found was Diamond Pet Foods' 2012 recall notice, so we said we couldn't name who makes today's bags.",
+   "now": "North Dakota's pet food register lists all 12 Kirkland dry dog formulas as Costco's, care of Diamond Pet, renewed December 2025. We added wet food (Saturn Petcare), biscuits (North River Enterprises), jerky (Phelps Industries) and dental chews (Nylabone) from the same register.",
+   "why": "We found a newer public record: the state's pet food register and the label files filed with it.",
+   "flagged_by": "Our own re-check",
+   "evidence": [
+    {
+     "title": "North Dakota pet food registration 500010154: Kirkland Signature Super Premium Chicken & Rice Adult Formula (Costco c/o Diamond Pet)",
+     "url": "https://lars.ndda.nd.gov/public/productDetail/40712"
+    },
+    {
+     "title": "Label file for North Dakota registration 500055938: Kirkland Signature Nature's Domain Beef Meal & Sweet Potato for dogs (bag printer's proof, June 2021)",
+     "url": "https://lars.ndda.nd.gov/public/openfile?getDocId=93584"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-03-cold-brew-lots",
+   "on": "2026-11-03",
+   "kind": "correction",
+   "page": "/kirkland-signature/coffee/",
+   "what": "The cold brew line under What we don’t know",
+   "was": "The 2023 recall record covers only four lots, with best-by dates of October 19 to 22, 2023.",
+   "now": "The 2023 recall record covers only the lots it lists: nine lots with best-by dates of October 19 to 27, 2023, 231,071 cases in all.",
+   "why": "FDA’s record lists nine lots (231019 to 231027), not four. The company and the record were right; the lot count and date range were not.",
+   "flagged_by": "Our own re-check",
+   "evidence": [
+    {
+     "title": "FDA enforcement report F-0648-2023: Kirkland Signature Colombian Cold Brew Coffee (recalling firm: Berner Foods Inc.)",
+     "url": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0648-2023%22"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-03-cat-food-2025-register",
+   "on": "2026-11-03",
+   "kind": "update",
+   "page": "/kirkland-signature/cat-food/",
+   "what": "Who makes Kirkland Signature cat food",
+   "was": "The only public record we'd found was Diamond Pet Foods' 2012 recall notice; we hadn't found who makes the wet cat food.",
+   "now": "North Dakota's pet food register lists the three Kirkland dry cat formulas care of Diamond Pet and the four pate cat foods care of Saturn Petcare, all renewed December 2025.",
+   "why": "We found a newer public record: the state's pet food register and the label files filed with it.",
+   "flagged_by": "Our own re-check",
+   "evidence": [
+    {
+     "title": "North Dakota pet food registration 500010156: Kirkland Signature Super Premium Maintenance Cat Formula (Costco c/o Diamond Pet)",
+     "url": "https://lars.ndda.nd.gov/public/productDetail/40627"
+    },
+    {
+     "title": "North Dakota pet food registration 500130244: Kirkland Signature Pate wet food for adult cats, chicken (Costco c/o Saturn Petcare)",
+     "url": "https://lars.ndda.nd.gov/public/productDetail/8454"
+    },
+    {
+     "title": "Label file for North Dakota registration 500130244: Kirkland Signature Pate chicken cat food tray (Costco packaging proof, August 2022)",
+     "url": "https://lars.ndda.nd.gov/public/openfile?getDocId=111809"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-03-bourbon-three-companies",
+   "on": "2026-11-03",
+   "kind": "correction",
+   "page": "/kirkland-signature/bourbon/",
+   "what": "Opening line of the bourbon answer",
+   "was": "Two companies hold US label approvals for Kirkland Signature bourbon.",
+   "now": "Three companies hold US label approvals for Kirkland Signature bourbon.",
+   "why": "The paragraph went on to name three approval holders: Barton 1792 Distillery, Buffalo Trace Distillery, Inc. and Tennessee Distilling Group. The count was wrong; the companies and records were not.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  }
+ ]
+}

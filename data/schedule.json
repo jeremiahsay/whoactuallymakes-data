@@ -1,0 +1,844 @@
+{
+ "schema": "wam-data/v1",
+ "generated": "2026-11-03",
+ "last_change": "2026-11-03",
+ "cadence_months": {
+  "confirmed": 12,
+  "documented": 6,
+  "reported": 6,
+  "unverified": 6
+ },
+ "jobs": [
+  {
+   "id": "nhtsa-tire-plants",
+   "what": "NHTSA tire plant codes",
+   "gives": "Every DOT plant code and the factory it belongs to (used by the tire code decoder)",
+   "how": "script",
+   "every_days": 7,
+   "source": {
+    "id": "nhtsa-vpic",
+    "name": "NHTSA vPIC: tire plant codes and vehicle identification",
+    "publisher": "US National Highway Traffic Safety Administration",
+    "url": "https://vpic.nhtsa.dot.gov/api/"
+   },
+   "file_url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetEquipmentPlantCodes?year=2016&equipmentType=1&reportType=All&format=json",
+   "hand_note": null,
+   "once": false,
+   "last": "2026-11-02",
+   "due": "2026-11-09",
+   "result": "1,246 entries; no changes since the previous pull"
+  },
+  {
+   "id": "usda-establishments",
+   "what": "USDA meat, poultry and egg plant directory",
+   "gives": "Every USDA establishment number and the plant that holds it",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "usda-fsis-mpi",
+    "name": "USDA FSIS Meat, Poultry and Egg Product Inspection Directory",
+    "publisher": "US Department of Agriculture, Food Safety and Inspection Service",
+    "url": "https://www.fsis.usda.gov/inspection/establishments/meat-poultry-and-egg-product-inspection-directory"
+   },
+   "file_url": "https://www.fsis.usda.gov/sites/default/files/media_file/documents/MPI_Directory_by_Establishment_Number.csv",
+   "hand_note": "USDA's site refuses scripts, so a person downloads the file in a browser and we load it.",
+   "once": false,
+   "last": "2026-11-02",
+   "due": "2026-12-02",
+   "result": "7,257 entries; first pull",
+   "edition": "2026-10-26"
+  },
+  {
+   "id": "openfda-leads",
+   "what": "FDA recall records that mention store brands",
+   "gives": "Leads for review: a recall names the firm behind a recalled product. Leads are never shown as answers until a person checks them.",
+   "how": "script",
+   "every_days": 7,
+   "source": {
+    "id": "openfda-enforcement",
+    "name": "openFDA food and drug enforcement (recall) reports",
+    "publisher": "US Food and Drug Administration",
+    "url": "https://open.fda.gov/apis/food/enforcement/"
+   },
+   "file_url": null,
+   "hand_note": null,
+   "once": false,
+   "last": "2026-11-02",
+   "due": "2026-11-09",
+   "result": "38 recalls waiting for review"
+  },
+  {
+   "id": "tire-age-guidance",
+   "what": "Tire age guidance: who says what",
+   "gives": "What NHTSA, eight tire makers, eight carmakers and UK law say about tire age (the tables on Tire date code: how old are my tires?)",
+   "how": "hand",
+   "every_days": 365,
+   "source": {
+    "id": "nhtsa-gov",
+    "name": "NHTSA tire safety pages (TireWise)",
+    "publisher": "US National Highway Traffic Safety Administration",
+    "url": "https://www.nhtsa.gov/vehicle-safety/tires"
+   },
+   "file_url": null,
+   "hand_note": "A person re-reads each maker's and agency's page, checks the quote still stands, keeps a new dated copy, and logs any change on the corrections page.",
+   "once": false,
+   "last": "2026-11-03",
+   "due": "2027-11-03",
+   "result": "10 rows and 12 carmakers from 24 documents"
+  },
+  {
+   "id": "tire-age-carmaker-followup",
+   "what": "Tire age: carmaker manuals to re-check",
+   "gives": "Finish the carmaker table on Tire date code: how old are my tires?",
+   "how": "hand",
+   "every_days": 0,
+   "source": {
+    "id": "maker-honda",
+    "name": "Honda owner's manuals",
+    "publisher": "American Honda Motor Co., Inc.",
+    "url": "https://mygarage.honda.com/s/find-honda"
+   },
+   "file_url": null,
+   "hand_note": "Honda: read the 2026 CR-V manual on Honda’s own server (it was down on Nov 3; the table uses an archived 2024 copy). Toyota: try the live 2026 RAV4 manual (the live PDF failed on Nov 3; the table uses an archived 2025 copy). Nissan: try the live 2025 or 2026 Rogue manual on nissanusa.com (it showed Access Denied on Nov 3; the table uses an archived 2024 copy).",
+   "once": true,
+   "last": "2026-11-03",
+   "due": "2026-11-05",
+   "result": "Every carmaker on the list has a row"
+  },
+  {
+   "id": "maker-pages",
+   "what": "Company pages: registers, recalls and the companies' own pages",
+   "gives": "The facts on each /makers/ page: every brand registered care of the company in North Dakota, its FDA recall records, and what its own site says (plants, owners, brands)",
+   "how": "script",
+   "every_days": 182,
+   "source": {
+    "id": "nd-pet-food-registry",
+    "name": "North Dakota Department of Agriculture pet food product registrations",
+    "publisher": "North Dakota Department of Agriculture",
+    "url": "https://lars.ndda.nd.gov/public/productsearch/3"
+   },
+   "file_url": null,
+   "hand_note": "tools/fetch_maker_registers.py re-reads the registers and recalls; a person re-reads each company's own pages and updates data/makers/.",
+   "once": false,
+   "last": "2026-11-03",
+   "due": "2027-05-04",
+   "result": "7 company pages; 2 pet food register searches, 2 recall pulls"
+  }
+ ],
+ "terms": [
+  {
+   "source": "API Engine Oil Licensing and Certification System (EOLCS): Directory of Licensees",
+   "publisher": "American Petroleum Institute (API)",
+   "url": "https://www.api.org/terms-of-use",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "no"
+  },
+  {
+   "source": "Bridgestone: tire replacement guidance",
+   "publisher": "Bridgestone Americas",
+   "url": "https://www.bridgestoneamericas.com/en/terms-of-use",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Chevrolet owner's manuals (GM)",
+   "publisher": "General Motors LLC",
+   "url": "https://www.chevrolet.com/legal",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Continental: tire age",
+   "publisher": "Continental Tire the Americas",
+   "url": "https://www.continental-tires.com/legal/legal-notice/",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Costco.com product listings",
+   "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+   "url": "https://www.costco.com/f/-/terms-and-conditions-of-use",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "no"
+  },
+  {
+   "source": "CourtListener RECAP archive (federal court filings)",
+   "publisher": "Free Law Project (copies of US federal court records from PACER)",
+   "url": "https://www.courtlistener.com/terms/",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Diamond Pet Foods company website",
+   "publisher": "Schell & Kampeter, Inc. (Diamond Pet Foods)",
+   "url": "https://diamondpetcompany.com/diamond-pet-foods-copyright-trademark",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Electronic Code of Federal Regulations",
+   "publisher": "US National Archives (Office of the Federal Register)",
+   "url": "https://www.ecfr.gov/reader-aids/using-ecfr/getting-started",
+   "checked": "2026-11-02",
+   "due": "2027-11-02",
+   "automated_read": "public-domain"
+  },
+  {
+   "source": "FDA recalls, market withdrawals and safety alerts (company announcements)",
+   "publisher": "US Food and Drug Administration",
+   "url": "https://www.fda.gov/about-fda/about-website/website-policies",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "public-domain"
+  },
+  {
+   "source": "Federal Register",
+   "publisher": "US National Archives (Office of the Federal Register), via govinfo.gov",
+   "url": "https://www.govinfo.gov/about/policies",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "public-domain"
+  },
+  {
+   "source": "Ford support: tire replacement",
+   "publisher": "Ford Motor Company",
+   "url": "https://www.ford.com/help/terms/",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "GOV.UK: Department for Transport and DVSA",
+   "publisher": "UK Department for Transport; Driver and Vehicle Standards Agency",
+   "url": "https://www.gov.uk/help/terms-conditions",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Golf Monthly",
+   "publisher": "Future plc",
+   "url": "https://www.golfmonthly.com/robots.txt",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "yes"
+  },
+  {
+   "source": "GolfWRX",
+   "publisher": "GolfWRX",
+   "url": "https://www.golfwrx.com/",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Goodyear: tire service life (on Cooper Tire's site)",
+   "publisher": "The Goodyear Tire & Rubber Company",
+   "url": "https://www.coopertire.com/en_US/terms/terms-and-conditions.html",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Hankook technical bulletin: tire replacement recommendations",
+   "publisher": "Hankook Tire America Corp.",
+   "url": "https://www.hankooktire.com/us/en/privacy-policy.html",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Highline Warren company website",
+   "publisher": "Highline Warren LLC",
+   "url": "https://www.highlinewarren.com/privacy-policy",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Honda owner's manuals",
+   "publisher": "American Honda Motor Co., Inc.",
+   "url": "https://www.honda.com/",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Hyundai owner's manuals",
+   "publisher": "Hyundai Motor America",
+   "url": "https://www.hyundaiusa.com/us/en/legal",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Jeep and Ram owner's manuals (Mopar)",
+   "publisher": "FCA US LLC (Stellantis)",
+   "url": "https://www.chrysler.com/crossbrand_us/terms-of-use",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Kia owner's manuals",
+   "publisher": "Kia America, Inc.",
+   "url": "https://www.kia.com/us/en/terms-of-service",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "LNK International website",
+   "publisher": "LNK International, Inc.",
+   "url": "https://www.lnkintl.com/privacy-and-cookies-policy",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Mazda owner's manuals",
+   "publisher": "Mazda North American Operations",
+   "url": "https://www.mazdausa.com/site/terms-of-use",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Michelin: when to replace tires",
+   "publisher": "Michelin North America (Canada)",
+   "url": "https://www.michelin.ca/en/legal-privacy-center/terms-of-use",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "NHTSA tire safety pages (TireWise)",
+   "publisher": "US National Highway Traffic Safety Administration",
+   "url": "https://www.nhtsa.gov/about-nhtsa/web-policies-notices",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "public-domain"
+  },
+  {
+   "source": "NHTSA vPIC: tire plant codes and vehicle identification",
+   "publisher": "US National Highway Traffic Safety Administration",
+   "url": "https://vpic.nhtsa.dot.gov/api/",
+   "checked": "2026-11-02",
+   "due": "2027-11-02",
+   "automated_read": "public-domain"
+  },
+  {
+   "source": "Nissan owner's manuals",
+   "publisher": "Nissan North America, Inc.",
+   "url": "https://www.nissanusa.com/",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Nokian Tyres: how long do tires last?",
+   "publisher": "Nokian Tyres",
+   "url": "https://na.nokiantyres.com/privacy-statements-and-terms-of-services/",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "North Dakota Department of Agriculture pet food product registrations",
+   "publisher": "North Dakota Department of Agriculture",
+   "url": "https://www.nd.gov/disclaimer",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Perrigo corporate website",
+   "publisher": "Perrigo Company plc",
+   "url": "https://www.perrigo.com/legal",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Sazerac Company website",
+   "publisher": "Sazerac Company, Inc.",
+   "url": "https://www.sazerac.com/terms-of-use/",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Subaru owner's manuals",
+   "publisher": "Subaru of America, Inc.",
+   "url": "https://www.subaru.com/support/terms-and-conditions.html",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "TTB Public COLA Registry (label approvals)",
+   "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
+   "url": "https://www.ttb.gov/about-ttb/linking-policy",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Tesla owner's manuals",
+   "publisher": "Tesla, Inc.",
+   "url": "https://www.tesla.com/legal/terms",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "The Golf News Net",
+   "publisher": "The Golf News Net (Ryan Ballengee)",
+   "url": "https://thegolfnewsnet.com/",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Toyo Tires: when should I replace my tires?",
+   "publisher": "Toyo Tire U.S.A. Corp.",
+   "url": "https://www.toyotires.com/terms-of-use/",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Toyota owner's manuals",
+   "publisher": "Toyota Motor North America, Inc.",
+   "url": "https://www.toyota.com/support/legal-terms",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "USDA FSIS Meat, Poultry and Egg Product Inspection Directory",
+   "publisher": "US Department of Agriculture, Food Safety and Inspection Service",
+   "url": "https://www.usda.gov/about-usda/policies-and-links",
+   "checked": "2026-11-02",
+   "due": "2027-11-02",
+   "automated_read": "no"
+  },
+  {
+   "source": "USGA List of Conforming Golf Balls, past editions",
+   "publisher": "United States Golf Association (USGA), with The R&A; copies kept by the Internet Archive",
+   "url": "https://archive.org/about/terms.php",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "yes"
+  },
+  {
+   "source": "USGA and R&A List of Conforming Driver Heads, past editions",
+   "publisher": "United States Golf Association (USGA), with The R&A; copies kept by the Internet Archive",
+   "url": "https://archive.org/about/terms.php",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "yes"
+  },
+  {
+   "source": "USGA and R&A List of Conforming Golf Balls",
+   "publisher": "United States Golf Association (USGA), with The R&A",
+   "url": "https://www.usga.org/terms-of-use.html",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "no"
+  },
+  {
+   "source": "United States Code (via Cornell LII)",
+   "publisher": "US Congress (Office of the Law Revision Counsel); text served by Cornell Law School's Legal Information Institute",
+   "url": "https://www.law.cornell.edu/lii/terms/documentation",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "public-domain"
+  },
+  {
+   "source": "Yokohama: tire life",
+   "publisher": "Yokohama Tire Corporation",
+   "url": "https://www.yokohamatire.com/terms-of-use",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "openFDA food and drug enforcement (recall) reports",
+   "publisher": "US Food and Drug Administration",
+   "url": "https://open.fda.gov/terms/",
+   "checked": "2026-11-02",
+   "due": "2027-11-02",
+   "automated_read": "public-domain"
+  },
+  {
+   "source": "saturn petcare, inc. website",
+   "publisher": "saturn petcare, inc.",
+   "url": "https://www.saturnpetcare.us/privacy-policy",
+   "checked": "2026-11-03",
+   "due": "2027-11-03",
+   "automated_read": "yes"
+  }
+ ],
+ "claims": [
+  {
+   "id": "c-ks-golf-driver-sm-global",
+   "product": "ks-golf-driver",
+   "stamp": "documented",
+   "next_check": "2026-12-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-golf-performance-plus-sm-global",
+   "product": "ks-golf-ball-performance-plus",
+   "stamp": "documented",
+   "next_check": "2026-12-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-golf-tour-performance-sm-global",
+   "product": "ks-golf-ball-tour-performance",
+   "stamp": "documented",
+   "next_check": "2026-12-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-albacore-bumble-bee",
+   "product": "ks-albacore-tuna",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-aller-fex-perrigo",
+   "product": "ks-aller-fex",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-antacid-guardian",
+   "product": "ks-antacid",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-biscuits-north-river",
+   "product": "ks-dog-biscuits",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-bourbon-barton",
+   "product": "ks-bourbon",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-bourbon-buffalo-trace",
+   "product": "ks-bourbon",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-bourbon-tennessee",
+   "product": "ks-bourbon",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-butter-continental",
+   "product": "ks-butter",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-cat-food-diamond-2012",
+   "product": "ks-dry-cat-food",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-cat-food-diamond-2025",
+   "product": "ks-dry-cat-food",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-cold-brew-berner",
+   "product": "ks-cold-brew-coffee",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-cold-flu-lnk",
+   "product": "ks-severe-cold-flu",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-decaf-house-blend-starbucks",
+   "product": "ks-decaf-house-blend-coffee",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-dental-nylabone",
+   "product": "ks-dental-chews",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-diesel-oil-chevron",
+   "product": "ks-diesel-engine-oil",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-diesel-oil-highline-warren",
+   "product": "ks-diesel-engine-oil",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-dog-food-diamond-2012",
+   "product": "ks-dry-dog-food",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-dog-food-diamond-2025",
+   "product": "ks-dry-dog-food",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-eggs-handsome-brook",
+   "product": "ks-organic-eggs",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-french-vodka-misa",
+   "product": "ks-french-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-golf-2016-nassau",
+   "product": "ks-golf-ball-2016",
+   "stamp": "reported",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-golf-irons-indi",
+   "product": "ks-golf-irons-2023",
+   "stamp": "reported",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-golf-performance-one-sm-global",
+   "product": "ks-golf-ball-performance-one",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-golf-wedges-scd",
+   "product": "ks-golf-wedges-2020",
+   "stamp": "reported",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-jerky-phelps",
+   "product": "ks-dog-jerky-treats",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-motor-oil-highline-warren",
+   "product": "ks-motor-oil",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-peanut-butter-sunland",
+   "product": "ks-peanut-butter",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-sandwich-rolls-franz",
+   "product": "ks-sandwich-rolls",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-smoked-salmon-acme",
+   "product": "ks-smoked-salmon",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-soy-beverage-sunopta",
+   "product": "ks-soy-beverage",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-tequila-la-madrilena",
+   "product": "ks-tequila",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-tequila-mpl-import",
+   "product": "ks-tequila",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-tequila-santa-lucia",
+   "product": "ks-tequila",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-tequila-sazerac-import",
+   "product": "ks-tequila",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-three-berry-townsend",
+   "product": "ks-three-berry-blend",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-vodka-bardstown",
+   "product": "ks-american-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-vodka-buffalo-trace",
+   "product": "ks-american-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-vodka-levecke",
+   "product": "ks-american-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-vodka-oneill",
+   "product": "ks-american-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-wet-cat-saturn",
+   "product": "ks-wet-cat-food",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-wet-dog-saturn",
+   "product": "ks-wet-dog-food",
+   "stamp": "documented",
+   "next_check": "2027-05-03",
+   "last_check": "2026-11-03"
+  }
+ ],
+ "done": [
+  {
+   "on": "2026-11-02",
+   "task": "nhtsa-tire-plants",
+   "what": "First pull of NHTSA tire plant codes",
+   "result": "1,246 codes loaded (1,179 active, 49 closed, 18 with no status given)"
+  },
+  {
+   "on": "2026-11-02",
+   "task": "usda-establishments",
+   "what": "First load of the USDA plant directory (edition of Oct 26, 2026), downloaded by hand",
+   "result": "7,257 establishments loaded"
+  },
+  {
+   "on": "2026-11-02",
+   "task": "openfda-leads",
+   "what": "First search of FDA recall records for Kirkland",
+   "result": "50 recalls mention \"Kirkland\" (25 say \"Kirkland Signature\"); all waiting for review. One is a different company (Kirkland Science Labs)."
+  },
+  {
+   "on": "2026-11-02",
+   "task": "nhtsa-tire-plants",
+   "what": "Weekly pull of NHTSA tire plant codes",
+   "result": "1,246 codes; no changes"
+  },
+  {
+   "on": "2026-11-02",
+   "task": "openfda-leads",
+   "what": "Weekly search of FDA recall records for store brands",
+   "result": "0 new recalls found; 50 waiting for review"
+  },
+  {
+   "on": "2026-11-02",
+   "task": "nhtsa-tire-plants",
+   "what": "Weekly pull of NHTSA tire plant codes",
+   "result": "1,246 codes; no changes"
+  },
+  {
+   "on": "2026-11-02",
+   "task": "openfda-leads",
+   "what": "Weekly search of FDA recall records for store brands",
+   "result": "0 new recalls found; 50 waiting for review"
+  }
+ ]
+}

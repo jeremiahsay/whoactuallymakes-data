@@ -1,0 +1,7 @@
+id,what,source,how,every_days,once,last,due,result
+nhtsa-tire-plants,NHTSA tire plant codes,NHTSA vPIC: tire plant codes and vehicle identification,script,7,false,2026-11-02,2026-11-09,"1,246 entries; no changes since the previous pull"
+usda-establishments,"USDA meat, poultry and egg plant directory","USDA FSIS Meat, Poultry and Egg Product Inspection Directory",hand,30,false,2026-11-02,2026-12-02,"7,257 entries; first pull"
+openfda-leads,FDA recall records that mention store brands,openFDA food and drug enforcement (recall) reports,script,7,false,2026-11-02,2026-11-09,38 recalls waiting for review
+tire-age-guidance,Tire age guidance: who says what,NHTSA tire safety pages (TireWise),hand,365,false,2026-11-03,2027-11-03,10 rows and 12 carmakers from 24 documents
+tire-age-carmaker-followup,Tire age: carmaker manuals to re-check,Honda owner's manuals,hand,0,true,2026-11-03,2026-11-05,Every carmaker on the list has a row
+maker-pages,"Company pages: registers, recalls and the companies' own pages",North Dakota Department of Agriculture pet food product registrations,script,182,false,2026-11-03,2027-05-04,"7 company pages; 2 pet food register searches, 2 recall pulls"

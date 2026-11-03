@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this data, please cite it as below and link to https://whoactuallymakes.com/data/"
+type: dataset
+title: "Who Actually Makes open data"
+version: "2026-11-03"
+date-released: "2026-11-03"
+license: CC-BY-4.0
+url: "https://whoactuallymakes.com/data/"
+repository: "https://github.com/jeremiahsay/whoactuallymakes-data"
+keywords:
+  - "store brands"
+  - "private label"
+  - "open data"
+  - "public records"
+  - "manufacturer"
+  - "who makes Kirkland"
+  - "Costco"
+  - "private label manufacturers"
+  - "store brand makers"
+  - "who makes store brands"
+  - "co-packers"
+  - "Kirkland suppliers"
+authors:
+  - family-names: Say
+    given-names: Jeremiah
+    orcid: "https://orcid.org/0009-0009-2025-7691"
+    website: "https://whoactuallymakes.com/about/"
+  - name: Who Actually Makes
+    website: "https://whoactuallymakes.com/"

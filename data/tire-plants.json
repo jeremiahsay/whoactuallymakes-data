@@ -1,0 +1,11241 @@
+{
+ "schema": "wam-data/v1",
+ "generated": "2026-11-02",
+ "source": {
+  "publisher": "NHTSA",
+  "name": "vPIC tire plant codes",
+  "url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetEquipmentPlantCodes?year=2016&equipmentType=1&reportType=All&format=json",
+  "list_changed": "2026-11-02",
+  "raw_sha256": "a2c928cf57f315d03c6a703a10b0c383d35a780806cf941ac6c9a89203678649"
+ },
+ "rule": {
+  "cite": "49 CFR 574.5",
+  "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-574/section-574.5"
+ },
+ "count": 1246,
+ "cols": [
+  "code",
+  "old_code",
+  "name",
+  "city",
+  "state",
+  "country",
+  "status"
+ ],
+ "rows": [
+  [
+   "000",
+   "",
+   "KUMHO TIRE GEORGIA INC.",
+   "Macon",
+   "Georgia",
+   "United States",
+   "Active"
+  ],
+  [
+   "001",
+   "",
+   "QINGDAO FLEMING TYRE CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "002",
+   "",
+   "QINGDAO DEJI WHEEL CART CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "003",
+   "",
+   "WENLING YAODING MACHINE CO., LTD.",
+   "Wenling City",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "004",
+   "",
+   "SHANDONG CHANGSHENG RUBBER CO.,. LTD.",
+   "Gaomi",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "005",
+   "",
+   "QINGDAO TAIHANG TYRE CO.,LTD",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "006",
+   "",
+   "GUANRAO YONGFENG RUBBER CO., LTD.",
+   "Guangrao County,Dongying City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "007",
+   "",
+   "QINGDAO HAORUN HAND TRUCK CO., LTD.",
+   "Jiaonan,Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "008",
+   "",
+   "SIAMTRUCK RADIAL COMPANY LIMITED",
+   "Banglane",
+   "Nakompathom",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "009",
+   "",
+   "TIANJIN HUGE DRAGON TIRE CO., LTD.",
+   "Jinnan",
+   "Tianjin",
+   "China",
+   "Active"
+  ],
+  [
+   "00A",
+   "",
+   "ZHUCHENG YIHESHENG RUBBER CO., LTD.",
+   "Zhucheng City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "00B",
+   "",
+   "RADIAL TIRE FACTORY",
+   "Uyen Town",
+   "Binh Duong",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "00C",
+   "",
+   "DELUN TIRE CO., LTD.",
+   "",
+   "Anhui Province",
+   "China",
+   "Active"
+  ],
+  [
+   "00D",
+   "",
+   "NOVASHIELD TYRE (JILIN) CO., LTD",
+   "Jilin",
+   "Jilin",
+   "China",
+   "Active"
+  ],
+  [
+   "00E",
+   "",
+   "GOODTIRE RUBBER INDUSTRIAL(VIETNAM) CO., LTD",
+   "Thanh Phuoc Village",
+   "Tay Ninh",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "00F",
+   "",
+   "OPEN JOINT SLOCK COMPANY \"OMSKSHINA\"",
+   "Omsk",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "00H",
+   "",
+   "NINGBO LONGTIME MACHINE CO., LTD.",
+   "Ningbo",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "00J",
+   "",
+   "JOYALL (WEIHAI) TIRE CO., LTD.",
+   "Weihai",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "00K",
+   "",
+   "ZHONG CE RUBBER (THAILAND) CO., LTD.",
+   "Pluakdaeng",
+   "Rayong",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "00L",
+   "",
+   "DONGYING MONDAY RUBBER TECHNOLOGY CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "00M",
+   "",
+   "QINGDAO FUDONG TYRE CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "00N",
+   "",
+   "KEERUN TIRE (RIZHAO) CO.,LTD.",
+   "Rizhao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "00P",
+   "",
+   "TRISTAR TYRE FACTORY",
+   "Yangon",
+   "Yangon",
+   "Myanmar (Burma)",
+   "Active"
+  ],
+  [
+   "00R",
+   "",
+   "CEAT KELANI RADIALS (PVT) LIMITED",
+   "Kelaniya",
+   "",
+   "Sri Lanka",
+   "Active"
+  ],
+  [
+   "00T",
+   "",
+   "Hankook Tire Manufacturing Tennessee, LP",
+   "Clarksville",
+   "Tn",
+   "United States (Usa)",
+   "Active"
+  ],
+  [
+   "00U",
+   "",
+   "OZKA LASTIK VE KAUCUK SAN TIC, S.A.",
+   "Kocaeli",
+   "Marmara",
+   "Turkey",
+   "Active"
+  ],
+  [
+   "00V",
+   "",
+   "QINGDAO KUNHUA MACHINERY CO., LTD.",
+   "Qingdao City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "00W",
+   "",
+   "QINGDAO ANNAICHI TYRES CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "00X",
+   "",
+   "JIANXIN TYRE (FUJIAN) CO., LTD.",
+   "Yongan",
+   "Fujian",
+   "China",
+   "Active"
+  ],
+  [
+   "00Y",
+   "",
+   "ACE TYRE LTD.",
+   "Medak Dist",
+   "Hyderabad",
+   "India",
+   "Active"
+  ],
+  [
+   "010",
+   "",
+   "ASEAN TIRE COMPANY, LIMITED",
+   "Tien Du",
+   "Bac Ninh",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "011",
+   "",
+   "SHANDONG HONGSHENG RUBBER TECHNOLOGY CO., LTD.",
+   "Dongyiing City",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "012",
+   "",
+   "ASSOCIATED CEAT (PVT) LIMITED",
+   "Kelaniya",
+   "",
+   "Sri Lanka",
+   "Active"
+  ],
+  [
+   "013",
+   "",
+   "JIANGSU SANYUAN TIRE CO., LTD.",
+   "Suqian",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "014",
+   "",
+   "SHANDONG OKLOONG RUBBER TECHNOLOGY CO., LTD.",
+   "Weifang City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "015",
+   "",
+   "HENAN SHENGBANG TIRE CO., LTD.",
+   "Huixian",
+   "Henan",
+   "China",
+   "Active"
+  ],
+  [
+   "016",
+   "",
+   "WPI GLOBAL, LTD.",
+   "Shenzhen City",
+   "Guangdong",
+   "China",
+   "Active"
+  ],
+  [
+   "017",
+   "",
+   "PT. MAXXIS INTERNATIONAL INDONESIA",
+   "Bekasi",
+   "West Java",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "018",
+   "",
+   "QINGDAO MOONSTAR VEHICLE CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "019",
+   "",
+   "QINGDAO KEYAO POWER EQUIPMENT CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "01A",
+   "",
+   "TIANJIN HENG TAI GALLOP TECHNOLOGY CO., LTD.",
+   "Tianjin",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "01B",
+   "",
+   "GITI TIRE MANUFACTURING (USA) LTD",
+   "Richburg",
+   "South Carolina",
+   "United States (USA)",
+   "Active"
+  ],
+  [
+   "01C",
+   "",
+   "ATC Tires Pvt. Ltd., Dahej, Gujarat Factory",
+   "Samantpore, Taluka-Vagra",
+   "Gujarat",
+   "India",
+   "Active"
+  ],
+  [
+   "01D",
+   "",
+   "JIANGSU HUA'AN TYRE TECHNOLOGY CO., LTD.",
+   "Shuyang",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "01E",
+   "",
+   "SHANDONG LUTONG TYRE CO., LTD.",
+   "Jining",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "01F",
+   "",
+   "NINGXIA SHENZHOU TIRE CO., LTD.",
+   "Shizuishan",
+   "Ningxia",
+   "China",
+   "Active"
+  ],
+  [
+   "01H",
+   "",
+   "TRELLEBORG WHEEL SYSTEMS AMERICAS, INC.",
+   "Spartanburg",
+   "Sc",
+   "United States (USA)",
+   "Active"
+  ],
+  [
+   "01J",
+   "",
+   "MAXXIS RUBBER INDIA PRIVATE LIMITED",
+   "Ahmedabad",
+   "Gujarat",
+   "India",
+   "Active"
+  ],
+  [
+   "01K",
+   "",
+   "WEIFANG HUANTAI RUBBER CO., LTD.",
+   "Changyi",
+   "Shandong",
+   "China",
+   "Closed"
+  ],
+  [
+   "01L",
+   "",
+   "SHANDONG JILUER TYRE CO., LTD.",
+   "Tengzhou",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "01M",
+   "",
+   "DNA SPECIALTY INC.",
+   "Compton",
+   "Ca",
+   "United States (USA)",
+   "Active"
+  ],
+  [
+   "01N",
+   "",
+   "Hangzhou Zhongce Qingquan Industrial Co., Ltd.",
+   "Hangzhou",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "01P",
+   "",
+   "Weihai Huayang Rubber Technology Branch Company",
+   "Weihai",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "01R",
+   "",
+   "FEDERAL TIRE(GUANYIN)",
+   "Guanyin",
+   "Taoyuan",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "01T",
+   "",
+   "RIZHAO YOUNAI TIRES CO., LTD.",
+   "Ju COUNTY",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "01U",
+   "",
+   "Weifang Goldshield Tire Co., Ltd.",
+   "Weifang",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "01V",
+   "",
+   "QINGDAO CENTURY FUNG TIRE CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "01W",
+   "",
+   "QINGDAO RILI TYRE CO., LTD.",
+   "Pingdu",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "01X",
+   "",
+   "SHANDONG ZHONGNING RUBBER TECHNOLOGY CO.,LTD",
+   "Weifang",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "01Y",
+   "",
+   "QINGDAO WANTAI RUBBER PRODUCTS CO., LTD.",
+   "Qingdao City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "020",
+   "",
+   "YOKOHAMA TIRE MANUFACTURER, LLC",
+   "West Point",
+   "Mississippi",
+   "United States",
+   "Closed"
+  ],
+  [
+   "021",
+   "",
+   "Dongying Ruisheng Rubber Co. LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "022",
+   "",
+   "Nanjing Kumho Tire Co., LTD.",
+   "Nanjing",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "023",
+   "",
+   "Hungary-Greenfield Plant",
+   "Gyöngyöshalász",
+   "Heves",
+   "Hungary",
+   "Active"
+  ],
+  [
+   "024",
+   "",
+   "TIANJIN FEIYADA RUBBER PRODUCTS CO., LTD.",
+   "Tianjin",
+   "Tianjin",
+   "China",
+   "Active"
+  ],
+  [
+   "025",
+   "",
+   "BRIDGESTONE T.C.E.",
+   "Castel Romano",
+   "Rome",
+   "Italy",
+   "Active"
+  ],
+  [
+   "026",
+   "",
+   "HEFEI WANLI TIRE CO., LTD.",
+   "Hefei",
+   "Anhui",
+   "China",
+   "Active"
+  ],
+  [
+   "027",
+   "",
+   "AKSARAY",
+   "Aksaray",
+   "Aksaray",
+   "Turkey",
+   "Active"
+  ],
+  [
+   "028",
+   "",
+   "FUTURE TYRES PRIVATE LIMITED",
+   "Kalol",
+   "Gujarat",
+   "India",
+   "Active"
+  ],
+  [
+   "029",
+   "",
+   "YANCHENG LUXEWAY TIRES CO., LTD.",
+   "Yancheng",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "02A",
+   "",
+   "JIANGSU GUNADE TYRE CO., LTD.",
+   "Jiangsu",
+   "Changzhou",
+   "China",
+   "Active"
+  ],
+  [
+   "02B",
+   "",
+   "SUZHOU CHENXIN TIRE CO., LTD.",
+   "Wujiang",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "02C",
+   "",
+   "OMEXEY RUBBER INDUSTRIAL CORPORATION (VN)",
+   "Tan Uyen",
+   "Binh Duong",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "02D",
+   "",
+   "Shanghai Baosteel Wheels Co.,Ltd.",
+   "Shanghai",
+   "Shanghai",
+   "China",
+   "Active"
+  ],
+  [
+   "02E",
+   "",
+   "SHANDONG DREAMAKER TIRE CO., LTD.",
+   "Shandong",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "02F",
+   "",
+   "TOYOMOTO CORP.",
+   "Beijing",
+   "Beijing",
+   "China",
+   "Active"
+  ],
+  [
+   "02H",
+   "",
+   "GOLDEN HORSE RUBBER SDN.BHD",
+   "Pulau Indah",
+   "Selangor",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "02J",
+   "",
+   "HUAYI GROUP (THAILAND) COMPANY LIMITED",
+   "Tumbol SamNaThong, Ambur Muang",
+   "RaYong",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "02K",
+   "",
+   "Keich International Tyre Co.,Ltd",
+   "Wattana,",
+   "Bangkok,",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "02L",
+   "",
+   "Shandong Kupo Tire Co., Ltd.",
+   "Linyi",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "02M",
+   "",
+   "MARKMA TIRE CO., LIMITED",
+   "Miaoli City",
+   "Taiwan (R.O.C.)",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "02N",
+   "",
+   "Arsenal SAPI de CV",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "02P",
+   "",
+   "Continental Tire - Clinton Plant",
+   "Bolton",
+   "Mississippi",
+   "United States (USA)",
+   "Active"
+  ],
+  [
+   "02R",
+   "",
+   "PT. Kenda Rubber Indonesia",
+   "Serang",
+   "Banten",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "02T",
+   "",
+   "KENDA RUBBER (VIETNAM) CO., LTD.",
+   "An Vien Commune",
+   "Dong Nai",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "02U",
+   "",
+   "SHANDONG YIWEI RUBBER CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "02V",
+   "",
+   "QINGDAO VISASTONE INDUSTRY &TRADE CO.,LTD",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "02W",
+   "",
+   "SHANDONG MIRAGE TYRES CO.,LTD",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "02X",
+   "",
+   "Sao Vang Rubber Joint Stock Company",
+   "Ha Noi",
+   "---",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "02Y",
+   "",
+   "Qingdao Ailite Rubber Co., Ltd.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "030",
+   "",
+   "SHIH FA RUBBER INDUSTRIES (VN) CO., LTD.",
+   "Ho Chi Minh",
+   "",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "031",
+   "",
+   "JIANGSU DONGHAO RUBBER CO., LTD.",
+   "Shuyang County",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "032",
+   "",
+   "QINGDAO GE RUI DA RUBBER COMPANY (GRT)",
+   "Qingdao City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "033",
+   "",
+   "IRIS",
+   "Setif",
+   "Setif",
+   "Algeria",
+   "Active"
+  ],
+  [
+   "034",
+   "",
+   "JINING SHENZHOU TYRE CO., LTD.",
+   "Jining",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "035",
+   "",
+   "NEXEN TIRE EUROPE S.R.O.",
+   "Praha 5",
+   "Smichov",
+   "Czech Republic",
+   "Active"
+  ],
+  [
+   "036",
+   "",
+   "Continental Tyres (Thailand) Co., Ltd.",
+   "Amphur Pluak Daeng",
+   "Rayong Province",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "037",
+   "",
+   "MSTYRE INDUSTRIES SDN BHD",
+   "Menglembu Ipoh",
+   "Perak",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "038",
+   "",
+   "HEBEI WANDA TYRE CO.,LTD",
+   "Xingtai",
+   "Hebei",
+   "China",
+   "Active"
+  ],
+  [
+   "039",
+   "",
+   "QINGDAO WANSHIXING RUBBER & PLASTIC CO.,LTD",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "03A",
+   "",
+   "CEAT LIMITED",
+   "Nagpur",
+   "Maharashtra",
+   "India",
+   "Active"
+  ],
+  [
+   "03B",
+   "",
+   "Nokian Tyres U.S. Operations LLC",
+   "Dayton",
+   "Tennessee",
+   "United States (USA)",
+   "Active"
+  ],
+  [
+   "03C",
+   "",
+   "DIRECTORATE FOR CONSTRUCTION OF RUBBER PRODUCTS PLANT LLC",
+   "Angren",
+   "Tashkent Region",
+   "Uzbekistan",
+   "Active"
+  ],
+  [
+   "03D",
+   "",
+   "JIANGSU CHANGDA TYRE CO., LTD.",
+   "Suqian",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "03E",
+   "",
+   "VEE RUBBER INDIA PRIVATE LIMITED",
+   "Ahmedabad",
+   "Gujarat",
+   "India",
+   "Active"
+  ],
+  [
+   "03F",
+   "",
+   "ROADBOSS RUBBER TECHNOLOGY CO.,LTD",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "03H",
+   "",
+   "PT. HA TIRE",
+   "Bekasi",
+   "Jawa Barat",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "03J",
+   "",
+   "AGARWAL RUBBER LIMITED",
+   "Hyderabad",
+   "Telangana",
+   "India",
+   "Active"
+  ],
+  [
+   "03K",
+   "",
+   "Shandong Giki Tyre Co.,Ltd.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "03L",
+   "",
+   "INDUSTRIAS MICHELIN S.A. DE C.V.",
+   "Leon",
+   "Guanajuato",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "03M",
+   "",
+   "QINGDAO PUREGAIN TYRE CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "03N",
+   "",
+   "CEAT LIMITED",
+   "Kancheepuram",
+   "Tamil Nadu",
+   "India",
+   "Active"
+  ],
+  [
+   "03P",
+   "",
+   "SHANDONG RUNTONG RUBBER CO. LTD.",
+   "Rizhao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "03R",
+   "",
+   "QINGDAO SUMMIT RUBBER INDUSTRY CO.,LTD",
+   "Qingdao City",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "03T",
+   "",
+   "PINGDU ZIHAI RUBBER MANUFACTORY",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "03U",
+   "",
+   "DBL DESIGN",
+   "Hurst",
+   "Texas",
+   "United States",
+   "Active"
+  ],
+  [
+   "03V",
+   "",
+   "LIANYUNGANG TUOXI IMP&EXP CO., LTD",
+   "Lianyungang",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "03W",
+   "",
+   "HUBEI LINGLONG TYRE CO.,LTD",
+   "Jingmen",
+   "Hubei",
+   "China",
+   "Active"
+  ],
+  [
+   "03X",
+   "",
+   "HUNG HAI THINH JOINT STOCK COMPANY",
+   "Phu Giao District",
+   "Binh Duong",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "03Y",
+   "",
+   "SUNTOP TIRE (WUXI) CO., LTD",
+   "Wuxi",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "040",
+   "",
+   "TOPMEGA INTERNATIONAL GROUP CO.,Ltd.",
+   "Sepon District",
+   "Savannakhet Province",
+   "Laos",
+   "Active"
+  ],
+  [
+   "041",
+   "",
+   "SHANDONG QILUN RUBBER CO.,LTD",
+   "Dongying City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "042",
+   "",
+   "Andhra Pradesh Plant",
+   "Chinnapandur Village, Chittoor Distric",
+   "Andhra Pradesh",
+   "India",
+   "Active"
+  ],
+  [
+   "043",
+   "",
+   "Kabat Tyre spólka z ograniczona odpowiedzialnoscia spólka jawna",
+   "Budzyn",
+   "Wielkopolska",
+   "Poland",
+   "Active"
+  ],
+  [
+   "044",
+   "",
+   "ASIAN TIRE FACTORY LIMITED",
+   "Jalandhar",
+   "Punjab",
+   "India",
+   "Active"
+  ],
+  [
+   "045",
+   "",
+   "General Rubber (Thailand) Co., Ltd.",
+   "A. Pluak Daeng",
+   "Rayong",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "046",
+   "",
+   "Qingdao Jingtai Rubber Products Co., Ltd",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "047",
+   "",
+   "QINGDAO TULECHI RUBBER CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "048",
+   "",
+   "EVERTHROUGH RUBBER PRODUCTS SDN BHD",
+   "Perak",
+   "Taiping",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "049",
+   "",
+   "MRF LTD",
+   "Dahej",
+   "Gujarat",
+   "India",
+   "Active"
+  ],
+  [
+   "04A",
+   "",
+   "Love's Truck Solutions, LLC - Milan, TN",
+   "Milan",
+   "Tn",
+   "United States (Usa)",
+   "Active"
+  ],
+  [
+   "04B",
+   "",
+   "ACTR COMPANY LIMITED",
+   "Go Dau",
+   "Tay Ninh",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "04C",
+   "",
+   "TECHNIC DO BRASIL LTDA",
+   "Santo Andre",
+   "Sao Paulo",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "04D",
+   "",
+   "AUTOWHEELS FASHION SDN BHD",
+   "Seri Kembangan",
+   "Selangor",
+   "Malaysia",
+   "Closed"
+  ],
+  [
+   "04E",
+   "",
+   "GUANGXI NEW GUILUN RUBBER CO., LTD.",
+   "Guilin",
+   "Guangxi",
+   "China",
+   "Active"
+  ],
+  [
+   "04H",
+   "",
+   "Suntex Rubber Enterprise Co., Ltd",
+   "Taibei",
+   "Taibei",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "04M",
+   "",
+   "Maxtrek Tyre Manufacturing Malaysia Sdn. Bhd.",
+   "Kuantan",
+   "Pahang",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "04N",
+   "",
+   "PRINX CHENGSHAN TIRE (THAILAND) CO., LTD.",
+   "A Nong Yai",
+   "Chonburi",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "04P",
+   "",
+   "SHANDONG YOUSHENG TYRE CO., LTD",
+   "Shouguang",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "04R",
+   "",
+   "JINHUA DAQIANG RUBBER PRODUCTS INSTITUTE",
+   "Jinhua",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "04T",
+   "",
+   "REIFEN HINGHAUS GMBH",
+   "Dissen",
+   "Niedersachsen",
+   "Germany",
+   "Active"
+  ],
+  [
+   "04V",
+   "",
+   "SHANDONG SHENGHAI RUBBER CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "04W",
+   "",
+   "SUNDANCE INDUSTRIES CO., LTD",
+   "Samrong Torng",
+   "Kampong speu",
+   "Cambodia",
+   "Active"
+  ],
+  [
+   "04Y",
+   "",
+   "HEDA(SHANDONG)RUBBER TECHNOLOGY CO.,LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "050",
+   "",
+   "Tirevolution Enterprise Limited",
+   "Hong Kong",
+   "Hong Kong",
+   "China",
+   "Active"
+  ],
+  [
+   "052",
+   "",
+   "SHANDONG ZHONGYI RUBBER CO.,LTD",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "053",
+   "",
+   "PYRAMIDS TIRES",
+   "Port Said",
+   "Port Said",
+   "Egypt",
+   "Active"
+  ],
+  [
+   "054",
+   "",
+   "Continental AG werk Aachen",
+   "Acchen",
+   "North Rhine-Westphalia",
+   "Germany",
+   "Active"
+  ],
+  [
+   "055",
+   "",
+   "ADVANCE TYRE VIETNAM COMPANY LIMTED",
+   "Tien Giang Province",
+   "VietNam",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "056",
+   "",
+   "QINGDAO ZHENGYA RUBBER INDUSTRIAL CO.,LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "057",
+   "",
+   "JINYU(VIET NAM) TIRE CO.,LTD",
+   "/",
+   "Tay Ninh",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "059",
+   "",
+   "PANSTON TYRE CO., LTD.",
+   "Bengbu",
+   "Anhui",
+   "China",
+   "Active"
+  ],
+  [
+   "05A",
+   "",
+   "NINGBO JUNKAI RUBBER INDUSTRY & TRADE CO., LTD.",
+   "Yuyao",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "05B",
+   "",
+   "SHANDONG COCREA TYRE CO.,LTD",
+   "Linyi",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "05C",
+   "",
+   "Toyo Tire Serbia društvo sa ogranicenom odgovornošcu Boegrad",
+   "Indjija",
+   "Vojvodina",
+   "Serbia",
+   "Active"
+  ],
+  [
+   "05D",
+   "",
+   "JIANGSU CHENGTAI VEHICLE CO., LTD.",
+   "Lianyungang",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "05E",
+   "",
+   "HUBEI YUEXIN RUBBER CO., LTD.",
+   "Xiaogan",
+   "Hubei",
+   "China",
+   "Active"
+  ],
+  [
+   "05F",
+   "",
+   "XINJIANG JIALUN TIRE CO., LTD",
+   "Aksu",
+   "Xinjiang",
+   "China",
+   "Active"
+  ],
+  [
+   "05H",
+   "",
+   "LINGLONG INTERNATIONAL EUROPE D.O.O. ZRENJANIN",
+   "Zrenjanin",
+   "Vojvodina",
+   "Serbia",
+   "Active"
+  ],
+  [
+   "05J",
+   "",
+   "SYAM TRELLEBORG TIRES LLP",
+   "Bharuch",
+   "Gujarat",
+   "India",
+   "Active"
+  ],
+  [
+   "05K",
+   "",
+   "SHANDONG BAILONG TYRE CO.,LTD.",
+   "Linyi",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "05L",
+   "",
+   "SHANDONG DONGSHENG RUBBER TECHNOLOGY CO., LTD.",
+   "Rizhao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "05M",
+   "",
+   "QINGZHOU RYDANZ RUBBER SCIENCE AND TECHNOLOGY CO., LTD.",
+   "Weifang",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "05N",
+   "",
+   "Powermax Rubber Factory",
+   "Thiruvallur",
+   "Tamil Nadu",
+   "India",
+   "Active"
+  ],
+  [
+   "05P",
+   "",
+   "ZHUCHENG HUAWEI RUBBER CO.,LTD.",
+   "Weifang",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "05R",
+   "",
+   "Service Long March Tyres (Private) Limited",
+   "Karachi",
+   "Sindh",
+   "Pakistan",
+   "Active"
+  ],
+  [
+   "05T",
+   "",
+   "BLACKCAT TIRE (FUJIAN) CO., LTD.",
+   "Zhangping",
+   "Fujian",
+   "China",
+   "Active"
+  ],
+  [
+   "05U",
+   "",
+   "Qingdao Tongda Rubber Product Factory",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "05V",
+   "",
+   "Jilin Linglong Tyre Co., Ltd.",
+   "Changchun",
+   "Jilin",
+   "China",
+   "Active"
+  ],
+  [
+   "05W",
+   "",
+   "QINGDAO HUAXU HUITONG INDUSTRIAL PRODUCTS MANUFACTURING CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "05X",
+   "",
+   "ZHONGCE RUBBER (ANJI) CO., LTD.",
+   "Anji",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "05Y",
+   "",
+   "CART TIRE CO.,LTD.",
+   "Krong Svay Rieng",
+   "Svay Rieng",
+   "Cambodia",
+   "Active"
+  ],
+  [
+   "061",
+   "",
+   "CEYLON TIRE MANUFACTURING COMPANY (PVT) LTD.",
+   "Hambantota",
+   "Southern",
+   "Sri Lanka",
+   "Active"
+  ],
+  [
+   "062",
+   "",
+   "FERENTINO TYRE CORPORATION (PRIVATE) LIMITED",
+   "Horana",
+   "Western Province",
+   "Sri Lanka",
+   "Active"
+  ],
+  [
+   "063",
+   "",
+   "ATC Tires AP Private Limited",
+   "Visakhapatnam",
+   "Andhra Pradesh",
+   "India",
+   "Active"
+  ],
+  [
+   "065",
+   "",
+   "SHANDONG BAOLI SCIENCE AND TECHNOLOGY CO., LTD.",
+   "Linyi",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "066",
+   "",
+   "RALSON TYRES LIMITED",
+   "Pithampur, Dhar",
+   "Madhya Pradesh",
+   "India",
+   "Active"
+  ],
+  [
+   "067",
+   "",
+   "XING YUNSHI TIRE FOREIGN TRADE CO., LTD.",
+   "Malai District",
+   "Banteay Meanchey",
+   "Cambodia",
+   "Active"
+  ],
+  [
+   "068",
+   "",
+   "JOHNNY TIRE SERVICE UNLIMITED LLC",
+   "Jacksonville",
+   "Florida",
+   "United States (Usa)",
+   "Active"
+  ],
+  [
+   "06A",
+   "",
+   "Global Rubber Indusrties Pvt Ltd",
+   "Badalgama",
+   "Western Province",
+   "Sri Lanka",
+   "Active"
+  ],
+  [
+   "06B",
+   "",
+   "LEAN SOON TYRE SDN. BHD.",
+   "Batu Caves",
+   "Selangor",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "06C",
+   "",
+   "KENDA RUBBER INDUSTRIAL CO., LTD (YUNLIN)",
+   "Citong VIlliage",
+   "Yunlin",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "06D",
+   "",
+   "Mahansaria Tyres Pvt Ltd.",
+   "Bharuch",
+   "Gujarat",
+   "India",
+   "Active"
+  ],
+  [
+   "06E",
+   "",
+   "ZHEJIANG TIANZHOU WHEEL CO.,LTD.",
+   "Quzhou",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "06H",
+   "",
+   "Guangzhou Diamond Tire Co., Ltd.",
+   "Guangzhou City",
+   "Guangdong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "06J",
+   "",
+   "QINGDAO MARRIS RUBBER CO.,LTD",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "06K",
+   "",
+   "QINGDAO AARON INDUSTRY CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "06M",
+   "",
+   "ZHUCHENG LUYANG TIRE CO.,LTD.",
+   "Weifang",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "06N",
+   "",
+   "GRANSTELLAR TIRES CO., LTD.",
+   "Taipei",
+   "Taiwan",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "06P",
+   "",
+   "Sociedade Michelin de Participacoes, Industria e Comercio, Ltda. - Unidade Manaus",
+   "Manaus",
+   "Amazonas",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "06R",
+   "",
+   "Sociedade Michelin Participacoes, Industria e Comercio Ltda - Unidade Guarulhos",
+   "Guarulhos",
+   "Sao Paulo",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "06T",
+   "",
+   "RIZHAO HANMA TIRE CORP",
+   "Rizhao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "06U",
+   "",
+   "FUJIAN HEXING RUBBER CO., LTD.",
+   "Sanming",
+   "Fujian",
+   "China",
+   "Active"
+  ],
+  [
+   "06V",
+   "",
+   "SHANDONG HENGDA RUBBER CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "06W",
+   "",
+   "JIAMEI (SHANDONG) RUBBER CO.,LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "06X",
+   "",
+   "LUCKYLION TIRE FOREIGN TRADE CO., LTD.",
+   "Nongyai District",
+   "Chonburi",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "06Y",
+   "",
+   "SHANDONG KEYSTONE RUBBER GROUP CO., LTD.",
+   "Weifang",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "070",
+   "",
+   "QINGDAO LUDATONG RUBBER PRODUCTS CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "071",
+   "",
+   "QINGDAO WVK TIRE COMPANY LIMITED",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "072",
+   "",
+   "QINGDAO WANSHISHUN SPECIAL VEHICLES CO.,LTD.",
+   "Qindao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "073",
+   "",
+   "DUNLOOP RUBBER SOLE CO.LTO",
+   "Kaysone phomVihan",
+   "Savannkhet",
+   "Laos",
+   "Active"
+  ],
+  [
+   "074",
+   "",
+   "TM DV HONG KHANG CO., LTD.",
+   "Ho Chi Minh City",
+   "Ho Chi Minh City",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "076",
+   "",
+   "GENERAL TIRES TECHNOLOGY (CAMBODIA) CO., LTD. - Sihanoukville",
+   "Sihanoukville",
+   "Preah Sihanouk",
+   "Cambodia",
+   "Active"
+  ],
+  [
+   "077",
+   "",
+   "THAISTONE RUBBER CO., LTD.",
+   "Si Racha",
+   "Chonbur",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "078",
+   "",
+   "SHANDONG XINGDA TIRE CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "079",
+   "",
+   "QINGDAO XIONGXIANG RUBBER CO., LTD",
+   "Pingdu",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "07A",
+   "",
+   "VIETNAM COFO TIRES COMPANY LIMITED",
+   "Bim Son Town",
+   "Thanh Hoa Province",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "07B",
+   "",
+   "NEWBUSTAR (CAMBODIA) TIRE CO., LTD.",
+   "Snoul",
+   "Kratie",
+   "Cambodia",
+   "Active"
+  ],
+  [
+   "07C",
+   "",
+   "HUBEI JINTIAN TYRE CO. , LTD.",
+   "Xianning",
+   "Hubei",
+   "China",
+   "Active"
+  ],
+  [
+   "07D",
+   "",
+   "HILISTONE TYRE (QINGDAO) CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "07E",
+   "",
+   "Qingdao Shunquanlong Tire Co., Ltd",
+   "Qingdao",
+   "Shandonng",
+   "China",
+   "Active"
+  ],
+  [
+   "07F",
+   "",
+   "NOKIAN TYRES EUROPE OPERATIONS LLC - Oradea",
+   "Bucharest",
+   "Bucharest",
+   "Romania",
+   "Active"
+  ],
+  [
+   "07H",
+   "",
+   "XT TYRE CO., LTD.",
+   "Tam Lap",
+   "Binh Duong",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "07J",
+   "",
+   "SPINNMAX TYRES PRIVATE LIMITED",
+   "Chevella",
+   "Telangana",
+   "India",
+   "Active"
+  ],
+  [
+   "07K",
+   "",
+   "NIVLA TRADING",
+   "Klang",
+   "Selangor",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "07L",
+   "",
+   "SHAOWU ZHENGXING WUYI TYRE CO., LTD. FUJIAN",
+   "Shaowu",
+   "Fujian",
+   "China",
+   "Active"
+  ],
+  [
+   "07M",
+   "",
+   "IRIS TBR FACTORY",
+   "Setif",
+   "Setif",
+   "Algeria",
+   "Active"
+  ],
+  [
+   "07N",
+   "",
+   "PERNIAGAAN SEMANGAT MAJU",
+   "Kapar",
+   "Selangor",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "07P",
+   "",
+   "BORRACHAS VIPAL NORDESTE S.A.",
+   "Feira de Santana",
+   "Bahia",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "07R",
+   "",
+   "HAOHUA (VIETNAM) CO., LTD",
+   "Tan Khai Commune",
+   "Dong Nai Province",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "07T",
+   "",
+   "Shandong Youyue Rubber Technology Co.,ltd.",
+   "Weifang",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "07U",
+   "",
+   "HENAN SHUNSU INDUSTRIAL CO., LTD.",
+   "Hebi",
+   "Henan",
+   "China",
+   "Active"
+  ],
+  [
+   "07V",
+   "",
+   "SHANDONG XIDA RUBBER TECHNOLOGY CO., LTD.",
+   "Weifang",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "07W",
+   "",
+   "Sentury Tire Morocco",
+   "Tanger-Assilah",
+   "Commune Aouama Province",
+   "Morocco",
+   "Active"
+  ],
+  [
+   "07X",
+   "",
+   "JIANGSU ANLU CHI TECHNOLOGY CO., LTD.",
+   "Wuxi",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "07Y",
+   "",
+   "QINGDAO XINYUYANG RUBBER CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "080",
+   "",
+   "Armstrong ZE Private Limited",
+   "Gharo",
+   "Sindh",
+   "Pakistan",
+   "Active"
+  ],
+  [
+   "081",
+   "",
+   "PT SAILUN MANUFACTURING INDONESIA",
+   "Demak",
+   "Jawa Tengah",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "082",
+   "",
+   "ZHUCHENG KINGWORLD RUBBER CO., LTD.",
+   "Zhucheng",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "083",
+   "",
+   "SHANDONG GREFORCE TIRE CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "084",
+   "",
+   "HENAN GUILUN TIRE CO.,LTD.",
+   "Xinyang",
+   "Henan",
+   "China",
+   "Active"
+  ],
+  [
+   "085",
+   "",
+   "OVERSEAS STRATEGIC CONSULTANS PRIVATE LIMITED",
+   "New Delhi",
+   "Delhi",
+   "India",
+   "Active"
+  ],
+  [
+   "086",
+   "",
+   "PT MATAHARI TIRE INDONESIA - Kab. Kendal",
+   "Kab. Kendal",
+   "Jawa Tengah",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "087",
+   "",
+   "RIZHAO KAISHUN TIRE CO.,LTD",
+   "Rizhao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "088",
+   "",
+   "TVS SRICHAKRA LIMITED",
+   "Rudrapur",
+   "Uttarakhand",
+   "India",
+   "Active"
+  ],
+  [
+   "08A",
+   "",
+   "JIANXIN TYRE CO., LTD",
+   "Quanzhou",
+   "Fujian",
+   "China",
+   "Active"
+  ],
+  [
+   "08B",
+   "",
+   "EXMILE (JIANGSU) NEW MATERIAL TECHNOLOGY CO., LTD",
+   "Lianyungang",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "08C",
+   "",
+   "IMOTOR INDUSTRY FZE",
+   "Abeokut",
+   "Ogun",
+   "Nigeria",
+   "Active"
+  ],
+  [
+   "08D",
+   "",
+   "QINGDAO HENGXIANG INDUSTRIAL PRODUCTS CO.,LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "08E",
+   "",
+   "N.D. RUBBER PUBLIC COMPANY LIMITED",
+   "Banbueng",
+   "Chonburi",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "08F",
+   "",
+   "ZODO TIRE (CAMBODIA) CO.,LTD.",
+   "Svay Rieng",
+   "Svay Rieng",
+   "Cambodia",
+   "Active"
+  ],
+  [
+   "08H",
+   "",
+   "QINGDAO CAMEL TYRE CO.,LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "08J",
+   "",
+   "HEBEI WANJUN TIRE CO.,LTD",
+   "Xingtai City",
+   "Hebei Province",
+   "China",
+   "Active"
+  ],
+  [
+   "08L",
+   "",
+   "Zhongce Rubber (Jintan) Co., Ltd.",
+   "Changzhou",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "08M",
+   "",
+   "JAMUNA TYRE AND RUBBER INDUSTRIES LIMITED",
+   "Habigonj",
+   "Sylhet",
+   "Bangladesh",
+   "Active"
+  ],
+  [
+   "08N",
+   "",
+   "Goodyear Slovenija, d.o.o.",
+   "Kranj",
+   "N/A",
+   "Slovenia",
+   "Active"
+  ],
+  [
+   "08P",
+   "",
+   "SL&TD Tire Manufacturing S.A.P.I. de C.V.",
+   "Irapuato",
+   "Guanajuato",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "08R",
+   "",
+   "GUBERSAIL TIRE (JIANGSU) CO.,LTD",
+   "Huai'an",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "08T",
+   "",
+   "WANLI TIRE (CAMBODIA) CO., LTD.",
+   "Chantrea District",
+   "Svay Rieng",
+   "Cambodia",
+   "Active"
+  ],
+  [
+   "08U",
+   "",
+   "QINGDAO SUNSON TIRE CO., LTD",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "08V",
+   "",
+   "FIREMAX (CAMBODIA) TIRES CO., LTD.",
+   "Snoul",
+   "Kratie",
+   "Cambodia",
+   "Active"
+  ],
+  [
+   "08W",
+   "",
+   "ACE TYRES PRIVATE LIMITED",
+   "Hyderabad",
+   "Telangana",
+   "India",
+   "Active"
+  ],
+  [
+   "08X",
+   "",
+   "GUANGRAO COUNTY HONGYUAN RUBBER FACTORY",
+   "Dongying",
+   "ShanDong",
+   "China",
+   "Active"
+  ],
+  [
+   "08Y",
+   "",
+   "ZHONGYI RUBBER CO.,LTD",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "090",
+   "",
+   "TVS SRICHAKRA LIMITED (UTTARAKHAND 2)",
+   "Rudrapur",
+   "Uttarakhand",
+   "India",
+   "Active"
+  ],
+  [
+   "091",
+   "",
+   "BAITAI RUBBER RENEWABLE (CAMBODIA) CO., LTD.",
+   "Kampong Som",
+   "Preah Sihanouk",
+   "Cambodia",
+   "Active"
+  ],
+  [
+   "092",
+   "",
+   "GUARDIAN TIRE PTE.LTD",
+   "Singapore",
+   "Singapore",
+   "Singapore",
+   "Active"
+  ],
+  [
+   "093",
+   "",
+   "SPORTRAK TIRE CO ., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "094",
+   "",
+   "CHANGSHA BESTER TECHNOLOGY CO., LTD.",
+   "Changsha",
+   "Hunan",
+   "China",
+   "Active"
+  ],
+  [
+   "095",
+   "",
+   "WUXI BAINIANLING TECHNOLOGY CO., LTD.",
+   "Wuxi",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "096",
+   "",
+   "QINGDAO TECHHERO TIRE CO., LTD.",
+   "Qiingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "098",
+   "",
+   "QINGDAO JUYUAN RUBBER PRODUCT CO.,LTD",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "099",
+   "",
+   "DONGYING FENGDA RUBBER & PLASTIC CO., LTD",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "09A",
+   "",
+   "JIAONAN HUALU RUBBER PRODUCTS CO.,LTD",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "09B",
+   "",
+   "PINGXIANG YANGDE RUBBER PRODUCTS FACTORY",
+   "Xingtai",
+   "Hebei",
+   "China",
+   "Active"
+  ],
+  [
+   "09C",
+   "",
+   "SUNRICH TYRE & AUTO PRODUCTS SDN BHD",
+   "Seremban",
+   "Negeri Sembilan Darul Khusus",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "09D",
+   "",
+   "LANZHOU JINGANG TYRE CO., LTD",
+   "Lanzhou",
+   "Gansu",
+   "China",
+   "Active"
+  ],
+  [
+   "09E",
+   "",
+   "Airless Tire Systems",
+   "Akron",
+   "Oh",
+   "United States (Usa)",
+   "Active"
+  ],
+  [
+   "09F",
+   "",
+   "New tire plant for Test manufacturer",
+   "Chester",
+   "Maharashtra",
+   "Albania",
+   "Active"
+  ],
+  [
+   "09H",
+   "",
+   "JIANGSU FEIBEN TECHNOLOGY CO., LTD.",
+   "Suqian",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "09J",
+   "",
+   "GOLDENSUN TIRE MOROCCO CO., LTD",
+   "Nador",
+   "Nador",
+   "Morocco",
+   "Active"
+  ],
+  [
+   "09K",
+   "",
+   "YOKOHAMA TIRE MANUFACTURING MEXICO SA de CV",
+   "Saltillo",
+   "Coahuila",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "09L",
+   "",
+   "ZHONGCE RUBBER (TIANJIN) CO., LTD.",
+   "Tianjin",
+   "Tianjin",
+   "China",
+   "Active"
+  ],
+  [
+   "09M",
+   "",
+   "SHAFIQ INDUSTRIES",
+   "Karachi",
+   "Sindh",
+   "Pakistan",
+   "Active"
+  ],
+  [
+   "09P",
+   "",
+   "Sailun Xin He Ping (Shenyang) Tire Co., Ltd.",
+   "Shenyang",
+   "Liaoning",
+   "China",
+   "Active"
+  ],
+  [
+   "09R",
+   "",
+   "ROADBOSS TIRE (CAMBODIA)CO .,LTD",
+   "Prey Nob",
+   "Preah Sihanouk",
+   "Cambodia",
+   "Active"
+  ],
+  [
+   "09T",
+   "",
+   "SHANDONG YILUTONG RUBBER TECHNOLOGY CO., LTD",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "09U",
+   "",
+   "Ikon Tyres Ltd",
+   "Vsevolozhsk",
+   "Leningrad region",
+   "Russia",
+   "Active"
+  ],
+  [
+   "09V",
+   "",
+   "QINGDAO XIANGCHUAN TIRE CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "09W",
+   "",
+   "QINGDAO KAITAI INDUSTRY CO.,LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "09X",
+   "",
+   "QINGDAO SHENGYI RUBBER AND PLASTIC PRODUCTS CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "09Y",
+   "",
+   "PRINX TIRE (MALAYSIA) SDN.BHD.",
+   "Kuala Nerang",
+   "Kedah",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "0A0",
+   "",
+   "Qingdao Sailun Tire Co., Ltd.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "0A1",
+   "",
+   "Shams El Sherouk Tyre Co., Ltd.",
+   "Ain Sokhna",
+   "Suez",
+   "Egypt",
+   "Active"
+  ],
+  [
+   "0A2",
+   "",
+   "QINGDAO WEIHONG RUBBER AND PLASTIC CO.,LTD",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "0A3",
+   "",
+   "ISUKA TIRES(QINGDAO)CO.,LTD",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "0A4",
+   "",
+   "ZHONGKE LUXING (SHOUGUANG) RUBBER TECHNOLOGY CO., LTD",
+   "Weifang",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "0A5",
+   "",
+   "DALMIA BHARAT REFRACTORIES LIMITED",
+   "Baleswar",
+   "Odisha",
+   "India",
+   "Active"
+  ],
+  [
+   "0A6",
+   "",
+   "Hwa Fong Rubber Buffalo HFB LLC",
+   "Tonawanda",
+   "New York",
+   "United States (Usa)",
+   "Active"
+  ],
+  [
+   "0A7",
+   "",
+   "NEW CONTINENT (CAMBODIA) TIRE CO., LTD.",
+   "Snoul",
+   "Kratié",
+   "Cambodia",
+   "Active"
+  ],
+  [
+   "0A8",
+   "",
+   "SHANDONG JULAIFU RUBBER TECHNOLOGY CO., LTD.",
+   "Weifang",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "0A9",
+   "",
+   "BLACKSTONE INTERNATIONAL TIRE EUROPE DOO",
+   "Visoko",
+   "Visoko",
+   "Bosnia And Herzegovina",
+   "Active"
+  ],
+  [
+   "0AA",
+   "",
+   "Qingdao Hongyu Rubber Co., Ltd.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "0AB",
+   "",
+   "\"TENGRI TYRES\" LLP",
+   "Saran",
+   "Karaganda Region",
+   "Kazakhstan",
+   "Active"
+  ],
+  [
+   "0AC",
+   "",
+   "Sun Tyre Sdn Bhd",
+   "Seremban",
+   "Negeri Sembilan",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "0AD",
+   "",
+   "QINGDAO VANSTONE INDUSTRY CO., LTD",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "0AE",
+   "",
+   "SHANXI KUNA SITONG RUBBER TECHNOLOGY CO., LTD.",
+   "Changzhi",
+   "Shanxi",
+   "China",
+   "Active"
+  ],
+  [
+   "0AF",
+   "",
+   "ZHEJIANG SHENGJIE RUBBER CO., LTD.",
+   "Lishui",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "0AH",
+   "",
+   "GHANDHARA TYRE AND RUBBER COMPANY LIMITED (GTR)",
+   "Karachi",
+   "Sindh",
+   "Pakistan",
+   "Active"
+  ],
+  [
+   "0AJ",
+   "",
+   "SHANGDONG TRI-ACE TECH CO.,LTD",
+   "Zibo",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "0AK",
+   "",
+   "GUANGRAO RUISHENG TECHNOLOGY RUBBER CO.,LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "0AL",
+   "",
+   "DONGYING YIXIN RUBBER CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "0AM",
+   "",
+   "KUMAT TYRE CO.,LTD",
+   "Xingtai City",
+   "Hebei Province",
+   "China",
+   "Active"
+  ],
+  [
+   "0AN",
+   "",
+   "BILLAS LASTIK VE KAUCUK SAN. TIC. A.S.",
+   "Kemalpasa",
+   "Izmir",
+   "Turkey",
+   "Active"
+  ],
+  [
+   "0AP",
+   "",
+   "QINGDAO YUCHEN HAND TRUCK CO., LTD",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "0AT",
+   "",
+   "XINGTAI YINA BICYCLE CO., LTD.",
+   "Xingtai",
+   "Hebei",
+   "China",
+   "Active"
+  ],
+  [
+   "0AV",
+   "",
+   "Hebei Pan Tuo Rubber Products Co., Ltd.",
+   "Xingtai",
+   "Hebei",
+   "China",
+   "Active"
+  ],
+  [
+   "101",
+   "01",
+   "CHINA MANUFACTURERS ALLIANCE",
+   "Valencia",
+   "California",
+   "United States",
+   "Active"
+  ],
+  [
+   "102",
+   "02",
+   "CAOXIAN GUIDESTONE TYRE CO. LTD.",
+   "Caoxian",
+   "Shandong",
+   "China",
+   "Closed"
+  ],
+  [
+   "103",
+   "03",
+   "TANGSHAN LINGFENG TIRE CO.",
+   "Tangshan",
+   "Hebei",
+   "China",
+   "Active"
+  ],
+  [
+   "104",
+   "04",
+   "WENDENG SANFENG TYRE CO., LTD.",
+   "Wendeng City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "105",
+   "05",
+   "BETICA COMERCIAL IMPORTADORA LTD.",
+   "Santo Andre",
+   "Sao Paulo",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "106",
+   "06",
+   "HIHERO CO., LTD.",
+   "Phatum Thani",
+   "",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "107",
+   "07",
+   "RINALDI S/A INDÚSTRIA DE PNEUMÁTICOS",
+   "Bento Gonçalves",
+   "Rio Grande do Sul",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "108",
+   "08",
+   "AHCOF INTERNATIONAL DEV. CO., LTD.",
+   "Hefei",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "109",
+   "09",
+   "PT. ELANGPERDANA TYRE INDUSTRY",
+   "Citeureup Bogor",
+   "Jawa Barat",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "10A",
+   "0A",
+   "SIAM RUBBER LTD.",
+   "Kranthumban",
+   "Samutsakhon",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "10B",
+   "0B",
+   "BRIDGESTONE AMERICAS TIRE OPERATION, LLC/WILSON",
+   "Wilson",
+   "North Carolina",
+   "United States",
+   "Active"
+  ],
+  [
+   "10C",
+   "0C",
+   "MICHELIN SIAM CO., LTD.",
+   "Sri Racha",
+   "Chonburi",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "10D",
+   "0D",
+   "GUIZHOU TYRE FACTORY",
+   "Giyang",
+   "Guizhou",
+   "China",
+   "Active"
+  ],
+  [
+   "10E",
+   "0E",
+   "BRIDGESTONE/FIRESTONE HISPANIA",
+   "Torrelavega",
+   "",
+   "Spain",
+   "Active"
+  ],
+  [
+   "10F",
+   "0F",
+   "INNOVA RUBBER (BENGBU) CO., LTD.",
+   "Benabu",
+   "Anhui",
+   "China",
+   "Active"
+  ],
+  [
+   "10H",
+   "0H",
+   "TRIANGLE TIRE CO., LTD.",
+   "Weihai",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "10J",
+   "0J",
+   "BEIJING CAPITAL TIRE CO., LTD.",
+   "Fangshan District, Beijing",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "10K",
+   "0K",
+   "GUANGZHOU PEARL RIVER RUBBER TYRE LTD",
+   "Huadu",
+   "Guangzhou",
+   "China",
+   "Active"
+  ],
+  [
+   "10L",
+   "0L",
+   "MRF LIMITED",
+   "Kottayam",
+   "Kerala",
+   "India",
+   "Active"
+  ],
+  [
+   "10M",
+   "0M",
+   "TRANSPORTATION & ENGINEERING CO.",
+   "Smouha, Alexandria",
+   "Province",
+   "Egypt",
+   "Active"
+  ],
+  [
+   "10N",
+   "0N",
+   "ZHCJIANG HUNTINGTON FORLONG RUBBER CO.,LTD.",
+   "Fuyang",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "10P",
+   "0P",
+   "B.F. GOODRICH DO BRAZIL",
+   "Estado De Sao Paulo",
+   "Campinal",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "10R",
+   "0R",
+   "Cheng Shin Rubber (Tianjin Dafeng) Ind. Co. Ltd.",
+   "Tianjin",
+   "Beichen District",
+   "China",
+   "Not stated"
+  ],
+  [
+   "10T",
+   "0T",
+   "SUMITOMO RUBBER (CHANGSHU) CO., LTD.",
+   "Changshu",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "10U",
+   "0U",
+   "SHANDONG LINGLONG TYRE CO., LTD.",
+   "Zhaoyuan City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "10V",
+   "0V",
+   "HANGZHOU QIANTANG YOKOHAMA TIRE CO., LTD. (CHQY)",
+   "Hangzhou",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "10W",
+   "0W",
+   "VORONEZH OPCO",
+   "Voronezh",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "10X",
+   "0X",
+   "ACHIEVOR TIRE",
+   "Minto",
+   "New Brunswick",
+   "Canada",
+   "Active"
+  ],
+  [
+   "10Y",
+   "0Y",
+   "CHINA QINADAO NO. 6 GROUP 6 LTD.",
+   "Qingdao, Shandong",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "110",
+   "10",
+   "NANKANG RUBBER INDUSTRIAL, CO. LTD.",
+   "",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "111",
+   "11",
+   "SHANDONG NEW HAWK TYRE CO., LTD.",
+   "Laizhou",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "112",
+   "12",
+   "QINGDAO SHENGDA TIRE MANUFACTURE CO., LTD.",
+   "Qingdao, Pingdu City",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "113",
+   "13",
+   "QINGDAO HENGDA TIRE CO., LTD.",
+   "Pingdu",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "114",
+   "14",
+   "Cheng Shin Tire (Xiamen) Co., Ltd.",
+   "Xiamen",
+   "Fujian",
+   "China",
+   "Not stated"
+  ],
+  [
+   "115",
+   "15",
+   "SHANDONG JINYU TIRE CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "116",
+   "16",
+   "GOODTIME RUBBER CO, LTD.",
+   "An Tink Village",
+   "Tray Bang District",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "117",
+   "17",
+   "DA TSEN TYRE FACTORY",
+   "Shanghai",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "118",
+   "18",
+   "DONG HAI RUBBER FACTORY",
+   "Shanghai",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "119",
+   "19",
+   "QINGDAO TIANGCHI TIRES CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "11A",
+   "1A",
+   "UNION RUBBER INDUSTRIES COMPANY, LTD.",
+   "Taipei",
+   "Taiwan",
+   "China",
+   "Active"
+  ],
+  [
+   "11B",
+   "1B",
+   "PIRELLI DE VENESUELA, C.A.",
+   "Valencia",
+   "Estado Carabobo",
+   "Venezuela",
+   "Closed"
+  ],
+  [
+   "11C",
+   "1C",
+   "BRIDGESTONE/FIRESTONE NORTH AMERICAN TIRE, LLC.",
+   "Oklahoma City",
+   "Oklahoma",
+   "United States",
+   "Closed"
+  ],
+  [
+   "11D",
+   "1D",
+   "BRIDGESTONE TIRE JAPAN CO., LTD./SHIMONOSEKI",
+   "Shimonoseki",
+   "Yamaguchi",
+   "Japan",
+   "Active"
+  ],
+  [
+   "11E",
+   "1E",
+   "LIANOING TYRE FACTORY",
+   "Longcheng Dis. Chaq Yang",
+   "Liaoning",
+   "China",
+   "Active"
+  ],
+  [
+   "11F",
+   "1F",
+   "INDUSTRIA COLOMBIANA DE LLANTAS",
+   "",
+   "",
+   "Colombia",
+   "Active"
+  ],
+  [
+   "11H",
+   "1H",
+   "CONTINENTAL TIRE ANDINA S.A.",
+   "Cuenca",
+   "Ecuador",
+   "Ecuador",
+   "Active"
+  ],
+  [
+   "11J",
+   "1J",
+   "XIAMEN PETREL RUBBER CO., LTD.",
+   "Xiamen",
+   "Fujian",
+   "China",
+   "Active"
+  ],
+  [
+   "11K",
+   "1K",
+   "DOUBLESTAR DONGFENG TYRE CO., LTD.",
+   "Shiyan",
+   "Hebei",
+   "China",
+   "Active"
+  ],
+  [
+   "11L",
+   "1L",
+   "CONTINENTAL TYRE SA (PTY) LTD",
+   "New Brighton West",
+   "Port Elizabeth",
+   "South Africa",
+   "Active"
+  ],
+  [
+   "11M",
+   "1M",
+   "SHANDONG TAISHAN TYRE FACTORY",
+   "Feicheng City",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "11N",
+   "1N",
+   "TIANJIN KINGS GLORY TIRE CO., LTD",
+   "Xi Qing Qu",
+   "Tianjin",
+   "China",
+   "Active"
+  ],
+  [
+   "11P",
+   "1P",
+   "SHANDONG HAOHUA TIRE CO., LTD.",
+   "Shouguang",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "11R",
+   "1R",
+   "CHAOYANG LONG MARCH TYRE CO., LTD",
+   "Chaoyang",
+   "Liaoning",
+   "China",
+   "Active"
+  ],
+  [
+   "11T",
+   "1T",
+   "BRIDGESTONE TIRE MANUFACTURING VIETNAM LLC/HAI PHONG",
+   "Hai Phong",
+   "Hai An",
+   "Vn",
+   "Active"
+  ],
+  [
+   "11U",
+   "1U",
+   "BRIDGESTONE (TIANJIN) TIRE CO., LTD./TIANJIN",
+   "Tianjin",
+   "Beichen Distric",
+   "China",
+   "Active"
+  ],
+  [
+   "11V",
+   "1V",
+   "THAI BRIDGESTONE CO., LTD. (NONG KHAE PLANT) NONG KHAE",
+   "Nong Khae",
+   "Saraburi",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "11W",
+   "1W",
+   "Goodyear South Asia Tyres Pvt.Ltd.",
+   "Aurangabad",
+   "Maharashtra",
+   "India",
+   "Active"
+  ],
+  [
+   "11X",
+   "1X",
+   "SICHUAN LION TYRE CO., LTD.",
+   "Jianyang",
+   "Sichuan",
+   "China",
+   "Active"
+  ],
+  [
+   "11Y",
+   "1Y",
+   "SHANDONG ZAOZHUANG MINING GROUP ZHONGXING HUITONG TYRE CO., LTD",
+   "Jinan",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "120",
+   "20",
+   "MAXXIS INTERNATIONAL (THAILAND) CO. LTD.",
+   "Amphur Pluakdaeng",
+   "Rayong Province",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "121",
+   "21",
+   "ADKINS TIRE SERVICE",
+   "Oak Hill",
+   "Oh",
+   "United States",
+   "Active"
+  ],
+  [
+   "122",
+   "22",
+   "LLC MICHELIN RUSSIAN TYRE MANUFACTURING CO.",
+   "Davidovo Village",
+   "District Orekhovo-Zuevo",
+   "Russia",
+   "Active"
+  ],
+  [
+   "123",
+   "23",
+   "GITI TIRE (CHONGQING) COMPANY, LTD.",
+   "Jiulongpo",
+   "Chongqing",
+   "China",
+   "Active"
+  ],
+  [
+   "124",
+   "24",
+   "JSC NIZHNEKAMSKSHINA",
+   "Nizhnekamsk",
+   "Tatarstan",
+   "Russia",
+   "Active"
+  ],
+  [
+   "125",
+   "25",
+   "SHANDONG YONGTAI GROUP CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "126",
+   "26",
+   "MRL TYRES, LTD.",
+   "Greater Noida",
+   "Uttar Pradesh",
+   "India",
+   "Active"
+  ],
+  [
+   "127",
+   "27",
+   "KUMHO TIRE CO., INC. PYEONGTAEK FACTORY",
+   "Pyeongtaek",
+   "Gyeonggi-Do",
+   "South Korea",
+   "Active"
+  ],
+  [
+   "128",
+   "28",
+   "QINGDAO HONGGUANG CHEMICAL CO., LTD.",
+   "Jiaozhou",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "129",
+   "29",
+   "GENERAL TRANSWORD MANUFACTURING CJSE",
+   "Yerevan",
+   "",
+   "Armenia",
+   "Active"
+  ],
+  [
+   "12A",
+   "2A",
+   "JIUH SHUENN ENTERPRISE CO., LTD.",
+   "Taichung",
+   "Taiwan",
+   "China",
+   "Active"
+  ],
+  [
+   "12B",
+   "2B",
+   "DEESTONE LTD.",
+   "Oamnoi",
+   "Samutsakom",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "12C",
+   "2C",
+   "BRIDGESTONE AMERICAS TIRE OPERATIONS, LLC/WARREN",
+   "Warren",
+   "Tennessee",
+   "United States",
+   "Active"
+  ],
+  [
+   "12D",
+   "2D",
+   "TOYO TYRE MALAYSIA SILVERSTONE BERHAD",
+   "Taiping",
+   "Perak",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "12E",
+   "2E",
+   "FEDERAL TIRE (JIANGXI) LTD.",
+   "Nanchang",
+   "Jiangxi Province",
+   "China",
+   "Active"
+  ],
+  [
+   "12F",
+   "2F",
+   "INDUSTRIA COLOMBIANA DE LLANTAS S.A.",
+   "Cali-Valle",
+   "",
+   "Colombia",
+   "Active"
+  ],
+  [
+   "12H",
+   "2H",
+   "DEWAN TYRES LTD.",
+   "Meerut",
+   "",
+   "India",
+   "Active"
+  ],
+  [
+   "12J",
+   "2J",
+   "DOUBLE COIN HEAVY-DUTY TIRE CO.",
+   "Shanghai",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "12K",
+   "2K",
+   "LIAONING LONG MARCH TYRE CO., LTD.",
+   "Chaoyang City",
+   "Liaoning Province",
+   "China",
+   "Closed"
+  ],
+  [
+   "12L",
+   "2L",
+   "QINDAGO TONGTAI RUBBGER FACTORY",
+   "Qingdao City",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "12M",
+   "2M",
+   "BRIDGESTONE AMERICAS TIRE OPERATIONS, LLC/BLOOMINGTON",
+   "Normal",
+   "Illinois",
+   "United States",
+   "Active"
+  ],
+  [
+   "12N",
+   "2N",
+   "QINGDAO ZHENHUA BARROW MANUFACTURING CO., LTD.",
+   "Qingdao",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "12P",
+   "2P",
+   "VIETNAM PLANT",
+   "Thuan An District",
+   "Binh Duong",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "12R",
+   "2R",
+   "P.T. BRIDGESTONE TIRE INDONESIA/ KARAWANG",
+   "Karawang",
+   "Teluk Jambe",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "12T",
+   "2T",
+   "WUXI FAR EAST TYRE CO., LTD.",
+   "Wuxi",
+   "Jiangsu",
+   "China",
+   "Closed"
+  ],
+  [
+   "12U",
+   "2U",
+   "Cheng Shin Tire & Rubber (China) Co. Ltd.",
+   "Kunshan",
+   "Jiangsu Province",
+   "China",
+   "Not stated"
+  ],
+  [
+   "12V",
+   "2V",
+   "TRIANGLE (WEIHAI)HUASHENG TYRE CO., LTD.",
+   "Weihai",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "12W",
+   "2W",
+   "YANTAI TYRE FACTORY",
+   "Zhaoyuan",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "12X",
+   "2X",
+   "HANKOOK TIRE HUNGARY LTD.",
+   "Racalmas",
+   "",
+   "Hungary",
+   "Active"
+  ],
+  [
+   "12Y",
+   "2Y",
+   "YUNNAN TIRE FACTORY",
+   "Kunming Yunnan Province",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "130",
+   "30",
+   "COMMERCIAL TIRE SERVICE CO., INC.",
+   "Dublin",
+   "Oh",
+   "United States",
+   "Closed"
+  ],
+  [
+   "131",
+   "31",
+   "BRIDGESTONE (WUXI) TIRE CO. LTD./WUXI",
+   "Wuxi",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "132",
+   "32",
+   "BRIDGESTONE TIRE MANUFACTURING THAILAND CHONBURI",
+   "Amphur Panthong",
+   "Chonburi",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "133",
+   "33",
+   "SICHUAN TYRE & RUBBER CO., LTD.",
+   "Chengdu",
+   "Sichuan",
+   "China",
+   "Active"
+  ],
+  [
+   "134",
+   "34",
+   "QINGDAO DALU PLASTIC CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "135",
+   "35",
+   "TRELLEBORG LANKA (PVT) LTD.",
+   "Sapugaskanda, Makola",
+   "Wp",
+   "Sri Lanka",
+   "Active"
+  ],
+  [
+   "136",
+   "36",
+   "MIDLAND SPECIALTY TIRE CO., LTD.",
+   "Xuzhou",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "137",
+   "37",
+   "ZAO CONTINENTAL TIRES OF MOSCOW",
+   "Moscow",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "138",
+   "38",
+   "QINGDAO TENGJIANG TYRE CO., LTD.",
+   "Pingdu",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "139",
+   "39",
+   "QINGDAO FUYUAN TYRE CO., LTD.",
+   "Pingdu City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "13A",
+   "3A",
+   "GITI TIRE(HUALIN) COMPANY,LTD.",
+   "Mudanjiang",
+   "Heilongjiang Province",
+   "China",
+   "Active"
+  ],
+  [
+   "13B",
+   "3B",
+   "TIANJIN UNITED TIRE AND RUBBER INTERNATIONAL CO., LTD",
+   "Tianjin",
+   "Tianjin",
+   "China",
+   "Active"
+  ],
+  [
+   "13C",
+   "3C",
+   "GTY TIRE CO., MT. VERNON PLANT",
+   "Mt. Vernon",
+   "Illinois",
+   "United States",
+   "Active"
+  ],
+  [
+   "13D",
+   "3D",
+   "PETROSHINA JOINT-STOCK COMPANY",
+   "Saint-Petersburg",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "13E",
+   "3E",
+   "QINGDAO YELLOWSEA RUBBER CO., LTD.",
+   "Chengyang District, Qingdao",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "13F",
+   "3F",
+   "HEBEI TYRE FACTORY",
+   "Xingtai",
+   "Hebei Province",
+   "China",
+   "Closed"
+  ],
+  [
+   "13H",
+   "3H",
+   "BIRLA TYRES",
+   "Balasore",
+   "Orissa",
+   "India",
+   "Closed"
+  ],
+  [
+   "13J",
+   "3J",
+   "RHODEN (M) SDN BHD",
+   "Port Klang,",
+   "Selangor Darul Ehsan",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "13K",
+   "3K",
+   "MARANGONI TYRE S.P.A.",
+   "Anagni",
+   "Frosinone",
+   "Italy",
+   "Active"
+  ],
+  [
+   "13L",
+   "3L",
+   "MICHELIN SIAM CO., LTD.",
+   "Nongkae",
+   "Saraburi",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "13M",
+   "3M",
+   "RIDGESTONE AMERICAS TIRE OPERATIONS, LLC/BLOOMINGTON",
+   "Normal",
+   "Illinois",
+   "United States",
+   "Active"
+  ],
+  [
+   "13N",
+   "3N",
+   "CHONGQING JINDUN RUBBER PRODUCTS CO., LTD.",
+   "Chongqing",
+   "Chongqing",
+   "China",
+   "Active"
+  ],
+  [
+   "13P",
+   "3P",
+   "HWA FONG RUBBER (THAILAND) CO., LTD",
+   "Banqpoo Industrial Estate",
+   "Samutprakarn",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "13R",
+   "3R",
+   "SOCIEDADE MICHELIN DE PARTICIPACOES INDUSTRIA A E COMERCIO LTDA - UNDIDADE ITATIAIA",
+   "Itatiaia",
+   "Rio De Janeiro",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "13T",
+   "3T",
+   "PT MEGA SAFE TYRE INDUSTRY",
+   "Salatiga",
+   "Jawa Tengah",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "13U",
+   "3U",
+   "SPECIALTY TIRES OF AMERICA (TENNESSEE) INC.",
+   "Unicoi",
+   "Tennessee",
+   "United States",
+   "Active"
+  ],
+  [
+   "13V",
+   "3V",
+   "BALKRISHNA INDUSTRIES LTD",
+   "Waluj",
+   "Aurangadad",
+   "India",
+   "Active"
+  ],
+  [
+   "13W",
+   "3W",
+   "SHANDONG QI XIA TIRE FACTORY",
+   "Qi Xia",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "13X",
+   "3X",
+   "TIANJIN TYRE & RUBBER INDUSTRY CO., LTD.",
+   "Tianjin",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "13Y",
+   "3Y",
+   "BRIDGESTONE POZNAN SP.Z.O.O.(POLAND)POZNAN",
+   "Poznan",
+   "Poznan",
+   "Poland",
+   "Active"
+  ],
+  [
+   "140",
+   "40",
+   "SUPERKING MFRS.(TYRE) PVT.LTD.",
+   "Ghaziabad",
+   "U.P.",
+   "India",
+   "Active"
+  ],
+  [
+   "141",
+   "41",
+   "METRO TYRES OF NORTH AMERICA",
+   "Ludhiana",
+   "Punjab",
+   "India",
+   "Active"
+  ],
+  [
+   "142",
+   "42",
+   "XUZHOU HANDBAND TIRE CO., LTD.",
+   "Xuzhou",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "143",
+   "43",
+   "KYOTO JAPAN TIRE CORP. LTD.",
+   "Beijing",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "144",
+   "44",
+   "QINGDAO XINGHUA GROUP CO., LTD.",
+   "Jiaonan",
+   "Shandong",
+   "China",
+   "Closed"
+  ],
+  [
+   "145",
+   "45",
+   "JISNG XI CHARIOT TYRE CO., LTD.",
+   "De An",
+   "Jiang Xi",
+   "China",
+   "Active"
+  ],
+  [
+   "146",
+   "46",
+   "CONTINENTAL SIME TYRES SDN BHD. DMIB BERHAD",
+   "46050 Petaling Jaya",
+   "Selangor",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "147",
+   "47",
+   "YOKOHAMA TIRE MANUFACTURING (THAILAND) CO., LTD.",
+   "Amata City Industrial Park",
+   "Amphur Pluakdang",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "148",
+   "48",
+   "KOLSAN KOCAELI LASTIK SANAYI A.S.",
+   "Kocaeli",
+   "Izmit",
+   "Turkey",
+   "Active"
+  ],
+  [
+   "149",
+   "49",
+   "LAIZHOU LU QING RUBBER INDUSTRY CO., LTD.",
+   "Laizhou",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "14A",
+   "4A",
+   "VEE RUBBER COMPANY, LTD.",
+   "",
+   "",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "14B",
+   "4B",
+   "GOODYEAR CANADA, INC.",
+   "Napanee",
+   "Ontario",
+   "Canada",
+   "Active"
+  ],
+  [
+   "14C",
+   "4C",
+   "SOUTH PACIFIC TYRES",
+   "Somerton",
+   "Victoria",
+   "Austrailia",
+   "Active"
+  ],
+  [
+   "14D",
+   "4D",
+   "BRIDGESTONE AMERICAS TIRE OPERATION, LLC/WARREN",
+   "Warren",
+   "Tennessee",
+   "United States",
+   "Active"
+  ],
+  [
+   "14E",
+   "4E",
+   "ANHUI KAIYUAN TIRE CO., LTD.",
+   "Hefei",
+   "Anhui",
+   "China",
+   "Active"
+  ],
+  [
+   "14F",
+   "4F",
+   "Compañia Hulera Tornel, S.A. de C.V. (PLANT #4)",
+   "Tultitlan",
+   "Edo. de Mexico",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "14H",
+   "4H",
+   "SOUTH CHINA TIRE & RUBBER COMPANY, LTD.",
+   "Panyu",
+   "Guangzhou",
+   "China",
+   "Active"
+  ],
+  [
+   "14J",
+   "4J",
+   "SVERDLOVSK TIRE MAKING WORKS",
+   "",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "14K",
+   "4K",
+   "TIANJIN TYRE MANFACTURING PLANT",
+   "Tianjin",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "14L",
+   "4L",
+   "CARLISLE TIRE & RUBBER CO., LTD",
+   "Bu Ji Town",
+   "Shenzhen",
+   "China",
+   "Active"
+  ],
+  [
+   "14M",
+   "4M",
+   "MICHELIN NORTH AMERICA, INC.",
+   "Greenville",
+   "South Carolina",
+   "United States",
+   "Active"
+  ],
+  [
+   "14N",
+   "4N",
+   "HWA FONG RUBBER CO.(SUZHOU) CO. LTD.",
+   "Changshu",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "14P",
+   "4P",
+   "PT SURYARAYA RUBBERINDO INDUSTRIES",
+   "Cileungsi, Bogor",
+   "",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "14R",
+   "4R",
+   "RUMAGUMA A.D.",
+   "Belgrade",
+   "",
+   "Serbia",
+   "Active"
+  ],
+  [
+   "14T",
+   "4T",
+   "NANJING KUMHO TIRE CO., LTD.",
+   "Nanjing",
+   "Jiangsoo",
+   "China",
+   "Active"
+  ],
+  [
+   "14U",
+   "4U",
+   "YOKOHAMA TIRE PHILIPPINES INC.",
+   "Clark Field",
+   "Pampanga",
+   "Philippines",
+   "Active"
+  ],
+  [
+   "14V",
+   "4V",
+   "AEOLUS TYRE(TAIYUAN) CO., LTD.",
+   "Taiyuan",
+   "Shanxi",
+   "China",
+   "Active"
+  ],
+  [
+   "14W",
+   "4W",
+   "BRIDGESTONE ACC INDIA LTD./MADHYA PRADESH",
+   "Madhya Pradesh",
+   "Dhar",
+   "India",
+   "Active"
+  ],
+  [
+   "14X",
+   "4X",
+   "SUPER EAST INDUSTRIAL COMPANY, LTD.",
+   "Peitsun Yung Ching Hiang",
+   "Chang-Hwa",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "14Y",
+   "4Y",
+   "PRINX CHENGSHAN (SHANDONG) TIRE COMPANY LTD.",
+   "Rongcheng",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "150",
+   "50",
+   "SHANDONG SHENGTAI RUBBER GROUP CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Closed"
+  ],
+  [
+   "151",
+   "51",
+   "PIRELLI TYRE CO. LTD.",
+   "Yanzhou",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "152",
+   "52",
+   "QINGDAO AONUO TYRE CO., LTD.",
+   "Pingdu City, Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "153",
+   "53",
+   "SAILUN GROUP CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "154",
+   "54",
+   "MITAS A.S.",
+   "Cz-76531 Otrokovice",
+   "",
+   "Czech Republic",
+   "Active"
+  ],
+  [
+   "155",
+   "55",
+   "QINGDAO YELLOWSEA TIRE CO., LTD.",
+   "Jiaozhou",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "156",
+   "56",
+   "QINGDAO QIHANG TYRE CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "157",
+   "57",
+   "HWA FONG RUBBER (THAILAND) PUBLIC COMPANY LIMITED",
+   "Muang",
+   "Samutrakan",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "158",
+   "58",
+   "ZHEJIANG QINGDA RUBBER CO., LTD.",
+   "Yongkang City",
+   "Zhejiang Province",
+   "China",
+   "Active"
+  ],
+  [
+   "159",
+   "59",
+   "S.R. TYRE COMPANY LTD.",
+   "Amphur Srimahosod",
+   "Prachinburi",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "15A",
+   "5A",
+   "VEE RUBBER INTERNATIONAL COMPANY, LTD.",
+   "",
+   "",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "15B",
+   "5B",
+   "TIANJIN CENTURY RUBBER CO., LTD.",
+   "Tianjin",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "15C",
+   "5C",
+   "BRIDGESTONE HISPANIA S.A./BILBAO",
+   "Bilbao",
+   "Basauri/Vizcaya",
+   "Spain",
+   "Active"
+  ],
+  [
+   "15D",
+   "5D",
+   "BRIDGESTONE AMERICAS TIRE OPERATIONS, LLC/WARREN",
+   "Warren",
+   "Tennessee",
+   "United States",
+   "Active"
+  ],
+  [
+   "15E",
+   "5E",
+   "MANFACTURE FRANCAISE DES PNEUMATIQUES MICHELIN",
+   "Le Puy En Velay",
+   "",
+   "France",
+   "Active"
+  ],
+  [
+   "15F",
+   "5F",
+   "Compañia Hulera Tornel, S.A. de C.V. (PLANT #2)",
+   "Ciudad de Mexico",
+   "Mexico",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "15H",
+   "5H",
+   "DEERUBBER CO., LTD",
+   "Oammol",
+   "Samutsakorn",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "15J",
+   "5J",
+   "SHANGHAI DA FU RUBBER PLANT",
+   "Shanghai",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "15K",
+   "5K",
+   "PT MULTISTRADA ARAH SARANA TBK",
+   "Bekasi",
+   "Jawa Barat",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "15L",
+   "5L",
+   "GUILIN SOUTH RUBBER INTERN'L CORP.",
+   "Guilin",
+   "Guangxi",
+   "China",
+   "Active"
+  ],
+  [
+   "15M",
+   "5M",
+   "HANKOOK TIRE KUMSAN PLANT",
+   "Kumsan Kun",
+   "Chung Chong Nam Do",
+   "Korea",
+   "Active"
+  ],
+  [
+   "15N",
+   "5N",
+   "CHENG SHIN RUBBER (VIETNAM) IND. CO. LTD.",
+   "Dongnai",
+   "Dongnai",
+   "Vietnam",
+   "Not stated"
+  ],
+  [
+   "15P",
+   "5P",
+   "BALKRISHNA INDUSTRIES LTD.(UNIT:BALKRISHNA TYRES)",
+   "Chopanki,Bhiwadi Ii",
+   "Dist.Alwar(Rajasthan)",
+   "India",
+   "Active"
+  ],
+  [
+   "15R",
+   "5R",
+   "FALCON TYRES LTD",
+   "Mysore",
+   "",
+   "India",
+   "Active"
+  ],
+  [
+   "15T",
+   "5T",
+   "BRIDGESTONE DO BRASIL INDUSTRIA E COMERCIO LTDA/SAO",
+   "Santo Andre",
+   "Sao Paulo",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "15U",
+   "5U",
+   "JIANGSU FEICHI CO., LTD.",
+   "Yancheng",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "15V",
+   "5V",
+   "SOCIETE DE DEV MECANIQUE-SODEMECA",
+   "Noyelles-Les Seclin",
+   "Wattignies",
+   "France",
+   "Active"
+  ],
+  [
+   "15W",
+   "5W",
+   "GITI TIRE (FUJIAN) COMPANY, LTD.",
+   "Putian",
+   "Fujian Province",
+   "China",
+   "Active"
+  ],
+  [
+   "15X",
+   "5X",
+   "AEOLUS TYRE CO., LTD.",
+   "Jiaozuo",
+   "Henan",
+   "China",
+   "Active"
+  ],
+  [
+   "15Y",
+   "5Y",
+   "TIANJIN WANDA TYRE GROUP CO., LTD.",
+   "Yixingbu Town, Beichen Dist.",
+   "Tianjin",
+   "China",
+   "Active"
+  ],
+  [
+   "160",
+   "60",
+   "Vsevolozhsk",
+   "Vsevolozhsk",
+   "Leningrad",
+   "Russia",
+   "Active"
+  ],
+  [
+   "161",
+   "61",
+   "EU-RETEC (PVT.) LTD.",
+   "Nagoda",
+   "Kalutara",
+   "Sri Lanka",
+   "Active"
+  ],
+  [
+   "162",
+   "62",
+   "CHINA RUIAN LIWANG TYRE MANUFACTORY CO., LTD.",
+   "Ruian",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "163",
+   "63",
+   "ZHCJIANG HUNTINGTON BULL RUBBER CO., LTD.",
+   "Fuyang",
+   "Zhejian",
+   "China",
+   "Active"
+  ],
+  [
+   "164",
+   "64",
+   "HORIZON-ADDIS TYRE SHARE COMPANY",
+   "Addis Ababa",
+   "",
+   "Ethiopia",
+   "Active"
+  ],
+  [
+   "165",
+   "65",
+   "CONTINENTAL DO BRASIL PRODUTOS AUTOMOTIVOS LTDA.",
+   "Camacari",
+   "",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "166",
+   "66",
+   "XINGYUAN TIRE GROUP CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "167",
+   "67",
+   "ANLAS LASTIK SANAYI VE TICARET A.S.",
+   "Duzce",
+   "",
+   "Turkey",
+   "Active"
+  ],
+  [
+   "168",
+   "68",
+   "GUMONDER INDUSTRIAL CORP.",
+   "Jyi Jyi Town",
+   "Nan Tou Hsien",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "169",
+   "69",
+   "QINGDAO XIYINGMEN DOUBLE CAMEL TYRE CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "16A",
+   "6A",
+   "ZODO TIRE CO., LIMITED (previously SHANDONG KAIXUAN RUBBER CO., LTD.)",
+   "Heze",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "16B",
+   "6B",
+   "MT. VERNON PLANT OF GENERAL TIRE, INC.",
+   "Mt. Vernon",
+   "Illinois",
+   "United States",
+   "Active"
+  ],
+  [
+   "16C",
+   "6C",
+   "BRIDGESTONE HISPANIA, S.A./BURGOS",
+   "Burgos",
+   "Burgos",
+   "Spain",
+   "Active"
+  ],
+  [
+   "16D",
+   "6D",
+   "HENAN TYRE PLANT",
+   "Jiaozuo",
+   "Hena Province",
+   "China",
+   "Active"
+  ],
+  [
+   "16E",
+   "6E",
+   "DOUBLE HAPPINESS TYRE IND. CORP., LTD.",
+   "Taiyuan",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "16F",
+   "6F",
+   "CIA HULERA TORNEL",
+   "Apartado Postal 16-020",
+   "Azcapotzalco",
+   "Mexico",
+   "Closed"
+  ],
+  [
+   "16H",
+   "6H",
+   "TVS SRICHAKRA LTD.",
+   "Madurai District",
+   "Tamilnadu",
+   "India",
+   "Active"
+  ],
+  [
+   "16J",
+   "6J",
+   "MITAS A.S.",
+   "Zlin",
+   "",
+   "Czech Republic",
+   "Active"
+  ],
+  [
+   "16K",
+   "6K",
+   "CEAT LIMITED",
+   "Aurangabad",
+   "Maharashtra",
+   "India",
+   "Active"
+  ],
+  [
+   "16L",
+   "6L",
+   "MABOR DE MOCAMBIQUE, SARL",
+   "Maputo",
+   "",
+   "Mozambique",
+   "Active"
+  ],
+  [
+   "16M",
+   "6M",
+   "VEE TYRE AND RUBBER CO., LTD.",
+   "Tambol Chaimongkol, Amphur Mua",
+   "Samutsakorn",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "16N",
+   "6N",
+   "MEWAT TIRE & RUBBER (P) LTD.",
+   "Alwar",
+   "Rajasthan",
+   "India",
+   "Active"
+  ],
+  [
+   "16P",
+   "6P",
+   "AMTEL KIROV",
+   "Kirov",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "16R",
+   "6R",
+   "QINGDAO ZHENHUA INDUSTRIAL GROUP CORPORATION",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "16T",
+   "6T",
+   "BRIDGESTONE/FIRESTONE DO BRAZIL INDUSTRIAL E COMERCIO LTDA.",
+   "Santo Andre-Est.",
+   "Sao Paulo",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "16U",
+   "6U",
+   "Manufacture Francaise Des Pneumatiques MICHELIN",
+   "Clermont-Ferrand",
+   "Auvergne-Rhône-Alpes",
+   "France",
+   "Active"
+  ],
+  [
+   "16W",
+   "6W",
+   "HWA FONG RUBBER (CHINA) CO., LTD.",
+   "Changshu Jiang Su",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "16X",
+   "6X",
+   "GUANGZHOU BOLEX TYRE LTD.",
+   "Huada City",
+   "Guangdong",
+   "China",
+   "Active"
+  ],
+  [
+   "16Y",
+   "6Y",
+   "CONTINENTAL MATADOR RUBBER, S.R.O.",
+   "Púchov",
+   "Trencin",
+   "Slovakia",
+   "Active"
+  ],
+  [
+   "170",
+   "70",
+   "SHANDONG SANTAI RUBBER CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "171",
+   "71",
+   "OLIVER RUBBER COMPANY",
+   "Athens",
+   "Ga",
+   "United States",
+   "Closed"
+  ],
+  [
+   "172",
+   "72",
+   "LAIZHOU XIONGYING RUBBER IND., CO. LTD.",
+   "Laizhou",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "173",
+   "73",
+   "TOYO TIRE NORTH AMERICA MANUFACTURING, INC.",
+   "White",
+   "Ga",
+   "United States",
+   "Active"
+  ],
+  [
+   "174",
+   "74",
+   "TIANCI CHEMICAL CO. LTD.",
+   "Shandong",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "175",
+   "75",
+   "SHANDONG ZHONGCHE TYRE CO., LTD.",
+   "Shandong",
+   "Shouguang",
+   "China",
+   "Active"
+  ],
+  [
+   "176",
+   "76",
+   "DOUBLE COIN GROUP RUGAO TYRE CO., LTD.",
+   "Rugao",
+   "Jiang Su",
+   "China",
+   "Active"
+  ],
+  [
+   "177",
+   "77",
+   "SHANDONG CHENGSHAN TYRE CO.",
+   "Rongcheng",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "178",
+   "78",
+   "XINTAI RUBBER CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "179",
+   "79",
+   "CHENG SHIN-PETREL TIRE (XIAMEN) CO., LTD. XIAMEN BRANCH",
+   "Xiamen",
+   "Fujian",
+   "China",
+   "Active"
+  ],
+  [
+   "17A",
+   "7A",
+   "KINGS TIRE INDUSTRIES CO., LTD.",
+   "Chaughua",
+   "Taiwan",
+   "China",
+   "Active"
+  ],
+  [
+   "17B",
+   "7B",
+   "ZODO TIRE CO., LIMITED",
+   "Heze",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "17C",
+   "7C",
+   "LAIWU SUNSHINE TYRE CO., LTD.",
+   "Laiwu",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "17D",
+   "7D",
+   "HANGZHOU GENERAL RUBBER FACTORY",
+   "Hangzhou",
+   "",
+   "China",
+   "Closed"
+  ],
+  [
+   "17E",
+   "7E",
+   "LIMA CAUCHO S.A.",
+   "",
+   "",
+   "Peru",
+   "Active"
+  ],
+  [
+   "17F",
+   "7F",
+   "Cheng Shin Rubber (Xiamen) Ind. Ltd.",
+   "Xiamen",
+   "Jimei",
+   "China",
+   "Not stated"
+  ],
+  [
+   "17H",
+   "7H",
+   "SHENYANG SUNSHINE TYRE CO., LTD.",
+   "Shenyang",
+   "Liaoning Province",
+   "China",
+   "Active"
+  ],
+  [
+   "17J",
+   "7J",
+   "NORTHWEST GENERAL RUBBER FACTORY",
+   "Xianyang City",
+   "Shaanxi",
+   "China",
+   "Active"
+  ],
+  [
+   "17K",
+   "7K",
+   "FRIENDSHIP RUBBER INDUSTRY (M) SDN BHD",
+   "Selangor Darul Ehsan",
+   "",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "17L",
+   "7L",
+   "GOODYEAR TIRE & RUBBER CO.",
+   "Shahekou District",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "17M",
+   "7M",
+   "WOLBER S.A.",
+   "",
+   "",
+   "France",
+   "Active"
+  ],
+  [
+   "17N",
+   "7N",
+   "HAOHUA SOUTH (GUILIN) RUBBER, LTD.",
+   "Guilin",
+   "Guangxi",
+   "China",
+   "Active"
+  ],
+  [
+   "17P",
+   "7P",
+   "WEIFANG YUELONG RUBBER CO., LTD.",
+   "Shouguang",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "17R",
+   "7R",
+   "MRF LIMITED",
+   "Pondicherry, Union Territory",
+   "Pondicherry",
+   "India",
+   "Active"
+  ],
+  [
+   "17T",
+   "7T",
+   "P.T. SUMI RUBBER INDONESIA",
+   "Cikampek, Jawa Barat",
+   "",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "17U",
+   "7U",
+   "NANJING KUMHO TIRE CO., LTD TBR",
+   "Nanjing",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "17V",
+   "7V",
+   "Michelin Shenyang Tire Co., Ltd",
+   "Shenyang",
+   "Liaoning",
+   "China",
+   "Active"
+  ],
+  [
+   "17W",
+   "7W",
+   "SIAMESE TYRE CO., LTD.",
+   "Minburi (Sansaeb)",
+   "Bangkok",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "17X",
+   "7X",
+   "BRIDGESTONE/AMERICAS TIRE OPERATIONS, LLC AIKEN",
+   "Graniteville",
+   "Sc",
+   "United States",
+   "Active"
+  ],
+  [
+   "17Y",
+   "7Y",
+   "KENDA RUBBER (CHINA) CO., LTD.",
+   "Kun Shan",
+   "Jiang Su",
+   "China",
+   "Active"
+  ],
+  [
+   "180",
+   "80",
+   "SHANDONG WANDA BOTO TYRE CO., LTD.",
+   "Dongying City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "181",
+   "81",
+   "CHENGDE XIANGYAN TYRE CORP. LTD.",
+   "Pingquan",
+   "Hebei",
+   "China",
+   "Active"
+  ],
+  [
+   "182",
+   "82",
+   "EUDEMON TIRE CO.,LTD",
+   "Zibo",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "183",
+   "83",
+   "SHANDONG HENGFENG RUBBER & PLASTIC CO., LTD.",
+   "Guangrao County",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "184",
+   "84",
+   "SHIFENG JUXING TIRE CO., LTD.",
+   "Gaotang",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "185",
+   "85",
+   "CHONGQING WEIXING RUBBER INDUSTRY CO., LTD.",
+   "Chongqing",
+   "Chongqing",
+   "China",
+   "Active"
+  ],
+  [
+   "186",
+   "86",
+   "TECHNIC TYRE",
+   "Burton-On-Trent",
+   "Staffordshire",
+   "United Kingdom",
+   "Active"
+  ],
+  [
+   "187",
+   "87",
+   "SHANDONG HONGSHENG RUBBER CO., LTD.",
+   "Guangrao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "188",
+   "88",
+   "QINGDAO OIZHOU RUBBER CO., LTD.",
+   "Pingdu,Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "189",
+   "89",
+   "MONOTONA TYRES LTD",
+   "Taluka Wad Dist Thane",
+   "Maharastra",
+   "India",
+   "Active"
+  ],
+  [
+   "18A",
+   "8A",
+   "ZAPATER DIAZ I.C.S.A. TIRE CO.",
+   "Munro Prov. De Buenos Aires",
+   "",
+   "Argentina",
+   "Active"
+  ],
+  [
+   "18B",
+   "8B",
+   "BRIDGESTONE AMERICAS TIRE OPERATIONS, LLC/DES MOINES",
+   "Des Moines",
+   "Iowa",
+   "United States",
+   "Active"
+  ],
+  [
+   "18C",
+   "8C",
+   "BRIDGESTONE FRANCE S.A.S./BETHUNE",
+   "Bethune",
+   "Pas-De-Calais",
+   "France",
+   "Active"
+  ],
+  [
+   "18D",
+   "8D",
+   "Zhongce Rubber (Jiande) Co., Ltd.",
+   "Hangzhou",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "18E",
+   "8E",
+   "NEXEN TIRE CORPORATION",
+   "Kyungsangnam-Do",
+   "",
+   "South Korea",
+   "Active"
+  ],
+  [
+   "18F",
+   "8F",
+   "Apollo Tyres Ltd - Limda",
+   "Vadodara District",
+   "Gujarat",
+   "India",
+   "Not stated"
+  ],
+  [
+   "18H",
+   "8H",
+   "CEAT LTD.",
+   "Nasik",
+   "Maharashtra",
+   "India",
+   "Active"
+  ],
+  [
+   "18J",
+   "8J",
+   "JIANGSU HANTA TIRE BIAS PLANT",
+   "Huaiyin",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "18K",
+   "8K",
+   "CHONGGING TYRE CHEIF FACTORY",
+   "Chongqing",
+   "Sichuan",
+   "China",
+   "Active"
+  ],
+  [
+   "18L",
+   "8L",
+   "CARLISLE TIRE & RUBBER CO.",
+   "Point Fortin",
+   "",
+   "Trinidad",
+   "Closed"
+  ],
+  [
+   "18M",
+   "8M",
+   "DEESTONE INTERNATIONAL CO., LTD.",
+   "Nakornpratom",
+   "",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "18P",
+   "8P",
+   "RONGCHENG FENGFU RUBBER CO., LTD.",
+   "Rongcheng City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "18R",
+   "8R",
+   "Qingdao Doublestar Tire Industrial Co., Ltd.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "18T",
+   "8T",
+   "BRIDGESTONE SOUTH AFRICA HOLDINGS (PTY) LTD/BRITS",
+   "Brits",
+   "North West",
+   "South Africa",
+   "Active"
+  ],
+  [
+   "18U",
+   "8U",
+   "PIRELLI TYRE S.P.A",
+   "Bicocca",
+   "Milan",
+   "Italy",
+   "Active"
+  ],
+  [
+   "18V",
+   "8V",
+   "CHINA HUHHOT RUBBER PLANT",
+   "Huhhot",
+   "Inner Mongolia",
+   "China",
+   "Active"
+  ],
+  [
+   "18W",
+   "8W",
+   "YUNNAN RUBBER GROUP IMP & EXP CORP.",
+   "Xingying District Kunming",
+   "Yunnan",
+   "China",
+   "Active"
+  ],
+  [
+   "18X",
+   "8X",
+   "BRIDGESTONE/AMERICAS TIRE OPERATIONS, LLC/AIKEN",
+   "Graniteville",
+   "Sc",
+   "United States",
+   "Active"
+  ],
+  [
+   "18Y",
+   "8Y",
+   "KENDA RUBBER (VIETNAM) CO., LTD",
+   "Ho Nai Ward",
+   "Dong Nai",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "190",
+   "90",
+   "TOYO TIRE (ZHUCHENG) CO., LTD.",
+   "Zhucheng",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "191",
+   "91",
+   "QINGDAO HUATIAN HAND TRUCK CO., LTD",
+   "Jiao Nan Qing Dao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "192",
+   "92",
+   "TENGZHOU BRONCHO TYRE CO., LTD.",
+   "Tengzhou",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "193",
+   "93",
+   "S.C. PIRELLI TYRES ROMANIA S.R.L.",
+   "Slatina",
+   "Olt",
+   "Romania",
+   "Active"
+  ],
+  [
+   "194",
+   "94",
+   "QINGDAO LONGHAI TIRE MANUFACTURING CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "195",
+   "95",
+   "JIANGSU GENERAL SCIENCE TECHNOLOGY CO., LTD.",
+   "Wuxi",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "196",
+   "96",
+   "BRIDGESTONE DO BRASIL INDUSTRIA E COMERCIO LTDA./BAHIA",
+   "Bahia",
+   "Camacari, Bahia",
+   "Brazil",
+   "Closed"
+  ],
+  [
+   "197",
+   "97",
+   "SHANGHAI RHODEN RUBBER CO., LTD.",
+   "Qing Pu District",
+   "Shanghai",
+   "China",
+   "Active"
+  ],
+  [
+   "198",
+   "98",
+   "BRIDGESTONE (HUIZHOU) TIRE CO., LTD/HUIZHOU",
+   "Huizhou",
+   "Guang Dong",
+   "China",
+   "Active"
+  ],
+  [
+   "199",
+   "99",
+   "QINGDAO MALIK INT'L TRADE CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "19A",
+   "9A",
+   "SIEMESE RUBBER CO., LTD",
+   "Minburi",
+   "Bankok",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "19B",
+   "9B",
+   "BRIDGESTONE/FIRESTONE CANADA INC./JOLIETTE",
+   "Joliette",
+   "Quebec",
+   "Canada",
+   "Active"
+  ],
+  [
+   "19C",
+   "9C",
+   "BRIDGESTONE ITALIA S.P.A./BARI",
+   "Bari",
+   "Bari",
+   "Italy",
+   "Active"
+  ],
+  [
+   "19D",
+   "9D",
+   "P.T. INDUSTRI KARET DELI",
+   "Medan",
+   "Sumatera Utara",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "19E",
+   "9E",
+   "FIVE STARS INDUSTRIAL CO., LTD",
+   "",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "19F",
+   "9F",
+   "JK TYRE & INDUSTRIES LTD.",
+   "Banmore",
+   "Madya Pradesh",
+   "India",
+   "Active"
+  ],
+  [
+   "19H",
+   "9H",
+   "JIANGSU TYRE FACTORY",
+   "Xuzhou",
+   "Jiangsu Province",
+   "China",
+   "Active"
+  ],
+  [
+   "19J",
+   "9J",
+   "GITI GREATWALL TIRE (YINCHUAN) CO. LTD.",
+   "Yinchuan",
+   "Ningxia Hui Autonomous Region",
+   "China",
+   "Active"
+  ],
+  [
+   "19K",
+   "9K",
+   "RONGCHENG GUOTAI TYRE COMPANY, LTD.",
+   "Rongcheng",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "19L",
+   "9L",
+   "MRF LIMITED",
+   "Sadasivaped",
+   "Andhra Pradesh",
+   "India",
+   "Active"
+  ],
+  [
+   "19M",
+   "9M",
+   "Prometeon Tyre Egypt - Alexandria",
+   "Alexandria",
+   "Alexandria",
+   "Egypt",
+   "Active"
+  ],
+  [
+   "19N",
+   "9N",
+   "BALKRISHNA INDUSTRIES LTD.(UNIT.BALKRISHNA TYRES)",
+   "Chopanki,Bhiwadi",
+   "Alwar,Rajasthan",
+   "India",
+   "Active"
+  ],
+  [
+   "19P",
+   "9P",
+   "QINGDAO TAIFA GROUP CP., LTD.",
+   "Jionan",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "19R",
+   "9R",
+   "QINGDAO JIAONAN ZHONGTAI TYRE CO., LTD.",
+   "Qingdao Jiaonan City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "19T",
+   "9T",
+   "CHENG SHIN TIRE & RUBBER (CHINA) CO., LTD.",
+   "Kunshan",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "19U",
+   "9U",
+   "GITI TIRE(ANHUI) COMPANY, LTD.",
+   "Hefei",
+   "Anhui Province",
+   "China",
+   "Active"
+  ],
+  [
+   "19V",
+   "9V",
+   "GENERAL TYRE EAST AFRICA, LTD.",
+   "Arusha",
+   "Tanzania",
+   "Africa",
+   "Active"
+  ],
+  [
+   "19W",
+   "9W",
+   "SHANDONG HUGERUBBER CO., LTD.",
+   "Guangrao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "19X",
+   "9X",
+   "BRIDGESTONE AMERICAS TIRE OPERATIONS. LLC/ALKEN",
+   "Graniteville",
+   "Sc",
+   "United States",
+   "Active"
+  ],
+  [
+   "19Y",
+   "9Y",
+   "LANXI FUCHUEN RUBBER CO., LTD",
+   "Lanxi",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "1A0",
+   "A0",
+   "QINGDAO LIANYI TYRES CO., LTD.",
+   "Pingdu",
+   "Shandong",
+   "China",
+   "Closed"
+  ],
+  [
+   "1A1",
+   "A1",
+   "PNEUMATICS MICHELIN",
+   "86-Potiers",
+   "",
+   "France",
+   "Active"
+  ],
+  [
+   "1A2",
+   "A2",
+   "QINGDAO GREAT RUBBER FACTORY",
+   "Pingdu",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1A3",
+   "A3",
+   "GENERAL TIRE & RUBBER CO.",
+   "Mount Vernon",
+   "Illinois",
+   "United States",
+   "Active"
+  ],
+  [
+   "1A4",
+   "A4",
+   "HUNG-A CO., LTD.",
+   "Yangsan-Si",
+   "Gyeongsangnam-Do",
+   "South Korea",
+   "Active"
+  ],
+  [
+   "1A5",
+   "A5",
+   "T.C. DEBICA S.A.",
+   "Debica",
+   "",
+   "Poland",
+   "Active"
+  ],
+  [
+   "1A6",
+   "A6",
+   "APOLLO TYRES LTD",
+   "Trissur",
+   "Kerala",
+   "India",
+   "Not stated"
+  ],
+  [
+   "1A7",
+   "A7",
+   "THAI BRIDGESTONE CO., LTD.(RANGSIT PLANT) RANGSIT",
+   "Rangsit",
+   "Pathumthani",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "1A8",
+   "A8",
+   "P.T. BRIDGESTONE TIRE INDONESIA/BEKASI",
+   "Bekasi",
+   "Jawa Barat",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "1A9",
+   "A9",
+   "GENERAL TIRE CO",
+   "Bryan",
+   "Ohio",
+   "United States",
+   "Closed"
+  ],
+  [
+   "1AA",
+   "AA",
+   "TIANJIN NORMANDY RUBBER CO., LTD.",
+   "Qiao San Dao",
+   "Tianjin",
+   "China",
+   "Active"
+  ],
+  [
+   "1AB",
+   "AB",
+   "WEIFANG RUBBER FACTORY",
+   "Weifang",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1AC",
+   "AC",
+   "SHANDONG HUASHENG RUBBER CO., LTD.",
+   "Dongying City",
+   "Shangdong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1AD",
+   "AD",
+   "SHANDONG YONGFENG TYRES CO., LTD.",
+   "Linyi City",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1AE",
+   "AE",
+   "GENERAL FABRICA ESPANOIA DEL CAUCHO S.A.",
+   "Torrelavego",
+   "Santander",
+   "Spain",
+   "Active"
+  ],
+  [
+   "1AF",
+   "AF",
+   "Continental Mabor",
+   "Lousado",
+   "Porto",
+   "Portugal",
+   "Active"
+  ],
+  [
+   "1AG",
+   "",
+   "Compañia Hulera Tornel, S.A. de C.V. (PLANT #5)",
+   "Ciudad de Mexico",
+   "Mexico",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "1AH",
+   "AH",
+   "SUMITOMO RUBBER AKO LASTIK SANAYI TICARET A.S",
+   "Tuney",
+   "Cankiri",
+   "Turkey",
+   "Active"
+  ],
+  [
+   "1AJ",
+   "AJ",
+   "SHANDONG NEW CONTINENT TIRE CO., LTD.",
+   "Yishui",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1AK",
+   "AK",
+   "QINGDAO FUYINGDA RUBBER CO., LTD.",
+   "Jimo",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1AL",
+   "AL",
+   "SHANDONG DERUTA TYRE TECHNOLOGY CO., LTD.",
+   "Yinan",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1AM",
+   "AM",
+   "QINGDAO LIDINGWEI RUBBER TYRES CO., LTD.",
+   "Linyi City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1AN",
+   "AN",
+   "TERCELO TIRE (QINGZHOU) CO., LTD.",
+   "Weifang",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1AP",
+   "AP",
+   "MICHELIN NORTH AMERICA,INC",
+   "Ardmore",
+   "Oklahoma",
+   "United States",
+   "Active"
+  ],
+  [
+   "1AR",
+   "AR",
+   "O.J.S.C. ORDENS OF LENIN AND OCT REVOL. YAROSLAVL",
+   "Yaroslavl",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1AT",
+   "AT",
+   "COOPER TIRE & RUBBER COMPANY EUROPE, LTD.",
+   "Melksham",
+   "Wiltshire",
+   "England",
+   "Active"
+  ],
+  [
+   "1AU",
+   "AU",
+   "SHANDONG FUTAIER TIRE CO., LTD.",
+   "Linyi",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1AV",
+   "AV",
+   "SHANDONG WOSEN RUBBER CO., LTD.",
+   "Shandong Province",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1AW",
+   "AW",
+   "SAMSON TIRE & RUBBER COMPANY, LTD.",
+   "Tel Aviv",
+   "",
+   "Israel",
+   "Active"
+  ],
+  [
+   "1AX",
+   "AX",
+   "PHOENIX GUMMIWERKE, A. G.",
+   "2000 Hamburg 90",
+   "",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1AY",
+   "AY",
+   "SHANDONG LUHE GROUP GENERAL CO.",
+   "Zhucheng",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1B0",
+   "B0",
+   "SICHUAN YUANXING RUBBER CO., LTD.",
+   "Dayi District",
+   "Sichuan Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1B1",
+   "B1",
+   "MANUFACTURE",
+   "La Rochesur-Yon",
+   "",
+   "France",
+   "Active"
+  ],
+  [
+   "1B2",
+   "B2",
+   "CONTINENTAL SIME TYRE PJ SDN BERHAD",
+   "Selangor Darul Ehsan",
+   "",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "1B3",
+   "B3",
+   "MICHELIN NORTH AMERICA (CANADA), INC.",
+   "Bridgewater",
+   "Nova Scotia",
+   "Canada",
+   "Active"
+  ],
+  [
+   "1B4",
+   "B4",
+   "MICHELIN HUNGARIAN TYRE MANUFACTURE LTD.",
+   "Budapest",
+   "",
+   "Hungary",
+   "Active"
+  ],
+  [
+   "1B5",
+   "B5",
+   "MICHELIN POLSKA S.A.",
+   "Olsztvn",
+   "",
+   "Poland",
+   "Active"
+  ],
+  [
+   "1B6",
+   "B6",
+   "MICHELIN NORTH AMERICA, INC.",
+   "Spartanburg",
+   "South Carolina",
+   "United States",
+   "Active"
+  ],
+  [
+   "1B7",
+   "B7",
+   "MICHELIN NORTH AMERICA, INC.",
+   "Dothan",
+   "Alabama",
+   "United States",
+   "Active"
+  ],
+  [
+   "1B8",
+   "B8",
+   "SOCIEDADE MICHELIN DE PARTICIPACOES, INDUSTRIA E COMERCIO LTDA - UNIDADE CAMPO GRANDE",
+   "Campo Grande",
+   "Rio De Janeiro",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "1B9",
+   "B9",
+   "MICHELIN NORTH AMERICA, INC.",
+   "Lexington",
+   "South Carolina",
+   "United States",
+   "Active"
+  ],
+  [
+   "1BA",
+   "BA",
+   "QINGDAO LONGHUA SPECIAL HAND TRUCK CO., LTD.",
+   "Jiaonan City",
+   "Qingdao, Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1BB",
+   "BB",
+   "CHONGQING HANKOOK TIRE CO., LTD.",
+   "Chongqing City",
+   "Oklahoma Chongqing",
+   "China",
+   "Active"
+  ],
+  [
+   "1BC",
+   "BC",
+   "PT HANKOOK TIRE INDONESIA",
+   "Lippo Cikarang",
+   "Bekasi",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "1BD",
+   "BD",
+   "HUBEI AULICE TYRE CO., LTD.",
+   "Huangshi",
+   "Hubei Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1BE",
+   "BE",
+   "MICHELIN NORTH AMERICA, INC",
+   "Tuscaloosa",
+   "Alabama",
+   "United States",
+   "Active"
+  ],
+  [
+   "1BF",
+   "BF",
+   "MICHELIN NORTH AMERICA, INC",
+   "Woodburn",
+   "Indiana",
+   "United States",
+   "Active"
+  ],
+  [
+   "1BH",
+   "BH",
+   "XUZHOU TONGFEI TYRE CO., LTD.",
+   "Xuzhou City",
+   "Jiangsu Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1BJ",
+   "BJ",
+   "JIANGSU HANKOOK TIRE CO. LTD.",
+   "Huaiyin",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "1BK",
+   "BK",
+   "ANSHAN TYRE CO.,LTD.",
+   "Anshan",
+   "Liaoning",
+   "China",
+   "Active"
+  ],
+  [
+   "1BL",
+   "BL",
+   "CORPORATION FIANCIARA DEL VALLE S.A.",
+   "Cali",
+   "",
+   "Colombia",
+   "Active"
+  ],
+  [
+   "1BM",
+   "BM",
+   "B.F. GOODRICH AUSTRALIA PTY., LTD.",
+   "Campbellifield",
+   "Victoria",
+   "Austrailia",
+   "Active"
+  ],
+  [
+   "1BN",
+   "BN",
+   "SHANDONG JINFU RUBBER TECHNOLOGY CO., LTD.",
+   "Rizhao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1BP",
+   "BP",
+   "SHANDONG YINBAO TYRE GROUP CO., LTD.",
+   "Weifang",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1BR",
+   "BR",
+   "SDF RUBBER CO., LTD.",
+   "Pudong",
+   "Shanghai",
+   "China",
+   "Active"
+  ],
+  [
+   "1BT",
+   "BT",
+   "SHANDONG COCREA TYRE CO., LTD.",
+   "Linyi City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1BU",
+   "BU",
+   "SHOUGUANG FIREMAX TYRE CO., LTD.",
+   "Shouguang",
+   "Shadong",
+   "China",
+   "Active"
+  ],
+  [
+   "1BV",
+   "BV",
+   "INTERNATIONAL RUBBER INDUSTRIES",
+   "Jeffersontown",
+   "Kentucky",
+   "United States",
+   "Active"
+  ],
+  [
+   "1BW",
+   "BW",
+   "THE GATES RUBBER COMPANY",
+   "Denver",
+   "Colorado",
+   "United States",
+   "Active"
+  ],
+  [
+   "1BX",
+   "BX",
+   "THE GATES RUBBER COMAPNY",
+   "Nashville",
+   "Tennessee",
+   "United States",
+   "Active"
+  ],
+  [
+   "1BY",
+   "BY",
+   "THE GATES RUBBER COMPANY",
+   "Littleton",
+   "Colorado",
+   "United States",
+   "Active"
+  ],
+  [
+   "1C0",
+   "C0",
+   "KUMHO TIRE TIANJIN CO., INC.",
+   "Tianjin",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1C1",
+   "C1",
+   "TECHKING TIRES LIMITED",
+   "Shandong",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1C2",
+   "C2",
+   "SHANDONG BAYI TYRE MANUFACTURE CO. LTD.",
+   "Zaozhuang City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1C3",
+   "C3",
+   "MCCREARY TIRE & RUBBER COMPANY",
+   "Baltimore",
+   "Maryland",
+   "United States",
+   "Active"
+  ],
+  [
+   "1C4",
+   "C4",
+   "THE CARLSTAR GROUP LLC",
+   "Clinton",
+   "Tennessee",
+   "United States (Usa)",
+   "Active"
+  ],
+  [
+   "1C5",
+   "C5",
+   "POZNANSKIE ZAKLADY OPON SAMOCHODOWYCH",
+   "Poznan",
+   "",
+   "Poland",
+   "Active"
+  ],
+  [
+   "1C6",
+   "C6",
+   "MITAS, A.S.",
+   "Praha 10 - Svehlova 1900",
+   "",
+   "Czech Republic",
+   "Active"
+  ],
+  [
+   "1C7",
+   "C7",
+   "IRONSIDES TIRE & RUBBER CO.",
+   "Louisville",
+   "Kentucky",
+   "United States",
+   "Active"
+  ],
+  [
+   "1C8",
+   "C8",
+   "BRIDGESTONE AMERICAS TIRE OPERATIONS",
+   "Hsinchu",
+   "Hsinchu",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "1C9",
+   "C9",
+   "SEVEN STAR RUBBER COMPANY, LTD.",
+   "Pin-Tou Hsiand Chang",
+   "Hua",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "1CA",
+   "CA",
+   "THE MOHAWK RUBBER COMPANY",
+   "Akron",
+   "Ohio",
+   "United States",
+   "Active"
+  ],
+  [
+   "1CB",
+   "CB",
+   "THE MOHAWK RUBBER COMPANY",
+   "Helena",
+   "Arkansas",
+   "United States",
+   "Active"
+  ],
+  [
+   "1CC",
+   "CC",
+   "YOKOHAMA TIRE CORPORATION",
+   "Salem",
+   "Virginia",
+   "United States",
+   "Active"
+  ],
+  [
+   "1CD",
+   "CD",
+   "ALLIANCE TIRE & RUBBER COMPANY, LTD.",
+   "Hadera",
+   "",
+   "Israel",
+   "Active"
+  ],
+  [
+   "1CE",
+   "CE",
+   "Breuberg",
+   "Breuberg",
+   "Hesse",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1CF",
+   "CF",
+   "TITAN TIRE CORPORATION",
+   "Des Moines",
+   "Iowa",
+   "United States",
+   "Active"
+  ],
+  [
+   "1CH",
+   "CH",
+   "PIRELLI ARMSTRONG TIRE CORPORATION",
+   "Hanford",
+   "California",
+   "United States",
+   "Closed"
+  ],
+  [
+   "1CJ",
+   "CJ",
+   "INOUE RUBBER CO., LTD.",
+   "Ibi-Gun, Gifu-Pref.",
+   "",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1CK",
+   "CK",
+   "PIRELLI ARMSTRONG TIRE CORPORATION",
+   "Madison",
+   "Tennessee",
+   "United States",
+   "Closed"
+  ],
+  [
+   "1CL",
+   "CL",
+   "INOUE RUBBER VIETNAM CO., LTD.",
+   "Me Linh District",
+   "Vinh Phuc",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "1CM",
+   "CM",
+   "TOYO TYRE MALAYSIA SDN BHD",
+   "Perindustrian Kamunting Raya",
+   "",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "1CN",
+   "CN",
+   "CONTINENTAL FRANCE S.N.C.",
+   "Sarreguemines Cedex",
+   "",
+   "France",
+   "Active"
+  ],
+  [
+   "1CP",
+   "CP",
+   "Continental Reifen Deutschland GmbH",
+   "Korbach",
+   "Hesse",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1CR",
+   "CR",
+   "QINGDAO GE RUI DA RUBBER CO. (GRT)",
+   "Qingdao City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1CT",
+   "CT",
+   "SHANDONG DURATTI RUBBER CORPORATION CO.,LTD.",
+   "Qing Zhou",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1CU",
+   "CU",
+   "CONTINENTAL AG WERK STOECKEN",
+   "Hannover",
+   "",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1CV",
+   "CV",
+   "THE ARMSTRONG RUBBER COMPANY",
+   "Natchez",
+   "Ms",
+   "United States",
+   "Active"
+  ],
+  [
+   "1CW",
+   "CW",
+   "TOYO TIRE & RUBBER CO, LTD.",
+   "Itami",
+   "Hyogo",
+   "Japan",
+   "Closed"
+  ],
+  [
+   "1CX",
+   "CX",
+   "TOYO TIRE CORPORATION - SENDAI PLANT",
+   "Iwanuma City",
+   "Miyagi",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1CY",
+   "CY",
+   "MCCREARY TIRE & RUBBER COMPANY",
+   "Indiana",
+   "Pennsylvania",
+   "United States",
+   "Active"
+  ],
+  [
+   "1D0",
+   "D0",
+   "KUMHO TIRE (CHANGCHUN ) CO., INC.",
+   "Changchun",
+   "Jilin",
+   "China",
+   "Active"
+  ],
+  [
+   "1D1",
+   "D1",
+   "VIKING ASKIM",
+   "Askim",
+   "",
+   "Norway",
+   "Active"
+  ],
+  [
+   "1D2",
+   "D2",
+   "BRIDGESTONE AMERICAS TIREOPERATIONS, LLC/LAVERGNE",
+   "Lavergne",
+   "Tennessee",
+   "United States",
+   "Active"
+  ],
+  [
+   "1D3",
+   "D3",
+   "UNITED TIRE & RUBBER MANUFACTURING COMPANY",
+   "Cobourg",
+   "Ontario",
+   "Canada",
+   "Active"
+  ],
+  [
+   "1D4",
+   "D4",
+   "DUNLOP INDIA, LTD.",
+   "West Bengal",
+   "",
+   "India",
+   "Active"
+  ],
+  [
+   "1D5",
+   "D5",
+   "DUNLOP INDIA, LTD.",
+   "Ambattur",
+   "Madras",
+   "India",
+   "Active"
+  ],
+  [
+   "1D6",
+   "D6",
+   "FUJIAN HAIAN RUBBER CO. LTD.",
+   "Putian City",
+   "Fujian",
+   "China",
+   "Active"
+  ],
+  [
+   "1D7",
+   "D7",
+   "SUMITOMO RUBBER SOUTH AFRICA",
+   "Ladysmith",
+   "Kwa Zulu Natal",
+   "South Africa",
+   "Active"
+  ],
+  [
+   "1D8",
+   "D8",
+   "Apollo Tyres South Africa (PTY) Ltd.- Durban",
+   "Durban",
+   "KwaZulu-Natal",
+   "South Africa",
+   "Not stated"
+  ],
+  [
+   "1D9",
+   "D9",
+   "UNITED TIRE & RUBBER COMPANY, LTD.",
+   "Etobicoke",
+   "Ontario",
+   "Canada",
+   "Active"
+  ],
+  [
+   "1DA",
+   "DA",
+   "SUMITOMO RUBBER USA",
+   "Buffalo",
+   "New York",
+   "United States",
+   "Closed"
+  ],
+  [
+   "1DB",
+   "DB",
+   "DOUBLE COIN GROUP (XINJIANG) KUNLUN TYRE CO., LTD",
+   "Urumqi City",
+   "Xinjiang Weiwuer Autonomo",
+   "China",
+   "Active"
+  ],
+  [
+   "1DC",
+   "DC",
+   "DUNLOP TIRE CANADA, LTD.",
+   "Whitby",
+   "Ontario",
+   "Canada",
+   "Active"
+  ],
+  [
+   "1DD",
+   "DD",
+   "SP TYRES UK LTD.",
+   "Birmingham",
+   "",
+   "England",
+   "Active"
+  ],
+  [
+   "1DE",
+   "DE",
+   "JIANGSU ROC TYRES CO., LTD.",
+   "Xuzhou",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "1DF",
+   "DF",
+   "QINGDAO NEWHAWK TIRES CO., LTD.",
+   "Jimo Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1DH",
+   "DH",
+   "BRIDGESTONE (SHENYANG) TIRE CO LTD/SHENYANG",
+   "Shenyang",
+   "Liaoning",
+   "China",
+   "Active"
+  ],
+  [
+   "1DJ",
+   "DJ",
+   "QINGDAO ANLI RUBBER CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1DK",
+   "DK",
+   "Goodyear France SAS",
+   "Montlucon",
+   "Auvergne-Rhone-Alpes",
+   "France",
+   "Active"
+  ],
+  [
+   "1DL",
+   "DL",
+   "DUNLOP FRANCE S.A.",
+   "Amiens Cedex",
+   "",
+   "France",
+   "Active"
+  ],
+  [
+   "1DM",
+   "DM",
+   "GOODYEAR GERMANY GMBH-HANAU",
+   "Hanau",
+   "N/A",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1DN",
+   "DN",
+   "GOODYEAR GERMANY GMBH-WITTLICH",
+   "Wittlich",
+   "N/A",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1DP",
+   "DP",
+   "MATADOR-OMSKSHINA",
+   "Omsk",
+   "Omsk",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1DR",
+   "DR",
+   "WEIFANG ANTAI TYRE",
+   "Changle County, Weifang,",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1DT",
+   "DT",
+   "QINGDAO FUYUAN TYRE CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1DU",
+   "DU",
+   "GITI TIRE (YINCHUAN ) COMPANY, LTD.",
+   "Yinchuan",
+   "Ningxia Hui Autonomous Region",
+   "China",
+   "Active"
+  ],
+  [
+   "1DV",
+   "DV",
+   "Apollo Vredestein B.V. - Eschede",
+   "Enschede",
+   "Overijssel",
+   "Netherlands",
+   "Not stated"
+  ],
+  [
+   "1DW",
+   "DW",
+   "RUBBERFABRIEK VREDESTEIN",
+   "Doetinchem",
+   "",
+   "Netherlands",
+   "Closed"
+  ],
+  [
+   "1DX",
+   "DX",
+   "N.V. BATAAFSCHE RUBBER INDUSTRIE RADIUM",
+   "Maastricht",
+   "",
+   "Netherlands",
+   "Active"
+  ],
+  [
+   "1DY",
+   "DY",
+   "DENMAN TIRE CORPORATION",
+   "Leavittsburg",
+   "Ohio",
+   "United States",
+   "Active"
+  ],
+  [
+   "1E0",
+   "E0",
+   "CHONGGING HENSION GROUP",
+   "Jiulongpo District, Chongqing",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1E1",
+   "E1",
+   "CHUNG HSING INDUSTRIAL CO., LTD",
+   "Taipei",
+   "Taichung Hsien",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "1E2",
+   "E2",
+   "BRIDGESTONE DO BRAZIL INDUSTRIAL E COMERCIO LTDA.",
+   "Santo Andre",
+   "Sao Paulo",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "1E3",
+   "E3",
+   "BRIDGESTONE AMERICAN TIRE OPERATIONS, LLC/LAVERGNE",
+   "Lavergne",
+   "Tn",
+   "United States",
+   "Active"
+  ],
+  [
+   "1E4",
+   "E4",
+   "HEBEI XIEMEI RUBBER PRODUCTS CO., LTD.",
+   "Pingxiang",
+   "Hebei",
+   "China",
+   "Active"
+  ],
+  [
+   "1E5",
+   "E5",
+   "FIRESTONE SOUTH AFRICA (PTY) LTD.",
+   "Port Elizabeth",
+   "",
+   "South Africa",
+   "Active"
+  ],
+  [
+   "1E6",
+   "E6",
+   "OTANI RADIAL TIRE CO., LTD.",
+   "Bangkaew Nakornchaisri",
+   "Nakornpathorn",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "1E7",
+   "E7",
+   "LINGLONG (GUANGXI) TIRE CO., LTD.",
+   "Liuzhou City",
+   "Guangxi Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1E8",
+   "E8",
+   "Service Industries Limited",
+   "Gujrat",
+   "Punjab",
+   "Pakistan",
+   "Active"
+  ],
+  [
+   "1E9",
+   "E9",
+   "BRIDGESTONE SOUTH AFRICA (PTY) LTD/BRITS",
+   "Brits",
+   "North West",
+   "South Africa",
+   "Active"
+  ],
+  [
+   "1EA",
+   "EA",
+   "METZLER, A.G.",
+   "8 Munchen 2",
+   "",
+   "Germany",
+   "Closed"
+  ],
+  [
+   "1EB",
+   "EB",
+   "PIRELLI DEUTSCHLAND GMBH-BREUBERG",
+   "Breuberg",
+   "Heese",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1EC",
+   "EC",
+   "PIRELLI DEUTSCHLAND GMBH-BREUBERG",
+   "Breuberg",
+   "Heese",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1ED",
+   "ED",
+   "NIHON MICHELIN TIRE CO., LTD.",
+   "Ota",
+   "Bunma",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1EE",
+   "EE",
+   "NITTO TIRE COMPANY, LTD.",
+   "Samukawa-Machi",
+   "Kanagawa-Ken",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1EF",
+   "EF",
+   "HUGH AH TIRE COMPANY, LTD.",
+   "Chung-Ku",
+   "Seoul",
+   "Korea",
+   "Active"
+  ],
+  [
+   "1EH",
+   "EH",
+   "BRIDGESTONE TIRE JAPAN CO., LTD./KURUME",
+   "Kurume",
+   "Fukuoka",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1EJ",
+   "EJ",
+   "BRIDGESTONE TIRE JAPAN CO., LTD./TOSU",
+   "Tosu",
+   "Saga",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1EK",
+   "EK",
+   "BRIDGESTONE TIRE JAPAN CO. LTD. AMAGI",
+   "Amagi",
+   "Fukuoka",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1EL",
+   "EL",
+   "BRIDGESTONETIRE JAPAN CO., LTD./HIKONE",
+   "Hikone",
+   "Shiga",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1EM",
+   "EM",
+   "BRIDGESTONE TIRE JAPAN CO.,/TOKYO",
+   "Tokyo",
+   "Tokyo",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1EN",
+   "EN",
+   "BRIDGESTONE TIRE JAPAN CO., LTD./NASU",
+   "Nasu",
+   "Tochigi",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1EP",
+   "EP",
+   "BRIDGESTONE TIRE JAPAN CO., LTD./TOCHIGI",
+   "Tochigi",
+   "Tochigi",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1ER",
+   "ER",
+   "QINGDAO DOUBLESTAR TYRE INDUSTRY CO., LTD.",
+   "Jiaonan, Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1ET",
+   "ET",
+   "SUMITOMO RUBBER INDUSTRIES, LTD.",
+   "Chuo-Ko",
+   "Kobe",
+   "Japan",
+   "Closed"
+  ],
+  [
+   "1EU",
+   "EU",
+   "Sumitomo Rubber Industries, Ltd. - Nagoya Plant",
+   "Toyota-shi",
+   "Aichi-ken",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1EV",
+   "EV",
+   "QINGDAO YELLOWSEA RUBBER CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1EW",
+   "EW",
+   "WUYI QIANGNAI RUBBER MANUFACTURE CO., LTD.",
+   "Wuyi City",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "1EX",
+   "EX",
+   "MANUFACTURER FRANCAISE DES PNEUMATIQUES",
+   "La Chapelle Saint-Luc",
+   "",
+   "France",
+   "Active"
+  ],
+  [
+   "1EY",
+   "EY",
+   "PNEUMATIQUES KLEBER, S.A.",
+   "Saar",
+   "",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1F0",
+   "F0",
+   "FIDELITY TIRE MANFACTURING CO",
+   "Natchez",
+   "Mississippi",
+   "United States",
+   "Active"
+  ],
+  [
+   "1F1",
+   "F1",
+   "MICHELIN TYRE PLC",
+   "Dundee",
+   "",
+   "Scotland",
+   "Active"
+  ],
+  [
+   "1F2",
+   "F2",
+   "BRIDGESTONE FIRESTONE VENEZOLANA, C..A./VALENCIA",
+   "Valencia",
+   "Carabobo",
+   "Venezuela",
+   "Active"
+  ],
+  [
+   "1F3",
+   "F3",
+   "MANFACTURE FRANCAISE DES PNEUMATIQUES",
+   "Roanne",
+   "",
+   "France",
+   "Active"
+  ],
+  [
+   "1F4",
+   "F4",
+   "CNB-COMPANHIA NACIONAL DE BORRACHAS",
+   "39-1 Oporto",
+   "",
+   "Portugal",
+   "Active"
+  ],
+  [
+   "1F5",
+   "F5",
+   "FATE S.A.I.C.I.",
+   "Buenos Aires",
+   "",
+   "Argentina",
+   "Active"
+  ],
+  [
+   "1F6",
+   "F6",
+   "TORRELAVEGA FIRESTONE HISPANIA S.A.",
+   "Torrelavega",
+   "",
+   "Spain",
+   "Closed"
+  ],
+  [
+   "1F7",
+   "F7",
+   "FIRESTONE HISPANIA S.A. PUENTE SAN MIGUEL",
+   "Puente San Miguel",
+   "Torrelavega",
+   "Spain",
+   "Active"
+  ],
+  [
+   "1F8",
+   "F8",
+   "JK TYRE & INDUSTRIES LTD.",
+   "Mysore",
+   "Karnataka",
+   "India",
+   "Active"
+  ],
+  [
+   "1F9",
+   "F9",
+   "DUNLOP NEW ZEALAND, LTD.",
+   "Upper Hutt",
+   "",
+   "New Zealand",
+   "Closed"
+  ],
+  [
+   "1FA",
+   "FA",
+   "YOKOHAMA TIRE MANUFACTURING MISSISSIPPI, LLC",
+   "West Point",
+   "Mississippi",
+   "United States",
+   "Active"
+  ],
+  [
+   "1FB",
+   "FB",
+   "THE YOKOHAMA RUBBER COMPANY, LTD.",
+   "Wateri-Gun",
+   "Miye-Pref",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1FC",
+   "FC",
+   "THE YOKOHAMA RUBBER COMPANY, LTD.",
+   "",
+   "",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1FD",
+   "FD",
+   "THE YOKOHAMA RUBBER CO., LTD",
+   "",
+   "",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1FE",
+   "FE",
+   "KUMHO TIRE(CHANGCHUN) CO., INC.",
+   "Changchun",
+   "Jilin Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1FF",
+   "FF",
+   "MANUFACUTRE FRANCAISE DES PNEUMATIQUES (MICHELIN)",
+   "Clermont Ferrand",
+   "",
+   "France",
+   "Active"
+  ],
+  [
+   "1FH",
+   "FH",
+   "MANUFACTURE FRANCAISE DES PNEUMATICS MICHELIN",
+   "Clemont Ferrand",
+   "",
+   "France",
+   "Active"
+  ],
+  [
+   "1FJ",
+   "FJ",
+   "MANUFACTURE FRANCAISE DES PNEUMATICS MICHELIN",
+   "La Brede",
+   "",
+   "France",
+   "Active"
+  ],
+  [
+   "1FK",
+   "FK",
+   "MANUFACTURE FRANCAISE DES PNEUMATICS MICHELIN",
+   "Cholet",
+   "",
+   "France",
+   "Active"
+  ],
+  [
+   "1FL",
+   "FL",
+   "MANUFACTURE FRANCAISE DES PNEUMATIQUES MICHELIN",
+   "Blanzy",
+   "",
+   "France",
+   "Active"
+  ],
+  [
+   "1FM",
+   "FM",
+   "MANUFACTURE FRANCAISE DES PNEUMATIQUES MICHELIN",
+   "Clermont Ferrand",
+   "",
+   "France",
+   "Active"
+  ],
+  [
+   "1FN",
+   "FN",
+   "MANUFACTURE FRANCAISE DES PNEUMATIQUES MICHELIN",
+   "Clermont Ferrand",
+   "",
+   "France",
+   "Active"
+  ],
+  [
+   "1FP",
+   "FP",
+   "STE. D'APPLICATIONS TECHNIQUES",
+   "Algiers",
+   "",
+   "Algeria",
+   "Active"
+  ],
+  [
+   "1FR",
+   "FR",
+   "COAXIAN GUIDESTONE TYRE CO., LTD.",
+   "Caoxian, Shandong",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1FT",
+   "FT",
+   "MICHELIN REIFENWERKE, A.G. & CO. K.G.A.A",
+   "Bad Kreuznach",
+   "",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1FU",
+   "FU",
+   "MICHELIN REIFENWERKE, A.G. & CO. K.G.A.A",
+   "Hallstadt",
+   "",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1FV",
+   "FV",
+   "MICHELIN REIFENWERKE, A.G. & CO. K.G.A.A",
+   "Homburg-Saar",
+   "",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1FW",
+   "FW",
+   "MICHELIN REIFENWERKE, A.G. & CO. K.G.A.A",
+   "Karlsruhe",
+   "",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1FX",
+   "FX",
+   "S.A. BELGE DU PNEUMATIQUE MICHELIN",
+   "Leeuw-St. Pierre",
+   "Zuen",
+   "Belgium",
+   "Closed"
+  ],
+  [
+   "1FY",
+   "FY",
+   "BALKRISHNA INDUSTRIES LTD",
+   "Kutch",
+   "Gujarath",
+   "India",
+   "Active"
+  ],
+  [
+   "1H0",
+   "H0",
+   "THE GENERAL TYRE & RUBBER COMPANY",
+   "Karachi",
+   "",
+   "Pakistan",
+   "Active"
+  ],
+  [
+   "1H1",
+   "H1",
+   "MICHELIN ESPANA PORTUGAL S.A.",
+   "Valladolid",
+   "",
+   "Spain",
+   "Active"
+  ],
+  [
+   "1H2",
+   "H2",
+   "Kumho Tire Company, Inc",
+   "Gwangsan-gu",
+   "Gwangju",
+   "South Korea",
+   "Active"
+  ],
+  [
+   "1H3",
+   "H3",
+   "TRELLEBORG SLOVENIJA D.O.O.",
+   "Kranj",
+   "N/A",
+   "Slovenia",
+   "Active"
+  ],
+  [
+   "1H4",
+   "H4",
+   "BRIDGESTONE TIRE JAPAN CO., LTD./HOFU",
+   "Hofu",
+   "Yamaguchi",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1H5",
+   "H5",
+   "HUTCHINSON-MAPA",
+   "",
+   "",
+   "France",
+   "Active"
+  ],
+  [
+   "1H6",
+   "H6",
+   "SHIN HUNG RUBBER COMPANY, LTD.",
+   "Jinju",
+   "Kyung Nam",
+   "Korea",
+   "Active"
+  ],
+  [
+   "1H7",
+   "H7",
+   "LI HSIN RUBBER INDUSTRIAL CO.",
+   "Chi-Hu",
+   "Chang-Hwa",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "1H8",
+   "H8",
+   "HSING KWO RUBBER MFG., CO., LTD.",
+   "Tsztung Shiang Taiwan",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1H9",
+   "H9",
+   "REIFEN-BERG",
+   "Clevischer Ring",
+   "",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1HA",
+   "HA",
+   "MICHELIN ESPANA PORTUGAL S.A.",
+   "Aranda De Duero",
+   "",
+   "Spain",
+   "Active"
+  ],
+  [
+   "1HB",
+   "HB",
+   "MICHELIN ESPANA PORTUGAL S.A.",
+   "Lasarte-Oria",
+   "Geltoki Kalea, 22",
+   "Spain",
+   "Active"
+  ],
+  [
+   "1HC",
+   "HC",
+   "MICHELIN ESPANA PORTUGAL S.A.",
+   "Vitoria Gasteiz",
+   "Alava",
+   "Spain",
+   "Active"
+  ],
+  [
+   "1HD",
+   "HD",
+   "SOCIETA PER AZONI, MICHELIN ITALIANA",
+   "Cuneo",
+   "",
+   "Italy",
+   "Active"
+  ],
+  [
+   "1HE",
+   "HE",
+   "SOCIETA PER AZIONI, S.P.A. (MICHELIN ITALIANA)",
+   "Marengo (Alessandria)",
+   "",
+   "Italy",
+   "Active"
+  ],
+  [
+   "1HF",
+   "HF",
+   "CLOSED JOINT STOCK COMPANY \"CORDIANT-vOSTOK\"",
+   "Omsk",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1HH",
+   "HH",
+   "SOCIETA PER AZIONI MICHELIN ITALIAN",
+   "Torino",
+   "",
+   "Italy",
+   "Closed"
+  ],
+  [
+   "1HJ",
+   "HJ",
+   "MICHELIN TYRE PLC",
+   "Ballymena",
+   "Antirm",
+   "N. Ireland",
+   "Active"
+  ],
+  [
+   "1HK",
+   "HK",
+   "SHANDONG XINGHONGYUAN TYRE CO., LTD.",
+   "Linyi City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1HL",
+   "HL",
+   "SHANDONG YONJING RUBBER CO., LTD.",
+   "Dongying City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1HM",
+   "HM",
+   "MICHELIN TYRE PLC",
+   "Stoke-On-Trent",
+   "",
+   "England",
+   "Active"
+  ],
+  [
+   "1HN",
+   "HN",
+   "MICHELIN NORTH AMERICA (CANADA), INC.",
+   "New Glasgow",
+   "Nova Scotia",
+   "Canada",
+   "Active"
+  ],
+  [
+   "1HP",
+   "HP",
+   "MANFACTURE SAIGONNAISE DES PNEUMATIQUES MICHELIN",
+   "Saigon",
+   "",
+   "South Vietnam",
+   "Active"
+  ],
+  [
+   "1HR",
+   "HR",
+   "QINGDAO TAIFA GROUP, LTD.",
+   "Qingdao",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1HT",
+   "HT",
+   "CEAT, S.P.A. PNEUMATICI VIA LEONCAVALLO",
+   "Torino",
+   "",
+   "Italy",
+   "Active"
+  ],
+  [
+   "1HU",
+   "HU",
+   "CEAT 10036",
+   "Settimo Torinese",
+   "",
+   "Italy",
+   "Active"
+  ],
+  [
+   "1HV",
+   "HV",
+   "GENTYRE S.P.A.",
+   "",
+   "",
+   "Italy",
+   "Active"
+  ],
+  [
+   "1HW",
+   "HW",
+   "CONTINENTAL BARUM S.R.O.",
+   "Otrokovice",
+   "Zlin",
+   "Czech Republic",
+   "Active"
+  ],
+  [
+   "1HX",
+   "HX",
+   "DOUBLE COIN GROUP (ANHUI) WARIOR TIRE CO., LTD.",
+   "Anhui",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1HY",
+   "HY",
+   "BRIDGESTONE/FIRESTONE NORTH AMERICAN",
+   "Oklahoma City",
+   "Oklahoma",
+   "United States",
+   "Active"
+  ],
+  [
+   "1J0",
+   "J0",
+   "KOREA INOCEE KASEI CO., LTD.",
+   "Masan",
+   "",
+   "Korea",
+   "Active"
+  ],
+  [
+   "1J1",
+   "J1",
+   "PHILLIPS PETROLEUM COMPANY",
+   "Bartlesville",
+   "Oklahoma",
+   "United States",
+   "Active"
+  ],
+  [
+   "1J2",
+   "J2",
+   "SHANDONG HAOLONG RUBBER TYRE CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1J3",
+   "J3",
+   "MATADOR RUBBER S.R.O.",
+   "Puchov",
+   "",
+   "Slovakia",
+   "Active"
+  ],
+  [
+   "1J4",
+   "J4",
+   "RUBENA, N.P.",
+   "547 36 Nachod",
+   "",
+   "Czech Republic",
+   "Active"
+  ],
+  [
+   "1J5",
+   "J5",
+   "Q TIRES, INC.",
+   "Greenville",
+   "South Carolina",
+   "United States",
+   "Active"
+  ],
+  [
+   "1J6",
+   "J6",
+   "JAROSLAVI TIRE CO.",
+   "Jaroslavi, Czech Republic",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1J7",
+   "J7",
+   "HOOSIER TIRE & RUBBER CORP.",
+   "Lakeville",
+   "In",
+   "United States",
+   "Active"
+  ],
+  [
+   "1J8",
+   "J8",
+   "DA CHUNG HUA RUBBER INDUSTRIAL CO",
+   "Shanghai",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1J9",
+   "J9",
+   "P.T. INTIRUB",
+   "Besar",
+   "Jakarta",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "1JA",
+   "JA",
+   "LIAONING PERMANENT TYRE CO., LTD.",
+   "Chaoyang City",
+   "Liaoning",
+   "China",
+   "Active"
+  ],
+  [
+   "1JB",
+   "JB",
+   "SHANDONG ZHENGXING TYRES CO., LTD.",
+   "Linyi",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1JC",
+   "JC",
+   "QRT",
+   "Qing Dao",
+   "Shan Dong",
+   "China",
+   "Active"
+  ],
+  [
+   "1JD",
+   "JD",
+   "PT SURYARAYA RUBBERINDO INDUSTRIES",
+   "Bogor",
+   "West Java",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "1JE",
+   "JE",
+   "SHANDONG YONGSHENG RUBBER CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1JF",
+   "JF",
+   "MILLER TIRE",
+   "Adairsville",
+   "Ga",
+   "United States",
+   "Active"
+  ],
+  [
+   "1JH",
+   "JH",
+   "SHANDONG SHUANWANG RUBBER CO., LTD.",
+   "Dongying City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1JJ",
+   "JJ",
+   "NEXEN TIRE CORPORATION",
+   "Laixishi",
+   "Quingdao",
+   "China",
+   "Active"
+  ],
+  [
+   "1JK",
+   "JK",
+   "TOVIC TIRE CO., LTD.",
+   "Changwon-City",
+   "",
+   "Korea",
+   "Active"
+  ],
+  [
+   "1JL",
+   "JL",
+   "SHANDONG BAYI SAILAN TYRE MANUFACTURER CO., LTD.",
+   "Zao Zhuang City",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1JM",
+   "JM",
+   "Suzhou Yokohama Tire Co., Ltd",
+   "Suzhou",
+   "Jiansu",
+   "China",
+   "Active"
+  ],
+  [
+   "1JN",
+   "JN",
+   "DONGYING FANGXING RUBBER CO., LTD.",
+   "Dongying City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1JP",
+   "JP",
+   "ANHUL PRIMWELL RUBBER & PLASTICS CO., LTD.",
+   "Hefei E & T Development Zone",
+   "Anhui",
+   "China",
+   "Active"
+  ],
+  [
+   "1JR",
+   "JR",
+   "Pirelli Tire LLC",
+   "Rome",
+   "Georgia",
+   "United States (USA)",
+   "Not stated"
+  ],
+  [
+   "1JT",
+   "JT",
+   "K.R.M. TYRES",
+   "Baddi",
+   "H.P.",
+   "India",
+   "Active"
+  ],
+  [
+   "1JU",
+   "JU",
+   "ZHONGCE RUBBER GROUP CO., LTD.",
+   "Hangzhou",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "1JV",
+   "JV",
+   "QINGDAO FULLRUN TYRE TECH CORP.,LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1JW",
+   "JW",
+   "AMTEL VORONEZH",
+   "Voronezh",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1JX",
+   "JX",
+   "DONGYING XINJINSHAN RUBBER CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1JY",
+   "JY",
+   "BRIDGESTONE STARGARD SP. Z.O.O./STARGARD",
+   "Stargard Szczecinski",
+   "Szczecinski",
+   "Poland",
+   "Active"
+  ],
+  [
+   "1K0",
+   "K0",
+   "MICHELIN KOREA TIRE COMPANY, LTD.",
+   "Yang San- Kun",
+   "Kyungsangnam, Do",
+   "Korea",
+   "Active"
+  ],
+  [
+   "1K1",
+   "K1",
+   "PHILLIPS PETROLEUM COMPANY",
+   "Stow",
+   "Ohio",
+   "United States",
+   "Active"
+  ],
+  [
+   "1K2",
+   "K2",
+   "KUMHO TIRE (VIETNAM) CO. LTD.",
+   "Binh Duong Province",
+   "",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "1K3",
+   "K3",
+   "KENDA RUBBER INDUSTRIAL CO., LTD.",
+   "Yuan Lin",
+   "",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "1K4",
+   "K4",
+   "INDUSTRIAS MICHELIN, S.A. DE C.V.",
+   "De Queretarosantiago",
+   "Queretaro",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "1K5",
+   "K5",
+   "GOODYEAR GERMANY GMBH-FUSTENWALDE",
+   "Fustenwalde",
+   "N/A",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1K6",
+   "K6",
+   "QINGZHOU HUA HAN RUBBER CO. LTD.",
+   "Qinzhou City",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1K7",
+   "K7",
+   "FOSHAN SHUNDE TIAN DI RUBBER CO., LTD.",
+   "Foshan",
+   "Guang Dong",
+   "China",
+   "Active"
+  ],
+  [
+   "1K8",
+   "K8",
+   "SHANDONG ZHENGFANG TYRE CO., LTD.",
+   "Taian",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1K9",
+   "K9",
+   "TECH RUBBER C0., LTD.",
+   "Shetou, Changhua",
+   "",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "1KA",
+   "KA",
+   "SVIZZ-ONE CORPORATION LIMITED",
+   "Banglane",
+   "Nakompathom",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "1KB",
+   "KB",
+   "ZHAOQING JUNHONG CO., LTD.",
+   "Zhaoqing",
+   "(Province) Guangdong",
+   "China",
+   "Active"
+  ],
+  [
+   "1KC",
+   "KC",
+   "LIMITED LIABILITY COMPANY \"PREMIORI\"",
+   "Bila Tserkva",
+   "Kyiv Region",
+   "Ukraine",
+   "Active"
+  ],
+  [
+   "1KD",
+   "KD",
+   "VALSA",
+   "Belaya Tserkov",
+   "Kiev Region",
+   "Ukraine",
+   "Active"
+  ],
+  [
+   "1KE",
+   "KE",
+   "SAILUN (DONGYING) TIRE CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1KF",
+   "KF",
+   "SHANDONG LINGLONG TYRE CO., LTD.",
+   "Zhaoyuan",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1KH",
+   "KH",
+   "SHANDONG SANGONG RUBBER CO., LTD.",
+   "Shandong",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1KJ",
+   "KJ",
+   "SHANDONG PROVINCE SANLI TIRE MANUFACTURE CO., LTD",
+   "Heze",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1KK",
+   "KK",
+   "DALIAN TYRE FACTORY CO., LTD.",
+   "Dalian",
+   "Liaoning",
+   "China",
+   "Active"
+  ],
+  [
+   "1KL",
+   "KL",
+   "ANLAS ANADOLU LASTIK SANAYI VE TICARET A.S.",
+   "Ulus",
+   "Istanbul",
+   "Turkey",
+   "Active"
+  ],
+  [
+   "1KM",
+   "KM",
+   "THE LEE TIRE & RUBBER CO.(GOODYEAR S.A. COLMAR-BERG)",
+   "",
+   "",
+   "Grand Duchy Of Luxembourg",
+   "Active"
+  ],
+  [
+   "1KN",
+   "KN",
+   "Hangzhou Chaoyang Rubber Co., Ltd. - Chaoyang plant",
+   "Hangzhou City",
+   "Zhejiang Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1KP",
+   "KP",
+   "SHANDONG ZHUSHENGHUA RUBBER CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1KR",
+   "KR",
+   "WUXI DOUBLE FLYING",
+   "Wuxi",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "1KT",
+   "KT",
+   "DANANG RUBBER JOINT STOCK COMPANY",
+   "Danang",
+   "",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "1KU",
+   "KU",
+   "WEIFANG DAWANG RUBBER PRODUCTS CO., LTD.",
+   "Changyi",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1KV",
+   "KV",
+   "NANJING TIRE CO., LTD. TBR",
+   "Nanjing",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "1KW",
+   "KW",
+   "TERCELO RUBBER TECHNOLOGY (DONGYING) CO.,LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1KX",
+   "KX",
+   "NEW DONG YUE GROUP CO., LTD.",
+   "Dongping City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1KY",
+   "KY",
+   "DONGYING TIANTONG RUBBER & PLASTIC CO., LTD.",
+   "Dongying City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1L0",
+   "L0",
+   "MANUFACTURE FRANCAISE DES PNEUMATIQUES MICHELIN",
+   "Clermont Ferrand",
+   "",
+   "France",
+   "Active"
+  ],
+  [
+   "1L1",
+   "L1",
+   "Goodyear Operations S.A.",
+   "Dudelange",
+   "N/A",
+   "Luxembourg",
+   "Active"
+  ],
+  [
+   "1L2",
+   "L2",
+   "WOOSUNG TIRE CORP. -YANGSAN PLANT",
+   "Yansan-Kun, Kyungsangnam-Do",
+   "",
+   "South Korea",
+   "Active"
+  ],
+  [
+   "1L3",
+   "L3",
+   "TONG SHIN CHEMICAL PRODUCTS LTD.",
+   "Seoul",
+   "",
+   "Korea",
+   "Closed"
+  ],
+  [
+   "1L4",
+   "L4",
+   "S.C. DANUBIANA S.A.",
+   "Comuna Popesti Leordeni",
+   "Sos. Olteni Ei Nr.181",
+   "Romania",
+   "Active"
+  ],
+  [
+   "1L5",
+   "L5",
+   "BRISA BRIDGESTONE SABANCI/BRISA",
+   "Brisa",
+   "Kocaeli",
+   "Turkey",
+   "Active"
+  ],
+  [
+   "1L6",
+   "L6",
+   "CONTINENTAL INDIA LIMITED",
+   "Meerut Up",
+   "",
+   "India",
+   "Active"
+  ],
+  [
+   "1L7",
+   "L7",
+   "MITCHELIN ROMANIA SA",
+   "Zalau",
+   "Salaj County",
+   "Romania",
+   "Active"
+  ],
+  [
+   "1L8",
+   "L8",
+   "DUNLOP ZIMBABWE LTD.",
+   "Bomington",
+   "Bulawaye",
+   "Zimbabwe",
+   "Active"
+  ],
+  [
+   "1L9",
+   "L9",
+   "PANTHER TYRES, LTD.",
+   "Aintee",
+   "Liverpool",
+   "United Kingdom",
+   "Active"
+  ],
+  [
+   "1LA",
+   "LA",
+   "WUXI YUANGFANG RUBBER ENGINEERING CO. LTD.",
+   "Wuxi",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "1LB",
+   "LB",
+   "SHANDONG FENGYUAN TIRE MANUFACTURING CO., LTD",
+   "Zaozhuang City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1LC",
+   "LC",
+   "CASUMINA",
+   "Ho Chi Minh",
+   "",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "1LD",
+   "LD",
+   "ZHEJIANG WANXIN RUBBER CO., LTD.",
+   "Xianju",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "1LE",
+   "LE",
+   "WEIFANG LUTONG RUBBER CO., LTD.",
+   "Weifang",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1LF",
+   "LF",
+   "CONTINENTAL TIRES (CHINA) CO., LTD.",
+   "Hefei",
+   "Anhui",
+   "China",
+   "Active"
+  ],
+  [
+   "1LH",
+   "LH",
+   "SPEEDWAYS RUBBER COMPANY",
+   "Jalandhar",
+   "Punjab",
+   "India",
+   "Active"
+  ],
+  [
+   "1LJ",
+   "LJ",
+   "SCHEFER COMERCIO INTERNACIONAL.",
+   "Pinhais",
+   "Parana",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "1LK",
+   "LK",
+   "PRODUCTORS NIACIONAL DE LLANTAS S.A.",
+   "Cali",
+   "",
+   "Colombia",
+   "Active"
+  ],
+  [
+   "1LL",
+   "LL",
+   "SICUP S.N.C. USINE UNIROYAL",
+   "",
+   "",
+   "France",
+   "Closed"
+  ],
+  [
+   "1LM",
+   "LM",
+   "CONTINENTAL AG WERK AACHEN",
+   "Aachen",
+   "",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1LN",
+   "LN",
+   "UNIROYAL S.A. DE C.V.",
+   "",
+   "Mexico, D.F.",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "1LP",
+   "LP",
+   "SHANDONG ZHENTAI GROUP CO., LTD",
+   "Gaomi City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1LR",
+   "LR",
+   "TVS SRICHAKRA LTD.",
+   "Melur Taluk Madurai",
+   "Tamil Nadu",
+   "India",
+   "Active"
+  ],
+  [
+   "1LT",
+   "LT",
+   "UNIROYAL ENDUSTRI TURK ANONIM SIRKETI",
+   "Adapazari",
+   "",
+   "Turkey",
+   "Active"
+  ],
+  [
+   "1LU",
+   "LU",
+   "UNIROYAL, C.A.",
+   "Valencia",
+   "",
+   "Venezuela",
+   "Active"
+  ],
+  [
+   "1LV",
+   "LV",
+   "GENERAL TIRE CANADA, LTD.",
+   "Barrie",
+   "Ontario",
+   "Canada",
+   "Active"
+  ],
+  [
+   "1LW",
+   "LW",
+   "TRELLEBORG UMMIFARIKS AKTIEBOLAG",
+   "Trelleborg",
+   "",
+   "Sweden",
+   "Active"
+  ],
+  [
+   "1LX",
+   "LX",
+   "MITSUBOSHI BELTING LTD.",
+   "Nagataku",
+   "Kobe",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1LY",
+   "LY",
+   "MITSUBOSHI BELTING LTD.",
+   "Shikoku",
+   "",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1M0",
+   "M0",
+   "GUANGRAO YONGLONG RUBBER CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1M1",
+   "M1",
+   "KEERUN TIRE (DEZHOU) CO.,LTD.",
+   "Dezhou",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1M2",
+   "M2",
+   "DONGYING HUANTAI RUBBER CO., LTD.",
+   "Dongying",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1M3",
+   "M3",
+   "MICHELIN NORTH AMERICA, INC.",
+   "Greenville",
+   "South Carolina",
+   "United States",
+   "Active"
+  ],
+  [
+   "1M4",
+   "M4",
+   "GCR RETREAD SHOP",
+   "Fontana",
+   "Ca",
+   "United States",
+   "Active"
+  ],
+  [
+   "1M5",
+   "M5",
+   "MICHELIN NORTH AMERICA (CANADA), INC.",
+   "Waterville",
+   "Nova Scotia",
+   "Canada",
+   "Active"
+  ],
+  [
+   "1M6",
+   "M6",
+   "THE GOODYEAR TIRE & RUBBER COMPANY",
+   "Lawton",
+   "Oklahoma",
+   "United States",
+   "Active"
+  ],
+  [
+   "1M7",
+   "M7",
+   "Goodyear de Chile S.A.I.C.",
+   "Santiago de Chile",
+   "Maipu",
+   "Chile",
+   "Active"
+  ],
+  [
+   "1M8",
+   "M8",
+   "APOLLO TIRES LTD.",
+   "Ernakulam District",
+   "Kerala",
+   "India",
+   "Not stated"
+  ],
+  [
+   "1M9",
+   "M9",
+   "SHANDONG HAVSTYEAR RUBBER TECHNOLOGY CO., LTD.",
+   "Dongying City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1MA",
+   "MA",
+   "ZHEJIANG ZHONGCHI RUBBER CO., LTD.",
+   "Shaoxing",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "1MB",
+   "MB",
+   "THE GOODYEAR TIRE & RUBBER COMPANY",
+   "Akron",
+   "Ohio",
+   "United States",
+   "Active"
+  ],
+  [
+   "1MC",
+   "MC",
+   "THE GOODYEAR TIRE & RUBBER COMPANY",
+   "Danville",
+   "Virginia",
+   "United States",
+   "Active"
+  ],
+  [
+   "1MD",
+   "MD",
+   "THE GOODYEAR TIRE & RUBBER COMPANY",
+   "Gadsden",
+   "Alabama",
+   "United States",
+   "Active"
+  ],
+  [
+   "1ME",
+   "ME",
+   "ZHEJIANG YIZHENG TYRE CO.",
+   "Ruian",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "1MF",
+   "MF",
+   "DANANG RUBBER JOINT STOCK COMPANY (OLD)",
+   "Danang",
+   "",
+   "Vietnam",
+   "Closed"
+  ],
+  [
+   "1MH",
+   "MH",
+   "WEIFANG JINGTONG DA TYRE CO., LTD.",
+   "Gaomi City",
+   "Shan Dong",
+   "China",
+   "Active"
+  ],
+  [
+   "1MJ",
+   "MJ",
+   "THE GOODYEAR TIRE & RUBBER COMPANY",
+   "Topeka",
+   "Kansas",
+   "United States",
+   "Active"
+  ],
+  [
+   "1MK",
+   "MK",
+   "QINGDAO TAIHAO TYRE CO., LTD.",
+   "Pingdu City",
+   "Qingdao",
+   "China",
+   "Active"
+  ],
+  [
+   "1ML",
+   "ML",
+   "PT. BANTENG PRATAMA RUBBER",
+   "Citeurreup-Bogor",
+   "Jawa Barat",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "1MM",
+   "MM",
+   "KENDA RUBBER (TIANJIN) CO., LTD.",
+   "Tianjin City",
+   "Tianjin City",
+   "China",
+   "Active"
+  ],
+  [
+   "1MN",
+   "MN",
+   "DONG NAI RUBBER FACTORY",
+   "",
+   "Dong Nai Province",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "1MP",
+   "MP",
+   "BINH LOI RUBBER FACTORY",
+   "Ho Chi Minh City",
+   "",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "1MR",
+   "MR",
+   "QINGDAO YELLOWSEA TIRE FACTORY",
+   "Qingdao, Shandong Province",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1MT",
+   "MT",
+   "SUNTOP TIRE (WUXI) CO., LTD",
+   "Wuxi",
+   "Jiang Su",
+   "China",
+   "Active"
+  ],
+  [
+   "1MU",
+   "MU",
+   "RUAIN JIANDA TYRE MANUFACTURE CO. LTD.",
+   "Ruian",
+   "Zhengjiang",
+   "China",
+   "Active"
+  ],
+  [
+   "1MV",
+   "MV",
+   "SHANDONG WONBON RUBBER CO., LTD",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1MW",
+   "MW",
+   "SAILUN (SHENYANG) TIRE CO., LTD",
+   "Shenyang",
+   "Liaoning",
+   "China",
+   "Active"
+  ],
+  [
+   "1MX",
+   "MX",
+   "COMPANHIA GOODYEAR DO BRAZIL",
+   "Sao Paulo",
+   "",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "1MY",
+   "MY",
+   "Goodyear de Colombia S.A.",
+   "Yumbo",
+   "Valle del Cauca",
+   "Colombia",
+   "Active"
+  ],
+  [
+   "1N0",
+   "N0",
+   "SOUTH PACIFIC TYRES",
+   "West Footscray",
+   "Victoria",
+   "Austrailia",
+   "Closed"
+  ],
+  [
+   "1N1",
+   "N1",
+   "MALOJA AG. PNEU-UND GUMMIWERKE",
+   "Gelterkinden",
+   "",
+   "Switzerland",
+   "Active"
+  ],
+  [
+   "1N2",
+   "N2",
+   "HURTUBLSE NETREAD, INCORPORATED",
+   "Tonawanda",
+   "New York",
+   "United States",
+   "Active"
+  ],
+  [
+   "1N3",
+   "N3",
+   "TOYO TIRE CORPORATION - KUWANA PLANT",
+   "Toin-Cho",
+   "Inabe-Gun Mie",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1N4",
+   "N4",
+   "MICHELIN ROMANIA SA",
+   "Floresti",
+   "Prahova",
+   "Romania",
+   "Active"
+  ],
+  [
+   "1N5",
+   "N5",
+   "GOODYEAR GERMANY GMBH-RIESA",
+   "Riesa",
+   "N/A",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1N6",
+   "N6",
+   "REIFENWERK HEIDENAU GMBH & CO.",
+   "Hauptstrasse 44",
+   "Heidenau",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1N7",
+   "N7",
+   "INTREPRINDEREA DE ANVELOPE CARACAL",
+   "",
+   "",
+   "Romania",
+   "Active"
+  ],
+  [
+   "1N8",
+   "N8",
+   "SHANDONG CASCEN RUBBER IND., LTD.",
+   "Zaozhuang City",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1N9",
+   "N9",
+   "PIRELLI PNEUS S.A.",
+   "Feira De Santana",
+   "Bahia",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "1NB",
+   "NB",
+   "THE GOODYEAR TYRE & RUBBER COMPANY",
+   "Wolverhampton",
+   "",
+   "England",
+   "Active"
+  ],
+  [
+   "1NC",
+   "NC",
+   "GOODYEAR FRANCE, SAS",
+   "Amiens",
+   "Hauts-de-France",
+   "France",
+   "Active"
+  ],
+  [
+   "1ND",
+   "ND",
+   "DEUTSCHE GOODYEAR G.M.B.H.",
+   "Philipsburg Bruchsal",
+   "",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1NE",
+   "NE",
+   "GUMMIWERKE FUIDA G.M.B.H.",
+   "Fulda",
+   "",
+   "Germany",
+   "Closed"
+  ],
+  [
+   "1NF",
+   "NF",
+   "JINYONG (QINGYUAN) RUBBER INDUSTRIAL CO., LTD",
+   "Qingyuan City",
+   "Guangdong",
+   "China",
+   "Active"
+  ],
+  [
+   "1NH",
+   "NH",
+   "QINGDAO HUASHENG RUBBER CO., LTD.",
+   "Pingdu Qingdao City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1NJ",
+   "NJ",
+   "GOODYEAR S.A.",
+   "",
+   "",
+   "Grand Duchy Of Luxembourg",
+   "Active"
+  ],
+  [
+   "1NK",
+   "NK",
+   "Goodyear India Limited",
+   "Ballabgarh",
+   "Haryana",
+   "India",
+   "Active"
+  ],
+  [
+   "1NL",
+   "NL",
+   "PT Goodyear Indonesia Tbk",
+   "Kota Bogor",
+   "Jawa Barat",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "1NM",
+   "NM",
+   "TIANJIN XIELI RUBBER PRODUCT LIMITED CO.",
+   "Tianjin",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1NN",
+   "NN",
+   "CHONGQING DRAGON RUBBER PRODUCTS CO., LTD.",
+   "Changshou District Of Chongqin",
+   "Chongaing",
+   "China",
+   "Active"
+  ],
+  [
+   "1NP",
+   "NP",
+   "I-GREATEST RUBBER IND. CO., LTD.",
+   "Hsi-Chung Hsiang",
+   "Chang Hua Hsien",
+   "Taiwan",
+   "Closed"
+  ],
+  [
+   "1NR",
+   "NR",
+   "SHANDONG RONGCHENG TIRE FACTORY CO.",
+   "Rongcheng",
+   "Shandong",
+   "China",
+   "Closed"
+  ],
+  [
+   "1NT",
+   "NT",
+   "Compañía Goodyear del Perú S.A.",
+   "Lima",
+   "Callao",
+   "Peru",
+   "Active"
+  ],
+  [
+   "1NU",
+   "NU",
+   "QINGDAO HONGHUA TYRE FACTORY",
+   "Qingdao City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1NV",
+   "NV",
+   "WEIFANG HUADONG RUBBER CO., LTD.",
+   "Shouguang",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1NW",
+   "NW",
+   "THE GOODYEAR TIRE & RUBBER CO. (S.A.) (PTY) LTD.",
+   "Uitenhage",
+   "",
+   "South Africa",
+   "Closed"
+  ],
+  [
+   "1NX",
+   "NX",
+   "WEIFANG ANGU RUBBER INDUSTRY CO., LTD.",
+   "Shouguang City",
+   "Shangdong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1NY",
+   "NY",
+   "GOODYEAR (THAILAND) PUBLIC CO., LTD.",
+   "Klong 1 Klongluang",
+   "Pathum Thani",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "1P0",
+   "P0",
+   "Apollo Tyres Ltd - Chennai",
+   "Kancheepuram District",
+   "Tamil Nadu",
+   "India",
+   "Not stated"
+  ],
+  [
+   "1P1",
+   "P1",
+   "THE GOODYEAR TIRE & RUBBER COMPANY",
+   "Hebron",
+   "Oh",
+   "United States",
+   "Closed"
+  ],
+  [
+   "1P2",
+   "P2",
+   "QINGDAO SENTURY TIRE CO., LTD.",
+   "Jimo",
+   "Shandon",
+   "China",
+   "Active"
+  ],
+  [
+   "1P3",
+   "P3",
+   "SKEPPLANDA GUMMI, AB",
+   "Alvagen",
+   "",
+   "Sweden",
+   "Active"
+  ],
+  [
+   "1P4",
+   "P4",
+   "THE CARLSTAR GROUP LLC",
+   "Jackson",
+   "Tennessee",
+   "United States (Usa)",
+   "Active"
+  ],
+  [
+   "1P5",
+   "P5",
+   "GENERAL POPO S.A.",
+   "San Luis Potosi",
+   "S.L.P.",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "1P6",
+   "P6",
+   "YONGKANG CITY HUAJIAN SILICON RUBBER CO., LTD.",
+   "Yongkang",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "1P7",
+   "P7",
+   "MAGGION INDUSTRIAS DE PNEUS E MAQUINAS LTDA",
+   "Guarulhos",
+   "",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "1P8",
+   "P8",
+   "NO. 2 RUBBER PLANT OINGADO",
+   "Quingdao",
+   "Shangong",
+   "China",
+   "Active"
+  ],
+  [
+   "1P9",
+   "P9",
+   "MRF LIMITED PB NO.1 PONDA",
+   "",
+   "",
+   "India",
+   "Active"
+  ],
+  [
+   "1PA",
+   "PA",
+   "GOODYEAR LASTIKLERI TAS, PK 2",
+   "Izmit",
+   "Kocaeli",
+   "Turkey",
+   "Active"
+  ],
+  [
+   "1PB",
+   "PB",
+   "CA GOODYEAR DE VENEZUELA",
+   "Valencia",
+   "Edo Carabobo",
+   "Venezuela",
+   "Active"
+  ],
+  [
+   "1PC",
+   "PC",
+   "THE GOODYEAR TIRE & RUBBER COMPANY OF CANADA LTD",
+   "Medicine Hat",
+   "Alberta",
+   "Canada",
+   "Active"
+  ],
+  [
+   "1PD",
+   "PD",
+   "XINJIANG KUNLUN ENGINEERING TYRE CO., LTD.",
+   "Korle City",
+   "Xinjiang",
+   "China",
+   "Active"
+  ],
+  [
+   "1PE",
+   "PE",
+   "MRF LTD. TRICHY (BLAS TYRE PLANT)",
+   "Perambalur Dist",
+   "Tamil Nadu",
+   "India",
+   "Active"
+  ],
+  [
+   "1PF",
+   "PF",
+   "QINGDAO HUAWU RUBBER & PLASTIC CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1PH",
+   "PH",
+   "DONGYING DURUN TYRE CO., LTD",
+   "Dawang, Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1PJ",
+   "PJ",
+   "THE GOODYEAR TIRE & RUBBER COMPANY",
+   "Fayetteville",
+   "North Carolina",
+   "United States",
+   "Active"
+  ],
+  [
+   "1PK",
+   "PK",
+   "TITAN TIRE CORPORATION OF FREEPORT",
+   "Freeport",
+   "Illinois",
+   "United States",
+   "Active"
+  ],
+  [
+   "1PL",
+   "PL",
+   "GOODYEAR - SLP, S DE R.L. DE C.V.",
+   "San Luis Potosi",
+   "San Luis Potosi",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "1PM",
+   "PM",
+   "QINGDAO CHENGTAI HAND TRUCK CO, LTD",
+   "Qingdao City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1PN",
+   "PN",
+   "SIFUTE INDUSTRIAL GROUP, LTD.",
+   "Shandong",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1PP",
+   "PP",
+   "DONGYING ZHANGAO RUBBER CO.,LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1PR",
+   "PR",
+   "WEIHAI PINGAN TYRE CO., LTD.",
+   "Rongcheng",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1PT",
+   "PT",
+   "CEAT LTD. HALOL",
+   "Baroda",
+   "Gujarat",
+   "India",
+   "Active"
+  ],
+  [
+   "1PU",
+   "PU",
+   "ARAI SHOJI CO., LTD.",
+   "Minato-Ku",
+   "Tokyo",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1PV",
+   "PV",
+   "CENCHENLYN TIRE CO., LTD.",
+   "Jimo",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1PW",
+   "PW",
+   "HENGDASHENG TOYO TIRE (ZHANGJIAGANG) CO.,LTD.",
+   "Zhangjiagang",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "1PX",
+   "PX",
+   "TECHNO INNOVATIVE RUBBER ENTERPRISE INC.",
+   "Scarborough",
+   "On",
+   "Canada",
+   "Active"
+  ],
+  [
+   "1PY",
+   "PY",
+   "WEIFANG HUARI RUBBER CO., LTD.",
+   "Shouguang City, Shandong",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1R0",
+   "R0",
+   "BOULDER CITY PLANT",
+   "Boulder City",
+   "Nevada",
+   "United States",
+   "Active"
+  ],
+  [
+   "1R1",
+   "R1",
+   "DEZHOU LINGLONG TYRE CO., LTD.",
+   "Dezhou",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1R2",
+   "R2",
+   "TIANJIN ZHENXIN RUBBER CO., LTD.",
+   "Tian Jin",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1R3",
+   "R3",
+   "ZHEJIANG XINCHANG ZHONGYA INDUSTRY",
+   "Xinchang",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "1R4",
+   "R4",
+   "SHANDONG SHIFENG (GROUP) CO., LTD.",
+   "Gaotang",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1R5",
+   "R5",
+   "SHANDONG HENGYU RUBBER CO., LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1R6",
+   "R6",
+   "QINGDAO CHONGKUN INDUSTRIAL DEVELOPMENT CO., LTD.",
+   "Qingdao",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1R7",
+   "R7",
+   "CORPORACION DE OCCIDENTE, SA DE CV",
+   "El Salto",
+   "Jalisco",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "1R8",
+   "R8",
+   "SUMITOMO RUBBER (THAILAND) CO., LTD.",
+   "Amphur Pluakdaeng",
+   "Rayong",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "1R9",
+   "R9",
+   "TAIZHOU JULUN TYRE CO., LTD.",
+   "Lunan,Luqiao,Taizhou",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "1RA",
+   "RA",
+   "TAIZHOU RENLI TIRE CO., LTD.",
+   "Taizhou",
+   "Zhejing",
+   "China",
+   "Active"
+  ],
+  [
+   "1RB",
+   "RB",
+   "BRIDGESTONE NEUMATICOS DE MONTERREY, S.A. DE C.V./ MONTERREY",
+   "Cinega De Flores",
+   "Nuevo Leon",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "1RC",
+   "RC",
+   "QINGAO MAO XIANG RUBBER CO., LTD.",
+   "Pingdu",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1RD",
+   "RD",
+   "COOCSA",
+   "El Salto",
+   "Jalisco",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "1RE",
+   "RE",
+   "QINGDAO ELITE RUBBER CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1RF",
+   "RF",
+   "QINGDAO TIANCHI TYRE CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1RH",
+   "RH",
+   "QINGDAO HUASHI INDUSTRIAL PRODUCTS CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1RJ",
+   "RJ",
+   "ANLAS ANADOLU LASTIK SANAYII VE TICARET A.S.",
+   "Duzce",
+   "",
+   "Turkey",
+   "Active"
+  ],
+  [
+   "1RK",
+   "RK",
+   "INNOVATIVE TYRES & TUBES LTD",
+   "Halol (Panchmahal)",
+   "Gujarat",
+   "India",
+   "Active"
+  ],
+  [
+   "1RL",
+   "RL",
+   "INTERNATIONAL MACHINERY & EQUIPMENT (ZHENGZHOU) CO. LTD.",
+   "Zhengzhou",
+   "Henan",
+   "China",
+   "Active"
+  ],
+  [
+   "1RM",
+   "RM",
+   "Cooper (Kunshan) Tire Co., Ltd.",
+   "Kunshan",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "1RN",
+   "RN",
+   "MARANGONI PNEUMATICI",
+   "Rovereto",
+   "Tn",
+   "Italy",
+   "Active"
+  ],
+  [
+   "1RP",
+   "RP",
+   "TAIZHOU TAIYANGFENG RUBBER CO., LTD.",
+   "Xianju County",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "1RR",
+   "RR",
+   "BELSHINA",
+   "Bobruisk",
+   "",
+   "Belarus",
+   "Active"
+  ],
+  [
+   "1RT",
+   "RT",
+   "DONGGUAN HUACHENG TYRE FACTORY",
+   "Dongguan",
+   "Guangdong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1RU",
+   "RU",
+   "VIZAHEM",
+   "Belgrade",
+   "Serbia",
+   "Serbia",
+   "Active"
+  ],
+  [
+   "1RV",
+   "RV",
+   "ETERNAL RISE TYRE (TIANJIN) CO., LTD.",
+   "Tianjin",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1RW",
+   "RW",
+   "STIP SOCIETE TUNISIENNE DES",
+   "Kairouan Road Km 25",
+   "M'Saken, Sousse",
+   "Tunisia",
+   "Active"
+  ],
+  [
+   "1RX",
+   "RX",
+   "PRS TYRES LIMITED",
+   "Rasipuram",
+   "Tamil Nadu",
+   "India",
+   "Active"
+  ],
+  [
+   "1RY",
+   "RY",
+   "SHANDONG CHANGFENG TYRES CO., LTD.",
+   "Dongying City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1T0",
+   "T0",
+   "SOUTH PACIFIC TYRES",
+   "Campbelifield",
+   "",
+   "Canada",
+   "Active"
+  ],
+  [
+   "1T1",
+   "T1",
+   "HANKOOK TIRE MFG. CO., LTD.",
+   "Seoul",
+   "",
+   "Korea",
+   "Active"
+  ],
+  [
+   "1T2",
+   "T2",
+   "OZOS (UNIROYAL)",
+   "Olsztyn",
+   "",
+   "Poland",
+   "Active"
+  ],
+  [
+   "1T3",
+   "T3",
+   "DEBICKIE ZATTLDY OPON SAMOCHODOWYCH",
+   "Stomil",
+   "Devica",
+   "Poland",
+   "Active"
+  ],
+  [
+   "1T4",
+   "T4",
+   "S.A. CARIDENG (RUBBERFACTORY)",
+   "Lanaken",
+   "",
+   "Belgium",
+   "Active"
+  ],
+  [
+   "1T5",
+   "T5",
+   "TIGAR TYRES D.O.O.",
+   "Pirot",
+   "",
+   "Serbia",
+   "Active"
+  ],
+  [
+   "1T6",
+   "T6",
+   "QINGDAO YUANDA TYRE CO., LTD.",
+   "Pingdu",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1T7",
+   "T7",
+   "HANKOOK TIRE MFG. CO., LTD.DAEJEON PLANT",
+   "Daedeok-Gu",
+   "Daejeon",
+   "Korea",
+   "Active"
+  ],
+  [
+   "1T8",
+   "T8",
+   "GOODYEAR MALAYSIA BERHAD",
+   "Selangor",
+   "",
+   "Malaysia",
+   "Closed"
+  ],
+  [
+   "1T9",
+   "T9",
+   "MRF LIMITED",
+   "",
+   "",
+   "India",
+   "Active"
+  ],
+  [
+   "1TA",
+   "TA",
+   "WENDENG SANJING CHEMISTRY CO., LTD.",
+   "Wendeng",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1TB",
+   "TB",
+   "SENTURY TIRE (THAILAND) CO., LTD.",
+   "Samnakthong Amphur Mueang",
+   "Rayong",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "1TC",
+   "TC",
+   "GOODYEAR DALIAN TIRE COMPANY LTD.",
+   "Pulandian, Dalian",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1TD",
+   "TD",
+   "ACME RUBBER IND. CO., LTD.",
+   "Tianjhong Township",
+   "Changhua",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "1TE",
+   "TE",
+   "CST Rubber (Zhangzhou) Ind. Ltd.",
+   "Longhai",
+   "Fujian",
+   "China",
+   "Not stated"
+  ],
+  [
+   "1TF",
+   "TF",
+   "QINGDAO QIANZHEN TYRE CO., LTD.",
+   "Pingdu City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1TH",
+   "TH",
+   "WEIFANG LONGSHAN TYRE CO., LTD.",
+   "Gaomi",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1TJ",
+   "TJ",
+   "CHAOYANG LONG MARCH TYRE NEW CO., LTD.",
+   "Chaoyang",
+   "Liaoning",
+   "China",
+   "Active"
+  ],
+  [
+   "1TK",
+   "TK",
+   "YOKOHAMA R.P.Z.",
+   "Gryazi City",
+   "Gagarin Str.",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1TL",
+   "TL",
+   "SICHUAN KALEVEI TECHNOLOGY CO., LTD.",
+   "Jianyang Sichuan",
+   "641400",
+   "China",
+   "Active"
+  ],
+  [
+   "1TM",
+   "TM",
+   "BRIDGESTONE HUIZHOU",
+   "Huizhou",
+   "Guangdong",
+   "China",
+   "Active"
+  ],
+  [
+   "1TN",
+   "TN",
+   "WEIFANG LUYI RUBBER PRODUCTS CO., LTD.",
+   "Changyi City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1TP",
+   "TP",
+   "DOUBLE COIN GROUP (CHONGQING) TIRE CO., LTD.",
+   "Mid Shanghai",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1TR",
+   "TR",
+   "QINGDAO WANGYU RUBBER CO., LTD",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1TT",
+   "TT",
+   "DERUIBAO TIRE CO., LTD.",
+   "Guangrao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1TU",
+   "TU",
+   "QINGDAO MOREWIN RUBBERWARE CO., LTD.",
+   "Jiaonan",
+   "Qingdao",
+   "China",
+   "Active"
+  ],
+  [
+   "1TV",
+   "TV",
+   "SAINT TOUR TYRE CO.,LTD.",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1TW",
+   "TW",
+   "GUANGRAO GEE-STAR TIRE CO., LTD.",
+   "Dongying City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1TX",
+   "TX",
+   "WIEGEL RUBBER CO., LTD.",
+   "Handan, Hebei Province",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1TY",
+   "TY",
+   "WIEGEL RUBBER CO., LTD.",
+   "Qingdao, Shangdong",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1U0",
+   "U0",
+   "SOUTH PACIFIC TYRES",
+   "Thomastown",
+   "Victoria",
+   "Austrailia",
+   "Closed"
+  ],
+  [
+   "1U1",
+   "U1",
+   "LIEN SHIN TIRE CO., LTD.",
+   "Ta-Tsuen Hsiang",
+   "Changhua Hsien",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "1U2",
+   "U2",
+   "Sumitomo Rubber Industries, Ltd. - Shirakawa Plant",
+   "Shirakawa-shi",
+   "Fukushima-ken",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1U3",
+   "U3",
+   "COOPER TIRE & RUBBER COMPANY SERBIA d.o.o.",
+   "",
+   "Krusevac",
+   "Serbia",
+   "Active"
+  ],
+  [
+   "1U4",
+   "U4",
+   "GEO. BYERS SONS, INC.",
+   "Colombus",
+   "Ohio",
+   "United States",
+   "Active"
+  ],
+  [
+   "1U5",
+   "U5",
+   "FARBENFABRIKEN BAYER GMBH",
+   "",
+   "",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1U6",
+   "U6",
+   "PNEUMANT",
+   "Dresden",
+   "",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1U7",
+   "U7",
+   "PNEUMANT",
+   "20 Neubrandenburg",
+   "Industrigelande",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1U8",
+   "U8",
+   "HSIN FUNG FACTORY OF NANKANG RUBBER CO.",
+   "Hsin Chu",
+   "",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "1U9",
+   "U9",
+   "COOPER TIRE & RUBBER COMPANY",
+   "Tupelo",
+   "Mississippi",
+   "United States",
+   "Active"
+  ],
+  [
+   "1UA",
+   "UA",
+   "NEXEN TIRE CORPORATION",
+   "Changnyeong-Gun",
+   "Gyeongsangnam-Do",
+   "South Korea",
+   "Active"
+  ],
+  [
+   "1UB",
+   "UB",
+   "OPEN JOINT STOCK COMPANY YAROSLAVL",
+   "Yaroslavl",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1UC",
+   "UC",
+   "SHANDONG FUYU BLUESTONE TYRE CO., LTD.",
+   "Zibo Shandong",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1UD",
+   "UD",
+   "MITAS TIRES NORTH AMERICA, INC.",
+   "Charles City",
+   "Ia",
+   "United States",
+   "Active"
+  ],
+  [
+   "1UE",
+   "UE",
+   "TIUMSUN RUBBER TIRE (WEI HAI) CO., LTD.",
+   "Weihai",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1UF",
+   "UF",
+   "SHAANXI YANCHANG PETROLEUM GROUP RUBBER CO.",
+   "Xianyang Shaanxi",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1UH",
+   "UH",
+   "SHANDONG YINUO ENGINEERING TYRE CO., LTD.",
+   "Tengzhou City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1UJ",
+   "UJ",
+   "CHINA NATIONAL TYRE & RUBBER GUILIN CO., LTD.",
+   "Suqiao",
+   "Guilin",
+   "China",
+   "Active"
+  ],
+  [
+   "1UK",
+   "UK",
+   "TOYAMA TYRE CORP., LTD.",
+   "Xuanwu District",
+   "Beijing",
+   "China",
+   "Active"
+  ],
+  [
+   "1UL",
+   "UL",
+   "Cheng Shin Tire & Rubber (Chongqing) Co. Ltd.",
+   "Chongqing",
+   "Changshou District",
+   "China",
+   "Not stated"
+  ],
+  [
+   "1UN",
+   "UN",
+   "PIRELLII NEUMATICOS S.A. DE C.V.",
+   "Silao, Guanajuato",
+   "",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "1UP",
+   "UP",
+   "COOPER TIRE & RUBBER COMPANY",
+   "Findlay",
+   "Ohio",
+   "United States (Usa)",
+   "Active"
+  ],
+  [
+   "1UR",
+   "UR",
+   "GOOD FRIEND TYRE CO., LTD.",
+   "Jiaozuo",
+   "Henan",
+   "China",
+   "Active"
+  ],
+  [
+   "1UT",
+   "UT",
+   "COOPER TIRE & RUBBER COMPANY",
+   "Texarkana",
+   "Arkansas",
+   "United States",
+   "Active"
+  ],
+  [
+   "1UU",
+   "UU",
+   "CARLISLE TIRE & RUBBER DIVISION",
+   "Carlisle",
+   "Pennsylvania",
+   "United States",
+   "Active"
+  ],
+  [
+   "1UV",
+   "UV",
+   "KZOWA RUBBER INDUSTRY CO., LTD.",
+   "Nishinariku",
+   "Osaka",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1UW",
+   "UW",
+   "OKADA TIRE INDUSTRY LTD.",
+   "Katsushika-Ku",
+   "Tokyo",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1UX",
+   "UX",
+   "FEDERAL CORPORATION",
+   "Chungli",
+   "Taoyuan",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "1UY",
+   "UY",
+   "CHENG SHIN RUBBER IND. CO. LTD.",
+   "Ta-Tsun",
+   "Chang-Hwa",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "1V0",
+   "V0",
+   "SOUTH PACIFIC TYRES",
+   "Upper Hutt",
+   "Wellington",
+   "New Zealand",
+   "Closed"
+  ],
+  [
+   "1V1",
+   "V1",
+   "LIVINGSTON'S TIRE SHOP",
+   "Hubbard",
+   "Ohio",
+   "United States",
+   "Active"
+  ],
+  [
+   "1V2",
+   "V2",
+   "VSEOJUZNOE OJEDINENIC AVTOEXPORT",
+   "Volzhsk",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1V3",
+   "V3",
+   "TA HSIN RUBBER TIRE COMPANY, LTD.",
+   "Tuchen Village",
+   "Taipei Hsieng",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "1V4",
+   "V4",
+   "Sumitomo Rubber Industries, Ltd. - Miyazaki Plant",
+   "Miyakonojo-shi",
+   "Miyazaki-ken",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1V5",
+   "V5",
+   "SHANDONG GUOPENG RUBBER CO., LTD.",
+   "Shouguang City",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1V6",
+   "V6",
+   "BRIDGESTONE DE MEXICO, S.A.DE C.V./CUERNAVACA",
+   "Cuernavaca",
+   "Morelos",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "1V7",
+   "V7",
+   "VSESOJUZNOE OJEDINERIE AVTOEXPORT",
+   "Voronezh",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1V8",
+   "V8",
+   "MICHELIN INDIA PVT. LTD.",
+   "Sipcot Industrialgummidipoondi Taluk Tiruvallur",
+   "",
+   "India",
+   "Active"
+  ],
+  [
+   "1V9",
+   "V9",
+   "M & H TIRE COMPANY",
+   "Gardner",
+   "Massachusetts",
+   "United States",
+   "Active"
+  ],
+  [
+   "1VA",
+   "VA",
+   "SUMITOMO RUBBER (THAILAND) CO., LTD.",
+   "Amphur Pluakdaeng, Rayong",
+   "",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "1VB",
+   "VB",
+   "ANHUI DARUI RUBBER CO., LTD",
+   "Wuhu",
+   "Anhui",
+   "China",
+   "Active"
+  ],
+  [
+   "1VC",
+   "VC",
+   "SHANDONG HENGRONG RUBBER TECHNOLOGY CO., LTD",
+   "Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1VD",
+   "VD",
+   "QINGDAO HONGCHI TYRE CO., LTD.",
+   "Pingdu, Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1VE",
+   "VE",
+   "BRIDGESTONE AMERICAS TIRE OPERATIONS, LLC/DES MOINES",
+   "Des Moines",
+   "Iowa",
+   "United States",
+   "Active"
+  ],
+  [
+   "1VF",
+   "VF",
+   "WEIFANG ZHENFU INDUSTRIAL CO., LTD.",
+   "Gaomi City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1VH",
+   "VH",
+   "SUMITOMO RUBBER (HUNAN) CO., LTD",
+   "Changsha",
+   "Hunan",
+   "China",
+   "Active"
+  ],
+  [
+   "1VJ",
+   "VJ",
+   "AEOLUS TYRE., LTD.",
+   "Jiaozuo",
+   "Henan",
+   "China",
+   "Active"
+  ],
+  [
+   "1VK",
+   "VK",
+   "QINGDAO YUANZHOU RUBBER PRODUCTS CO., LTD.",
+   "Jiaonan Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1VL",
+   "VL",
+   "CONTINENTAL KALUGA",
+   "Kaluga",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1VM",
+   "VM",
+   "ZHUCHENG GUOXIN RUBBER CO., LTD.",
+   "Zhucheng",
+   "Alberta, Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1VN",
+   "VN",
+   "BRIDGESTONE CANADA INC./JOLIETTE",
+   "Joliete",
+   "Quebec",
+   "Canada",
+   "Active"
+  ],
+  [
+   "1VP",
+   "VP",
+   "BRIDGESTONE ITALIA S.P.A./BARI",
+   "Bari",
+   "Bari",
+   "Italy",
+   "Active"
+  ],
+  [
+   "1VR",
+   "VR",
+   "BRIDGESTONE TATABANYA MANUFACTURING LTD./TATABANYA",
+   "Tatabánya",
+   "Komye",
+   "Hungary",
+   "Active"
+  ],
+  [
+   "1VT",
+   "VT",
+   "BRIDGESTONE HISPANIA S.A./BILBAO",
+   "Bilbao",
+   "Basauri/Vizcaya",
+   "Spain",
+   "Active"
+  ],
+  [
+   "1VU",
+   "VU",
+   "UNIVERSAL TIRE COMPANY",
+   "Lancaster",
+   "Pennsylvania",
+   "United States",
+   "Active"
+  ],
+  [
+   "1VV",
+   "VV",
+   "BRILAND RUBBER TIRE CO., LTD.",
+   "Wenzhou",
+   "",
+   "P.R. China",
+   "Active"
+  ],
+  [
+   "1VW",
+   "VW",
+   "Sumitomo Rubber Industries, Ltd. - Izumiotsu Plant",
+   "Izumiotsu-shi",
+   "Osaka-fu",
+   "Japan",
+   "Active"
+  ],
+  [
+   "1VX",
+   "VX",
+   "Weihai Huamao Rubber Science and Technology Branch Company of Triangle Tyre Co.,Ltd.",
+   "Weihai",
+   "Shandong",
+   "China",
+   "Not stated"
+  ],
+  [
+   "1VY",
+   "VY",
+   "CONTINENTAL TIRE - SUMPTER",
+   "South Sumter",
+   "Nc",
+   "United States",
+   "Active"
+  ],
+  [
+   "1W0",
+   "W0",
+   "INOUE RUBBER (THAILAND) PUBLIC COMPANY LIMITED",
+   "Thanyaburi",
+   "Pathumthani",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "1W1",
+   "W1",
+   "BRIDGESTONE AMERICAS TIRE OPERATIONS, LLC/LAVERGNE",
+   "Lavergne",
+   "Tennessee",
+   "United States",
+   "Active"
+  ],
+  [
+   "1W2",
+   "W2",
+   "BRIDGESTONE AMERICAS TIRE OPERATIONS, LLC/WILSON",
+   "Wilson",
+   "North Carolina",
+   "United States",
+   "Active"
+  ],
+  [
+   "1W3",
+   "W3",
+   "Vredestein Doetinchem B.V. - Doefinehem",
+   "Doetinchem",
+   "Gelderland",
+   "Netherlands",
+   "Not stated"
+  ],
+  [
+   "1W4",
+   "W4",
+   "DUNLOP OLYMPIC TYRES",
+   "Somerton",
+   "Victoria",
+   "Austrailia",
+   "Active"
+  ],
+  [
+   "1W5",
+   "W5",
+   "BRIDGESTONE/FIRESTONE ARGENTINA S.A.I.C./B. ARIES",
+   "Buenos Aires",
+   "De Buenos Aires",
+   "Argentina",
+   "Active"
+  ],
+  [
+   "1W6",
+   "W6",
+   "SHANDONG CHANGLU HONG TIRE CO., LTD.",
+   "Linyi",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1W7",
+   "W7",
+   "JIANGSU CHENGTONG TIRE CO., LTD.",
+   "Xuzhou",
+   "Jiangsu",
+   "China",
+   "Active"
+  ],
+  [
+   "1W8",
+   "W8",
+   "MICHELIN SIAM CO., LTD.",
+   "Prapradaeng",
+   "Samutprakarn",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "1W9",
+   "W9",
+   "BRIDGESTONE INDIA PRIVATE LIMITED/PUNE",
+   "Maharashtra",
+   "Pune",
+   "India",
+   "Active"
+  ],
+  [
+   "1WA",
+   "WA",
+   "BRIDGESTONE FRANCE S.A.S./BETHUNE",
+   "Bethune",
+   "Pas-De-Calais",
+   "France",
+   "Active"
+  ],
+  [
+   "1WB",
+   "WB",
+   "BRIDGESTONE DE COSTA RICA/SAN JOSE",
+   "San Jose",
+   "Heredia",
+   "Costa Rica",
+   "Active"
+  ],
+  [
+   "1WC",
+   "WC",
+   "SUMITOMO RUBBER DO BRASIL LTDA",
+   "Sydneyfazenda Rio Grande",
+   "Parana",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "1WD",
+   "WD",
+   "HEBEI TIANRUI RUBBER CO., LTD.",
+   "Handan",
+   "Hebei Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1WE",
+   "WE",
+   "NANKANG RUBBER TIRE CORPORATION",
+   "West Taipei",
+   "",
+   "Taiwan",
+   "Closed"
+  ],
+  [
+   "1WF",
+   "WF",
+   "BRIDGESTONE HISPANIA, S.A./BURGOS",
+   "Burgos",
+   "Burgos",
+   "Spain",
+   "Active"
+  ],
+  [
+   "1WH",
+   "WH",
+   "SHANDONG FENGLUN TYRE CO., LTD.",
+   "Zaozhuang, Shandong",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1WJ",
+   "WJ",
+   "SHANGHAI HANGHONG RUBBER MANUFACTORY",
+   "Shanghai",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "1WK",
+   "WK",
+   "WUYI FENGYUAN MINING MACHINE MANUFACTOR CO.LTD.",
+   "Wuyii",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "1WL",
+   "WL",
+   "NINGBO HUALIN",
+   "Yuyao",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "1WM",
+   "WM",
+   "DUNLOP OLYMPIC TYRES",
+   "West Footseray",
+   "Victoria",
+   "Austrailia",
+   "Active"
+  ],
+  [
+   "1WN",
+   "WN",
+   "HEBEI STARBRIGHT TIRE CO., LTD.",
+   "Xingtai",
+   "Hebei",
+   "China",
+   "Closed"
+  ],
+  [
+   "1WP",
+   "WP",
+   "Wanli Tire Corporation Limited",
+   "Guangzhou",
+   "Guangdong",
+   "China",
+   "Active"
+  ],
+  [
+   "1WR",
+   "WR",
+   "JK TYRE & INDUSTRIES LIMITED",
+   "Kancheepuram District",
+   "Tamil Nadu",
+   "India",
+   "Active"
+  ],
+  [
+   "1WT",
+   "WT",
+   "MADRAS RUBBER FACTORY LTD.",
+   "Madras",
+   "",
+   "India",
+   "Active"
+  ],
+  [
+   "1WU",
+   "WU",
+   "CEAT TYRES OF INDIA LTD.",
+   "Bhandup,Bombay",
+   "Maharashtra",
+   "India",
+   "Active"
+  ],
+  [
+   "1WV",
+   "WV",
+   "GENERAL RUBBER CORPORATION",
+   "Taipei",
+   "",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "1WW",
+   "WW",
+   "EUZKADI COMPANIA HULERA EUZKADI, S.A.",
+   "Mexico City",
+   "",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "1WX",
+   "WX",
+   "EUZKADI COMPANIA HULERA EUZKADI, S.A.",
+   "La Presa",
+   "Eo De",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "1WY",
+   "WY",
+   "EUZKADI COMPANIA HULERA EUZKADI, S.A.",
+   "Guadajiara",
+   "Jalisco",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "1X0",
+   "X0",
+   "VSESOJUZNOE OJEDINENIE AVTOEXPORT",
+   "Mizhnekamsk",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1X1",
+   "X1",
+   "TONG SHIN CHEMICAL PRODUCTS. LTD.",
+   "Yongdongpo-Ko",
+   "Seoul",
+   "Korea",
+   "Active"
+  ],
+  [
+   "1X2",
+   "X2",
+   "HWA FONG RUBBER INDUSTRIAL CO., LTD.",
+   "Chang Hua Hsien",
+   "",
+   "Taiwan",
+   "Active"
+  ],
+  [
+   "1X3",
+   "X3",
+   "CJSC \"ROSAVA\"",
+   "Belaya Tserkov",
+   "Kiev Region",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1X4",
+   "X4",
+   "PARS TYRE COMPANY",
+   "Saveh",
+   "",
+   "Iran",
+   "Active"
+  ],
+  [
+   "1X5",
+   "X5",
+   "J.K. INDUSTRIES LTD.",
+   "Kankroli",
+   "Rajasthan",
+   "India",
+   "Active"
+  ],
+  [
+   "1X6",
+   "X6",
+   "VSESOJUZNOE OJEDINENIE AVTOEXPORT",
+   "Bobruysk",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1X7",
+   "X7",
+   "VSESOJUZNOE OJEDINENIE AVTOEXPORT",
+   "Chimkentsky",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1X8",
+   "X8",
+   "DNEPROSHINA JOIN STOCK COMPANY (\"DENEPROSHINA\" JSC)",
+   "Dnepropetrovsk",
+   "",
+   "Ukraine",
+   "Active"
+  ],
+  [
+   "1X9",
+   "X9",
+   "VSESJUZNOE OJEDINENIE AVTOEXPORT",
+   "Moscow",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1XA",
+   "XA",
+   "PIRELLI TYRE S.P.A.",
+   "Bollate",
+   "Milan",
+   "Italy",
+   "Active"
+  ],
+  [
+   "1XB",
+   "XB",
+   "PIRELLI TYRE S.P.A.",
+   "Settimo",
+   "Torino",
+   "Italy",
+   "Active"
+  ],
+  [
+   "1XC",
+   "XC",
+   "TRELLEBORG WHEEL SYSTEM SPA",
+   "Tivoli",
+   "",
+   "Italy",
+   "Active"
+  ],
+  [
+   "1XD",
+   "XD",
+   "PT EVOLUZIONE TYRES",
+   "Wanakerta Purwadadi",
+   "Subang",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "1XE",
+   "XE",
+   "Prometeon Tyre Brasil – Gravatai",
+   "Gravatai",
+   "Rio Grande do Sul",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "1XF",
+   "XF",
+   "JIAOZUO PLANT",
+   "Jiaozuo",
+   "Henan",
+   "China",
+   "Active"
+  ],
+  [
+   "1XH",
+   "XH",
+   "PIRELLI KIROV OPCO",
+   "Kirov",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1XJ",
+   "XJ",
+   "Prometeon Tyre Turkey - Kartepe",
+   "Kartepe",
+   "Kocaeli",
+   "Turkey",
+   "Active"
+  ],
+  [
+   "1XK",
+   "XK",
+   "Prometeon Tyre Brasil – Santo Andre",
+   "Santo Andre",
+   "Sao Paulo",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "1XL",
+   "XL",
+   "PIRELLI PNEUS S.A.",
+   "Campinas",
+   "Sao Paulo",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "1XM",
+   "XM",
+   "PIRELLI NEUMATICOS S.A.I.C.",
+   "Merlo",
+   "Buenos Aires",
+   "Argentina",
+   "Active"
+  ],
+  [
+   "1XN",
+   "XN",
+   "PIRELLI TYRES LTD.",
+   "Carlisle",
+   "Cumbria",
+   "United Kingdom",
+   "Active"
+  ],
+  [
+   "1XP",
+   "XP",
+   "PIRELLI TYRES LTD.",
+   "Burton-On-Trent",
+   "Staffordshire",
+   "United Kingdom",
+   "Active"
+  ],
+  [
+   "1XR",
+   "XR",
+   "QINGDAO MORECHI RUBBER CO., LTD.",
+   "Jiaonan",
+   "Qingdao",
+   "China",
+   "Active"
+  ],
+  [
+   "1XT",
+   "XT",
+   "Breuberg",
+   "Breuberg",
+   "Hesse",
+   "Germany",
+   "Active"
+  ],
+  [
+   "1XU",
+   "XU",
+   "SHANDONG ZHONGYI RUBBER CO., LTD.",
+   "Guangrao, Dongying",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1XV",
+   "XV",
+   "TOLINS TYRES PVT, LTD.",
+   "Kalady Ernakulam",
+   "Kerala",
+   "India",
+   "Active"
+  ],
+  [
+   "1XW",
+   "XW",
+   "QINGZHOU HUACHEN RUBBER CO., LTD.",
+   "Qingzhou",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1XX",
+   "XX",
+   "BANDAG, INCORPORATED",
+   "Muscatine",
+   "Iowa",
+   "United States",
+   "Active"
+  ],
+  [
+   "1XY",
+   "XY",
+   "BRIDGESTONE CANADA INC./JOLIETTE",
+   "Joliette",
+   "Quebec",
+   "Canada",
+   "Closed"
+  ],
+  [
+   "1Y0",
+   "Y0",
+   "Kumho Tire Inc, Goksung Factory",
+   "Gokseong-Gun",
+   "Chollanam-Do",
+   "South Korea",
+   "Not stated"
+  ],
+  [
+   "1Y1",
+   "Y1",
+   "Goodyear do Brasil Produtos de Borracha Ltda.",
+   "Vila Bertini, Americana",
+   "Sp",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "1Y2",
+   "Y2",
+   "BRIDGESTONE AMERICAS TIRE OPERATIONS, LLC/WILSON",
+   "Wilson",
+   "Nc",
+   "United States",
+   "Active"
+  ],
+  [
+   "1Y3",
+   "Y3",
+   "SHANDONG GULUN RUBBER CO, LTD.",
+   "Dezhou",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1Y4",
+   "Y4",
+   "ATC Tires Pvt. Ltd.",
+   "Gangaikondan",
+   "Tirunelveli",
+   "India",
+   "Active"
+  ],
+  [
+   "1Y5",
+   "Y5",
+   "SHANGHAI MICHELIN TIRE CO., LTD.",
+   "",
+   "Shanghai",
+   "China",
+   "Active"
+  ],
+  [
+   "1Y6",
+   "Y6",
+   "Continental Tyre AS Malaysia Sdn Bhd",
+   "Alor Setar",
+   "Kedah Darul Aman",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "1Y7",
+   "Y7",
+   "BRIDGESTONE AMERICAN TIRE, LLC.",
+   "Lavergne",
+   "Tennessee",
+   "United States",
+   "Active"
+  ],
+  [
+   "1Y8",
+   "Y8",
+   "BOMBAY TYRES INTERNATIONAL LTD.",
+   "Bombay",
+   "Maharashtra",
+   "India",
+   "Active"
+  ],
+  [
+   "1Y9",
+   "Y9",
+   "PT. GAJAH TUNGGAL,TBK",
+   "Tangerang",
+   "Banten",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "1YA",
+   "YA",
+   "MRF LTD-TRICHY (RADIAL TYRE PLANT)",
+   "Perambalur District",
+   "Tamil Nadu",
+   "India",
+   "Active"
+  ],
+  [
+   "1YB",
+   "YB",
+   "PIRELLI VORONEZH OPCO",
+   "Voronezh",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1YC",
+   "YC",
+   "LLIT (THAILAND) CO., LTD.",
+   "Sriracha",
+   "Chonburi",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "1YD",
+   "YD",
+   "BRIDGESTONE TIRE MANUFACTURING C.I.S. LLC/RUSSIA",
+   "1St Cherdakinsky",
+   "",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1YE",
+   "YE",
+   "BRIDGESTONE AMERICAS TIRE OPERATIONS, LLC/DES MOINES",
+   "Des Moines",
+   "Ia",
+   "United States",
+   "Active"
+  ],
+  [
+   "1YF",
+   "YF",
+   "THE DAYTON TIRE & RUBBER CO.",
+   "South Gate,",
+   "Ca",
+   "United States",
+   "Closed"
+  ],
+  [
+   "1YH",
+   "YH",
+   "NUMSIAM RUBBER (LAOS) CO., LTD",
+   "Spen District",
+   "Savannakhet Province",
+   "Laos",
+   "Active"
+  ],
+  [
+   "1YJ",
+   "YJ",
+   "SAILUN (VIETNAM) CO., LTD.",
+   "Dong Ward, Go Dau",
+   "Tay Ninh",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "1YK",
+   "YK",
+   "Zhucheng Yongan Rubber Technology Co., Ltd",
+   "Weifang City",
+   "Shandong Province",
+   "China",
+   "Active"
+  ],
+  [
+   "1YL",
+   "YL",
+   "NOKIAN TYRE PLC",
+   "Nokia",
+   "",
+   "Finland",
+   "Not stated"
+  ],
+  [
+   "1YM",
+   "YM",
+   "YOKOHAMA INDIA PRIVATE LTD.",
+   "Bahadurgarh Industrial Estate, distict Jhajjar",
+   "Haryana",
+   "India",
+   "Active"
+  ],
+  [
+   "1YN",
+   "YN",
+   "AUNG HTET MYET CO., LTD.",
+   "Yangon, Myanmar",
+   "Yangon",
+   "Myanmar",
+   "Active"
+  ],
+  [
+   "1YP",
+   "YP",
+   "HANGZHOU SHUNYUAN TIRE MANUFACTURE CO., LTD.",
+   "Hangzhou",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "1YR",
+   "YR",
+   "QINGDAO HUADA INDUSTRIAL PRODUCTS CO.,LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1YT",
+   "YT",
+   "BIRLA TYRES,PROP:KESORAM INDUSTRIES LTD.",
+   "Haridwar",
+   "Uttar Khand",
+   "India",
+   "Active"
+  ],
+  [
+   "1YU",
+   "YU",
+   "JSC NIZHNEKAMSKSHINA",
+   "Nizhnekamsk",
+   "Republic Of Tatarstan",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1YV",
+   "YV",
+   "SHANDONG JINWANGDA TIRE CO., LTD.",
+   "Dongying City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "1YW",
+   "YW",
+   "ANHUI JICHI TIRE CO.,LTD",
+   "Bengbu",
+   "Anhui",
+   "China",
+   "Active"
+  ],
+  [
+   "1YX",
+   "YX",
+   "NIZHNEKAMSK TRUCK TIRE PLANT LTD.",
+   "Nizhnekamsk",
+   "Republik Of Tatarstan",
+   "Russia",
+   "Active"
+  ],
+  [
+   "1YY",
+   "YY",
+   "NASTP LTD.",
+   "Nizhnekamsk",
+   "Rp Tatarstan",
+   "Russia",
+   "Active"
+  ],
+  [
+   "212",
+   "1Z",
+   "OTANI TIRE CO, LTD.",
+   "",
+   "Nakornpathom",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "215",
+   "1S",
+   "THAI SIN RUBBER INDUSTRY LTD., PART",
+   "Kratumban",
+   "Samutsakorn",
+   "Thailand",
+   "Active"
+  ],
+  [
+   "216",
+   "1G",
+   "HANKOOK TIRE CHINA CO., LTD.",
+   "Jiaxing",
+   "Zhejiang",
+   "China",
+   "Active"
+  ],
+  [
+   "220",
+   "2Q",
+   "KENDA RUBBER INDUSTRIAL CO., LTD.",
+   "Long Hwa Town",
+   "Guangdon",
+   "China",
+   "Active"
+  ],
+  [
+   "221",
+   "2I",
+   "QINDAO GLEN GROUP CO.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "225",
+   "2S",
+   "VREDESTEIN FKR (M'SIA)SDN BHD",
+   "Kapar",
+   "Selangor (Darul Ehsan)",
+   "Malaysia",
+   "Active"
+  ],
+  [
+   "226",
+   "2G",
+   "PT MEGA RUBBER LTD SEMARANG",
+   "Semarang",
+   "Java",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "230",
+   "3Q",
+   "Continental Tires (China) Co., Ltd.",
+   "Hefei City",
+   "Anhui Province",
+   "China",
+   "Active"
+  ],
+  [
+   "235",
+   "3S",
+   "CONTINENTAL DO BRASIL PRODUTOS AUTOMOTIVOS LTDA.",
+   "Ponta Grossa Pr",
+   "",
+   "Brazil",
+   "Active"
+  ],
+  [
+   "236",
+   "3G",
+   "TITAN TIRE CORP. OF TEXAS",
+   "Brownsville,",
+   "Tx",
+   "United States",
+   "Active"
+  ],
+  [
+   "240",
+   "4Q",
+   "FABRICA URUGUAYA DE NEUMATICOS S.A. (FUNSA)",
+   "Montievideeo",
+   "",
+   "Uruguay",
+   "Active"
+  ],
+  [
+   "245",
+   "4S",
+   "BELARUS TYRE WORKS BELSHINA",
+   "Bobruisk",
+   "Mogiley Region",
+   "Belarus",
+   "Active"
+  ],
+  [
+   "246",
+   "4G",
+   "HENAN TYRE FACTORY",
+   "Jiaozuo",
+   "Henan",
+   "China",
+   "Active"
+  ],
+  [
+   "250",
+   "5Q",
+   "RONGCHENG GUOTAI TYRE CO., LTD.",
+   "Rongchenh Shandong",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "252",
+   "5Z",
+   "REFACCIONARIA VALATI S.A. DE C.V.",
+   "Ciudad Juarez",
+   "Chihuahua",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "255",
+   "5S",
+   "LANYU AIRCRAFT TIRE DEVELOPMENT CO.",
+   "Guillin",
+   "Guangxi",
+   "China",
+   "Active"
+  ],
+  [
+   "256",
+   "5G",
+   "HOC MON RUBBER FACTORY",
+   "Ho Chi Minh",
+   "---",
+   "Vietnam",
+   "Active"
+  ],
+  [
+   "260",
+   "6Q",
+   "WEIHAI ZHONGWEI RUBBER CO., LTD.",
+   "Weihai City, Shandong",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "261",
+   "6I",
+   "MICHELIN HUNGARIA TYRE MANUFACTURE LTD.",
+   "Nyiregyhaza",
+   "",
+   "Hungary",
+   "Active"
+  ],
+  [
+   "266",
+   "6G",
+   "CONTINENTIAL AUTOMOTIVE PRODUCTS S.R.L.",
+   "Timisoara",
+   "",
+   "Romania",
+   "Active"
+  ],
+  [
+   "271",
+   "7I",
+   "P.T. HUNG - A INDONESIA",
+   "West Jawa",
+   "",
+   "Indonesia",
+   "Active"
+  ],
+  [
+   "272",
+   "7Z",
+   "RONGCHENG RONGDA RUBBER CO., LTD.",
+   "Shandong",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "276",
+   "7G",
+   "BRIDGESTONE/FIRESTONE POLAND SP.Z.O.O.",
+   "Poznan",
+   "Wielkopoiskle",
+   "Poland",
+   "Active"
+  ],
+  [
+   "282",
+   "8Z",
+   "THE YOKOHAMA RUBBER CO., LTD. ONOMICHI PLANT",
+   "Onomichi",
+   "Hiroshima",
+   "Japan",
+   "Active"
+  ],
+  [
+   "285",
+   "8S",
+   "PETLAS TIRE INDUSTRY AND TRADE CO.",
+   "Kirsehir",
+   "",
+   "Turkey",
+   "Active"
+  ],
+  [
+   "286",
+   "8G",
+   "HAIKOU HAIHUA TYRE CO., LTD.",
+   "Haikou",
+   "Hainan",
+   "China",
+   "Active"
+  ],
+  [
+   "290",
+   "9Q",
+   "CHANGCHUN TIRE LTD. LIABILITY CO.",
+   "Changchun",
+   "Jilin",
+   "China",
+   "Closed"
+  ],
+  [
+   "291",
+   "9I",
+   "SUNTEC TYRES LTD.",
+   "Trichur",
+   "Kerala",
+   "India",
+   "Active"
+  ],
+  [
+   "295",
+   "9S",
+   "KEE LIBERTY TIRE, INC.",
+   "Shandong",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "296",
+   "9G",
+   "WEIFANG YONGGU MFG. CO., LTD.",
+   "Gaomi City",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "2A0",
+   "AO",
+   "WEARWELL TIRE & TUBE CO. (PVT) LTD.",
+   "Bhopal",
+   "",
+   "India",
+   "Active"
+  ],
+  [
+   "2A1",
+   "AI",
+   "LONGKOU XINGLONG HICON TYRE CO.",
+   "Longkou",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "2A5",
+   "AS",
+   "QINGDAO QIANJIN RUBBER GROUP",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "2A6",
+   "AG",
+   "CIA HULERS TORNEL S.A. DE C.V.",
+   "Lago Aullagas 60",
+   "",
+   "Mexico",
+   "Active"
+  ],
+  [
+   "2B0",
+   "BO",
+   "GENERAL TIRE & RUBBER CO. OF MOROCCO",
+   "Casablanca - 02",
+   "",
+   "Morocco",
+   "Active"
+  ],
+  [
+   "2F5",
+   "FS",
+   "JINZHOU XIN XING RUBBER PRODUCTION CO., LTD.",
+   "Investment Bureau",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "2F6",
+   "FG",
+   "LONGKOU XINGLONG TYRE CO., LTD.",
+   "Longkou",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "2H6",
+   "HG",
+   "CHINA SHENMA GROUP RUBBER TYRE CO., LTD.",
+   "Pingdingshan City",
+   "Henan Province",
+   "China",
+   "Active"
+  ],
+  [
+   "2J6",
+   "JG",
+   "JILIN PROVINCE CHUNWEI TYRE CO., LTD.",
+   "Gongzhuling",
+   "Jilin Province",
+   "China",
+   "Active"
+  ],
+  [
+   "2P1",
+   "PI",
+   "GISLAVED DAEK AB",
+   "S-332 00 Gislaved",
+   "",
+   "Sweden",
+   "Closed"
+  ],
+  [
+   "2TW",
+   "TW",
+   "WEIFANG SHUNFUCHANG RUBBER & PLASTIC CO., LTD.",
+   "Shouguang Shangdong",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "3A0",
+   "AQ",
+   "CARLISLE TIRE & WHEEL CO. LTD.",
+   "Meixian, Guangdong",
+   "",
+   "China",
+   "Active"
+  ],
+  [
+   "C01",
+   "CO",
+   "GOODYEAR LASTIKLERI TAS",
+   "Adopozari",
+   "",
+   "Turkey",
+   "Active"
+  ]
+ ]
+}

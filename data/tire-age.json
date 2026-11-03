@@ -1,0 +1,716 @@
+{
+ "schema": "wam-data/v1",
+ "generated": "2026-11-03",
+ "rows": [
+  {
+   "who": "NHTSA",
+   "kind": "US road-safety regulator",
+   "replace_at": "No age set",
+   "from": "",
+   "also": "Says some vehicle and tire makers recommend replacing tires 6 to 10 years old regardless of tread, that you can't spot aging by looking, and that spares age because they're seldom replaced.",
+   "sources": [
+    {
+     "id": "ev-nhtsa-tires-aging-six-to-ten",
+     "title": "NHTSA, Tires: aging",
+     "url": "https://www.nhtsa.gov/vehicle-safety/tires",
+     "quote": "As tires age, they are more prone to failure. Some vehicle and tire manufacturers recommend replacing tires that are six to 10 years old, regardless of treadwear.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": "https://web.archive.org/web/20261020183804/https://www.nhtsa.gov/vehicle-safety/tires",
+     "publisher": "US National Highway Traffic Safety Administration"
+    },
+    {
+     "id": "ev-nhtsa-tires-not-visible",
+     "title": "NHTSA, Tires: what can I do?",
+     "url": "https://www.nhtsa.gov/vehicle-safety/tires",
+     "quote": "You cannot detect tire aging simply by looking at your tires.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": "https://web.archive.org/web/20261020183804/https://www.nhtsa.gov/vehicle-safety/tires",
+     "publisher": "US National Highway Traffic Safety Administration"
+    },
+    {
+     "id": "ev-nhtsa-tires-spare",
+     "title": "NHTSA, Tires: be aware of your spare",
+     "url": "https://www.nhtsa.gov/vehicle-safety/tires",
+     "quote": "Spare tires on all vehicles are prone to aging because they seldom get replaced.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": "https://web.archive.org/web/20261020183804/https://www.nhtsa.gov/vehicle-safety/tires",
+     "publisher": "US National Highway Traffic Safety Administration"
+    },
+    {
+     "id": "ev-nhtsa-tires-tread-first",
+     "title": "NHTSA, Tires: am I at risk?",
+     "url": "https://www.nhtsa.gov/vehicle-safety/tires",
+     "quote": "Most of us drive our vehicles enough that the tires’ treads wear out, and we replace our tires before aging becomes an issue.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": "https://web.archive.org/web/20261020183804/https://www.nhtsa.gov/vehicle-safety/tires",
+     "publisher": "US National Highway Traffic Safety Administration"
+    },
+    {
+     "id": "ev-nhtsa-tires-aging-factors",
+     "title": "NHTSA, Tires: what speeds aging",
+     "url": "https://www.nhtsa.gov/vehicle-safety/tires",
+     "quote": "In addition to infrequent use, exposure to sunlight and warmer climate, poor storage and poor maintenance also contribute to tire aging.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": "https://web.archive.org/web/20261020183804/https://www.nhtsa.gov/vehicle-safety/tires",
+     "publisher": "US National Highway Traffic Safety Administration"
+    },
+    {
+     "id": "ev-nhtsa-tires-stop-using",
+     "title": "NHTSA, Tires: should I replace my tires?",
+     "url": "https://www.nhtsa.gov/vehicle-safety/tires",
+     "quote": "You should stop using tires for several reasons, including if a tire’s tread is worn down to a minimum depth using the penny test, signs of physical damage (cuts, cracks, bulges, etc.), or signs of irregular wear or other damage due to underinflation or overloading.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": "https://web.archive.org/web/20261020183804/https://www.nhtsa.gov/vehicle-safety/tires",
+     "publisher": "US National Highway Traffic Safety Administration"
+    },
+    {
+     "id": "ev-nhtsa-tires-full-size-spare",
+     "title": "NHTSA, Tires: full-size spares",
+     "url": "https://www.nhtsa.gov/vehicle-safety/tires",
+     "quote": "NHTSA recommends that if your vehicle comes equipped with a full-size spare tire, that it not be used as a replacement for worn tires, except in emergencies such as replacing a flat tire.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": "https://web.archive.org/web/20261020183804/https://www.nhtsa.gov/vehicle-safety/tires",
+     "publisher": "US National Highway Traffic Safety Administration"
+    }
+   ]
+  },
+  {
+   "who": "Goodyear",
+   "kind": "Tire maker",
+   "replace_at": "6 years",
+   "from": "In service (or the DOT date if you don't know)",
+   "also": "Counts the spare. If you can't tell when a tire was fitted, 6 years from the date in the DOT code. Read your owner's manual too, but never go past 6 years.",
+   "sources": [
+    {
+     "id": "ev-goodyear-six-years",
+     "title": "Goodyear: tire replacement, 6 years in service",
+     "url": "https://www.coopertire.com/en_US/tire-education/learn-tire-maintenance/how-long-does-a-tire-last.html",
+     "quote": "While most tires will be replaced sooner, Goodyear recommends that any tire in service (meaning inflated and mounted on a rim of your vehicle, including your spare tire regardless of whether that tire is in contact with the roadway) 6 years or more be replaced even if such tire appears serviceable",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "The Goodyear Tire & Rubber Company"
+    },
+    {
+     "id": "ev-goodyear-dot-fallback",
+     "title": "Goodyear: when the in-service date is unknown",
+     "url": "https://www.coopertire.com/en_US/tire-education/learn-tire-maintenance/how-long-does-a-tire-last.html",
+     "quote": "If you are unable to determine the date a tire was first placed in service, then you should rely on the DOT code stamped on the tire and ensure that any tire which was manufactured more than 6 years ago is removed from service",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "The Goodyear Tire & Rubber Company"
+    },
+    {
+     "id": "ev-goodyear-owners-manual",
+     "title": "Goodyear: owner's manuals, but never past 6 years",
+     "url": "https://www.coopertire.com/en_US/tire-education/learn-tire-maintenance/how-long-does-a-tire-last.html",
+     "quote": "Goodyear advises that consumers refer to their owners’ manuals for guidance on the vehicle manufacturer’s replacement recommendations (but regardless of any such vehicle manufacturer’s advice, any tire’s replacement period should not exceed 6 years",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "The Goodyear Tire & Rubber Company"
+    }
+   ]
+  },
+  {
+   "who": "Nokian Tyres",
+   "kind": "Tire maker",
+   "replace_at": "6 or 10 years",
+   "from": "6 in service or 10 from manufacture, whichever comes first",
+   "also": "",
+   "sources": [
+    {
+     "id": "ev-nokian-six-ten",
+     "title": "Nokian Tyres: how long do tires last?",
+     "url": "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
+     "quote": "Typically, tires have a lifespan of 6 years in service or 10 years from date of manufacture, whichever comes first.",
+     "read": "2026-11-03",
+     "doc_date": "2024-03-25",
+     "archive_url": null,
+     "publisher": "Nokian Tyres"
+    }
+   ]
+  },
+  {
+   "who": "Michelin",
+   "kind": "Tire maker",
+   "replace_at": "10 years",
+   "from": "Manufacture",
+   "also": "Includes the spare. From 5 years of use, a professional inspection at least once a year. On tires that came with the vehicle, follow the vehicle maker's advice.",
+   "sources": [
+    {
+     "id": "ev-michelin-ten-years",
+     "title": "Michelin: when to replace tires",
+     "url": "https://www.michelin.ca/en/auto/learn/tire-buying-guide/when-to-replace-tires",
+     "quote": "As a precaution, Michelin recommends replacing tires ten years after their date of manufacture, regardless of tread depth or apparent condition. This includes spare tires as well.",
+     "read": "2026-11-03",
+     "doc_date": "2026-07-28",
+     "archive_url": null,
+     "publisher": "Michelin North America (Canada)"
+    },
+    {
+     "id": "ev-michelin-five-years",
+     "title": "Michelin: inspection after five years",
+     "url": "https://www.michelin.ca/en/auto/learn/tire-buying-guide/when-to-replace-tires",
+     "quote": "After five years of use, tires should be thoroughly inspected at least once a year by a trained tire professional.",
+     "read": "2026-11-03",
+     "doc_date": "2026-07-28",
+     "archive_url": null,
+     "publisher": "Michelin North America (Canada)"
+    },
+    {
+     "id": "ev-michelin-oe-follow-vehicle",
+     "title": "Michelin: original equipment tires",
+     "url": "https://www.michelin.ca/en/auto/learn/tire-buying-guide/when-to-replace-tires",
+     "quote": "For vehicles equipped with original equipment tires, always follow the vehicle manufacturer’s tire replacement recommendations.",
+     "read": "2026-11-03",
+     "doc_date": "2026-07-28",
+     "archive_url": null,
+     "publisher": "Michelin North America (Canada)"
+    }
+   ]
+  },
+  {
+   "who": "Bridgestone",
+   "kind": "Tire maker",
+   "replace_at": "10 years",
+   "from": "Manufacture",
+   "also": "Includes the spare. After 5 years, an inspection is essential.",
+   "sources": [
+    {
+     "id": "ev-bridgestone-ten-years",
+     "title": "Bridgestone: tire replacement guidance",
+     "url": "https://www.bridgestoneamericas.com/en/company/safety/choosing-tires/replacement-guidance",
+     "quote": "We recommend tires that were manufactured 10 years prior (or longer) be taken out of service and replaced with new tires. Same goes for the spare.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "Bridgestone Americas"
+    },
+    {
+     "id": "ev-bridgestone-five-years",
+     "title": "Bridgestone: inspection after five years",
+     "url": "https://www.bridgestoneamericas.com/en/company/safety/choosing-tires/replacement-guidance",
+     "quote": "After five years, an inspection is essential to determine if a tire is still road-worthy.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "Bridgestone Americas"
+    }
+   ]
+  },
+  {
+   "who": "Continental",
+   "kind": "Tire maker",
+   "replace_at": "10 years",
+   "from": "The tire's date stamp",
+   "also": "An unused tire stored properly can be sold as new up to 5 years old.",
+   "sources": [
+    {
+     "id": "ev-continental-ten-years",
+     "title": "Continental: tire age",
+     "url": "https://www.continental-tires.com/tire-knowledge/tire-age/",
+     "quote": "Continental recommends that all tires that are over 10 years old (as shown on the tire’s date stamp) should be replaced with new tires.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "Continental Tire the Americas"
+    },
+    {
+     "id": "ev-continental-sold-as-new",
+     "title": "Continental: unused tires sold as new",
+     "url": "https://www.continental-tires.com/tire-knowledge/tire-age/",
+     "quote": "A properly stored, unused tire up to 5 years old can be sold as a new tire and placed into normal service if no local legal regulations are opposed to it.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "Continental Tire the Americas"
+    }
+   ]
+  },
+  {
+   "who": "Hankook",
+   "kind": "Tire maker",
+   "replace_at": "10 years",
+   "from": "Manufacture",
+   "also": "Includes the spare.",
+   "sources": [
+    {
+     "id": "ev-hankook-ten-years",
+     "title": "Hankook technical bulletin: tire replacement recommendations",
+     "url": "https://www.hankooktire.com/content/dam/hankooktire/local/pdf/HK_TECH_BULLETIN-Tire_Replacement_Recommendations-Final.pdf",
+     "quote": "As a precaution, Hankook recommends that all tires more than ten years old from their date of manufacture should be removed from service and replaced with new tires. This applies to spare tires as well.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": "https://web.archive.org/web/20240626190754/https://www.hankooktire.com/content/dam/hankooktire/local/pdf/HK_TECH_BULLETIN-Tire_Replacement_Recommendations-Final.pdf",
+     "publisher": "Hankook Tire America Corp."
+    }
+   ]
+  },
+  {
+   "who": "Yokohama",
+   "kind": "Tire maker",
+   "replace_at": "10 years",
+   "from": "The DOT production date",
+   "also": "When the vehicle maker gives no other instruction. From 5 years in use, including the spare, an inspection at least once a year.",
+   "sources": [
+    {
+     "id": "ev-yokohama-ten-years",
+     "title": "Yokohama: tire life",
+     "url": "https://www.yokohamatire.com/tires-101/maintenance-care-1/tire-life",
+     "quote": "In the absence of instructions from your vehicle manufacturer regarding tire service life, Yokohama recommends the replacement and disposal of all passenger and light truck tires whose D.O.T. production date is 10 or more years old",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "Yokohama Tire Corporation"
+    },
+    {
+     "id": "ev-yokohama-five-years",
+     "title": "Yokohama: yearly inspection after five years",
+     "url": "https://www.yokohamatire.com/tires-101/maintenance-care-1/tire-life",
+     "quote": "For a tire in use for five or more years, including your spare tire, Yokohama recommends an inspection by a qualified tire service professional at least once a year",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "Yokohama Tire Corporation"
+    }
+   ]
+  },
+  {
+   "who": "Toyo Tires",
+   "kind": "Tire maker",
+   "replace_at": "6 to 10 years",
+   "from": "Age of the tire",
+   "also": "Lists tires 10 or more years old, regardless of condition, among the signs to have tires inspected immediately.",
+   "sources": [
+    {
+     "id": "ev-toyo-six-ten",
+     "title": "Toyo Tires: when should I replace my tires?",
+     "url": "https://www.toyotires.com/faq-articles/when-should-i-replace-my-vehicles-tires/",
+     "quote": "Most drivers should replace their tires when the tread depth reaches 2/32 of an inch, when the tires are more than 6 to 10 years old, or sooner if there are signs of damage, uneven wear, cracking, bulges, or frequent loss of air pressure.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "Toyo Tire U.S.A. Corp."
+    },
+    {
+     "id": "ev-toyo-ten-years",
+     "title": "Toyo Tires: when should I replace my tires?",
+     "url": "https://www.toyotires.com/faq-articles/when-should-i-replace-my-vehicles-tires/",
+     "quote": "Tires older than 6 to 10 years (Tires 10 or more years older regardless of condition) If any of these conditions exist, have your tires inspected immediately.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "Toyo Tire U.S.A. Corp."
+    }
+   ]
+  },
+  {
+   "who": "UK law",
+   "kind": "Department for Transport and DVSA",
+   "replace_at": "10 years (heavy vehicles)",
+   "from": "The date of manufacture on the tyre",
+   "also": "Since 1 February 2021 in England, Scotland and Wales: no tyres over 10 years old on the front steered axles of lorries, buses and coaches, or on all single wheels of minibuses with 9 to 16 passenger seats. The date marking must stay legible. Cars aren't among the vehicles it names.",
+   "sources": [
+    {
+     "id": "ev-dvsa-tyre-age-start",
+     "title": "DVSA blog: ban on tyres over 10 years old for heavy vehicles and some minibuses",
+     "url": "https://movingon.blog.gov.uk/2020/12/09/ban-on-tyres-over-10-years-old-for-heavy-vehicles-and-some-minibuses/",
+     "quote": "From 1 February 2021 Construction and Use Regulations will not allow tyres aged over 10 years old to be used on the front steered axles of HGVs, buses, coaches or all single wheels fitted to a minibus (9 to 16 passenger seats).",
+     "read": "2026-11-03",
+     "doc_date": "2020-12-09",
+     "archive_url": null,
+     "publisher": "UK Department for Transport; Driver and Vehicle Standards Agency"
+    },
+    {
+     "id": "ev-govuk-tyre-age-rule",
+     "title": "DfT: tyre age restrictions for goods vehicles, buses, coaches and minibuses",
+     "url": "https://www.gov.uk/government/publications/use-of-tyres-aged-more-than-10-years-on-goods-vehicles-buses-and-coaches/tyre-age-restrictions-for-good-vehicles-buses-coaches-and-minibuses",
+     "quote": "The date of tyre manufacture marking must always be legible. Using a tyre where the marking is damaged or defaced would be an offence.",
+     "read": "2026-11-03",
+     "doc_date": "2021-01-15",
+     "archive_url": null,
+     "publisher": "UK Department for Transport; Driver and Vehicle Standards Agency"
+    }
+   ]
+  }
+ ],
+ "rule": [
+  {
+   "id": "ev-nhtsa-tires-date-example",
+   "title": "NHTSA, Tires: reading the TIN date",
+   "url": "https://www.nhtsa.gov/vehicle-safety/tires",
+   "quote": "The last four digits of the TIN indicate the week and year the tire was made. If the TIN reads 0308 it was made in the third week of 2008. Look on both sides of the tire. The TIN may not be on both sides.",
+   "read": "2026-11-03",
+   "doc_date": null,
+   "archive_url": "https://web.archive.org/web/20261020183804/https://www.nhtsa.gov/vehicle-safety/tires",
+   "publisher": "US National Highway Traffic Safety Administration"
+  },
+  {
+   "id": "ev-fr-1999-date-code-effective",
+   "title": "64 FR 36807 (July 8, 1999): tire identification, four-digit date code",
+   "url": "https://www.govinfo.gov/content/pkg/FR-1999-07-08/html/99-17402.htm",
+   "quote": "Effective date: The amendments in this final rule become effective July 2, 2000. Optional early compliance is permitted, commencing on the date of publication of this final rule in the Federal Register.",
+   "read": "2026-11-03",
+   "doc_date": "1999-07-08",
+   "archive_url": null,
+   "publisher": "US National Archives (Office of the Federal Register), via govinfo.gov"
+  },
+  {
+   "id": "ev-fr-1999-three-digit-example",
+   "title": "64 FR 36807 (July 8, 1999): the old three-symbol date code",
+   "url": "https://www.govinfo.gov/content/pkg/FR-1999-07-08/html/99-17402.htm",
+   "quote": "The fourth group, composed of three symbols, identifies the week and year of manufacture. The first two symbols identify the week of the year, starting with ``01'' to represent the first full week of the calendar year, and the third symbol represents the year. For example, ``218'' would represent the 21st week of 1998.",
+   "read": "2026-11-03",
+   "doc_date": "1999-07-08",
+   "archive_url": null,
+   "publisher": "US National Archives (Office of the Federal Register), via govinfo.gov"
+  },
+  {
+   "id": "ev-nhtsa-tires-risk-groups",
+   "title": "NHTSA, Tires: who is at risk",
+   "url": "https://www.nhtsa.gov/vehicle-safety/tires",
+   "quote": "if you own or use recreational vehicles, 15-passenger vans, collector cars, any other vehicles you don’t drive regularly, or if your annual mileage is low, you could be at risk.",
+   "read": "2026-11-03",
+   "doc_date": null,
+   "archive_url": "https://web.archive.org/web/20261020183804/https://www.nhtsa.gov/vehicle-safety/tires",
+   "publisher": "US National Highway Traffic Safety Administration"
+  },
+  {
+   "id": "ev-usc-30102-motor-vehicle",
+   "title": "49 U.S.C. 30102: definitions (motor vehicle)",
+   "url": "https://www.law.cornell.edu/uscode/text/49/30102",
+   "quote": "“motor vehicle” means a vehicle driven or drawn by mechanical power and manufactured primarily for use on public streets, roads, and highways, but does not include a vehicle operated only on a rail line.",
+   "read": "2026-11-03",
+   "doc_date": null,
+   "archive_url": null,
+   "publisher": "US Congress (Office of the Law Revision Counsel); text served by Cornell Law School's Legal Information Institute"
+  },
+  {
+   "id": "ev-fr-1999-why-four-digits",
+   "title": "64 FR 36807 (July 8, 1999): why four digits",
+   "url": "https://www.govinfo.gov/content/pkg/FR-1999-07-08/html/99-17402.htm",
+   "quote": "The 4-digit date code will permit better traceability of tires during recalls and allow easier identification of older tires.",
+   "read": "2026-11-03",
+   "doc_date": "1999-07-08",
+   "archive_url": null,
+   "publisher": "US National Archives (Office of the Federal Register), via govinfo.gov"
+  }
+ ],
+ "carmakers": [
+  {
+   "who": "Chevrolet (GM)",
+   "slug": "gm",
+   "covers": "2025 Silverado 1500 owner’s manual (US)",
+   "replace_at": "6 years",
+   "years": 6,
+   "from": "The date code (manufacture)",
+   "spare": "Included",
+   "line": "GM’s 2025 Silverado 1500 manual says to replace tires, spare included, after six years regardless of tread, counting from the date code.",
+   "sources": [
+    {
+     "id": "ev-gm-silverado-2025-six-years",
+     "title": "2025 Chevrolet Silverado 1500 owner's manual (US), When It Is Time for New Tires",
+     "url": "https://contentdelivery.ext.gm.com/content/dam/cope/en_us/public/pdf_assets/active/owners_manuals_browse/2025/chevrolet/silverado_1500/25_CHEV_Silverado_1500_OM_en_US_U_87855274B_2024OCT31_2P.pdf",
+     "quote": "GM recommends that tires, including the spare if equipped, be replaced after six years, regardless of tread wear. To identify the age of a tire, use the tire manufacture date, which is the last four digits of the DOT Tire Identification Number (TIN) molded into one side of the tire sidewall.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "General Motors LLC"
+    }
+   ]
+  },
+  {
+   "who": "Ford",
+   "slug": "ford",
+   "covers": "All Ford vehicles (Ford’s support pages)",
+   "replace_at": "6 years",
+   "years": 6,
+   "from": "Not stated",
+   "spare": "Replace with the road tires, or after 6 years even if unused",
+   "line": "Ford says to replace tires every six years or when they wear out, whichever comes first, and the spare after six years even if it hasn’t been used.",
+   "sources": [
+    {
+     "id": "ev-ford-six-years",
+     "title": "Ford support: Tire Replacement",
+     "url": "https://www.ford.com/support/how-tos/tires-and-wheels/tire-replacement-and-maintenance/tire-replacement/",
+     "quote": "Ford recommends you replace your tires every six years or when they wear out, whichever comes first. Hot climates or frequent heavy loads may require more frequent changing and alignment.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": "https://web.archive.org/web/20260608145656/https://www.ford.com/support/how-tos/tires-and-wheels/tire-replacement-and-maintenance/tire-replacement/",
+     "publisher": "Ford Motor Company"
+    },
+    {
+     "id": "ev-ford-regardless-of-tread",
+     "title": "Ford support: How to care for your tires",
+     "url": "https://www.ford.com/support/how-tos/ownership/ford-owner/how-to-care-for-your-tires/",
+     "quote": "In general, Ford Motor Company recommends tires should be replaced after six years regardless of tread wear.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "Ford Motor Company"
+    },
+    {
+     "id": "ev-ford-spare-six-years",
+     "title": "Ford support: Tire Replacement",
+     "url": "https://www.ford.com/support/how-tos/tires-and-wheels/tire-replacement-and-maintenance/tire-replacement/",
+     "quote": "Replace the spare tire when replacing the road tires or after six years (even if it has not been used).",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": "https://web.archive.org/web/20260608145656/https://www.ford.com/support/how-tos/tires-and-wheels/tire-replacement-and-maintenance/tire-replacement/",
+     "publisher": "Ford Motor Company"
+    }
+   ]
+  },
+  {
+   "who": "Honda",
+   "slug": "honda",
+   "covers": "2024 CR-V owner’s manual (US)",
+   "replace_at": "10 years; yearly inspection from 5",
+   "years": 10,
+   "from": "The date of manufacture",
+   "spare": "Included",
+   "line": "Honda’s CR-V manual says to have tires inspected every year once they’re five, and to take all tires, spare included, out of service 10 years after they were made.",
+   "sources": [
+    {
+     "id": "ev-honda-crv-2024-ten-years",
+     "title": "2024 Honda CR-V owner's manual (US), Tire Service Life",
+     "url": "https://techinfo.honda.com/rjanisis/pubs/OM/AH/A3A02424OM/enu/A3A02424OMEN.PDF",
+     "quote": "In addition to regular inspections and inflation pressure maintenance, it is recommended that you have annual inspections performed once the tires reach five years old. All tires, including the spare, should be removed from service after 10 years from the date of manufacture, regardless of their condition or state of wear.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": "https://web.archive.org/web/20240604113429/https://techinfo.honda.com/rjanisis/pubs/OM/AH/A3A02424OM/enu/A3A02424OMEN.PDF",
+     "publisher": "American Honda Motor Co., Inc."
+    }
+   ]
+  },
+  {
+   "who": "Hyundai",
+   "slug": "hyundai",
+   "covers": "2025 Tucson owner’s manual (US)",
+   "replace_at": "6 years",
+   "years": 6,
+   "from": "Not stated",
+   "spare": "Not stated in this line",
+   "line": "Hyundai’s 2025 Tucson manual says to replace tires after six years, regardless of the remaining tread.",
+   "sources": [
+    {
+     "id": "ev-hyundai-tucson-2025-six-years",
+     "title": "2025 Hyundai Tucson owner's manual (US), Tire replacement",
+     "url": "https://ownersmanual.hyundai.com/full_pdf/NX4/2025/en_US",
+     "quote": "Tires degrade over time, even when they are not being used. Regardless of the remaining tread, HYUNDAI recommends that tires be replaced after six (6) years.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "Hyundai Motor America"
+    }
+   ]
+  },
+  {
+   "who": "Jeep",
+   "slug": "jeep",
+   "covers": "2025 Grand Cherokee owner’s manual (US)",
+   "replace_at": "6 years",
+   "years": 6,
+   "from": "Not stated",
+   "spare": "Included",
+   "line": "Jeep’s 2025 Grand Cherokee manual says tires and the spare should be replaced after six years, regardless of the tread left.",
+   "sources": [
+    {
+     "id": "ev-jeep-grand-cherokee-2025-six-years",
+     "title": "2025 Jeep Grand Cherokee owner's manual (US), Life of tire",
+     "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Jeep/2025/Grand_Cherokee/106039_45_WL_OM_EN_USC_DIGITAL_E4.pdf",
+     "quote": "Tires and the spare tire should be replaced after six years, regardless of the remaining tread. Failure to follow this warning can result in sudden tire failure.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "FCA US LLC (Stellantis)"
+    }
+   ]
+  },
+  {
+   "who": "Kia",
+   "slug": "kia",
+   "covers": "2025 Sportage Hybrid owner’s manual (US)",
+   "replace_at": "About 6 years",
+   "years": 6,
+   "from": "Both: one line counts from manufacture, another from \"normal service\"",
+   "spare": "Included",
+   "line": "Kia’s 2025 Sportage Hybrid manual says to replace tires, spare included, after about six years; one line counts from the manufacturing date, another from normal service.",
+   "sources": [
+    {
+     "id": "ev-kia-sportage-2025-six-years-made",
+     "title": "2025 Kia Sportage Hybrid owner's manual (US), Tires",
+     "url": "https://ownersmanual.kia.com/full_webhelp/NQ5KH/2025/en_US/topics/chapter9_15_8.html",
+     "quote": "Any tires that are over 6 years old, based on the manufacturing date, should be replaced by new ones.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "Kia America, Inc."
+    },
+    {
+     "id": "ev-kia-sportage-2025-six-years-service",
+     "title": "2025 Kia Sportage Hybrid owner's manual (US), Tires",
+     "url": "https://ownersmanual.kia.com/full_webhelp/NQ5KH/2025/en_US/topics/chapter9_15_8.html",
+     "quote": "Regardless of the remaining tread, we recommend that tires (including the spare tire) be replaced after approximately six (6) years of normal service.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "Kia America, Inc."
+    }
+   ]
+  },
+  {
+   "who": "Mazda",
+   "slug": "mazda",
+   "covers": "2025 CX-5 owner’s manual (US)",
+   "replace_at": "6 years or older (\"generally\")",
+   "years": 6,
+   "from": "Not stated",
+   "spare": "Replace with the road tires",
+   "line": "Mazda’s 2025 CX-5 manual says tires should generally be replaced when they’re 6 years or older, and the spare along with the road tires.",
+   "sources": [
+    {
+     "id": "ev-mazda-cx5-2025-six-years",
+     "title": "2025 Mazda CX-5 owner's manual (US), Tires",
+     "url": "https://www.mazdausa.com/static/manuals/2025/cx-5/contents/07031403.html",
+     "quote": "Tires degrade over time, even when they are not being used on the road. It is recommended that tires generally be replaced when they are 6 years or older.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "Mazda North American Operations"
+    },
+    {
+     "id": "ev-mazda-cx5-2025-spare",
+     "title": "2025 Mazda CX-5 owner's manual (US), Tires",
+     "url": "https://www.mazdausa.com/static/manuals/2025/cx-5/contents/07031403.html",
+     "quote": "You should replace the spare tire when you replace the other road tires due to the aging of the spare tire.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "Mazda North American Operations"
+    }
+   ]
+  },
+  {
+   "who": "Nissan",
+   "slug": "nissan",
+   "covers": "2024 Rogue owner’s manual (US)",
+   "replace_at": "No replacement age; a technician check over 6 years",
+   "years": 6,
+   "from": "Not stated",
+   "spare": "Included",
+   "line": "Nissan’s 2024 Rogue manual sets no replacement age: it says to have tires, including the spare, over 6 years old checked by a qualified technician.",
+   "sources": [
+    {
+     "id": "ev-nissan-rogue-2024-six-years-check",
+     "title": "2024 Nissan Rogue owner's manual (US), Tires",
+     "url": "https://www.nissanusa.com/content/dam/Nissan/us/manuals-and-guides/rogue/2024/2024-nissan-rogue-owner-manual.pdf",
+     "quote": "Tires degrade with age and use. Have tires, including the spare, over 6 years old checked by a qualified technician, because some tire damage may not be obvious. Replace the tires as necessary to prevent tire failure and possible personal injury.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": "https://web.archive.org/web/20241217200114/https://www.nissanusa.com/content/dam/Nissan/us/manuals-and-guides/rogue/2024/2024-nissan-rogue-owner-manual.pdf",
+     "publisher": "Nissan North America, Inc."
+    }
+   ]
+  },
+  {
+   "who": "Ram",
+   "slug": "ram",
+   "covers": "2025 Ram 1500 owner’s manual (US)",
+   "replace_at": "6 years",
+   "years": 6,
+   "from": "Not stated",
+   "spare": "Included",
+   "line": "Ram’s 2025 1500 manual says tires and the spare should be replaced after six years, regardless of the tread left.",
+   "sources": [
+    {
+     "id": "ev-ram-1500-2025-six-years",
+     "title": "2025 Ram 1500 owner's manual (US), Life of tire",
+     "url": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2025/1500_DT/103222_25_DT_OM_EN_USC_DIGITAL_E4_RD.pdf",
+     "quote": "Tires and the spare tire should be replaced after six years, regardless of the remaining tread. Failure to follow this warning can result in sudden tire failure.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "FCA US LLC (Stellantis)"
+    }
+   ]
+  },
+  {
+   "who": "Subaru",
+   "slug": "subaru",
+   "covers": "2025 Forester owner’s manual (US)",
+   "replace_at": "No age given; replace before the tread wear bars show",
+   "years": 0,
+   "from": "Not stated",
+   "spare": "Not stated",
+   "line": "Subaru’s 2025 Forester manual gives no tire age: its tire pages say to replace tires before the tread wear indicators show.",
+   "sources": [
+    {
+     "id": "ev-subaru-forester-2025-no-age",
+     "title": "2025 Subaru Forester owner's manual (US), Tires and wheels",
+     "url": "https://www.subaru.com/owners/vehicle-resources.html?model=2025-FOR-SFD",
+     "quote": "For safety, inspect the tire tread regularly and replace the tires before their tread wear indicators become visible.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": null,
+     "publisher": "Subaru of America, Inc."
+    }
+   ]
+  },
+  {
+   "who": "Tesla",
+   "slug": "tesla",
+   "covers": "Model Y 2025+ owner’s manual (US)",
+   "replace_at": "Every 6 years, or sooner",
+   "years": 6,
+   "from": "Not stated",
+   "spare": "Not stated",
+   "line": "Tesla’s Model Y manual says to replace tires every six years, or sooner if required, even with tread above the minimum.",
+   "sources": [
+    {
+     "id": "ev-tesla-modely-six-years",
+     "title": "Tesla Model Y 2025+ owner's manual (US), Replacing Tires and Wheels",
+     "url": "https://www.tesla.com/ownersmanual/modely/en_us/Owners_Manual.pdf",
+     "quote": "Tires degrade over time due to the effects of ultraviolet light, extreme temperatures, high loads, and environmental conditions. It is recommended that tires are replaced every six years, or sooner if required, even if tread depth is above the minimum.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": "https://web.archive.org/web/20261012174818/https://www.tesla.com/ownersmanual/modely/en_us/Owners_Manual.pdf",
+     "publisher": "Tesla, Inc."
+    }
+   ]
+  },
+  {
+   "who": "Toyota",
+   "slug": "toyota",
+   "covers": "2025 RAV4 owner’s manual (US)",
+   "replace_at": "No replacement age; a technician check over 6 years",
+   "years": 6,
+   "from": "Not stated",
+   "spare": "Not stated",
+   "line": "Toyota’s 2025 RAV4 manual sets no replacement age: it says any tire over 6 years old must be checked by a qualified technician, even if it has seldom or never been used.",
+   "sources": [
+    {
+     "id": "ev-toyota-rav4-2025-six-years-check",
+     "title": "2025 Toyota RAV4 owner's manual (US), Tire life",
+     "url": "https://assets.sia.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf",
+     "quote": "Any tire over 6 years old must be checked by a qualified technician even if it has seldom or never been used or damage is not obvious.",
+     "read": "2026-11-03",
+     "doc_date": null,
+     "archive_url": "https://web.archive.org/web/20250901152511/https://assets.sia.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf",
+     "publisher": "Toyota Motor North America, Inc."
+    }
+   ]
+  }
+ ],
+ "carmakers_not_read": null,
+ "recheck_months": 12
+}

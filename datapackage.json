@@ -1,0 +1,1276 @@
+{
+ "name": "whoactuallymakes-data",
+ "title": "Who Actually Makes open data",
+ "description": "Who makes store-brand products, from public records: Kirkland Signature makers, companies behind store brands, NHTSA tire plant codes, tire age guidance, and the evidence behind each answer.",
+ "homepage": "https://whoactuallymakes.com/data/",
+ "version": "2026-11-03",
+ "licenses": [
+  {
+   "name": "CC-BY-4.0",
+   "path": "https://creativecommons.org/licenses/by/4.0/",
+   "title": "Creative Commons Attribution 4.0"
+  }
+ ],
+ "contributors": [
+  {
+   "title": "Jeremiah Say",
+   "path": "https://orcid.org/0009-0009-2025-7691",
+   "role": "author"
+  },
+  {
+   "title": "Who Actually Makes",
+   "path": "https://whoactuallymakes.com/",
+   "role": "publisher"
+  }
+ ],
+ "keywords": [
+  "store brands",
+  "private label",
+  "open data",
+  "public records",
+  "manufacturer",
+  "who makes Kirkland",
+  "Costco",
+  "private label manufacturers",
+  "store brand makers",
+  "who makes store brands",
+  "co-packers",
+  "Kirkland suppliers",
+  "store brand supplier",
+  "who makes Kroger brand",
+  "who makes CVS brand",
+  "pet food co-packer",
+  "tire plant codes",
+  "DOT code",
+  "tire factory",
+  "NHTSA",
+  "49 CFR 574.5",
+  "tire age",
+  "how old is too old",
+  "tire replacement"
+ ],
+ "resources": [
+  {
+   "name": "claims",
+   "path": "data/claims.csv",
+   "title": "Who makes what: store-brand answers (Kirkland Signature)",
+   "description": "Every store-brand product we can answer from a public record, one row per company the record names: the product, the company, what the record says it did (made, bottled, imported, recalled), the stamp, the dates and lots it covers, the words to look for on the label, and links to the records.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 27043,
+   "hash": "sha256:111d2f1c558cf41d4b30f40544d2a14bd6c28e30c5717040384774716c7b5ab0",
+   "schema": {
+    "fields": [
+     {
+      "name": "claim_id",
+      "type": "string",
+      "description": "Our ID for the claim. Stable."
+     },
+     {
+      "name": "brand",
+      "type": "string",
+      "description": "The store brand."
+     },
+     {
+      "name": "product",
+      "type": "string",
+      "description": "The product, as we name it."
+     },
+     {
+      "name": "category",
+      "type": "string",
+      "description": "Product category."
+     },
+     {
+      "name": "company",
+      "type": "string",
+      "description": "The company the record names."
+     },
+     {
+      "name": "company_legal_name",
+      "type": "string",
+      "description": "Its name as the record gives it."
+     },
+     {
+      "name": "relation",
+      "type": "string",
+      "description": "made-by, bottled-by, packed-by, imported-by or recalled-by."
+     },
+     {
+      "name": "stamp",
+      "type": "string",
+      "description": "confirmed, documented, reported or unverified (see /how-we-know/)."
+     },
+     {
+      "name": "from",
+      "type": "string",
+      "description": "Start of what the record covers (YYYY-MM or YYYY-MM-DD)."
+     },
+     {
+      "name": "to",
+      "type": "string",
+      "description": "End of what it covers; blank when open-ended."
+     },
+     {
+      "name": "region",
+      "type": "string",
+      "description": "Where the record applies."
+     },
+     {
+      "name": "variant",
+      "type": "string",
+      "description": "Which versions of the product, if the record says."
+     },
+     {
+      "name": "on_label",
+      "type": "string",
+      "description": "Words to look for on the pack, from the record."
+     },
+     {
+      "name": "summary",
+      "type": "string",
+      "description": "One sentence on what the evidence shows."
+     },
+     {
+      "name": "evidence_ids",
+      "type": "string",
+      "description": "IDs of the evidence records, separated by “ | ”."
+     },
+     {
+      "name": "evidence_urls",
+      "type": "string",
+      "format": "uri",
+      "description": "Links to those records, same order."
+     },
+     {
+      "name": "last_checked",
+      "type": "string",
+      "description": "When we last checked the claim against its records."
+     },
+     {
+      "name": "next_check",
+      "type": "string",
+      "description": "When it’s next due."
+     },
+     {
+      "name": "page",
+      "type": "string",
+      "format": "uri",
+      "description": "Our answer page, if there is one."
+     }
+    ]
+   },
+   "sources": []
+  },
+  {
+   "name": "companies",
+   "path": "data/companies.csv",
+   "title": "Companies behind store brands (maker pages)",
+   "description": "One row per company page: the company, its legal names, what it makes, how many Kirkland Signature claims and products we tie to it, how many other companies a state pet food register lists in its care, how many FDA recalls it has and how many store names those recalls print, and its page.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 1921,
+   "hash": "sha256:fe1807eab0ecb03a3529269d37b73c0d1d19c850ed734ec68a5b1ff88bb430db",
+   "schema": {
+    "fields": [
+     {
+      "name": "company_slug",
+      "type": "string",
+      "description": "Our ID for the company page. Stable."
+     },
+     {
+      "name": "company",
+      "type": "string",
+      "description": "The company, as its page names it."
+     },
+     {
+      "name": "legal_names",
+      "type": "string",
+      "description": "Legal names of the company and its group companies on the page, separated by “ | ”."
+     },
+     {
+      "name": "website",
+      "type": "string",
+      "format": "uri",
+      "description": "The company’s own website."
+     },
+     {
+      "name": "category",
+      "type": "string",
+      "description": "What it mainly makes."
+     },
+     {
+      "name": "about",
+      "type": "string",
+      "description": "One line on the company, from its own statements and the records."
+     },
+     {
+      "name": "kirkland_claims",
+      "type": "number",
+      "description": "Kirkland Signature claims that name it (see the claims file)."
+     },
+     {
+      "name": "kirkland_products",
+      "type": "number",
+      "description": "Distinct Kirkland Signature products in those claims."
+     },
+     {
+      "name": "register_other_companies",
+      "type": "number",
+      "description": "Other companies with live registrations in its care on North Dakota’s pet food register; blank if we didn’t read the register for it."
+     },
+     {
+      "name": "fda_recalls",
+      "type": "number",
+      "description": "FDA enforcement reports (recalls) naming it as the recalling firm; blank if we didn’t read them."
+     },
+     {
+      "name": "fda_recall_store_names",
+      "type": "number",
+      "description": "Store names printed in the product text of those recalls."
+     },
+     {
+      "name": "plants",
+      "type": "number",
+      "description": "Plants listed on its page, each from a source."
+     },
+     {
+      "name": "page",
+      "type": "string",
+      "format": "uri",
+      "description": "Our company page."
+     },
+     {
+      "name": "last_checked",
+      "type": "string",
+      "description": "Latest check of anything on the page."
+     },
+     {
+      "name": "next_check",
+      "type": "string",
+      "description": "When the earliest claim on the page is next due."
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "https://lars.ndda.nd.gov/public/productsearch/3",
+     "path": "https://lars.ndda.nd.gov/public/productsearch/3"
+    },
+    {
+     "title": "https://open.fda.gov/apis/food/enforcement/",
+     "path": "https://open.fda.gov/apis/food/enforcement/"
+    },
+    {
+     "title": "https://open.fda.gov/apis/drug/enforcement/",
+     "path": "https://open.fda.gov/apis/drug/enforcement/"
+    }
+   ]
+  },
+  {
+   "name": "company-labels",
+   "path": "data/company-labels.csv",
+   "title": "Which store labels each company is on record for",
+   "description": "One row per link between a company and a brand or retailer: a claim on our answer pages, a registration on North Dakota’s pet food register filed in the company’s care, a store name printed in the company’s FDA recalls, or a brand listed under the company’s API engine oil license. Each row says how many records back it, the dates they cover, and links the record.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 41232,
+   "hash": "sha256:7b0ad9fc8b91058aee7a8bcd8c4f2e1cb63d3770be28470243e27f883739d8cb",
+   "schema": {
+    "fields": [
+     {
+      "name": "company_slug",
+      "type": "string",
+      "description": "The company page this row is on (see the companies file)."
+     },
+     {
+      "name": "company",
+      "type": "string",
+      "description": "The company. For claim rows, the one the record names, which can be a group company."
+     },
+     {
+      "name": "label",
+      "type": "string",
+      "description": "The store brand or retailer, as we name it."
+     },
+     {
+      "name": "link_kind",
+      "type": "string",
+      "description": "claim, state-pet-food-register, fda-recall or api-oil-license."
+     },
+     {
+      "name": "detail",
+      "type": "string",
+      "description": "For a claim, what the record says and the product; for a register row, the registrant name as filed; for a recall row, what the link means; for a license row, the brand names exactly as API lists them."
+     },
+     {
+      "name": "count",
+      "type": "number",
+      "description": "Claims (1), live registrations (0 = only lapsed ones), recalls that print the store name, or oils listed under the license."
+     },
+     {
+      "name": "first",
+      "type": "string",
+      "description": "Earliest date the records cover; blank if they don’t say."
+     },
+     {
+      "name": "last",
+      "type": "string",
+      "description": "Latest date they cover. For a register row, the latest expiry of a live registration; for a license row, when the license expires."
+     },
+     {
+      "name": "record_url",
+      "type": "string",
+      "format": "uri",
+      "description": "The record: claim evidence (separated by “ | ”), the register listing, or the latest recall."
+     },
+     {
+      "name": "read_on",
+      "type": "string",
+      "description": "When we read the record."
+     },
+     {
+      "name": "company_page",
+      "type": "string",
+      "format": "uri",
+      "description": "Our company page."
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "https://lars.ndda.nd.gov/public/productsearch/3",
+     "path": "https://lars.ndda.nd.gov/public/productsearch/3"
+    },
+    {
+     "title": "https://open.fda.gov/apis/food/enforcement/",
+     "path": "https://open.fda.gov/apis/food/enforcement/"
+    },
+    {
+     "title": "https://open.fda.gov/apis/drug/enforcement/",
+     "path": "https://open.fda.gov/apis/drug/enforcement/"
+    }
+   ]
+  },
+  {
+   "name": "tire-plants",
+   "path": "data/tire-plants.csv",
+   "title": "Tire plant codes (NHTSA)",
+   "description": "Every plant code NHTSA has assigned to a tire factory: the code from the start of a tire’s DOT number, the factory’s name, city, state or province, country and whether it is active.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 91557,
+   "hash": "sha256:00451790eb3558fc7a55710b3cb0becb9ad5786a8f69ef7125083f51136130a9",
+   "schema": {
+    "fields": [
+     {
+      "name": "code",
+      "type": "string",
+      "description": "The plant code: the 2 or 3 characters after “DOT” on a tire."
+     },
+     {
+      "name": "old_code",
+      "type": "string",
+      "description": "The older 2-character code for the same plant, if NHTSA lists one."
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "description": "The factory or company name as NHTSA lists it."
+     },
+     {
+      "name": "city",
+      "type": "string",
+      "description": "City of the factory."
+     },
+     {
+      "name": "state",
+      "type": "string",
+      "description": "State, province or region of the factory."
+     },
+     {
+      "name": "country",
+      "type": "string",
+      "description": "Country of the factory."
+     },
+     {
+      "name": "status",
+      "type": "string",
+      "description": "Active, Closed, or blank when NHTSA gives no status."
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "https://vpic.nhtsa.dot.gov/api/",
+     "path": "https://vpic.nhtsa.dot.gov/api/"
+    },
+    {
+     "title": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-574/section-574.5",
+     "path": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-574/section-574.5"
+    }
+   ]
+  },
+  {
+   "name": "tire-age",
+   "path": "data/tire-age.csv",
+   "title": "Tire age guidance from tire makers, carmakers and agencies",
+   "description": "What each tire maker, carmaker and safety agency says about replacing tires by age, in a row per maker: the age, what it’s counted from, whether it covers the spare, and the document it comes from.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 19614,
+   "hash": "sha256:8d93a45e9a22450348b783fe44f49afd5544e2736667ce2d8ad47d345ab6c9ce",
+   "schema": {
+    "fields": [
+     {
+      "name": "group",
+      "type": "string",
+      "description": "“tire maker or agency” or “carmaker”."
+     },
+     {
+      "name": "who",
+      "type": "string",
+      "description": "The maker or agency."
+     },
+     {
+      "name": "covers",
+      "type": "string",
+      "description": "What the advice covers: the kind of source, or for carmakers the model, year and market of the manual."
+     },
+     {
+      "name": "replace_at",
+      "type": "string",
+      "description": "The age the maker gives, in its own terms."
+     },
+     {
+      "name": "years",
+      "type": "number",
+      "description": "That age as a number of years, for carmakers; 0 when the manual gives no age."
+     },
+     {
+      "name": "counted_from",
+      "type": "string",
+      "description": "Where the years count from: manufacture (the DOT date code), fitting, or not stated."
+     },
+     {
+      "name": "spare",
+      "type": "string",
+      "description": "Whether the advice covers the spare (carmakers)."
+     },
+     {
+      "name": "also",
+      "type": "string",
+      "description": "Other conditions the maker attaches (tire makers and agencies)."
+     },
+     {
+      "name": "summary",
+      "type": "string",
+      "description": "One plain sentence on the carmaker’s advice."
+     },
+     {
+      "name": "source_titles",
+      "type": "string",
+      "description": "Title of each document, separated by “ | ”."
+     },
+     {
+      "name": "source_urls",
+      "type": "string",
+      "format": "uri",
+      "description": "Link to each document, in the same order."
+     },
+     {
+      "name": "archive_urls",
+      "type": "string",
+      "format": "uri",
+      "description": "Internet Archive copy of each document, where we used one, in the same order."
+     },
+     {
+      "name": "quotes",
+      "type": "string",
+      "description": "The exact words from each document, in the same order."
+     },
+     {
+      "name": "read_on",
+      "type": "string",
+      "description": "The date we last read the documents (YYYY-MM-DD)."
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "https://assets.sia.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf",
+     "path": "https://assets.sia.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf"
+    },
+    {
+     "title": "https://contentdelivery.ext.gm.com/content/dam/cope/en_us/public/pdf_assets/active/owners_manuals_browse/2025/chevrolet/silverado_1500/25_CHEV_Silverado_1500_OM_en_US_U_87855274B_2024OCT31_2P.pdf",
+     "path": "https://contentdelivery.ext.gm.com/content/dam/cope/en_us/public/pdf_assets/active/owners_manuals_browse/2025/chevrolet/silverado_1500/25_CHEV_Silverado_1500_OM_en_US_U_87855274B_2024OCT31_2P.pdf"
+    },
+    {
+     "title": "https://movingon.blog.gov.uk/2020/12/09/ban-on-tyres-over-10-years-old-for-heavy-vehicles-and-some-minibuses/",
+     "path": "https://movingon.blog.gov.uk/2020/12/09/ban-on-tyres-over-10-years-old-for-heavy-vehicles-and-some-minibuses/"
+    },
+    {
+     "title": "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
+     "path": "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/"
+    },
+    {
+     "title": "https://ownersmanual.hyundai.com/full_pdf/NX4/2025/en_US",
+     "path": "https://ownersmanual.hyundai.com/full_pdf/NX4/2025/en_US"
+    },
+    {
+     "title": "https://ownersmanual.kia.com/full_webhelp/NQ5KH/2025/en_US/topics/chapter9_15_8.html",
+     "path": "https://ownersmanual.kia.com/full_webhelp/NQ5KH/2025/en_US/topics/chapter9_15_8.html"
+    },
+    {
+     "title": "https://techinfo.honda.com/rjanisis/pubs/OM/AH/A3A02424OM/enu/A3A02424OMEN.PDF",
+     "path": "https://techinfo.honda.com/rjanisis/pubs/OM/AH/A3A02424OM/enu/A3A02424OMEN.PDF"
+    },
+    {
+     "title": "https://vehicleinfo.mopar.com/assets/publications/en-us/Jeep/2025/Grand_Cherokee/106039_45_WL_OM_EN_USC_DIGITAL_E4.pdf",
+     "path": "https://vehicleinfo.mopar.com/assets/publications/en-us/Jeep/2025/Grand_Cherokee/106039_45_WL_OM_EN_USC_DIGITAL_E4.pdf"
+    },
+    {
+     "title": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2025/1500_DT/103222_25_DT_OM_EN_USC_DIGITAL_E4_RD.pdf",
+     "path": "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2025/1500_DT/103222_25_DT_OM_EN_USC_DIGITAL_E4_RD.pdf"
+    },
+    {
+     "title": "https://www.bridgestoneamericas.com/en/company/safety/choosing-tires/replacement-guidance",
+     "path": "https://www.bridgestoneamericas.com/en/company/safety/choosing-tires/replacement-guidance"
+    },
+    {
+     "title": "https://www.continental-tires.com/tire-knowledge/tire-age/",
+     "path": "https://www.continental-tires.com/tire-knowledge/tire-age/"
+    },
+    {
+     "title": "https://www.coopertire.com/en_US/tire-education/learn-tire-maintenance/how-long-does-a-tire-last.html",
+     "path": "https://www.coopertire.com/en_US/tire-education/learn-tire-maintenance/how-long-does-a-tire-last.html"
+    },
+    {
+     "title": "https://www.ford.com/support/how-tos/ownership/ford-owner/how-to-care-for-your-tires/",
+     "path": "https://www.ford.com/support/how-tos/ownership/ford-owner/how-to-care-for-your-tires/"
+    },
+    {
+     "title": "https://www.ford.com/support/how-tos/tires-and-wheels/tire-replacement-and-maintenance/tire-replacement/",
+     "path": "https://www.ford.com/support/how-tos/tires-and-wheels/tire-replacement-and-maintenance/tire-replacement/"
+    },
+    {
+     "title": "https://www.gov.uk/government/publications/use-of-tyres-aged-more-than-10-years-on-goods-vehicles-buses-and-coaches/tyre-age-restrictions-for-good-vehicles-buses-coaches-and-minibuses",
+     "path": "https://www.gov.uk/government/publications/use-of-tyres-aged-more-than-10-years-on-goods-vehicles-buses-and-coaches/tyre-age-restrictions-for-good-vehicles-buses-coaches-and-minibuses"
+    },
+    {
+     "title": "https://www.hankooktire.com/content/dam/hankooktire/local/pdf/HK_TECH_BULLETIN-Tire_Replacement_Recommendations-Final.pdf",
+     "path": "https://www.hankooktire.com/content/dam/hankooktire/local/pdf/HK_TECH_BULLETIN-Tire_Replacement_Recommendations-Final.pdf"
+    },
+    {
+     "title": "https://www.mazdausa.com/static/manuals/2025/cx-5/contents/07031403.html",
+     "path": "https://www.mazdausa.com/static/manuals/2025/cx-5/contents/07031403.html"
+    },
+    {
+     "title": "https://www.michelin.ca/en/auto/learn/tire-buying-guide/when-to-replace-tires",
+     "path": "https://www.michelin.ca/en/auto/learn/tire-buying-guide/when-to-replace-tires"
+    },
+    {
+     "title": "https://www.nhtsa.gov/vehicle-safety/tires",
+     "path": "https://www.nhtsa.gov/vehicle-safety/tires"
+    },
+    {
+     "title": "https://www.nissanusa.com/content/dam/Nissan/us/manuals-and-guides/rogue/2024/2024-nissan-rogue-owner-manual.pdf",
+     "path": "https://www.nissanusa.com/content/dam/Nissan/us/manuals-and-guides/rogue/2024/2024-nissan-rogue-owner-manual.pdf"
+    },
+    {
+     "title": "https://www.subaru.com/owners/vehicle-resources.html?model=2025-FOR-SFD",
+     "path": "https://www.subaru.com/owners/vehicle-resources.html?model=2025-FOR-SFD"
+    },
+    {
+     "title": "https://www.tesla.com/ownersmanual/modely/en_us/Owners_Manual.pdf",
+     "path": "https://www.tesla.com/ownersmanual/modely/en_us/Owners_Manual.pdf"
+    },
+    {
+     "title": "https://www.toyotires.com/faq-articles/when-should-i-replace-my-vehicles-tires/",
+     "path": "https://www.toyotires.com/faq-articles/when-should-i-replace-my-vehicles-tires/"
+    },
+    {
+     "title": "https://www.yokohamatire.com/tires-101/maintenance-care-1/tire-life",
+     "path": "https://www.yokohamatire.com/tires-101/maintenance-care-1/tire-life"
+    }
+   ]
+  },
+  {
+   "name": "evidence",
+   "path": "data/evidence.csv",
+   "title": "Evidence records: every quote behind our answers",
+   "description": "Every document we rely on, one row each: the exact quote, the link, the date we read it, an Internet Archive copy where we used one, and the SHA-256 fingerprint of the file as we read it.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 93239,
+   "hash": "sha256:6f498d55041b766c2f1073ca9a37b292e8ef283bb6897052b38906b95f616afa",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "description": "Our ID for the record. Stable: it never changes or gets reused."
+     },
+     {
+      "name": "source",
+      "type": "string",
+      "description": "ID of the source it comes from (see the Sources dataset)."
+     },
+     {
+      "name": "publisher",
+      "type": "string",
+      "description": "Who published the document."
+     },
+     {
+      "name": "type",
+      "type": "string",
+      "description": "maker-statement or regulator-document."
+     },
+     {
+      "name": "title",
+      "type": "string",
+      "description": "The document and the section we read."
+     },
+     {
+      "name": "url",
+      "type": "string",
+      "format": "uri",
+      "description": "Where the document lives."
+     },
+     {
+      "name": "archive_url",
+      "type": "string",
+      "format": "uri",
+      "description": "Internet Archive copy we read or saved, if any."
+     },
+     {
+      "name": "retrieved",
+      "type": "string",
+      "description": "When we read it (YYYY-MM-DD)."
+     },
+     {
+      "name": "doc_date",
+      "type": "string",
+      "description": "The date the document gives itself, if it gives one."
+     },
+     {
+      "name": "quote",
+      "type": "string",
+      "description": "The exact words we rely on, up to 600 characters."
+     },
+     {
+      "name": "sha256",
+      "type": "string",
+      "description": "SHA-256 fingerprint of the file as we read it."
+     },
+     {
+      "name": "note",
+      "type": "string",
+      "description": "Page number, how we read it, and anything a checker should know."
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "http://www.fda.gov/Safety/Recalls/ucm303034.htm",
+     "path": "http://www.fda.gov/Safety/Recalls/ucm303034.htm"
+    },
+    {
+     "title": "http://www.usga.org/ConformingGolfBall/gball_list.pdf",
+     "path": "http://www.usga.org/ConformingGolfBall/gball_list.pdf"
+    },
+    {
+     "title": "https://api.fda.gov/drug/enforcement.json?search=recall_number%3A%22D-0115-2025%22",
+     "path": "https://api.fda.gov/drug/enforcement.json?search=recall_number%3A%22D-0115-2025%22"
+    },
+    {
+     "title": "https://api.fda.gov/drug/enforcement.json?search=recall_number%3A%22D-0355-2022%22",
+     "path": "https://api.fda.gov/drug/enforcement.json?search=recall_number%3A%22D-0355-2022%22"
+    },
+    {
+     "title": "https://api.fda.gov/drug/enforcement.json?search=recall_number%3A%22D-0557-2026%22",
+     "path": "https://api.fda.gov/drug/enforcement.json?search=recall_number%3A%22D-0557-2026%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0033-2021%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0033-2021%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0121-2025%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0121-2025%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0314-2025%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0314-2025%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0347-2023%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0347-2023%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0420-2025%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0420-2025%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0433-2013%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0433-2013%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0631-2022%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0631-2022%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0648-2023%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0648-2023%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2077-2019%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2077-2019%22"
+    },
+    {
+     "title": "https://assets.sia.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf",
+     "path": "https://assets.sia.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf"
+    },
+    {
+     "title": "https://contentdelivery.ext.gm.com/content/dam/cope/en_us/public/pdf_assets/active/owners_manuals_browse/2025/chevrolet/silverado_1500/25_CHEV_Silverado_1500_OM_en_US_U_87855274B_2024OCT31_2P.pdf",
+     "path": "https://contentdelivery.ext.gm.com/content/dam/cope/en_us/public/pdf_assets/active/owners_manuals_browse/2025/chevrolet/silverado_1500/25_CHEV_Silverado_1500_OM_en_US_U_87855274B_2024OCT31_2P.pdf"
+    },
+    {
+     "title": "https://diamondpetcompany.com/our-history",
+     "path": "https://diamondpetcompany.com/our-history"
+    },
+    {
+     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=7-Eleven",
+     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=7-Eleven"
+    },
+    {
+     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Carquest",
+     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Carquest"
+    },
+    {
+     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Craftsman",
+     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Craftsman"
+    },
+    {
+     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Do%20It%20Best",
+     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Do%20It%20Best"
+    },
+    {
+     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Meijer",
+     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Meijer"
+    },
+    {
+     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Member",
+     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Member"
+    },
+    {
+     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=NAPA",
+     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=NAPA"
+    },
+    {
+     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Signature%20Select",
+     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Signature%20Select"
+    },
+    {
+     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=SuperTech",
+     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=SuperTech"
+    },
+    {
+     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Traveller",
+     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Traveller"
+    },
+    {
+     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Valucraft",
+     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Valucraft"
+    },
+    {
+     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=amazon",
+     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=amazon"
+    },
+    {
+     "title": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10110",
+     "path": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10110"
+    },
+    {
+     "title": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10295",
+     "path": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10295"
+    },
+    {
+     "title": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10297",
+     "path": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10297"
+    },
+    {
+     "title": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10364",
+     "path": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10364"
+    },
+    {
+     "title": "https://golfwrx.com/623786/golfwrx-spotted-costco-kirkland-signature-wedges-on-usga-conforming-list/",
+     "path": "https://golfwrx.com/623786/golfwrx-spotted-costco-kirkland-signature-wedges-on-usga-conforming-list/"
+    },
+    {
+     "title": "https://golfwrx.com/702096/golfwrx-spotted-costco-kirkland-signature-irons-on-usga-conforming-list/",
+     "path": "https://golfwrx.com/702096/golfwrx-spotted-costco-kirkland-signature-irons-on-usga-conforming-list/"
+    },
+    {
+     "title": "https://lars.ndda.nd.gov/public/openfile?getDocId=111809",
+     "path": "https://lars.ndda.nd.gov/public/openfile?getDocId=111809"
+    },
+    {
+     "title": "https://lars.ndda.nd.gov/public/openfile?getDocId=264965",
+     "path": "https://lars.ndda.nd.gov/public/openfile?getDocId=264965"
+    },
+    {
+     "title": "https://lars.ndda.nd.gov/public/openfile?getDocId=93584",
+     "path": "https://lars.ndda.nd.gov/public/openfile?getDocId=93584"
+    },
+    {
+     "title": "https://lars.ndda.nd.gov/public/productDetail/40627",
+     "path": "https://lars.ndda.nd.gov/public/productDetail/40627"
+    },
+    {
+     "title": "https://lars.ndda.nd.gov/public/productDetail/40712",
+     "path": "https://lars.ndda.nd.gov/public/productDetail/40712"
+    },
+    {
+     "title": "https://lars.ndda.nd.gov/public/productDetail/41477",
+     "path": "https://lars.ndda.nd.gov/public/productDetail/41477"
+    },
+    {
+     "title": "https://lars.ndda.nd.gov/public/productDetail/71197",
+     "path": "https://lars.ndda.nd.gov/public/productDetail/71197"
+    },
+    {
+     "title": "https://lars.ndda.nd.gov/public/productDetail/80975",
+     "path": "https://lars.ndda.nd.gov/public/productDetail/80975"
+    },
+    {
+     "title": "https://lars.ndda.nd.gov/public/productDetail/8454",
+     "path": "https://lars.ndda.nd.gov/public/productDetail/8454"
+    },
+    {
+     "title": "https://lars.ndda.nd.gov/public/productDetail/8457",
+     "path": "https://lars.ndda.nd.gov/public/productDetail/8457"
+    },
+    {
+     "title": "https://movingon.blog.gov.uk/2020/12/09/ban-on-tyres-over-10-years-old-for-heavy-vehicles-and-some-minibuses/",
+     "path": "https://movingon.blog.gov.uk/2020/12/09/ban-on-tyres-over-10-years-old-for-heavy-vehicles-and-some-minibuses/"
+    },
+    {
+     "title": "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
+     "path": "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/"
+    },
+    {
+     "title": "https://ownersmanual.hyundai.com/full_pdf/NX4/2025/en_US",
+     "path": "https://ownersmanual.hyundai.com/full_pdf/NX4/2025/en_US"
+    },
+    {
+     "title": "https://ownersmanual.kia.com/full_webhelp/NQ5KH/2025/en_US/topics/chapter9_15_8.html",
+     "path": "https://ownersmanual.kia.com/full_webhelp/NQ5KH/2025/en_US/topics/chapter9_15_8.html"
+    },
+    {
+     "title": "https://techinfo.honda.com/rjanisis/pubs/OM/AH/A3A02424OM/enu/A3A02424OMEN.PDF",
+     "path": "https://techinfo.honda.com/rjanisis/pubs/OM/AH/A3A02424OM/enu/A3A02424OMEN.PDF"
+    }
+   ]
+  },
+  {
+   "name": "sources",
+   "path": "data/sources.csv",
+   "title": "Sources: the public records we use, and their limits",
+   "description": "Each source we use: who publishes it, whether it is a primary record, what it proves, what it can’t prove, what its terms allow, and how and when we read it.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 25740,
+   "hash": "sha256:6bd0c74be42a7f35dd13dba985b308d4258dc2dddfbff873270483aed9cb8d5a",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "description": "Our ID for the source."
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "description": "Name of the source."
+     },
+     {
+      "name": "publisher",
+      "type": "string",
+      "description": "Who publishes it."
+     },
+     {
+      "name": "url",
+      "type": "string",
+      "format": "uri",
+      "description": "Its home page."
+     },
+     {
+      "name": "kind",
+      "type": "string",
+      "description": "Kind of source, such as Government registry or Maker."
+     },
+     {
+      "name": "primary",
+      "type": "boolean",
+      "description": "true when it is the record itself, not a report about a record."
+     },
+     {
+      "name": "proves",
+      "type": "string",
+      "description": "What it can prove."
+     },
+     {
+      "name": "cannot_prove",
+      "type": "string",
+      "description": "What it can’t prove."
+     },
+     {
+      "name": "terms_url",
+      "type": "string",
+      "format": "uri",
+      "description": "Its terms of use or site policies."
+     },
+     {
+      "name": "terms_read",
+      "type": "string",
+      "description": "What its terms allow, in our words."
+     },
+     {
+      "name": "terms_checked",
+      "type": "string",
+      "description": "When we last read its terms."
+     },
+     {
+      "name": "credit",
+      "type": "string",
+      "description": "The credit line the publisher asks for, if any."
+     },
+     {
+      "name": "pulls",
+      "type": "string",
+      "description": "How and how often we read it, separated by “ | ”."
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "https://diamondpetcompany.com/",
+     "path": "https://diamondpetcompany.com/"
+    },
+    {
+     "title": "https://engineoil.api.org/Directory/EolcsSearch",
+     "path": "https://engineoil.api.org/Directory/EolcsSearch"
+    },
+    {
+     "title": "https://lars.ndda.nd.gov/public/productsearch/3",
+     "path": "https://lars.ndda.nd.gov/public/productsearch/3"
+    },
+    {
+     "title": "https://mygarage.honda.com/s/find-honda",
+     "path": "https://mygarage.honda.com/s/find-honda"
+    },
+    {
+     "title": "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
+     "path": "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/"
+    },
+    {
+     "title": "https://open.fda.gov/apis/food/enforcement/",
+     "path": "https://open.fda.gov/apis/food/enforcement/"
+    },
+    {
+     "title": "https://ownersmanual.hyundai.com/",
+     "path": "https://ownersmanual.hyundai.com/"
+    },
+    {
+     "title": "https://ownersmanual.kia.com/",
+     "path": "https://ownersmanual.kia.com/"
+    },
+    {
+     "title": "https://thegolfnewsnet.com/",
+     "path": "https://thegolfnewsnet.com/"
+    },
+    {
+     "title": "https://ttbonline.gov/colasonline/publicSearchColasBasic.do",
+     "path": "https://ttbonline.gov/colasonline/publicSearchColasBasic.do"
+    },
+    {
+     "title": "https://uscode.house.gov/",
+     "path": "https://uscode.house.gov/"
+    },
+    {
+     "title": "https://vpic.nhtsa.dot.gov/api/",
+     "path": "https://vpic.nhtsa.dot.gov/api/"
+    },
+    {
+     "title": "https://web.archive.org/web/*/usga.org/ConformingGolfBall/gball_list.pdf",
+     "path": "https://web.archive.org/web/*/usga.org/ConformingGolfBall/gball_list.pdf"
+    },
+    {
+     "title": "https://web.archive.org/web/*/usga.org/ConformingGolfClub/ConformingClubList_M.pdf",
+     "path": "https://web.archive.org/web/*/usga.org/ConformingGolfClub/ConformingClubList_M.pdf"
+    },
+    {
+     "title": "https://www.bridgestoneamericas.com/en/company/safety/choosing-tires/replacement-guidance",
+     "path": "https://www.bridgestoneamericas.com/en/company/safety/choosing-tires/replacement-guidance"
+    },
+    {
+     "title": "https://www.chevrolet.com/support/vehicle/manuals-guides",
+     "path": "https://www.chevrolet.com/support/vehicle/manuals-guides"
+    },
+    {
+     "title": "https://www.continental-tires.com/tire-knowledge/tire-age/",
+     "path": "https://www.continental-tires.com/tire-knowledge/tire-age/"
+    },
+    {
+     "title": "https://www.coopertire.com/en_US/tire-education/learn-tire-maintenance/how-long-does-a-tire-last.html",
+     "path": "https://www.coopertire.com/en_US/tire-education/learn-tire-maintenance/how-long-does-a-tire-last.html"
+    },
+    {
+     "title": "https://www.costco.com/",
+     "path": "https://www.costco.com/"
+    },
+    {
+     "title": "https://www.courtlistener.com/recap/",
+     "path": "https://www.courtlistener.com/recap/"
+    },
+    {
+     "title": "https://www.ecfr.gov/",
+     "path": "https://www.ecfr.gov/"
+    },
+    {
+     "title": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts",
+     "path": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts"
+    },
+    {
+     "title": "https://www.ford.com/support/how-tos/tires-and-wheels/tire-replacement-and-maintenance/tire-replacement/",
+     "path": "https://www.ford.com/support/how-tos/tires-and-wheels/tire-replacement-and-maintenance/tire-replacement/"
+    },
+    {
+     "title": "https://www.fsis.usda.gov/inspection/establishments/meat-poultry-and-egg-product-inspection-directory",
+     "path": "https://www.fsis.usda.gov/inspection/establishments/meat-poultry-and-egg-product-inspection-directory"
+    },
+    {
+     "title": "https://www.golfmonthly.com/",
+     "path": "https://www.golfmonthly.com/"
+    },
+    {
+     "title": "https://www.golfwrx.com/",
+     "path": "https://www.golfwrx.com/"
+    },
+    {
+     "title": "https://www.gov.uk/",
+     "path": "https://www.gov.uk/"
+    },
+    {
+     "title": "https://www.govinfo.gov/app/collection/fr",
+     "path": "https://www.govinfo.gov/app/collection/fr"
+    },
+    {
+     "title": "https://www.hankooktire.com/content/dam/hankooktire/local/pdf/HK_TECH_BULLETIN-Tire_Replacement_Recommendations-Final.pdf",
+     "path": "https://www.hankooktire.com/content/dam/hankooktire/local/pdf/HK_TECH_BULLETIN-Tire_Replacement_Recommendations-Final.pdf"
+    },
+    {
+     "title": "https://www.highlinewarren.com/",
+     "path": "https://www.highlinewarren.com/"
+    },
+    {
+     "title": "https://www.lnkintl.com/",
+     "path": "https://www.lnkintl.com/"
+    },
+    {
+     "title": "https://www.mazdausa.com/static/manuals/2025/cx-5/contents/07031403.html",
+     "path": "https://www.mazdausa.com/static/manuals/2025/cx-5/contents/07031403.html"
+    },
+    {
+     "title": "https://www.michelin.ca/en/auto/learn/tire-buying-guide/when-to-replace-tires",
+     "path": "https://www.michelin.ca/en/auto/learn/tire-buying-guide/when-to-replace-tires"
+    },
+    {
+     "title": "https://www.mopar.com/en-us/my-vehicle/owners-manual.html",
+     "path": "https://www.mopar.com/en-us/my-vehicle/owners-manual.html"
+    },
+    {
+     "title": "https://www.nhtsa.gov/vehicle-safety/tires",
+     "path": "https://www.nhtsa.gov/vehicle-safety/tires"
+    },
+    {
+     "title": "https://www.nissanusa.com/owners/manuals-guides.html",
+     "path": "https://www.nissanusa.com/owners/manuals-guides.html"
+    },
+    {
+     "title": "https://www.perrigo.com/",
+     "path": "https://www.perrigo.com/"
+    },
+    {
+     "title": "https://www.saturnpetcare.us/",
+     "path": "https://www.saturnpetcare.us/"
+    },
+    {
+     "title": "https://www.sazerac.com/",
+     "path": "https://www.sazerac.com/"
+    },
+    {
+     "title": "https://www.subaru.com/owners/vehicle-resources.html",
+     "path": "https://www.subaru.com/owners/vehicle-resources.html"
+    },
+    {
+     "title": "https://www.tesla.com/ownersmanual/modely/en_us/Owners_Manual.pdf",
+     "path": "https://www.tesla.com/ownersmanual/modely/en_us/Owners_Manual.pdf"
+    },
+    {
+     "title": "https://www.toyota.com/owners/warranty-owners-manuals/",
+     "path": "https://www.toyota.com/owners/warranty-owners-manuals/"
+    },
+    {
+     "title": "https://www.toyotires.com/faq-articles/when-should-i-replace-my-vehicles-tires/",
+     "path": "https://www.toyotires.com/faq-articles/when-should-i-replace-my-vehicles-tires/"
+    },
+    {
+     "title": "https://www.usga.org/ConformingGolfBall/",
+     "path": "https://www.usga.org/ConformingGolfBall/"
+    },
+    {
+     "title": "https://www.yokohamatire.com/tires-101/maintenance-care-1/tire-life",
+     "path": "https://www.yokohamatire.com/tires-101/maintenance-care-1/tire-life"
+    }
+   ]
+  },
+  {
+   "name": "corrections",
+   "path": "data/corrections.csv",
+   "title": "Corrections log",
+   "description": "Every change to a published answer: what it said, what it says now, why, who spotted it and when. Corrections, updates and clarifications are kept apart.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 2584,
+   "hash": "sha256:180143020a527bbd6e9336c9cf5dca297df26b17405e9e5aefd859c666196445",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "description": "Our ID for the entry."
+     },
+     {
+      "name": "on",
+      "type": "string",
+      "description": "When the change went live (YYYY-MM-DD)."
+     },
+     {
+      "name": "kind",
+      "type": "string",
+      "description": "correction, update or clarification."
+     },
+     {
+      "name": "page",
+      "type": "string",
+      "format": "uri",
+      "description": "The page that changed (a path on whoactuallymakes.com)."
+     },
+     {
+      "name": "what",
+      "type": "string",
+      "description": "What changed, in a few words."
+     },
+     {
+      "name": "was",
+      "type": "string",
+      "description": "What it said before."
+     },
+     {
+      "name": "now",
+      "type": "string",
+      "description": "What it says now."
+     },
+     {
+      "name": "why",
+      "type": "string",
+      "description": "Why it changed."
+     },
+     {
+      "name": "flagged_by",
+      "type": "string",
+      "description": "Who spotted it: a reader, the maker or brand, or our own checks."
+     },
+     {
+      "name": "evidence",
+      "type": "string",
+      "format": "uri",
+      "description": "The records that showed it, separated by “ | ”."
+     }
+    ]
+   },
+   "sources": []
+  },
+  {
+   "name": "schedule",
+   "path": "data/schedule.csv",
+   "title": "Update schedule: when each list is checked",
+   "description": "Each check we run on a schedule: what it reads, how often, by script or by hand, when it last ran, when it’s next due and what it found.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 1181,
+   "hash": "sha256:8eea8cd183af41e62210233893df75f16b4c54c3a450bcf127fc64b049177c9d",
+   "schema": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "description": "Our ID for the job."
+     },
+     {
+      "name": "what",
+      "type": "string",
+      "description": "What the job checks."
+     },
+     {
+      "name": "source",
+      "type": "string",
+      "description": "The source it reads."
+     },
+     {
+      "name": "how",
+      "type": "string",
+      "description": "script or hand."
+     },
+     {
+      "name": "every_days",
+      "type": "number",
+      "description": "How often it runs, in days."
+     },
+     {
+      "name": "once",
+      "type": "boolean",
+      "description": "true for a one-off check."
+     },
+     {
+      "name": "last",
+      "type": "string",
+      "description": "When it last ran (YYYY-MM-DD)."
+     },
+     {
+      "name": "due",
+      "type": "string",
+      "description": "When it’s next due (YYYY-MM-DD)."
+     },
+     {
+      "name": "result",
+      "type": "string",
+      "description": "What the last run found."
+     }
+    ]
+   },
+   "sources": []
+  }
+ ]
+}

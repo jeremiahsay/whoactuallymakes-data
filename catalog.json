@@ -1,0 +1,1654 @@
+{
+ "schema": "wam-data/v1",
+ "generated": "2026-11-03",
+ "title": "Who Actually Makes open data",
+ "url": "https://whoactuallymakes.com/data/",
+ "licence": {
+  "name": "CC BY 4.0",
+  "url": "https://creativecommons.org/licenses/by/4.0/"
+ },
+ "credit": "Who Actually Makes (whoactuallymakes.com), CC BY 4.0",
+ "count": 9,
+ "records": 1637,
+ "datasets": [
+  {
+   "id": "claims",
+   "title": "Who makes what: store-brand answers (Kirkland Signature)",
+   "short": "Who makes what",
+   "what": "Every store-brand product we can answer from a public record, one row per company the record names: the product, the company, what the record says it did (made, bottled, imported, recalled), the stamp, the dates and lots it covers, the words to look for on the label, and links to the records.",
+   "limits": "Each row covers only its own dates, lots and region. A label approval names the bottler or importer, not always the distiller; a recall names the recalling firm, usually but not always the maker.",
+   "use": "Powers the Kirkland Signature hub and its answer pages.",
+   "page": "/kirkland-signature/",
+   "refresh": "Whenever a claim is added or re-checked; every claim is re-checked within 6 months",
+   "keywords": [
+    "who makes Kirkland",
+    "store brands",
+    "private label",
+    "Costco",
+    "manufacturer"
+   ],
+   "rights": "Quoted words belong to their publishers; most records are US government work. CC BY covers our rows.",
+   "based_on": [],
+   "records": 44,
+   "updated": "2026-11-03",
+   "fields": [
+    {
+     "name": "claim_id",
+     "type": "text",
+     "about": "Our ID for the claim. Stable."
+    },
+    {
+     "name": "brand",
+     "type": "text",
+     "about": "The store brand."
+    },
+    {
+     "name": "product",
+     "type": "text",
+     "about": "The product, as we name it."
+    },
+    {
+     "name": "category",
+     "type": "text",
+     "about": "Product category."
+    },
+    {
+     "name": "company",
+     "type": "text",
+     "about": "The company the record names."
+    },
+    {
+     "name": "company_legal_name",
+     "type": "text",
+     "about": "Its name as the record gives it."
+    },
+    {
+     "name": "relation",
+     "type": "text",
+     "about": "made-by, bottled-by, packed-by, imported-by or recalled-by."
+    },
+    {
+     "name": "stamp",
+     "type": "text",
+     "about": "confirmed, documented, reported or unverified (see /how-we-know/)."
+    },
+    {
+     "name": "from",
+     "type": "date",
+     "about": "Start of what the record covers (YYYY-MM or YYYY-MM-DD)."
+    },
+    {
+     "name": "to",
+     "type": "date",
+     "about": "End of what it covers; blank when open-ended."
+    },
+    {
+     "name": "region",
+     "type": "text",
+     "about": "Where the record applies."
+    },
+    {
+     "name": "variant",
+     "type": "text",
+     "about": "Which versions of the product, if the record says."
+    },
+    {
+     "name": "on_label",
+     "type": "text",
+     "about": "Words to look for on the pack, from the record."
+    },
+    {
+     "name": "summary",
+     "type": "text",
+     "about": "One sentence on what the evidence shows."
+    },
+    {
+     "name": "evidence_ids",
+     "type": "text",
+     "about": "IDs of the evidence records, separated by “ | ”."
+    },
+    {
+     "name": "evidence_urls",
+     "type": "url",
+     "about": "Links to those records, same order."
+    },
+    {
+     "name": "last_checked",
+     "type": "date",
+     "about": "When we last checked the claim against its records."
+    },
+    {
+     "name": "next_check",
+     "type": "date",
+     "about": "When it’s next due."
+    },
+    {
+     "name": "page",
+     "type": "url",
+     "about": "Our answer page, if there is one."
+    }
+   ],
+   "preview": [
+    {
+     "claim_id": "c-ks-golf-performance-plus-sm-global",
+     "brand": "Kirkland Signature",
+     "product": "Kirkland Signature Performance+ golf ball",
+     "category": "Sports",
+     "company": "SM Global",
+     "company_legal_name": "SM Global LLC",
+     "relation": "listed-maker",
+     "stamp": "documented",
+     "from": "2026-11-03",
+     "to": "",
+     "region": "USGA and R&A list (worldwide)",
+     "variant": "Balls printed “Performance +”, white and yellow (three listings)",
+     "on_label": "“Kirkland Signature” (Signature in red) and “Performance +”",
+     "summary": "The USGA and R&A list of conforming golf balls lists all three Kirkland Signature Performance + balls, white and yellow, under SM Global LLC as manufacturer. Costco sells today's ball as the Performance Plus V3.0; the list doesn't say which version each listing is.",
+     "evidence_ids": "ev-usga-ks-golf-balls-sm-global | ev-costco-ks-golf-ball-v3",
+     "evidence_urls": "https://www.usga.org/ConformingGolfBall/ | https://www.costco.com/p/-/kirkland-signature-v30-golf-ball-2-dozen/4000291493",
+     "last_checked": "2026-11-03",
+     "next_check": "2026-12-03",
+     "page": "https://whoactuallymakes.com/kirkland-signature/golf-balls/"
+    },
+    {
+     "claim_id": "c-ks-golf-driver-sm-global",
+     "brand": "Kirkland Signature",
+     "product": "Kirkland Signature driver",
+     "category": "Sports",
+     "company": "SM Global",
+     "company_legal_name": "SM Global LLC",
+     "relation": "listed-maker",
+     "stamp": "documented",
+     "from": "2025-01",
+     "to": "",
+     "region": "USGA and R&A list (worldwide)",
+     "variant": "Kirkland Signature Driver, 10.5 degrees",
+     "on_label": "“Kirkland, Signature” and the loft on the sole",
+     "summary": "The USGA and R&A list of conforming driver heads, January 20, 2025 edition, lists the Kirkland Signature Driver (10.5 degrees) under SM Global, LLC as manufacturer.",
+     "evidence_ids": "ev-usga-cdh-2025-01-ks-driver | ev-gm-ks-driver-2023-12",
+     "evidence_urls": "https://www.usga.org/ConformingGolfClub/ConformingClubList_M.pdf | https://www.golfmonthly.com/news/costco-kirkland-signature-driver-goes-on-sale",
+     "last_checked": "2026-11-03",
+     "next_check": "2026-12-03",
+     "page": "https://whoactuallymakes.com/kirkland-signature/golf-clubs/"
+    },
+    {
+     "claim_id": "c-ks-dog-food-diamond-2025",
+     "brand": "Kirkland Signature",
+     "product": "Kirkland Signature dry dog food",
+     "category": "Pet food",
+     "company": "Diamond Pet Foods",
+     "company_legal_name": "Diamond Pet Foods",
+     "relation": "registered-via",
+     "stamp": "documented",
+     "from": "2025-12",
+     "to": "",
+     "region": "US (North Dakota registration)",
+     "variant": "Every active Super Premium and Nature's Domain dry dog formula (12)",
+     "on_label": "",
+     "summary": "North Dakota's pet food register lists all 12 active Kirkland Signature dry dog formulas as Costco's, care of Diamond Pet, renewed December 2025. A Nature's Domain bag proof filed with them names Diamond Pet as the printer's customer.",
+     "evidence_ids": "ev-nd-ks-dry-dog-diamond | ev-nd-ks-natures-domain-label-diamond",
+     "evidence_urls": "https://lars.ndda.nd.gov/public/productDetail/40712 | https://lars.ndda.nd.gov/public/openfile?getDocId=93584",
+     "last_checked": "2026-11-03",
+     "next_check": "2027-05-03",
+     "page": "https://whoactuallymakes.com/kirkland-signature/dog-food/"
+    },
+    {
+     "claim_id": "c-ks-dog-food-diamond-2012",
+     "brand": "Kirkland Signature",
+     "product": "Kirkland Signature dry dog food",
+     "category": "Pet food",
+     "company": "Diamond Pet Foods",
+     "company_legal_name": "Diamond Pet Foods",
+     "relation": "made-by",
+     "stamp": "documented",
+     "from": "2011-12-09",
+     "to": "2012-04-07",
+     "region": "17 US states, Puerto Rico and Canada",
+     "variant": "Super Premium dry dog formulas and Nature's Domain Salmon Meal & Sweet Potato",
+     "on_label": "Production code with a 3 in the 9th position and an X in the 11th; best-before Dec 9, 2012 to Jan 31, 2013",
+     "summary": "Diamond Pet Foods' own 2012 recall notice, posted by FDA, lists five Kirkland Signature dry dog formulas among Diamond-made batches from its Gaston, S.C. plant.",
+     "evidence_ids": "ev-fda-diamond-2012-kirkland",
+     "evidence_urls": "http://www.fda.gov/Safety/Recalls/ucm303034.htm",
+     "last_checked": "2026-11-03",
+     "next_check": "2027-05-03",
+     "page": "https://whoactuallymakes.com/kirkland-signature/dog-food/"
+    },
+    {
+     "claim_id": "c-ks-vodka-bardstown",
+     "brand": "Kirkland Signature",
+     "product": "Kirkland Signature American Vodka",
+     "category": "Spirits",
+     "company": "The Bardstown Bourbon Company",
+     "company_legal_name": "The Bardstown Bourbon Company, LLC",
+     "relation": "bottled-by",
+     "stamp": "documented",
+     "from": "2026-07",
+     "to": "",
+     "region": "US",
+     "variant": "",
+     "on_label": "Produced & bottled by Lofted Spirits, Bardstown, KY",
+     "summary": "A July 2026 TTB label approval for Kirkland Signature Premium American Vodka is held by The Bardstown Bourbon Company; the label reads \"Produced & bottled by Lofted Spirits, Bardstown, KY\".",
+     "evidence_ids": "ev-ttb-ks-vodka-bardstown-2026",
+     "evidence_urls": "https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=26203001000461",
+     "last_checked": "2026-11-03",
+     "next_check": "2027-05-03",
+     "page": "https://whoactuallymakes.com/kirkland-signature/vodka/"
+    }
+   ],
+   "files": {
+    "json": {
+     "url": "https://whoactuallymakes.com/data/claims.json",
+     "bytes": 42166,
+     "sha256": "f283ee1dcacfd7416dfa085e2b7fafe0c53c71936b41edd444bb5e95b4c21676"
+    },
+    "csv": {
+     "url": "https://whoactuallymakes.com/data/claims.csv",
+     "bytes": 27043,
+     "sha256": "111d2f1c558cf41d4b30f40544d2a14bd6c28e30c5717040384774716c7b5ab0"
+    }
+   }
+  },
+  {
+   "id": "companies",
+   "title": "Companies behind store brands (maker pages)",
+   "short": "Companies",
+   "what": "One row per company page: the company, its legal names, what it makes, how many Kirkland Signature claims and products we tie to it, how many other companies a state pet food register lists in its care, how many FDA recalls it has and how many store names those recalls print, and its page.",
+   "limits": "Counts are as of the read date. A company with no page yet isn't here; the claims file names every company we have a record for.",
+   "use": "Powers the /makers/ hub and the company pages.",
+   "page": "/makers/",
+   "refresh": "Whenever a claim, register or recall read changes; registers are re-read every 6 months",
+   "keywords": [
+    "private label manufacturers",
+    "store brand makers",
+    "who makes store brands",
+    "co-packers",
+    "Kirkland suppliers"
+   ],
+   "rights": "Most counts come from US government records. CC BY covers our rows.",
+   "based_on": [
+    "https://lars.ndda.nd.gov/public/productsearch/3",
+    "https://open.fda.gov/apis/food/enforcement/",
+    "https://open.fda.gov/apis/drug/enforcement/"
+   ],
+   "records": 7,
+   "updated": "2026-11-03",
+   "fields": [
+    {
+     "name": "company_slug",
+     "type": "text",
+     "about": "Our ID for the company page. Stable."
+    },
+    {
+     "name": "company",
+     "type": "text",
+     "about": "The company, as its page names it."
+    },
+    {
+     "name": "legal_names",
+     "type": "text",
+     "about": "Legal names of the company and its group companies on the page, separated by “ | ”."
+    },
+    {
+     "name": "website",
+     "type": "url",
+     "about": "The company’s own website."
+    },
+    {
+     "name": "category",
+     "type": "text",
+     "about": "What it mainly makes."
+    },
+    {
+     "name": "about",
+     "type": "text",
+     "about": "One line on the company, from its own statements and the records."
+    },
+    {
+     "name": "kirkland_claims",
+     "type": "number",
+     "about": "Kirkland Signature claims that name it (see the claims file)."
+    },
+    {
+     "name": "kirkland_products",
+     "type": "number",
+     "about": "Distinct Kirkland Signature products in those claims."
+    },
+    {
+     "name": "register_other_companies",
+     "type": "number",
+     "about": "Other companies with live registrations in its care on North Dakota’s pet food register; blank if we didn’t read the register for it."
+    },
+    {
+     "name": "fda_recalls",
+     "type": "number",
+     "about": "FDA enforcement reports (recalls) naming it as the recalling firm; blank if we didn’t read them."
+    },
+    {
+     "name": "fda_recall_store_names",
+     "type": "number",
+     "about": "Store names printed in the product text of those recalls."
+    },
+    {
+     "name": "plants",
+     "type": "number",
+     "about": "Plants listed on its page, each from a source."
+    },
+    {
+     "name": "page",
+     "type": "url",
+     "about": "Our company page."
+    },
+    {
+     "name": "last_checked",
+     "type": "date",
+     "about": "Latest check of anything on the page."
+    },
+    {
+     "name": "next_check",
+     "type": "date",
+     "about": "When the earliest claim on the page is next due."
+    }
+   ],
+   "preview": [
+    {
+     "company_slug": "diamond-pet-foods",
+     "company": "Diamond Pet Foods",
+     "legal_names": "Diamond Pet Foods",
+     "website": "https://www.diamondpet.com/",
+     "category": "Pet food",
+     "about": "Dry pet food maker in Meta, Missouri; family-owned since 1970",
+     "kirkland_claims": 4,
+     "kirkland_products": 2,
+     "register_other_companies": 13,
+     "fda_recalls": "",
+     "fda_recall_store_names": "",
+     "plants": 6,
+     "page": "https://whoactuallymakes.com/makers/diamond-pet-foods/",
+     "last_checked": "2026-11-03",
+     "next_check": "2027-05-03"
+    },
+    {
+     "company_slug": "highline-warren",
+     "company": "Highline Warren",
+     "legal_names": "Highline Warren LLC",
+     "website": "https://www.highlinewarren.com/",
+     "category": "Motor oil and car fluids",
+     "about": "Motor oil and car fluid maker and distributor, Memphis, Tennessee",
+     "kirkland_claims": 2,
+     "kirkland_products": 2,
+     "register_other_companies": "",
+     "fda_recalls": "",
+     "fda_recall_store_names": "",
+     "plants": 0,
+     "page": "https://whoactuallymakes.com/makers/highline-warren/",
+     "last_checked": "2026-11-03",
+     "next_check": "2027-05-03"
+    },
+    {
+     "company_slug": "lnk-international",
+     "company": "LNK International",
+     "legal_names": "LNK International, Inc.",
+     "website": "https://www.lnkintl.com/",
+     "category": "Medicine",
+     "about": "Store-brand pain, cold and allergy medicine maker, Hauppauge, New York",
+     "kirkland_claims": 1,
+     "kirkland_products": 1,
+     "register_other_companies": "",
+     "fda_recalls": 6,
+     "fda_recall_store_names": 5,
+     "plants": 1,
+     "page": "https://whoactuallymakes.com/makers/lnk-international/",
+     "last_checked": "2026-11-03",
+     "next_check": "2027-05-03"
+    },
+    {
+     "company_slug": "perrigo",
+     "company": "Perrigo",
+     "legal_names": "Perrigo Company PLC",
+     "website": "https://www.perrigo.com/",
+     "category": "Medicine",
+     "about": "Store-brand medicine maker since 1887, Allegan, Michigan",
+     "kirkland_claims": 1,
+     "kirkland_products": 1,
+     "register_other_companies": "",
+     "fda_recalls": 140,
+     "fda_recall_store_names": 32,
+     "plants": 1,
+     "page": "https://whoactuallymakes.com/makers/perrigo/",
+     "last_checked": "2026-11-03",
+     "next_check": "2027-05-03"
+    },
+    {
+     "company_slug": "saturn-petcare",
+     "company": "saturn petcare",
+     "legal_names": "Saturn Petcare Inc.",
+     "website": "https://www.saturnpetcare.us/",
+     "category": "Pet food",
+     "about": "Private-label wet pet food maker in Terre Haute, Indiana",
+     "kirkland_claims": 2,
+     "kirkland_products": 2,
+     "register_other_companies": 3,
+     "fda_recalls": "",
+     "fda_recall_store_names": "",
+     "plants": 3,
+     "page": "https://whoactuallymakes.com/makers/saturn-petcare/",
+     "last_checked": "2026-11-03",
+     "next_check": "2027-05-03"
+    }
+   ],
+   "files": {
+    "json": {
+     "url": "https://whoactuallymakes.com/data/companies.json",
+     "bytes": 4052,
+     "sha256": "43844b26df1043dedfc4a12bd811b63a9fd9b8dc695590fd75f2b268ecbea632"
+    },
+    "csv": {
+     "url": "https://whoactuallymakes.com/data/companies.csv",
+     "bytes": 1921,
+     "sha256": "fe1807eab0ecb03a3529269d37b73c0d1d19c850ed734ec68a5b1ff88bb430db"
+    }
+   }
+  },
+  {
+   "id": "company-labels",
+   "title": "Which store labels each company is on record for",
+   "short": "Company → label links",
+   "what": "One row per link between a company and a brand or retailer: a claim on our answer pages, a registration on North Dakota’s pet food register filed in the company’s care, a store name printed in the company’s FDA recalls, or a brand listed under the company’s API engine oil license. Each row says how many records back it, the dates they cover, and links the record.",
+   "limits": "A register row shows the company is the registered contact for those products, not that it made each one. A recall row shows the store name was printed in the recall’s product text; it doesn’t prove a current supply deal. Rows cover only their own dates. An API license row shows the company answers to API for that brand’s oils, not which plant blended them or who owns the brand.",
+   "use": "Powers the register and recall tables on the company pages.",
+   "page": "/makers/",
+   "refresh": "Whenever a claim, register or recall read changes; registers are re-read every 6 months",
+   "keywords": [
+    "private label",
+    "store brand supplier",
+    "who makes Kroger brand",
+    "who makes CVS brand",
+    "pet food co-packer"
+   ],
+   "rights": "Most records are US government work. CC BY covers our rows.",
+   "based_on": [
+    "https://lars.ndda.nd.gov/public/productsearch/3",
+    "https://open.fda.gov/apis/food/enforcement/",
+    "https://open.fda.gov/apis/drug/enforcement/"
+   ],
+   "records": 128,
+   "updated": "2026-11-03",
+   "fields": [
+    {
+     "name": "company_slug",
+     "type": "text",
+     "about": "The company page this row is on (see the companies file)."
+    },
+    {
+     "name": "company",
+     "type": "text",
+     "about": "The company. For claim rows, the one the record names, which can be a group company."
+    },
+    {
+     "name": "label",
+     "type": "text",
+     "about": "The store brand or retailer, as we name it."
+    },
+    {
+     "name": "link_kind",
+     "type": "text",
+     "about": "claim, state-pet-food-register, fda-recall or api-oil-license."
+    },
+    {
+     "name": "detail",
+     "type": "text",
+     "about": "For a claim, what the record says and the product; for a register row, the registrant name as filed; for a recall row, what the link means; for a license row, the brand names exactly as API lists them."
+    },
+    {
+     "name": "count",
+     "type": "number",
+     "about": "Claims (1), live registrations (0 = only lapsed ones), recalls that print the store name, or oils listed under the license."
+    },
+    {
+     "name": "first",
+     "type": "date",
+     "about": "Earliest date the records cover; blank if they don’t say."
+    },
+    {
+     "name": "last",
+     "type": "date",
+     "about": "Latest date they cover. For a register row, the latest expiry of a live registration; for a license row, when the license expires."
+    },
+    {
+     "name": "record_url",
+     "type": "url",
+     "about": "The record: claim evidence (separated by “ | ”), the register listing, or the latest recall."
+    },
+    {
+     "name": "read_on",
+     "type": "date",
+     "about": "When we read the record."
+    },
+    {
+     "name": "company_page",
+     "type": "url",
+     "about": "Our company page."
+    }
+   ],
+   "preview": [
+    {
+     "company_slug": "diamond-pet-foods",
+     "company": "Diamond Pet Foods",
+     "label": "Kirkland Signature",
+     "link_kind": "claim",
+     "detail": "Made by: Kirkland Signature dry cat food",
+     "count": 1,
+     "first": "2011-12-09",
+     "last": "2012-04-07",
+     "record_url": "http://www.fda.gov/Safety/Recalls/ucm303034.htm",
+     "read_on": "2026-11-03",
+     "company_page": "https://whoactuallymakes.com/makers/diamond-pet-foods/"
+    },
+    {
+     "company_slug": "diamond-pet-foods",
+     "company": "Diamond Pet Foods",
+     "label": "Kirkland Signature",
+     "link_kind": "claim",
+     "detail": "Registered via: Kirkland Signature dry cat food",
+     "count": 1,
+     "first": "2025-12",
+     "last": "",
+     "record_url": "https://lars.ndda.nd.gov/public/productDetail/40627",
+     "read_on": "2026-11-03",
+     "company_page": "https://whoactuallymakes.com/makers/diamond-pet-foods/"
+    },
+    {
+     "company_slug": "diamond-pet-foods",
+     "company": "Diamond Pet Foods",
+     "label": "Kirkland Signature",
+     "link_kind": "claim",
+     "detail": "Made by: Kirkland Signature dry dog food",
+     "count": 1,
+     "first": "2011-12-09",
+     "last": "2012-04-07",
+     "record_url": "http://www.fda.gov/Safety/Recalls/ucm303034.htm",
+     "read_on": "2026-11-03",
+     "company_page": "https://whoactuallymakes.com/makers/diamond-pet-foods/"
+    },
+    {
+     "company_slug": "diamond-pet-foods",
+     "company": "Diamond Pet Foods",
+     "label": "Kirkland Signature",
+     "link_kind": "claim",
+     "detail": "Registered via: Kirkland Signature dry dog food",
+     "count": 1,
+     "first": "2025-12",
+     "last": "",
+     "record_url": "https://lars.ndda.nd.gov/public/productDetail/40712 | https://lars.ndda.nd.gov/public/openfile?getDocId=93584",
+     "read_on": "2026-11-03",
+     "company_page": "https://whoactuallymakes.com/makers/diamond-pet-foods/"
+    },
+    {
+     "company_slug": "diamond-pet-foods",
+     "company": "Diamond Pet Foods",
+     "label": "Tractor Supply",
+     "link_kind": "state-pet-food-register",
+     "detail": "Registered as TRACTOR SUPPLY COMPANY c/o DIAMOND PET FOODS (North Dakota); 7 lapsed",
+     "count": 41,
+     "first": "",
+     "last": "2027-12-31",
+     "record_url": "https://lars.ndda.nd.gov/public/productListing/12263",
+     "read_on": "2026-11-03",
+     "company_page": "https://whoactuallymakes.com/makers/diamond-pet-foods/"
+    }
+   ],
+   "files": {
+    "json": {
+     "url": "https://whoactuallymakes.com/data/company-labels.json",
+     "bytes": 66563,
+     "sha256": "8923b4b4d41b0fe8046986c1a28577f2812f1c3c4098f056b6f5e2fa81b96f93"
+    },
+    "csv": {
+     "url": "https://whoactuallymakes.com/data/company-labels.csv",
+     "bytes": 41232,
+     "sha256": "7b0ad9fc8b91058aee7a8bcd8c4f2e1cb63d3770be28470243e27f883739d8cb"
+    }
+   }
+  },
+  {
+   "id": "tire-plants",
+   "title": "Tire plant codes (NHTSA)",
+   "short": "Tire plant codes",
+   "what": "Every plant code NHTSA has assigned to a tire factory: the code from the start of a tire’s DOT number, the factory’s name, city, state or province, country and whether it is active.",
+   "limits": "A plant code shows which factory made a tire, not which brand sold it. Status is as NHTSA lists it; closed plants keep their codes.",
+   "use": "Powers the Tire DOT code lookup.",
+   "page": "/tire-dot-code-lookup/",
+   "refresh": "Weekly, by script, from NHTSA’s vPIC list",
+   "keywords": [
+    "tire plant codes",
+    "DOT code",
+    "tire factory",
+    "NHTSA",
+    "49 CFR 574.5"
+   ],
+   "rights": "The codes and factory details are US government work (NHTSA), in the public domain in the US. CC BY covers our compiled file.",
+   "based_on": [
+    "https://vpic.nhtsa.dot.gov/api/",
+    "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-574/section-574.5"
+   ],
+   "records": 1246,
+   "updated": "2026-11-02",
+   "fields": [
+    {
+     "name": "code",
+     "type": "text",
+     "about": "The plant code: the 2 or 3 characters after “DOT” on a tire."
+    },
+    {
+     "name": "old_code",
+     "type": "text",
+     "about": "The older 2-character code for the same plant, if NHTSA lists one."
+    },
+    {
+     "name": "name",
+     "type": "text",
+     "about": "The factory or company name as NHTSA lists it."
+    },
+    {
+     "name": "city",
+     "type": "text",
+     "about": "City of the factory."
+    },
+    {
+     "name": "state",
+     "type": "text",
+     "about": "State, province or region of the factory."
+    },
+    {
+     "name": "country",
+     "type": "text",
+     "about": "Country of the factory."
+    },
+    {
+     "name": "status",
+     "type": "text",
+     "about": "Active, Closed, or blank when NHTSA gives no status."
+    }
+   ],
+   "preview": [
+    {
+     "code": "000",
+     "old_code": "",
+     "name": "KUMHO TIRE GEORGIA INC.",
+     "city": "Macon",
+     "state": "Georgia",
+     "country": "United States",
+     "status": "Active"
+    },
+    {
+     "code": "001",
+     "old_code": "",
+     "name": "QINGDAO FLEMING TYRE CO., LTD.",
+     "city": "Qingdao",
+     "state": "Shandong",
+     "country": "China",
+     "status": "Active"
+    },
+    {
+     "code": "002",
+     "old_code": "",
+     "name": "QINGDAO DEJI WHEEL CART CO., LTD.",
+     "city": "Qingdao",
+     "state": "Shandong",
+     "country": "China",
+     "status": "Active"
+    },
+    {
+     "code": "003",
+     "old_code": "",
+     "name": "WENLING YAODING MACHINE CO., LTD.",
+     "city": "Wenling City",
+     "state": "Zhejiang",
+     "country": "China",
+     "status": "Active"
+    },
+    {
+     "code": "004",
+     "old_code": "",
+     "name": "SHANDONG CHANGSHENG RUBBER CO.,. LTD.",
+     "city": "Gaomi",
+     "state": "Shandong",
+     "country": "China",
+     "status": "Active"
+    }
+   ],
+   "files": {
+    "json": {
+     "url": "https://whoactuallymakes.com/data/tire-plants.json",
+     "bytes": 153012,
+     "sha256": "6f06d49ee518f4116a9486fa5042370ff3ab0da735f50912c0cbbc3aee81beba"
+    },
+    "csv": {
+     "url": "https://whoactuallymakes.com/data/tire-plants.csv",
+     "bytes": 91557,
+     "sha256": "00451790eb3558fc7a55710b3cb0becb9ad5786a8f69ef7125083f51136130a9"
+    }
+   }
+  },
+  {
+   "id": "tire-age",
+   "title": "Tire age guidance from tire makers, carmakers and agencies",
+   "short": "Tire age guidance",
+   "what": "What each tire maker, carmaker and safety agency says about replacing tires by age, in a row per maker: the age, what it’s counted from, whether it covers the spare, and the document it comes from.",
+   "limits": "Each row speaks only for the maker’s own tires, or for the vehicle model and year named. It is advice, not law, except the UK row, which describes a legal ban on tires over 10 years old for some heavy vehicles.",
+   "use": "Powers the Tire age checker and its two tables.",
+   "page": "/tire-date-code/",
+   "refresh": "Re-read by hand every year, and whenever a maker changes its advice",
+   "keywords": [
+    "tire age",
+    "how old is too old",
+    "tire replacement",
+    "DOT date code",
+    "owner's manual"
+   ],
+   "rights": "Quoted words in the source columns belong to their publishers; we quote them so you can check each row. CC BY covers our rows and wording.",
+   "based_on": [
+    "https://assets.sia.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf",
+    "https://contentdelivery.ext.gm.com/content/dam/cope/en_us/public/pdf_assets/active/owners_manuals_browse/2025/chevrolet/silverado_1500/25_CHEV_Silverado_1500_OM_en_US_U_87855274B_2024OCT31_2P.pdf",
+    "https://movingon.blog.gov.uk/2020/12/09/ban-on-tyres-over-10-years-old-for-heavy-vehicles-and-some-minibuses/",
+    "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
+    "https://ownersmanual.hyundai.com/full_pdf/NX4/2025/en_US",
+    "https://ownersmanual.kia.com/full_webhelp/NQ5KH/2025/en_US/topics/chapter9_15_8.html",
+    "https://techinfo.honda.com/rjanisis/pubs/OM/AH/A3A02424OM/enu/A3A02424OMEN.PDF",
+    "https://vehicleinfo.mopar.com/assets/publications/en-us/Jeep/2025/Grand_Cherokee/106039_45_WL_OM_EN_USC_DIGITAL_E4.pdf",
+    "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2025/1500_DT/103222_25_DT_OM_EN_USC_DIGITAL_E4_RD.pdf",
+    "https://www.bridgestoneamericas.com/en/company/safety/choosing-tires/replacement-guidance",
+    "https://www.continental-tires.com/tire-knowledge/tire-age/",
+    "https://www.coopertire.com/en_US/tire-education/learn-tire-maintenance/how-long-does-a-tire-last.html",
+    "https://www.ford.com/support/how-tos/ownership/ford-owner/how-to-care-for-your-tires/",
+    "https://www.ford.com/support/how-tos/tires-and-wheels/tire-replacement-and-maintenance/tire-replacement/",
+    "https://www.gov.uk/government/publications/use-of-tyres-aged-more-than-10-years-on-goods-vehicles-buses-and-coaches/tyre-age-restrictions-for-good-vehicles-buses-coaches-and-minibuses",
+    "https://www.hankooktire.com/content/dam/hankooktire/local/pdf/HK_TECH_BULLETIN-Tire_Replacement_Recommendations-Final.pdf",
+    "https://www.mazdausa.com/static/manuals/2025/cx-5/contents/07031403.html",
+    "https://www.michelin.ca/en/auto/learn/tire-buying-guide/when-to-replace-tires",
+    "https://www.nhtsa.gov/vehicle-safety/tires",
+    "https://www.nissanusa.com/content/dam/Nissan/us/manuals-and-guides/rogue/2024/2024-nissan-rogue-owner-manual.pdf",
+    "https://www.subaru.com/owners/vehicle-resources.html?model=2025-FOR-SFD",
+    "https://www.tesla.com/ownersmanual/modely/en_us/Owners_Manual.pdf",
+    "https://www.toyotires.com/faq-articles/when-should-i-replace-my-vehicles-tires/",
+    "https://www.yokohamatire.com/tires-101/maintenance-care-1/tire-life"
+   ],
+   "records": 22,
+   "updated": "2026-11-03",
+   "fields": [
+    {
+     "name": "group",
+     "type": "text",
+     "about": "“tire maker or agency” or “carmaker”."
+    },
+    {
+     "name": "who",
+     "type": "text",
+     "about": "The maker or agency."
+    },
+    {
+     "name": "covers",
+     "type": "text",
+     "about": "What the advice covers: the kind of source, or for carmakers the model, year and market of the manual."
+    },
+    {
+     "name": "replace_at",
+     "type": "text",
+     "about": "The age the maker gives, in its own terms."
+    },
+    {
+     "name": "years",
+     "type": "number",
+     "about": "That age as a number of years, for carmakers; 0 when the manual gives no age."
+    },
+    {
+     "name": "counted_from",
+     "type": "text",
+     "about": "Where the years count from: manufacture (the DOT date code), fitting, or not stated."
+    },
+    {
+     "name": "spare",
+     "type": "text",
+     "about": "Whether the advice covers the spare (carmakers)."
+    },
+    {
+     "name": "also",
+     "type": "text",
+     "about": "Other conditions the maker attaches (tire makers and agencies)."
+    },
+    {
+     "name": "summary",
+     "type": "text",
+     "about": "One plain sentence on the carmaker’s advice."
+    },
+    {
+     "name": "source_titles",
+     "type": "text",
+     "about": "Title of each document, separated by “ | ”."
+    },
+    {
+     "name": "source_urls",
+     "type": "url",
+     "about": "Link to each document, in the same order."
+    },
+    {
+     "name": "archive_urls",
+     "type": "url",
+     "about": "Internet Archive copy of each document, where we used one, in the same order."
+    },
+    {
+     "name": "quotes",
+     "type": "text",
+     "about": "The exact words from each document, in the same order."
+    },
+    {
+     "name": "read_on",
+     "type": "date",
+     "about": "The date we last read the documents (YYYY-MM-DD)."
+    }
+   ],
+   "preview": [
+    {
+     "group": "tire maker or agency",
+     "who": "NHTSA",
+     "covers": "US road-safety regulator",
+     "replace_at": "No age set",
+     "years": "",
+     "counted_from": "",
+     "spare": "",
+     "also": "Says some vehicle and tire makers recommend replacing tires 6 to 10 years old regardless of tread, that you can't spot aging by looking, and that spares age because they're seldom replaced.",
+     "summary": "",
+     "source_titles": "NHTSA, Tires: aging | NHTSA, Tires: what can I do? | NHTSA, Tires: be aware of your spare | NHTSA, Tires: am I at risk? | NHTSA, Tires: what speeds aging | NHTSA, Tires: should I replace my tires? | NHTSA, Tires: full-size spares",
+     "source_urls": "https://www.nhtsa.gov/vehicle-safety/tires | https://www.nhtsa.gov/vehicle-safety/tires | https://www.nhtsa.gov/vehicle-safety/tires | https://www.nhtsa.gov/vehicle-safety/tires | https://www.nhtsa.gov/vehicle-safety/tires | https://www.nhtsa.gov/vehicle-safety/tires | https://www.nhtsa.gov/vehicle-safety/tires",
+     "archive_urls": "https://web.archive.org/web/20261020183804/https://www.nhtsa.gov/vehicle-safety/tires | https://web.archive.org/web/20261020183804/https://www.nhtsa.gov/vehicle-safety/tires | https://web.archive.org/web/20261020183804/https://www.nhtsa.gov/vehicle-safety/tires | https://web.archive.org/web/20261020183804/https://www.nhtsa.gov/vehicle-safety/tires | https://web.archive.org/web/20261020183804/https://www.nhtsa.gov/vehicle-safety/tires | https://web.archive.org/web/20261020183804/https://www.nhtsa.gov/vehicle-safety/tires | https://web.archive.org/web/20261020183804/https://www.nhtsa.gov/vehicle-safety/tires",
+     "quotes": "As tires age, they are more prone to failure. Some vehicle and tire manufacturers recommend replacing tires that are six to 10 years old, regardless of treadwear. | You cannot detect tire aging simply by looking at your tires. | Spare tires on all vehicles are prone to aging because they seldom get replaced. | Most of us drive our vehicles enough that the tires’ treads wear out, and we replace our tires before aging becomes an issue. | In addition to infrequent use, exposure to sunlight and warmer climate, poor storage and poor maintenance also contribute to tire aging. | You should stop using tires for several reasons, including if a tire’s tread is worn down to a minimum depth using the penny test, signs of physical damage (cuts, cracks, bulges, etc.), or signs of irregular wear or other damage due to underinflation or overloading. | NHTSA recommends that if your vehicle comes equipped with a full-size spare tire, that it not be used as a replacement for worn tires, except in emergencies such as replacing a flat tire.",
+     "read_on": "2026-11-03"
+    },
+    {
+     "group": "tire maker or agency",
+     "who": "Goodyear",
+     "covers": "Tire maker",
+     "replace_at": "6 years",
+     "years": "",
+     "counted_from": "In service (or the DOT date if you don't know)",
+     "spare": "",
+     "also": "Counts the spare. If you can't tell when a tire was fitted, 6 years from the date in the DOT code. Read your owner's manual too, but never go past 6 years.",
+     "summary": "",
+     "source_titles": "Goodyear: tire replacement, 6 years in service | Goodyear: when the in-service date is unknown | Goodyear: owner's manuals, but never past 6 years",
+     "source_urls": "https://www.coopertire.com/en_US/tire-education/learn-tire-maintenance/how-long-does-a-tire-last.html | https://www.coopertire.com/en_US/tire-education/learn-tire-maintenance/how-long-does-a-tire-last.html | https://www.coopertire.com/en_US/tire-education/learn-tire-maintenance/how-long-does-a-tire-last.html",
+     "archive_urls": " |  | ",
+     "quotes": "While most tires will be replaced sooner, Goodyear recommends that any tire in service (meaning inflated and mounted on a rim of your vehicle, including your spare tire regardless of whether that tire is in contact with the roadway) 6 years or more be replaced even if such tire appears serviceable | If you are unable to determine the date a tire was first placed in service, then you should rely on the DOT code stamped on the tire and ensure that any tire which was manufactured more than 6 years ago is removed from service | Goodyear advises that consumers refer to their owners’ manuals for guidance on the vehicle manufacturer’s replacement recommendations (but regardless of any such vehicle manufacturer’s advice, any tire’s replacement period should not exceed 6 years",
+     "read_on": "2026-11-03"
+    },
+    {
+     "group": "tire maker or agency",
+     "who": "Nokian Tyres",
+     "covers": "Tire maker",
+     "replace_at": "6 or 10 years",
+     "years": "",
+     "counted_from": "6 in service or 10 from manufacture, whichever comes first",
+     "spare": "",
+     "also": "",
+     "summary": "",
+     "source_titles": "Nokian Tyres: how long do tires last?",
+     "source_urls": "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
+     "archive_urls": "",
+     "quotes": "Typically, tires have a lifespan of 6 years in service or 10 years from date of manufacture, whichever comes first.",
+     "read_on": "2026-11-03"
+    },
+    {
+     "group": "tire maker or agency",
+     "who": "Michelin",
+     "covers": "Tire maker",
+     "replace_at": "10 years",
+     "years": "",
+     "counted_from": "Manufacture",
+     "spare": "",
+     "also": "Includes the spare. From 5 years of use, a professional inspection at least once a year. On tires that came with the vehicle, follow the vehicle maker's advice.",
+     "summary": "",
+     "source_titles": "Michelin: when to replace tires | Michelin: inspection after five years | Michelin: original equipment tires",
+     "source_urls": "https://www.michelin.ca/en/auto/learn/tire-buying-guide/when-to-replace-tires | https://www.michelin.ca/en/auto/learn/tire-buying-guide/when-to-replace-tires | https://www.michelin.ca/en/auto/learn/tire-buying-guide/when-to-replace-tires",
+     "archive_urls": " |  | ",
+     "quotes": "As a precaution, Michelin recommends replacing tires ten years after their date of manufacture, regardless of tread depth or apparent condition. This includes spare tires as well. | After five years of use, tires should be thoroughly inspected at least once a year by a trained tire professional. | For vehicles equipped with original equipment tires, always follow the vehicle manufacturer’s tire replacement recommendations.",
+     "read_on": "2026-11-03"
+    },
+    {
+     "group": "tire maker or agency",
+     "who": "Bridgestone",
+     "covers": "Tire maker",
+     "replace_at": "10 years",
+     "years": "",
+     "counted_from": "Manufacture",
+     "spare": "",
+     "also": "Includes the spare. After 5 years, an inspection is essential.",
+     "summary": "",
+     "source_titles": "Bridgestone: tire replacement guidance | Bridgestone: inspection after five years",
+     "source_urls": "https://www.bridgestoneamericas.com/en/company/safety/choosing-tires/replacement-guidance | https://www.bridgestoneamericas.com/en/company/safety/choosing-tires/replacement-guidance",
+     "archive_urls": " | ",
+     "quotes": "We recommend tires that were manufactured 10 years prior (or longer) be taken out of service and replaced with new tires. Same goes for the spare. | After five years, an inspection is essential to determine if a tire is still road-worthy.",
+     "read_on": "2026-11-03"
+    }
+   ],
+   "files": {
+    "json": {
+     "url": "https://whoactuallymakes.com/data/tire-age.json",
+     "bytes": 34645,
+     "sha256": "70430864f5e5256e4d085d9a7fcf7618636123d5d1108fd1300f0783899a99ec"
+    },
+    "csv": {
+     "url": "https://whoactuallymakes.com/data/tire-age.csv",
+     "bytes": 19614,
+     "sha256": "8d93a45e9a22450348b783fe44f49afd5544e2736667ce2d8ad47d345ab6c9ce"
+    }
+   }
+  },
+  {
+   "id": "evidence",
+   "title": "Evidence records: every quote behind our answers",
+   "short": "Evidence records",
+   "what": "Every document we rely on, one row each: the exact quote, the link, the date we read it, an Internet Archive copy where we used one, and the SHA-256 fingerprint of the file as we read it.",
+   "limits": "A record shows what a document said when we read it. Documents change; the fingerprint lets you check whether the one you have is the same.",
+   "use": "Every quote and citation on the site comes from these records.",
+   "page": "/how-we-know/",
+   "refresh": "Whenever we read or re-read a document",
+   "keywords": [
+    "evidence",
+    "citations",
+    "source quotes",
+    "SHA-256",
+    "provenance"
+   ],
+   "rights": "Quotes belong to their publishers and are short so you can check our work. CC BY covers our records: titles, notes, dates and fingerprints.",
+   "based_on": [
+    "http://www.fda.gov/Safety/Recalls/ucm303034.htm",
+    "http://www.usga.org/ConformingGolfBall/gball_list.pdf",
+    "https://api.fda.gov/drug/enforcement.json?search=recall_number%3A%22D-0115-2025%22",
+    "https://api.fda.gov/drug/enforcement.json?search=recall_number%3A%22D-0355-2022%22",
+    "https://api.fda.gov/drug/enforcement.json?search=recall_number%3A%22D-0557-2026%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0033-2021%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0121-2025%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0314-2025%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0347-2023%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0420-2025%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0433-2013%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0631-2022%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0648-2023%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2077-2019%22",
+    "https://assets.sia.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf",
+    "https://contentdelivery.ext.gm.com/content/dam/cope/en_us/public/pdf_assets/active/owners_manuals_browse/2025/chevrolet/silverado_1500/25_CHEV_Silverado_1500_OM_en_US_U_87855274B_2024OCT31_2P.pdf",
+    "https://diamondpetcompany.com/our-history",
+    "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=7-Eleven",
+    "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Carquest",
+    "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Craftsman",
+    "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Do%20It%20Best",
+    "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Meijer",
+    "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Member",
+    "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=NAPA",
+    "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Signature%20Select",
+    "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=SuperTech",
+    "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Traveller",
+    "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Valucraft",
+    "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=amazon",
+    "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10110",
+    "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10295",
+    "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10297",
+    "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10364",
+    "https://golfwrx.com/623786/golfwrx-spotted-costco-kirkland-signature-wedges-on-usga-conforming-list/",
+    "https://golfwrx.com/702096/golfwrx-spotted-costco-kirkland-signature-irons-on-usga-conforming-list/",
+    "https://lars.ndda.nd.gov/public/openfile?getDocId=111809",
+    "https://lars.ndda.nd.gov/public/openfile?getDocId=264965",
+    "https://lars.ndda.nd.gov/public/openfile?getDocId=93584",
+    "https://lars.ndda.nd.gov/public/productDetail/40627",
+    "https://lars.ndda.nd.gov/public/productDetail/40712",
+    "https://lars.ndda.nd.gov/public/productDetail/41477",
+    "https://lars.ndda.nd.gov/public/productDetail/71197",
+    "https://lars.ndda.nd.gov/public/productDetail/80975",
+    "https://lars.ndda.nd.gov/public/productDetail/8454",
+    "https://lars.ndda.nd.gov/public/productDetail/8457",
+    "https://movingon.blog.gov.uk/2020/12/09/ban-on-tyres-over-10-years-old-for-heavy-vehicles-and-some-minibuses/",
+    "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
+    "https://ownersmanual.hyundai.com/full_pdf/NX4/2025/en_US",
+    "https://ownersmanual.kia.com/full_webhelp/NQ5KH/2025/en_US/topics/chapter9_15_8.html",
+    "https://techinfo.honda.com/rjanisis/pubs/OM/AH/A3A02424OM/enu/A3A02424OMEN.PDF"
+   ],
+   "records": 135,
+   "updated": "2026-11-03",
+   "fields": [
+    {
+     "name": "id",
+     "type": "text",
+     "about": "Our ID for the record. Stable: it never changes or gets reused."
+    },
+    {
+     "name": "source",
+     "type": "text",
+     "about": "ID of the source it comes from (see the Sources dataset)."
+    },
+    {
+     "name": "publisher",
+     "type": "text",
+     "about": "Who published the document."
+    },
+    {
+     "name": "type",
+     "type": "text",
+     "about": "maker-statement or regulator-document."
+    },
+    {
+     "name": "title",
+     "type": "text",
+     "about": "The document and the section we read."
+    },
+    {
+     "name": "url",
+     "type": "url",
+     "about": "Where the document lives."
+    },
+    {
+     "name": "archive_url",
+     "type": "url",
+     "about": "Internet Archive copy we read or saved, if any."
+    },
+    {
+     "name": "retrieved",
+     "type": "date",
+     "about": "When we read it (YYYY-MM-DD)."
+    },
+    {
+     "name": "doc_date",
+     "type": "date",
+     "about": "The date the document gives itself, if it gives one."
+    },
+    {
+     "name": "quote",
+     "type": "text",
+     "about": "The exact words we rely on, up to 600 characters."
+    },
+    {
+     "name": "sha256",
+     "type": "text",
+     "about": "SHA-256 fingerprint of the file as we read it."
+    },
+    {
+     "name": "note",
+     "type": "text",
+     "about": "Page number, how we read it, and anything a checker should know."
+    }
+   ],
+   "preview": [
+    {
+     "id": "ev-api-0163-full-list",
+     "source": "api-eolcs",
+     "publisher": "American Petroleum Institute (API)",
+     "type": "registry-entry",
+     "title": "API engine oil license 0163: every oil listed for Highline Warren LLC (564 listings)",
+     "url": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10297",
+     "archive_url": null,
+     "retrieved": "2026-11-03",
+     "doc_date": "2026-04-01",
+     "quote": "7-Eleven 5W-20 SQ Resource Conserving GF-7A … amazonbasics Conventional 5W-20 SN Resource Conserving, SN PLUS … Meijer Conventional 5W-20 SQ Resource Conserving GF-7A … Signature Select 0W-20 SQ Resource Conserving GF-7A",
+     "sha256": "0552ff30b3ab70d832e60260b6a3626dc83cd73576c00cc8282850414642f5d0",
+     "note": "Read by hand in Chrome with no brand filter: all 564 listings under license 0163 (status Active, first issued 18 Mar 1994, effective 1 Apr 2026, expires 31 Mar 2027, corporate address Omaha, NE). The saved copy is the table text, one listing per line: brand, SAE grade, API category, classification, ILSAC grade. Its SHA-256 matched the hash the browser computed from the table itself."
+    },
+    {
+     "id": "ev-api-0293-walmart",
+     "source": "api-eolcs",
+     "publisher": "American Petroleum Institute (API)",
+     "type": "registry-entry",
+     "title": "API engine oil license 0293: every oil listed for Wal*Mart Stores Inc (47 listings)",
+     "url": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10295",
+     "archive_url": null,
+     "retrieved": "2026-11-03",
+     "doc_date": "2026-04-01",
+     "quote": "Super Tech Full Synthetic dexos 1 Gen 3 5W-30 SQ Resource Conserving GF-7A … Super Tech All Mile Coverage 5W-30 SQ Resource Conserving GF-7A",
+     "sha256": "3f75b7ebd62fc20f7a1bac8f793dffebe1cc2a6f45750dea7e9ab38f5077012b",
+     "note": "Read by hand in Chrome with no brand filter: all 47 listings under license 0293 (status Active, first issued 1993-09-28, effective 1 Apr 2026, expires 31 Mar 2027, corporate address Bentonville, AR). The saved copy is the table text, one listing per line: brand, SAE grade, API category, classification, ILSAC grade. Its SHA-256 matched the hash the browser computed from the table itself."
+    },
+    {
+     "id": "ev-api-2251-autozone",
+     "source": "api-eolcs",
+     "publisher": "American Petroleum Institute (API)",
+     "type": "registry-entry",
+     "title": "API engine oil license 2251: every oil listed for Autozone Parts Inc (174 listings)",
+     "url": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10364",
+     "archive_url": null,
+     "retrieved": "2026-11-03",
+     "doc_date": "2026-04-01",
+     "quote": "AutoZone Full Synthetic 5W-30 SN Resource Conserving, SN PLUS … Valucraft Full Synthetic 5W-30 SQ Resource Conserving GF-7A",
+     "sha256": "c88ebbba24d746cb451199a1f622ca9a9f017e9dd5bd50de3c349031068cdce3",
+     "note": "Read by hand in Chrome with no brand filter: all 174 listings under license 2251 (status Active, first issued 2005-07-28, effective 1 Apr 2026, expires 31 Mar 2027, corporate address Memphis, TN). The saved copy is the table text, one listing per line: brand, SAE grade, API category, classification, ILSAC grade. Its SHA-256 matched the hash the browser computed from the table itself."
+    },
+    {
+     "id": "ev-api-brand-7-eleven",
+     "source": "api-eolcs",
+     "publisher": "American Petroleum Institute (API)",
+     "type": "registry-entry",
+     "title": "API engine oil directory, brand search “7-Eleven”: 15 licensed oils",
+     "url": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=7-Eleven",
+     "archive_url": null,
+     "retrieved": "2026-11-03",
+     "doc_date": null,
+     "quote": "7-ELEVEN INC 7-Eleven Speedway 5W-30 SQ Resource Conserving GF-7A … HIGHLINE WARREN LLC 7-Eleven 5W-30 SQ Resource Conserving GF-7A",
+     "sha256": "74063b418f12d64a11cf05c71dd689b48961b498a27258551caee7a6319f62bc",
+     "note": "Read by hand in Chrome with the brand filter set to “7-Eleven”, every row shown. Listings by license holder: HIGHLINE WARREN LLC 9; 7-ELEVEN INC 6. The saved copy is the table text, one listing per line: license holder, brand, SAE grade, API category. Its SHA-256 matched the hash the browser computed from the table itself."
+    },
+    {
+     "id": "ev-api-brand-amazon",
+     "source": "api-eolcs",
+     "publisher": "American Petroleum Institute (API)",
+     "type": "registry-entry",
+     "title": "API engine oil directory, brand search “amazon”: 26 licensed oils",
+     "url": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=amazon",
+     "archive_url": null,
+     "retrieved": "2026-11-03",
+     "doc_date": null,
+     "quote": "HIGHLINE WARREN LLC amazonbasics Full Synthetic dexos1 0W-20 SN Resource Conserving, SN PLUS … HIGHLINE WARREN LLC Amazon Commercial 15W-40 CK-4/SN",
+     "sha256": "265346280ced8e167842606697bb898c4070d56a0c78541ad981d267458bbc3d",
+     "note": "Read by hand in Chrome with the brand filter set to “amazon”, every row shown. Listings by license holder: HIGHLINE WARREN LLC 24; CAP CO., LTD 2. The saved copy is the table text, one listing per line: license holder, brand, SAE grade, API category. Its SHA-256 matched the hash the browser computed from the table itself."
+    }
+   ],
+   "files": {
+    "json": {
+     "url": "https://whoactuallymakes.com/data/evidence.json",
+     "bytes": 120116,
+     "sha256": "3e6ba0384bd56ca2ea21487ccb24d920e62050257085635d312947cd482ff01c"
+    },
+    "csv": {
+     "url": "https://whoactuallymakes.com/data/evidence.csv",
+     "bytes": 93239,
+     "sha256": "6f498d55041b766c2f1073ca9a37b292e8ef283bb6897052b38906b95f616afa"
+    }
+   }
+  },
+  {
+   "id": "sources",
+   "title": "Sources: the public records we use, and their limits",
+   "short": "Sources",
+   "what": "Each source we use: who publishes it, whether it is a primary record, what it proves, what it can’t prove, what its terms allow, and how and when we read it.",
+   "limits": "Describes the sources, not their contents. Terms change; each row carries the date we last checked them.",
+   "use": "Powers the Sources page.",
+   "page": "/sources/",
+   "refresh": "Terms re-checked every year; pulls on the schedule shown",
+   "keywords": [
+    "data sources",
+    "public records",
+    "terms of use",
+    "methodology"
+   ],
+   "rights": "CC BY covers the whole file.",
+   "based_on": [
+    "https://diamondpetcompany.com/",
+    "https://engineoil.api.org/Directory/EolcsSearch",
+    "https://lars.ndda.nd.gov/public/productsearch/3",
+    "https://mygarage.honda.com/s/find-honda",
+    "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
+    "https://open.fda.gov/apis/food/enforcement/",
+    "https://ownersmanual.hyundai.com/",
+    "https://ownersmanual.kia.com/",
+    "https://thegolfnewsnet.com/",
+    "https://ttbonline.gov/colasonline/publicSearchColasBasic.do",
+    "https://uscode.house.gov/",
+    "https://vpic.nhtsa.dot.gov/api/",
+    "https://web.archive.org/web/*/usga.org/ConformingGolfBall/gball_list.pdf",
+    "https://web.archive.org/web/*/usga.org/ConformingGolfClub/ConformingClubList_M.pdf",
+    "https://www.bridgestoneamericas.com/en/company/safety/choosing-tires/replacement-guidance",
+    "https://www.chevrolet.com/support/vehicle/manuals-guides",
+    "https://www.continental-tires.com/tire-knowledge/tire-age/",
+    "https://www.coopertire.com/en_US/tire-education/learn-tire-maintenance/how-long-does-a-tire-last.html",
+    "https://www.costco.com/",
+    "https://www.courtlistener.com/recap/",
+    "https://www.ecfr.gov/",
+    "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts",
+    "https://www.ford.com/support/how-tos/tires-and-wheels/tire-replacement-and-maintenance/tire-replacement/",
+    "https://www.fsis.usda.gov/inspection/establishments/meat-poultry-and-egg-product-inspection-directory",
+    "https://www.golfmonthly.com/",
+    "https://www.golfwrx.com/",
+    "https://www.gov.uk/",
+    "https://www.govinfo.gov/app/collection/fr",
+    "https://www.hankooktire.com/content/dam/hankooktire/local/pdf/HK_TECH_BULLETIN-Tire_Replacement_Recommendations-Final.pdf",
+    "https://www.highlinewarren.com/",
+    "https://www.lnkintl.com/",
+    "https://www.mazdausa.com/static/manuals/2025/cx-5/contents/07031403.html",
+    "https://www.michelin.ca/en/auto/learn/tire-buying-guide/when-to-replace-tires",
+    "https://www.mopar.com/en-us/my-vehicle/owners-manual.html",
+    "https://www.nhtsa.gov/vehicle-safety/tires",
+    "https://www.nissanusa.com/owners/manuals-guides.html",
+    "https://www.perrigo.com/",
+    "https://www.saturnpetcare.us/",
+    "https://www.sazerac.com/",
+    "https://www.subaru.com/owners/vehicle-resources.html",
+    "https://www.tesla.com/ownersmanual/modely/en_us/Owners_Manual.pdf",
+    "https://www.toyota.com/owners/warranty-owners-manuals/",
+    "https://www.toyotires.com/faq-articles/when-should-i-replace-my-vehicles-tires/",
+    "https://www.usga.org/ConformingGolfBall/",
+    "https://www.yokohamatire.com/tires-101/maintenance-care-1/tire-life"
+   ],
+   "records": 45,
+   "updated": "2026-11-03",
+   "fields": [
+    {
+     "name": "id",
+     "type": "text",
+     "about": "Our ID for the source."
+    },
+    {
+     "name": "name",
+     "type": "text",
+     "about": "Name of the source."
+    },
+    {
+     "name": "publisher",
+     "type": "text",
+     "about": "Who publishes it."
+    },
+    {
+     "name": "url",
+     "type": "url",
+     "about": "Its home page."
+    },
+    {
+     "name": "kind",
+     "type": "text",
+     "about": "Kind of source, such as Government registry or Maker."
+    },
+    {
+     "name": "primary",
+     "type": "boolean",
+     "about": "true when it is the record itself, not a report about a record."
+    },
+    {
+     "name": "proves",
+     "type": "text",
+     "about": "What it can prove."
+    },
+    {
+     "name": "cannot_prove",
+     "type": "text",
+     "about": "What it can’t prove."
+    },
+    {
+     "name": "terms_url",
+     "type": "url",
+     "about": "Its terms of use or site policies."
+    },
+    {
+     "name": "terms_read",
+     "type": "text",
+     "about": "What its terms allow, in our words."
+    },
+    {
+     "name": "terms_checked",
+     "type": "date",
+     "about": "When we last read its terms."
+    },
+    {
+     "name": "credit",
+     "type": "text",
+     "about": "The credit line the publisher asks for, if any."
+    },
+    {
+     "name": "pulls",
+     "type": "text",
+     "about": "How and how often we read it, separated by “ | ”."
+    }
+   ],
+   "preview": [
+    {
+     "id": "nhtsa-vpic",
+     "name": "NHTSA vPIC: tire plant codes and vehicle identification",
+     "publisher": "US National Highway Traffic Safety Administration",
+     "url": "https://vpic.nhtsa.dot.gov/api/",
+     "kind": "Government registry",
+     "primary": true,
+     "proves": "Which factory a DOT tire plant code was assigned to (49 CFR 574), with its name, address and status; which maker a VIN prefix belongs to.",
+     "cannot_prove": "Which brand or product line a plant made. A plant code names the factory, not the brand on the sidewall.",
+     "terms_url": "https://vpic.nhtsa.dot.gov/api/",
+     "terms_read": "Public domain (US government work). We read it with a script.",
+     "terms_checked": "2026-11-02",
+     "credit": "",
+     "pulls": "every 7 days by script, last 2026-11-02"
+    },
+    {
+     "id": "nd-pet-food-registry",
+     "name": "North Dakota Department of Agriculture pet food product registrations",
+     "publisher": "North Dakota Department of Agriculture",
+     "url": "https://lars.ndda.nd.gov/public/productsearch/3",
+     "kind": "Government registry",
+     "primary": true,
+     "proves": "That a pet food is registered for sale in North Dakota, under which company name, when the registration was last renewed and when it expires, and the label files the company sent with it.",
+     "cannot_prove": "That the named company makes every bag sold, or where. The register lists the company on the registration; it doesn't use the word maker, and label files can be printer's proofs older than the registration.",
+     "terms_url": "https://www.nd.gov/disclaimer",
+     "terms_read": "Open license. We read it with a script.",
+     "terms_checked": "2026-11-03",
+     "credit": "",
+     "pulls": "every 182 days by script, last 2026-11-03"
+    },
+    {
+     "id": "usda-fsis-mpi",
+     "name": "USDA FSIS Meat, Poultry and Egg Product Inspection Directory",
+     "publisher": "US Department of Agriculture, Food Safety and Inspection Service",
+     "url": "https://www.fsis.usda.gov/inspection/establishments/meat-poultry-and-egg-product-inspection-directory",
+     "kind": "Government registry",
+     "primary": true,
+     "proves": "Which plant holds a USDA establishment number, with its name, address and the activities it is inspected for.",
+     "cannot_prove": "Which brands or products a plant makes, or that it made a given lot. On meat labels the number is that of the plant where the product was processed under inspection (9 CFR 317.2(i)); the directory only says who holds each number.",
+     "terms_url": "https://www.usda.gov/about-usda/policies-and-links",
+     "terms_read": "The site refuses scripts, so a person downloads it by hand. We never work around the block.",
+     "terms_checked": "2026-11-02",
+     "credit": "",
+     "pulls": "every 30 days by hand, last 2026-11-02"
+    },
+    {
+     "id": "maker-honda",
+     "name": "Honda owner's manuals",
+     "publisher": "American Honda Motor Co., Inc.",
+     "url": "https://mygarage.honda.com/s/find-honda",
+     "kind": "Maker's own words",
+     "primary": true,
+     "proves": "What this vehicle maker itself tells owners about tire age, in its own published words.",
+     "cannot_prove": "How old any one tire is, or whether it is safe. The advice covers the models and years named; other models or years may say something different.",
+     "terms_url": "https://www.honda.com/",
+     "terms_read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+     "terms_checked": "2026-11-03",
+     "credit": "",
+     "pulls": "every 0 days by hand, last 2026-11-03"
+    },
+    {
+     "id": "nhtsa-gov",
+     "name": "NHTSA tire safety pages (TireWise)",
+     "publisher": "US National Highway Traffic Safety Administration",
+     "url": "https://www.nhtsa.gov/vehicle-safety/tires",
+     "kind": "Regulator",
+     "primary": true,
+     "proves": "What the US road-safety regulator tells drivers about tire aging, spares and reading the date code.",
+     "cannot_prove": "The age of any one tire, or a legal age limit: NHTSA's page sets none.",
+     "terms_url": "https://www.nhtsa.gov/about-nhtsa/web-policies-notices",
+     "terms_read": "Public domain (US government work). We read it with a script.",
+     "terms_checked": "2026-11-03",
+     "credit": "",
+     "pulls": "every 365 days by hand, last 2026-11-03"
+    }
+   ],
+   "files": {
+    "json": {
+     "url": "https://whoactuallymakes.com/data/sources.json",
+     "bytes": 50297,
+     "sha256": "6464a10462f05bd926dd90aeb8b9e55344ac5efb72ab26bc5220325abdbaf65f"
+    },
+    "csv": {
+     "url": "https://whoactuallymakes.com/data/sources.csv",
+     "bytes": 25740,
+     "sha256": "6bd0c74be42a7f35dd13dba985b308d4258dc2dddfbff873270483aed9cb8d5a"
+    }
+   }
+  },
+  {
+   "id": "corrections",
+   "title": "Corrections log",
+   "short": "Corrections",
+   "what": "Every change to a published answer: what it said, what it says now, why, who spotted it and when. Corrections, updates and clarifications are kept apart.",
+   "limits": "Starts on Nov 2, 2026, when the site began. An empty log means no answer has changed yet.",
+   "use": "Powers the Corrections page and the “Corrections to this page” box.",
+   "page": "/corrections/",
+   "refresh": "The day a change is made",
+   "keywords": [
+    "corrections",
+    "changelog",
+    "transparency"
+   ],
+   "rights": "CC BY covers the whole file.",
+   "based_on": [],
+   "records": 4,
+   "updated": "2026-11-03",
+   "fields": [
+    {
+     "name": "id",
+     "type": "text",
+     "about": "Our ID for the entry."
+    },
+    {
+     "name": "on",
+     "type": "date",
+     "about": "When the change went live (YYYY-MM-DD)."
+    },
+    {
+     "name": "kind",
+     "type": "text",
+     "about": "correction, update or clarification."
+    },
+    {
+     "name": "page",
+     "type": "url",
+     "about": "The page that changed (a path on whoactuallymakes.com)."
+    },
+    {
+     "name": "what",
+     "type": "text",
+     "about": "What changed, in a few words."
+    },
+    {
+     "name": "was",
+     "type": "text",
+     "about": "What it said before."
+    },
+    {
+     "name": "now",
+     "type": "text",
+     "about": "What it says now."
+    },
+    {
+     "name": "why",
+     "type": "text",
+     "about": "Why it changed."
+    },
+    {
+     "name": "flagged_by",
+     "type": "text",
+     "about": "Who spotted it: a reader, the maker or brand, or our own checks."
+    },
+    {
+     "name": "evidence",
+     "type": "url",
+     "about": "The records that showed it, separated by “ | ”."
+    }
+   ],
+   "preview": [
+    {
+     "id": "c-2026-11-03-dog-food-2025-register",
+     "on": "2026-11-03",
+     "kind": "update",
+     "page": "/kirkland-signature/dog-food/",
+     "what": "Who makes Kirkland Signature dog food",
+     "was": "The only public record we'd found was Diamond Pet Foods' 2012 recall notice, so we said we couldn't name who makes today's bags.",
+     "now": "North Dakota's pet food register lists all 12 Kirkland dry dog formulas as Costco's, care of Diamond Pet, renewed December 2025. We added wet food (Saturn Petcare), biscuits (North River Enterprises), jerky (Phelps Industries) and dental chews (Nylabone) from the same register.",
+     "why": "We found a newer public record: the state's pet food register and the label files filed with it.",
+     "flagged_by": "Our own re-check",
+     "evidence": "https://lars.ndda.nd.gov/public/productDetail/40712 | https://lars.ndda.nd.gov/public/openfile?getDocId=93584"
+    },
+    {
+     "id": "c-2026-11-03-cold-brew-lots",
+     "on": "2026-11-03",
+     "kind": "correction",
+     "page": "/kirkland-signature/coffee/",
+     "what": "The cold brew line under What we don’t know",
+     "was": "The 2023 recall record covers only four lots, with best-by dates of October 19 to 22, 2023.",
+     "now": "The 2023 recall record covers only the lots it lists: nine lots with best-by dates of October 19 to 27, 2023, 231,071 cases in all.",
+     "why": "FDA’s record lists nine lots (231019 to 231027), not four. The company and the record were right; the lot count and date range were not.",
+     "flagged_by": "Our own re-check",
+     "evidence": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0648-2023%22"
+    },
+    {
+     "id": "c-2026-11-03-cat-food-2025-register",
+     "on": "2026-11-03",
+     "kind": "update",
+     "page": "/kirkland-signature/cat-food/",
+     "what": "Who makes Kirkland Signature cat food",
+     "was": "The only public record we'd found was Diamond Pet Foods' 2012 recall notice; we hadn't found who makes the wet cat food.",
+     "now": "North Dakota's pet food register lists the three Kirkland dry cat formulas care of Diamond Pet and the four pate cat foods care of Saturn Petcare, all renewed December 2025.",
+     "why": "We found a newer public record: the state's pet food register and the label files filed with it.",
+     "flagged_by": "Our own re-check",
+     "evidence": "https://lars.ndda.nd.gov/public/productDetail/40627 | https://lars.ndda.nd.gov/public/productDetail/8454 | https://lars.ndda.nd.gov/public/openfile?getDocId=111809"
+    },
+    {
+     "id": "c-2026-11-03-bourbon-three-companies",
+     "on": "2026-11-03",
+     "kind": "correction",
+     "page": "/kirkland-signature/bourbon/",
+     "what": "Opening line of the bourbon answer",
+     "was": "Two companies hold US label approvals for Kirkland Signature bourbon.",
+     "now": "Three companies hold US label approvals for Kirkland Signature bourbon.",
+     "why": "The paragraph went on to name three approval holders: Barton 1792 Distillery, Buffalo Trace Distillery, Inc. and Tennessee Distilling Group. The count was wrong; the companies and records were not.",
+     "flagged_by": "Our own re-check",
+     "evidence": ""
+    }
+   ],
+   "files": {
+    "json": {
+     "url": "https://whoactuallymakes.com/data/corrections.json",
+     "bytes": 4360,
+     "sha256": "8da1447a202f8d98e923bbad6ed42c25d87b040946b6067312f9c85b426f3aa4"
+    },
+    "csv": {
+     "url": "https://whoactuallymakes.com/data/corrections.csv",
+     "bytes": 2584,
+     "sha256": "180143020a527bbd6e9336c9cf5dca297df26b17405e9e5aefd859c666196445"
+    }
+   }
+  },
+  {
+   "id": "schedule",
+   "title": "Update schedule: when each list is checked",
+   "short": "Update schedule",
+   "what": "Each check we run on a schedule: what it reads, how often, by script or by hand, when it last ran, when it’s next due and what it found.",
+   "limits": "A job running on time shows we read the source, not that the source was right.",
+   "use": "Powers the Update schedule page.",
+   "page": "/update-schedule/",
+   "refresh": "Every time a job runs",
+   "keywords": [
+    "update schedule",
+    "freshness",
+    "data maintenance"
+   ],
+   "rights": "CC BY covers the whole file.",
+   "based_on": [],
+   "records": 6,
+   "updated": "2026-11-03",
+   "fields": [
+    {
+     "name": "id",
+     "type": "text",
+     "about": "Our ID for the job."
+    },
+    {
+     "name": "what",
+     "type": "text",
+     "about": "What the job checks."
+    },
+    {
+     "name": "source",
+     "type": "text",
+     "about": "The source it reads."
+    },
+    {
+     "name": "how",
+     "type": "text",
+     "about": "script or hand."
+    },
+    {
+     "name": "every_days",
+     "type": "number",
+     "about": "How often it runs, in days."
+    },
+    {
+     "name": "once",
+     "type": "boolean",
+     "about": "true for a one-off check."
+    },
+    {
+     "name": "last",
+     "type": "date",
+     "about": "When it last ran (YYYY-MM-DD)."
+    },
+    {
+     "name": "due",
+     "type": "date",
+     "about": "When it’s next due (YYYY-MM-DD)."
+    },
+    {
+     "name": "result",
+     "type": "text",
+     "about": "What the last run found."
+    }
+   ],
+   "preview": [
+    {
+     "id": "nhtsa-tire-plants",
+     "what": "NHTSA tire plant codes",
+     "source": "NHTSA vPIC: tire plant codes and vehicle identification",
+     "how": "script",
+     "every_days": 7,
+     "once": false,
+     "last": "2026-11-02",
+     "due": "2026-11-09",
+     "result": "1,246 entries; no changes since the previous pull"
+    },
+    {
+     "id": "usda-establishments",
+     "what": "USDA meat, poultry and egg plant directory",
+     "source": "USDA FSIS Meat, Poultry and Egg Product Inspection Directory",
+     "how": "hand",
+     "every_days": 30,
+     "once": false,
+     "last": "2026-11-02",
+     "due": "2026-12-02",
+     "result": "7,257 entries; first pull"
+    },
+    {
+     "id": "openfda-leads",
+     "what": "FDA recall records that mention store brands",
+     "source": "openFDA food and drug enforcement (recall) reports",
+     "how": "script",
+     "every_days": 7,
+     "once": false,
+     "last": "2026-11-02",
+     "due": "2026-11-09",
+     "result": "38 recalls waiting for review"
+    },
+    {
+     "id": "tire-age-guidance",
+     "what": "Tire age guidance: who says what",
+     "source": "NHTSA tire safety pages (TireWise)",
+     "how": "hand",
+     "every_days": 365,
+     "once": false,
+     "last": "2026-11-03",
+     "due": "2027-11-03",
+     "result": "10 rows and 12 carmakers from 24 documents"
+    },
+    {
+     "id": "tire-age-carmaker-followup",
+     "what": "Tire age: carmaker manuals to re-check",
+     "source": "Honda owner's manuals",
+     "how": "hand",
+     "every_days": 0,
+     "once": true,
+     "last": "2026-11-03",
+     "due": "2026-11-05",
+     "result": "Every carmaker on the list has a row"
+    }
+   ],
+   "files": {
+    "json": {
+     "url": "https://whoactuallymakes.com/data/schedule.json",
+     "bytes": 25382,
+     "sha256": "7866441cb37d0f8351a6364bf6cac9890934ab1e6def3cb47010523a1c7f2511"
+    },
+    "csv": {
+     "url": "https://whoactuallymakes.com/data/schedule.csv",
+     "bytes": 1181,
+     "sha256": "8eea8cd183af41e62210233893df75f16b4c54c3a450bcf127fc64b049177c9d"
+    }
+   }
+  }
+ ]
+}

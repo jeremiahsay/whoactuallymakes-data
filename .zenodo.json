@@ -1,0 +1,47 @@
+{
+ "title": "Who Actually Makes open data (store-brand makers, tire plant codes, tire age guidance)",
+ "upload_type": "dataset",
+ "description": "Who makes store-brand products, from public records: which company each Kirkland Signature product traces to, the companies behind store brands and the labels they are on record for, every NHTSA tire plant code, what tire makers and carmakers say about tire age, and the evidence (quote, date read, SHA-256), sources, corrections and update schedule behind each answer. JSON and CSV. Live copy and API: https://whoactuallymakes.com/data/",
+ "creators": [
+  {
+   "name": "Say, Jeremiah",
+   "orcid": "0009-0009-2025-7691",
+   "affiliation": "Numbers Publishing Pte. Ltd."
+  }
+ ],
+ "license": "cc-by-4.0",
+ "version": "2026-11-03",
+ "keywords": [
+  "store brands",
+  "private label",
+  "open data",
+  "public records",
+  "manufacturer",
+  "who makes Kirkland",
+  "Costco",
+  "private label manufacturers",
+  "store brand makers",
+  "who makes store brands",
+  "co-packers",
+  "Kirkland suppliers",
+  "store brand supplier",
+  "who makes Kroger brand",
+  "who makes CVS brand",
+  "pet food co-packer",
+  "tire plant codes",
+  "DOT code",
+  "tire factory",
+  "NHTSA",
+  "49 CFR 574.5",
+  "tire age",
+  "how old is too old",
+  "tire replacement"
+ ],
+ "related_identifiers": [
+  {
+   "identifier": "https://whoactuallymakes.com/data/",
+   "relation": "isIdenticalTo",
+   "resource_type": "dataset"
+  }
+ ]
+}
