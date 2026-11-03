@@ -15,6 +15,7 @@ import io
 import json
 import os
 import sys
+import time
 import urllib.request
 
 SITE = "https://whoactuallymakes.com"
@@ -22,13 +23,21 @@ CATALOG = SITE + "/data/catalog.json"
 REPO = "https://github.com/jeremiahsay/whoactuallymakes-data"
 UA = "whoactuallymakes-data-mirror/1.0 (+https://github.com/jeremiahsay/whoactuallymakes-data)"
 ORCID = "https://orcid.org/0009-0009-2025-7691"
+DOI = "10.5281/zenodo.23920936"  # Zenodo concept DOI: all versions (first release v2026-11-03 = 10.5281/zenodo.23920937)
 FRICTIONLESS = {"text": "string", "date": "string", "url": "string", "number": "number", "boolean": "boolean"}
 
 
-def get(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return r.read()
+def get(url, tries=3):
+    """Fetch url; retry a dropped connection twice (the site's edge sometimes closes one)."""
+    for n in range(tries):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return r.read()
+        except Exception:  # noqa: BLE001
+            if n == tries - 1:
+                raise
+            time.sleep(5 * (n + 1))
 
 
 def fail(why):
@@ -96,16 +105,17 @@ def main():
         if f"data/{name}" not in keep:
             os.remove(os.path.join(root, "data", name))
             changed += 1
-    if not changed and os.path.exists(os.path.join(root, "README.md")):
+    version = max(d["updated"] for d in cat["datasets"])
+    meta = 0
+    if changed:  # the catalog's own "generated" date moves daily; only rewrite it with the data
+        meta += write(old_cat, json.dumps(cat, ensure_ascii=False, indent=1) + "\n")
+    meta += write(os.path.join(root, "README.md"), readme(cat, version, files))
+    meta += write(os.path.join(root, "datapackage.json"), json.dumps(datapackage(cat, version, files), ensure_ascii=False, indent=1) + "\n")
+    meta += write(os.path.join(root, "CITATION.cff"), citation(cat, version))
+    meta += write(os.path.join(root, ".zenodo.json"), json.dumps(zenodo(cat, version), ensure_ascii=False, indent=1) + "\n")
+    if not changed and not meta:
         print("OK unchanged")
         return
-
-    version = max(d["updated"] for d in cat["datasets"])
-    write(old_cat, json.dumps(cat, ensure_ascii=False, indent=1) + "\n")
-    write(os.path.join(root, "README.md"), readme(cat, version, files))
-    write(os.path.join(root, "datapackage.json"), json.dumps(datapackage(cat, version, files), ensure_ascii=False, indent=1) + "\n")
-    write(os.path.join(root, "CITATION.cff"), citation(cat, version))
-    write(os.path.join(root, ".zenodo.json"), json.dumps(zenodo(cat, version), ensure_ascii=False, indent=1) + "\n")
     print(f"OK changed={changed} version={version} records={cat['records']}")
 
 
@@ -113,6 +123,8 @@ def readme(cat, v, files):
     L = []
     a = L.append
     a("# Who Actually Makes: open data")
+    a("")
+    a(f"[![DOI](https://zenodo.org/badge/DOI/{DOI}.svg)](https://doi.org/{DOI})")
     a("")
     a("Who makes store-brand products, from public records. Every list behind "
       "[Who Actually Makes](https://whoactuallymakes.com/): which company each Kirkland Signature product traces to, "
@@ -177,7 +189,8 @@ def readme(cat, v, files):
     a(f"Our rows are licensed [CC BY 4.0]({cat['licence']['url']}): free to reuse, commercially too. "
       f"Credit: **{cat['credit']}**, with a link to {cat['url']}. Quoted words in the evidence and source columns belong "
       "to their publishers. Most records are US government work, in the public domain in the US. See each dataset's "
-      "Rights line. To cite it in a paper, use `CITATION.cff` (GitHub's \"Cite this repository\").")
+      "Rights line. To cite it, use the DOI https://doi.org/" + DOI + " (all versions; Zenodo also gives each release its own DOI) "
+      "or `CITATION.cff` (GitHub's \"Cite this repository\").")
     a("")
     a("## Corrections")
     a("")
@@ -221,6 +234,7 @@ def datapackage(cat, v, files):
         })
     return {
         "name": "whoactuallymakes-data",
+        "id": "https://doi.org/" + DOI,
         "title": cat["title"],
         "description": "Who makes store-brand products, from public records: Kirkland Signature makers, companies behind store brands, NHTSA tire plant codes, tire age guidance, and the evidence behind each answer.",
         "homepage": cat["url"],
@@ -252,6 +266,7 @@ title: "{cat['title']}"
 version: "{v}"
 date-released: "{v}"
 license: CC-BY-4.0
+doi: "{DOI}"
 url: "{cat['url']}"
 repository: "{REPO}"
 keywords:

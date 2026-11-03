@@ -1,5 +1,7 @@
 # Who Actually Makes: open data
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23920936.svg)](https://doi.org/10.5281/zenodo.23920936)
+
 Who makes store-brand products, from public records. Every list behind [Who Actually Makes](https://whoactuallymakes.com/): which company each Kirkland Signature product traces to, the companies behind store brands and the labels they're on record for, every NHTSA tire plant code, what tire makers and carmakers say about tire age, and the evidence, sources, corrections and update schedule behind it all.
 
 **9 datasets · 1,637 records · version 2026-11-03** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
@@ -309,7 +311,7 @@ For the always-current copy, read from the site instead: `https://whoactuallymak
 
 ## Licence and credit
 
-Our rows are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): free to reuse, commercially too. Credit: **Who Actually Makes (whoactuallymakes.com), CC BY 4.0**, with a link to https://whoactuallymakes.com/data/. Quoted words in the evidence and source columns belong to their publishers. Most records are US government work, in the public domain in the US. See each dataset's Rights line. To cite it in a paper, use `CITATION.cff` (GitHub's "Cite this repository").
+Our rows are licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): free to reuse, commercially too. Credit: **Who Actually Makes (whoactuallymakes.com), CC BY 4.0**, with a link to https://whoactuallymakes.com/data/. Quoted words in the evidence and source columns belong to their publishers. Most records are US government work, in the public domain in the US. See each dataset's Rights line. To cite it, use the DOI https://doi.org/10.5281/zenodo.23920936 (all versions; Zenodo also gives each release its own DOI) or `CITATION.cff` (GitHub's "Cite this repository").
 
 ## Corrections
 
