@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-03",
- "count": 44,
+ "generated": "2026-11-04",
+ "count": 46,
  "rows": [
   {
    "claim_id": "c-ks-golf-performance-plus-sm-global",
@@ -44,6 +44,27 @@
    "last_checked": "2026-11-03",
    "next_check": "2026-12-03",
    "page": "https://whoactuallymakes.com/kirkland-signature/golf-clubs/"
+  },
+  {
+   "claim_id": "c-ks-aa-batteries-duracell",
+   "brand": "Kirkland Signature",
+   "product": "Kirkland Signature Alkaline AA batteries (48-count)",
+   "category": "Household",
+   "company": "Duracell",
+   "company_legal_name": "Duracell",
+   "relation": "made-by",
+   "stamp": "reported",
+   "from": "2016-11",
+   "to": "",
+   "region": "US",
+   "variant": "The 2016 statement says “Kirkland Signature batteries”, not which sizes",
+   "on_label": "",
+   "summary": "In November 2016 WSB-TV reported that Costco's then chief executive, Craig Jelinek, told consumer reporter Clark Howard that Duracell makes Kirkland Signature batteries. We've found no newer record that names a maker.",
+   "evidence_ids": "ev-wsbtv-ks-batteries-2016",
+   "evidence_urls": "https://www.wsbtv.com/news/2-investigates/costco-ceo-shares-tips-with-clark-howard-to-help-you-save-money/465720155/",
+   "last_checked": "2026-11-04",
+   "next_check": "2027-05-04",
+   "page": "https://whoactuallymakes.com/kirkland-signature/batteries/"
   },
   {
    "claim_id": "c-ks-dog-food-diamond-2025",
@@ -506,6 +527,27 @@
    "last_checked": "2026-11-03",
    "next_check": "2027-05-03",
    "page": "https://whoactuallymakes.com/kirkland-signature/golf-clubs/"
+  },
+  {
+   "claim_id": "c-ks-aaa-batteries-duracell",
+   "brand": "Kirkland Signature",
+   "product": "Kirkland Signature Alkaline AAA batteries (48-count)",
+   "category": "Household",
+   "company": "Duracell",
+   "company_legal_name": "Duracell",
+   "relation": "made-by",
+   "stamp": "reported",
+   "from": "2016-11",
+   "to": "",
+   "region": "US",
+   "variant": "The 2016 statement says “Kirkland Signature batteries”, not which sizes",
+   "on_label": "",
+   "summary": "In November 2016 WSB-TV reported that Costco's then chief executive, Craig Jelinek, told consumer reporter Clark Howard that Duracell makes Kirkland Signature batteries. We've found no newer record that names a maker.",
+   "evidence_ids": "ev-wsbtv-ks-batteries-2016",
+   "evidence_urls": "https://www.wsbtv.com/news/2-investigates/costco-ceo-shares-tips-with-clark-howard-to-help-you-save-money/465720155/",
+   "last_checked": "2026-11-04",
+   "next_check": "2027-05-04",
+   "page": "https://whoactuallymakes.com/kirkland-signature/batteries/"
   },
   {
    "claim_id": "c-ks-wet-dog-saturn",

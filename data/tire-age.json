@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-03",
+ "generated": "2026-11-04",
  "rows": [
   {
    "who": "NHTSA",
@@ -603,21 +603,21 @@
   {
    "who": "Nissan",
    "slug": "nissan",
-   "covers": "2024 Rogue owner’s manual (US)",
+   "covers": "2026 Rogue owner’s manual (US)",
    "replace_at": "No replacement age; a technician check over 6 years",
    "years": 6,
    "from": "Not stated",
    "spare": "Included",
-   "line": "Nissan’s 2024 Rogue manual sets no replacement age: it says to have tires, including the spare, over 6 years old checked by a qualified technician.",
+   "line": "Nissan’s 2026 Rogue manual sets no replacement age: it says to have tires, including the spare, over 6 years old checked by a qualified technician.",
    "sources": [
     {
-     "id": "ev-nissan-rogue-2024-six-years-check",
-     "title": "2024 Nissan Rogue owner's manual (US), Tires",
-     "url": "https://www.nissanusa.com/content/dam/Nissan/us/manuals-and-guides/rogue/2024/2024-nissan-rogue-owner-manual.pdf",
+     "id": "ev-nissan-rogue-2026-six-years-check",
+     "title": "2026 Nissan Rogue owner's manual (US), Tires",
+     "url": "https://www.nissanusa.com/content/dam/Nissan/us/manuals-and-guides/rogue/2026/2026-nissan-rogue-owner-manual.pdf",
      "quote": "Tires degrade with age and use. Have tires, including the spare, over 6 years old checked by a qualified technician, because some tire damage may not be obvious. Replace the tires as necessary to prevent tire failure and possible personal injury.",
-     "read": "2026-11-03",
+     "read": "2026-11-04",
      "doc_date": null,
-     "archive_url": "https://web.archive.org/web/20241217200114/https://www.nissanusa.com/content/dam/Nissan/us/manuals-and-guides/rogue/2024/2024-nissan-rogue-owner-manual.pdf",
+     "archive_url": "https://web.archive.org/web/20261104021406/https://www.nissanusa.com/content/dam/Nissan/us/manuals-and-guides/rogue/2026/2026-nissan-rogue-owner-manual.pdf",
      "publisher": "Nissan North America, Inc."
     }
    ]

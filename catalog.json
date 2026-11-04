@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-03",
+ "generated": "2026-11-04",
  "title": "Who Actually Makes open data",
  "url": "https://whoactuallymakes.com/data/",
  "licence": {
@@ -9,7 +9,7 @@
  },
  "credit": "Who Actually Makes (whoactuallymakes.com), CC BY 4.0",
  "count": 9,
- "records": 1637,
+ "records": 1663,
  "datasets": [
   {
    "id": "claims",
@@ -29,8 +29,8 @@
    ],
    "rights": "Quoted words belong to their publishers; most records are US government work. CC BY covers our rows.",
    "based_on": [],
-   "records": 44,
-   "updated": "2026-11-03",
+   "records": 46,
+   "updated": "2026-11-04",
    "fields": [
     {
      "name": "claim_id",
@@ -172,6 +172,27 @@
      "page": "https://whoactuallymakes.com/kirkland-signature/golf-clubs/"
     },
     {
+     "claim_id": "c-ks-aa-batteries-duracell",
+     "brand": "Kirkland Signature",
+     "product": "Kirkland Signature Alkaline AA batteries (48-count)",
+     "category": "Household",
+     "company": "Duracell",
+     "company_legal_name": "Duracell",
+     "relation": "made-by",
+     "stamp": "reported",
+     "from": "2016-11",
+     "to": "",
+     "region": "US",
+     "variant": "The 2016 statement says “Kirkland Signature batteries”, not which sizes",
+     "on_label": "",
+     "summary": "In November 2016 WSB-TV reported that Costco's then chief executive, Craig Jelinek, told consumer reporter Clark Howard that Duracell makes Kirkland Signature batteries. We've found no newer record that names a maker.",
+     "evidence_ids": "ev-wsbtv-ks-batteries-2016",
+     "evidence_urls": "https://www.wsbtv.com/news/2-investigates/costco-ceo-shares-tips-with-clark-howard-to-help-you-save-money/465720155/",
+     "last_checked": "2026-11-04",
+     "next_check": "2027-05-04",
+     "page": "https://whoactuallymakes.com/kirkland-signature/batteries/"
+    },
+    {
      "claim_id": "c-ks-dog-food-diamond-2025",
      "brand": "Kirkland Signature",
      "product": "Kirkland Signature dry dog food",
@@ -212,39 +233,18 @@
      "last_checked": "2026-11-03",
      "next_check": "2027-05-03",
      "page": "https://whoactuallymakes.com/kirkland-signature/dog-food/"
-    },
-    {
-     "claim_id": "c-ks-vodka-bardstown",
-     "brand": "Kirkland Signature",
-     "product": "Kirkland Signature American Vodka",
-     "category": "Spirits",
-     "company": "The Bardstown Bourbon Company",
-     "company_legal_name": "The Bardstown Bourbon Company, LLC",
-     "relation": "bottled-by",
-     "stamp": "documented",
-     "from": "2026-07",
-     "to": "",
-     "region": "US",
-     "variant": "",
-     "on_label": "Produced & bottled by Lofted Spirits, Bardstown, KY",
-     "summary": "A July 2026 TTB label approval for Kirkland Signature Premium American Vodka is held by The Bardstown Bourbon Company; the label reads \"Produced & bottled by Lofted Spirits, Bardstown, KY\".",
-     "evidence_ids": "ev-ttb-ks-vodka-bardstown-2026",
-     "evidence_urls": "https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=26203001000461",
-     "last_checked": "2026-11-03",
-     "next_check": "2027-05-03",
-     "page": "https://whoactuallymakes.com/kirkland-signature/vodka/"
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/claims.json",
-     "bytes": 42166,
-     "sha256": "f283ee1dcacfd7416dfa085e2b7fafe0c53c71936b41edd444bb5e95b4c21676"
+     "bytes": 44216,
+     "sha256": "58a2ffdc7dbf2a789575a5c8a6aca46e1c77713c4b0d5148973ca9c53c512969"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/claims.csv",
-     "bytes": 27043,
-     "sha256": "111d2f1c558cf41d4b30f40544d2a14bd6c28e30c5717040384774716c7b5ab0"
+     "bytes": 28403,
+     "sha256": "7120346c12383220b17cb10505d5014716e74b1a582b420fc91a7d6631fc08fe"
     }
    }
   },
@@ -767,14 +767,14 @@
     "https://www.mazdausa.com/static/manuals/2025/cx-5/contents/07031403.html",
     "https://www.michelin.ca/en/auto/learn/tire-buying-guide/when-to-replace-tires",
     "https://www.nhtsa.gov/vehicle-safety/tires",
-    "https://www.nissanusa.com/content/dam/Nissan/us/manuals-and-guides/rogue/2024/2024-nissan-rogue-owner-manual.pdf",
+    "https://www.nissanusa.com/content/dam/Nissan/us/manuals-and-guides/rogue/2026/2026-nissan-rogue-owner-manual.pdf",
     "https://www.subaru.com/owners/vehicle-resources.html?model=2025-FOR-SFD",
     "https://www.tesla.com/ownersmanual/modely/en_us/Owners_Manual.pdf",
     "https://www.toyotires.com/faq-articles/when-should-i-replace-my-vehicles-tires/",
     "https://www.yokohamatire.com/tires-101/maintenance-care-1/tire-life"
    ],
    "records": 22,
-   "updated": "2026-11-03",
+   "updated": "2026-11-04",
    "fields": [
     {
      "name": "group",
@@ -933,12 +933,12 @@
     "json": {
      "url": "https://whoactuallymakes.com/data/tire-age.json",
      "bytes": 34645,
-     "sha256": "70430864f5e5256e4d085d9a7fcf7618636123d5d1108fd1300f0783899a99ec"
+     "sha256": "e76cab3fad52e05e64b17c06d3da80f755584de476db461da38d5b031d692491"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/tire-age.csv",
      "bytes": 19614,
-     "sha256": "8d93a45e9a22450348b783fe44f49afd5544e2736667ce2d8ad47d345ab6c9ce"
+     "sha256": "dca0fcff2e58255fdde516a1bd1e2c13277d23c7404c66668e8daaf85087126a"
     }
    }
   },
@@ -976,7 +976,10 @@
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2077-2019%22",
     "https://assets.sia.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf",
     "https://contentdelivery.ext.gm.com/content/dam/cope/en_us/public/pdf_assets/active/owners_manuals_browse/2025/chevrolet/silverado_1500/25_CHEV_Silverado_1500_OM_en_US_U_87855274B_2024OCT31_2P.pdf",
+    "https://costco.interstatebatteries.com/",
+    "https://customerservice.costco.com/app/answers/answer_view/a_id/9231/loc/en_US",
     "https://diamondpetcompany.com/our-history",
+    "https://duracell.com/built-in-the-usa",
     "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=7-Eleven",
     "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Carquest",
     "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Craftsman",
@@ -993,6 +996,7 @@
     "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10295",
     "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10297",
     "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10364",
+    "https://gdx-assets.costco.com/adobe/assets/urn:aaid:aem:cfecb199-0072-4462-a131-6ab29cce3716/original/as/Costco-Updated-Battery-Warranty_1.pdf",
     "https://golfwrx.com/623786/golfwrx-spotted-costco-kirkland-signature-wedges-on-usga-conforming-list/",
     "https://golfwrx.com/702096/golfwrx-spotted-costco-kirkland-signature-irons-on-usga-conforming-list/",
     "https://lars.ndda.nd.gov/public/openfile?getDocId=111809",
@@ -1005,14 +1009,10 @@
     "https://lars.ndda.nd.gov/public/productDetail/80975",
     "https://lars.ndda.nd.gov/public/productDetail/8454",
     "https://lars.ndda.nd.gov/public/productDetail/8457",
-    "https://movingon.blog.gov.uk/2020/12/09/ban-on-tyres-over-10-years-old-for-heavy-vehicles-and-some-minibuses/",
-    "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
-    "https://ownersmanual.hyundai.com/full_pdf/NX4/2025/en_US",
-    "https://ownersmanual.kia.com/full_webhelp/NQ5KH/2025/en_US/topics/chapter9_15_8.html",
-    "https://techinfo.honda.com/rjanisis/pubs/OM/AH/A3A02424OM/enu/A3A02424OMEN.PDF"
+    "https://movingon.blog.gov.uk/2020/12/09/ban-on-tyres-over-10-years-old-for-heavy-vehicles-and-some-minibuses/"
    ],
-   "records": 135,
-   "updated": "2026-11-03",
+   "records": 151,
+   "updated": "2026-11-04",
    "fields": [
     {
      "name": "id",
@@ -1150,13 +1150,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/evidence.json",
-     "bytes": 120116,
-     "sha256": "3e6ba0384bd56ca2ea21487ccb24d920e62050257085635d312947cd482ff01c"
+     "bytes": 137771,
+     "sha256": "0176a900b0d38c956b232b6f689f3850bf5cd273845acdec578b3ccb23cb923e"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/evidence.csv",
-     "bytes": 93239,
-     "sha256": "6f498d55041b766c2f1073ca9a37b292e8ef283bb6897052b38906b95f616afa"
+     "bytes": 107732,
+     "sha256": "f69f0c49cbf72b3acc6379637b8dcc65c771b362be1d81e0754851383d211fc9"
     }
    }
   },
@@ -1177,7 +1177,9 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [
+    "https://costco.interstatebatteries.com/",
     "https://diamondpetcompany.com/",
+    "https://duracell.com/",
     "https://engineoil.api.org/Directory/EolcsSearch",
     "https://lars.ndda.nd.gov/public/productsearch/3",
     "https://mygarage.honda.com/s/find-honda",
@@ -1195,10 +1197,12 @@
     "https://www.chevrolet.com/support/vehicle/manuals-guides",
     "https://www.continental-tires.com/tire-knowledge/tire-age/",
     "https://www.coopertire.com/en_US/tire-education/learn-tire-maintenance/how-long-does-a-tire-last.html",
+    "https://www.costco.co.uk/",
     "https://www.costco.com/",
     "https://www.courtlistener.com/recap/",
     "https://www.ecfr.gov/",
     "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts",
+    "https://www.flsd.uscourts.gov/",
     "https://www.ford.com/support/how-tos/tires-and-wheels/tire-replacement-and-maintenance/tire-replacement/",
     "https://www.fsis.usda.gov/inspection/establishments/meat-poultry-and-egg-product-inspection-directory",
     "https://www.golfmonthly.com/",
@@ -1216,15 +1220,16 @@
     "https://www.perrigo.com/",
     "https://www.saturnpetcare.us/",
     "https://www.sazerac.com/",
+    "https://www.sec.gov/edgar/search/",
     "https://www.subaru.com/owners/vehicle-resources.html",
     "https://www.tesla.com/ownersmanual/modely/en_us/Owners_Manual.pdf",
     "https://www.toyota.com/owners/warranty-owners-manuals/",
     "https://www.toyotires.com/faq-articles/when-should-i-replace-my-vehicles-tires/",
     "https://www.usga.org/ConformingGolfBall/",
-    "https://www.yokohamatire.com/tires-101/maintenance-care-1/tire-life"
+    "https://www.wsbtv.com/"
    ],
-   "records": 45,
-   "updated": "2026-11-03",
+   "records": 51,
+   "updated": "2026-11-04",
    "fields": [
     {
      "name": "id",
@@ -1339,46 +1344,46 @@
      "pulls": "every 30 days by hand, last 2026-11-02"
     },
     {
-     "id": "maker-honda",
-     "name": "Honda owner's manuals",
-     "publisher": "American Honda Motor Co., Inc.",
-     "url": "https://mygarage.honda.com/s/find-honda",
-     "kind": "Maker's own words",
+     "id": "costco-interstate-finder",
+     "name": "Costco's car battery finder (costco.interstatebatteries.com)",
+     "publisher": "Interstate Batteries, for Costco Wholesale (linked from costco.com as \"Find my Automotive Battery!\")",
+     "url": "https://costco.interstatebatteries.com/",
+     "kind": "Retailer",
      "primary": true,
-     "proves": "What this vehicle maker itself tells owners about tire age, in its own published words.",
-     "cannot_prove": "How old any one tire is, or whether it is safe. The advice covers the models and years named; other models or years may say something different.",
-     "terms_url": "https://www.honda.com/",
-     "terms_read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
-     "terms_checked": "2026-11-03",
+     "proves": "Which Interstate battery Costco's finder offers for a given car, and its item number, group size, cold cranking amps, price, core charge and warranty months on the day we read it.",
+     "cannot_prove": "The price on your warehouse shelf on another day, or who built the battery: the finder names no maker and no country of origin.",
+     "terms_url": "https://costco.interstatebatteries.com/",
+     "terms_read": "The site refuses scripts, so a person downloads it by hand. We never work around the block.",
+     "terms_checked": "2026-11-04",
      "credit": "",
-     "pulls": "every 0 days by hand, last 2026-11-03"
+     "pulls": "every 30 days by hand, last 2026-11-04"
     },
     {
-     "id": "nhtsa-gov",
-     "name": "NHTSA tire safety pages (TireWise)",
-     "publisher": "US National Highway Traffic Safety Administration",
-     "url": "https://www.nhtsa.gov/vehicle-safety/tires",
-     "kind": "Regulator",
+     "id": "costco-com",
+     "name": "Costco.com product listings",
+     "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+     "url": "https://www.costco.com/",
+     "kind": "Retailer",
      "primary": true,
-     "proves": "What the US road-safety regulator tells drivers about tire aging, spares and reading the date code.",
-     "cannot_prove": "The age of any one tire, or a legal age limit: NHTSA's page sets none.",
-     "terms_url": "https://www.nhtsa.gov/about-nhtsa/web-policies-notices",
-     "terms_read": "Public domain (US government work). We read it with a script.",
-     "terms_checked": "2026-11-03",
+     "proves": "What Costco, the owner of Kirkland Signature, itself says about a Kirkland product on its listing, such as who roasted it.",
+     "cannot_prove": "Anything the listing doesn't say. Most Kirkland listings name no maker, and a listing can change without notice.",
+     "terms_url": "https://www.costco.com/f/-/terms-and-conditions-of-use",
+     "terms_read": "The site refuses scripts, so a person downloads it by hand. We never work around the block.",
+     "terms_checked": "2026-11-04",
      "credit": "",
-     "pulls": "every 365 days by hand, last 2026-11-03"
+     "pulls": "every 30 days by hand, last 2026-11-04"
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/sources.json",
-     "bytes": 50297,
-     "sha256": "6464a10462f05bd926dd90aeb8b9e55344ac5efb72ab26bc5220325abdbaf65f"
+     "bytes": 58049,
+     "sha256": "057f845c49dc05c1fc20919edf08b2b568bdc627acf4b2c99e260a261d9c9c1d"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/sources.csv",
-     "bytes": 25740,
-     "sha256": "6bd0c74be42a7f35dd13dba985b308d4258dc2dddfbff873270483aed9cb8d5a"
+     "bytes": 29130,
+     "sha256": "d8b6c4f325794e87eeab939d0b2ef11e3a3a96c223d3ae50fba9e2fdfdc93516"
     }
    }
   },
@@ -1531,8 +1536,8 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 6,
-   "updated": "2026-11-03",
+   "records": 8,
+   "updated": "2026-11-04",
    "fields": [
     {
      "name": "id",
@@ -1621,8 +1626,8 @@
      "how": "hand",
      "every_days": 365,
      "once": false,
-     "last": "2026-11-03",
-     "due": "2027-11-03",
+     "last": "2026-11-04",
+     "due": "2027-11-04",
      "result": "10 rows and 12 carmakers from 24 documents"
     },
     {
@@ -1632,21 +1637,21 @@
      "how": "hand",
      "every_days": 0,
      "once": true,
-     "last": "2026-11-03",
-     "due": "2026-11-05",
+     "last": "2026-11-04",
+     "due": "2026-11-12",
      "result": "Every carmaker on the list has a row"
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/schedule.json",
-     "bytes": 25382,
-     "sha256": "7866441cb37d0f8351a6364bf6cac9890934ab1e6def3cb47010523a1c7f2511"
+     "bytes": 29718,
+     "sha256": "5b769b896730f86c3e0bb077f1d415eff60ba0b0ca53df3d3204b6a5d6651d7b"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/schedule.csv",
-     "bytes": 1181,
-     "sha256": "8eea8cd183af41e62210233893df75f16b4c54c3a450bcf127fc64b049177c9d"
+     "bytes": 1661,
+     "sha256": "e7c1fd65f59c1acd21b3071059e2507e8f69f8adc9a28f626483d7080374910c"
     }
    }
   }

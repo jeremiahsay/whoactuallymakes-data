@@ -1,9 +1,9 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-03",
- "count": 45,
- "primary": 42,
- "by_hand": 4,
+ "generated": "2026-11-04",
+ "count": 51,
+ "primary": 47,
+ "by_hand": 6,
  "sources": [
   {
    "id": "nhtsa-vpic",
@@ -127,6 +127,94 @@
    ]
   },
   {
+   "id": "costco-interstate-finder",
+   "name": "Costco's car battery finder (costco.interstatebatteries.com)",
+   "short": "Costco battery finder",
+   "publisher": "Interstate Batteries, for Costco Wholesale (linked from costco.com as \"Find my Automotive Battery!\")",
+   "url": "https://costco.interstatebatteries.com/",
+   "kind": "Retailer",
+   "primary": true,
+   "proves": "Which Interstate battery Costco's finder offers for a given car, and its item number, group size, cold cranking amps, price, core charge and warranty months on the day we read it.",
+   "cannot_prove": "The price on your warehouse shelf on another day, or who built the battery: the finder names no maker and no country of origin.",
+   "terms": {
+    "url": "https://costco.interstatebatteries.com/",
+    "read": "The site refuses scripts, so a person downloads it by hand. We never work around the block.",
+    "automated": false,
+    "checked": "2026-11-04",
+    "due": "2027-11-04"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Costco car batteries: prices by group size",
+     "url": "/costco-car-batteries/",
+     "note": "12 group sizes, read at three ZIP codes"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Costco car battery prices by group size",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-04",
+     "due": "2026-12-04",
+     "result": "Standard $114.99-$129.99, AGM $179.99-$184.99, $15 core charge; same at ZIPs 75254, 98101, 10001",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Costco forbids scripts, so a person looks up the same cars in the finder in a browser, updates data/guidance/costco-car-batteries.json and this task."
+    }
+   ]
+  },
+  {
+   "id": "costco-com",
+   "name": "Costco.com product listings",
+   "short": "Costco.com listings",
+   "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+   "url": "https://www.costco.com/",
+   "kind": "Retailer",
+   "primary": true,
+   "proves": "What Costco, the owner of Kirkland Signature, itself says about a Kirkland product on its listing, such as who roasted it.",
+   "cannot_prove": "Anything the listing doesn't say. Most Kirkland listings name no maker, and a listing can change without notice.",
+   "terms": {
+    "url": "https://www.costco.com/f/-/terms-and-conditions-of-use",
+    "read": "The site refuses scripts, so a person downloads it by hand. We never work around the block.",
+    "automated": false,
+    "checked": "2026-11-04",
+    "due": "2027-11-04"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature coffee",
+     "url": "/kirkland-signature/coffee/",
+     "note": "Which listings name a roaster"
+    },
+    {
+     "label": "Who makes Kirkland Signature batteries",
+     "url": "/kirkland-signature/batteries/",
+     "note": "Which batteries carry the Kirkland name, prices, shelf life"
+    },
+    {
+     "label": "Costco car batteries: warranty, install, battery age",
+     "url": "/costco-car-batteries/",
+     "note": "The automotive battery page and FAQ, the battery warranty sheet and the Tire Center FAQ"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Kirkland and Duracell battery prices at Costco",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-04",
+     "due": "2026-12-04",
+     "result": "Kirkland AA 48 $16.99 ($14.99 on offer to Nov 15); Duracell Coppertop AA 40 $20.99",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Costco forbids scripts, so a person reads both listings in a browser and updates the page and this task."
+    }
+   ]
+  },
+  {
    "id": "maker-honda",
    "name": "Honda owner's manuals",
    "short": "Honda",
@@ -156,12 +244,12 @@
      "what": "Tire age: carmaker manuals to re-check",
      "how": "hand",
      "every_days": 0,
-     "last": "2026-11-03",
-     "due": "2026-11-05",
+     "last": "2026-11-04",
+     "due": "2026-11-12",
      "result": "Every carmaker on the list has a row",
      "edition": null,
      "file_url": null,
-     "hand_note": "Honda: read the 2026 CR-V manual on Honda’s own server (it was down on Nov 3; the table uses an archived 2024 copy). Toyota: try the live 2026 RAV4 manual (the live PDF failed on Nov 3; the table uses an archived 2025 copy). Nissan: try the live 2025 or 2026 Rogue manual on nissanusa.com (it showed Access Denied on Nov 3; the table uses an archived 2024 copy)."
+     "hand_note": "Honda: read the 2026 CR-V manual on Honda’s own server (down for maintenance on Nov 3 and Nov 4; the table uses an archived 2024 copy). Toyota: try the live 2026 RAV4 manual (the 2025 PDF refused our request on Nov 3 and Nov 4; the table uses an archived 2025 copy). Nissan done Nov 4: the live 2026 Rogue manual says the same as 2024."
     }
    ]
   },
@@ -195,8 +283,8 @@
      "what": "Tire age guidance: who says what",
      "how": "hand",
      "every_days": 365,
-     "last": "2026-11-03",
-     "due": "2027-11-03",
+     "last": "2026-11-04",
+     "due": "2027-11-04",
      "result": "10 rows and 12 carmakers from 24 documents",
      "edition": null,
      "file_url": null,
@@ -442,28 +530,28 @@
    "pulls": []
   },
   {
-   "id": "costco-com",
-   "name": "Costco.com product listings",
-   "short": "Costco.com listings",
-   "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
-   "url": "https://www.costco.com/",
+   "id": "costco-international",
+   "name": "Costco listings outside the US (UK, Australia)",
+   "short": "Costco UK and Australia listings",
+   "publisher": "Costco Wholesale Corporation and its national companies (owner of Kirkland Signature)",
+   "url": "https://www.costco.co.uk/",
    "kind": "Retailer",
    "primary": true,
-   "proves": "What Costco, the owner of Kirkland Signature, itself says about a Kirkland product on its listing, such as who roasted it.",
-   "cannot_prove": "Anything the listing doesn't say. Most Kirkland listings name no maker, and a listing can change without notice.",
+   "proves": "What Costco says about a Kirkland product in another country, such as its country of origin. Packs can differ from country to country.",
+   "cannot_prove": "Anything the listing doesn't say, or that the US pack is the same.",
    "terms": {
-    "url": "https://www.costco.com/f/-/terms-and-conditions-of-use",
+    "url": "https://www.costco.co.uk/terms-and-conditions",
     "read": "The site refuses scripts, so a person downloads it by hand. We never work around the block.",
     "automated": false,
-    "checked": "2026-11-03",
-    "due": "2027-11-03"
+    "checked": "2026-11-04",
+    "due": "2027-11-04"
    },
    "credit": null,
    "used_for": [
     {
-     "label": "Who makes Kirkland Signature coffee",
-     "url": "/kirkland-signature/coffee/",
-     "note": "Which listings name a roaster"
+     "label": "Who makes Kirkland Signature batteries",
+     "url": "/kirkland-signature/batteries/",
+     "note": "UK shelf life and guarantee; Australian hearing aid batteries' country of origin"
     }
    ],
    "pulls": []
@@ -514,6 +602,33 @@
    },
    "credit": null,
    "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "maker-duracell",
+   "name": "Duracell company website",
+   "short": "Duracell",
+   "publisher": "Duracell",
+   "url": "https://duracell.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Duracell says about its own batteries in its own words, such as where it assembles the ones it sells in the US.",
+   "cannot_prove": "Which store-brand batteries Duracell makes. Its site names no private-label customers.",
+   "terms": {
+    "url": "https://duracell.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-04",
+    "due": "2027-11-04"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature batteries",
+     "url": "/kirkland-signature/batteries/",
+     "note": "Where Duracell says its US AA and AAA cells are assembled"
+    }
+   ],
    "pulls": []
   },
   {
@@ -1016,6 +1131,33 @@
    "pulls": []
   },
   {
+   "id": "sec-edgar",
+   "name": "SEC EDGAR company filings",
+   "short": "SEC filings",
+   "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+   "url": "https://www.sec.gov/edgar/search/",
+   "kind": "Company filings",
+   "primary": true,
+   "proves": "What a company told investors and regulators about itself, in a filing it signs and can be held to, such as which brands it makes batteries for.",
+   "cannot_prove": "Anything the filing doesn't spell out. A list of brands a company supplies doesn't say it makes every product sold under those brands, or which store sells them.",
+   "terms": {
+    "url": "https://www.sec.gov/os/accessing-edgar-data",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-04",
+    "due": "2027-11-04"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Costco car batteries: who makes them",
+     "url": "/costco-car-batteries/",
+     "note": "Clarios's 2023 IPO filing naming Interstate among the brands it supplies"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-sazerac",
    "name": "Sazerac Company website",
    "short": "Sazerac",
@@ -1034,6 +1176,33 @@
    },
    "credit": null,
    "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "court-sdfl-skrandel",
+   "name": "Skrandel v. Costco Wholesale Corp., U.S. District Court, Southern District of Florida, 9:21-cv-80826",
+   "short": "Skrandel v. Costco court filings",
+   "publisher": "U.S. District Court for the Southern District of Florida (court-stamped copies posted by Truth in Advertising and ClassAction.org)",
+   "url": "https://www.flsd.uscourts.gov/",
+   "kind": "Court records",
+   "primary": true,
+   "proves": "What each side filed and what the court ordered, word for word, with the docket stamp and date on every page.",
+   "cannot_prove": "That a complaint's allegations are true: a complaint is one side's account, and the case settled without a finding against Costco.",
+   "terms": {
+    "url": "https://www.uscourts.gov/court-records",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-04",
+    "due": "2027-11-04"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Costco car batteries: warranty",
+     "url": "/costco-car-batteries/",
+     "note": "The 2021 lawsuit over the \"Free Replacement\" label and its 2023 settlement"
+    }
+   ],
    "pulls": []
   },
   {
@@ -1226,6 +1395,33 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Which tires the date-code rule covers"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "wsbtv",
+   "name": "WSB-TV Channel 2 Atlanta",
+   "short": "WSB-TV",
+   "publisher": "WSB-TV (Cox Media Group)",
+   "url": "https://www.wsbtv.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What a TV news station reported, and when. Here, what Costco's chief executive told a consumer reporter on camera in 2016.",
+   "cannot_prove": "That the report is right, or that it still holds. A reporter's summary of what someone said isn't the person's own words, so we show it as Reported.",
+   "terms": {
+    "url": "https://www.wsbtv.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-04",
+    "due": "2027-11-04"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature batteries",
+     "url": "/kirkland-signature/batteries/",
+     "note": "The 2016 statement that Duracell makes them"
     }
    ],
    "pulls": []

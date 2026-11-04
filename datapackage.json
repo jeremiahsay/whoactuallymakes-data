@@ -4,7 +4,7 @@
  "title": "Who Actually Makes open data",
  "description": "Who makes store-brand products, from public records: Kirkland Signature makers, companies behind store brands, NHTSA tire plant codes, tire age guidance, and the evidence behind each answer.",
  "homepage": "https://whoactuallymakes.com/data/",
- "version": "2026-11-03",
+ "version": "2026-11-04",
  "licenses": [
   {
    "name": "CC-BY-4.0",
@@ -59,8 +59,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 27043,
-   "hash": "sha256:111d2f1c558cf41d4b30f40544d2a14bd6c28e30c5717040384774716c7b5ab0",
+   "bytes": 28403,
+   "hash": "sha256:7120346c12383220b17cb10505d5014716e74b1a582b420fc91a7d6631fc08fe",
    "schema": {
     "fields": [
      {
@@ -425,7 +425,7 @@
    "mediatype": "text/csv",
    "encoding": "utf-8",
    "bytes": 19614,
-   "hash": "sha256:8d93a45e9a22450348b783fe44f49afd5544e2736667ce2d8ad47d345ab6c9ce",
+   "hash": "sha256:dca0fcff2e58255fdde516a1bd1e2c13277d23c7404c66668e8daaf85087126a",
    "schema": {
     "fields": [
      {
@@ -580,8 +580,8 @@
      "path": "https://www.nhtsa.gov/vehicle-safety/tires"
     },
     {
-     "title": "https://www.nissanusa.com/content/dam/Nissan/us/manuals-and-guides/rogue/2024/2024-nissan-rogue-owner-manual.pdf",
-     "path": "https://www.nissanusa.com/content/dam/Nissan/us/manuals-and-guides/rogue/2024/2024-nissan-rogue-owner-manual.pdf"
+     "title": "https://www.nissanusa.com/content/dam/Nissan/us/manuals-and-guides/rogue/2026/2026-nissan-rogue-owner-manual.pdf",
+     "path": "https://www.nissanusa.com/content/dam/Nissan/us/manuals-and-guides/rogue/2026/2026-nissan-rogue-owner-manual.pdf"
     },
     {
      "title": "https://www.subaru.com/owners/vehicle-resources.html?model=2025-FOR-SFD",
@@ -609,8 +609,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 93239,
-   "hash": "sha256:6f498d55041b766c2f1073ca9a37b292e8ef283bb6897052b38906b95f616afa",
+   "bytes": 107732,
+   "hash": "sha256:f69f0c49cbf72b3acc6379637b8dcc65c771b362be1d81e0754851383d211fc9",
    "schema": {
     "fields": [
      {
@@ -743,8 +743,20 @@
      "path": "https://contentdelivery.ext.gm.com/content/dam/cope/en_us/public/pdf_assets/active/owners_manuals_browse/2025/chevrolet/silverado_1500/25_CHEV_Silverado_1500_OM_en_US_U_87855274B_2024OCT31_2P.pdf"
     },
     {
+     "title": "https://costco.interstatebatteries.com/",
+     "path": "https://costco.interstatebatteries.com/"
+    },
+    {
+     "title": "https://customerservice.costco.com/app/answers/answer_view/a_id/9231/loc/en_US",
+     "path": "https://customerservice.costco.com/app/answers/answer_view/a_id/9231/loc/en_US"
+    },
+    {
      "title": "https://diamondpetcompany.com/our-history",
      "path": "https://diamondpetcompany.com/our-history"
+    },
+    {
+     "title": "https://duracell.com/built-in-the-usa",
+     "path": "https://duracell.com/built-in-the-usa"
     },
     {
      "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=7-Eleven",
@@ -811,6 +823,10 @@
      "path": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10364"
     },
     {
+     "title": "https://gdx-assets.costco.com/adobe/assets/urn:aaid:aem:cfecb199-0072-4462-a131-6ab29cce3716/original/as/Costco-Updated-Battery-Warranty_1.pdf",
+     "path": "https://gdx-assets.costco.com/adobe/assets/urn:aaid:aem:cfecb199-0072-4462-a131-6ab29cce3716/original/as/Costco-Updated-Battery-Warranty_1.pdf"
+    },
+    {
      "title": "https://golfwrx.com/623786/golfwrx-spotted-costco-kirkland-signature-wedges-on-usga-conforming-list/",
      "path": "https://golfwrx.com/623786/golfwrx-spotted-costco-kirkland-signature-wedges-on-usga-conforming-list/"
     },
@@ -861,22 +877,6 @@
     {
      "title": "https://movingon.blog.gov.uk/2020/12/09/ban-on-tyres-over-10-years-old-for-heavy-vehicles-and-some-minibuses/",
      "path": "https://movingon.blog.gov.uk/2020/12/09/ban-on-tyres-over-10-years-old-for-heavy-vehicles-and-some-minibuses/"
-    },
-    {
-     "title": "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
-     "path": "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/"
-    },
-    {
-     "title": "https://ownersmanual.hyundai.com/full_pdf/NX4/2025/en_US",
-     "path": "https://ownersmanual.hyundai.com/full_pdf/NX4/2025/en_US"
-    },
-    {
-     "title": "https://ownersmanual.kia.com/full_webhelp/NQ5KH/2025/en_US/topics/chapter9_15_8.html",
-     "path": "https://ownersmanual.kia.com/full_webhelp/NQ5KH/2025/en_US/topics/chapter9_15_8.html"
-    },
-    {
-     "title": "https://techinfo.honda.com/rjanisis/pubs/OM/AH/A3A02424OM/enu/A3A02424OMEN.PDF",
-     "path": "https://techinfo.honda.com/rjanisis/pubs/OM/AH/A3A02424OM/enu/A3A02424OMEN.PDF"
     }
    ]
   },
@@ -888,8 +888,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 25740,
-   "hash": "sha256:6bd0c74be42a7f35dd13dba985b308d4258dc2dddfbff873270483aed9cb8d5a",
+   "bytes": 29130,
+   "hash": "sha256:d8b6c4f325794e87eeab939d0b2ef11e3a3a96c223d3ae50fba9e2fdfdc93516",
    "schema": {
     "fields": [
      {
@@ -963,8 +963,16 @@
    },
    "sources": [
     {
+     "title": "https://costco.interstatebatteries.com/",
+     "path": "https://costco.interstatebatteries.com/"
+    },
+    {
      "title": "https://diamondpetcompany.com/",
      "path": "https://diamondpetcompany.com/"
+    },
+    {
+     "title": "https://duracell.com/",
+     "path": "https://duracell.com/"
     },
     {
      "title": "https://engineoil.api.org/Directory/EolcsSearch",
@@ -1035,6 +1043,10 @@
      "path": "https://www.coopertire.com/en_US/tire-education/learn-tire-maintenance/how-long-does-a-tire-last.html"
     },
     {
+     "title": "https://www.costco.co.uk/",
+     "path": "https://www.costco.co.uk/"
+    },
+    {
      "title": "https://www.costco.com/",
      "path": "https://www.costco.com/"
     },
@@ -1049,6 +1061,10 @@
     {
      "title": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts",
      "path": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts"
+    },
+    {
+     "title": "https://www.flsd.uscourts.gov/",
+     "path": "https://www.flsd.uscourts.gov/"
     },
     {
      "title": "https://www.ford.com/support/how-tos/tires-and-wheels/tire-replacement-and-maintenance/tire-replacement/",
@@ -1119,6 +1135,10 @@
      "path": "https://www.sazerac.com/"
     },
     {
+     "title": "https://www.sec.gov/edgar/search/",
+     "path": "https://www.sec.gov/edgar/search/"
+    },
+    {
      "title": "https://www.subaru.com/owners/vehicle-resources.html",
      "path": "https://www.subaru.com/owners/vehicle-resources.html"
     },
@@ -1139,8 +1159,8 @@
      "path": "https://www.usga.org/ConformingGolfBall/"
     },
     {
-     "title": "https://www.yokohamatire.com/tires-101/maintenance-care-1/tire-life",
-     "path": "https://www.yokohamatire.com/tires-101/maintenance-care-1/tire-life"
+     "title": "https://www.wsbtv.com/",
+     "path": "https://www.wsbtv.com/"
     }
    ]
   },
@@ -1220,8 +1240,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 1181,
-   "hash": "sha256:8eea8cd183af41e62210233893df75f16b4c54c3a450bcf127fc64b049177c9d",
+   "bytes": 1661,
+   "hash": "sha256:e7c1fd65f59c1acd21b3071059e2507e8f69f8adc9a28f626483d7080374910c",
    "schema": {
     "fields": [
      {

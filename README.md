@@ -4,7 +4,7 @@
 
 Who makes store-brand products, from public records. Every list behind [Who Actually Makes](https://whoactuallymakes.com/): which company each Kirkland Signature product traces to, the companies behind store brands and the labels they're on record for, every NHTSA tire plant code, what tire makers and carmakers say about tire age, and the evidence, sources, corrections and update schedule behind it all.
 
-**9 datasets · 1,637 records · version 2026-11-03** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
+**9 datasets · 1,663 records · version 2026-11-04** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
 
 Each answer on the site carries a stamp (confirmed, documented, reported or unverified) and links to the record it rests on. The evidence file keeps the exact quote, the date it was read and a SHA-256 fingerprint of the document, so anyone can check a row against its source. How the stamps work: https://whoactuallymakes.com/how-we-know/
 
@@ -12,15 +12,15 @@ Each answer on the site carries a stamp (confirmed, documented, reported or unve
 
 | Dataset | Records | Updated | Files | On the site |
 |---|---:|---|---|---|
-| [Who makes what: store-brand answers (Kirkland Signature)](#claims) | 44 | 2026-11-03 | [JSON](data/claims.json) (41 KB) · [CSV](data/claims.csv) (26 KB) | [/kirkland-signature/](https://whoactuallymakes.com/kirkland-signature/) |
+| [Who makes what: store-brand answers (Kirkland Signature)](#claims) | 46 | 2026-11-04 | [JSON](data/claims.json) (43 KB) · [CSV](data/claims.csv) (28 KB) | [/kirkland-signature/](https://whoactuallymakes.com/kirkland-signature/) |
 | [Companies behind store brands (maker pages)](#companies) | 7 | 2026-11-03 | [JSON](data/companies.json) (4 KB) · [CSV](data/companies.csv) (2 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
 | [Which store labels each company is on record for](#company-labels) | 128 | 2026-11-03 | [JSON](data/company-labels.json) (65 KB) · [CSV](data/company-labels.csv) (40 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
 | [Tire plant codes (NHTSA)](#tire-plants) | 1,246 | 2026-11-02 | [JSON](data/tire-plants.json) (149 KB) · [CSV](data/tire-plants.csv) (89 KB) | [/tire-dot-code-lookup/](https://whoactuallymakes.com/tire-dot-code-lookup/) |
-| [Tire age guidance from tire makers, carmakers and agencies](#tire-age) | 22 | 2026-11-03 | [JSON](data/tire-age.json) (34 KB) · [CSV](data/tire-age.csv) (19 KB) | [/tire-date-code/](https://whoactuallymakes.com/tire-date-code/) |
-| [Evidence records: every quote behind our answers](#evidence) | 135 | 2026-11-03 | [JSON](data/evidence.json) (117 KB) · [CSV](data/evidence.csv) (91 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
-| [Sources: the public records we use, and their limits](#sources) | 45 | 2026-11-03 | [JSON](data/sources.json) (49 KB) · [CSV](data/sources.csv) (25 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
+| [Tire age guidance from tire makers, carmakers and agencies](#tire-age) | 22 | 2026-11-04 | [JSON](data/tire-age.json) (34 KB) · [CSV](data/tire-age.csv) (19 KB) | [/tire-date-code/](https://whoactuallymakes.com/tire-date-code/) |
+| [Evidence records: every quote behind our answers](#evidence) | 151 | 2026-11-04 | [JSON](data/evidence.json) (135 KB) · [CSV](data/evidence.csv) (105 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
+| [Sources: the public records we use, and their limits](#sources) | 51 | 2026-11-04 | [JSON](data/sources.json) (57 KB) · [CSV](data/sources.csv) (28 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
 | [Corrections log](#corrections) | 4 | 2026-11-03 | [JSON](data/corrections.json) (4 KB) · [CSV](data/corrections.csv) (3 KB) | [/corrections/](https://whoactuallymakes.com/corrections/) |
-| [Update schedule: when each list is checked](#schedule) | 6 | 2026-11-03 | [JSON](data/schedule.json) (25 KB) · [CSV](data/schedule.csv) (1 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
+| [Update schedule: when each list is checked](#schedule) | 8 | 2026-11-04 | [JSON](data/schedule.json) (29 KB) · [CSV](data/schedule.csv) (2 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
 
 <a id="claims"></a>
 
@@ -222,7 +222,7 @@ Each source we use: who publishes it, whether it is a primary record, what it pr
 - **Limits:** Describes the sources, not their contents. Terms change; each row carries the date we last checked them.
 - **Kept fresh:** Terms re-checked every year; pulls on the schedule shown
 - **Rights:** CC BY covers the whole file.
-- **Based on:** 45 public sources, listed in `catalog.json` (`based_on`)
+- **Based on:** 50 public sources, listed in `catalog.json` (`based_on`)
 - **Files:** `data/sources.json`, `data/sources.csv` · live: https://whoactuallymakes.com/data/sources.json
 
 <details><summary>The 13 fields</summary>
