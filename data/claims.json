@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
  "generated": "2026-11-04",
- "count": 46,
+ "count": 47,
  "rows": [
   {
    "claim_id": "c-ks-golf-performance-plus-sm-global",
@@ -968,6 +968,27 @@
    "last_checked": "2026-11-03",
    "next_check": "2027-05-03",
    "page": ""
+  },
+  {
+   "claim_id": "c-interstate-batteries-clarios",
+   "brand": "Interstate",
+   "product": "Interstate car and truck batteries sold at Costco",
+   "category": "Automotive",
+   "company": "Clarios",
+   "company_legal_name": "Clarios International Inc.",
+   "relation": "made-by",
+   "stamp": "documented",
+   "from": "2023-12",
+   "to": "",
+   "region": "North America",
+   "variant": "The filing names the Interstate brand as one Clarios makes; it doesn't say every Interstate battery, or name Costco",
+   "on_label": "",
+   "summary": "Clarios, Johnson Controls' former battery business, told the SEC in December 2023 that Interstate is one of the private-label brands it supplies, and that it partners with Interstate Batteries on manufacturing and distribution in North America.",
+   "evidence_ids": "ev-sec-clarios-s1a-2023",
+   "evidence_urls": "https://www.sec.gov/Archives/edgar/data/1857971/000119312523296848/d590192ds1a.htm",
+   "last_checked": "2026-11-04",
+   "next_check": "2027-05-04",
+   "page": "https://whoactuallymakes.com/costco-car-batteries/"
   }
  ]
 }

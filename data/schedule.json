@@ -446,7 +446,7 @@
   },
   {
    "source": "Skrandel v. Costco Wholesale Corp., U.S. District Court, Southern District of Florida, 9:21-cv-80826",
-   "publisher": "U.S. District Court for the Southern District of Florida (court-stamped copies posted by Truth in Advertising and ClassAction.org)",
+   "publisher": "U.S. District Court for the Southern District of Florida (court copies from the free RECAP archive and ClassAction.org)",
    "url": "https://www.uscourts.gov/court-records",
    "checked": "2026-11-04",
    "due": "2027-11-04",
@@ -910,6 +910,18 @@
    "task": "tire-age-carmaker-followup",
    "what": "Re-check of the carmaker manuals behind the tire age table",
    "result": "Nissan: live 2026 Rogue manual read, same advice as 2024 (technician check over 6 years, spare included). Honda manual server still down; Toyota PDF still refuses our request. Both re-booked for Nov 12."
+  },
+  {
+   "on": "2026-11-04",
+   "task": "costco-car-battery-prices",
+   "what": "Costco car battery prices by group size (hand re-read in Chrome, same day as the first read)",
+   "result": "No change: all 12 group sizes and 19 items at the same prices at ZIPs 75254, 98101 and 10001 (standard $114.99-$129.99, AGM $179.99-$184.99, $15 core); 2012 Malibu 2.4L still no result; online AGM 1624802 still $299.99 and out of stock (the search tile showed $199.99, the product page $299.99)."
+  },
+  {
+   "on": "2026-11-04",
+   "task": "kirkland-battery-prices",
+   "what": "Kirkland and Duracell battery prices at Costco (hand re-read in Chrome)",
+   "result": "No change: Kirkland AA 48 $16.99, $14.99 with $2 off valid through Nov 15; Duracell Coppertop AA 40 $20.99; both in stock."
   },
   {
    "on": "2026-11-02",

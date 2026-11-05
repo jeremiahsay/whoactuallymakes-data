@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
  "generated": "2026-11-04",
- "count": 151,
+ "count": 153,
  "records": [
   {
    "id": "ev-api-0163-full-list",
@@ -1686,21 +1686,49 @@
   {
    "id": "ev-skrandel-complaint-2021",
    "source": "court-sdfl-skrandel",
-   "publisher": "U.S. District Court for the Southern District of Florida (court-stamped copies posted by Truth in Advertising and ClassAction.org)",
+   "publisher": "U.S. District Court for the Southern District of Florida (court copies from the free RECAP archive and ClassAction.org)",
    "type": "court-filing",
    "title": "Skrandel v. Costco Wholesale Corp., class action complaint (ECF 1, S.D. Fla. 9:21-cv-80826)",
-   "url": "https://truthinadvertising.org/wp-content/uploads/2021/05/Skrandel-v-Costco-complaint.pdf",
-   "archive_url": null,
+   "url": "https://storage.courtlistener.com/recap/gov.uscourts.flsd.592445/gov.uscourts.flsd.592445.1.0.pdf",
+   "archive_url": "https://archive.org/download/gov.uscourts.flsd.592445/gov.uscourts.flsd.592445.1.0.pdf",
    "retrieved": "2026-11-04",
    "doc_date": "2021-05-07",
    "quote": "For years, Costco advertised to consumers that a 36- or 42-Month Free Replacement warranty would accompany the purchase of each Interstate-branded car battery sold at its retail stores … would refund consumers the original purchase price of the defective Interstate Battery and then charge them for a replacement battery at an increased purchase price.",
-   "sha256": "3d562569be483d347d8d13a3a2cfa8a1e63bd89e186e54fe53a0ba73f8254d8a",
-   "note": "The court-stamped complaint (entered on the docket 7 May 2021), as posted by Truth in Advertising. It is the buyer's side of the story; the case settled without the court deciding whether Costco did anything wrong."
+   "sha256": "e0ae412a3de956023cb8e7cc6458232d0920ea350f7872f93145cd92b46fd776",
+   "note": "The complaint as filed (ECF 1, entered on the docket 7 May 2021), the PACER copy in the free RECAP archive, with a permanent copy on archive.org. It is the buyer's side of the story: the final approval order says the settlement is not an admission of wrongdoing by Costco."
+  },
+  {
+   "id": "ev-skrandel-cy-pres-2025",
+   "source": "court-sdfl-skrandel",
+   "publisher": "U.S. District Court for the Southern District of Florida (court copies from the free RECAP archive and ClassAction.org)",
+   "type": "court-filing",
+   "title": "Skrandel v. Costco: paperless order sending unclaimed settlement money to a named recipient (ECF 167)",
+   "url": "https://www.courtlistener.com/docket/59889604/skrandel-v-costco-wholesale-corporation/",
+   "archive_url": null,
+   "retrieved": "2026-11-04",
+   "doc_date": "2025-01-22",
+   "quote": "the Court hereby approves the parties' request to designate Wheels of Success (located in Tampa, Florida) as the cy pres recipient of the unclaimed funds remaining in the Matched Replacement Transaction Fund",
+   "sha256": "7b1e342549a9bfc50159d92c7811feca976960fd19c1c77bd26022cfaf8c2147",
+   "note": "A paperless order: the docket entry is the whole order, so the saved copy is the entry's text as shown on the CourtListener docket. The joint motion's affidavit on how much was left (ECF 166-1) isn't in the free RECAP archive, so we don't give the amount."
+  },
+  {
+   "id": "ev-skrandel-final-approval-2024",
+   "source": "court-sdfl-skrandel",
+   "publisher": "U.S. District Court for the Southern District of Florida (court copies from the free RECAP archive and ClassAction.org)",
+   "type": "court-filing",
+   "title": "Skrandel v. Costco: order granting final approval of the class settlement and awarding attorneys' fees (ECF 164)",
+   "url": "https://storage.courtlistener.com/recap/gov.uscourts.flsd.592445/gov.uscourts.flsd.592445.164.0.pdf",
+   "archive_url": "https://archive.org/download/gov.uscourts.flsd.592445/gov.uscourts.flsd.592445.164.0.pdf",
+   "retrieved": "2026-11-04",
+   "doc_date": "2024-02-29",
+   "quote": "The Settlement is in all respects fair, reasonable, and adequate … neither the Settlement, nor this Order, nor the fact of the Settlement, is an admission or concession by Defendant or the Released Parties of any fault, wrongdoing, or liability whatsoever",
+   "sha256": "a48f8d8dd6432c0b8679633a7d7db62708010792992c8109f648dda3e8dea553",
+   "note": "Signed by Magistrate Judge Bruce E. Reinhart; the final judgment closing the case (ECF 165) was entered the same day. The order says notice went to over 300,000 class members, awards class counsel $750,000 ($543,652 in fees, about 15.6% of the settlement benefits, plus $206,348 in costs) paid by Costco separately, and sends uncashed Matched-class payments to a charity the court approves later. It lists the people who opted out; we don't repeat their names."
   },
   {
    "id": "ev-skrandel-prelim-approval-2023",
    "source": "court-sdfl-skrandel",
-   "publisher": "U.S. District Court for the Southern District of Florida (court-stamped copies posted by Truth in Advertising and ClassAction.org)",
+   "publisher": "U.S. District Court for the Southern District of Florida (court copies from the free RECAP archive and ClassAction.org)",
    "type": "court-filing",
    "title": "Skrandel v. Costco: order granting preliminary approval and setting the final approval hearing (ECF 153)",
    "url": "https://www.classaction.org/media/skrandel-v-costco-wholesale-corporation-prelim-settlement-approval.pdf",
@@ -1709,12 +1737,12 @@
    "doc_date": "2023-09-12",
    "quote": "All current and former Costco members who returned and replaced an Interstate Battery under warranty between May 7, 2016 and June 30, 2023, at a Costco warehouse located in the United States",
    "sha256": "9d1688f96f1b9e627bbd7d6747024fc7a28a411c35f5c028f7980e3fd53f1c47",
-   "note": "Court-stamped copy posted by ClassAction.org. Sets the final approval hearing for 29 February 2024. We haven't found the final approval order, so we don't say how the case ended."
+   "note": "Court-stamped copy posted by ClassAction.org. Sets the final approval hearing for 29 February 2024; the court granted final approval that day (ECF 164)."
   },
   {
    "id": "ev-skrandel-settlement-motion-2023",
    "source": "court-sdfl-skrandel",
-   "publisher": "U.S. District Court for the Southern District of Florida (court-stamped copies posted by Truth in Advertising and ClassAction.org)",
+   "publisher": "U.S. District Court for the Southern District of Florida (court copies from the free RECAP archive and ClassAction.org)",
    "type": "court-filing",
    "title": "Skrandel v. Costco: unopposed motion for preliminary approval of the class settlement (ECF 152)",
    "url": "https://www.classaction.org/media/skrandel-v-costco-wholesale-corporation-motion-prelim-settlement-approval.pdf",

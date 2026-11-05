@@ -9,7 +9,7 @@
  },
  "credit": "Who Actually Makes (whoactuallymakes.com), CC BY 4.0",
  "count": 9,
- "records": 1663,
+ "records": 1666,
  "datasets": [
   {
    "id": "claims",
@@ -29,7 +29,7 @@
    ],
    "rights": "Quoted words belong to their publishers; most records are US government work. CC BY covers our rows.",
    "based_on": [],
-   "records": 46,
+   "records": 47,
    "updated": "2026-11-04",
    "fields": [
     {
@@ -238,13 +238,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/claims.json",
-     "bytes": 44216,
-     "sha256": "58a2ffdc7dbf2a789575a5c8a6aca46e1c77713c4b0d5148973ca9c53c512969"
+     "bytes": 45287,
+     "sha256": "b64a56aef11b265f1ec2343693d66710cffff4b9f8672f3cd4950050bcbbcf6c"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/claims.csv",
-     "bytes": 28403,
-     "sha256": "7120346c12383220b17cb10505d5014716e74b1a582b420fc91a7d6631fc08fe"
+     "bytes": 29129,
+     "sha256": "177dcfa0c2aa866d40db92761c62cf82a552c6ec0225f7133c72268cbbb1e216"
     }
    }
   },
@@ -1011,7 +1011,7 @@
     "https://lars.ndda.nd.gov/public/productDetail/8457",
     "https://movingon.blog.gov.uk/2020/12/09/ban-on-tyres-over-10-years-old-for-heavy-vehicles-and-some-minibuses/"
    ],
-   "records": 151,
+   "records": 153,
    "updated": "2026-11-04",
    "fields": [
     {
@@ -1150,13 +1150,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/evidence.json",
-     "bytes": 137771,
-     "sha256": "0176a900b0d38c956b232b6f689f3850bf5cd273845acdec578b3ccb23cb923e"
+     "bytes": 140476,
+     "sha256": "06358d68d7670a42f91503ae7ca4f33aaa67696ce4e2a2ca5a18c860b9397b93"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/evidence.csv",
-     "bytes": 107732,
-     "sha256": "f69f0c49cbf72b3acc6379637b8dcc65c771b362be1d81e0754851383d211fc9"
+     "bytes": 110043,
+     "sha256": "620a1a548eb836ffb480a65f81e7057da134273ded33df1412bbe2e7a9e843e6"
     }
    }
   },
@@ -1377,13 +1377,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/sources.json",
-     "bytes": 58049,
-     "sha256": "057f845c49dc05c1fc20919edf08b2b568bdc627acf4b2c99e260a261d9c9c1d"
+     "bytes": 58038,
+     "sha256": "e09b9e980bd78a9eafbe661e7e95a62a8c60b4cbade02b6eb7709fefd93ea107"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/sources.csv",
-     "bytes": 29130,
-     "sha256": "d8b6c4f325794e87eeab939d0b2ef11e3a3a96c223d3ae50fba9e2fdfdc93516"
+     "bytes": 29119,
+     "sha256": "a83e607339c294041a5d4124a9470304dfe5684faf5571a3ca614ad12379dab4"
     }
    }
   },
@@ -1645,8 +1645,8 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/schedule.json",
-     "bytes": 29718,
-     "sha256": "5b769b896730f86c3e0bb077f1d415eff60ba0b0ca53df3d3204b6a5d6651d7b"
+     "bytes": 30491,
+     "sha256": "d4080a13c26caca1ee1dd33f8fdf6f2911f78ebba1af75120d8c157adc8fd53a"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/schedule.csv",
