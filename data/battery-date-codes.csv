@@ -1,0 +1,22 @@
+brand,standing,where_to_look,format,example,example_means,date_marks,source,source_url,source_date,read_on
+Interstate,From the maker,"Stamped into the cover as part of a longer code, or on a top or side label","Letter, then digit",C3,March 2023,Shipped,Interstate,https://www.interstatebatteries.com/en-lx/support/faqs,,2026-11-07
+Costco (Interstate),From the maker,"Stamped in the cover, or on a label","Letter, then digit",B1,February 2021,Shipped,Costco.com listings,https://www.costco.com/automotive-batteries.html,,2026-11-07
+ACDelco,From the maker,On the top label,"P, S or G, two-digit month, year digit, plant",P094N,September 2014,Made,ACDelco warranty sheet,https://delcoline.com/wp-content/uploads/2016/08/ACDelco-battery-warranty-information.pdf,2015-02-11,2026-11-07
+OPTIMA,From the maker,First four digits of the serial on the white side label,"Year digit, then day of the year",6086,"March 27, 2026",Made,OPTIMA,https://www.optimabatteries.com/experience/blog/where-is-the-date-code-on-optima-batteries,2026-03-27,2026-11-07
+ODYSSEY,From the maker,Label on the top or back,"Top: 12 digits ending month and year. Back: letter, then digit",K0,November 2020,Made,ODYSSEY,https://www.odysseybattery.com/wp-content/uploads/Battery-Date-Codes-and-Serial-Numbers-041621.pdf,2021-04-16,2026-11-07
+NorthStar,From the maker,Label on the back,"Letter, then digit. E and I aren’t used",M0,November 2020,Made,ODYSSEY,https://www.odysseybattery.com/wp-content/uploads/Battery-Date-Codes-and-Serial-Numbers-041621.pdf,2021-04-16,2026-11-07
+Trojan,From the maker,On or near the negative terminal,"Letter, then digit",B1,February 2021,Made,Trojan,https://www.trojanbattery.com/resources/technical-support-and-faqs/faqs,,2026-11-07
+U.S. Battery,From the maker,Flooded: positive terminal. AGM: etched into the cover,"Flooded: letter, digit, plant letter. AGM: DDMMYY or YYMMDD",150914,"September 15, 2014",Made,U.S. Battery,https://www.usbattery.com/wp-content/uploads/2023/03/Reading_USB_DateCodes_323.pdf,2023-03-23,2026-11-07
+Deka (East Penn),"Part maker, part third-party","Ship date sticker on the side, or a code on the battery","Letter with no I, then digit. Sticker: month/year. Two-digit years are third-party only",L1,November 2011,Shipped,East Penn,https://www.dekabatteries.com/assets/base/0004.pdf,2013-03-15,2026-11-07
+Motorcraft,From the maker,Round sticker on the side of the battery,"Month letter and year digit (C-2), or month number and year digit (3-2)",C-2,March of a year ending in 2,Shipped,Ford distributor manual,https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf,2005-05-01,2026-11-07
+Duralast,Third-party only,"A sticker, says one seller’s guide","MM/YY or MMYY, or letter and digit",0419,April 2019,Not stated,Batteries In A Flash,https://www.batteriesinaflash.com/how-to-read-battery-manufacturer-date-codes,,2026-11-07
+EverStart,Third-party only,"Stamp, or a store sticker, says one seller’s guide","Letter and digit, or MM/YY",C3,March 2023,Not stated,Batteries In A Flash,https://www.batteriesinaflash.com/how-to-read-battery-manufacturer-date-codes,,2026-11-07
+Duracell,Third-party only,Not stated,"Four digits, month and year, says one seller’s guide",0326,March 2026,Not stated,Batteries In A Flash,https://www.batteriesinaflash.com/how-to-read-battery-manufacturer-date-codes,,2026-11-07
+Any other brand,Third-party only,Usually the top of the case,"Letter and digit in either order, says a 2009 retail sheet",7B,February 2017,Not stated,Tires Plus,https://www.tiresplus.com/content/dam/bsro-sites/tiresplus/pdfs/reading-battery-date-codes.pdf,2009-02-25,2026-11-07
+Autocraft,No rule we trust,Not found,We found no rule from any source we’d stand behind,,,,,,,2026-11-07
+MotoMaster,No rule we trust,Not found,We found no rule from any source we’d stand behind,,,,,,,2026-11-07
+Super Start,No rule we trust,Not found,We found no rule from any source we’d stand behind,,,,,,,2026-11-07
+NAPA,No rule we trust,Not found,We found no rule from any source we’d stand behind,,,,,,,2026-11-07
+Varta,No rule we trust,Not found,"Guides disagree, so we don’t decode it",,,,,,,2026-11-07
+DieHard,No rule we trust,Not found,We found no rule from any source we’d stand behind,,,,,,,2026-11-07
+Exide,No rule we trust,Not found,"Guides disagree, so we don’t decode it",,,,Batteries In A Flash,https://www.batteriesinaflash.com/how-to-read-battery-manufacturer-date-codes,,2026-11-07

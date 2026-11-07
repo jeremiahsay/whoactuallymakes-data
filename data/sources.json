@@ -1,10 +1,49 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-04",
- "count": 51,
- "primary": 47,
- "by_hand": 6,
+ "generated": "2026-11-06",
+ "count": 98,
+ "primary": 76,
+ "by_hand": 14,
  "sources": [
+  {
+   "id": "fsc-search",
+   "name": "FSC Search (FSC certificate register)",
+   "short": "FSC register",
+   "publisher": "Forest Stewardship Council",
+   "url": "https://search.fsc.org/",
+   "kind": "Government registry",
+   "primary": true,
+   "proves": "Which company holds an FSC licence code, its certificate, status, expiry, sites and certified product types.",
+   "cannot_prove": "Who physically made a particular product, or at which site. The register shows who holds the code; another certified company can apply that code under a labelling agreement, and FSC says it can't guarantee the data is complete.",
+   "terms": {
+    "url": "https://search.fsc.org/en/disclaimer/",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature toilet paper",
+     "url": "/kirkland-signature/toilet-paper/",
+     "note": "What each code on a pack resolves to"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "The FSC and SFI codes on Kirkland paper packs, and their register entries",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-05",
+     "due": "2027-02-03",
+     "result": "FSC C108208 resolves to Georgia-Pacific LLC, FSC C104904 to Kruger Products, Inc., FSC C068161 to Kimberly-Clark Corporation; SFI-01596 unresolved",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Both are read in a browser, one code at a time: Costco's pack photos, then FSC's or SFI's public search. A new code changes the page. Retry SFI-01596 each time."
+    }
+   ]
+  },
   {
    "id": "nhtsa-vpic",
    "name": "NHTSA vPIC: tire plant codes and vehicle identification",
@@ -81,10 +120,54 @@
      "every_days": 182,
      "last": "2026-11-03",
      "due": "2027-05-04",
-     "result": "7 company pages; 2 pet food register searches, 2 recall pulls",
+     "result": "10 company pages; 2 pet food register searches, 2 recall pulls",
      "edition": null,
      "file_url": null,
      "hand_note": "tools/fetch_maker_registers.py re-reads the registers and recalls; a person re-reads each company's own pages and updates data/makers/."
+    }
+   ]
+  },
+  {
+   "id": "sfi-database",
+   "name": "SFI Certification Database",
+   "short": "SFI register",
+   "publisher": "Sustainable Forestry Initiative Inc.",
+   "url": "https://www.sfidatabase.org/",
+   "kind": "Government registry",
+   "primary": true,
+   "proves": "Which company holds a Sustainable Forestry Initiative certificate or label number, its certificate name, status, expiry and certified locations.",
+   "cannot_prove": "Who made a particular product, or at which listed location. It shows who holds the label number; it doesn't use the word maker, and a store-brand label can be issued a private number that hides the supplier.",
+   "terms": {
+    "url": "https://forests.org/legal/#terms",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature diapers",
+     "url": "/kirkland-signature/diapers/",
+     "note": "What the number on the pack resolves to"
+    },
+    {
+     "label": "Who makes Kirkland Signature toilet paper",
+     "url": "/kirkland-signature/toilet-paper/",
+     "note": "The SFI number on the paper towels and napkins"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "The SFI number on Kirkland diaper packs, and its register entry",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-05",
+     "due": "2027-02-03",
+     "result": "SFI-01644 resolves to First Quality Enterprises, LLC, Valid to Jul 11, 2031",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Both sites are read in a browser: Costco's pack photos, then the number in SFI's public search. A new number, or one that hides the supplier, changes the page."
     }
    ]
   },
@@ -100,7 +183,7 @@
    "cannot_prove": "Which brands or products a plant makes, or that it made a given lot. On meat labels the number is that of the plant where the product was processed under inspection (9 CFR 317.2(i)); the directory only says who holds each number.",
    "terms": {
     "url": "https://www.usda.gov/about-usda/policies-and-links",
-    "read": "The site refuses scripts, so a person downloads it by hand. We never work around the block.",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
     "automated": false,
     "checked": "2026-11-02",
     "due": "2027-11-02"
@@ -138,7 +221,7 @@
    "cannot_prove": "The price on your warehouse shelf on another day, or who built the battery: the finder names no maker and no country of origin.",
    "terms": {
     "url": "https://costco.interstatebatteries.com/",
-    "read": "The site refuses scripts, so a person downloads it by hand. We never work around the block.",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
     "automated": false,
     "checked": "2026-11-04",
     "due": "2027-11-04"
@@ -177,10 +260,10 @@
    "cannot_prove": "Anything the listing doesn't say. Most Kirkland listings name no maker, and a listing can change without notice.",
    "terms": {
     "url": "https://www.costco.com/f/-/terms-and-conditions-of-use",
-    "read": "The site refuses scripts, so a person downloads it by hand. We never work around the block.",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
     "automated": false,
-    "checked": "2026-11-04",
-    "due": "2027-11-04"
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
    },
    "credit": null,
    "used_for": [
@@ -198,6 +281,21 @@
      "label": "Costco car batteries: warranty, install, battery age",
      "url": "/costco-car-batteries/",
      "note": "The automotive battery page and FAQ, the battery warranty sheet and the Tire Center FAQ"
+    },
+    {
+     "label": "Who makes Kirkland Signature diapers",
+     "url": "/kirkland-signature/diapers/",
+     "note": "The pack photos, sizes, prices, reviews and Costco's description"
+    },
+    {
+     "label": "Who makes Kirkland Signature toilet paper",
+     "url": "/kirkland-signature/toilet-paper/",
+     "note": "The pack photos, sheet sizes, prices and Costco's unit prices"
+    },
+    {
+     "label": "Costco toilet paper: every pack and price",
+     "url": "/costco-toilet-paper/",
+     "note": "Every toilet paper pack: prices, sizes, stock, ratings and listing claims"
     }
    ],
    "pulls": [
@@ -210,7 +308,123 @@
      "result": "Kirkland AA 48 $16.99 ($14.99 on offer to Nov 15); Duracell Coppertop AA 40 $20.99",
      "edition": null,
      "file_url": null,
-     "hand_note": "Costco forbids scripts, so a person reads both listings in a browser and updates the page and this task."
+     "hand_note": "Costco forbids scripts, so we read both listings in a browser, then update data/guidance/kirkland-batteries.json and this task. The page follows."
+    },
+    {
+     "what": "Kirkland, Huggies and Pampers diaper prices at Costco",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-05",
+     "due": "2026-12-05",
+     "result": "Kirkland 16 to 32 cents a diaper at regular prices; 13 to 26 cents on the offer to Nov 8",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Costco forbids scripts, so we read each size in a browser, updates data/guidance/kirkland-diapers.json and this task. The cost section's prose is typed in a browser: re-check its \"16 to 32 cents\" and $39.99 lines, and log any new offer's dates."
+    },
+    {
+     "what": "Kirkland, Charmin and Bounty paper prices at Costco",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-05",
+     "due": "2026-12-05",
+     "result": "Kirkland bath tissue $1.47 to $2.12 per 100 sq ft in the warehouse, $1.75 to $2.40 online; Charmin $3.87; Kirkland towels $2.34; Bounty $4.93",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Costco forbids scripts, so we read each listing in a browser, then update data/guidance/kirkland-toilet-paper.json and this task. The page's prose repeats these figures: re-check the Charmin and Bounty sections. If Seattle shows no warehouse price, pick another warehouse on Costco's picker. Do this with costco-toilet-paper-prices."
+    },
+    {
+     "what": "Every toilet paper pack at Costco, plus the Sam's Club comparison",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-05",
+     "due": "2026-12-05",
+     "result": "10 packs; cheapest by paper Marathon $1.20 per 100 sq ft in the warehouse; Kirkland $20.99 warehouse, $24.99 online; Charmin $29.99 warehouse; no offers",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Costco forbids scripts, so we read each listing in a browser, changing warehouse on Costco's picker when one shows no price. Update data/guidance/costco-toilet-paper.json; the build stops on any prose dollar figure the data doesn't hold, so re-read the prose too. Sam's Club offers end Nov 18 and Nov 29."
+    },
+    {
+     "what": "The eight Kirkland rumors: Lakeridge tag, cranberry bottle, foil box and prices, jelly beans in the US and UK, chocolate bags, plastic wrap, honey, flour",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-06",
+     "due": "2026-12-06",
+     "result": "2 on the label (Sealy Mattress, Ocean Spray), 3 named by Costco, 1 partly true, 2 not on the pack",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Read in a browser, one listing at a time, ZIP 98101. Open each gallery back-panel photo and the Product Label PDF. A new maker line changes a verdict, and that needs the owner."
+    },
+    {
+     "what": "The two Kirkland Lakeridge mattresses: prices by size, offer dates, ratings and the law label link",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-06",
+     "due": "2026-12-06",
+     "result": "Pillow Top queen $899.99 to Nov 15; Tight Top queen $949.99; tag says Sealy Mattress",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Read in a browser at ZIP 98101. Click each size. Check the Product Label PDF: a new file or maker line changes the page. Read again the day after an offer ends."
+    },
+    {
+     "what": "Kirkland, Huggies Plus, Pampers Swaddlers Ultra, Pull-Ups, Easy Ups and baby wipes at Costco: every size, offers, ratings, Seattle shelf",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-06",
+     "due": "2026-12-06",
+     "result": "Kirkland on offer to Nov 8, 12.5 to 25.9 cents; regular 15.6 to 32.4; Huggies 19.8 to 48.1; Pampers 20.5 to 46.8",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Read in a browser at ZIP 98101: click each size on the six listings, plus Newborn. Log any new offer's dates in data/guidance/costco-diapers.json. Read again the day after an offer ends. Update kirkland-diapers.json too: the build stops if the two disagree."
+    },
+    {
+     "what": "Kirkland vs name brands: Bounty, Kleenex, Tide and Dawn shelf prices at ZIP 98101",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-06",
+     "due": "2026-12-06",
+     "result": "Four pairs read; OxiClean is warehouse-only with no price shown",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Read Costco.com search pages in a browser, one at a time. Update shelf in data/guidance/kirkland-vs.json."
+    }
+   ]
+  },
+  {
+   "id": "dailymed",
+   "name": "DailyMed drug labels",
+   "short": "DailyMed label",
+   "publisher": "US National Library of Medicine",
+   "url": "https://dailymed.nlm.nih.gov/dailymed/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What a drug's label says as filed with FDA: its application number, any company line printed on it, and any establishment the file lists.",
+   "cannot_prove": "That the pack on your shelf matches this version, or which plant made a given lot. Files are kept up by the company that lists the drug.",
+   "terms": {
+    "url": "https://dailymed.nlm.nih.gov/dailymed/about-dailymed.cfm",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature medicine",
+     "url": "/kirkland-signature/medicine/",
+     "note": "Each Costco label: its FDA number and any company it names"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Kirkland medicine labels and FDA approval holders",
+     "how": "script",
+     "every_days": 7,
+     "last": null,
+     "due": "2026-11-09",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": null
     }
    ]
   },
@@ -226,7 +440,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe. The advice covers the models and years named; other models or years may say something different.",
    "terms": {
     "url": "https://www.honda.com/",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -250,6 +464,84 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Honda: read the 2026 CR-V manual on Honda’s own server (down for maintenance on Nov 3 and Nov 4; the table uses an archived 2024 copy). Toyota: try the live 2026 RAV4 manual (the 2025 PDF refused our request on Nov 3 and Nov 4; the table uses an archived 2025 copy). Nissan done Nov 4: the live 2026 Rogue manual says the same as 2024."
+    }
+   ]
+  },
+  {
+   "id": "maker-interstate",
+   "name": "Interstate Batteries website",
+   "short": "Interstate",
+   "publisher": "Interstate Batteries",
+   "url": "https://www.interstatebatteries.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How Interstate reads its date codes, and its warranty terms.",
+   "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+   "terms": {
+    "url": "https://www.interstatebatteries.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Battery date code decoder",
+     "url": "/battery-date-code/",
+     "note": "Interstate's date code rule"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Battery date code rules from each maker",
+     "how": "hand",
+     "every_days": 180,
+     "last": "2026-11-06",
+     "due": "2027-05-05",
+     "result": "Nine maker rules and three third-party rules read. Newer ODYSSEY sheets and Interstate's March 2025 warranty PDF refused our read",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Re-read each record in data/guidance/battery-date-codes.json in a browser, one at a time. Try the newer ODYSSEY sheets and the K0 line first. Owner approves any rule change."
+    }
+   ]
+  },
+  {
+   "id": "nhtsa-recalls",
+   "name": "NHTSA recall reports and recall file",
+   "short": "NHTSA recalls",
+   "publisher": "National Highway Traffic Safety Administration",
+   "url": "https://www.nhtsa.gov/recalls",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "Which equipment makers filed safety recalls, for what, and how many units.",
+   "cannot_prove": "Whether a battery with no filed recall is free of defects, or anything about batteries outside the US.",
+   "terms": {
+    "url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Battery date code decoder",
+     "url": "/battery-date-code/",
+     "note": "NHTSA recalls's date code rule"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "NHTSA recalls of lead-acid starter batteries",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-06",
+     "due": "2027-02-04",
+     "result": "One since 2010: East Penn 23E-044",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Read NHTSA's FLAT_RCL_POST_2010 file and filter equipment recalls (type E) for 12V starter batteries. Lithium, traction and jump starters don't count. A new campaign needs owner approval before the page changes."
     }
    ]
   },
@@ -293,6 +585,50 @@
    ]
   },
   {
+   "id": "samsclub-com",
+   "name": "Sam's Club website",
+   "short": "Sam's Club",
+   "publisher": "Sam's West, Inc. (Walmart)",
+   "url": "https://www.samsclub.com/",
+   "kind": "Retailer",
+   "primary": true,
+   "proves": "What Sam's Club lists and charges on its own website on the day, and its own unit prices.",
+   "cannot_prove": "What a given club charges, or who makes a product. The page says prices may vary in club and online, and unit prices are rounded to a tenth of a cent.",
+   "terms": {
+    "url": "https://www.samsclub.com/content/termsofuse",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Costco toilet paper: every pack and price",
+     "url": "/costco-toilet-paper/",
+     "note": "Sam's Club prices for the comparison"
+    },
+    {
+     "label": "Costco diapers: prices and sales",
+     "url": "/costco-diapers/",
+     "note": "Member's Mark diaper and wipe prices for the comparison"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Member's Mark diapers and wipes at Sam's Club: every size, Dallas setting",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-06",
+     "due": "2026-12-06",
+     "result": "Newborn 16.6 cents; sizes 1 to 8 run 16.1 to 37.0; wipes 1.9",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The extension can't read samsclub.com, so the owner saves the product page in Chrome, or sends screenshots. Update sams in data/guidance/costco-diapers.json."
+    }
+   ]
+  },
+  {
    "id": "openfda-enforcement",
    "name": "openFDA food and drug enforcement (recall) reports",
    "short": "FDA recall reports",
@@ -313,7 +649,7 @@
    "used_for": [
     {
      "label": "Leads for review",
-     "note": "Recalls that mention a store brand. A person reads each one before it can support an answer"
+     "note": "Recalls that mention a store brand. We read each one before it can support an answer"
     }
    ],
    "pulls": [
@@ -341,8 +677,8 @@
    "proves": "Which company holds API's license for an engine oil sold under a given brand and grade, and the license dates. API's programme “authorizes engine oil marketers that meet specified requirements to use the API Engine Oil Quality Marks”.",
    "cannot_prove": "Who blended or bottled a given bottle, or where. The license names the company authorised to market the oil with API's marks, not the plant.",
    "terms": {
-    "url": "https://www.api.org/terms-of-use",
-    "read": "The site refuses scripts, so a person downloads it by hand. We never work around the block.",
+    "url": "https://www.api.org/terms-and-conditions",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
     "automated": false,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -433,7 +769,7 @@
    "cannot_prove": "Which factory made the ball, or in which country. The list names the company that submitted the ball for testing; that can be the factory's owner or a company that has the ball made for it.",
    "terms": {
     "url": "https://www.usga.org/terms-of-use.html",
-    "read": "The site refuses scripts, so a person downloads it by hand. We never work around the block.",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
     "automated": false,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -444,6 +780,168 @@
      "label": "Who makes Kirkland Signature golf balls",
      "url": "/kirkland-signature/golf-balls/",
      "note": "Manufacturer listed for every Kirkland ball on the list"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "aaa",
+   "name": "AAA automotive articles",
+   "short": "AAA",
+   "publisher": "American Automobile Association",
+   "url": "https://www.aaa.com/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "AAA's general advice on how long car batteries last.",
+   "cannot_prove": "How long one battery will last.",
+   "terms": {
+    "url": "https://www.aaa.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Battery date code decoder",
+     "url": "/battery-date-code/",
+     "note": "AAA's date code rule"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-acdelco",
+   "name": "ACDelco Canada website",
+   "short": "ACDelco",
+   "publisher": "ACDelco",
+   "url": "https://acdelcocanada.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How ACDelco reads its date codes and its warranty terms in Canada.",
+   "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+   "terms": {
+    "url": "https://acdelcocanada.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Battery date code decoder",
+     "url": "/battery-date-code/",
+     "note": "ACDelco's date code rule"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "allblogthings",
+   "name": "All Blog Things",
+   "short": "All Blog Things",
+   "publisher": "All Blog Things",
+   "url": "https://www.allblogthings.com/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "What this deal post said, and when. Here, the dates and prices of past Costco diaper offers.",
+   "cannot_prove": "That the offer ran at every warehouse, or that a date the post doesn't quote from Costco is exact.",
+   "terms": {
+    "url": "https://www.allblogthings.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Costco diapers: prices and sales",
+     "url": "/costco-diapers/",
+     "note": "Past offer dates"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "babygearlab",
+   "name": "BabyGearLab",
+   "short": "BabyGearLab",
+   "publisher": "BabyGearLab (GearLab)",
+   "url": "https://www.babygearlab.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What a product-testing site says about a product it reviewed.",
+   "cannot_prove": "Who makes the product. Its note doesn't name a maker or say how it dated the change.",
+   "terms": {
+    "url": "https://www.babygearlab.com/",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature diapers",
+     "url": "/kirkland-signature/diapers/",
+     "note": "Its note withdrawing its old Kirkland review"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "batteries-in-a-flash",
+   "name": "Batteries In A Flash guide",
+   "short": "Batteries In A Flash",
+   "publisher": "BatteriesInAFlash.com, Inc.",
+   "url": "https://www.batteriesinaflash.com/",
+   "kind": "Retailer",
+   "primary": false,
+   "proves": "What a battery seller's guide says about brands with no published maker rule.",
+   "cannot_prove": "That a maker uses the rule. The guide cites no sources.",
+   "terms": {
+    "url": "https://www.batteriesinaflash.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Battery date code decoder",
+     "url": "/battery-date-code/",
+     "note": "Batteries In A Flash's date code rule"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "bloomberg",
+   "name": "Bloomberg News",
+   "short": "Bloomberg",
+   "publisher": "Bloomberg L.P.",
+   "url": "https://www.bloomberg.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What Bloomberg reported, and when.",
+   "cannot_prove": "That the report is right. People quoted without names can't be checked, so we show it as Reported.",
+   "terms": {
+    "url": "https://www.bloomberg.com/notices/tos/",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature diapers",
+     "url": "/kirkland-signature/diapers/",
+     "note": "The December 2024 report of the supplier change"
     }
    ],
    "pulls": []
@@ -460,7 +958,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe: that depends on its own date code, storage, use and condition. Vehicle makers may say something different.",
    "terms": {
     "url": "https://www.bridgestoneamericas.com/en/terms-of-use",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -476,6 +974,59 @@
    "pulls": []
   },
   {
+   "id": "cpsc-recalls",
+   "name": "CPSC recalls database (SaferProducts.gov recall API)",
+   "short": "CPSC recalls",
+   "publisher": "US Consumer Product Safety Commission",
+   "url": "https://www.saferproducts.gov/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "Which recalls the CPSC holds with a given word in the title or product name, on the day we searched.",
+   "cannot_prove": "That a product has never had a problem. A search for a word finds only recalls that use it, and CPSC isn't the only agency that can act.",
+   "terms": {
+    "url": "https://www.cpsc.gov/Recalls/CPSC-Recalls-Application-Program-Interface-API-Information",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature diapers",
+     "url": "/kirkland-signature/diapers/",
+     "note": "Search for recalls with diaper in the title or product name"
+    },
+    {
+     "label": "Who makes Kirkland Signature toilet paper",
+     "url": "/kirkland-signature/toilet-paper/",
+     "note": "Search for toilet paper and paper towel recalls"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-central-milling",
+   "name": "Central Milling website",
+   "short": "Central Milling",
+   "publisher": "Central Milling",
+   "url": "https://centralmilling.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the company says its sites are.",
+   "cannot_prove": "Which store-brand flours it mills. Its pages we read don’t mention Costco or Kirkland.",
+   "terms": {
+    "url": "https://centralmilling.com/",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "maker-gm",
    "name": "Chevrolet owner's manuals (GM)",
    "short": "Chevrolet (GM)",
@@ -487,7 +1038,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe. The advice covers the models and years named; other models or years may say something different.",
    "terms": {
     "url": "https://www.chevrolet.com/legal",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -514,7 +1065,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe: that depends on its own date code, storage, use and condition. Vehicle makers may say something different.",
    "terms": {
     "url": "https://www.continental-tires.com/legal/legal-notice/",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -531,8 +1082,8 @@
   },
   {
    "id": "costco-international",
-   "name": "Costco listings outside the US (UK, Australia)",
-   "short": "Costco UK and Australia listings",
+   "name": "Costco listings outside the US (UK, Australia, Mexico)",
+   "short": "Costco UK, Australia and Mexico listings",
    "publisher": "Costco Wholesale Corporation and its national companies (owner of Kirkland Signature)",
    "url": "https://www.costco.co.uk/",
    "kind": "Retailer",
@@ -541,10 +1092,10 @@
    "cannot_prove": "Anything the listing doesn't say, or that the US pack is the same.",
    "terms": {
     "url": "https://www.costco.co.uk/terms-and-conditions",
-    "read": "The site refuses scripts, so a person downloads it by hand. We never work around the block.",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
     "automated": false,
-    "checked": "2026-11-04",
-    "due": "2027-11-04"
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
    },
    "credit": null,
    "used_for": [
@@ -552,6 +1103,11 @@
      "label": "Who makes Kirkland Signature batteries",
      "url": "/kirkland-signature/batteries/",
      "note": "UK shelf life and guarantee; Australian hearing aid batteries' country of origin"
+    },
+    {
+     "label": "Who makes Kirkland Signature diapers",
+     "url": "/kirkland-signature/diapers/",
+     "note": "UK and Mexico listings, which name no maker"
     }
    ],
    "pulls": []
@@ -568,10 +1124,10 @@
    "cannot_prove": "That a party's statements are true; a complaint is one side's account. Only filings someone bought from PACER are in the archive.",
    "terms": {
     "url": "https://www.courtlistener.com/terms/",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
-    "checked": "2026-11-03",
-    "due": "2027-11-03"
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
    },
    "credit": null,
    "used_for": [
@@ -579,6 +1135,38 @@
      "label": "Who makes Kirkland Signature golf balls",
      "url": "/kirkland-signature/golf-balls/",
      "note": "Acushnet v. Costco (2017) and the 2018 settlement filing"
+    },
+    {
+     "label": "Who makes Kirkland Signature diapers",
+     "url": "/kirkland-signature/diapers/#wipes",
+     "note": "The Kirkland baby wipes case, its order and docket"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "dealmoon",
+   "name": "Dealmoon",
+   "short": "Dealmoon",
+   "publisher": "Dealmoon",
+   "url": "https://www.dealmoon.com/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "What this deal post said, and when. Here, the dates and prices of past Costco diaper offers.",
+   "cannot_prove": "That the offer ran at every warehouse, or that a date the post doesn't quote from Costco is exact.",
+   "terms": {
+    "url": "https://www.dealmoon.com/en/terms-of-service",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Costco diapers: prices and sales",
+     "url": "/costco-diapers/",
+     "note": "Past offer dates"
     }
    ],
    "pulls": []
@@ -605,6 +1193,33 @@
    "pulls": []
   },
   {
+   "id": "drugs-fda",
+   "name": "Drugs@FDA application records",
+   "short": "Drugs@FDA",
+   "publisher": "US Food and Drug Administration",
+   "url": "https://open.fda.gov/apis/drug/drugsfda/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "Which company holds an FDA drug application today, under FDA's short form of its name.",
+   "cannot_prove": "Which plant made a drug. A holder can use its own plants or another company's, and FDA's short name isn't a legal name.",
+   "terms": {
+    "url": "https://open.fda.gov/terms/",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": "Data provided by the U.S. Food and Drug Administration (https://open.fda.gov)",
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature medicine",
+     "url": "/kirkland-signature/medicine/",
+     "note": "Who holds the approval number printed in each label's file"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-duracell",
    "name": "Duracell company website",
    "short": "Duracell",
@@ -627,6 +1242,33 @@
      "label": "Who makes Kirkland Signature batteries",
      "url": "/kirkland-signature/batteries/",
      "note": "Where Duracell says its US AA and AAA cells are assembled"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-east-penn",
+   "name": "East Penn Manufacturing website",
+   "short": "East Penn",
+   "publisher": "East Penn Manufacturing",
+   "url": "https://www.eastpennmanufacturing.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What East Penn says about its own recall and products.",
+   "cannot_prove": "Which brands East Penn makes beyond the part in that recall.",
+   "terms": {
+    "url": "https://www.eastpennmanufacturing.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Battery date code decoder",
+     "url": "/battery-date-code/",
+     "note": "East Penn's date code rule"
     }
    ],
    "pulls": []
@@ -690,6 +1332,33 @@
    "pulls": []
   },
   {
+   "id": "fsc-trademark-standard",
+   "name": "FSC-STD-50-001 V3-0, Use of the FSC Trademarks by Certificate Holders, and guidance FSC-GUI-50-001",
+   "short": "FSC label rules",
+   "publisher": "Forest Stewardship Council",
+   "url": "https://fsc.org/",
+   "kind": "Other",
+   "primary": true,
+   "proves": "The rules a certified company must follow to put an FSC label and licence code on a product, in FSC's own words.",
+   "cannot_prove": "That a given company kept to them on a given product. Audits check that; the rule text doesn't.",
+   "terms": {
+    "url": "https://fsc.org/en/legal-notice-privacy-policy",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature toilet paper",
+     "url": "/kirkland-signature/toilet-paper/",
+     "note": "Clause 4.5 on labelling agreements"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "federal-register",
    "name": "Federal Register",
    "short": "Federal Register",
@@ -717,6 +1386,54 @@
    "pulls": []
   },
   {
+   "id": "maker-ferrara",
+   "name": "Ferrara newsroom",
+   "short": "Ferrara",
+   "publisher": "Ferrara Candy Company",
+   "url": "https://www.ferrara.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Ferrara says about its own deals and brands.",
+   "cannot_prove": "Which store-brand products it supplies.",
+   "terms": {
+    "url": "https://www.ferrara.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "first-quality-site",
+   "name": "First Quality company websites",
+   "short": "First Quality",
+   "publisher": "First Quality Enterprises, LLC",
+   "url": "https://www.firstquality.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What First Quality says about itself and its own brands, such as where Cuties diapers are made, and the certificate it publishes.",
+   "cannot_prove": "Anything about Kirkland. These pages never mention Costco or any store brand.",
+   "terms": {
+    "url": "https://www.firstquality.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature diapers",
+     "url": "/kirkland-signature/diapers/",
+     "note": "Where Cuties diapers are made; the 2024 SFI certificate and its annex"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-ford",
    "name": "Ford support: tire replacement",
    "short": "Ford",
@@ -728,7 +1445,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe. The advice covers the models and years named; other models or years may say something different.",
    "terms": {
     "url": "https://www.ford.com/help/terms/",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -739,6 +1456,33 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age advice to owners, in the carmakers table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "fortune",
+   "name": "Fortune",
+   "short": "Fortune",
+   "publisher": "Fortune Media",
+   "url": "https://fortune.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What Fortune published, and when. Here, a Bloomberg article it ran, with on-record quotes from a Costco manager.",
+   "cannot_prove": "That the report is right, or that what it describes still holds.",
+   "terms": {
+    "url": "https://fortune.com/terms-of-use/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature diapers",
+     "url": "/kirkland-signature/diapers/",
+     "note": "Costco's on-record response in April 2025"
     }
    ],
    "pulls": []
@@ -766,6 +1510,33 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "The UK 10-year tyre rule for heavy vehicles"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "gp-site",
+   "name": "Georgia-Pacific company website",
+   "short": "Georgia-Pacific",
+   "publisher": "Georgia-Pacific LLC",
+   "url": "https://www.gp.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which consumer brands Georgia-Pacific says are its own.",
+   "cannot_prove": "Anything about Kirkland. The page doesn't mention Costco or any store brand.",
+   "terms": {
+    "url": "https://www.gp.com/legal/legal-notices",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Georgia-Pacific",
+     "url": "/makers/georgia-pacific/",
+     "note": "Its own brands"
     }
    ],
    "pulls": []
@@ -836,7 +1607,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe: that depends on its own date code, storage, use and condition. Vehicle makers may say something different.",
    "terms": {
     "url": "https://www.coopertire.com/en_US/terms/terms-and-conditions.html",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -847,6 +1618,60 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age recommendation, in the Who says what table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-greenies",
+   "name": "Greenies website",
+   "short": "Greenies",
+   "publisher": "Mars or Affiliates",
+   "url": "https://www.greenies.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Whose brand Greenies is, from the site's own footer.",
+   "cannot_prove": "Who makes any Kirkland product.",
+   "terms": {
+    "url": "https://www.greenies.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Is Kirkland the same as name brands?",
+     "url": "/kirkland-vs-name-brands/",
+     "note": "The owner line in the site's footer"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-grey-goose",
+   "name": "Grey Goose website",
+   "short": "Grey Goose",
+   "publisher": "Grey Goose Importing Company",
+   "url": "https://www.greygoose.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Grey Goose says about its own vodka, in its own words.",
+   "cannot_prove": "Who does make Kirkland vodka. A denial rules out one company and names no other.",
+   "terms": {
+    "url": "https://www.greygoose.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Is Kirkland the same as name brands?",
+     "url": "/kirkland-vs-name-brands/",
+     "note": "Grey Goose's statement about Kirkland vodka"
     }
    ],
    "pulls": []
@@ -863,7 +1688,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe: that depends on its own date code, storage, use and condition. Vehicle makers may say something different.",
    "terms": {
     "url": "https://www.hankooktire.com/us/en/privacy-policy.html",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -900,6 +1725,60 @@
    "pulls": []
   },
   {
+   "id": "hip2save",
+   "name": "Hip2Save",
+   "short": "Hip2Save",
+   "publisher": "Hip2Save",
+   "url": "https://hip2save.com/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "What this deal post said, and when. Here, the dates and prices of past Costco diaper offers.",
+   "cannot_prove": "That the offer ran at every warehouse, or that a date the post doesn't quote from Costco is exact.",
+   "terms": {
+    "url": "https://hip2save.com/terms-of-use/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Costco diapers: prices and sales",
+     "url": "/costco-diapers/",
+     "note": "Past offer dates"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "house-digest",
+   "name": "House Digest",
+   "short": "House Digest",
+   "publisher": "Static Media",
+   "url": "https://www.housedigest.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What House Digest published, and when.",
+   "cannot_prove": "That the older figures are right. Its 2021 price and sheet count come from a Costco deals blog.",
+   "terms": {
+    "url": "https://www.housedigest.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature toilet paper",
+     "url": "/kirkland-signature/toilet-paper/",
+     "note": "The 2021 price and sheet count"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-hyundai",
    "name": "Hyundai owner's manuals",
    "short": "Hyundai",
@@ -910,8 +1789,8 @@
    "proves": "What this vehicle maker itself tells owners about tire age, in its own published words.",
    "cannot_prove": "How old any one tire is, or whether it is safe. The advice covers the models and years named; other models or years may say something different.",
    "terms": {
-    "url": "https://www.hyundaiusa.com/us/en/legal",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "url": "https://www.hyundaiusa.com/us/en/terms-conditions.html",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -922,6 +1801,33 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age advice to owners, in the carmakers table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "it-still-runs",
+   "name": "It Still Runs how-to articles",
+   "short": "It Still Runs",
+   "publisher": "It Still Runs",
+   "url": "https://itstillruns.com/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "What one how-to article says about a brand with no published maker rule.",
+   "cannot_prove": "That a maker uses the rule. The article cites no sources.",
+   "terms": {
+    "url": "https://itstillruns.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Battery date code decoder",
+     "url": "/battery-date-code/",
+     "note": "It Still Runs' Motorcraft date code article"
     }
    ],
    "pulls": []
@@ -938,7 +1844,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe. The advice covers the models and years named; other models or years may say something different.",
    "terms": {
     "url": "https://www.chrysler.com/crossbrand_us/terms-of-use",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -965,7 +1871,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe. The advice covers the models and years named; other models or years may say something different.",
    "terms": {
     "url": "https://www.kia.com/us/en/terms-of-service",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -976,6 +1882,33 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age advice to owners, in the carmakers table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "kruger-site",
+   "name": "Kruger Products company website",
+   "short": "Kruger Products",
+   "publisher": "Kruger Products",
+   "url": "https://www.krugerproducts.ca/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Kruger Products says about itself, its own brands and its locations.",
+   "cannot_prove": "Anything about Kirkland. The pages we read don't mention Costco or private label.",
+   "terms": {
+    "url": "https://www.krugerproducts.ca/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Kruger Products",
+     "url": "/makers/kruger-products/",
+     "note": "Its own brands and its Memphis site"
     }
    ],
    "pulls": []
@@ -1002,6 +1935,33 @@
    "pulls": []
   },
   {
+   "id": "marketbeat-transcripts",
+   "name": "MarketBeat earnings call transcripts",
+   "short": "MarketBeat transcript",
+   "publisher": "MarketBeat",
+   "url": "https://www.marketbeat.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What was said on a company's earnings call, in a third party's transcript, with speaker and time.",
+   "cannot_prove": "That the transcript is word-perfect: it isn't the company's own record. We use it for one sentence until we can read Kimberly-Clark's own copy.",
+   "terms": {
+    "url": "https://www.marketbeat.com/terms/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature diapers",
+     "url": "/kirkland-signature/diapers/",
+     "note": "Kimberly-Clark's chief executive on the club private-label diaper exit"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-mazda",
    "name": "Mazda owner's manuals",
    "short": "Mazda",
@@ -1013,7 +1973,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe. The advice covers the models and years named; other models or years may say something different.",
    "terms": {
     "url": "https://www.mazdausa.com/site/terms-of-use",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -1040,7 +2000,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe: that depends on its own date code, storage, use and condition. Vehicle makers may say something different.",
    "terms": {
     "url": "https://www.michelin.ca/en/legal-privacy-center/terms-of-use",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -1051,6 +2011,87 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age recommendation, in the Who says what table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-motorcraft",
+   "name": "Motorcraft website",
+   "short": "Motorcraft",
+   "publisher": "Ford Motor Company",
+   "url": "https://www.motorcraft.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Motorcraft's battery terms say.",
+   "cannot_prove": "Which plant built one battery.",
+   "terms": {
+    "url": "https://www.motorcraft.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Battery date code decoder",
+     "url": "/battery-date-code/",
+     "note": "Motorcraft's battery terms"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-nestle",
+   "name": "Nestlé website",
+   "short": "Nestlé",
+   "publisher": "Nestlé",
+   "url": "https://www.nestle.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which brands Nestlé says it owns.",
+   "cannot_prove": "Which factory made a product, or anything about store brands.",
+   "terms": {
+    "url": "https://www.nestle.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Is Kirkland the same as name brands?",
+     "url": "/kirkland-vs-name-brands/",
+     "note": "Nestlé's list of its pet care brands"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "new-modern-mom",
+   "name": "New Modern Mom",
+   "short": "New Modern Mom",
+   "publisher": "New Modern Mom",
+   "url": "https://newmodernmom.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What a parenting blog says it found when it tried a product.",
+   "cannot_prove": "Who makes a product, or how it performs in general. It's one person's test.",
+   "terms": {
+    "url": "https://newmodernmom.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature diapers",
+     "url": "/kirkland-signature/diapers/",
+     "note": "A hands-on comparison that includes Kirkland"
     }
    ],
    "pulls": []
@@ -1067,7 +2108,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe. The advice covers the models and years named; other models or years may say something different.",
    "terms": {
     "url": "https://www.nissanusa.com/",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -1094,7 +2135,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe: that depends on its own date code, storage, use and condition. Vehicle makers may say something different.",
    "terms": {
     "url": "https://na.nokiantyres.com/privacy-statements-and-terms-of-services/",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -1105,6 +2146,108 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age recommendation, in the Who says what table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-novolex",
+   "name": "Novolex and Pactiv Evergreen product pages",
+   "short": "Novolex",
+   "publisher": "Novolex",
+   "url": "https://novolex.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Novolex lists and sells under the brands it carries.",
+   "cannot_prove": "Which store-brand products it supplies, or who rolled a given box.",
+   "terms": {
+    "url": "https://novolex.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "maker-odyssey",
+   "name": "ODYSSEY Battery website",
+   "short": "ODYSSEY",
+   "publisher": "ODYSSEY Battery",
+   "url": "https://www.odysseybattery.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How ODYSSEY and NorthStar batteries are dated.",
+   "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+   "terms": {
+    "url": "https://www.odysseybattery.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Battery date code decoder",
+     "url": "/battery-date-code/",
+     "note": "ODYSSEY's date code rule"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-optima",
+   "name": "OPTIMA Batteries website",
+   "short": "OPTIMA",
+   "publisher": "OPTIMA Batteries",
+   "url": "https://www.optimabatteries.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How OPTIMA dates its batteries.",
+   "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+   "terms": {
+    "url": "https://www.optimabatteries.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Battery date code decoder",
+     "url": "/battery-date-code/",
+     "note": "OPTIMA's date code rule"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "georgia-governor",
+   "name": "Office of the Governor of Georgia, press releases",
+   "short": "Georgia Governor's office",
+   "publisher": "State of Georgia",
+   "url": "https://gov.georgia.gov/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What the state announced about a company's investment in Georgia.",
+   "cannot_prove": "What a plant makes for any one customer.",
+   "terms": {
+    "url": "https://georgia.gov/privacy-security",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "First Quality",
+     "url": "/makers/first-quality/",
+     "note": "The 2024 Macon expansion"
     }
    ],
    "pulls": []
@@ -1131,6 +2274,27 @@
    "pulls": []
   },
   {
+   "id": "qvc-community",
+   "name": "QVC community forum",
+   "short": "QVC forum",
+   "publisher": "QVC community forum members",
+   "url": "https://community.qvc.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What a shopper posted, and when.",
+   "cannot_prove": "That a post copied a pack correctly, or that it still holds.",
+   "terms": {
+    "url": "https://community.qvc.com/",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "sec-edgar",
    "name": "SEC EDGAR company filings",
    "short": "SEC filings",
@@ -1144,8 +2308,8 @@
     "url": "https://www.sec.gov/os/accessing-edgar-data",
     "read": "Open license. We read it with a script.",
     "automated": true,
-    "checked": "2026-11-04",
-    "due": "2027-11-04"
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
    },
    "credit": null,
    "used_for": [
@@ -1153,6 +2317,43 @@
      "label": "Costco car batteries: who makes them",
      "url": "/costco-car-batteries/",
      "note": "Clarios's 2023 IPO filing naming Interstate among the brands it supplies"
+    },
+    {
+     "label": "Who makes Kirkland Signature diapers",
+     "url": "/kirkland-signature/diapers/",
+     "note": "Kimberly-Clark's reports of its exit from a US private-label diaper business"
+    },
+    {
+     "label": "Who makes Kirkland Signature toilet paper",
+     "url": "/kirkland-signature/toilet-paper/",
+     "note": "Procter & Gamble's own list of its Family Care brands"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "sfi-rules",
+   "name": "SFI 2022 Standards and Rules, Section 6: Rules for Use of SFI On-Product Labels and Off-Product Marks",
+   "short": "SFI label rules",
+   "publisher": "Sustainable Forestry Initiative Inc.",
+   "url": "https://forests.org/",
+   "kind": "Other",
+   "primary": true,
+   "proves": "The rules a company must follow to print an SFI label on a product, in the certifier's own words.",
+   "cannot_prove": "That a given company kept to them on a given product. Audits check that; the rule text doesn't.",
+   "terms": {
+    "url": "https://forests.org/legal/#terms",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature diapers",
+     "url": "/kirkland-signature/diapers/",
+     "note": "Rules 2.3 and 2.16 on who can use a label number"
     }
    ],
    "pulls": []
@@ -1176,6 +2377,54 @@
    },
    "credit": null,
    "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "maker-sealy",
+   "name": "Sealy website",
+   "short": "Sealy",
+   "publisher": "Sealy, Inc.",
+   "url": "https://www.sealy.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Sealy says about its own warranties and brands.",
+   "cannot_prove": "Which store-brand mattresses it makes.",
+   "terms": {
+    "url": "https://www.sealy.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "shopsavvy",
+   "name": "ShopSavvy",
+   "short": "ShopSavvy",
+   "publisher": "ShopSavvy",
+   "url": "https://shopsavvy.com/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "What this deal post said, and when. Here, the dates and prices of past Costco diaper offers.",
+   "cannot_prove": "That the offer ran at every warehouse, or that a date the post doesn't quote from Costco is exact.",
+   "terms": {
+    "url": "https://shopsavvy.com/terms",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Costco diapers: prices and sales",
+     "url": "/costco-diapers/",
+     "note": "Past offer dates"
+    }
+   ],
    "pulls": []
   },
   {
@@ -1206,6 +2455,54 @@
    "pulls": []
   },
   {
+   "id": "slickdeals",
+   "name": "Slickdeals",
+   "short": "Slickdeals",
+   "publisher": "Slickdeals",
+   "url": "https://slickdeals.net/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "What this deal post said, and when. Here, the dates and prices of past Costco diaper offers.",
+   "cannot_prove": "That the offer ran at every warehouse, or that a date the post doesn't quote from Costco is exact.",
+   "terms": {
+    "url": "https://slickdeals.net/terms",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Costco diapers: prices and sales",
+     "url": "/costco-diapers/",
+     "note": "Past offer dates"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-stretch-tite",
+   "name": "Stretch-Tite website",
+   "short": "Stretch-Tite",
+   "publisher": "Stretch-Tite (Polyvinyl family of food wraps)",
+   "url": "https://www.stretchtite.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What the brand says about itself.",
+   "cannot_prove": "Which store-brand wraps it supplies.",
+   "terms": {
+    "url": "https://www.stretchtite.com/",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "maker-subaru",
    "name": "Subaru owner's manuals",
    "short": "Subaru",
@@ -1217,7 +2514,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe. The advice covers the models and years named; other models or years may say something different.",
    "terms": {
     "url": "https://www.subaru.com/support/terms-and-conditions.html",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -1244,7 +2541,7 @@
    "cannot_prove": "That a label is on shelves now, or which approved label is on the bottle in front of you. Several companies can hold approvals for the same brand at once, and an approval does not expire when a label stops being used.",
    "terms": {
     "url": "https://www.ttb.gov/about-ttb/linking-policy",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -1271,7 +2568,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe. The advice covers the models and years named; other models or years may say something different.",
    "terms": {
     "url": "https://www.tesla.com/legal/terms",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -1319,6 +2616,60 @@
    "pulls": []
   },
   {
+   "id": "krazy-coupon-lady",
+   "name": "The Krazy Coupon Lady",
+   "short": "The Krazy Coupon Lady",
+   "publisher": "The Krazy Coupon Lady",
+   "url": "https://thekrazycouponlady.com/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "What this deal post said, and when. Here, the dates and prices of past Costco diaper offers.",
+   "cannot_prove": "That the offer ran at every warehouse, or that a date the post doesn't quote from Costco is exact.",
+   "terms": {
+    "url": "https://thekrazycouponlady.com/terms-of-use",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Costco diapers: prices and sales",
+     "url": "/costco-diapers/",
+     "note": "Past offer dates"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "tires-plus",
+   "name": "Tires Plus date code sheet",
+   "short": "Tires Plus",
+   "publisher": "Tires Plus (Bridgestone Retail Operations)",
+   "url": "https://www.tiresplus.com/",
+   "kind": "Retailer",
+   "primary": false,
+   "proves": "How one retail chain taught staff to read date codes in 2009.",
+   "cannot_prove": "That any maker uses that rule today.",
+   "terms": {
+    "url": "https://www.tiresplus.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Battery date code decoder",
+     "url": "/battery-date-code/",
+     "note": "Tires Plus's date code rule"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-toyo",
    "name": "Toyo Tires: when should I replace my tires?",
    "short": "Toyo",
@@ -1330,7 +2681,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe: that depends on its own date code, storage, use and condition. Vehicle makers may say something different.",
    "terms": {
     "url": "https://www.toyotires.com/terms-of-use/",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -1357,7 +2708,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe. The advice covers the models and years named; other models or years may say something different.",
    "terms": {
     "url": "https://www.toyota.com/support/legal-terms",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"
@@ -1368,6 +2719,60 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age advice to owners, in the carmakers table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-trojan",
+   "name": "Trojan Battery website",
+   "short": "Trojan",
+   "publisher": "Trojan Battery",
+   "url": "https://www.trojanbattery.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How Trojan dates its batteries.",
+   "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+   "terms": {
+    "url": "https://www.trojanbattery.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Battery date code decoder",
+     "url": "/battery-date-code/",
+     "note": "Trojan's date code rule"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-us-battery",
+   "name": "U.S. Battery website",
+   "short": "U.S. Battery",
+   "publisher": "U.S. Battery Mfg. Co.",
+   "url": "https://www.usbattery.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How U.S. Battery dates its batteries.",
+   "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+   "terms": {
+    "url": "https://www.usbattery.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Battery date code decoder",
+     "url": "/battery-date-code/",
+     "note": "U.S. Battery's date code rule"
     }
    ],
    "pulls": []
@@ -1427,6 +2832,27 @@
    "pulls": []
   },
   {
+   "id": "whoreallymakes",
+   "name": "Who Really Makes (whoreallymakes.com)",
+   "short": "Who Really Makes",
+   "publisher": "whoreallymakes.com",
+   "url": "https://whoreallymakes.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "That a claim about a Kirkland maker is in circulation, and how that list grades it.",
+   "cannot_prove": "Who made anything. We cite it only as where a rumor was published.",
+   "terms": {
+    "url": "https://whoreallymakes.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-06",
+    "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "maker-yokohama",
    "name": "Yokohama: tire life",
    "short": "Yokohama",
@@ -1438,7 +2864,7 @@
    "cannot_prove": "How old any one tire is, or whether it is safe: that depends on its own date code, storage, use and condition. Vehicle makers may say something different.",
    "terms": {
     "url": "https://www.yokohamatire.com/terms-of-use",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it by hand each year. We never scrape it.",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-03",
     "due": "2027-11-03"

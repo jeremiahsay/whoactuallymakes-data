@@ -4,7 +4,7 @@
 
 Who makes store-brand products, from public records. Every list behind [Who Actually Makes](https://whoactuallymakes.com/): which company each Kirkland Signature product traces to, the companies behind store brands and the labels they're on record for, every NHTSA tire plant code, what tire makers and carmakers say about tire age, and the evidence, sources, corrections and update schedule behind it all.
 
-**9 datasets · 1,666 records · version 2026-11-04** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
+**13 datasets · 9,464 records · version 2026-11-07** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
 
 Each answer on the site carries a stamp (confirmed, documented, reported or unverified) and links to the record it rests on. The evidence file keeps the exact quote, the date it was read and a SHA-256 fingerprint of the document, so anyone can check a row against its source. How the stamps work: https://whoactuallymakes.com/how-we-know/
 
@@ -12,15 +12,19 @@ Each answer on the site carries a stamp (confirmed, documented, reported or unve
 
 | Dataset | Records | Updated | Files | On the site |
 |---|---:|---|---|---|
-| [Who makes what: store-brand answers (Kirkland Signature)](#claims) | 47 | 2026-11-04 | [JSON](data/claims.json) (44 KB) · [CSV](data/claims.csv) (28 KB) | [/kirkland-signature/](https://whoactuallymakes.com/kirkland-signature/) |
-| [Companies behind store brands (maker pages)](#companies) | 7 | 2026-11-03 | [JSON](data/companies.json) (4 KB) · [CSV](data/companies.csv) (2 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
-| [Which store labels each company is on record for](#company-labels) | 128 | 2026-11-03 | [JSON](data/company-labels.json) (65 KB) · [CSV](data/company-labels.csv) (40 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
+| [Who makes what: store-brand answers (Kirkland Signature)](#claims) | 91 | 2026-11-05 | [JSON](data/claims.json) (86 KB) · [CSV](data/claims.csv) (56 KB) | [/kirkland-signature/](https://whoactuallymakes.com/kirkland-signature/) |
+| [Companies behind store brands (maker pages)](#companies) | 10 | 2026-11-05 | [JSON](data/companies.json) (6 KB) · [CSV](data/companies.csv) (3 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
+| [Which store labels each company is on record for](#company-labels) | 164 | 2026-11-05 | [JSON](data/company-labels.json) (85 KB) · [CSV](data/company-labels.csv) (53 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
 | [Tire plant codes (NHTSA)](#tire-plants) | 1,246 | 2026-11-02 | [JSON](data/tire-plants.json) (149 KB) · [CSV](data/tire-plants.csv) (89 KB) | [/tire-dot-code-lookup/](https://whoactuallymakes.com/tire-dot-code-lookup/) |
 | [Tire age guidance from tire makers, carmakers and agencies](#tire-age) | 22 | 2026-11-04 | [JSON](data/tire-age.json) (34 KB) · [CSV](data/tire-age.csv) (19 KB) | [/tire-date-code/](https://whoactuallymakes.com/tire-date-code/) |
-| [Evidence records: every quote behind our answers](#evidence) | 153 | 2026-11-04 | [JSON](data/evidence.json) (137 KB) · [CSV](data/evidence.csv) (107 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
-| [Sources: the public records we use, and their limits](#sources) | 51 | 2026-11-04 | [JSON](data/sources.json) (57 KB) · [CSV](data/sources.csv) (28 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
-| [Corrections log](#corrections) | 4 | 2026-11-03 | [JSON](data/corrections.json) (4 KB) · [CSV](data/corrections.csv) (3 KB) | [/corrections/](https://whoactuallymakes.com/corrections/) |
-| [Update schedule: when each list is checked](#schedule) | 8 | 2026-11-04 | [JSON](data/schedule.json) (30 KB) · [CSV](data/schedule.csv) (2 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
+| [Evidence records: every quote behind our answers](#evidence) | 417 | 2026-11-07 | [JSON](data/evidence.json) (314 KB) · [CSV](data/evidence.csv) (233 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
+| [Sources: the public records we use, and their limits](#sources) | 98 | 2026-11-06 | [JSON](data/sources.json) (105 KB) · [CSV](data/sources.csv) (47 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
+| [Corrections log](#corrections) | 15 | 2026-11-07 | [JSON](data/corrections.json) (11 KB) · [CSV](data/corrections.csv) (8 KB) | [/corrections/](https://whoactuallymakes.com/corrections/) |
+| [Update schedule: when each list is checked](#schedule) | 30 | 2026-11-07 | [JSON](data/schedule.json) (73 KB) · [CSV](data/schedule.csv) (7 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
+| [Costco diaper prices: every size at every read](#costco-diaper-prices) | 30 | 2026-11-06 | [JSON](data/costco-diaper-prices.json) (9 KB) · [CSV](data/costco-diaper-prices.csv) (4 KB) | [/costco-diapers/](https://whoactuallymakes.com/costco-diapers/) |
+| [Kirkland vs name brands: every pair and its verdict](#kirkland-vs-pairs) | 63 | 2026-11-06 | [JSON](data/kirkland-vs-pairs.json) (66 KB) · [CSV](data/kirkland-vs-pairs.csv) (28 KB) | [/kirkland-vs-name-brands/](https://whoactuallymakes.com/kirkland-vs-name-brands/) |
+| [Car battery date code rules, by brand](#battery-date-codes) | 21 | 2026-11-07 | [JSON](data/battery-date-codes.json) (86 KB) · [CSV](data/battery-date-codes.csv) (4 KB) | [/battery-date-code/](https://whoactuallymakes.com/battery-date-code/) |
+| [USDA meat, poultry and egg plants (FSIS directory)](#usda-establishments) | 7,257 | 2026-11-02 | [JSON](data/usda-establishments.json) (1621 KB) · [CSV](data/usda-establishments.csv) (1443 KB) | [/usda-establishment-number-lookup/](https://whoactuallymakes.com/usda-establishment-number-lookup/) |
 
 <a id="claims"></a>
 
@@ -156,7 +160,7 @@ Every plant code NHTSA has assigned to a tire factory: the code from the start o
 What each tire maker, carmaker and safety agency says about replacing tires by age, in a row per maker: the age, what it’s counted from, whether it covers the spare, and the document it comes from.
 
 - **Limits:** Each row speaks only for the maker’s own tires, or for the vehicle model and year named. It is advice, not law, except the UK row, which describes a legal ban on tires over 10 years old for some heavy vehicles.
-- **Kept fresh:** Re-read by hand every year, and whenever a maker changes its advice
+- **Kept fresh:** Re-read in a browser every year, and whenever a maker changes its advice
 - **Rights:** Quoted words in the source columns belong to their publishers; we quote them so you can check each row. CC BY covers our rows and wording.
 - **Based on:** 24 public sources, listed in `catalog.json` (`based_on`)
 - **Files:** `data/tire-age.json`, `data/tire-age.csv` · live: https://whoactuallymakes.com/data/tire-age.json
@@ -277,7 +281,7 @@ Every change to a published answer: what it said, what it says now, why, who spo
 
 ### Update schedule: when each list is checked
 
-Each check we run on a schedule: what it reads, how often, by script or by hand, when it last ran, when it’s next due and what it found.
+Each check we run on a schedule: what it reads, how often, by script or in a browser, when it last ran, when it’s next due and what it found.
 
 - **Limits:** A job running on time shows we read the source, not that the source was right.
 - **Kept fresh:** Every time a job runs
@@ -297,6 +301,145 @@ Each check we run on a schedule: what it reads, how often, by script or by hand,
 | `last` | date | When it last ran (YYYY-MM-DD). |
 | `due` | date | When it’s next due (YYYY-MM-DD). |
 | `result` | text | What the last run found. |
+
+</details>
+
+<a id="costco-diaper-prices"></a>
+
+### Costco diaper prices: every size at every read
+
+The box price, count, offer and price per diaper for Kirkland Signature, Huggies Plus, Pampers Swaddlers Ultra, Pull-Ups and Easy Ups on Costco.com, one row per size per read, so prices can be followed over time.
+
+- **Limits:** Online prices at one ZIP code on the day we read them. Warehouse prices can differ, and a gap between reads can hide a short offer.
+- **Kept fresh:** Every time we re-read the listings
+- **Rights:** CC BY covers our table. Product names belong to their owners.
+- **Based on:** 9 public sources, listed in `catalog.json` (`based_on`)
+- **Files:** `data/costco-diaper-prices.json`, `data/costco-diaper-prices.csv` · live: https://whoactuallymakes.com/data/costco-diaper-prices.json
+
+<details><summary>The 11 fields</summary>
+
+| Field | Type | What it holds |
+|---|---|---|
+| `read_on` | date | The day we read the listing (YYYY-MM-DD). |
+| `product` | text | The product as Costco lists it. |
+| `size` | text | The size on the box. |
+| `lb_from` | number | Lowest weight printed for this size, in pounds. Empty for Newborn. |
+| `lb_to` | number | Highest weight printed. Empty if the size is open-ended, such as 27+. |
+| `count` | number | Diapers or pants in the box. |
+| `item` | text | Costco's item number. |
+| `regular` | number | Regular box price in US dollars. |
+| `offer` | number | Offer price that day. Empty if no offer showed. |
+| `cents_each` | number | What was charged that day, per diaper, in US cents. |
+| `url` | url | The Costco listing. |
+
+</details>
+
+<a id="kirkland-vs-pairs"></a>
+
+### Kirkland vs name brands: every pair and its verdict
+
+One row per pair of a Kirkland Signature product and a name brand: the verdict worked out from the records, the companies involved, and for medicines the FDA application, holder, strength and form on each label. Some pairs also carry Costco prices.
+
+- **Limits:** These are the pairs people search for plus the brands Kirkland medicine labels name, not a sample of everything Costco sells. A same-company verdict doesn't prove the same factory or recipe, and a shared FDA application covers the label we read, not every pack.
+- **Kept fresh:** Weekly, and when a label or claim changes
+- **Rights:** CC BY covers our table. Product names belong to their owners.
+- **Files:** `data/kirkland-vs-pairs.json`, `data/kirkland-vs-pairs.csv` · live: https://whoactuallymakes.com/data/kirkland-vs-pairs.json
+
+<details><summary>The 29 fields</summary>
+
+| Field | Type | What it holds |
+|---|---|---|
+| `pair` | text | Our ID for the pair. |
+| `group` | text | Everyday or Medicine. |
+| `category` | text | Aisle, such as Household or Medicine. |
+| `kirkland_product` | text | The Kirkland Signature product. |
+| `name_brand` | text | The name brand it is set against. |
+| `name_brand_owner` | text | The company behind the name brand, or the company on its label. Empty if we have no record. |
+| `verdict` | text | Our verdict, worked out from the records: Same plant, Same FDA application, Same company, Was, not now, Old record only, Different company or No record yet. |
+| `stamp` | text | How strong the record is: documented or reported. Empty if the verdict rests on no maker claim. |
+| `companies` | text | Companies the Kirkland product is tied to, split by \| when more than one. |
+| `note` | text | The limit on this verdict, in a sentence. Often empty. |
+| `same_active_ingredient` | boolean | true if the two medicines list the same active ingredient. Empty for everyday products and where they don't match. |
+| `kirkland_strength` | text | Active ingredient and strength on the Kirkland label. |
+| `name_brand_strength` | text | The same for the name-brand label. |
+| `form` | text | Dosage form on the Kirkland label, such as powder or tablet. |
+| `fda_application` | text | The FDA application number both labels list. Filled only when the verdict is Same FDA application. |
+| `fda_holder` | text | The holder FDA gives for that application. Filled only with fda_application. |
+| `other_fda_applications` | text | Other application numbers on the name brand's labels, split by \|. |
+| `kirkland_label` | url | The Kirkland label on DailyMed. |
+| `name_brand_label` | url | The name-brand label on DailyMed. |
+| `record` | text | The kind of record behind an everyday verdict. |
+| `record_covers` | text | What that record covers. |
+| `record_date` | date | The date of that record, when it has one. |
+| `price_unit` | text | What the prices are per, such as AA battery. Empty for pairs we didn't price. |
+| `kirkland_cents` | number | Kirkland price per unit in US cents. |
+| `name_brand_cents` | number | Name-brand price per unit in US cents. |
+| `price_read_on` | date | The day those prices were read. |
+| `evidence` | text | Evidence record IDs, split by \|. They match the Evidence file. |
+| `answer_page` | url | Our page for the Kirkland product. |
+| `read_on` | date | The day the pairs were last built from the records. |
+
+</details>
+
+<a id="battery-date-codes"></a>
+
+### Car battery date code rules, by brand
+
+How each brand dates its car batteries: where to look, the format, a worked example, and whether the rule comes from the maker or only from a third party.
+
+- **Limits:** Rules are dated and can change. Some come only from a third party, and some brands have no rule. A date code shows when a battery was dated or shipped, not when you bought it, and most codes leave out the decade.
+- **Kept fresh:** Every six months, and when a maker changes a rule
+- **Rights:** CC BY covers our table. Brand names belong to their owners.
+- **Files:** `data/battery-date-codes.json`, `data/battery-date-codes.csv` · live: https://whoactuallymakes.com/data/battery-date-codes.json
+
+<details><summary>The 11 fields</summary>
+
+| Field | Type | What it holds |
+|---|---|---|
+| `brand` | text | The battery brand. |
+| `standing` | text | Where the rule comes from: From the maker, Part maker, part third-party, Third-party only, or No rule we trust. |
+| `where_to_look` | text | Where the code sits on the battery. |
+| `format` | text | How the code is built. |
+| `example` | text | A worked example. Empty if we have no rule. |
+| `example_means` | text | What the example reads as. |
+| `date_marks` | text | What the date marks: Shipped, Made, or Not stated when the record does not say. |
+| `source` | text | Who gives the rule. |
+| `source_url` | url | The record. |
+| `source_date` | date | The record's own date, when it has one. |
+| `read_on` | date | The day we read the rule. |
+
+</details>
+
+<a id="usda-establishments"></a>
+
+### USDA meat, poultry and egg plants (FSIS directory)
+
+Every entry in USDA FSIS's Meat, Poultry and Egg Product Inspection Directory: the establishment number or numbers, the plant's name, other names listed, address, county, the work USDA lists, size band and grant date.
+
+- **Limits:** A number names the plant that last processed a product under inspection, not the brand, the farm or every ingredient. Other names are as USDA lists them, and don't prove a plant made any one pack. Foreign plants and state-inspected plants aren't included.
+- **Kept fresh:** Monthly, read in a browser from USDA's directory, then loaded here
+- **Rights:** The directory is US government work (USDA FSIS), in the public domain in the US. CC BY covers our compiled file.
+- **Based on:** 1 public source, listed in `catalog.json` (`based_on`)
+- **Files:** `data/usda-establishments.json`, `data/usda-establishments.csv` · live: https://whoactuallymakes.com/data/usda-establishments.json
+
+<details><summary>The 14 fields</summary>
+
+| Field | Type | What it holds |
+|---|---|---|
+| `code` | text | Every number the plant holds, joined with +, e.g. M18532+P18532. |
+| `name` | text | The plant's name as USDA lists it. |
+| `trade_names` | text | Other names USDA lists for the plant, separated by semicolons; blanks such as N/A removed. |
+| `address` | text | Street address. |
+| `city` | text | City. |
+| `state` | text | Two-letter state or territory. |
+| `postal_code` | text | ZIP code. |
+| `county` | text | County. |
+| `activities` | text | The work USDA lists at the plant. |
+| `size` | text | USDA's size band: Very Small, Small, Large, N / A, or blank. |
+| `grant_date` | text | Grant date as USDA lists it. Many show 2021, likely a system date, so don't read them as start dates. |
+| `fsis_id` | text | USDA's internal ID for the plant. |
+| `lat` | number | Latitude from USDA's file. |
+| `lon` | number | Longitude from USDA's file. |
 
 </details>
 

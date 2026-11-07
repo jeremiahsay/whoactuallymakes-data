@@ -1,0 +1,2372 @@
+{
+ "schema": "wam-data/v1",
+ "generated": "2026-11-07",
+ "page": "/battery-date-code/",
+ "read": "2026-11-07",
+ "next_read": "2027-05-07",
+ "keys": {
+  "al": "ABCDEFGHIJKL",
+  "noi": "ABCDEFGHJKLM",
+  "noei": "ABCDFGHJKLMN"
+ },
+ "key_labels": {
+  "al": "A to L",
+  "noi": "No I",
+  "noei": "No E or I"
+ },
+ "brands": [
+  {
+   "id": "interstate",
+   "name": "Interstate",
+   "tier": "maker",
+   "where": "Stamped into the cover as part of a longer code, or on a top or side label",
+   "format": "Letter, then digit",
+   "example": "C3",
+   "means": "March 2023",
+   "ev": "ev-interstate-faq-c3",
+   "rules": [
+    {
+     "t": "ld",
+     "key": "al",
+     "tier": "maker"
+    }
+   ],
+   "marks": "ship",
+   "says": "From the maker",
+   "by": "Interstate",
+   "url": "https://www.interstatebatteries.com/en-lx/support/faqs",
+   "dated": "",
+   "read": "2026-11-06"
+  },
+  {
+   "id": "costco",
+   "name": "Costco (Interstate)",
+   "tier": "maker",
+   "where": "Stamped in the cover, or on a label",
+   "format": "Letter, then digit",
+   "example": "B1",
+   "means": "February 2021",
+   "ev": "ev-costco-automotive-batteries",
+   "rules": [
+    {
+     "t": "ld",
+     "key": "al",
+     "tier": "maker"
+    }
+   ],
+   "marks": "ship",
+   "says": "From the maker",
+   "by": "Costco.com listings",
+   "url": "https://www.costco.com/automotive-batteries.html",
+   "dated": "",
+   "read": "2026-11-04"
+  },
+  {
+   "id": "acdelco",
+   "name": "ACDelco",
+   "tier": "maker",
+   "where": "On the top label",
+   "format": "P, S or G, two-digit month, year digit, plant",
+   "example": "P094N",
+   "means": "September 2014",
+   "ev": "ev-acdelco-warranty-2015-date-code",
+   "rules": [
+    {
+     "t": "acd",
+     "series": "GSP",
+     "tier": "maker"
+    },
+    {
+     "t": "acd",
+     "series": "HMQF",
+     "tier": "third"
+    }
+   ],
+   "marks": "made",
+   "says": "From the maker",
+   "by": "ACDelco warranty sheet",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/ACDelco-battery-warranty-information.pdf",
+   "dated": "2015-02-11",
+   "read": "2026-11-07"
+  },
+  {
+   "id": "optima",
+   "name": "OPTIMA",
+   "tier": "maker",
+   "where": "First four digits of the serial on the white side label",
+   "format": "Year digit, then day of the year",
+   "example": "6086",
+   "means": "March 27, 2026",
+   "ev": "ev-optima-date-code",
+   "rules": [
+    {
+     "t": "jul",
+     "tier": "maker"
+    }
+   ],
+   "marks": "made",
+   "says": "From the maker",
+   "by": "OPTIMA",
+   "url": "https://www.optimabatteries.com/experience/blog/where-is-the-date-code-on-optima-batteries",
+   "dated": "2026-03-27",
+   "read": "2026-11-06"
+  },
+  {
+   "id": "odyssey",
+   "name": "ODYSSEY",
+   "tier": "maker",
+   "where": "Label on the top or back",
+   "format": "Top: 12 digits ending month and year. Back: letter, then digit",
+   "example": "K0",
+   "means": "November 2020",
+   "ev": "ev-odyssey-date-codes-2021",
+   "rules": [
+    {
+     "t": "od12",
+     "tier": "maker"
+    },
+    {
+     "t": "ld",
+     "key": "al",
+     "tier": "maker"
+    }
+   ],
+   "marks": "made",
+   "says": "From the maker",
+   "by": "ODYSSEY",
+   "url": "https://www.odysseybattery.com/wp-content/uploads/Battery-Date-Codes-and-Serial-Numbers-041621.pdf",
+   "dated": "2021-04-16",
+   "read": "2026-11-06"
+  },
+  {
+   "id": "northstar",
+   "name": "NorthStar",
+   "tier": "maker",
+   "where": "Label on the back",
+   "format": "Letter, then digit. E and I aren’t used",
+   "example": "M0",
+   "means": "November 2020",
+   "ev": "ev-odyssey-date-codes-2021",
+   "rules": [
+    {
+     "t": "ld",
+     "key": "noei",
+     "tier": "maker"
+    }
+   ],
+   "marks": "made",
+   "says": "From the maker",
+   "by": "ODYSSEY",
+   "url": "https://www.odysseybattery.com/wp-content/uploads/Battery-Date-Codes-and-Serial-Numbers-041621.pdf",
+   "dated": "2021-04-16",
+   "read": "2026-11-06"
+  },
+  {
+   "id": "trojan",
+   "name": "Trojan",
+   "tier": "maker",
+   "where": "On or near the negative terminal",
+   "format": "Letter, then digit",
+   "example": "B1",
+   "means": "February 2021",
+   "ev": "ev-trojan-date-code-faq",
+   "rules": [
+    {
+     "t": "ld",
+     "key": "al",
+     "tier": "maker"
+    }
+   ],
+   "marks": "made",
+   "says": "From the maker",
+   "by": "Trojan",
+   "url": "https://www.trojanbattery.com/resources/technical-support-and-faqs/faqs",
+   "dated": "",
+   "read": "2026-11-06"
+  },
+  {
+   "id": "us-battery",
+   "name": "U.S. Battery",
+   "tier": "maker",
+   "where": "Flooded: positive terminal. AGM: etched into the cover",
+   "format": "Flooded: letter, digit, plant letter. AGM: DDMMYY or YYMMDD",
+   "example": "150914",
+   "means": "September 15, 2014",
+   "ev": "ev-us-battery-date-codes-2023",
+   "rules": [
+    {
+     "t": "ld",
+     "key": "al",
+     "tier": "maker"
+    },
+    {
+     "t": "dmy",
+     "tier": "maker"
+    },
+    {
+     "t": "ymd",
+     "tier": "maker"
+    }
+   ],
+   "marks": "made",
+   "says": "From the maker",
+   "by": "U.S. Battery",
+   "url": "https://www.usbattery.com/wp-content/uploads/2023/03/Reading_USB_DateCodes_323.pdf",
+   "dated": "2023-03-23",
+   "read": "2026-11-06"
+  },
+  {
+   "id": "deka",
+   "name": "Deka (East Penn)",
+   "tier": "mixed",
+   "where": "Ship date sticker on the side, or a code on the battery",
+   "format": "Letter with no I, then digit. Sticker: month/year. Two-digit years are third-party only",
+   "example": "L1",
+   "means": "November 2011",
+   "ev": "ev-deka-care-date-code",
+   "rules": [
+    {
+     "t": "ld",
+     "key": "noi",
+     "tier": "maker"
+    },
+    {
+     "t": "my",
+     "tier": "maker"
+    },
+    {
+     "t": "ld2",
+     "key": "noi",
+     "tier": "third"
+    }
+   ],
+   "marks": "ship",
+   "says": "Part maker, part third-party",
+   "by": "East Penn",
+   "url": "https://www.dekabatteries.com/assets/base/0004.pdf",
+   "dated": "2013-03-15",
+   "read": "2026-11-06"
+  },
+  {
+   "id": "motorcraft",
+   "name": "Motorcraft",
+   "tier": "maker",
+   "where": "Round sticker on the side of the battery",
+   "format": "Month letter and year digit (C-2), or month number and year digit (3-2)",
+   "example": "C-2",
+   "means": "March of a year ending in 2",
+   "ev": "ev-ford-9400-shipping-date",
+   "rules": [
+    {
+     "t": "ld",
+     "key": "al",
+     "tier": "maker"
+    },
+    {
+     "t": "nd",
+     "tier": "maker"
+    }
+   ],
+   "marks": "ship",
+   "says": "From the maker",
+   "by": "Ford distributor manual",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf",
+   "dated": "2005-05-01",
+   "read": "2026-11-07"
+  },
+  {
+   "id": "duralast",
+   "name": "Duralast",
+   "tier": "third",
+   "where": "A sticker, says one seller’s guide",
+   "format": "MM/YY or MMYY, or letter and digit",
+   "example": "0419",
+   "means": "April 2019",
+   "ev": "ev-biaf-date-codes",
+   "rules": [
+    {
+     "t": "my",
+     "tier": "third"
+    },
+    {
+     "t": "mmyy",
+     "tier": "third"
+    },
+    {
+     "t": "ld",
+     "key": "al",
+     "tier": "third"
+    }
+   ],
+   "says": "Third-party only",
+   "by": "Batteries In A Flash",
+   "url": "https://www.batteriesinaflash.com/how-to-read-battery-manufacturer-date-codes",
+   "dated": "",
+   "read": "2026-11-06"
+  },
+  {
+   "id": "everstart",
+   "name": "EverStart",
+   "tier": "third",
+   "where": "Stamp, or a store sticker, says one seller’s guide",
+   "format": "Letter and digit, or MM/YY",
+   "example": "C3",
+   "means": "March 2023",
+   "ev": "ev-biaf-date-codes",
+   "rules": [
+    {
+     "t": "ld",
+     "key": "al",
+     "tier": "third"
+    },
+    {
+     "t": "my",
+     "tier": "third"
+    }
+   ],
+   "says": "Third-party only",
+   "by": "Batteries In A Flash",
+   "url": "https://www.batteriesinaflash.com/how-to-read-battery-manufacturer-date-codes",
+   "dated": "",
+   "read": "2026-11-06"
+  },
+  {
+   "id": "duracell",
+   "name": "Duracell",
+   "tier": "third",
+   "where": "Not stated",
+   "format": "Four digits, month and year, says one seller’s guide",
+   "example": "0326",
+   "means": "March 2026",
+   "ev": "ev-biaf-date-codes",
+   "rules": [
+    {
+     "t": "mmyy",
+     "tier": "third"
+    }
+   ],
+   "says": "Third-party only",
+   "by": "Batteries In A Flash",
+   "url": "https://www.batteriesinaflash.com/how-to-read-battery-manufacturer-date-codes",
+   "dated": "",
+   "read": "2026-11-06"
+  },
+  {
+   "id": "other",
+   "name": "Any other brand",
+   "tier": "third",
+   "where": "Usually the top of the case",
+   "format": "Letter and digit in either order, says a 2009 retail sheet",
+   "example": "7B",
+   "means": "February 2017",
+   "ev": "ev-tiresplus-date-codes-2009",
+   "rules": [
+    {
+     "t": "ld",
+     "key": "al",
+     "tier": "third"
+    },
+    {
+     "t": "dl",
+     "tier": "third"
+    }
+   ],
+   "as": "2009 retail sheet",
+   "says": "Third-party only",
+   "by": "Tires Plus",
+   "url": "https://www.tiresplus.com/content/dam/bsro-sites/tiresplus/pdfs/reading-battery-date-codes.pdf",
+   "dated": "2009-02-25",
+   "read": "2026-11-06"
+  },
+  {
+   "id": "autocraft",
+   "name": "Autocraft",
+   "tier": "none",
+   "where": "Not found",
+   "format": "We found no rule from any source we’d stand behind",
+   "example": "",
+   "means": "",
+   "ev": "",
+   "rules": [],
+   "guess": true,
+   "says": "No rule we trust",
+   "by": "",
+   "url": "",
+   "dated": "",
+   "read": ""
+  },
+  {
+   "id": "motomaster",
+   "name": "MotoMaster",
+   "tier": "none",
+   "where": "Not found",
+   "format": "We found no rule from any source we’d stand behind",
+   "example": "",
+   "means": "",
+   "ev": "",
+   "rules": [],
+   "guess": true,
+   "says": "No rule we trust",
+   "by": "",
+   "url": "",
+   "dated": "",
+   "read": ""
+  },
+  {
+   "id": "super-start",
+   "name": "Super Start",
+   "tier": "none",
+   "where": "Not found",
+   "format": "We found no rule from any source we’d stand behind",
+   "example": "",
+   "means": "",
+   "ev": "",
+   "rules": [],
+   "guess": true,
+   "says": "No rule we trust",
+   "by": "",
+   "url": "",
+   "dated": "",
+   "read": ""
+  },
+  {
+   "id": "napa",
+   "name": "NAPA",
+   "tier": "none",
+   "where": "Not found",
+   "format": "We found no rule from any source we’d stand behind",
+   "example": "",
+   "means": "",
+   "ev": "",
+   "rules": [],
+   "guess": true,
+   "says": "No rule we trust",
+   "by": "",
+   "url": "",
+   "dated": "",
+   "read": ""
+  },
+  {
+   "id": "varta",
+   "name": "Varta",
+   "tier": "none",
+   "where": "Not found",
+   "format": "Guides disagree, so we don’t decode it",
+   "example": "",
+   "means": "",
+   "ev": "",
+   "rules": [],
+   "says": "No rule we trust",
+   "by": "",
+   "url": "",
+   "dated": "",
+   "read": ""
+  },
+  {
+   "id": "diehard",
+   "name": "DieHard",
+   "tier": "none",
+   "where": "Not found",
+   "format": "We found no rule from any source we’d stand behind",
+   "example": "",
+   "means": "",
+   "ev": "",
+   "rules": [],
+   "guess": true,
+   "says": "No rule we trust",
+   "by": "",
+   "url": "",
+   "dated": "",
+   "read": ""
+  },
+  {
+   "id": "exide",
+   "name": "Exide",
+   "tier": "none",
+   "where": "Not found",
+   "format": "Guides disagree, so we don’t decode it",
+   "example": "",
+   "means": "",
+   "ev": "ev-biaf-date-codes",
+   "rules": [],
+   "says": "No rule we trust",
+   "by": "Batteries In A Flash",
+   "url": "https://www.batteriesinaflash.com/how-to-read-battery-manufacturer-date-codes",
+   "dated": "",
+   "read": "2026-11-06"
+  }
+ ],
+ "recall": {
+  "campaign": "23E-044",
+  "units": 2139,
+  "parts": [
+   "F3F-48BB",
+   "648MF"
+  ],
+  "codes": [
+   "30592OPE",
+   "30612OPE"
+  ],
+  "stickers": [
+   "3/23",
+   "4/23",
+   "5/23",
+   "6/23"
+  ],
+  "built": [
+   "2023-02-28",
+   "2023-03-02"
+  ],
+  "phone": "877-597-9588",
+  "ev": "ev-east-penn-recall-faq",
+  "ev2": "ev-nhtsa-23e044",
+  "brands": [
+   "Action",
+   "Alliance",
+   "Armada",
+   "Astro-Lite",
+   "Bosch",
+   "Cartek",
+   "Coldfire USA",
+   "Co-op",
+   "DEKA",
+   "Delphi",
+   "Detroit",
+   "Duracell",
+   "Duracell Ultra",
+   "Durastart",
+   "Federated",
+   "Fleetrite",
+   "HD Gold",
+   "Hi-Tech",
+   "Komatsu",
+   "Mack",
+   "Magna Power",
+   "Mighty",
+   "NAPA Legend",
+   "North State",
+   "Parts Plus",
+   "Point S",
+   "Roadhawk",
+   "Safemark",
+   "Sparton",
+   "Traction",
+   "TRP",
+   "Volvo",
+   "World Source One"
+  ],
+  "brand_ids": [
+   "deka",
+   "duracell",
+   "napa",
+   "other"
+  ]
+ },
+ "who": [
+  {
+   "brand": "DieHard",
+   "maker": "Clarios",
+   "ev": "ev-sec-clarios-s1a-2023",
+   "url": "https://www.sec.gov/Archives/edgar/data/1857971/000119312523296848/d590192ds1a.htm",
+   "by": "SEC filings"
+  },
+  {
+   "brand": "Duralast",
+   "maker": "Clarios",
+   "ev": "ev-sec-clarios-s1a-2023",
+   "url": "https://www.sec.gov/Archives/edgar/data/1857971/000119312523296848/d590192ds1a.htm",
+   "by": "SEC filings"
+  },
+  {
+   "brand": "EverStart",
+   "maker": "Clarios",
+   "ev": "ev-sec-clarios-s1a-2023",
+   "url": "https://www.sec.gov/Archives/edgar/data/1857971/000119312523296848/d590192ds1a.htm",
+   "by": "SEC filings"
+  },
+  {
+   "brand": "Interstate",
+   "maker": "Clarios",
+   "ev": "ev-sec-clarios-s1a-2023",
+   "url": "https://www.sec.gov/Archives/edgar/data/1857971/000119312523296848/d590192ds1a.htm",
+   "by": "SEC filings"
+  },
+  {
+   "brand": "Bosch",
+   "maker": "Clarios",
+   "ev": "ev-sec-clarios-s1a-2023",
+   "url": "https://www.sec.gov/Archives/edgar/data/1857971/000119312523296848/d590192ds1a.htm",
+   "by": "SEC filings"
+  },
+  {
+   "brand": "Bosch",
+   "maker": "East Penn",
+   "ev": "ev-east-penn-recall-faq",
+   "url": "https://www.eastpennmanufacturing.com/east-penn-mfg-group-48-battery-recall-qr-code-faq-sheet-nhtsa-recall-no-23e-044/",
+   "by": "East Penn"
+  },
+  {
+   "brand": "Deka",
+   "maker": "East Penn",
+   "ev": "ev-east-penn-recall-faq",
+   "url": "https://www.eastpennmanufacturing.com/east-penn-mfg-group-48-battery-recall-qr-code-faq-sheet-nhtsa-recall-no-23e-044/",
+   "by": "East Penn"
+  },
+  {
+   "brand": "Duracell",
+   "maker": "East Penn",
+   "ev": "ev-east-penn-recall-faq",
+   "url": "https://www.eastpennmanufacturing.com/east-penn-mfg-group-48-battery-recall-qr-code-faq-sheet-nhtsa-recall-no-23e-044/",
+   "by": "East Penn"
+  },
+  {
+   "brand": "NAPA Legend",
+   "maker": "East Penn",
+   "ev": "ev-east-penn-recall-faq",
+   "url": "https://www.eastpennmanufacturing.com/east-penn-mfg-group-48-battery-recall-qr-code-faq-sheet-nhtsa-recall-no-23e-044/",
+   "by": "East Penn"
+  }
+ ],
+ "date_table": [
+  {
+   "brand": "Interstate",
+   "marks": "Shipped",
+   "words": "shipped from the manufacturing plant",
+   "ev": "ev-interstate-date-code-faq",
+   "url": "https://tractorsupply.interstatebatteries.com/faqs",
+   "by": "Interstate",
+   "dated": "",
+   "read": "2026-11-06"
+  },
+  {
+   "brand": "Costco (Interstate)",
+   "marks": "Shipped",
+   "words": "was shipped from the manufacturing plant",
+   "ev": "ev-costco-automotive-batteries",
+   "url": "https://www.costco.com/automotive-batteries.html",
+   "by": "Costco.com listings",
+   "dated": "",
+   "read": "2026-11-04"
+  },
+  {
+   "brand": "Deka (East Penn)",
+   "marks": "Shipped",
+   "words": "Battery shipped November 2011",
+   "ev": "ev-deka-care-date-code",
+   "url": "https://www.dekabatteries.com/assets/base/0004.pdf",
+   "by": "East Penn",
+   "dated": "2013-03-15",
+   "read": "2026-11-06"
+  },
+  {
+   "brand": "Motorcraft",
+   "marks": "Shipped",
+   "words": "Shipping Date is on a sticker",
+   "ev": "ev-ford-9400-shipping-date",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf",
+   "by": "Ford distributor manual",
+   "dated": "2005-05-01",
+   "read": "2026-11-07"
+  },
+  {
+   "brand": "ACDelco",
+   "marks": "Made",
+   "words": "the battery was made in September 2014",
+   "ev": "ev-acdelco-warranty-2015-date-code",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/ACDelco-battery-warranty-information.pdf",
+   "by": "ACDelco warranty sheet",
+   "dated": "2015-02-11",
+   "read": "2026-11-07"
+  },
+  {
+   "brand": "OPTIMA",
+   "marks": "Made",
+   "words": "every battery manufactured on March 27, 2026",
+   "ev": "ev-optima-date-code",
+   "url": "https://www.optimabatteries.com/experience/blog/where-is-the-date-code-on-optima-batteries",
+   "by": "OPTIMA",
+   "dated": "2026-03-27",
+   "read": "2026-11-06"
+  },
+  {
+   "brand": "ODYSSEY, NorthStar",
+   "marks": "Made",
+   "words": "when the battery was manufactured",
+   "ev": "ev-odyssey-date-codes-2021",
+   "url": "https://www.odysseybattery.com/wp-content/uploads/Battery-Date-Codes-and-Serial-Numbers-041621.pdf",
+   "by": "ODYSSEY",
+   "dated": "2021-04-16",
+   "read": "2026-11-06"
+  },
+  {
+   "brand": "Trojan",
+   "marks": "Made",
+   "words": "To determine the date of manufacture",
+   "ev": "ev-trojan-date-code-faq",
+   "url": "https://www.trojanbattery.com/resources/technical-support-and-faqs/faqs",
+   "by": "Trojan",
+   "dated": "",
+   "read": "2026-11-06"
+  },
+  {
+   "brand": "U.S. Battery",
+   "marks": "Made",
+   "words": "that they were manufactured",
+   "ev": "ev-us-battery-date-codes-2023",
+   "url": "https://www.usbattery.com/wp-content/uploads/2023/03/Reading_USB_DateCodes_323.pdf",
+   "by": "U.S. Battery",
+   "dated": "2023-03-23",
+   "read": "2026-11-06"
+  },
+  {
+   "brand": "Duralast, EverStart, Duracell",
+   "marks": "Not stated",
+   "words": "",
+   "ev": "ev-biaf-date-codes",
+   "url": "https://www.batteriesinaflash.com/how-to-read-battery-manufacturer-date-codes",
+   "by": "Batteries In A Flash",
+   "dated": "",
+   "read": "2026-11-06"
+  }
+ ],
+ "no_receipt": [
+  {
+   "brand": "Interstate",
+   "does": "Your dealer estimates the purchase date from the code.",
+   "ev": "ev-interstate-warranty-2022",
+   "url": "https://www.interstatebatteries.com/-/media/project/interstate-batteries/final-images/support/warranty-documents/ib_warranty_2022-08_usenglish.pdf",
+   "by": "Interstate",
+   "dated": "2022-08-01",
+   "read": "2026-11-06"
+  },
+  {
+   "brand": "ACDelco",
+   "does": "The warranty start is based on the date code.",
+   "ev": "ev-acdelco-warranty-2015-no-receipt",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/ACDelco-battery-warranty-information.pdf",
+   "by": "ACDelco warranty sheet",
+   "dated": "2015-02-11",
+   "read": "2026-11-07"
+  },
+  {
+   "brand": "ACDelco, Canada",
+   "does": "The code is used in place of a receipt, at the seller&rsquo;s or shop&rsquo;s discretion.",
+   "ev": "ev-acdelco-date-code",
+   "url": "https://acdelcocanada.com/parts/batteries/battery-warranty",
+   "by": "ACDelco",
+   "dated": "",
+   "read": "2026-11-06"
+  },
+  {
+   "brand": "Motorcraft",
+   "does": "With the warranty sticker, the age comes from the shipping date code, and any allowance goes toward a new Motorcraft battery.",
+   "ev": "ev-ford-9400-age",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf",
+   "by": "Ford distributor manual",
+   "dated": "2005-05-01",
+   "read": "2026-11-07"
+  }
+ ],
+ "voltage": [
+  {
+   "maker": "Deka (East Penn)",
+   "type": "Flooded",
+   "below": 12.4,
+   "store": "Test every 4 to 6 months",
+   "ev": "ev-deka-care-storage",
+   "url": "https://www.dekabatteries.com/assets/base/0004.pdf",
+   "by": "East Penn"
+  },
+  {
+   "maker": "OPTIMA",
+   "type": "AGM",
+   "below": 12.4,
+   "store": "Not stated in this record",
+   "ev": "ev-optima-voltage-storage",
+   "url": "https://www.optimabatteries.com/experience/blog/how-often-should-you-check-battery-voltage",
+   "by": "OPTIMA"
+  },
+  {
+   "maker": "East Penn",
+   "type": "AGM",
+   "below": 12.6,
+   "store": "Not stated in this record",
+   "ev": "ev-east-penn-ocv-table",
+   "url": "https://www.eastpennmanufacturing.com/wp-content/uploads/EPM-Heavy-Duty-AGM-Guide-Technical-Update-1401.pdf",
+   "by": "East Penn"
+  },
+  {
+   "maker": "Interstate",
+   "type": "Flooded",
+   "below": 12.6,
+   "store": "Charge every 2 to 3 months",
+   "ev": "ev-interstate-guide-storage",
+   "url": "https://www.interstatebatteries.com/-/media/project/interstate-batteries/final-images/business-units/dealers/current-dealers/2020-app-guide/2023_ib_appguide_web.pdf",
+   "by": "Interstate"
+  },
+  {
+   "maker": "Interstate",
+   "type": "AGM",
+   "below": 12.64,
+   "store": "Charge every 2 to 3 months",
+   "ev": "ev-interstate-guide-storage",
+   "url": "https://www.interstatebatteries.com/-/media/project/interstate-batteries/final-images/business-units/dealers/current-dealers/2020-app-guide/2023_ib_appguide_web.pdf",
+   "by": "Interstate"
+  },
+  {
+   "maker": "Motorcraft (Ford)",
+   "type": "Not stated",
+   "below": 12.4,
+   "store": "Check at least every 90 days",
+   "ev": "ev-ford-9400-voltage",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf",
+   "by": "Ford distributor manual"
+  }
+ ],
+ "volt_clear": 12.64,
+ "n": 13,
+ "n_maker": 10,
+ "n_third": 3,
+ "n_none": 7,
+ "evidence": {
+  "ev-interstate-faq-c3": {
+   "id": "ev-interstate-faq-c3",
+   "title": "Interstate Batteries FAQs",
+   "url": "https://www.interstatebatteries.com/en-lx/support/faqs",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "look for a stamped date code (e.g., C3 for 2023 March) on the case",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "The same answer says regular testing is recommended after about 3 years of use.",
+   "sha256": "967cc8145c0595b35b76142863bc89f4794e3b16376ff0663bf5c34104d173d7",
+   "source": {
+    "id": "maker-interstate",
+    "name": "Interstate",
+    "publisher": "Interstate Batteries",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-costco-automotive-batteries": {
+   "id": "ev-costco-automotive-batteries",
+   "title": "Costco.com: Interstate Car & Truck Batteries (automotive battery page and FAQ)",
+   "url": "https://www.costco.com/automotive-batteries.html",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Costco Automotive Batteries are supported by a 36 Month Limited Prorated Warranty. … Costco Interstate batteries offer the same reliable power as Interstate batteries, but a different warranty program supports them.",
+   "read": "2026-11-04",
+   "doc_date": null,
+   "note": "Read in Chrome, opening each FAQ answer. The page sells Interstate only, for cars, trucks, boats, RVs, golf carts and mowers, and has no phone price line. Its FAQ explains the core charge (a deposit refunded when you bring the old battery back), gives do-it-yourself fitting steps, and reads the date code as a month letter (A = January) plus a year digit (1 = 2021), the date the battery \"was shipped from the manufacturing plant\".",
+   "sha256": "59ae51b2d284278739c4a44c62b36e8b406cd9a348b1bd6decf5afdd15a7208f",
+   "source": {
+    "id": "costco-com",
+    "name": "Costco.com listings",
+    "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+    "primary": true,
+    "cannot_prove": "Who builds the batteries, or where: the page names only the Interstate brand, and it can change without notice.",
+    "kind": "retailer",
+    "by_hand": true
+   }
+  },
+  "ev-acdelco-warranty-2015-date-code": {
+   "id": "ev-acdelco-warranty-2015-date-code",
+   "title": "ACDelco Battery Warranty Information, revised 2-11-15: warranty date code",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/ACDelco-battery-warranty-information.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "P 094N means the battery was made in September 2014.",
+   "read": "2026-11-07",
+   "doc_date": "2015-02-11",
+   "note": "The sheet says the first character is P or S, the next two digits are the month, the third digit is the year and the fourth digit is the plant. Read on Delcoline's copy.",
+   "sha256": "6e02386e576420f107866964ab45cfed77c96b58afdb0b35004638602b068f29",
+   "source": {
+    "id": "maker-acdelco-warranty-sheet",
+    "name": "ACDelco warranty sheet",
+    "publisher": "ACDelco",
+    "primary": true,
+    "cannot_prove": "Whether today's labels follow the same format, or which plant built one battery. We read a copy on a distributor's site.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-optima-date-code": {
+   "id": "ev-optima-date-code",
+   "title": "Where is the Date Code on OPTIMA Batteries?",
+   "url": "https://www.optimabatteries.com/experience/blog/where-is-the-date-code-on-optima-batteries",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "will have a serial number that starts with 6086xxxxxx",
+   "read": "2026-11-06",
+   "doc_date": "2026-03-27",
+   "note": "The post also warns that round stickers are inventory stickers, not build dates.",
+   "sha256": "d61c42caba73ec69479ea11532737546b3a92369c6666ff1353857e7cfa113ce",
+   "source": {
+    "id": "maker-optima",
+    "name": "OPTIMA",
+    "publisher": "OPTIMA Batteries",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-odyssey-date-codes-2021": {
+   "id": "ev-odyssey-date-codes-2021",
+   "title": "Battery Serial Numbers and Date Codes (ODYSSEY and NorthStar)",
+   "url": "https://www.odysseybattery.com/wp-content/uploads/Battery-Date-Codes-and-Serial-Numbers-041621.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Example: K0 means November 2020",
+   "read": "2026-11-06",
+   "doc_date": "2021-04-16",
+   "note": "The same sheet prints a table with no E or I for NorthStar, where K is September and M is November, and gives M0 as November 2020 for NorthStar. We can't tell whether the ODYSSEY line is a different key or a typo.",
+   "sha256": "084a24b4b0279b728ba6c00dda7a3c2400f4b7866b7b1d61e07f206ba9210fec",
+   "source": {
+    "id": "maker-odyssey",
+    "name": "ODYSSEY",
+    "publisher": "ODYSSEY Battery",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-trojan-date-code-faq": {
+   "id": "ev-trojan-date-code-faq",
+   "title": "Trojan Battery FAQs",
+   "url": "https://www.trojanbattery.com/resources/technical-support-and-faqs/faqs",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "A1 = January 2021, B1 = February 2021",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "The code sits on the negative terminal or the cover near it.",
+   "sha256": "40ae81496ca6038ac83a85f3994c842b84c10a31c3c6a831bc39267864d39cbc",
+   "source": {
+    "id": "maker-trojan",
+    "name": "Trojan",
+    "publisher": "Trojan Battery",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-us-battery-date-codes-2023": {
+   "id": "ev-us-battery-date-codes-2023",
+   "title": "Reading U.S. Battery Mfg. Co. Date Codes (technical bulletin)",
+   "url": "https://www.usbattery.com/wp-content/uploads/2023/03/Reading_USB_DateCodes_323.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "written either in the format DDMMYY or YYMMDD",
+   "read": "2026-11-06",
+   "doc_date": "2023-03-23",
+   "note": "Flooded batteries use a month letter A to L, a year digit and a plant letter on the positive terminal.",
+   "sha256": "99328d980e42e15df5e616c6383d5b6b58963d7825fea06a3af702f313de2329",
+   "source": {
+    "id": "maker-us-battery",
+    "name": "U.S. Battery",
+    "publisher": "U.S. Battery Mfg. Co.",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-deka-care-date-code": {
+   "id": "ev-deka-care-date-code",
+   "title": "Deka: Basic rules for battery care and maintenance",
+   "url": "https://www.dekabatteries.com/assets/base/0004.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Example: L1 – Battery shipped November 2011",
+   "read": "2026-11-06",
+   "doc_date": "2013-03-15",
+   "note": "The table runs A to M with no I, and its year list stops at 2016. The PDF was last modified in March 2013, so the sheet is old.",
+   "sha256": "cec639dfb2ffecf0f89164e50399f1aad2442ee1a4589ba61d9a634dfee6e1c7",
+   "source": {
+    "id": "maker-east-penn",
+    "name": "East Penn",
+    "publisher": "East Penn Manufacturing",
+    "primary": true,
+    "cannot_prove": "Which brands East Penn makes beyond the part in that recall.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-ford-9400-shipping-date": {
+   "id": "ev-ford-9400-shipping-date",
+   "title": "Ford distributor manual, Section 9400, page 5: Shipping Date Codes",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Shipping Date is on a sticker placed on the side of the battery.",
+   "read": "2026-11-07",
+   "doc_date": "2005-05-01",
+   "note": "The drawing shows a round sticker reading C-2 and 3-2, each marked month and year. Ford pairs only C with 3 and doesn't print the whole letter list. Read on Delcoline's copy. The drawing also boxes GB1A58 on the top of the battery without saying what it marks.",
+   "sha256": "267e70ec3dedaa9eb1e0e9abd9593ce991d725a9801a9cd4a35ef8cd6a55f7b0",
+   "source": {
+    "id": "maker-ford-distributor-manual",
+    "name": "Ford distributor manual",
+    "publisher": "Ford Motor Company",
+    "primary": true,
+    "cannot_prove": "How a label printed today looks, or how old one battery is. The pages are dated 2002 to 2010, and we read a copy on a distributor's site.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-biaf-date-codes": {
+   "id": "ev-biaf-date-codes",
+   "title": "Batteries In A Flash: How to read battery manufacturer date codes",
+   "url": "https://www.batteriesinaflash.com/how-to-read-battery-manufacturer-date-codes",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Duralast Battery (AutoZone)",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "A seller's guide with no cited sources. Used only for brands where we found no maker rule, and labeled so.",
+   "sha256": "4523ac1e0cfdbe6063b286a953d5d060f409648a48ff1aa80e7910acac956e53",
+   "source": {
+    "id": "batteries-in-a-flash",
+    "name": "Batteries In A Flash",
+    "publisher": "BatteriesInAFlash.com, Inc.",
+    "primary": false,
+    "cannot_prove": "That a maker uses the rule. The guide cites no sources.",
+    "kind": "retailer",
+    "by_hand": false
+   }
+  },
+  "ev-tiresplus-date-codes-2009": {
+   "id": "ev-tiresplus-date-codes-2009",
+   "title": "Tires Plus: Reading battery date codes",
+   "url": "https://www.tiresplus.com/content/dam/bsro-sites/tiresplus/pdfs/reading-battery-date-codes.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "All major battery manufacturers use a similar date code system",
+   "read": "2026-11-06",
+   "doc_date": "2009-02-25",
+   "note": "A staff sheet with a month key where L or M means December, and either order of letter and number.",
+   "sha256": "fb9009b70520c705f03a56bf5b7000f68cc43cf9944bfb82d8a5f53e16937080",
+   "source": {
+    "id": "tires-plus",
+    "name": "Tires Plus",
+    "publisher": "Tires Plus (Bridgestone Retail Operations)",
+    "primary": false,
+    "cannot_prove": "That any maker uses that rule today.",
+    "kind": "retailer",
+    "by_hand": false
+   }
+  },
+  "ev-sec-clarios-s1a-2023": {
+   "id": "ev-sec-clarios-s1a-2023",
+   "title": "Clarios International Inc., Form S-1/A (Amendment No. 6), filed 15 Dec 2023",
+   "url": "https://www.sec.gov/Archives/edgar/data/1857971/000119312523296848/d590192ds1a.htm",
+   "archive_url": "https://web.archive.org/web/20261104050634/https://www.sec.gov/Archives/edgar/data/1857971/000119312523296848/d590192ds1a.htm",
+   "gone_on": null,
+   "quote": "We also provide private label brands to our aftermarket customers including DieHard, Interstate, Duralast, Bosch and EverStart. … we partner with Interstate Batteries on manufacturing and distribution throughout North America via a passive investment.",
+   "read": "2026-11-04",
+   "doc_date": "2023-12-15",
+   "note": "Per the filing, Clarios is the Power Solutions business of Johnson Controls, bought by a group led by Brookfield Business Partners on 30 April 2019. The prospectus also names Interstate first among its \"longstanding\" aftermarket customers. It names the Interstate brand, not each battery, and doesn't mention Costco. Clarios's credit agreements filed with the same registration (2020, 2023) say Interstate Batteries is not to be treated as an affiliate. This is the newest amendment of the registration we found.",
+   "sha256": "b3702e920aef47d46c351cc772857ff3c1e981647f414715bd0873c82c9c1ac4",
+   "source": {
+    "id": "sec-edgar",
+    "name": "SEC filings",
+    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+    "primary": true,
+    "cannot_prove": "Anything the filing doesn't spell out. A list of brands a company supplies doesn't say it makes every product sold under those brands, or which store sells them.",
+    "kind": "filing",
+    "by_hand": false
+   }
+  },
+  "ev-east-penn-recall-faq": {
+   "id": "ev-east-penn-recall-faq",
+   "title": "East Penn Mfg. Group 48 battery recall: QR code and FAQ sheet (NHTSA recall 23E-044)",
+   "url": "https://www.eastpennmanufacturing.com/east-penn-mfg-group-48-battery-recall-qr-code-faq-sheet-nhtsa-recall-no-23e-044/",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "30612OPE",
+   "read": "2026-11-06",
+   "doc_date": "2023-06-09",
+   "note": "The sheet lists production codes for 2/28/23 and 3/2/23, ship stickers 3/23 to 6/23, part numbers F3F-48BB and 648MF, and the brands affected.",
+   "sha256": "b983dacc23a1b2e75229320b9549f6e74f19a71e45db572115547f8929d7bb06",
+   "source": {
+    "id": "maker-east-penn",
+    "name": "East Penn",
+    "publisher": "East Penn Manufacturing",
+    "primary": true,
+    "cannot_prove": "Which brands East Penn makes beyond the part in that recall.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-interstate-date-code-faq": {
+   "id": "ev-interstate-date-code-faq",
+   "title": "Interstate Batteries FAQ: How can I tell my battery's age?",
+   "url": "https://tractorsupply.interstatebatteries.com/faqs",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "The battery date code indicates when the battery was shipped from the manufacturing plant",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "Read on the Interstate-run store for Tractor Supply. It gives B1 as February 2021.",
+   "sha256": "0ef4bc9677eb4f3ee35f245e50cdd8d63c765f10c2c3eb3b46b9f97632a355b6",
+   "source": {
+    "id": "maker-interstate",
+    "name": "Interstate",
+    "publisher": "Interstate Batteries",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-interstate-warranty-2022": {
+   "id": "ev-interstate-warranty-2022",
+   "title": "Interstate Batteries limited warranty, August 2022",
+   "url": "https://www.interstatebatteries.com/-/media/project/interstate-batteries/final-images/support/warranty-documents/ib_warranty_2022-08_usenglish.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "your dealer will estimate your date of purchase from the manufacturer code on each battery",
+   "read": "2026-11-06",
+   "doc_date": "2022-08-01",
+   "note": "The March 2025 warranty PDF refused our read, so this is the latest wording we could read.",
+   "sha256": "b4f001d910b3bc4e3820f17b2ed3f1dc4cbd44f3b2f6971b38127bc44167c5e1",
+   "source": {
+    "id": "maker-interstate",
+    "name": "Interstate",
+    "publisher": "Interstate Batteries",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-interstate-warranty-lookup": {
+   "id": "ev-interstate-warranty-lookup",
+   "title": "Interstate Batteries warranty lookup",
+   "url": "https://www.interstatebatteries.com/support/warranty/warranty-lookup",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Ship Date Code Enter the code that is on your battery",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "Interstate's own lookup asks for the category, part number and code.",
+   "sha256": "2a09f1f1bf6eb99018fb56ef557c331653273c25fb3278e4f01ea928e7bafa96",
+   "source": {
+    "id": "maker-interstate",
+    "name": "Interstate",
+    "publisher": "Interstate Batteries",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-aaa-battery-life": {
+   "id": "ev-aaa-battery-life",
+   "title": "AAA: How long do car batteries last?",
+   "url": "https://www.aaa.com/autorepair/articles/how-long-do-car-batteries-last",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Once a battery reaches its third year, have it tested annually",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "AAA says three to five years, about three in hot southern areas and five or more in cooler ones.",
+   "sha256": "c67e6744f2a473bcd0b28aa2e8c305468b3d97ff90c757530ce276bc3774c280",
+   "source": {
+    "id": "aaa",
+    "name": "AAA",
+    "publisher": "American Automobile Association",
+    "primary": false,
+    "cannot_prove": "How long one battery will last.",
+    "kind": "other",
+    "by_hand": false
+   }
+  },
+  "ev-nhtsa-23e044": {
+   "id": "ev-nhtsa-23e044",
+   "title": "NHTSA recall 23E-044: East Penn Manufacturing defect report",
+   "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23E044-5134.PDF",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "assembly date code which is traceable to the building, line, day, and shift of manufacture",
+   "read": "2026-11-06",
+   "doc_date": "2023-06-09",
+   "note": "2,139 units. The NHTSA recall file read Nov 6, 2026 shows no other recall of a lead-acid starter battery as equipment since 2010.",
+   "sha256": "bcf9f05301833e8d2a5bc944b60978255085713c093de1aa8fc7eb8ab2199f7a",
+   "source": {
+    "id": "nhtsa-recalls",
+    "name": "NHTSA recalls",
+    "publisher": "National Highway Traffic Safety Administration",
+    "primary": true,
+    "cannot_prove": "Whether a battery with no filed recall is free of defects, or anything about batteries outside the US.",
+    "kind": "regulator",
+    "by_hand": false
+   }
+  },
+  "ev-motorcraft-battery-terms": {
+   "id": "ev-motorcraft-battery-terms",
+   "title": "Motorcraft battery terms and limitations",
+   "url": "https://www.motorcraft.com/content/dam/ford-motorcraft/en_us/motorcraft_global/products/batteries/Batteries-TermAndLimitation.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Labor to remove and replace battery in the vehicle",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "The terms say nothing about a date code, a date of manufacture or an in-service date.",
+   "sha256": "70da09634107088a3acde0069693e222a4fff0e61f7ece76cefe57465be602de",
+   "source": {
+    "id": "maker-motorcraft",
+    "name": "Motorcraft",
+    "publisher": "Ford Motor Company",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-interstate-guide-two-chars": {
+   "id": "ev-interstate-guide-two-chars",
+   "title": "Interstate Batteries application guide 2023",
+   "url": "https://www.interstatebatteries.com/-/media/project/interstate-batteries/final-images/business-units/dealers/current-dealers/2020-app-guide/2023_ib_appguide_web.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Read date code on the case (first two characters)",
+   "read": "2026-11-06",
+   "doc_date": "2023-09-28",
+   "note": "Page 8, in the flooded battery check, with a table from A for January to L for December. The saved copy keeps pages 6, 8 and 9 of 517.",
+   "sha256": "fbead276b407cc8af237ac0b8ecf638e48403f75a0bb5a1e887fda0332a41785",
+   "source": {
+    "id": "maker-interstate",
+    "name": "Interstate",
+    "publisher": "Interstate Batteries",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-interstate-guide-storage": {
+   "id": "ev-interstate-guide-storage",
+   "title": "Interstate Batteries application guide 2023: storage and voltage",
+   "url": "https://www.interstatebatteries.com/-/media/project/interstate-batteries/final-images/business-units/dealers/current-dealers/2020-app-guide/2023_ib_appguide_web.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Batteries in storage should be charged every 2 to 3 months",
+   "read": "2026-11-06",
+   "doc_date": "2023-09-28",
+   "note": "Page 6. The checks on pages 8 and 9 treat 12.60 V as 75% charged on a flooded battery and 12.64 V on an AGM, and say to recharge below that. The saved copy keeps pages 6, 8 and 9 of 517.",
+   "sha256": "fbead276b407cc8af237ac0b8ecf638e48403f75a0bb5a1e887fda0332a41785",
+   "source": {
+    "id": "maker-interstate",
+    "name": "Interstate",
+    "publisher": "Interstate Batteries",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-deka-care-storage": {
+   "id": "ev-deka-care-storage",
+   "title": "Deka: Basic rules for battery care and maintenance: stock and storage",
+   "url": "https://www.dekabatteries.com/assets/base/0004.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Test wet batteries every 4–6 months and recharge if necessary.",
+   "read": "2026-11-06",
+   "doc_date": "2013-03-15",
+   "note": "The next line says to always test and charge if necessary before installation. The sheet also says to use oldest batteries first and to boost charge below 12.4 volts.",
+   "sha256": "cec639dfb2ffecf0f89164e50399f1aad2442ee1a4589ba61d9a634dfee6e1c7",
+   "source": {
+    "id": "maker-east-penn",
+    "name": "East Penn",
+    "publisher": "East Penn Manufacturing",
+    "primary": true,
+    "cannot_prove": "Which brands East Penn makes beyond the part in that recall.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-east-penn-ocv-table": {
+   "id": "ev-east-penn-ocv-table",
+   "title": "East Penn Heavy Duty AGM Guide, Technical Update 1401",
+   "url": "https://www.eastpennmanufacturing.com/wp-content/uploads/EPM-Heavy-Duty-AGM-Guide-Technical-Update-1401.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Recharge if the OCV is below 75% state of charge",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "Its table puts 75% charge at 12.40 V on a flooded battery and 12.60 V on an AGM.",
+   "sha256": "d0f7fb218514f85dfc83d873b1185e0d702fa40e901942d5335fc0dfade90225",
+   "source": {
+    "id": "maker-east-penn",
+    "name": "East Penn",
+    "publisher": "East Penn Manufacturing",
+    "primary": true,
+    "cannot_prove": "Which brands East Penn makes beyond the part in that recall.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-optima-voltage-storage": {
+   "id": "ev-optima-voltage-storage",
+   "title": "OPTIMA: How often should you check battery voltage?",
+   "url": "https://www.optimabatteries.com/experience/blog/how-often-should-you-check-battery-voltage",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "When batteries are discharged below 12.4 volts and allowed to sit in that state for extended periods of time",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "The post says most flooded batteries and REDTOPs should read about 12.6 to 12.8 volts fully charged, and YELLOWTOPs about 13.0 to 13.2.",
+   "sha256": "80e965e8da8cdd2352c9472ab36b0427a12bc091d6c47634bfb2e6b9fc5cb355",
+   "source": {
+    "id": "maker-optima",
+    "name": "OPTIMA",
+    "publisher": "OPTIMA Batteries",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-trojan-storage": {
+   "id": "ev-trojan-storage",
+   "title": "Trojan Battery: battery maintenance",
+   "url": "https://www.trojanbattery.com/resources/battery-maintenance",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "VRLA batteries should not be stored for more than 6 months",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "The page also says to charge stored batteries fully every 3 to 6 months. These are mostly deep-cycle batteries.",
+   "sha256": "f76f7f2d3b184d69c284c797bc705e7d0b4675fef290191e54627cf9b0abcd9c",
+   "source": {
+    "id": "maker-trojan",
+    "name": "Trojan",
+    "publisher": "Trojan Battery",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-acdelco-date-code": {
+   "id": "ev-acdelco-date-code",
+   "title": "ACDelco Canada: Battery warranty",
+   "url": "https://acdelcocanada.com/parts/batteries/battery-warranty",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Example: S 040 G – is a Silver Series dated April of 2020",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "It is the Canadian site, and it says the code is used when there is no receipt. It points to a chart for older branding that we could not read as text. It says the code stands in for a receipt at the discretion of the parts supplier or repair facility, and that G is Gold and S is Silver or Advantage.",
+   "sha256": "e9b93c1e0bf9f550094e79df6639d18882fab00c7de0d283d23ba5ab14e6e5ed",
+   "source": {
+    "id": "maker-acdelco",
+    "name": "ACDelco",
+    "publisher": "ACDelco",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-acdelco-warranty-2015-no-receipt": {
+   "id": "ev-acdelco-warranty-2015-no-receipt",
+   "title": "ACDelco Battery Warranty Information, revised 2-11-15: no bill of sale",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/ACDelco-battery-warranty-information.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "the beginning date for this warranty will be based on the date code as it appears on the battery label",
+   "read": "2026-11-07",
+   "doc_date": "2015-02-11",
+   "note": "Applies when the dated bill of sale isn't available. Read on Delcoline's copy.",
+   "sha256": "6e02386e576420f107866964ab45cfed77c96b58afdb0b35004638602b068f29",
+   "source": {
+    "id": "maker-acdelco-warranty-sheet",
+    "name": "ACDelco warranty sheet",
+    "publisher": "ACDelco",
+    "primary": true,
+    "cannot_prove": "Whether today's labels follow the same format, or which plant built one battery. We read a copy on a distributor's site.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-ford-9400-age": {
+   "id": "ev-ford-9400-age",
+   "title": "Ford distributor manual, Section 9400, page 7: warranty age",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Use the battery shipping date code to determine the age of the battery.",
+   "read": "2026-11-07",
+   "doc_date": "2005-05-01",
+   "note": "From the section on lost proof-of-purchase receipts. The customer must have the warranty sticker, its serial number must match the one on the battery cover, and any allowance goes toward a new Motorcraft battery. A warranty instruction to distributors. Page 8, effective October 2010, calls a battery new defective if it was never placed into service and is under six months old by that code. That is a warranty class, not a shelf limit.",
+   "sha256": "267e70ec3dedaa9eb1e0e9abd9593ce991d725a9801a9cd4a35ef8cd6a55f7b0",
+   "source": {
+    "id": "maker-ford-distributor-manual",
+    "name": "Ford distributor manual",
+    "publisher": "Ford Motor Company",
+    "primary": true,
+    "cannot_prove": "How a label printed today looks, or how old one battery is. The pages are dated 2002 to 2010, and we read a copy on a distributor's site.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-ford-9400-voltage": {
+   "id": "ev-ford-9400-voltage",
+   "title": "Ford distributor manual, Section 9400, page 4: stock checks",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Batteries found to have voltage readings below 12.40 volts (O.C.V.) should be recharged.",
+   "read": "2026-11-07",
+   "doc_date": "2005-05-01",
+   "note": "The same page says voltage should be checked at least every 90 days and that older stock should be sold first.",
+   "sha256": "267e70ec3dedaa9eb1e0e9abd9593ce991d725a9801a9cd4a35ef8cd6a55f7b0",
+   "source": {
+    "id": "maker-ford-distributor-manual",
+    "name": "Ford distributor manual",
+    "publisher": "Ford Motor Company",
+    "primary": true,
+    "cannot_prove": "How a label printed today looks, or how old one battery is. The pages are dated 2002 to 2010, and we read a copy on a distributor's site.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  "ev-itstillruns-motorcraft": {
+   "id": "ev-itstillruns-motorcraft",
+   "title": "It Still Runs: How to check the date of a Motorcraft battery",
+   "url": "https://itstillruns.com/check-date-motorcraft-battery-6321400.html",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "On a Motorcraft battery, this is located on the side of the battery case",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "A how-to article by Anthony Smith, updated June 29, 2023. It gives A to L and a year digit, with C8 as March 2008, and cites no source. Used only because we found no rule from Ford or Motorcraft.",
+   "sha256": "17188b153508741485220bcc98f0f8395a8b9414ad17ecda49092f98b3622706",
+   "source": {
+    "id": "it-still-runs",
+    "name": "It Still Runs",
+    "publisher": "It Still Runs",
+    "primary": false,
+    "cannot_prove": "That a maker uses the rule. The article cites no sources.",
+    "kind": "other",
+    "by_hand": false
+   }
+  }
+ },
+ "cite": [
+  {
+   "id": "ev-interstate-faq-c3",
+   "title": "Interstate Batteries FAQs",
+   "url": "https://www.interstatebatteries.com/en-lx/support/faqs",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "look for a stamped date code (e.g., C3 for 2023 March) on the case",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "The same answer says regular testing is recommended after about 3 years of use.",
+   "sha256": "967cc8145c0595b35b76142863bc89f4794e3b16376ff0663bf5c34104d173d7",
+   "source": {
+    "id": "maker-interstate",
+    "name": "Interstate",
+    "publisher": "Interstate Batteries",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-costco-automotive-batteries",
+   "title": "Costco.com: Interstate Car & Truck Batteries (automotive battery page and FAQ)",
+   "url": "https://www.costco.com/automotive-batteries.html",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Costco Automotive Batteries are supported by a 36 Month Limited Prorated Warranty. … Costco Interstate batteries offer the same reliable power as Interstate batteries, but a different warranty program supports them.",
+   "read": "2026-11-04",
+   "doc_date": null,
+   "note": "Read in Chrome, opening each FAQ answer. The page sells Interstate only, for cars, trucks, boats, RVs, golf carts and mowers, and has no phone price line. Its FAQ explains the core charge (a deposit refunded when you bring the old battery back), gives do-it-yourself fitting steps, and reads the date code as a month letter (A = January) plus a year digit (1 = 2021), the date the battery \"was shipped from the manufacturing plant\".",
+   "sha256": "59ae51b2d284278739c4a44c62b36e8b406cd9a348b1bd6decf5afdd15a7208f",
+   "source": {
+    "id": "costco-com",
+    "name": "Costco.com listings",
+    "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+    "primary": true,
+    "cannot_prove": "Who builds the batteries, or where: the page names only the Interstate brand, and it can change without notice.",
+    "kind": "retailer",
+    "by_hand": true
+   }
+  },
+  {
+   "id": "ev-acdelco-warranty-2015-date-code",
+   "title": "ACDelco Battery Warranty Information, revised 2-11-15: warranty date code",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/ACDelco-battery-warranty-information.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "P 094N means the battery was made in September 2014.",
+   "read": "2026-11-07",
+   "doc_date": "2015-02-11",
+   "note": "The sheet says the first character is P or S, the next two digits are the month, the third digit is the year and the fourth digit is the plant. Read on Delcoline's copy.",
+   "sha256": "6e02386e576420f107866964ab45cfed77c96b58afdb0b35004638602b068f29",
+   "source": {
+    "id": "maker-acdelco-warranty-sheet",
+    "name": "ACDelco warranty sheet",
+    "publisher": "ACDelco",
+    "primary": true,
+    "cannot_prove": "Whether today's labels follow the same format, or which plant built one battery. We read a copy on a distributor's site.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-optima-date-code",
+   "title": "Where is the Date Code on OPTIMA Batteries?",
+   "url": "https://www.optimabatteries.com/experience/blog/where-is-the-date-code-on-optima-batteries",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "will have a serial number that starts with 6086xxxxxx",
+   "read": "2026-11-06",
+   "doc_date": "2026-03-27",
+   "note": "The post also warns that round stickers are inventory stickers, not build dates.",
+   "sha256": "d61c42caba73ec69479ea11532737546b3a92369c6666ff1353857e7cfa113ce",
+   "source": {
+    "id": "maker-optima",
+    "name": "OPTIMA",
+    "publisher": "OPTIMA Batteries",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-odyssey-date-codes-2021",
+   "title": "Battery Serial Numbers and Date Codes (ODYSSEY and NorthStar)",
+   "url": "https://www.odysseybattery.com/wp-content/uploads/Battery-Date-Codes-and-Serial-Numbers-041621.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Example: K0 means November 2020",
+   "read": "2026-11-06",
+   "doc_date": "2021-04-16",
+   "note": "The same sheet prints a table with no E or I for NorthStar, where K is September and M is November, and gives M0 as November 2020 for NorthStar. We can't tell whether the ODYSSEY line is a different key or a typo.",
+   "sha256": "084a24b4b0279b728ba6c00dda7a3c2400f4b7866b7b1d61e07f206ba9210fec",
+   "source": {
+    "id": "maker-odyssey",
+    "name": "ODYSSEY",
+    "publisher": "ODYSSEY Battery",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-trojan-date-code-faq",
+   "title": "Trojan Battery FAQs",
+   "url": "https://www.trojanbattery.com/resources/technical-support-and-faqs/faqs",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "A1 = January 2021, B1 = February 2021",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "The code sits on the negative terminal or the cover near it.",
+   "sha256": "40ae81496ca6038ac83a85f3994c842b84c10a31c3c6a831bc39267864d39cbc",
+   "source": {
+    "id": "maker-trojan",
+    "name": "Trojan",
+    "publisher": "Trojan Battery",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-us-battery-date-codes-2023",
+   "title": "Reading U.S. Battery Mfg. Co. Date Codes (technical bulletin)",
+   "url": "https://www.usbattery.com/wp-content/uploads/2023/03/Reading_USB_DateCodes_323.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "written either in the format DDMMYY or YYMMDD",
+   "read": "2026-11-06",
+   "doc_date": "2023-03-23",
+   "note": "Flooded batteries use a month letter A to L, a year digit and a plant letter on the positive terminal.",
+   "sha256": "99328d980e42e15df5e616c6383d5b6b58963d7825fea06a3af702f313de2329",
+   "source": {
+    "id": "maker-us-battery",
+    "name": "U.S. Battery",
+    "publisher": "U.S. Battery Mfg. Co.",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-deka-care-date-code",
+   "title": "Deka: Basic rules for battery care and maintenance",
+   "url": "https://www.dekabatteries.com/assets/base/0004.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Example: L1 – Battery shipped November 2011",
+   "read": "2026-11-06",
+   "doc_date": "2013-03-15",
+   "note": "The table runs A to M with no I, and its year list stops at 2016. The PDF was last modified in March 2013, so the sheet is old.",
+   "sha256": "cec639dfb2ffecf0f89164e50399f1aad2442ee1a4589ba61d9a634dfee6e1c7",
+   "source": {
+    "id": "maker-east-penn",
+    "name": "East Penn",
+    "publisher": "East Penn Manufacturing",
+    "primary": true,
+    "cannot_prove": "Which brands East Penn makes beyond the part in that recall.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-ford-9400-shipping-date",
+   "title": "Ford distributor manual, Section 9400, page 5: Shipping Date Codes",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Shipping Date is on a sticker placed on the side of the battery.",
+   "read": "2026-11-07",
+   "doc_date": "2005-05-01",
+   "note": "The drawing shows a round sticker reading C-2 and 3-2, each marked month and year. Ford pairs only C with 3 and doesn't print the whole letter list. Read on Delcoline's copy. The drawing also boxes GB1A58 on the top of the battery without saying what it marks.",
+   "sha256": "267e70ec3dedaa9eb1e0e9abd9593ce991d725a9801a9cd4a35ef8cd6a55f7b0",
+   "source": {
+    "id": "maker-ford-distributor-manual",
+    "name": "Ford distributor manual",
+    "publisher": "Ford Motor Company",
+    "primary": true,
+    "cannot_prove": "How a label printed today looks, or how old one battery is. The pages are dated 2002 to 2010, and we read a copy on a distributor's site.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-biaf-date-codes",
+   "title": "Batteries In A Flash: How to read battery manufacturer date codes",
+   "url": "https://www.batteriesinaflash.com/how-to-read-battery-manufacturer-date-codes",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Duralast Battery (AutoZone)",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "A seller's guide with no cited sources. Used only for brands where we found no maker rule, and labeled so.",
+   "sha256": "4523ac1e0cfdbe6063b286a953d5d060f409648a48ff1aa80e7910acac956e53",
+   "source": {
+    "id": "batteries-in-a-flash",
+    "name": "Batteries In A Flash",
+    "publisher": "BatteriesInAFlash.com, Inc.",
+    "primary": false,
+    "cannot_prove": "That a maker uses the rule. The guide cites no sources.",
+    "kind": "retailer",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-tiresplus-date-codes-2009",
+   "title": "Tires Plus: Reading battery date codes",
+   "url": "https://www.tiresplus.com/content/dam/bsro-sites/tiresplus/pdfs/reading-battery-date-codes.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "All major battery manufacturers use a similar date code system",
+   "read": "2026-11-06",
+   "doc_date": "2009-02-25",
+   "note": "A staff sheet with a month key where L or M means December, and either order of letter and number.",
+   "sha256": "fb9009b70520c705f03a56bf5b7000f68cc43cf9944bfb82d8a5f53e16937080",
+   "source": {
+    "id": "tires-plus",
+    "name": "Tires Plus",
+    "publisher": "Tires Plus (Bridgestone Retail Operations)",
+    "primary": false,
+    "cannot_prove": "That any maker uses that rule today.",
+    "kind": "retailer",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-sec-clarios-s1a-2023",
+   "title": "Clarios International Inc., Form S-1/A (Amendment No. 6), filed 15 Dec 2023",
+   "url": "https://www.sec.gov/Archives/edgar/data/1857971/000119312523296848/d590192ds1a.htm",
+   "archive_url": "https://web.archive.org/web/20261104050634/https://www.sec.gov/Archives/edgar/data/1857971/000119312523296848/d590192ds1a.htm",
+   "gone_on": null,
+   "quote": "We also provide private label brands to our aftermarket customers including DieHard, Interstate, Duralast, Bosch and EverStart. … we partner with Interstate Batteries on manufacturing and distribution throughout North America via a passive investment.",
+   "read": "2026-11-04",
+   "doc_date": "2023-12-15",
+   "note": "Per the filing, Clarios is the Power Solutions business of Johnson Controls, bought by a group led by Brookfield Business Partners on 30 April 2019. The prospectus also names Interstate first among its \"longstanding\" aftermarket customers. It names the Interstate brand, not each battery, and doesn't mention Costco. Clarios's credit agreements filed with the same registration (2020, 2023) say Interstate Batteries is not to be treated as an affiliate. This is the newest amendment of the registration we found.",
+   "sha256": "b3702e920aef47d46c351cc772857ff3c1e981647f414715bd0873c82c9c1ac4",
+   "source": {
+    "id": "sec-edgar",
+    "name": "SEC filings",
+    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+    "primary": true,
+    "cannot_prove": "Anything the filing doesn't spell out. A list of brands a company supplies doesn't say it makes every product sold under those brands, or which store sells them.",
+    "kind": "filing",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-east-penn-recall-faq",
+   "title": "East Penn Mfg. Group 48 battery recall: QR code and FAQ sheet (NHTSA recall 23E-044)",
+   "url": "https://www.eastpennmanufacturing.com/east-penn-mfg-group-48-battery-recall-qr-code-faq-sheet-nhtsa-recall-no-23e-044/",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "30612OPE",
+   "read": "2026-11-06",
+   "doc_date": "2023-06-09",
+   "note": "The sheet lists production codes for 2/28/23 and 3/2/23, ship stickers 3/23 to 6/23, part numbers F3F-48BB and 648MF, and the brands affected.",
+   "sha256": "b983dacc23a1b2e75229320b9549f6e74f19a71e45db572115547f8929d7bb06",
+   "source": {
+    "id": "maker-east-penn",
+    "name": "East Penn",
+    "publisher": "East Penn Manufacturing",
+    "primary": true,
+    "cannot_prove": "Which brands East Penn makes beyond the part in that recall.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-interstate-date-code-faq",
+   "title": "Interstate Batteries FAQ: How can I tell my battery's age?",
+   "url": "https://tractorsupply.interstatebatteries.com/faqs",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "The battery date code indicates when the battery was shipped from the manufacturing plant",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "Read on the Interstate-run store for Tractor Supply. It gives B1 as February 2021.",
+   "sha256": "0ef4bc9677eb4f3ee35f245e50cdd8d63c765f10c2c3eb3b46b9f97632a355b6",
+   "source": {
+    "id": "maker-interstate",
+    "name": "Interstate",
+    "publisher": "Interstate Batteries",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-interstate-warranty-2022",
+   "title": "Interstate Batteries limited warranty, August 2022",
+   "url": "https://www.interstatebatteries.com/-/media/project/interstate-batteries/final-images/support/warranty-documents/ib_warranty_2022-08_usenglish.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "your dealer will estimate your date of purchase from the manufacturer code on each battery",
+   "read": "2026-11-06",
+   "doc_date": "2022-08-01",
+   "note": "The March 2025 warranty PDF refused our read, so this is the latest wording we could read.",
+   "sha256": "b4f001d910b3bc4e3820f17b2ed3f1dc4cbd44f3b2f6971b38127bc44167c5e1",
+   "source": {
+    "id": "maker-interstate",
+    "name": "Interstate",
+    "publisher": "Interstate Batteries",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-interstate-warranty-lookup",
+   "title": "Interstate Batteries warranty lookup",
+   "url": "https://www.interstatebatteries.com/support/warranty/warranty-lookup",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Ship Date Code Enter the code that is on your battery",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "Interstate's own lookup asks for the category, part number and code.",
+   "sha256": "2a09f1f1bf6eb99018fb56ef557c331653273c25fb3278e4f01ea928e7bafa96",
+   "source": {
+    "id": "maker-interstate",
+    "name": "Interstate",
+    "publisher": "Interstate Batteries",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-aaa-battery-life",
+   "title": "AAA: How long do car batteries last?",
+   "url": "https://www.aaa.com/autorepair/articles/how-long-do-car-batteries-last",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Once a battery reaches its third year, have it tested annually",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "AAA says three to five years, about three in hot southern areas and five or more in cooler ones.",
+   "sha256": "c67e6744f2a473bcd0b28aa2e8c305468b3d97ff90c757530ce276bc3774c280",
+   "source": {
+    "id": "aaa",
+    "name": "AAA",
+    "publisher": "American Automobile Association",
+    "primary": false,
+    "cannot_prove": "How long one battery will last.",
+    "kind": "other",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-nhtsa-23e044",
+   "title": "NHTSA recall 23E-044: East Penn Manufacturing defect report",
+   "url": "https://static.nhtsa.gov/odi/rcl/2023/RCLRPT-23E044-5134.PDF",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "assembly date code which is traceable to the building, line, day, and shift of manufacture",
+   "read": "2026-11-06",
+   "doc_date": "2023-06-09",
+   "note": "2,139 units. The NHTSA recall file read Nov 6, 2026 shows no other recall of a lead-acid starter battery as equipment since 2010.",
+   "sha256": "bcf9f05301833e8d2a5bc944b60978255085713c093de1aa8fc7eb8ab2199f7a",
+   "source": {
+    "id": "nhtsa-recalls",
+    "name": "NHTSA recalls",
+    "publisher": "National Highway Traffic Safety Administration",
+    "primary": true,
+    "cannot_prove": "Whether a battery with no filed recall is free of defects, or anything about batteries outside the US.",
+    "kind": "regulator",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-motorcraft-battery-terms",
+   "title": "Motorcraft battery terms and limitations",
+   "url": "https://www.motorcraft.com/content/dam/ford-motorcraft/en_us/motorcraft_global/products/batteries/Batteries-TermAndLimitation.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Labor to remove and replace battery in the vehicle",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "The terms say nothing about a date code, a date of manufacture or an in-service date.",
+   "sha256": "70da09634107088a3acde0069693e222a4fff0e61f7ece76cefe57465be602de",
+   "source": {
+    "id": "maker-motorcraft",
+    "name": "Motorcraft",
+    "publisher": "Ford Motor Company",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-interstate-guide-two-chars",
+   "title": "Interstate Batteries application guide 2023",
+   "url": "https://www.interstatebatteries.com/-/media/project/interstate-batteries/final-images/business-units/dealers/current-dealers/2020-app-guide/2023_ib_appguide_web.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Read date code on the case (first two characters)",
+   "read": "2026-11-06",
+   "doc_date": "2023-09-28",
+   "note": "Page 8, in the flooded battery check, with a table from A for January to L for December. The saved copy keeps pages 6, 8 and 9 of 517.",
+   "sha256": "fbead276b407cc8af237ac0b8ecf638e48403f75a0bb5a1e887fda0332a41785",
+   "source": {
+    "id": "maker-interstate",
+    "name": "Interstate",
+    "publisher": "Interstate Batteries",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-interstate-guide-storage",
+   "title": "Interstate Batteries application guide 2023: storage and voltage",
+   "url": "https://www.interstatebatteries.com/-/media/project/interstate-batteries/final-images/business-units/dealers/current-dealers/2020-app-guide/2023_ib_appguide_web.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Batteries in storage should be charged every 2 to 3 months",
+   "read": "2026-11-06",
+   "doc_date": "2023-09-28",
+   "note": "Page 6. The checks on pages 8 and 9 treat 12.60 V as 75% charged on a flooded battery and 12.64 V on an AGM, and say to recharge below that. The saved copy keeps pages 6, 8 and 9 of 517.",
+   "sha256": "fbead276b407cc8af237ac0b8ecf638e48403f75a0bb5a1e887fda0332a41785",
+   "source": {
+    "id": "maker-interstate",
+    "name": "Interstate",
+    "publisher": "Interstate Batteries",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-deka-care-storage",
+   "title": "Deka: Basic rules for battery care and maintenance: stock and storage",
+   "url": "https://www.dekabatteries.com/assets/base/0004.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Test wet batteries every 4–6 months and recharge if necessary.",
+   "read": "2026-11-06",
+   "doc_date": "2013-03-15",
+   "note": "The next line says to always test and charge if necessary before installation. The sheet also says to use oldest batteries first and to boost charge below 12.4 volts.",
+   "sha256": "cec639dfb2ffecf0f89164e50399f1aad2442ee1a4589ba61d9a634dfee6e1c7",
+   "source": {
+    "id": "maker-east-penn",
+    "name": "East Penn",
+    "publisher": "East Penn Manufacturing",
+    "primary": true,
+    "cannot_prove": "Which brands East Penn makes beyond the part in that recall.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-east-penn-ocv-table",
+   "title": "East Penn Heavy Duty AGM Guide, Technical Update 1401",
+   "url": "https://www.eastpennmanufacturing.com/wp-content/uploads/EPM-Heavy-Duty-AGM-Guide-Technical-Update-1401.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Recharge if the OCV is below 75% state of charge",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "Its table puts 75% charge at 12.40 V on a flooded battery and 12.60 V on an AGM.",
+   "sha256": "d0f7fb218514f85dfc83d873b1185e0d702fa40e901942d5335fc0dfade90225",
+   "source": {
+    "id": "maker-east-penn",
+    "name": "East Penn",
+    "publisher": "East Penn Manufacturing",
+    "primary": true,
+    "cannot_prove": "Which brands East Penn makes beyond the part in that recall.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-optima-voltage-storage",
+   "title": "OPTIMA: How often should you check battery voltage?",
+   "url": "https://www.optimabatteries.com/experience/blog/how-often-should-you-check-battery-voltage",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "When batteries are discharged below 12.4 volts and allowed to sit in that state for extended periods of time",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "The post says most flooded batteries and REDTOPs should read about 12.6 to 12.8 volts fully charged, and YELLOWTOPs about 13.0 to 13.2.",
+   "sha256": "80e965e8da8cdd2352c9472ab36b0427a12bc091d6c47634bfb2e6b9fc5cb355",
+   "source": {
+    "id": "maker-optima",
+    "name": "OPTIMA",
+    "publisher": "OPTIMA Batteries",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-trojan-storage",
+   "title": "Trojan Battery: battery maintenance",
+   "url": "https://www.trojanbattery.com/resources/battery-maintenance",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "VRLA batteries should not be stored for more than 6 months",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "The page also says to charge stored batteries fully every 3 to 6 months. These are mostly deep-cycle batteries.",
+   "sha256": "f76f7f2d3b184d69c284c797bc705e7d0b4675fef290191e54627cf9b0abcd9c",
+   "source": {
+    "id": "maker-trojan",
+    "name": "Trojan",
+    "publisher": "Trojan Battery",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-acdelco-date-code",
+   "title": "ACDelco Canada: Battery warranty",
+   "url": "https://acdelcocanada.com/parts/batteries/battery-warranty",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Example: S 040 G – is a Silver Series dated April of 2020",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "It is the Canadian site, and it says the code is used when there is no receipt. It points to a chart for older branding that we could not read as text. It says the code stands in for a receipt at the discretion of the parts supplier or repair facility, and that G is Gold and S is Silver or Advantage.",
+   "sha256": "e9b93c1e0bf9f550094e79df6639d18882fab00c7de0d283d23ba5ab14e6e5ed",
+   "source": {
+    "id": "maker-acdelco",
+    "name": "ACDelco",
+    "publisher": "ACDelco",
+    "primary": true,
+    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-acdelco-warranty-2015-no-receipt",
+   "title": "ACDelco Battery Warranty Information, revised 2-11-15: no bill of sale",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/ACDelco-battery-warranty-information.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "the beginning date for this warranty will be based on the date code as it appears on the battery label",
+   "read": "2026-11-07",
+   "doc_date": "2015-02-11",
+   "note": "Applies when the dated bill of sale isn't available. Read on Delcoline's copy.",
+   "sha256": "6e02386e576420f107866964ab45cfed77c96b58afdb0b35004638602b068f29",
+   "source": {
+    "id": "maker-acdelco-warranty-sheet",
+    "name": "ACDelco warranty sheet",
+    "publisher": "ACDelco",
+    "primary": true,
+    "cannot_prove": "Whether today's labels follow the same format, or which plant built one battery. We read a copy on a distributor's site.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-ford-9400-age",
+   "title": "Ford distributor manual, Section 9400, page 7: warranty age",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Use the battery shipping date code to determine the age of the battery.",
+   "read": "2026-11-07",
+   "doc_date": "2005-05-01",
+   "note": "From the section on lost proof-of-purchase receipts. The customer must have the warranty sticker, its serial number must match the one on the battery cover, and any allowance goes toward a new Motorcraft battery. A warranty instruction to distributors. Page 8, effective October 2010, calls a battery new defective if it was never placed into service and is under six months old by that code. That is a warranty class, not a shelf limit.",
+   "sha256": "267e70ec3dedaa9eb1e0e9abd9593ce991d725a9801a9cd4a35ef8cd6a55f7b0",
+   "source": {
+    "id": "maker-ford-distributor-manual",
+    "name": "Ford distributor manual",
+    "publisher": "Ford Motor Company",
+    "primary": true,
+    "cannot_prove": "How a label printed today looks, or how old one battery is. The pages are dated 2002 to 2010, and we read a copy on a distributor's site.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-ford-9400-voltage",
+   "title": "Ford distributor manual, Section 9400, page 4: stock checks",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "Batteries found to have voltage readings below 12.40 volts (O.C.V.) should be recharged.",
+   "read": "2026-11-07",
+   "doc_date": "2005-05-01",
+   "note": "The same page says voltage should be checked at least every 90 days and that older stock should be sold first.",
+   "sha256": "267e70ec3dedaa9eb1e0e9abd9593ce991d725a9801a9cd4a35ef8cd6a55f7b0",
+   "source": {
+    "id": "maker-ford-distributor-manual",
+    "name": "Ford distributor manual",
+    "publisher": "Ford Motor Company",
+    "primary": true,
+    "cannot_prove": "How a label printed today looks, or how old one battery is. The pages are dated 2002 to 2010, and we read a copy on a distributor's site.",
+    "kind": "maker",
+    "by_hand": false
+   }
+  },
+  {
+   "id": "ev-itstillruns-motorcraft",
+   "title": "It Still Runs: How to check the date of a Motorcraft battery",
+   "url": "https://itstillruns.com/check-date-motorcraft-battery-6321400.html",
+   "archive_url": null,
+   "gone_on": null,
+   "quote": "On a Motorcraft battery, this is located on the side of the battery case",
+   "read": "2026-11-06",
+   "doc_date": null,
+   "note": "A how-to article by Anthony Smith, updated June 29, 2023. It gives A to L and a year digit, with C8 as March 2008, and cites no source. Used only because we found no rule from Ford or Motorcraft.",
+   "sha256": "17188b153508741485220bcc98f0f8395a8b9414ad17ecda49092f98b3622706",
+   "source": {
+    "id": "it-still-runs",
+    "name": "It Still Runs",
+    "publisher": "It Still Runs",
+    "primary": false,
+    "cannot_prove": "That a maker uses the rule. The article cites no sources.",
+    "kind": "other",
+    "by_hand": false
+   }
+  }
+ ],
+ "count": 21,
+ "rows": [
+  {
+   "brand": "Interstate",
+   "standing": "From the maker",
+   "where_to_look": "Stamped into the cover as part of a longer code, or on a top or side label",
+   "format": "Letter, then digit",
+   "example": "C3",
+   "example_means": "March 2023",
+   "date_marks": "Shipped",
+   "source": "Interstate",
+   "source_url": "https://www.interstatebatteries.com/en-lx/support/faqs",
+   "source_date": "",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "Costco (Interstate)",
+   "standing": "From the maker",
+   "where_to_look": "Stamped in the cover, or on a label",
+   "format": "Letter, then digit",
+   "example": "B1",
+   "example_means": "February 2021",
+   "date_marks": "Shipped",
+   "source": "Costco.com listings",
+   "source_url": "https://www.costco.com/automotive-batteries.html",
+   "source_date": "",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "ACDelco",
+   "standing": "From the maker",
+   "where_to_look": "On the top label",
+   "format": "P, S or G, two-digit month, year digit, plant",
+   "example": "P094N",
+   "example_means": "September 2014",
+   "date_marks": "Made",
+   "source": "ACDelco warranty sheet",
+   "source_url": "https://delcoline.com/wp-content/uploads/2016/08/ACDelco-battery-warranty-information.pdf",
+   "source_date": "2015-02-11",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "OPTIMA",
+   "standing": "From the maker",
+   "where_to_look": "First four digits of the serial on the white side label",
+   "format": "Year digit, then day of the year",
+   "example": "6086",
+   "example_means": "March 27, 2026",
+   "date_marks": "Made",
+   "source": "OPTIMA",
+   "source_url": "https://www.optimabatteries.com/experience/blog/where-is-the-date-code-on-optima-batteries",
+   "source_date": "2026-03-27",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "ODYSSEY",
+   "standing": "From the maker",
+   "where_to_look": "Label on the top or back",
+   "format": "Top: 12 digits ending month and year. Back: letter, then digit",
+   "example": "K0",
+   "example_means": "November 2020",
+   "date_marks": "Made",
+   "source": "ODYSSEY",
+   "source_url": "https://www.odysseybattery.com/wp-content/uploads/Battery-Date-Codes-and-Serial-Numbers-041621.pdf",
+   "source_date": "2021-04-16",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "NorthStar",
+   "standing": "From the maker",
+   "where_to_look": "Label on the back",
+   "format": "Letter, then digit. E and I aren’t used",
+   "example": "M0",
+   "example_means": "November 2020",
+   "date_marks": "Made",
+   "source": "ODYSSEY",
+   "source_url": "https://www.odysseybattery.com/wp-content/uploads/Battery-Date-Codes-and-Serial-Numbers-041621.pdf",
+   "source_date": "2021-04-16",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "Trojan",
+   "standing": "From the maker",
+   "where_to_look": "On or near the negative terminal",
+   "format": "Letter, then digit",
+   "example": "B1",
+   "example_means": "February 2021",
+   "date_marks": "Made",
+   "source": "Trojan",
+   "source_url": "https://www.trojanbattery.com/resources/technical-support-and-faqs/faqs",
+   "source_date": "",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "U.S. Battery",
+   "standing": "From the maker",
+   "where_to_look": "Flooded: positive terminal. AGM: etched into the cover",
+   "format": "Flooded: letter, digit, plant letter. AGM: DDMMYY or YYMMDD",
+   "example": "150914",
+   "example_means": "September 15, 2014",
+   "date_marks": "Made",
+   "source": "U.S. Battery",
+   "source_url": "https://www.usbattery.com/wp-content/uploads/2023/03/Reading_USB_DateCodes_323.pdf",
+   "source_date": "2023-03-23",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "Deka (East Penn)",
+   "standing": "Part maker, part third-party",
+   "where_to_look": "Ship date sticker on the side, or a code on the battery",
+   "format": "Letter with no I, then digit. Sticker: month/year. Two-digit years are third-party only",
+   "example": "L1",
+   "example_means": "November 2011",
+   "date_marks": "Shipped",
+   "source": "East Penn",
+   "source_url": "https://www.dekabatteries.com/assets/base/0004.pdf",
+   "source_date": "2013-03-15",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "Motorcraft",
+   "standing": "From the maker",
+   "where_to_look": "Round sticker on the side of the battery",
+   "format": "Month letter and year digit (C-2), or month number and year digit (3-2)",
+   "example": "C-2",
+   "example_means": "March of a year ending in 2",
+   "date_marks": "Shipped",
+   "source": "Ford distributor manual",
+   "source_url": "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf",
+   "source_date": "2005-05-01",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "Duralast",
+   "standing": "Third-party only",
+   "where_to_look": "A sticker, says one seller’s guide",
+   "format": "MM/YY or MMYY, or letter and digit",
+   "example": "0419",
+   "example_means": "April 2019",
+   "date_marks": "Not stated",
+   "source": "Batteries In A Flash",
+   "source_url": "https://www.batteriesinaflash.com/how-to-read-battery-manufacturer-date-codes",
+   "source_date": "",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "EverStart",
+   "standing": "Third-party only",
+   "where_to_look": "Stamp, or a store sticker, says one seller’s guide",
+   "format": "Letter and digit, or MM/YY",
+   "example": "C3",
+   "example_means": "March 2023",
+   "date_marks": "Not stated",
+   "source": "Batteries In A Flash",
+   "source_url": "https://www.batteriesinaflash.com/how-to-read-battery-manufacturer-date-codes",
+   "source_date": "",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "Duracell",
+   "standing": "Third-party only",
+   "where_to_look": "Not stated",
+   "format": "Four digits, month and year, says one seller’s guide",
+   "example": "0326",
+   "example_means": "March 2026",
+   "date_marks": "Not stated",
+   "source": "Batteries In A Flash",
+   "source_url": "https://www.batteriesinaflash.com/how-to-read-battery-manufacturer-date-codes",
+   "source_date": "",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "Any other brand",
+   "standing": "Third-party only",
+   "where_to_look": "Usually the top of the case",
+   "format": "Letter and digit in either order, says a 2009 retail sheet",
+   "example": "7B",
+   "example_means": "February 2017",
+   "date_marks": "Not stated",
+   "source": "Tires Plus",
+   "source_url": "https://www.tiresplus.com/content/dam/bsro-sites/tiresplus/pdfs/reading-battery-date-codes.pdf",
+   "source_date": "2009-02-25",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "Autocraft",
+   "standing": "No rule we trust",
+   "where_to_look": "Not found",
+   "format": "We found no rule from any source we’d stand behind",
+   "example": "",
+   "example_means": "",
+   "date_marks": "",
+   "source": "",
+   "source_url": "",
+   "source_date": "",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "MotoMaster",
+   "standing": "No rule we trust",
+   "where_to_look": "Not found",
+   "format": "We found no rule from any source we’d stand behind",
+   "example": "",
+   "example_means": "",
+   "date_marks": "",
+   "source": "",
+   "source_url": "",
+   "source_date": "",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "Super Start",
+   "standing": "No rule we trust",
+   "where_to_look": "Not found",
+   "format": "We found no rule from any source we’d stand behind",
+   "example": "",
+   "example_means": "",
+   "date_marks": "",
+   "source": "",
+   "source_url": "",
+   "source_date": "",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "NAPA",
+   "standing": "No rule we trust",
+   "where_to_look": "Not found",
+   "format": "We found no rule from any source we’d stand behind",
+   "example": "",
+   "example_means": "",
+   "date_marks": "",
+   "source": "",
+   "source_url": "",
+   "source_date": "",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "Varta",
+   "standing": "No rule we trust",
+   "where_to_look": "Not found",
+   "format": "Guides disagree, so we don’t decode it",
+   "example": "",
+   "example_means": "",
+   "date_marks": "",
+   "source": "",
+   "source_url": "",
+   "source_date": "",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "DieHard",
+   "standing": "No rule we trust",
+   "where_to_look": "Not found",
+   "format": "We found no rule from any source we’d stand behind",
+   "example": "",
+   "example_means": "",
+   "date_marks": "",
+   "source": "",
+   "source_url": "",
+   "source_date": "",
+   "read_on": "2026-11-07"
+  },
+  {
+   "brand": "Exide",
+   "standing": "No rule we trust",
+   "where_to_look": "Not found",
+   "format": "Guides disagree, so we don’t decode it",
+   "example": "",
+   "example_means": "",
+   "date_marks": "",
+   "source": "Batteries In A Flash",
+   "source_url": "https://www.batteriesinaflash.com/how-to-read-battery-manufacturer-date-codes",
+   "source_date": "",
+   "read_on": "2026-11-07"
+  }
+ ],
+ "checks": 60
+}

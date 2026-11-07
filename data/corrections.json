@@ -1,13 +1,155 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-03",
+ "generated": "2026-11-07",
  "started": "2026-11-02",
  "count": {
-  "correction": 2,
-  "update": 2,
-  "clarification": 0
+  "correction": 10,
+  "update": 3,
+  "clarification": 2
  },
  "items": [
+  {
+   "id": "c-2026-11-07-motorcraft-date-code",
+   "on": "2026-11-07",
+   "kind": "correction",
+   "page": "/battery-date-code/",
+   "what": "Motorcraft's date code, on the battery date code decoder",
+   "was": "We said we found no rule from Ford or Motorcraft and showed one how-to article's rule as Reported.",
+   "now": "Ford's distributor manual, on a page effective May 2005, shows a shipping date sticker on the side of the battery reading C-2 and 3-2. The decoder reads both forms as a Maker's rule, with the record's date.",
+   "why": "We missed the manual on the first read; it sits in a warranty PDF, not a consumer page.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-07-acdelco-p-series",
+   "on": "2026-11-07",
+   "kind": "correction",
+   "page": "/battery-date-code/",
+   "what": "ACDelco's P series, on the battery date code decoder",
+   "was": "We showed the P series as Reported, from a seller's guide.",
+   "now": "ACDelco's warranty sheet, revised February 2015, says the first character is P or S and that P 094N means September 2014. P now reads as a Maker's rule, with the record's date.",
+   "why": "We found ACDelco's own sheet on a later read.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-06-deka-date-code",
+   "on": "2026-11-06",
+   "kind": "correction",
+   "page": "/battery-date-code/",
+   "what": "Deka's letter date code, on the battery date code decoder",
+   "was": "Reported: letter codes for Deka came only from a seller's guide, and the 3/23 ship sticker was the one format we could confirm.",
+   "now": "Maker's rule: Deka's care sheet prints a Shipping Date Code, a month letter that skips I, then a year digit, with L1 as November 2011. The two-digit form such as D24 stays Reported.",
+   "why": "We found Deka's own sheet the day the page went live, while reading its storage guidance.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-05-store-oil-some-or-all",
+   "on": "2026-11-05",
+   "kind": "correction",
+   "page": "/store-brand-motor-oil/",
+   "what": "Opening line of the store-brand motor oil answer",
+   "was": "For eight others, including Kirkland, Amazon Basics, Meijer, Do It Best and Signature Select, most or all of the oils are licensed to one company: Highline Warren LLC.",
+   "now": "For eight others, including Kirkland, Amazon Basics, Meijer, Do It Best and Signature Select, some or all of the oils are licensed to one company: Highline Warren LLC.",
+   "why": "\"Most or all\" was too strong for every brand: one of the five Members Mark listings is on Highline Warren's license. The company, the license and the counts were right; the summary wording was not.",
+   "flagged_by": "Our own re-check",
+   "evidence": [
+    {
+     "title": "API engine oil license 0163: every oil listed for Highline Warren LLC (564 listings)",
+     "url": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10297"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-05-hub-reported-count",
+   "on": "2026-11-05",
+   "kind": "correction",
+   "page": "/kirkland-signature/",
+   "what": "The stamps line under How to read this list",
+   "was": "Every answer here but three is Documented. The exceptions are the original 2016 golf ball and the 2020 wedges and 2023 irons, marked Reported.",
+   "now": "Five answers are Reported: the same three, plus the 48-count AA and AAA batteries. The count and names now come from the data, in a chart.",
+   "why": "The two battery answers are stamped Reported in our records, and the typed line had not been updated for them. The stamps themselves did not change.",
+   "flagged_by": "Our own re-check",
+   "evidence": [
+    {
+     "title": "API engine oil license 0163: every oil listed for Highline Warren LLC (564 listings)",
+     "url": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10297"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-05-how-we-know-proof",
+   "on": "2026-11-05",
+   "kind": "clarification",
+   "page": "/how-we-know/",
+   "what": "What the proof is, on How We Know",
+   "was": "The proof is always a public record you can open yourself. Every answer rests on records anyone can open.",
+   "now": "The proof is always something you can open yourself, and the stamp says how strong it is. A press report on its own can only earn a Reported stamp.",
+   "why": "Some answers rest on press reports, stamped Reported, so not all proof is a public record.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-05-home-records-first",
+   "on": "2026-11-05",
+   "kind": "clarification",
+   "page": "/",
+   "what": "Trust note on the homepage",
+   "was": "Public records only. No rumors, no guesses, no photos as proof.",
+   "now": "Records first. A press report only earns a Reported stamp and is never shown as fact.",
+   "why": "The old wording didn't match the site: we use some press reports, stamped Reported, and we publish a page testing rumors.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-05-home-primary-sources",
+   "on": "2026-11-05",
+   "kind": "correction",
+   "page": "/",
+   "what": "Sources figure on the homepage",
+   "was": "82 public sources, all primary records",
+   "now": "82 sources, 64 of them primary records. Both figures now come from the sources file.",
+   "why": "Not all our sources are primary records. Some are press reports or other secondary sources.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-05-home-kirkland-count",
+   "on": "2026-11-05",
+   "kind": "correction",
+   "page": "/",
+   "what": "Kirkland product count on the homepage",
+   "was": "35 Kirkland products",
+   "now": "76 Kirkland products. The count now comes from the Kirkland data file.",
+   "why": "The number was typed in by hand and fell behind as answers were added.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-05-dailymed-publisher",
+   "on": "2026-11-05",
+   "kind": "correction",
+   "page": "/kirkland-signature/medicine/",
+   "what": "Opening line of the Kirkland medicine answer",
+   "was": "We read 47 Costco labels on FDA’s DailyMed.",
+   "now": "We read 47 Costco labels on DailyMed, the US government’s library of drug labels.",
+   "why": "DailyMed is run by the National Library of Medicine, not FDA. The labels, the companies and the counts were right; the name of the publisher was not.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-05-approval-wording",
+   "on": "2026-11-05",
+   "kind": "update",
+   "page": "/how-we-know/",
+   "what": "Who approves corrections, on How We Know and About",
+   "was": "Jeremiah approves every Confirmed stamp, anything that alleges a safety or legal problem, and every correction.",
+   "now": "Same, except corrections: only those that change a maker, a stamp or a named company need approval. Typo, count and broken-link fixes go live without waiting and are logged.",
+   "why": "The page promised more than our practice since 5 November, when smaller fixes stopped waiting for approval. The page now says what we do.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
   {
    "id": "c-2026-11-03-dog-food-2025-register",
    "on": "2026-11-03",

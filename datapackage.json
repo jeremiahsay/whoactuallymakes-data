@@ -4,7 +4,7 @@
  "title": "Who Actually Makes open data",
  "description": "Who makes store-brand products, from public records: Kirkland Signature makers, companies behind store brands, NHTSA tire plant codes, tire age guidance, and the evidence behind each answer.",
  "homepage": "https://whoactuallymakes.com/data/",
- "version": "2026-11-04",
+ "version": "2026-11-07",
  "licenses": [
   {
    "name": "CC-BY-4.0",
@@ -59,8 +59,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 29129,
-   "hash": "sha256:177dcfa0c2aa866d40db92761c62cf82a552c6ec0225f7133c72268cbbb1e216",
+   "bytes": 57109,
+   "hash": "sha256:2bb1041cfdda20a387195bbc4aa246d6e7da6fd65e052ae3331d4a6b1c3045e5",
    "schema": {
     "fields": [
      {
@@ -172,8 +172,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 1921,
-   "hash": "sha256:fe1807eab0ecb03a3529269d37b73c0d1d19c850ed734ec68a5b1ff88bb430db",
+   "bytes": 2744,
+   "hash": "sha256:5a63633bd8e0330372843b46622ff841fafbcf9224bc643acb9c72229717ec4a",
    "schema": {
     "fields": [
      {
@@ -278,8 +278,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 41232,
-   "hash": "sha256:7b0ad9fc8b91058aee7a8bcd8c4f2e1cb63d3770be28470243e27f883739d8cb",
+   "bytes": 54202,
+   "hash": "sha256:f934cd8ce7870970f71c65cf4cc633883cecdd7430533af68f4304c2ca3d2a24",
    "schema": {
     "fields": [
      {
@@ -609,8 +609,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 110043,
-   "hash": "sha256:620a1a548eb836ffb480a65f81e7057da134273ded33df1412bbe2e7a9e843e6",
+   "bytes": 238366,
+   "hash": "sha256:6b187811787001be58ac865c234b4530df354effcaaf8b9b1f199c3f2d0aaec1",
    "schema": {
     "fields": [
      {
@@ -687,6 +687,10 @@
      "path": "http://www.usga.org/ConformingGolfBall/gball_list.pdf"
     },
     {
+     "title": "https://acdelcocanada.com/parts/batteries/battery-warranty",
+     "path": "https://acdelcocanada.com/parts/batteries/battery-warranty"
+    },
+    {
      "title": "https://api.fda.gov/drug/enforcement.json?search=recall_number%3A%22D-0115-2025%22",
      "path": "https://api.fda.gov/drug/enforcement.json?search=recall_number%3A%22D-0115-2025%22"
     },
@@ -739,144 +743,140 @@
      "path": "https://assets.sia.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf"
     },
     {
+     "title": "https://cases.justia.com/federal/district-courts/california/candce/3:2018cv02871/326613/35/0.pdf",
+     "path": "https://cases.justia.com/federal/district-courts/california/candce/3:2018cv02871/326613/35/0.pdf"
+    },
+    {
+     "title": "https://centralmilling.com/",
+     "path": "https://centralmilling.com/"
+    },
+    {
+     "title": "https://cn.fsc.org/sites/default/files/2026-02/FSC-STD-50-001%20V3-0%20EN%20Use%20of%20the%20FSC%28R%29%20Trademarks%20by%20Certificate%20Holders.pdf",
+     "path": "https://cn.fsc.org/sites/default/files/2026-02/FSC-STD-50-001%20V3-0%20EN%20Use%20of%20the%20FSC%28R%29%20Trademarks%20by%20Certificate%20Holders.pdf"
+    },
+    {
+     "title": "https://community.qvc.com/t5/Kitchen/Costco-StretchTite-plastic-wrap-gone/m-p/6696311",
+     "path": "https://community.qvc.com/t5/Kitchen/Costco-StretchTite-plastic-wrap-gone/m-p/6696311"
+    },
+    {
      "title": "https://contentdelivery.ext.gm.com/content/dam/cope/en_us/public/pdf_assets/active/owners_manuals_browse/2025/chevrolet/silverado_1500/25_CHEV_Silverado_1500_OM_en_US_U_87855274B_2024OCT31_2P.pdf",
      "path": "https://contentdelivery.ext.gm.com/content/dam/cope/en_us/public/pdf_assets/active/owners_manuals_browse/2025/chevrolet/silverado_1500/25_CHEV_Silverado_1500_OM_en_US_U_87855274B_2024OCT31_2P.pdf"
+    },
+    {
+     "title": "https://costco.co.uk/mediapermalink/1181937_SafetyInformation",
+     "path": "https://costco.co.uk/mediapermalink/1181937_SafetyInformation"
     },
     {
      "title": "https://costco.interstatebatteries.com/",
      "path": "https://costco.interstatebatteries.com/"
     },
     {
+     "title": "https://customerservice.costco.com/app/answers/answer_view/a_id/628/loc/en_US",
+     "path": "https://customerservice.costco.com/app/answers/answer_view/a_id/628/loc/en_US"
+    },
+    {
      "title": "https://customerservice.costco.com/app/answers/answer_view/a_id/9231/loc/en_US",
      "path": "https://customerservice.costco.com/app/answers/answer_view/a_id/9231/loc/en_US"
     },
     {
-     "title": "https://diamondpetcompany.com/our-history",
-     "path": "https://diamondpetcompany.com/our-history"
+     "title": "https://customerservice.costco.com/app/answers/detail/a_id/1191",
+     "path": "https://customerservice.costco.com/app/answers/detail/a_id/1191"
     },
     {
-     "title": "https://duracell.com/built-in-the-usa",
-     "path": "https://duracell.com/built-in-the-usa"
+     "title": "https://customerservice.costco.com/app/answers/list/kw/price%20adjustment",
+     "path": "https://customerservice.costco.com/app/answers/list/kw/price%20adjustment"
     },
     {
-     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=7-Eleven",
-     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=7-Eleven"
+     "title": "https://dailydot.com/costco-kirkland-detergent",
+     "path": "https://dailydot.com/costco-kirkland-detergent"
     },
     {
-     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Carquest",
-     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Carquest"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=010ca7df-1e79-44ea-9171-b9d239f141e1",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=010ca7df-1e79-44ea-9171-b9d239f141e1"
     },
     {
-     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Craftsman",
-     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Craftsman"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0888a974-a8ba-4cb3-996f-c8abfcb90a6f",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0888a974-a8ba-4cb3-996f-c8abfcb90a6f"
     },
     {
-     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Do%20It%20Best",
-     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Do%20It%20Best"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a5b2121-928f-8f49-e063-6394a90a8aaf",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0a5b2121-928f-8f49-e063-6394a90a8aaf"
     },
     {
-     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Meijer",
-     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Meijer"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0abfa2f8-38d0-4bfe-91ff-aa4abde66525",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=0abfa2f8-38d0-4bfe-91ff-aa4abde66525"
     },
     {
-     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Member",
-     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Member"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=141b6693-6d6c-45c6-9b82-ee1afcfca12a",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=141b6693-6d6c-45c6-9b82-ee1afcfca12a"
     },
     {
-     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=NAPA",
-     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=NAPA"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534720b-f8f8-4db5-99e0-cfa49acf9299",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1534720b-f8f8-4db5-99e0-cfa49acf9299"
     },
     {
-     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Signature%20Select",
-     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Signature%20Select"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17f17eb6-ebc3-4a71-9f1b-41e2b5dcf6c1",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=17f17eb6-ebc3-4a71-9f1b-41e2b5dcf6c1"
     },
     {
-     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=SuperTech",
-     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=SuperTech"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1bea92e8-1b94-77b0-e063-6394a90a8212",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=1bea92e8-1b94-77b0-e063-6394a90a8212"
     },
     {
-     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Traveller",
-     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Traveller"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=205c9c1e-b422-4e86-a4b0-714b608adc19",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=205c9c1e-b422-4e86-a4b0-714b608adc19"
     },
     {
-     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Valucraft",
-     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=Valucraft"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2074d52e-8c0a-4e69-bfb1-864ffc07e25f",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2074d52e-8c0a-4e69-bfb1-864ffc07e25f"
     },
     {
-     "title": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=amazon",
-     "path": "https://engineoil.api.org/Directory/EolcsProductResults?accountId=-1&brandName=amazon"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fee0f32-0bc7-4d98-b5d4-5a7dad1c2a2c",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2fee0f32-0bc7-4d98-b5d4-5a7dad1c2a2c"
     },
     {
-     "title": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10110",
-     "path": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10110"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=326aabe6-c4ac-4bca-949f-38015dcbaf4e",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=326aabe6-c4ac-4bca-949f-38015dcbaf4e"
     },
     {
-     "title": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10295",
-     "path": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10295"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33098a72-9146-4547-9d0b-ff28c8c80030",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=33098a72-9146-4547-9d0b-ff28c8c80030"
     },
     {
-     "title": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10297",
-     "path": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10297"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3745aa18-a711-43ed-9bc4-1f087b3c53c0",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=3745aa18-a711-43ed-9bc4-1f087b3c53c0"
     },
     {
-     "title": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10364",
-     "path": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10364"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=481341c5-db1f-43fb-aed7-f40495a4eab8",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=481341c5-db1f-43fb-aed7-f40495a4eab8"
     },
     {
-     "title": "https://gdx-assets.costco.com/adobe/assets/urn:aaid:aem:cfecb199-0072-4462-a131-6ab29cce3716/original/as/Costco-Updated-Battery-Warranty_1.pdf",
-     "path": "https://gdx-assets.costco.com/adobe/assets/urn:aaid:aem:cfecb199-0072-4462-a131-6ab29cce3716/original/as/Costco-Updated-Battery-Warranty_1.pdf"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48a44d0c-3502-430b-8b75-188a49d14da2",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=48a44d0c-3502-430b-8b75-188a49d14da2"
     },
     {
-     "title": "https://golfwrx.com/623786/golfwrx-spotted-costco-kirkland-signature-wedges-on-usga-conforming-list/",
-     "path": "https://golfwrx.com/623786/golfwrx-spotted-costco-kirkland-signature-wedges-on-usga-conforming-list/"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4a87d5d5-c98b-4dc5-81be-50183342b047",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4a87d5d5-c98b-4dc5-81be-50183342b047"
     },
     {
-     "title": "https://golfwrx.com/702096/golfwrx-spotted-costco-kirkland-signature-irons-on-usga-conforming-list/",
-     "path": "https://golfwrx.com/702096/golfwrx-spotted-costco-kirkland-signature-irons-on-usga-conforming-list/"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b8ad98e-de76-4f49-3b89-01e9dd5cde16",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b8ad98e-de76-4f49-3b89-01e9dd5cde16"
     },
     {
-     "title": "https://lars.ndda.nd.gov/public/openfile?getDocId=111809",
-     "path": "https://lars.ndda.nd.gov/public/openfile?getDocId=111809"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5180abbc-c6c4-4b82-b6e7-4504e3bcff0f",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5180abbc-c6c4-4b82-b6e7-4504e3bcff0f"
     },
     {
-     "title": "https://lars.ndda.nd.gov/public/openfile?getDocId=264965",
-     "path": "https://lars.ndda.nd.gov/public/openfile?getDocId=264965"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=651d14d1-c5de-4cb9-9484-b05986e641ac",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=651d14d1-c5de-4cb9-9484-b05986e641ac"
     },
     {
-     "title": "https://lars.ndda.nd.gov/public/openfile?getDocId=93584",
-     "path": "https://lars.ndda.nd.gov/public/openfile?getDocId=93584"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65d8d650-9afc-44f7-9409-a3aa3014d4ab",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65d8d650-9afc-44f7-9409-a3aa3014d4ab"
     },
     {
-     "title": "https://lars.ndda.nd.gov/public/productDetail/40627",
-     "path": "https://lars.ndda.nd.gov/public/productDetail/40627"
-    },
-    {
-     "title": "https://lars.ndda.nd.gov/public/productDetail/40712",
-     "path": "https://lars.ndda.nd.gov/public/productDetail/40712"
-    },
-    {
-     "title": "https://lars.ndda.nd.gov/public/productDetail/41477",
-     "path": "https://lars.ndda.nd.gov/public/productDetail/41477"
-    },
-    {
-     "title": "https://lars.ndda.nd.gov/public/productDetail/71197",
-     "path": "https://lars.ndda.nd.gov/public/productDetail/71197"
-    },
-    {
-     "title": "https://lars.ndda.nd.gov/public/productDetail/80975",
-     "path": "https://lars.ndda.nd.gov/public/productDetail/80975"
-    },
-    {
-     "title": "https://lars.ndda.nd.gov/public/productDetail/8454",
-     "path": "https://lars.ndda.nd.gov/public/productDetail/8454"
-    },
-    {
-     "title": "https://lars.ndda.nd.gov/public/productDetail/8457",
-     "path": "https://lars.ndda.nd.gov/public/productDetail/8457"
-    },
-    {
-     "title": "https://movingon.blog.gov.uk/2020/12/09/ban-on-tyres-over-10-years-old-for-heavy-vehicles-and-some-minibuses/",
-     "path": "https://movingon.blog.gov.uk/2020/12/09/ban-on-tyres-over-10-years-old-for-heavy-vehicles-and-some-minibuses/"
+     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=74a728e1-9ca1-4219-9427-b503ab0480b4",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=74a728e1-9ca1-4219-9427-b503ab0480b4"
     }
    ]
   },
@@ -888,8 +888,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 29119,
-   "hash": "sha256:a83e607339c294041a5d4124a9470304dfe5684faf5571a3ca614ad12379dab4",
+   "bytes": 48420,
+   "hash": "sha256:4b4c8e4a0d2c7727e544eeed89cdd74d65f0d0013a236083c2b8b33adb6dc8ec",
    "schema": {
     "fields": [
      {
@@ -963,8 +963,24 @@
    },
    "sources": [
     {
+     "title": "https://acdelcocanada.com/",
+     "path": "https://acdelcocanada.com/"
+    },
+    {
+     "title": "https://centralmilling.com/",
+     "path": "https://centralmilling.com/"
+    },
+    {
+     "title": "https://community.qvc.com/",
+     "path": "https://community.qvc.com/"
+    },
+    {
      "title": "https://costco.interstatebatteries.com/",
      "path": "https://costco.interstatebatteries.com/"
+    },
+    {
+     "title": "https://dailymed.nlm.nih.gov/dailymed/",
+     "path": "https://dailymed.nlm.nih.gov/dailymed/"
     },
     {
      "title": "https://diamondpetcompany.com/",
@@ -979,6 +995,30 @@
      "path": "https://engineoil.api.org/Directory/EolcsSearch"
     },
     {
+     "title": "https://forests.org/",
+     "path": "https://forests.org/"
+    },
+    {
+     "title": "https://fortune.com/",
+     "path": "https://fortune.com/"
+    },
+    {
+     "title": "https://fsc.org/",
+     "path": "https://fsc.org/"
+    },
+    {
+     "title": "https://gov.georgia.gov/",
+     "path": "https://gov.georgia.gov/"
+    },
+    {
+     "title": "https://hip2save.com/",
+     "path": "https://hip2save.com/"
+    },
+    {
+     "title": "https://itstillruns.com/",
+     "path": "https://itstillruns.com/"
+    },
+    {
      "title": "https://lars.ndda.nd.gov/public/productsearch/3",
      "path": "https://lars.ndda.nd.gov/public/productsearch/3"
     },
@@ -989,6 +1029,18 @@
     {
      "title": "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
      "path": "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/"
+    },
+    {
+     "title": "https://newmodernmom.com/",
+     "path": "https://newmodernmom.com/"
+    },
+    {
+     "title": "https://novolex.com/",
+     "path": "https://novolex.com/"
+    },
+    {
+     "title": "https://open.fda.gov/apis/drug/drugsfda/",
+     "path": "https://open.fda.gov/apis/drug/drugsfda/"
     },
     {
      "title": "https://open.fda.gov/apis/food/enforcement/",
@@ -1003,8 +1055,24 @@
      "path": "https://ownersmanual.kia.com/"
     },
     {
+     "title": "https://search.fsc.org/",
+     "path": "https://search.fsc.org/"
+    },
+    {
+     "title": "https://shopsavvy.com/",
+     "path": "https://shopsavvy.com/"
+    },
+    {
+     "title": "https://slickdeals.net/",
+     "path": "https://slickdeals.net/"
+    },
+    {
      "title": "https://thegolfnewsnet.com/",
      "path": "https://thegolfnewsnet.com/"
+    },
+    {
+     "title": "https://thekrazycouponlady.com/",
+     "path": "https://thekrazycouponlady.com/"
     },
     {
      "title": "https://ttbonline.gov/colasonline/publicSearchColasBasic.do",
@@ -1025,6 +1093,30 @@
     {
      "title": "https://web.archive.org/web/*/usga.org/ConformingGolfClub/ConformingClubList_M.pdf",
      "path": "https://web.archive.org/web/*/usga.org/ConformingGolfClub/ConformingClubList_M.pdf"
+    },
+    {
+     "title": "https://whoreallymakes.com/",
+     "path": "https://whoreallymakes.com/"
+    },
+    {
+     "title": "https://www.aaa.com/",
+     "path": "https://www.aaa.com/"
+    },
+    {
+     "title": "https://www.allblogthings.com/",
+     "path": "https://www.allblogthings.com/"
+    },
+    {
+     "title": "https://www.babygearlab.com/",
+     "path": "https://www.babygearlab.com/"
+    },
+    {
+     "title": "https://www.batteriesinaflash.com/",
+     "path": "https://www.batteriesinaflash.com/"
+    },
+    {
+     "title": "https://www.bloomberg.com/",
+     "path": "https://www.bloomberg.com/"
     },
     {
      "title": "https://www.bridgestoneamericas.com/en/company/safety/choosing-tires/replacement-guidance",
@@ -1055,112 +1147,20 @@
      "path": "https://www.courtlistener.com/recap/"
     },
     {
+     "title": "https://www.dealmoon.com/",
+     "path": "https://www.dealmoon.com/"
+    },
+    {
+     "title": "https://www.eastpennmanufacturing.com/",
+     "path": "https://www.eastpennmanufacturing.com/"
+    },
+    {
      "title": "https://www.ecfr.gov/",
      "path": "https://www.ecfr.gov/"
     },
     {
      "title": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts",
      "path": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts"
-    },
-    {
-     "title": "https://www.flsd.uscourts.gov/",
-     "path": "https://www.flsd.uscourts.gov/"
-    },
-    {
-     "title": "https://www.ford.com/support/how-tos/tires-and-wheels/tire-replacement-and-maintenance/tire-replacement/",
-     "path": "https://www.ford.com/support/how-tos/tires-and-wheels/tire-replacement-and-maintenance/tire-replacement/"
-    },
-    {
-     "title": "https://www.fsis.usda.gov/inspection/establishments/meat-poultry-and-egg-product-inspection-directory",
-     "path": "https://www.fsis.usda.gov/inspection/establishments/meat-poultry-and-egg-product-inspection-directory"
-    },
-    {
-     "title": "https://www.golfmonthly.com/",
-     "path": "https://www.golfmonthly.com/"
-    },
-    {
-     "title": "https://www.golfwrx.com/",
-     "path": "https://www.golfwrx.com/"
-    },
-    {
-     "title": "https://www.gov.uk/",
-     "path": "https://www.gov.uk/"
-    },
-    {
-     "title": "https://www.govinfo.gov/app/collection/fr",
-     "path": "https://www.govinfo.gov/app/collection/fr"
-    },
-    {
-     "title": "https://www.hankooktire.com/content/dam/hankooktire/local/pdf/HK_TECH_BULLETIN-Tire_Replacement_Recommendations-Final.pdf",
-     "path": "https://www.hankooktire.com/content/dam/hankooktire/local/pdf/HK_TECH_BULLETIN-Tire_Replacement_Recommendations-Final.pdf"
-    },
-    {
-     "title": "https://www.highlinewarren.com/",
-     "path": "https://www.highlinewarren.com/"
-    },
-    {
-     "title": "https://www.lnkintl.com/",
-     "path": "https://www.lnkintl.com/"
-    },
-    {
-     "title": "https://www.mazdausa.com/static/manuals/2025/cx-5/contents/07031403.html",
-     "path": "https://www.mazdausa.com/static/manuals/2025/cx-5/contents/07031403.html"
-    },
-    {
-     "title": "https://www.michelin.ca/en/auto/learn/tire-buying-guide/when-to-replace-tires",
-     "path": "https://www.michelin.ca/en/auto/learn/tire-buying-guide/when-to-replace-tires"
-    },
-    {
-     "title": "https://www.mopar.com/en-us/my-vehicle/owners-manual.html",
-     "path": "https://www.mopar.com/en-us/my-vehicle/owners-manual.html"
-    },
-    {
-     "title": "https://www.nhtsa.gov/vehicle-safety/tires",
-     "path": "https://www.nhtsa.gov/vehicle-safety/tires"
-    },
-    {
-     "title": "https://www.nissanusa.com/owners/manuals-guides.html",
-     "path": "https://www.nissanusa.com/owners/manuals-guides.html"
-    },
-    {
-     "title": "https://www.perrigo.com/",
-     "path": "https://www.perrigo.com/"
-    },
-    {
-     "title": "https://www.saturnpetcare.us/",
-     "path": "https://www.saturnpetcare.us/"
-    },
-    {
-     "title": "https://www.sazerac.com/",
-     "path": "https://www.sazerac.com/"
-    },
-    {
-     "title": "https://www.sec.gov/edgar/search/",
-     "path": "https://www.sec.gov/edgar/search/"
-    },
-    {
-     "title": "https://www.subaru.com/owners/vehicle-resources.html",
-     "path": "https://www.subaru.com/owners/vehicle-resources.html"
-    },
-    {
-     "title": "https://www.tesla.com/ownersmanual/modely/en_us/Owners_Manual.pdf",
-     "path": "https://www.tesla.com/ownersmanual/modely/en_us/Owners_Manual.pdf"
-    },
-    {
-     "title": "https://www.toyota.com/owners/warranty-owners-manuals/",
-     "path": "https://www.toyota.com/owners/warranty-owners-manuals/"
-    },
-    {
-     "title": "https://www.toyotires.com/faq-articles/when-should-i-replace-my-vehicles-tires/",
-     "path": "https://www.toyotires.com/faq-articles/when-should-i-replace-my-vehicles-tires/"
-    },
-    {
-     "title": "https://www.usga.org/ConformingGolfBall/",
-     "path": "https://www.usga.org/ConformingGolfBall/"
-    },
-    {
-     "title": "https://www.wsbtv.com/",
-     "path": "https://www.wsbtv.com/"
     }
    ]
   },
@@ -1172,8 +1172,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 2584,
-   "hash": "sha256:180143020a527bbd6e9336c9cf5dca297df26b17405e9e5aefd859c666196445",
+   "bytes": 8001,
+   "hash": "sha256:e8f2ac2cbf41f049ccbc7c885d4789c20dfc0ff72231c04dc67225cd213417e5",
    "schema": {
     "fields": [
      {
@@ -1236,12 +1236,12 @@
    "name": "schedule",
    "path": "data/schedule.csv",
    "title": "Update schedule: when each list is checked",
-   "description": "Each check we run on a schedule: what it reads, how often, by script or by hand, when it last ran, when it’s next due and what it found.",
+   "description": "Each check we run on a schedule: what it reads, how often, by script or in a browser, when it last ran, when it’s next due and what it found.",
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 1661,
-   "hash": "sha256:e7c1fd65f59c1acd21b3071059e2507e8f69f8adc9a28f626483d7080374910c",
+   "bytes": 6886,
+   "hash": "sha256:bc10396b0a3226e06f433b47ad41027358c9a6762e90e9299af1dcd7d218c832",
    "schema": {
     "fields": [
      {
@@ -1292,6 +1292,442 @@
     ]
    },
    "sources": []
+  },
+  {
+   "name": "costco-diaper-prices",
+   "path": "data/costco-diaper-prices.csv",
+   "title": "Costco diaper prices: every size at every read",
+   "description": "The box price, count, offer and price per diaper for Kirkland Signature, Huggies Plus, Pampers Swaddlers Ultra, Pull-Ups and Easy Ups on Costco.com, one row per size per read, so prices can be followed over time.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 4333,
+   "hash": "sha256:7437962f32360cce7960bc7d6c628d56b178ab18f4fdbcc5af10a6d30473873c",
+   "schema": {
+    "fields": [
+     {
+      "name": "read_on",
+      "type": "string",
+      "description": "The day we read the listing (YYYY-MM-DD)."
+     },
+     {
+      "name": "product",
+      "type": "string",
+      "description": "The product as Costco lists it."
+     },
+     {
+      "name": "size",
+      "type": "string",
+      "description": "The size on the box."
+     },
+     {
+      "name": "lb_from",
+      "type": "number",
+      "description": "Lowest weight printed for this size, in pounds. Empty for Newborn."
+     },
+     {
+      "name": "lb_to",
+      "type": "number",
+      "description": "Highest weight printed. Empty if the size is open-ended, such as 27+."
+     },
+     {
+      "name": "count",
+      "type": "number",
+      "description": "Diapers or pants in the box."
+     },
+     {
+      "name": "item",
+      "type": "string",
+      "description": "Costco's item number."
+     },
+     {
+      "name": "regular",
+      "type": "number",
+      "description": "Regular box price in US dollars."
+     },
+     {
+      "name": "offer",
+      "type": "number",
+      "description": "Offer price that day. Empty if no offer showed."
+     },
+     {
+      "name": "cents_each",
+      "type": "number",
+      "description": "What was charged that day, per diaper, in US cents."
+     },
+     {
+      "name": "url",
+      "type": "string",
+      "format": "uri",
+      "description": "The Costco listing."
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "https://www.costco.com/p/-/huggies-plus-diapers-size-1-2/4201012875",
+     "path": "https://www.costco.com/p/-/huggies-plus-diapers-size-1-2/4201012875"
+    },
+    {
+     "title": "https://www.costco.com/p/-/huggies-plus-diapers-size-newborn/4201011902",
+     "path": "https://www.costco.com/p/-/huggies-plus-diapers-size-newborn/4201011902"
+    },
+    {
+     "title": "https://www.costco.com/p/-/huggies-plus-diapers-sizes-3---7/4000350943",
+     "path": "https://www.costco.com/p/-/huggies-plus-diapers-sizes-3---7/4000350943"
+    },
+    {
+     "title": "https://www.costco.com/p/-/huggies-pull-ups-plus-training-pants-unisex/4000361179",
+     "path": "https://www.costco.com/p/-/huggies-pull-ups-plus-training-pants-unisex/4000361179"
+    },
+    {
+     "title": "https://www.costco.com/p/-/kirkland-signature-diaper-sizes-1-2/4201002118",
+     "path": "https://www.costco.com/p/-/kirkland-signature-diaper-sizes-1-2/4201002118"
+    },
+    {
+     "title": "https://www.costco.com/p/-/kirkland-signature-diaper-sizes-3-7/4201002177",
+     "path": "https://www.costco.com/p/-/kirkland-signature-diaper-sizes-3-7/4201002177"
+    },
+    {
+     "title": "https://www.costco.com/p/-/pampers-easy-ups-ultra-training-pants-unisex/4000438951",
+     "path": "https://www.costco.com/p/-/pampers-easy-ups-ultra-training-pants-unisex/4000438951"
+    },
+    {
+     "title": "https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-1---2/4000436297",
+     "path": "https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-1---2/4000436297"
+    },
+    {
+     "title": "https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-3---7/4000423015",
+     "path": "https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-3---7/4000423015"
+    }
+   ]
+  },
+  {
+   "name": "kirkland-vs-pairs",
+   "path": "data/kirkland-vs-pairs.csv",
+   "title": "Kirkland vs name brands: every pair and its verdict",
+   "description": "One row per pair of a Kirkland Signature product and a name brand: the verdict worked out from the records, the companies involved, and for medicines the FDA application, holder, strength and form on each label. Some pairs also carry Costco prices.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 28271,
+   "hash": "sha256:4b69f0707a62e8f90c9d66c407543f8a9062400a30af496865be89c90d5002b6",
+   "schema": {
+    "fields": [
+     {
+      "name": "pair",
+      "type": "string",
+      "description": "Our ID for the pair."
+     },
+     {
+      "name": "group",
+      "type": "string",
+      "description": "Everyday or Medicine."
+     },
+     {
+      "name": "category",
+      "type": "string",
+      "description": "Aisle, such as Household or Medicine."
+     },
+     {
+      "name": "kirkland_product",
+      "type": "string",
+      "description": "The Kirkland Signature product."
+     },
+     {
+      "name": "name_brand",
+      "type": "string",
+      "description": "The name brand it is set against."
+     },
+     {
+      "name": "name_brand_owner",
+      "type": "string",
+      "description": "The company behind the name brand, or the company on its label. Empty if we have no record."
+     },
+     {
+      "name": "verdict",
+      "type": "string",
+      "description": "Our verdict, worked out from the records: Same plant, Same FDA application, Same company, Was, not now, Old record only, Different company or No record yet."
+     },
+     {
+      "name": "stamp",
+      "type": "string",
+      "description": "How strong the record is: documented or reported. Empty if the verdict rests on no maker claim."
+     },
+     {
+      "name": "companies",
+      "type": "string",
+      "description": "Companies the Kirkland product is tied to, split by | when more than one."
+     },
+     {
+      "name": "note",
+      "type": "string",
+      "description": "The limit on this verdict, in a sentence. Often empty."
+     },
+     {
+      "name": "same_active_ingredient",
+      "type": "boolean",
+      "description": "true if the two medicines list the same active ingredient. Empty for everyday products and where they don't match."
+     },
+     {
+      "name": "kirkland_strength",
+      "type": "string",
+      "description": "Active ingredient and strength on the Kirkland label."
+     },
+     {
+      "name": "name_brand_strength",
+      "type": "string",
+      "description": "The same for the name-brand label."
+     },
+     {
+      "name": "form",
+      "type": "string",
+      "description": "Dosage form on the Kirkland label, such as powder or tablet."
+     },
+     {
+      "name": "fda_application",
+      "type": "string",
+      "description": "The FDA application number both labels list. Filled only when the verdict is Same FDA application."
+     },
+     {
+      "name": "fda_holder",
+      "type": "string",
+      "description": "The holder FDA gives for that application. Filled only with fda_application."
+     },
+     {
+      "name": "other_fda_applications",
+      "type": "string",
+      "description": "Other application numbers on the name brand's labels, split by |."
+     },
+     {
+      "name": "kirkland_label",
+      "type": "string",
+      "format": "uri",
+      "description": "The Kirkland label on DailyMed."
+     },
+     {
+      "name": "name_brand_label",
+      "type": "string",
+      "format": "uri",
+      "description": "The name-brand label on DailyMed."
+     },
+     {
+      "name": "record",
+      "type": "string",
+      "description": "The kind of record behind an everyday verdict."
+     },
+     {
+      "name": "record_covers",
+      "type": "string",
+      "description": "What that record covers."
+     },
+     {
+      "name": "record_date",
+      "type": "string",
+      "description": "The date of that record, when it has one."
+     },
+     {
+      "name": "price_unit",
+      "type": "string",
+      "description": "What the prices are per, such as AA battery. Empty for pairs we didn't price."
+     },
+     {
+      "name": "kirkland_cents",
+      "type": "number",
+      "description": "Kirkland price per unit in US cents."
+     },
+     {
+      "name": "name_brand_cents",
+      "type": "number",
+      "description": "Name-brand price per unit in US cents."
+     },
+     {
+      "name": "price_read_on",
+      "type": "string",
+      "description": "The day those prices were read."
+     },
+     {
+      "name": "evidence",
+      "type": "string",
+      "description": "Evidence record IDs, split by |. They match the Evidence file."
+     },
+     {
+      "name": "answer_page",
+      "type": "string",
+      "format": "uri",
+      "description": "Our page for the Kirkland product."
+     },
+     {
+      "name": "read_on",
+      "type": "string",
+      "description": "The day the pairs were last built from the records."
+     }
+    ]
+   },
+   "sources": []
+  },
+  {
+   "name": "battery-date-codes",
+   "path": "data/battery-date-codes.csv",
+   "title": "Car battery date code rules, by brand",
+   "description": "How each brand dates its car batteries: where to look, the format, a worked example, and whether the rule comes from the maker or only from a third party.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 4462,
+   "hash": "sha256:086b2e467d0fd51d0dbda31670760a9fa6198c86445e841188971124b4e8b28b",
+   "schema": {
+    "fields": [
+     {
+      "name": "brand",
+      "type": "string",
+      "description": "The battery brand."
+     },
+     {
+      "name": "standing",
+      "type": "string",
+      "description": "Where the rule comes from: From the maker, Part maker, part third-party, Third-party only, or No rule we trust."
+     },
+     {
+      "name": "where_to_look",
+      "type": "string",
+      "description": "Where the code sits on the battery."
+     },
+     {
+      "name": "format",
+      "type": "string",
+      "description": "How the code is built."
+     },
+     {
+      "name": "example",
+      "type": "string",
+      "description": "A worked example. Empty if we have no rule."
+     },
+     {
+      "name": "example_means",
+      "type": "string",
+      "description": "What the example reads as."
+     },
+     {
+      "name": "date_marks",
+      "type": "string",
+      "description": "What the date marks: Shipped, Made, or Not stated when the record does not say."
+     },
+     {
+      "name": "source",
+      "type": "string",
+      "description": "Who gives the rule."
+     },
+     {
+      "name": "source_url",
+      "type": "string",
+      "format": "uri",
+      "description": "The record."
+     },
+     {
+      "name": "source_date",
+      "type": "string",
+      "description": "The record's own date, when it has one."
+     },
+     {
+      "name": "read_on",
+      "type": "string",
+      "description": "The day we read the rule."
+     }
+    ]
+   },
+   "sources": []
+  },
+  {
+   "name": "usda-establishments",
+   "path": "data/usda-establishments.csv",
+   "title": "USDA meat, poultry and egg plants (FSIS directory)",
+   "description": "Every entry in USDA FSIS's Meat, Poultry and Egg Product Inspection Directory: the establishment number or numbers, the plant's name, other names listed, address, county, the work USDA lists, size band and grant date.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 1477653,
+   "hash": "sha256:f864d55a0cdc19da9b21bef08ae26745f897c9a5b524783b875763a01e653681",
+   "schema": {
+    "fields": [
+     {
+      "name": "code",
+      "type": "string",
+      "description": "Every number the plant holds, joined with +, e.g. M18532+P18532."
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "description": "The plant's name as USDA lists it."
+     },
+     {
+      "name": "trade_names",
+      "type": "string",
+      "description": "Other names USDA lists for the plant, separated by semicolons; blanks such as N/A removed."
+     },
+     {
+      "name": "address",
+      "type": "string",
+      "description": "Street address."
+     },
+     {
+      "name": "city",
+      "type": "string",
+      "description": "City."
+     },
+     {
+      "name": "state",
+      "type": "string",
+      "description": "Two-letter state or territory."
+     },
+     {
+      "name": "postal_code",
+      "type": "string",
+      "description": "ZIP code."
+     },
+     {
+      "name": "county",
+      "type": "string",
+      "description": "County."
+     },
+     {
+      "name": "activities",
+      "type": "string",
+      "description": "The work USDA lists at the plant."
+     },
+     {
+      "name": "size",
+      "type": "string",
+      "description": "USDA's size band: Very Small, Small, Large, N / A, or blank."
+     },
+     {
+      "name": "grant_date",
+      "type": "string",
+      "description": "Grant date as USDA lists it. Many show 2021, likely a system date, so don't read them as start dates."
+     },
+     {
+      "name": "fsis_id",
+      "type": "string",
+      "description": "USDA's internal ID for the plant."
+     },
+     {
+      "name": "lat",
+      "type": "number",
+      "description": "Latitude from USDA's file."
+     },
+     {
+      "name": "lon",
+      "type": "number",
+      "description": "Longitude from USDA's file."
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "https://www.fsis.usda.gov/inspection/establishments/meat-poultry-and-egg-product-inspection-directory",
+     "path": "https://www.fsis.usda.gov/inspection/establishments/meat-poultry-and-egg-product-inspection-directory"
+    }
+   ]
   }
  ]
 }

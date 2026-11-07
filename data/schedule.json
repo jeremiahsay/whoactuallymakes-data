@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-04",
- "last_change": "2026-11-04",
+ "generated": "2026-11-07",
+ "last_change": "2026-11-07",
  "cadence_months": {
   "confirmed": 12,
   "documented": 6,
@@ -31,7 +31,7 @@
   {
    "id": "usda-establishments",
    "what": "USDA meat, poultry and egg plant directory",
-   "gives": "Every USDA establishment number and the plant that holds it",
+   "gives": "Every USDA establishment number and the plant that holds it, on the USDA establishment number lookup and in the open dataset",
    "how": "hand",
    "every_days": 30,
    "source": {
@@ -41,7 +41,7 @@
     "url": "https://www.fsis.usda.gov/inspection/establishments/meat-poultry-and-egg-product-inspection-directory"
    },
    "file_url": "https://www.fsis.usda.gov/sites/default/files/media_file/documents/MPI_Directory_by_Establishment_Number.csv",
-   "hand_note": "USDA's site refuses scripts, so a person downloads the file in a browser and we load it.",
+   "hand_note": "USDA's site refuses scripts, so a person downloads the file in a browser and we load it with tools/load_usda_mpi.py. The lookup, charts and CSV follow at the next build.",
    "once": false,
    "last": "2026-11-02",
    "due": "2026-12-02",
@@ -66,6 +66,25 @@
    "last": "2026-11-02",
    "due": "2026-11-09",
    "result": "38 recalls waiting for review"
+  },
+  {
+   "id": "kirkland-medicine-labels",
+   "what": "Kirkland medicine labels and FDA approval holders",
+   "gives": "The company for each medicine on Who makes Kirkland Signature medicine. A change is flagged for a person to read; it never changes a claim by itself.",
+   "how": "script",
+   "every_days": 7,
+   "source": {
+    "id": "dailymed",
+    "name": "DailyMed drug labels",
+    "publisher": "US National Library of Medicine",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/"
+   },
+   "file_url": null,
+   "hand_note": null,
+   "once": false,
+   "last": "2026-11-05",
+   "due": "2026-11-09",
+   "result": "47 labels read; a change is flagged for a person"
   },
   {
    "id": "tire-age-guidance",
@@ -121,13 +140,13 @@
    "hand_note": "tools/fetch_maker_registers.py re-reads the registers and recalls; a person re-reads each company's own pages and updates data/makers/.",
    "once": false,
    "last": "2026-11-03",
-   "due": "2027-05-04",
-   "result": "7 company pages; 2 pet food register searches, 2 recall pulls"
+   "due": "2026-11-09",
+   "result": "10 company pages; 2 pet food register searches, 2 recall pulls"
   },
   {
    "id": "kirkland-battery-prices",
    "what": "Kirkland and Duracell battery prices at Costco",
-   "gives": "The pack prices and price per battery in the Kirkland vs Duracell table on Who makes Kirkland Signature batteries",
+   "gives": "The pack prices, price-per-battery chart and calculator defaults on Who makes Kirkland Signature batteries",
    "how": "hand",
    "every_days": 30,
    "source": {
@@ -137,7 +156,7 @@
     "url": "https://www.costco.com/"
    },
    "file_url": null,
-   "hand_note": "Costco forbids scripts, so a person reads both listings in a browser and updates the page and this task.",
+   "hand_note": "Costco forbids scripts, so we read both listings in a browser, then update data/guidance/kirkland-batteries.json and this task. The page follows.",
    "once": false,
    "last": "2026-11-04",
    "due": "2026-12-04",
@@ -161,15 +180,478 @@
    "last": "2026-11-04",
    "due": "2026-12-04",
    "result": "Standard $114.99-$129.99, AGM $179.99-$184.99, $15 core charge; same at ZIPs 75254, 98101, 10001"
+  },
+  {
+   "id": "kirkland-diaper-prices",
+   "what": "Kirkland, Huggies and Pampers diaper prices at Costco",
+   "gives": "The cost table and monthly cost tool on Who makes Kirkland Signature diapers: seven sizes, three brands",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "costco-com",
+    "name": "Costco.com product listings",
+    "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+    "url": "https://www.costco.com/"
+   },
+   "file_url": null,
+   "hand_note": "Costco forbids scripts, so we read each size in a browser, updates data/guidance/kirkland-diapers.json and this task. The cost section's prose is typed in a browser: re-check its \"16 to 32 cents\" and $39.99 lines, and log any new offer's dates.",
+   "once": false,
+   "last": "2026-11-05",
+   "due": "2026-12-05",
+   "result": "Kirkland 16 to 32 cents a diaper at regular prices; 13 to 26 cents on the offer to Nov 8"
+  },
+  {
+   "id": "kirkland-diaper-sfi-code",
+   "what": "The SFI number on Kirkland diaper packs, and its register entry",
+   "gives": "The answer on Who makes Kirkland Signature diapers: the number on Costco's pack photos and who the register says holds it",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "sfi-database",
+    "name": "SFI Certification Database",
+    "publisher": "Sustainable Forestry Initiative Inc.",
+    "url": "https://www.sfidatabase.org/"
+   },
+   "file_url": null,
+   "hand_note": "Both sites are read in a browser: Costco's pack photos, then the number in SFI's public search. A new number, or one that hides the supplier, changes the page.",
+   "once": false,
+   "last": "2026-11-05",
+   "due": "2027-02-03",
+   "result": "SFI-01644 resolves to First Quality Enterprises, LLC, Valid to Jul 11, 2031"
+  },
+  {
+   "id": "kirkland-tissue-prices",
+   "what": "Kirkland, Charmin and Bounty paper prices at Costco",
+   "gives": "The cost table and cost tool on Who makes Kirkland Signature toilet paper: five packs, by area",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "costco-com",
+    "name": "Costco.com product listings",
+    "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+    "url": "https://www.costco.com/"
+   },
+   "file_url": null,
+   "hand_note": "Costco forbids scripts, so we read each listing in a browser, then update data/guidance/kirkland-toilet-paper.json and this task. The page's prose repeats these figures: re-check the Charmin and Bounty sections. If Seattle shows no warehouse price, pick another warehouse on Costco's picker. Do this with costco-toilet-paper-prices.",
+   "once": false,
+   "last": "2026-11-05",
+   "due": "2026-12-05",
+   "result": "Kirkland bath tissue $1.47 to $2.12 per 100 sq ft in the warehouse, $1.75 to $2.40 online; Charmin $3.87; Kirkland towels $2.34; Bounty $4.93"
+  },
+  {
+   "id": "kirkland-tissue-codes",
+   "what": "The FSC and SFI codes on Kirkland paper packs, and their register entries",
+   "gives": "The answer on Who makes Kirkland Signature toilet paper: the code on each pack and who the register says holds it",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "fsc-search",
+    "name": "FSC Search (FSC certificate register)",
+    "publisher": "Forest Stewardship Council",
+    "url": "https://search.fsc.org/"
+   },
+   "file_url": null,
+   "hand_note": "Both are read in a browser, one code at a time: Costco's pack photos, then FSC's or SFI's public search. A new code changes the page. Retry SFI-01596 each time.",
+   "once": false,
+   "last": "2026-11-05",
+   "due": "2027-02-03",
+   "result": "FSC C108208 resolves to Georgia-Pacific LLC, FSC C104904 to Kruger Products, Inc., FSC C068161 to Kimberly-Clark Corporation; SFI-01596 unresolved"
+  },
+  {
+   "id": "costco-toilet-paper-prices",
+   "what": "Every toilet paper pack at Costco, plus the Sam's Club comparison",
+   "gives": "The shelf table, tiles and Sam's Club table on Costco toilet paper, and the Kirkland warehouse prices on Who makes Kirkland Signature toilet paper",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "costco-com",
+    "name": "Costco.com product listings",
+    "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+    "url": "https://www.costco.com/"
+   },
+   "file_url": null,
+   "hand_note": "Costco forbids scripts, so we read each listing in a browser, changing warehouse on Costco's picker when one shows no price. Update data/guidance/costco-toilet-paper.json; the build stops on any prose dollar figure the data doesn't hold, so re-read the prose too. Sam's Club offers end Nov 18 and Nov 29.",
+   "once": false,
+   "last": "2026-11-05",
+   "due": "2026-12-05",
+   "result": "10 packs; cheapest by paper Marathon $1.20 per 100 sq ft in the warehouse; Kirkland $20.99 warehouse, $24.99 online; Charmin $29.99 warehouse; no offers"
+  },
+  {
+   "id": "kirkland-rumors-reads",
+   "what": "The eight Kirkland rumors: Lakeridge tag, cranberry bottle, foil box and prices, jelly beans in the US and UK, chocolate bags, plastic wrap, honey, flour",
+   "gives": "The board, foil chart and verdicts on Kirkland rumors, checked",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "costco-com",
+    "name": "Costco.com product listings",
+    "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+    "url": "https://www.costco.com/"
+   },
+   "file_url": null,
+   "hand_note": "Read in a browser, one listing at a time, ZIP 98101. Open each gallery back-panel photo and the Product Label PDF. A new maker line changes a verdict, and that needs the owner.",
+   "once": false,
+   "last": "2026-11-06",
+   "due": "2026-12-06",
+   "result": "2 on the label (Sealy Mattress, Ocean Spray), 3 named by Costco, 1 partly true, 2 not on the pack"
+  },
+  {
+   "id": "kirkland-mattress-prices",
+   "what": "The two Kirkland Lakeridge mattresses: prices by size, offer dates, ratings and the law label link",
+   "gives": "The price table, tiles and model table on the Lakeridge mattress page",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "costco-com",
+    "name": "Costco.com product listings",
+    "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+    "url": "https://www.costco.com/"
+   },
+   "file_url": null,
+   "hand_note": "Read in a browser at ZIP 98101. Click each size. Check the Product Label PDF: a new file or maker line changes the page. Read again the day after an offer ends.",
+   "once": false,
+   "last": "2026-11-06",
+   "due": "2026-11-15",
+   "result": "Pillow Top queen $899.99 to Nov 15; Tight Top queen $949.99; tag says Sealy Mattress"
+  },
+  {
+   "id": "costco-diaper-prices",
+   "what": "Kirkland, Huggies Plus, Pampers Swaddlers Ultra, Pull-Ups, Easy Ups and baby wipes at Costco: every size, offers, ratings, Seattle shelf",
+   "gives": "The price table, finder, offer log and every number on Costco diapers: prices and sales",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "costco-com",
+    "name": "Costco.com product listings",
+    "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+    "url": "https://www.costco.com/"
+   },
+   "file_url": null,
+   "hand_note": "Read in a browser at ZIP 98101: click each size on the six listings, plus Newborn. Log any new offer's dates in data/guidance/costco-diapers.json. Read again the day after an offer ends. Update kirkland-diapers.json too: the build stops if the two disagree.",
+   "once": false,
+   "last": "2026-11-06",
+   "due": "2026-11-09",
+   "result": "Kirkland on offer to Nov 8, 12.5 to 25.9 cents; regular 15.6 to 32.4; Huggies 19.8 to 48.1; Pampers 20.5 to 46.8"
+  },
+  {
+   "id": "sams-diaper-prices",
+   "what": "Member's Mark diapers and wipes at Sam's Club: every size, Dallas setting",
+   "gives": "The Costco vs Sam's table and the wipes comparison on Costco diapers: prices and sales",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "samsclub-com",
+    "name": "Sam's Club website",
+    "publisher": "Sam's West, Inc. (Walmart)",
+    "url": "https://www.samsclub.com/"
+   },
+   "file_url": null,
+   "hand_note": "The extension can't read samsclub.com, so the owner saves the product page in Chrome, or sends screenshots. Update sams in data/guidance/costco-diapers.json.",
+   "once": false,
+   "last": "2026-11-06",
+   "due": "2026-12-06",
+   "result": "Newborn 16.6 cents; sizes 1 to 8 run 16.1 to 37.0; wipes 1.9"
+  },
+  {
+   "id": "kirkland-vs-prices",
+   "what": "Kirkland vs name brands: Bounty, Kleenex, Tide and Dawn shelf prices at ZIP 98101",
+   "gives": "The Costco price gap column on Kirkland vs name brands",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "costco-com",
+    "name": "Costco.com product listings",
+    "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+    "url": "https://www.costco.com/"
+   },
+   "file_url": null,
+   "hand_note": "Read Costco.com search pages in a browser, one at a time. Update shelf in data/guidance/kirkland-vs.json.",
+   "once": false,
+   "last": "2026-11-06",
+   "due": "2026-12-06",
+   "result": "Four pairs read; OxiClean is warehouse-only with no price shown"
+  },
+  {
+   "id": "battery-date-code-rules",
+   "what": "Battery date code rules from each maker",
+   "gives": "The rules, examples and sources on the battery date code decoder",
+   "how": "hand",
+   "every_days": 180,
+   "source": {
+    "id": "maker-interstate",
+    "name": "Interstate Batteries website",
+    "publisher": "Interstate Batteries",
+    "url": "https://www.interstatebatteries.com/"
+   },
+   "file_url": null,
+   "hand_note": "Re-read each record in data/guidance/battery-date-codes.json in a browser, one at a time. Try the newer ODYSSEY sheets and the K0 line first. Look for newer Ford and ACDelco warranty sheets, since those records date from 2005 and 2015. Owner approves any rule change.",
+   "once": false,
+   "last": "2026-11-07",
+   "due": "2027-05-07",
+   "result": "Ten maker rules and three third-party rules read, with Ford and ACDelco added 7 Nov. Newer ODYSSEY sheets and Interstate's March 2025 warranty PDF refused our read"
+  },
+  {
+   "id": "battery-recalls",
+   "what": "NHTSA recalls of lead-acid starter batteries",
+   "gives": "The recall section on the battery date code decoder",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "nhtsa-recalls",
+    "name": "NHTSA recall reports and recall file",
+    "publisher": "National Highway Traffic Safety Administration",
+    "url": "https://www.nhtsa.gov/recalls"
+   },
+   "file_url": null,
+   "hand_note": "Read NHTSA's FLAT_RCL_POST_2010 file and filter equipment recalls (type E) for 12V starter batteries. Lithium, traction and jump starters don't count. A new campaign needs owner approval before the page changes.",
+   "once": false,
+   "last": "2026-11-06",
+   "due": "2027-02-04",
+   "result": "One since 2010: East Penn 23E-044"
+  },
+  {
+   "id": "name-brand-labels",
+   "what": "Name-brand labels compared with Kirkland",
+   "gives": "The label facts on Is Kirkland the same as name brands? A change is flagged for a person to read.",
+   "how": "script",
+   "every_days": 7,
+   "source": {
+    "id": "dailymed",
+    "name": "DailyMed drug labels",
+    "publisher": "US National Library of Medicine",
+    "url": "https://dailymed.nlm.nih.gov/dailymed/"
+   },
+   "file_url": null,
+   "hand_note": null,
+   "once": false,
+   "last": "2026-11-06",
+   "due": "2026-11-09",
+   "result": "Labels read for the comparison pairs"
+  },
+  {
+   "id": "api-oil-licences",
+   "what": "API motor oil licence listings",
+   "gives": "Who holds the licence for each store-brand oil on Who makes store-brand motor oil and the Kirkland motor oil page",
+   "how": "hand",
+   "every_days": 150,
+   "source": {
+    "id": "api-eolcs",
+    "name": "API Engine Oil Licensing and Certification System (EOLCS): Directory of Licensees",
+    "publisher": "American Petroleum Institute (API)",
+    "url": "https://engineoil.api.org/Directory/EolcsSearch"
+   },
+   "file_url": null,
+   "hand_note": "Search API's public directory in a browser, one brand at a time, then update data/registries/api-eolcs/.",
+   "once": false,
+   "last": "2026-11-03",
+   "due": "2027-04-05",
+   "result": "14 brands from 431 listings; 6 held by the store, 8 by Highline Warren"
+  },
+  {
+   "id": "federal-rule-texts",
+   "what": "Federal rule texts behind our code pages",
+   "gives": "The wording we rely on for tire codes, USDA plant numbers, inspection marks and label rules",
+   "how": "hand",
+   "every_days": 365,
+   "source": {
+    "id": "ecfr",
+    "name": "Electronic Code of Federal Regulations",
+    "publisher": "US National Archives (Office of the Federal Register)",
+    "url": "https://www.ecfr.gov/"
+   },
+   "file_url": null,
+   "hand_note": "Re-read each rule on the eCFR, check our short quote still stands, and log any change on the corrections page.",
+   "once": false,
+   "last": "2026-11-06",
+   "due": "2027-11-06",
+   "result": "14 rule texts on file"
+  },
+  {
+   "id": "usda-legend-read",
+   "what": "USDA's letter legend and size bands",
+   "gives": "USDA's own meanings for M, P, V, I and G and for plant sizes, on the USDA establishment number lookup. Until then the page shows counts from the list.",
+   "how": "hand",
+   "every_days": 0,
+   "source": {
+    "id": "usda-fsis-mpi",
+    "name": "USDA FSIS Meat, Poultry and Egg Product Inspection Directory",
+    "publisher": "US Department of Agriculture, Food Safety and Inspection Service",
+    "url": "https://www.fsis.usda.gov/inspection/establishments/meat-poultry-and-egg-product-inspection-directory"
+   },
+   "file_url": null,
+   "hand_note": "Do this with the next list: save the legend PDF and the data documentation in a browser, then update the letters table and the What we don't know section.",
+   "once": true,
+   "last": null,
+   "due": "2026-12-02",
+   "result": "Not read yet: USDA's site and archive copies refused us on Nov 7"
+  },
+  {
+   "id": "kirkland-battery-offer",
+   "what": "Kirkland battery offer ending Nov 15",
+   "gives": "The offer price on Who makes Kirkland Signature batteries, so it doesn't outlive the offer",
+   "how": "hand",
+   "every_days": 0,
+   "source": {
+    "id": "costco-com",
+    "name": "Costco.com product listings",
+    "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+    "url": "https://www.costco.com/"
+   },
+   "file_url": null,
+   "hand_note": "Read the listing in a browser the day after the offer ends, then update data/guidance/kirkland-batteries.json.",
+   "once": true,
+   "last": null,
+   "due": "2026-11-16",
+   "result": null
+  },
+  {
+   "id": "sams-toilet-paper-offers",
+   "what": "Sam's Club toilet paper offers ending Nov 18 and Nov 29",
+   "gives": "The Sam's Club comparison on Costco toilet paper",
+   "how": "hand",
+   "every_days": 0,
+   "source": {
+    "id": "samsclub-com",
+    "name": "Sam's Club website",
+    "publisher": "Sam's West, Inc. (Walmart)",
+    "url": "https://www.samsclub.com/"
+   },
+   "file_url": null,
+   "hand_note": "The extension can't read samsclub.com, so the owner saves the page in Chrome. Update data/guidance/costco-toilet-paper.json.",
+   "once": true,
+   "last": null,
+   "due": "2026-11-30",
+   "result": null
+  },
+  {
+   "id": "costco-hot-dogs-reads",
+   "what": "Costco hot dogs: prices of the 12-link pack and both Dinner Franks packs, and the USDA seal in each listing photo",
+   "gives": "The pack table, price per link and seal diagrams on the Costco hot dogs page",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "costco-com",
+    "name": "Costco.com product listings",
+    "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+    "url": "https://www.costco.com/"
+   },
+   "file_url": null,
+   "hand_note": "Read in a browser, one listing at a time, ZIP 98101 and 98115. Open each gallery photo and zoom in on the seal and the date strip. EST. 45951 on any pack proves Morris, and that changes a stamp: the owner approves it.",
+   "once": false,
+   "last": "2026-11-07",
+   "due": "2026-12-07",
+   "result": "Pack $19.99, 15 links $22.59, 120 links $125.99; EST. 18532 on two photos, empty seal on the 15-link pack"
+  },
+  {
+   "id": "kirkland-laundry-reads",
+   "what": "Kirkland laundry detergent: prices of all eight Costco lines, the Tide offer dates, and the maker lines on each back label",
+   "gives": "The cost-per-load table, calculator and maker table on the Kirkland laundry page",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "costco-com",
+    "name": "Costco.com product listings",
+    "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+    "url": "https://www.costco.com/"
+   },
+   "file_url": null,
+   "hand_note": "Read in a browser, one listing at a time, ZIP 98101. Open each back-label photo. Any line reading Manufactured for, Made by, or a new address is a new lead on the maker; so is any change in the ingredient list. Tide's coupon ends 15 Nov, so read Tide's warehouse price on the first read after that.",
+   "once": false,
+   "last": "2026-11-07",
+   "due": "2026-11-16",
+   "result": "Kirkland liquid $18.49 warehouse, Tide $19.99 with coupon to 15 Nov; labels name only Costco"
+  },
+  {
+   "id": "wam-wayback-saves",
+   "what": "Wayback saves: the Costco hot dogs page and its source records, plus the earlier records with no archive copy",
+   "gives": "Archived copy links on the evidence records",
+   "how": "hand",
+   "every_days": 0,
+   "source": {
+    "id": "whiting-turner",
+    "name": "Whiting-Turner project pages",
+    "publisher": "The Whiting-Turner Contracting Company",
+    "url": "https://www.whiting-turner.com/"
+   },
+   "file_url": null,
+   "hand_note": "Wayback's save returned 429 from this Mac on Nov 7, by script and in Chrome. Run tools/archive.py one URL at a time, stop at the first 429, and paste archive_url into the record. Skip Costco URLs.",
+   "once": true,
+   "last": null,
+   "due": "2026-11-14",
+   "result": null
   }
  ],
  "terms": [
   {
+   "source": "425 Business",
+   "publisher": "425 Business",
+   "url": "https://www.425business.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "yes"
+  },
+  {
+   "source": "AAA automotive articles",
+   "publisher": "American Automobile Association",
+   "url": "https://www.aaa.com/robots.txt",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
+   "source": "ACDelco Battery Warranty Information",
+   "publisher": "ACDelco",
+   "url": "https://delcoline.com/robots.txt",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "ask"
+  },
+  {
+   "source": "ACDelco Canada website",
+   "publisher": "ACDelco",
+   "url": "https://acdelcocanada.com/robots.txt",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
    "source": "API Engine Oil Licensing and Certification System (EOLCS): Directory of Licensees",
    "publisher": "American Petroleum Institute (API)",
-   "url": "https://www.api.org/terms-of-use",
+   "url": "https://www.api.org/terms-and-conditions",
    "checked": "2026-11-03",
    "due": "2027-11-03",
+   "automated_read": "no"
+  },
+  {
+   "source": "All Blog Things",
+   "publisher": "All Blog Things",
+   "url": "https://www.allblogthings.com/",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "ask"
+  },
+  {
+   "source": "BabyGearLab",
+   "publisher": "BabyGearLab (GearLab)",
+   "url": "https://www.babygearlab.com/",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "no"
+  },
+  {
+   "source": "Batteries In A Flash guide",
+   "publisher": "BatteriesInAFlash.com, Inc.",
+   "url": "https://www.batteriesinaflash.com/robots.txt",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Bloomberg News",
+   "publisher": "Bloomberg L.P.",
+   "url": "https://www.bloomberg.com/notices/tos/",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
    "automated_read": "no"
   },
   {
@@ -181,11 +663,35 @@
    "automated_read": "ask"
   },
   {
+   "source": "CPSC recalls database (SaferProducts.gov recall API)",
+   "publisher": "US Consumer Product Safety Commission",
+   "url": "https://www.cpsc.gov/Recalls/CPSC-Recalls-Application-Program-Interface-API-Information",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Central Milling website",
+   "publisher": "Central Milling",
+   "url": "https://centralmilling.com/",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "no"
+  },
+  {
    "source": "Chevrolet owner's manuals (GM)",
    "publisher": "General Motors LLC",
    "url": "https://www.chevrolet.com/legal",
    "checked": "2026-11-03",
    "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Consumer Reports",
+   "publisher": "Consumer Reports",
+   "url": "https://www.consumerreports.org/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
    "automated_read": "ask"
   },
   {
@@ -197,11 +703,19 @@
    "automated_read": "ask"
   },
   {
-   "source": "Costco listings outside the US (UK, Australia)",
+   "source": "Costco UK material safety data sheets",
+   "publisher": "Costco Wholesale UK",
+   "url": "https://www.costco.co.uk/material-safety-data-sheets",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "no"
+  },
+  {
+   "source": "Costco listings outside the US (UK, Australia, Mexico)",
    "publisher": "Costco Wholesale Corporation and its national companies (owner of Kirkland Signature)",
    "url": "https://www.costco.co.uk/terms-and-conditions",
-   "checked": "2026-11-04",
-   "due": "2027-11-04",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
    "automated_read": "no"
   },
   {
@@ -216,16 +730,40 @@
    "source": "Costco.com product listings",
    "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
    "url": "https://www.costco.com/f/-/terms-and-conditions-of-use",
-   "checked": "2026-11-04",
-   "due": "2027-11-04",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
    "automated_read": "no"
   },
   {
    "source": "CourtListener RECAP archive (federal court filings)",
    "publisher": "Free Law Project (copies of US federal court records from PACER)",
    "url": "https://www.courtlistener.com/terms/",
-   "checked": "2026-11-03",
-   "due": "2027-11-03",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "ask"
+  },
+  {
+   "source": "DailyMed drug labels",
+   "publisher": "US National Library of Medicine",
+   "url": "https://dailymed.nlm.nih.gov/dailymed/about-dailymed.cfm",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "public-domain"
+  },
+  {
+   "source": "Dealmoon",
+   "publisher": "Dealmoon",
+   "url": "https://www.dealmoon.com/en/terms-of-service",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Deseret News",
+   "publisher": "Deseret News",
+   "url": "https://www.deseret.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
    "automated_read": "ask"
   },
   {
@@ -237,11 +775,35 @@
    "automated_read": "yes"
   },
   {
+   "source": "Drugs@FDA application records",
+   "publisher": "US Food and Drug Administration",
+   "url": "https://open.fda.gov/terms/",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "public-domain"
+  },
+  {
    "source": "Duracell company website",
    "publisher": "Duracell",
    "url": "https://duracell.com/robots.txt",
    "checked": "2026-11-04",
    "due": "2027-11-04",
+   "automated_read": "yes"
+  },
+  {
+   "source": "EPA Safer Choice product list",
+   "publisher": "U.S. Environmental Protection Agency",
+   "url": "https://www.epa.gov/saferchoice/products",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "yes"
+  },
+  {
+   "source": "East Penn Manufacturing website",
+   "publisher": "East Penn Manufacturing",
+   "url": "https://www.eastpennmanufacturing.com/robots.txt",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
    "automated_read": "yes"
   },
   {
@@ -261,12 +823,60 @@
    "automated_read": "public-domain"
   },
   {
+   "source": "FSC Search (FSC certificate register)",
+   "publisher": "Forest Stewardship Council",
+   "url": "https://search.fsc.org/en/disclaimer/",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "no"
+  },
+  {
+   "source": "FSC-STD-50-001 V3-0, Use of the FSC Trademarks by Certificate Holders, and guidance FSC-GUI-50-001",
+   "publisher": "Forest Stewardship Council",
+   "url": "https://fsc.org/en/legal-notice-privacy-policy",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "ask"
+  },
+  {
    "source": "Federal Register",
    "publisher": "US National Archives (Office of the Federal Register), via govinfo.gov",
    "url": "https://www.govinfo.gov/about/policies",
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "public-domain"
+  },
+  {
+   "source": "Ferrara newsroom",
+   "publisher": "Ferrara Candy Company",
+   "url": "https://www.ferrara.com/",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
+   "source": "First Quality company websites",
+   "publisher": "First Quality Enterprises, LLC",
+   "url": "https://www.firstquality.com/",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Food Lion product pages",
+   "publisher": "Food Lion LLC",
+   "url": "https://foodlion.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Ford Authorized Distributor Policy and Procedure Manual, Section 9400",
+   "publisher": "Ford Motor Company",
+   "url": "https://delcoline.com/robots.txt",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "ask"
   },
   {
    "source": "Ford support: tire replacement",
@@ -277,12 +887,28 @@
    "automated_read": "ask"
   },
   {
+   "source": "Fortune",
+   "publisher": "Fortune Media",
+   "url": "https://fortune.com/terms-of-use/",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "ask"
+  },
+  {
    "source": "GOV.UK: Department for Transport and DVSA",
    "publisher": "UK Department for Transport; Driver and Vehicle Standards Agency",
    "url": "https://www.gov.uk/help/terms-conditions",
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "yes"
+  },
+  {
+   "source": "Georgia-Pacific company website",
+   "publisher": "Georgia-Pacific LLC",
+   "url": "https://www.gp.com/legal/legal-notices",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "ask"
   },
   {
    "source": "Golf Monthly",
@@ -309,11 +935,43 @@
    "automated_read": "ask"
   },
   {
+   "source": "Greenies website",
+   "publisher": "Mars or Affiliates",
+   "url": "https://www.greenies.com/robots.txt",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Grey Goose website",
+   "publisher": "Grey Goose Importing Company",
+   "url": "https://www.greygoose.com/robots.txt",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
    "source": "Hankook technical bulletin: tire replacement recommendations",
    "publisher": "Hankook Tire America Corp.",
    "url": "https://www.hankooktire.com/us/en/privacy-policy.html",
    "checked": "2026-11-03",
    "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Happi",
+   "publisher": "Rodman Media",
+   "url": "https://www.happi.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Henkel news releases",
+   "publisher": "Henkel AG & Co. KGaA",
+   "url": "https://www.henkel.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
    "automated_read": "ask"
   },
   {
@@ -325,6 +983,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "Hip2Save",
+   "publisher": "Hip2Save",
+   "url": "https://hip2save.com/terms-of-use/",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "ask"
+  },
+  {
    "source": "Honda owner's manuals",
    "publisher": "American Honda Motor Co., Inc.",
    "url": "https://www.honda.com/",
@@ -333,12 +999,52 @@
    "automated_read": "ask"
   },
   {
+   "source": "House Digest",
+   "publisher": "Static Media",
+   "url": "https://www.housedigest.com/",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Hunker",
+   "publisher": "Static Media",
+   "url": "https://www.hunker.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "ask"
+  },
+  {
    "source": "Hyundai owner's manuals",
    "publisher": "Hyundai Motor America",
-   "url": "https://www.hyundaiusa.com/us/en/legal",
+   "url": "https://www.hyundaiusa.com/us/en/terms-conditions.html",
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "ask"
+  },
+  {
+   "source": "Industrial Info Resources",
+   "publisher": "Industrial Info Resources",
+   "url": "https://www.industrialinfo.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Interstate Batteries website",
+   "publisher": "Interstate Batteries",
+   "url": "https://www.interstatebatteries.com/robots.txt",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
+   "source": "It Still Runs how-to articles",
+   "publisher": "It Still Runs",
+   "url": "https://itstillruns.com/robots.txt",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "yes"
   },
   {
    "source": "Jeep and Ram owner's manuals (Mopar)",
@@ -357,11 +1063,51 @@
    "automated_read": "ask"
   },
   {
+   "source": "Kruger Products company website",
+   "publisher": "Kruger Products",
+   "url": "https://www.krugerproducts.ca/",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "ask"
+  },
+  {
    "source": "LNK International website",
    "publisher": "LNK International, Inc.",
    "url": "https://www.lnkintl.com/privacy-and-cookies-policy",
    "checked": "2026-11-03",
    "due": "2027-11-03",
+   "automated_read": "yes"
+  },
+  {
+   "source": "MG2 project pages",
+   "publisher": "MG2",
+   "url": "https://mg2.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "yes"
+  },
+  {
+   "source": "MarketBeat earnings call transcripts",
+   "publisher": "MarketBeat",
+   "url": "https://www.marketbeat.com/terms/",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Mashed",
+   "publisher": "Static Media",
+   "url": "https://www.mashed.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Mattero v. Costco Wholesale Corp., U.S. District Court, Northern District of California, 18-cv-02871",
+   "publisher": "U.S. District Court for the Northern District of California (court copies on Justia and ClassAction.org)",
+   "url": "https://www.cand.uscourts.gov/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
    "automated_read": "yes"
   },
   {
@@ -373,12 +1119,44 @@
    "automated_read": "ask"
   },
   {
+   "source": "Medina v. Costco Wholesale Corp., U.S. District Court, Eastern District of New York, 22-cv-07388",
+   "publisher": "U.S. District Court for the Eastern District of New York (court copy on GovInfo)",
+   "url": "https://www.govinfo.gov/app/details/USCOURTS-nyed-1_22-cv-07388",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Mental Floss",
+   "publisher": "Mental Floss",
+   "url": "https://www.mentalfloss.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "yes"
+  },
+  {
    "source": "Michelin: when to replace tires",
    "publisher": "Michelin North America (Canada)",
    "url": "https://www.michelin.ca/en/legal-privacy-center/terms-of-use",
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "ask"
+  },
+  {
+   "source": "Motorcraft website",
+   "publisher": "Ford Motor Company",
+   "url": "https://www.motorcraft.com/robots.txt",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
+   "source": "NHTSA recall reports and recall file",
+   "publisher": "National Highway Traffic Safety Administration",
+   "url": "https://www.nhtsa.gov/nhtsa-datasets-and-apis",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "public-domain"
   },
   {
    "source": "NHTSA tire safety pages (TireWise)",
@@ -395,6 +1173,22 @@
    "checked": "2026-11-02",
    "due": "2027-11-02",
    "automated_read": "public-domain"
+  },
+  {
+   "source": "Nestlé website",
+   "publisher": "Nestlé",
+   "url": "https://www.nestle.com/robots.txt",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
+   "source": "New Modern Mom",
+   "publisher": "New Modern Mom",
+   "url": "https://newmodernmom.com/",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "ask"
   },
   {
    "source": "Nissan owner's manuals",
@@ -421,6 +1215,54 @@
    "automated_read": "yes"
   },
   {
+   "source": "Novolex and Pactiv Evergreen product pages",
+   "publisher": "Novolex",
+   "url": "https://novolex.com/",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
+   "source": "ODYSSEY Battery website",
+   "publisher": "ODYSSEY Battery",
+   "url": "https://www.odysseybattery.com/robots.txt",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
+   "source": "OPTIMA Batteries website",
+   "publisher": "OPTIMA Batteries",
+   "url": "https://www.optimabatteries.com/robots.txt",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Office of the Governor of Georgia, press releases",
+   "publisher": "State of Georgia",
+   "url": "https://georgia.gov/privacy-security",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Packaging Impressions",
+   "publisher": "Packaging Impressions",
+   "url": "https://www.packagingimpressions.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Packaging Strategies",
+   "publisher": "BNP Media",
+   "url": "https://www.packagingstrategies.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "ask"
+  },
+  {
    "source": "Perrigo corporate website",
    "publisher": "Perrigo Company plc",
    "url": "https://www.perrigo.com/legal",
@@ -429,12 +1271,60 @@
    "automated_read": "yes"
   },
   {
+   "source": "QVC community forum",
+   "publisher": "QVC community forum members",
+   "url": "https://community.qvc.com/",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "no"
+  },
+  {
+   "source": "Radienz Living website",
+   "publisher": "Radienz Living",
+   "url": "https://www.radienzliving.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Reader's Digest",
+   "publisher": "Reader's Digest",
+   "url": "https://www.rd.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "yes"
+  },
+  {
    "source": "SEC EDGAR company filings",
    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
    "url": "https://www.sec.gov/os/accessing-edgar-data",
-   "checked": "2026-11-04",
-   "due": "2027-11-04",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
    "automated_read": "yes"
+  },
+  {
+   "source": "SFI 2022 Standards and Rules, Section 6: Rules for Use of SFI On-Product Labels and Off-Product Marks",
+   "publisher": "Sustainable Forestry Initiative Inc.",
+   "url": "https://forests.org/legal/#terms",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "ask"
+  },
+  {
+   "source": "SFI Certification Database",
+   "publisher": "Sustainable Forestry Initiative Inc.",
+   "url": "https://forests.org/legal/#terms",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "no"
+  },
+  {
+   "source": "Sam's Club website",
+   "publisher": "Sam's West, Inc. (Walmart)",
+   "url": "https://www.samsclub.com/content/termsofuse",
+   "checked": "2026-11-05",
+   "due": "2027-11-05",
+   "automated_read": "no"
   },
   {
    "source": "Sazerac Company website",
@@ -445,12 +1335,52 @@
    "automated_read": "yes"
   },
   {
+   "source": "Sealy website",
+   "publisher": "Sealy, Inc.",
+   "url": "https://www.sealy.com/",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Shaw Local (Morris Herald-News)",
+   "publisher": "Shaw Local News Network",
+   "url": "https://www.shawlocal.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "yes"
+  },
+  {
+   "source": "ShopSavvy",
+   "publisher": "ShopSavvy",
+   "url": "https://shopsavvy.com/terms",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "ask"
+  },
+  {
    "source": "Skrandel v. Costco Wholesale Corp., U.S. District Court, Southern District of Florida, 9:21-cv-80826",
    "publisher": "U.S. District Court for the Southern District of Florida (court copies from the free RECAP archive and ClassAction.org)",
    "url": "https://www.uscourts.gov/court-records",
    "checked": "2026-11-04",
    "due": "2027-11-04",
    "automated_read": "yes"
+  },
+  {
+   "source": "Slickdeals",
+   "publisher": "Slickdeals",
+   "url": "https://slickdeals.net/terms",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Stretch-Tite website",
+   "publisher": "Stretch-Tite (Polyvinyl family of food wraps)",
+   "url": "https://www.stretchtite.com/",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "no"
   },
   {
    "source": "Subaru owner's manuals",
@@ -477,11 +1407,59 @@
    "automated_read": "ask"
   },
   {
+   "source": "Textile World",
+   "publisher": "Textile World",
+   "url": "https://www.textileworld.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "ask"
+  },
+  {
+   "source": "The Costco Connection",
+   "publisher": "Costco Wholesale Corporation",
+   "url": "https://www.costco.com/connection.html",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "yes"
+  },
+  {
+   "source": "The Daily Dot",
+   "publisher": "The Daily Dot",
+   "url": "https://www.dailydot.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "ask"
+  },
+  {
    "source": "The Golf News Net",
    "publisher": "The Golf News Net (Ryan Ballengee)",
    "url": "https://thegolfnewsnet.com/",
    "checked": "2026-11-03",
    "due": "2027-11-03",
+   "automated_read": "yes"
+  },
+  {
+   "source": "The Krazy Coupon Lady",
+   "publisher": "The Krazy Coupon Lady",
+   "url": "https://thekrazycouponlady.com/terms-of-use",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "ask"
+  },
+  {
+   "source": "The Virginian-Pilot",
+   "publisher": "Virginian-Pilot",
+   "url": "https://www.pilotonline.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Tires Plus date code sheet",
+   "publisher": "Tires Plus (Bridgestone Retail Operations)",
+   "url": "https://www.tiresplus.com/robots.txt",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
    "automated_read": "yes"
   },
   {
@@ -499,6 +1477,22 @@
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "ask"
+  },
+  {
+   "source": "Trojan Battery website",
+   "publisher": "Trojan Battery",
+   "url": "https://www.trojanbattery.com/robots.txt",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
+   "source": "U.S. Battery website",
+   "publisher": "U.S. Battery Mfg. Co.",
+   "url": "https://www.usbattery.com/robots.txt",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "yes"
   },
   {
    "source": "USDA FSIS Meat, Poultry and Egg Product Inspection Directory",
@@ -549,6 +1543,22 @@
    "automated_read": "yes"
   },
   {
+   "source": "Whiting-Turner project pages",
+   "publisher": "The Whiting-Turner Contracting Company",
+   "url": "https://www.whiting-turner.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Who Really Makes (whoreallymakes.com)",
+   "publisher": "whoreallymakes.com",
+   "url": "https://whoreallymakes.com/",
+   "checked": "2026-11-06",
+   "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
    "source": "Yokohama: tire life",
    "publisher": "Yokohama Tire Corporation",
    "url": "https://www.yokohamatire.com/terms-of-use",
@@ -594,6 +1604,55 @@
    "stamp": "documented",
    "next_check": "2026-12-03",
    "last_check": "2026-11-03"
+  },
+  {
+   "id": "c-ks-baby-wipes-nice-pak",
+   "product": "ks-baby-wipes",
+   "stamp": "documented",
+   "next_check": "2027-02-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-bath-tissue-georgia-pacific",
+   "product": "ks-bath-tissue",
+   "stamp": "documented",
+   "next_check": "2027-02-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-diapers-first-quality-label",
+   "product": "ks-diapers",
+   "stamp": "documented",
+   "next_check": "2027-02-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-diapers-first-quality-press",
+   "product": "ks-diapers",
+   "stamp": "reported",
+   "next_check": "2027-02-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-diapers-kimberly-clark",
+   "product": "ks-diapers",
+   "stamp": "reported",
+   "next_check": "2027-02-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-facial-tissue-kimberly-clark",
+   "product": "ks-facial-tissue-3-ply",
+   "stamp": "documented",
+   "next_check": "2027-02-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-ultra-soft-kruger",
+   "product": "ks-ultra-soft-bath-tissue",
+   "stamp": "documented",
+   "next_check": "2027-02-05",
+   "last_check": "2026-11-05"
   },
   {
    "id": "c-ks-albacore-bumble-bee",
@@ -902,6 +1961,307 @@
    "stamp": "reported",
    "next_check": "2027-05-04",
    "last_check": "2026-11-04"
+  },
+  {
+   "id": "c-ks-aller-fex-approval-holder",
+   "product": "ks-aller-fex",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-acetaminophen-made-by",
+   "product": "ks-med-acetaminophen",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-acetaminophen-pm-made-by",
+   "product": "ks-med-acetaminophen-pm",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-acid-controller-approval-holder",
+   "product": "ks-med-acid-controller",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-aller-flo-distributed-by",
+   "product": "ks-med-aller-flo",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-aller-tec-approval-holder",
+   "product": "ks-med-aller-tec",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-allerclear-approval-holder",
+   "product": "ks-med-allerclear",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-allerclear-d-12-hour-approval-holder",
+   "product": "ks-med-allerclear-d-12-hour",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-allerclear-d-24-hour-ohm-made-by",
+   "product": "ks-med-allerclear-d-24-hour-ohm",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-allerclear-d-24-hour-perrigo-approval-holder",
+   "product": "ks-med-allerclear-d-24-hour-perrigo",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-allergy-medicine-made-by",
+   "product": "ks-med-allergy-medicine",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-arthritis-pain-relief-distributed-by",
+   "product": "ks-med-arthritis-pain-relief",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-arthritis-pain-reliever-approval-holder",
+   "product": "ks-med-arthritis-pain-reliever",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-children-s-aller-tec-approval-holder",
+   "product": "ks-med-children-s-aller-tec",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-esomeprazole-magnesium-approval-holder",
+   "product": "ks-med-esomeprazole-magnesium",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-ibuprofen-ib-approval-holder",
+   "product": "ks-med-ibuprofen-ib",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-ibuprofen-minis-approval-holder",
+   "product": "ks-med-ibuprofen-minis",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-ibuprofen-softgels-approval-holder",
+   "product": "ks-med-ibuprofen-softgels",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-ibuprofen-tablets-lnk-010-made-by",
+   "product": "ks-med-ibuprofen-tablets-lnk-010",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-ibuprofen-tablets-lnk-139-made-by",
+   "product": "ks-med-ibuprofen-tablets-lnk-139",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-ibuprofen-tablets-perrigo-approval-holder",
+   "product": "ks-med-ibuprofen-tablets-perrigo",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-lansoprazole-approval-holder",
+   "product": "ks-med-lansoprazole",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-low-dose-aspirin-made-by",
+   "product": "ks-med-low-dose-aspirin",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-minoxidil-foam-distributed-by",
+   "product": "ks-med-minoxidil-foam",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-minoxidil-solution-made-by",
+   "product": "ks-med-minoxidil-solution",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-mucus-dm-approval-holder",
+   "product": "ks-med-mucus-dm",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-naproxen-sodium-approval-holder",
+   "product": "ks-med-naproxen-sodium",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-omeprazole-approval-holder",
+   "product": "ks-med-omeprazole",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-quit-2-cherry-lozenge-packed-by",
+   "product": "ks-med-quit-2-cherry-lozenge",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-quit-2-gum-perrigo-394-distributed-by",
+   "product": "ks-med-quit-2-gum-perrigo-394",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-quit-2-gum-perrigo-775-distributed-by",
+   "product": "ks-med-quit-2-gum-perrigo-775",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-quit-2-lozenge-packed-by",
+   "product": "ks-med-quit-2-lozenge",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-quit-4-cherry-lozenge-packed-by",
+   "product": "ks-med-quit-4-cherry-lozenge",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-quit-4-gum-perrigo-393-distributed-by",
+   "product": "ks-med-quit-4-gum-perrigo-393",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-quit-4-gum-perrigo-789-distributed-by",
+   "product": "ks-med-quit-4-gum-perrigo-789",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-quit-4-lozenge-packed-by",
+   "product": "ks-med-quit-4-lozenge",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-med-sleep-aid-made-by",
+   "product": "ks-med-sleep-aid",
+   "stamp": "documented",
+   "next_check": "2027-05-05",
+   "last_check": "2026-11-05"
+  },
+  {
+   "id": "c-ks-fabric-softener-sun-2012",
+   "product": "ks-fabric-softener",
+   "stamp": "documented",
+   "next_check": "2027-05-07",
+   "last_check": "2026-11-07"
+  },
+  {
+   "id": "c-ks-food-court-hot-dog-morris",
+   "product": "ks-food-court-hot-dog",
+   "stamp": "reported",
+   "next_check": "2027-05-07",
+   "last_check": "2026-11-07"
+  },
+  {
+   "id": "c-ks-laundry-pacs-radienz-2021",
+   "product": "ks-laundry-pacs",
+   "stamp": "reported",
+   "next_check": "2027-05-07",
+   "last_check": "2026-11-07"
+  },
+  {
+   "id": "c-ks-laundry-pacs-sun-2012",
+   "product": "ks-laundry-pacs",
+   "stamp": "documented",
+   "next_check": "2027-05-07",
+   "last_check": "2026-11-07"
+  },
+  {
+   "id": "c-ks-beef-hot-dogs-tracy",
+   "product": "ks-beef-hot-dogs",
+   "stamp": "confirmed",
+   "next_check": "2027-11-07",
+   "last_check": "2026-11-07"
+  },
+  {
+   "id": "c-ks-food-court-hot-dog-tracy",
+   "product": "ks-food-court-hot-dog",
+   "stamp": "confirmed",
+   "next_check": "2027-11-07",
+   "last_check": "2026-11-07"
   }
  ],
  "done": [
@@ -932,7 +2292,7 @@
   {
    "on": "2026-11-02",
    "task": "usda-establishments",
-   "what": "First load of the USDA plant directory (edition of Oct 26, 2026), downloaded by hand",
+   "what": "First load of the USDA plant directory (edition of Oct 26, 2026), downloaded in a browser",
    "result": "7,257 establishments loaded"
   },
   {
