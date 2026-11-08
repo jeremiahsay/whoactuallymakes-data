@@ -3,11 +3,23 @@
  "generated": "2026-11-08",
  "started": "2026-11-02",
  "count": {
-  "correction": 12,
+  "correction": 13,
   "update": 3,
-  "clarification": 2
+  "clarification": 3
  },
  "items": [
+  {
+   "id": "c-2026-11-08-maker-strength-scale",
+   "on": "2026-11-08",
+   "kind": "clarification",
+   "page": "/makers/kimberly-clark/",
+   "what": "The “How strong each tie is” scale on the Kimberly-Clark, Duracell, MISA Imports and Sun Products pages",
+   "was": "The scale said Confirmed meant the company or Costco says so in its own words.",
+   "now": "It now uses the same steps as How we know: Confirmed needs a code on the product that leads to the factory; a company’s own statement makes an answer Documented. No stamp changed.",
+   "why": "The scale’s wording didn’t match our published rules. Found in our site audit the day the pages went live.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
   {
    "id": "c-2026-11-08-costco-diapers-title",
    "on": "2026-11-08",
@@ -17,6 +29,18 @@
    "was": "The title said Kirkland diapers cost “From 13¢”, rounding up the lowest price.",
    "now": "The lowest Kirkland price on the page was 12.5¢ a diaper, so the title now says “Under 13¢”. A whole-cent price still reads “From”.",
    "why": "Rounding 12.5¢ up made the title name a lowest price that a cheaper size undercut. Found in our site audit.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-bourbon-barton-date",
+   "on": "2026-11-08",
+   "kind": "correction",
+   "page": "/kirkland-signature/bourbon/",
+   "what": "The date of one Barton 1792 label approval for Kirkland bourbon",
+   "was": "Our record dated TTB approval 20342001000264 to January 29, 2021, and called it approved.",
+   "now": "The approval was issued December 8, 2020, and TTB now lists it as surrendered. January 29, 2021 is the date TTB's search shows as completed. Barton's three other Kirkland approvals are still approved, so the answer is unchanged.",
+   "why": "We read the date from TTB's search results instead of box 19 of the approval. Found when we started reading every Kirkland approval weekly.",
    "flagged_by": "Our own re-check",
    "evidence": []
   },

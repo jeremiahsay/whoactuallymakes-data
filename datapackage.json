@@ -2,7 +2,7 @@
  "name": "whoactuallymakes-data",
  "id": "https://doi.org/10.5281/zenodo.23920936",
  "title": "Who Actually Makes open data",
- "description": "Who makes store-brand products, from public records: Kirkland Signature makers, companies behind store brands, NHTSA tire plant codes, tire age guidance, and the evidence behind each answer.",
+ "description": "Who makes store-brand products, from public records. 14 datasets, 9,837 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru and Kia rows in NHTSA's AALA reports, model years 2018 on.",
  "homepage": "https://whoactuallymakes.com/data/",
  "version": "2026-11-08",
  "licenses": [
@@ -59,8 +59,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 61589,
-   "hash": "sha256:1baae6926fe5ee3c7e4f4d464cbd1807599e763734fd5f451c9958a5bd627251",
+   "bytes": 65522,
+   "hash": "sha256:d7282f67483769b6413eb22682dc6c3a457e7fa6ee8bdcdbc8e6972409686134",
    "schema": {
     "fields": [
      {
@@ -96,7 +96,7 @@
      {
       "name": "relation",
       "type": "string",
-      "description": "made-by, bottled-by, packed-by, imported-by or recalled-by."
+      "description": "What the record says the company did, as one of these values (taken from the data, so the list is complete): approval-holder, bottled-by, distributed-by, fsc-label-holder, imported-by, label-holder, licensed-to, listed-maker, made-at, made-by, packed-by, recalled-by or registered-via. A record never says more than its value: recalled-by names the recalling firm, label holders hold the label, and so on."
      },
      {
       "name": "stamp",
@@ -172,8 +172,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 2744,
-   "hash": "sha256:5a63633bd8e0330372843b46622ff841fafbcf9224bc643acb9c72229717ec4a",
+   "bytes": 3818,
+   "hash": "sha256:a4c318bc2a92df216a7129a69e6b05a1a53c731e711a1e27bc9c39db686debc5",
    "schema": {
     "fields": [
      {
@@ -278,8 +278,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 54202,
-   "hash": "sha256:63479a2e11b4b2169ded490c57942054c8c2c79cc7da151692646be9bddb5d16",
+   "bytes": 57420,
+   "hash": "sha256:7f226c325e4e40d2c9074922043581631e57c5357185341b2f62dbfd095bb48e",
    "schema": {
     "fields": [
      {
@@ -300,7 +300,7 @@
      {
       "name": "link_kind",
       "type": "string",
-      "description": "claim, state-pet-food-register, fda-recall or api-oil-license."
+      "description": "Which kind of record links the company to the label, one of: api-oil-license, claim, fda-recall or state-pet-food-register."
      },
      {
       "name": "detail",
@@ -609,8 +609,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 254094,
-   "hash": "sha256:72dd5c69989ec29ac829f81d375a190ff4688bcf48c6198e65852057d2f18b10",
+   "bytes": 271777,
+   "hash": "sha256:1e1b33f6bfdb3cde290d6f1758253dd50996305f7a5bdeff0dcf0276a0242cac",
    "schema": {
     "fields": [
      {
@@ -743,6 +743,10 @@
      "path": "https://assets.sia.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf"
     },
     {
+     "title": "https://bgr.com/2064421/who-makes-where-manufactured-costco-kirkland-batteries/",
+     "path": "https://bgr.com/2064421/who-makes-where-manufactured-costco-kirkland-batteries/"
+    },
+    {
      "title": "https://cases.justia.com/federal/district-courts/california/candce/3:2018cv02871/326613/35/0.pdf",
      "path": "https://cases.justia.com/federal/district-courts/california/candce/3:2018cv02871/326613/35/0.pdf"
     },
@@ -873,10 +877,6 @@
     {
      "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65d8d650-9afc-44f7-9409-a3aa3014d4ab",
      "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65d8d650-9afc-44f7-9409-a3aa3014d4ab"
-    },
-    {
-     "title": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=74a728e1-9ca1-4219-9427-b503ab0480b4",
-     "path": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=74a728e1-9ca1-4219-9427-b503ab0480b4"
     }
    ]
   },
@@ -888,8 +888,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 48420,
-   "hash": "sha256:4b4c8e4a0d2c7727e544eeed89cdd74d65f0d0013a236083c2b8b33adb6dc8ec",
+   "bytes": 64910,
+   "hash": "sha256:f6c2a4a2a1f79d34b7e770aedd46a1479787bf884cc1ed1613e1e00eae7d227f",
    "schema": {
     "fields": [
      {
@@ -967,6 +967,10 @@
      "path": "https://acdelcocanada.com/"
     },
     {
+     "title": "https://bgr.com/",
+     "path": "https://bgr.com/"
+    },
+    {
      "title": "https://centralmilling.com/",
      "path": "https://centralmilling.com/"
     },
@@ -983,6 +987,14 @@
      "path": "https://dailymed.nlm.nih.gov/dailymed/"
     },
     {
+     "title": "https://delcoline.com/wp-content/uploads/2016/08/ACDelco-battery-warranty-information.pdf",
+     "path": "https://delcoline.com/wp-content/uploads/2016/08/ACDelco-battery-warranty-information.pdf"
+    },
+    {
+     "title": "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf",
+     "path": "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf"
+    },
+    {
      "title": "https://diamondpetcompany.com/",
      "path": "https://diamondpetcompany.com/"
     },
@@ -993,6 +1005,10 @@
     {
      "title": "https://engineoil.api.org/Directory/EolcsSearch",
      "path": "https://engineoil.api.org/Directory/EolcsSearch"
+    },
+    {
+     "title": "https://foodlion.com/",
+     "path": "https://foodlion.com/"
     },
     {
      "title": "https://forests.org/",
@@ -1019,8 +1035,20 @@
      "path": "https://itstillruns.com/"
     },
     {
+     "title": "https://kiaoldnewsroom.newsmarket.com/",
+     "path": "https://kiaoldnewsroom.newsmarket.com/"
+    },
+    {
      "title": "https://lars.ndda.nd.gov/public/productsearch/3",
      "path": "https://lars.ndda.nd.gov/public/productsearch/3"
+    },
+    {
+     "title": "https://media.subaru.com/",
+     "path": "https://media.subaru.com/"
+    },
+    {
+     "title": "https://mg2.com/",
+     "path": "https://mg2.com/"
     },
     {
      "title": "https://mygarage.honda.com/s/find-honda",
@@ -1099,6 +1127,14 @@
      "path": "https://whoreallymakes.com/"
     },
     {
+     "title": "https://worldwide.kia.com/en/company/investor-relations",
+     "path": "https://worldwide.kia.com/en/company/investor-relations"
+    },
+    {
+     "title": "https://www.425business.com/",
+     "path": "https://www.425business.com/"
+    },
+    {
      "title": "https://www.aaa.com/",
      "path": "https://www.aaa.com/"
     },
@@ -1123,44 +1159,8 @@
      "path": "https://www.bridgestoneamericas.com/en/company/safety/choosing-tires/replacement-guidance"
     },
     {
-     "title": "https://www.chevrolet.com/support/vehicle/manuals-guides",
-     "path": "https://www.chevrolet.com/support/vehicle/manuals-guides"
-    },
-    {
-     "title": "https://www.continental-tires.com/tire-knowledge/tire-age/",
-     "path": "https://www.continental-tires.com/tire-knowledge/tire-age/"
-    },
-    {
-     "title": "https://www.coopertire.com/en_US/tire-education/learn-tire-maintenance/how-long-does-a-tire-last.html",
-     "path": "https://www.coopertire.com/en_US/tire-education/learn-tire-maintenance/how-long-does-a-tire-last.html"
-    },
-    {
-     "title": "https://www.costco.co.uk/",
-     "path": "https://www.costco.co.uk/"
-    },
-    {
-     "title": "https://www.costco.com/",
-     "path": "https://www.costco.com/"
-    },
-    {
-     "title": "https://www.courtlistener.com/recap/",
-     "path": "https://www.courtlistener.com/recap/"
-    },
-    {
-     "title": "https://www.dealmoon.com/",
-     "path": "https://www.dealmoon.com/"
-    },
-    {
-     "title": "https://www.eastpennmanufacturing.com/",
-     "path": "https://www.eastpennmanufacturing.com/"
-    },
-    {
-     "title": "https://www.ecfr.gov/",
-     "path": "https://www.ecfr.gov/"
-    },
-    {
-     "title": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts",
-     "path": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts"
+     "title": "https://www.cand.uscourts.gov/",
+     "path": "https://www.cand.uscourts.gov/"
     }
    ]
   },
@@ -1172,8 +1172,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 8935,
-   "hash": "sha256:39a3761f6fba6338e3cf76580ff745ece340d5a64ec1e648bac3f5dcd7ffd3fa",
+   "bytes": 10147,
+   "hash": "sha256:d8958d2ff8f43757a045f2916098decce6d5ef47621b16db475a4041581fbf84",
    "schema": {
     "fields": [
      {
@@ -1240,8 +1240,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 7235,
-   "hash": "sha256:5729693620c6fb3fd146ce7d392a7ec06dedd3f6ed9bb6b4d3176c2d1af70f5b",
+   "bytes": 8961,
+   "hash": "sha256:e1c5edab0cdc0e69fb6b0786a500c381c0aae545e26e489a578a90929963dda8",
    "schema": {
     "fields": [
      {
@@ -1410,8 +1410,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 28328,
-   "hash": "sha256:8e951e16b75fa54de48e5e0b8f747a61d9efe2ca977c8832b7f2af950e851791",
+   "bytes": 28393,
+   "hash": "sha256:ec0d91053d2cf782b7ff71ca750ef09006d375dffa4a5a780d02f1a229f58aa8",
    "schema": {
     "fields": [
      {

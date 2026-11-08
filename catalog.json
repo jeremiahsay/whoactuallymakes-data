@@ -8,8 +8,13 @@
   "url": "https://creativecommons.org/licenses/by/4.0/"
  },
  "credit": "Who Actually Makes (whoactuallymakes.com), CC BY 4.0",
+ "archive": {
+  "doi": "10.5281/zenodo.23920936",
+  "doi_note": "Concept DOI: always resolves to the newest archived version on Zenodo.",
+  "mirror": "https://github.com/jeremiahsay/whoactuallymakes-data"
+ },
  "count": 14,
- "records": 9752,
+ "records": 9837,
  "datasets": [
   {
    "id": "claims",
@@ -29,8 +34,8 @@
    ],
    "rights": "Quoted words belong to their publishers; most records are US government work. CC BY covers our rows.",
    "based_on": [],
-   "records": 97,
-   "updated": "2026-11-07",
+   "records": 101,
+   "updated": "2026-11-08",
    "fields": [
     {
      "name": "claim_id",
@@ -65,7 +70,7 @@
     {
      "name": "relation",
      "type": "text",
-     "about": "made-by, bottled-by, packed-by, imported-by or recalled-by."
+     "about": "What the record says the company did, as one of these values (taken from the data, so the list is complete): approval-holder, bottled-by, distributed-by, fsc-label-holder, imported-by, label-holder, licensed-to, listed-maker, made-at, made-by, packed-by, recalled-by or registered-via. A record never says more than its value: recalled-by names the recalling firm, label holders hold the label, and so on."
     },
     {
      "name": "stamp",
@@ -146,8 +151,8 @@
      "summary": "The USGA and R&A list of conforming golf balls lists all three Kirkland Signature Performance + balls, white and yellow, under SM Global LLC as manufacturer. Costco sells today's ball as the Performance Plus V3.0; the list doesn't say which version each listing is.",
      "evidence_ids": "ev-usga-ks-golf-balls-sm-global | ev-costco-ks-golf-ball-v3",
      "evidence_urls": "https://www.usga.org/ConformingGolfBall/ | https://www.costco.com/p/-/kirkland-signature-v30-golf-ball-2-dozen/4000291493",
-     "last_checked": "2026-11-03",
-     "next_check": "2026-12-03",
+     "last_checked": "2026-11-08",
+     "next_check": "2026-12-08",
      "page": "https://whoactuallymakes.com/kirkland-signature/golf-balls/"
     },
     {
@@ -164,11 +169,11 @@
      "region": "USGA and R&A list (worldwide)",
      "variant": "Kirkland Signature Driver, 10.5 degrees",
      "on_label": "“Kirkland, Signature” and the loft on the sole",
-     "summary": "The USGA and R&A list of conforming driver heads, January 20, 2025 edition, lists the Kirkland Signature Driver (10.5 degrees) under SM Global, LLC as manufacturer.",
-     "evidence_ids": "ev-usga-cdh-2025-01-ks-driver | ev-gm-ks-driver-2023-12",
-     "evidence_urls": "https://www.usga.org/ConformingGolfClub/ConformingClubList_M.pdf | https://www.golfmonthly.com/news/costco-kirkland-signature-driver-goes-on-sale",
-     "last_checked": "2026-11-03",
-     "next_check": "2026-12-03",
+     "summary": "The USGA and R&A list of conforming driver heads lists the Kirkland Signature Driver (10.5 degrees) under SM Global, LLC as manufacturer, from the January 20, 2025 edition through the edition effective November 2, 2026.",
+     "evidence_ids": "ev-usga-cdh-2026-11-ks-driver | ev-usga-cdh-2025-01-ks-driver | ev-gm-ks-driver-2023-12",
+     "evidence_urls": "https://www.usga.org/ConformingGolfClub/ConformingClubList_M.pdf | https://www.usga.org/ConformingGolfClub/ConformingClubList_M.pdf | https://www.golfmonthly.com/news/costco-kirkland-signature-driver-goes-on-sale",
+     "last_checked": "2026-11-08",
+     "next_check": "2026-12-08",
      "page": "https://whoactuallymakes.com/kirkland-signature/golf-clubs/"
     },
     {
@@ -238,13 +243,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/claims.json",
-     "bytes": 95053,
-     "sha256": "c56e88398eb43d88e0557b1a4e1375aaf50d151c4c210f4cf6c44f9ec7244e92"
+     "bytes": 100361,
+     "sha256": "51d5a7b125bf296d3abb7880a91f5a9d21cec70a5902cac0989a098c594c6bed"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/claims.csv",
-     "bytes": 61589,
-     "sha256": "1baae6926fe5ee3c7e4f4d464cbd1807599e763734fd5f451c9958a5bd627251"
+     "bytes": 65522,
+     "sha256": "d7282f67483769b6413eb22682dc6c3a457e7fa6ee8bdcdbc8e6972409686134"
     }
    }
   },
@@ -270,8 +275,8 @@
     "https://open.fda.gov/apis/food/enforcement/",
     "https://open.fda.gov/apis/drug/enforcement/"
    ],
-   "records": 10,
-   "updated": "2026-11-05",
+   "records": 14,
+   "updated": "2026-11-08",
    "fields": [
     {
      "name": "company_slug",
@@ -368,6 +373,23 @@
      "next_check": "2027-05-03"
     },
     {
+     "company_slug": "duracell",
+     "company": "Duracell",
+     "legal_names": "Duracell",
+     "website": "https://duracell.com/",
+     "category": "Batteries",
+     "about": "Named as the maker of Kirkland AA and AAA batteries in one 2016 TV report, and nowhere since in a record",
+     "kirkland_claims": 2,
+     "kirkland_products": 2,
+     "register_other_companies": "",
+     "fda_recalls": "",
+     "fda_recall_store_names": "",
+     "plants": 2,
+     "page": "https://whoactuallymakes.com/makers/duracell/",
+     "last_checked": "2026-11-08",
+     "next_check": "2027-05-04"
+    },
+    {
      "company_slug": "first-quality",
      "company": "First Quality",
      "legal_names": "First Quality Enterprises, LLC",
@@ -415,37 +437,20 @@
      "fda_recall_store_names": "",
      "plants": 0,
      "page": "https://whoactuallymakes.com/makers/highline-warren/",
-     "last_checked": "2026-11-03",
+     "last_checked": "2026-11-08",
      "next_check": "2027-05-03"
-    },
-    {
-     "company_slug": "kruger-products",
-     "company": "Kruger Products",
-     "legal_names": "Kruger Products, Inc.",
-     "website": "https://www.krugerproducts.ca/",
-     "category": "Household paper",
-     "about": "Canadian tissue company whose FSC code is on Costco's photos of Kirkland Ultra Soft",
-     "kirkland_claims": 1,
-     "kirkland_products": 1,
-     "register_other_companies": "",
-     "fda_recalls": "",
-     "fda_recall_store_names": "",
-     "plants": 1,
-     "page": "https://whoactuallymakes.com/makers/kruger-products/",
-     "last_checked": "2026-11-05",
-     "next_check": "2027-02-05"
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/companies.json",
-     "bytes": 5837,
-     "sha256": "5c08b5f2929a624a54775895ad1835f218c7480a743ce5ba3dc1739d3d01551d"
+     "bytes": 8197,
+     "sha256": "3fe5ff6b0fb2579eca4d54bff749ea2a38ce10d4090d4d4bd462eed163c5efdc"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/companies.csv",
-     "bytes": 2744,
-     "sha256": "5a63633bd8e0330372843b46622ff841fafbcf9224bc643acb9c72229717ec4a"
+     "bytes": 3818,
+     "sha256": "a4c318bc2a92df216a7129a69e6b05a1a53c731e711a1e27bc9c39db686debc5"
     }
    }
   },
@@ -471,8 +476,8 @@
     "https://open.fda.gov/apis/food/enforcement/",
     "https://open.fda.gov/apis/drug/enforcement/"
    ],
-   "records": 164,
-   "updated": "2026-11-05",
+   "records": 172,
+   "updated": "2026-11-08",
    "fields": [
     {
      "name": "company_slug",
@@ -492,7 +497,7 @@
     {
      "name": "link_kind",
      "type": "text",
-     "about": "claim, state-pet-food-register, fda-recall or api-oil-license."
+     "about": "Which kind of record links the company to the label, one of: api-oil-license, claim, fda-recall or state-pet-food-register."
     },
     {
      "name": "detail",
@@ -600,13 +605,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/company-labels.json",
-     "bytes": 86653,
-     "sha256": "40b8c271510f719e7fcb20277040c3e6a7a9349e1cfad55c72d3ebbf21c01f6f"
+     "bytes": 91449,
+     "sha256": "6a5381b063ad724499509e8bb7e4eb18d34931d62613f7dc143972a932dc7a05"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/company-labels.csv",
-     "bytes": 54202,
-     "sha256": "63479a2e11b4b2169ded490c57942054c8c2c79cc7da151692646be9bddb5d16"
+     "bytes": 57420,
+     "sha256": "7f226c325e4e40d2c9074922043581631e57c5357185341b2f62dbfd095bb48e"
     }
    }
   },
@@ -976,6 +981,7 @@
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0648-2023%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2077-2019%22",
     "https://assets.sia.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf",
+    "https://bgr.com/2064421/who-makes-where-manufactured-costco-kirkland-batteries/",
     "https://cases.justia.com/federal/district-courts/california/candce/3:2018cv02871/326613/35/0.pdf",
     "https://centralmilling.com/",
     "https://cn.fsc.org/sites/default/files/2026-02/FSC-STD-50-001%20V3-0%20EN%20Use%20of%20the%20FSC%28R%29%20Trademarks%20by%20Certificate%20Holders.pdf",
@@ -1008,10 +1014,9 @@
     "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=4b8ad98e-de76-4f49-3b89-01e9dd5cde16",
     "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=5180abbc-c6c4-4b82-b6e7-4504e3bcff0f",
     "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=651d14d1-c5de-4cb9-9484-b05986e641ac",
-    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65d8d650-9afc-44f7-9409-a3aa3014d4ab",
-    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=74a728e1-9ca1-4219-9427-b503ab0480b4"
+    "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65d8d650-9afc-44f7-9409-a3aa3014d4ab"
    ],
-   "records": 455,
+   "records": 476,
    "updated": "2026-11-08",
    "fields": [
     {
@@ -1150,13 +1155,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/evidence.json",
-     "bytes": 345309,
-     "sha256": "1ddfff0f214b1536f043e110668297dcb8d932196979d07407634a14f03aba1b"
+     "bytes": 367142,
+     "sha256": "ad5a348e1d4f2a590b0ab897079610ce07c76b524f807ec580c47eeffbad05ed"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/evidence.csv",
-     "bytes": 254094,
-     "sha256": "72dd5c69989ec29ac829f81d375a190ff4688bcf48c6198e65852057d2f18b10"
+     "bytes": 271777,
+     "sha256": "1e1b33f6bfdb3cde290d6f1758253dd50996305f7a5bdeff0dcf0276a0242cac"
     }
    }
   },
@@ -1178,20 +1183,27 @@
    "rights": "CC BY covers the whole file.",
    "based_on": [
     "https://acdelcocanada.com/",
+    "https://bgr.com/",
     "https://centralmilling.com/",
     "https://community.qvc.com/",
     "https://costco.interstatebatteries.com/",
     "https://dailymed.nlm.nih.gov/dailymed/",
+    "https://delcoline.com/wp-content/uploads/2016/08/ACDelco-battery-warranty-information.pdf",
+    "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf",
     "https://diamondpetcompany.com/",
     "https://duracell.com/",
     "https://engineoil.api.org/Directory/EolcsSearch",
+    "https://foodlion.com/",
     "https://forests.org/",
     "https://fortune.com/",
     "https://fsc.org/",
     "https://gov.georgia.gov/",
     "https://hip2save.com/",
     "https://itstillruns.com/",
+    "https://kiaoldnewsroom.newsmarket.com/",
     "https://lars.ndda.nd.gov/public/productsearch/3",
+    "https://media.subaru.com/",
+    "https://mg2.com/",
     "https://mygarage.honda.com/s/find-honda",
     "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
     "https://newmodernmom.com/",
@@ -1211,25 +1223,18 @@
     "https://web.archive.org/web/*/usga.org/ConformingGolfBall/gball_list.pdf",
     "https://web.archive.org/web/*/usga.org/ConformingGolfClub/ConformingClubList_M.pdf",
     "https://whoreallymakes.com/",
+    "https://worldwide.kia.com/en/company/investor-relations",
+    "https://www.425business.com/",
     "https://www.aaa.com/",
     "https://www.allblogthings.com/",
     "https://www.babygearlab.com/",
     "https://www.batteriesinaflash.com/",
     "https://www.bloomberg.com/",
     "https://www.bridgestoneamericas.com/en/company/safety/choosing-tires/replacement-guidance",
-    "https://www.chevrolet.com/support/vehicle/manuals-guides",
-    "https://www.continental-tires.com/tire-knowledge/tire-age/",
-    "https://www.coopertire.com/en_US/tire-education/learn-tire-maintenance/how-long-does-a-tire-last.html",
-    "https://www.costco.co.uk/",
-    "https://www.costco.com/",
-    "https://www.courtlistener.com/recap/",
-    "https://www.dealmoon.com/",
-    "https://www.eastpennmanufacturing.com/",
-    "https://www.ecfr.gov/",
-    "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts"
+    "https://www.cand.uscourts.gov/"
    ],
-   "records": 98,
-   "updated": "2026-11-06",
+   "records": 137,
+   "updated": "2026-11-08",
    "fields": [
     {
      "name": "id",
@@ -1299,6 +1304,21 @@
    ],
    "preview": [
     {
+     "id": "api-eolcs",
+     "name": "API Engine Oil Licensing and Certification System (EOLCS): Directory of Licensees",
+     "publisher": "American Petroleum Institute (API)",
+     "url": "https://engineoil.api.org/Directory/EolcsSearch",
+     "kind": "Government registry",
+     "primary": true,
+     "proves": "Which company holds API's license for an engine oil sold under a given brand and grade, and the license dates. API's programme “authorizes engine oil marketers that meet specified requirements to use the API Engine Oil Quality Marks”.",
+     "cannot_prove": "Who blended or bottled a given bottle, or where. The license names the company authorised to market the oil with API's marks, not the plant.",
+     "terms_url": "https://www.api.org/terms-and-conditions",
+     "terms_read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+     "terms_checked": "2026-11-03",
+     "credit": "",
+     "pulls": "every 150 days in a browser, last 2026-11-03"
+    },
+    {
      "id": "fsc-search",
      "name": "FSC Search (FSC certificate register)",
      "publisher": "Forest Stewardship Council",
@@ -1341,7 +1361,7 @@
      "terms_read": "Open license. We read it with a script.",
      "terms_checked": "2026-11-03",
      "credit": "",
-     "pulls": "every 182 days by script, last 2026-11-03"
+     "pulls": "every 30 days by script, last 2026-11-03"
     },
     {
      "id": "sfi-database",
@@ -1357,33 +1377,18 @@
      "terms_checked": "2026-11-05",
      "credit": "",
      "pulls": "every 90 days in a browser, last 2026-11-05"
-    },
-    {
-     "id": "usda-fsis-mpi",
-     "name": "USDA FSIS Meat, Poultry and Egg Product Inspection Directory",
-     "publisher": "US Department of Agriculture, Food Safety and Inspection Service",
-     "url": "https://www.fsis.usda.gov/inspection/establishments/meat-poultry-and-egg-product-inspection-directory",
-     "kind": "Government registry",
-     "primary": true,
-     "proves": "Which plant holds a USDA establishment number, with its name, address and the activities it is inspected for.",
-     "cannot_prove": "Which brands or products a plant makes, or that it made a given lot. On meat labels the number is that of the plant where the product was processed under inspection (9 CFR 317.2(i)); the directory only says who holds each number.",
-     "terms_url": "https://www.usda.gov/about-usda/policies-and-links",
-     "terms_read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
-     "terms_checked": "2026-11-02",
-     "credit": "",
-     "pulls": "every 30 days in a browser, last 2026-11-02"
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/sources.json",
-     "bytes": 107322,
-     "sha256": "dc8ce41289a6dee6709c0d3e082c8c4a1ca1b16e03508d595febcf6005757952"
+     "bytes": 151575,
+     "sha256": "c44023b860886f022af5b23c96e4dda1cfc33a5583d0617816f61325192ea5fa"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/sources.csv",
-     "bytes": 48420,
-     "sha256": "4b4c8e4a0d2c7727e544eeed89cdd74d65f0d0013a236083c2b8b33adb6dc8ec"
+     "bytes": 64910,
+     "sha256": "f6c2a4a2a1f79d34b7e770aedd46a1479787bf884cc1ed1613e1e00eae7d227f"
     }
    }
   },
@@ -1403,7 +1408,7 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 17,
+   "records": 19,
    "updated": "2026-11-08",
    "fields": [
     {
@@ -1459,6 +1464,18 @@
    ],
    "preview": [
     {
+     "id": "c-2026-11-08-maker-strength-scale",
+     "on": "2026-11-08",
+     "kind": "clarification",
+     "page": "/makers/kimberly-clark/",
+     "what": "The “How strong each tie is” scale on the Kimberly-Clark, Duracell, MISA Imports and Sun Products pages",
+     "was": "The scale said Confirmed meant the company or Costco says so in its own words.",
+     "now": "It now uses the same steps as How we know: Confirmed needs a code on the product that leads to the factory; a company’s own statement makes an answer Documented. No stamp changed.",
+     "why": "The scale’s wording didn’t match our published rules. Found in our site audit the day the pages went live.",
+     "flagged_by": "Our own re-check",
+     "evidence": ""
+    },
+    {
      "id": "c-2026-11-08-costco-diapers-title",
      "on": "2026-11-08",
      "kind": "correction",
@@ -1467,6 +1484,18 @@
      "was": "The title said Kirkland diapers cost “From 13¢”, rounding up the lowest price.",
      "now": "The lowest Kirkland price on the page was 12.5¢ a diaper, so the title now says “Under 13¢”. A whole-cent price still reads “From”.",
      "why": "Rounding 12.5¢ up made the title name a lowest price that a cheaper size undercut. Found in our site audit.",
+     "flagged_by": "Our own re-check",
+     "evidence": ""
+    },
+    {
+     "id": "c-2026-11-08-bourbon-barton-date",
+     "on": "2026-11-08",
+     "kind": "correction",
+     "page": "/kirkland-signature/bourbon/",
+     "what": "The date of one Barton 1792 label approval for Kirkland bourbon",
+     "was": "Our record dated TTB approval 20342001000264 to January 29, 2021, and called it approved.",
+     "now": "The approval was issued December 8, 2020, and TTB now lists it as surrendered. January 29, 2021 is the date TTB's search shows as completed. Barton's three other Kirkland approvals are still approved, so the answer is unchanged.",
+     "why": "We read the date from TTB's search results instead of box 19 of the approval. Found when we started reading every Kirkland approval weekly.",
      "flagged_by": "Our own re-check",
      "evidence": ""
     },
@@ -1493,42 +1522,18 @@
      "why": "We missed the line on the label when we read it, and found it on a re-read.",
      "flagged_by": "Our own re-check",
      "evidence": ""
-    },
-    {
-     "id": "c-2026-11-07-acdelco-p-series",
-     "on": "2026-11-07",
-     "kind": "correction",
-     "page": "/battery-date-code/",
-     "what": "ACDelco's P series, on the battery date code decoder",
-     "was": "We showed the P series as Reported, from a seller's guide.",
-     "now": "ACDelco's warranty sheet, revised February 2015, says the first character is P or S and that P 094N means September 2014. P now reads as a Maker's rule, with the record's date.",
-     "why": "We found ACDelco's own sheet on a later read.",
-     "flagged_by": "Our own re-check",
-     "evidence": ""
-    },
-    {
-     "id": "c-2026-11-06-deka-date-code",
-     "on": "2026-11-06",
-     "kind": "correction",
-     "page": "/battery-date-code/",
-     "what": "Deka's letter date code, on the battery date code decoder",
-     "was": "Reported: letter codes for Deka came only from a seller's guide, and the 3/23 ship sticker was the one format we could confirm.",
-     "now": "Maker's rule: Deka's care sheet prints a Shipping Date Code, a month letter that skips I, then a year digit, with L1 as November 2011. The two-digit form such as D24 stays Reported.",
-     "why": "We found Deka's own sheet the day the page went live, while reading its storage guidance.",
-     "flagged_by": "Our own re-check",
-     "evidence": ""
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/corrections.json",
-     "bytes": 12873,
-     "sha256": "090c89d6d826b89f6e47fbffd3c052caca1c5ed1405401757033f37815059367"
+     "bytes": 14381,
+     "sha256": "249d543f06e189ad7bbee1d0007b90aaaf95f9ff3ee20e81109deceeaacb8295"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/corrections.csv",
-     "bytes": 8935,
-     "sha256": "39a3761f6fba6338e3cf76580ff745ece340d5a64ec1e648bac3f5dcd7ffd3fa"
+     "bytes": 10147,
+     "sha256": "d8958d2ff8f43757a045f2916098decce6d5ef47621b16db475a4041581fbf84"
     }
    }
   },
@@ -1548,7 +1553,7 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 32,
+   "records": 39,
    "updated": "2026-11-08",
    "fields": [
     {
@@ -1639,7 +1644,7 @@
      "every_days": 7,
      "once": false,
      "last": "2026-11-05",
-     "due": "2026-11-09",
+     "due": "2026-11-12",
      "result": "47 labels read; a change is flagged for a person"
     },
     {
@@ -1657,13 +1662,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/schedule.json",
-     "bytes": 103458,
-     "sha256": "f82f3f98e9d27b4cad6af2a5c64b094dfb7572af3e1b88a0f0db9e27179c584e"
+     "bytes": 119463,
+     "sha256": "5c0a9f3ce055cfd0a2c2cefa66ed979edfc105d26e71b443abf9420aa14e9464"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/schedule.csv",
-     "bytes": 7235,
-     "sha256": "5729693620c6fb3fd146ce7d392a7ec06dedd3f6ed9bb6b4d3176c2d1af70f5b"
+     "bytes": 8961,
+     "sha256": "e1c5edab0cdc0e69fb6b0786a500c381c0aae545e26e489a578a90929963dda8"
     }
    }
   },
@@ -2054,7 +2059,7 @@
      "name_brand_label": "",
      "record": "Costco product listing",
      "record_covers": "One decaf",
-     "record_date": "2026-11-03",
+     "record_date": "2026-11-08",
      "price_unit": "",
      "kirkland_cents": "",
      "name_brand_cents": "",
@@ -2160,13 +2165,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/kirkland-vs-pairs.json",
-     "bytes": 67586,
-     "sha256": "30a22fa0405191c0363a17a595b979b8ad55478c4523f271ca24d6b03b120986"
+     "bytes": 67651,
+     "sha256": "86157babb9712b95b1862ac9a69530299168b3f8c26da0d67817ce75b29a8e5b"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/kirkland-vs-pairs.csv",
-     "bytes": 28328,
-     "sha256": "8e951e16b75fa54de48e5e0b8f747a61d9efe2ca977c8832b7f2af950e851791"
+     "bytes": 28393,
+     "sha256": "ec0d91053d2cf782b7ff71ca750ef09006d375dffa4a5a780d02f1a229f58aa8"
     }
    }
   },

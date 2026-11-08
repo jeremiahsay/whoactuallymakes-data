@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-05",
- "count": 10,
+ "generated": "2026-11-08",
+ "count": 14,
  "rows": [
   {
    "company_slug": "diamond-pet-foods",
@@ -19,6 +19,23 @@
    "page": "https://whoactuallymakes.com/makers/diamond-pet-foods/",
    "last_checked": "2026-11-03",
    "next_check": "2027-05-03"
+  },
+  {
+   "company_slug": "duracell",
+   "company": "Duracell",
+   "legal_names": "Duracell",
+   "website": "https://duracell.com/",
+   "category": "Batteries",
+   "about": "Named as the maker of Kirkland AA and AAA batteries in one 2016 TV report, and nowhere since in a record",
+   "kirkland_claims": 2,
+   "kirkland_products": 2,
+   "register_other_companies": "",
+   "fda_recalls": "",
+   "fda_recall_store_names": "",
+   "plants": 2,
+   "page": "https://whoactuallymakes.com/makers/duracell/",
+   "last_checked": "2026-11-08",
+   "next_check": "2027-05-04"
   },
   {
    "company_slug": "first-quality",
@@ -68,8 +85,25 @@
    "fda_recall_store_names": "",
    "plants": 0,
    "page": "https://whoactuallymakes.com/makers/highline-warren/",
-   "last_checked": "2026-11-03",
+   "last_checked": "2026-11-08",
    "next_check": "2027-05-03"
+  },
+  {
+   "company_slug": "kimberly-clark",
+   "company": "Kimberly-Clark",
+   "legal_names": "Kimberly-Clark Corporation",
+   "website": "https://www.kimberly-clark.com/",
+   "category": "Paper and baby care",
+   "about": "The Huggies maker that left Kirkland diapers in 2025 and holds the FSC label on Kirkland facial tissue",
+   "kirkland_claims": 2,
+   "kirkland_products": 2,
+   "register_other_companies": "",
+   "fda_recalls": "",
+   "fda_recall_store_names": "",
+   "plants": 5,
+   "page": "https://whoactuallymakes.com/makers/kimberly-clark/",
+   "last_checked": "2026-11-08",
+   "next_check": "2027-02-05"
   },
   {
    "company_slug": "kruger-products",
@@ -83,9 +117,9 @@
    "register_other_companies": "",
    "fda_recalls": "",
    "fda_recall_store_names": "",
-   "plants": 1,
+   "plants": 10,
    "page": "https://whoactuallymakes.com/makers/kruger-products/",
-   "last_checked": "2026-11-05",
+   "last_checked": "2026-11-08",
    "next_check": "2027-02-05"
   },
   {
@@ -104,6 +138,23 @@
    "page": "https://whoactuallymakes.com/makers/lnk-international/",
    "last_checked": "2026-11-05",
    "next_check": "2027-05-03"
+  },
+  {
+   "company_slug": "misa-imports",
+   "company": "MISA Imports",
+   "legal_names": "MISA Imports, Inc.",
+   "website": "https://www.misaimports.com/",
+   "category": "Wine and spirits",
+   "about": "Dallas importer whose permit is on more Kirkland label approvals than any other in TTB’s registry",
+   "kirkland_claims": 2,
+   "kirkland_products": 2,
+   "register_other_companies": "",
+   "fda_recalls": "",
+   "fda_recall_store_names": "",
+   "plants": 0,
+   "page": "https://whoactuallymakes.com/makers/misa-imports/",
+   "last_checked": "2026-11-08",
+   "next_check": "2027-02-08"
   },
   {
    "company_slug": "perrigo",
@@ -153,8 +204,8 @@
    "fda_recall_store_names": "",
    "plants": 2,
    "page": "https://whoactuallymakes.com/makers/sazerac/",
-   "last_checked": "2026-11-03",
-   "next_check": "2027-05-03"
+   "last_checked": "2026-11-08",
+   "next_check": "2027-02-08"
   },
   {
    "company_slug": "sm-global",
@@ -170,8 +221,25 @@
    "fda_recall_store_names": "",
    "plants": 0,
    "page": "https://whoactuallymakes.com/makers/sm-global/",
-   "last_checked": "2026-11-03",
-   "next_check": "2026-12-03"
+   "last_checked": "2026-11-08",
+   "next_check": "2026-12-08"
+  },
+  {
+   "company_slug": "sun-products",
+   "company": "Sun Products",
+   "legal_names": "The Sun Products Corporation",
+   "website": "",
+   "category": "Laundry",
+   "about": "Maker of the all and Snuggle brands, named on Kirkland laundry safety sheets in 2012 and bought by Henkel in 2016",
+   "kirkland_claims": 2,
+   "kirkland_products": 2,
+   "register_other_companies": "",
+   "fda_recalls": "",
+   "fda_recall_store_names": "",
+   "plants": 0,
+   "page": "https://whoactuallymakes.com/makers/sun-products/",
+   "last_checked": "2026-11-07",
+   "next_check": "2027-05-07"
   }
  ]
 }

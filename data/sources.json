@@ -1,10 +1,59 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-06",
- "count": 98,
- "primary": 76,
- "by_hand": 14,
+ "generated": "2026-11-08",
+ "count": 137,
+ "primary": 94,
+ "by_hand": 17,
  "sources": [
+  {
+   "id": "api-eolcs",
+   "name": "API Engine Oil Licensing and Certification System (EOLCS): Directory of Licensees",
+   "short": "API engine oil license directory",
+   "publisher": "American Petroleum Institute (API)",
+   "url": "https://engineoil.api.org/Directory/EolcsSearch",
+   "kind": "Government registry",
+   "primary": true,
+   "proves": "Which company holds API's license for an engine oil sold under a given brand and grade, and the license dates. API's programme “authorizes engine oil marketers that meet specified requirements to use the API Engine Oil Quality Marks”.",
+   "cannot_prove": "Who blended or bottled a given bottle, or where. The license names the company authorised to market the oil with API's marks, not the plant.",
+   "terms": {
+    "url": "https://www.api.org/terms-and-conditions",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-03",
+    "due": "2027-11-03"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature motor oil",
+     "url": "/kirkland-signature/motor-oil/",
+     "note": "API licenses for 10 Kirkland oils"
+    },
+    {
+     "label": "Highline Warren: every brand on license 0163",
+     "url": "/makers/highline-warren/",
+     "note": "All 564 listings, 52 brand names"
+    },
+    {
+     "label": "Who makes store-brand motor oil?",
+     "url": "/store-brand-motor-oil/",
+     "note": "License holders for 14 store brands, from 12 brand searches and 3 full licenses"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "API motor oil licence listings",
+     "how": "hand",
+     "every_days": 150,
+     "last": "2026-11-03",
+     "due": "2027-04-05",
+     "result": "14 brands from 431 listings; 6 held by the store, 8 by Highline Warren",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Search API's public directory in a browser, one brand at a time, then update data/registries/api-eolcs/."
+    }
+   ]
+  },
   {
    "id": "fsc-search",
    "name": "FSC Search (FSC certificate register)",
@@ -67,6 +116,16 @@
      "label": "Tire DOT code lookup",
      "url": "/tire-dot-code-lookup/",
      "note": "Every plant code and the factory it belongs to"
+    },
+    {
+     "label": "Where are Subarus made?",
+     "url": "/where-is-subaru-made/",
+     "note": "VIN checker and Subaru plant codes"
+    },
+    {
+     "label": "Where are Kias made?",
+     "url": "/where-is-kia-made/",
+     "note": "VIN checker and Kia plant codes"
     }
    ],
    "pulls": [
@@ -117,13 +176,13 @@
     {
      "what": "Company pages: registers, recalls and the companies' own pages",
      "how": "script",
-     "every_days": 182,
+     "every_days": 30,
      "last": "2026-11-03",
-     "due": "2027-05-04",
-     "result": "10 company pages; 2 pet food register searches, 2 recall pulls",
+     "due": "2026-12-03",
+     "result": "14 company pages; 2 pet food register searches, 2 recall pulls",
      "edition": null,
      "file_url": null,
-     "hand_note": "tools/fetch_maker_registers.py re-reads the registers and recalls; a person re-reads each company's own pages and updates data/makers/."
+     "hand_note": "tools/weekly.py runs tools/fetch_maker_registers.py all once a month: North Dakota's pet food register and FDA recall records for each company. The companies' own pages are re-read by a person at each claim check."
     }
    ]
   },
@@ -205,7 +264,96 @@
      "result": "7,257 entries; first pull",
      "edition": "2026-10-26",
      "file_url": "https://www.fsis.usda.gov/sites/default/files/media_file/documents/MPI_Directory_by_Establishment_Number.csv",
-     "hand_note": "USDA's site refuses scripts, so a person downloads the file in a browser and we load it."
+     "hand_note": "USDA's site refuses scripts, so a person downloads the file in a browser and we load it with tools/load_usda_mpi.py. The lookup, charts and CSV follow at the next build."
+    },
+    {
+     "what": "USDA's letter legend and size bands",
+     "how": "hand",
+     "every_days": 0,
+     "last": null,
+     "due": "2026-12-02",
+     "result": "Not read yet: USDA's site and archive copies refused us on Nov 7",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Do this with the next list: save the legend PDF and the data documentation in a browser, then update the letters table and the What we don't know section."
+    }
+   ]
+  },
+  {
+   "id": "usga-conforming-driver-heads",
+   "name": "USGA and R&A List of Conforming Driver Heads",
+   "short": "USGA driver head list",
+   "publisher": "United States Golf Association (USGA), with The R&A",
+   "url": "https://www.usga.org/ConformingGolfClub/ConformingClubList_M.pdf",
+   "kind": "Government registry",
+   "primary": true,
+   "proves": "Which driver heads the USGA and The R&A have found to conform to the Rules of Golf, with their lofts and markings, and the company each is listed under as manufacturer. The PDF carries its own effective date.",
+   "cannot_prove": "Which factory made the head, or in which country. It covers driver heads only, not irons, wedges or putters.",
+   "terms": {
+    "url": "https://www.usga.org/terms-of-use.html",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-08",
+    "due": "2027-11-08"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature golf clubs",
+     "url": "/kirkland-signature/golf-clubs/",
+     "note": "Listed manufacturer of the Kirkland Signature driver"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "USGA conforming driver head list, Kirkland driver",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-08",
+     "due": "2026-12-08",
+     "result": "Edition effective Nov 2, 2026, page 937: Kirkland Signature Driver 10.5 under SM Global, LLC",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "usga.org refuses scripts. Open ConformingClubList_M.pdf in a browser, note its effective date, find SM Global, LLC (just before SMT Golf) and add a check to the driver claim."
+    }
+   ]
+  },
+  {
+   "id": "usga-conforming-golf-balls",
+   "name": "USGA and R&A List of Conforming Golf Balls",
+   "short": "USGA conforming ball list",
+   "publisher": "United States Golf Association (USGA), with The R&A",
+   "url": "https://www.usga.org/ConformingGolfBall/",
+   "kind": "Government registry",
+   "primary": true,
+   "proves": "Which golf balls the USGA and The R&A have tested and found to conform to the Rules of Golf, the markings printed on each, and the company each ball is listed under as manufacturer. Updated the first Wednesday of each month.",
+   "cannot_prove": "Which factory made the ball, or in which country. The list names the company that submitted the ball for testing; that can be the factory's owner or a company that has the ball made for it.",
+   "terms": {
+    "url": "https://www.usga.org/terms-of-use.html",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-08",
+    "due": "2027-11-08"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature golf balls",
+     "url": "/kirkland-signature/golf-balls/",
+     "note": "Manufacturer listed for every Kirkland ball on the list"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "USGA conforming golf ball list, Kirkland balls",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-08",
+     "due": "2026-12-08",
+     "result": "November list (Nov 4): same four Kirkland balls, all SM Global LLC",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "usga.org refuses scripts. After the list's update on the first Wednesday of the month, search it for “Kirkland” and “SM Global” in a browser and add a check to each golf ball claim."
     }
    ]
   },
@@ -359,7 +507,7 @@
      "how": "hand",
      "every_days": 30,
      "last": "2026-11-06",
-     "due": "2026-12-06",
+     "due": "2026-11-15",
      "result": "Pillow Top queen $899.99 to Nov 15; Tight Top queen $949.99; tag says Sealy Mattress",
      "edition": null,
      "file_url": null,
@@ -370,7 +518,7 @@
      "how": "hand",
      "every_days": 30,
      "last": "2026-11-06",
-     "due": "2026-12-06",
+     "due": "2026-11-09",
      "result": "Kirkland on offer to Nov 8, 12.5 to 25.9 cents; regular 15.6 to 32.4; Huggies 19.8 to 48.1; Pampers 20.5 to 46.8",
      "edition": null,
      "file_url": null,
@@ -386,6 +534,50 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Read Costco.com search pages in a browser, one at a time. Update shelf in data/guidance/kirkland-vs.json."
+    },
+    {
+     "what": "Kirkland battery offer ending Nov 15",
+     "how": "hand",
+     "every_days": 0,
+     "last": null,
+     "due": "2026-11-16",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Read the listing in a browser the day after the offer ends, then update data/guidance/kirkland-batteries.json."
+    },
+    {
+     "what": "Costco hot dogs: prices of the 12-link pack and both Dinner Franks packs, and the USDA seal in each listing photo",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-07",
+     "due": "2026-12-07",
+     "result": "Pack $19.99, 15 links $22.59, 120 links $125.99; EST. 18532 on two photos, empty seal on the 15-link pack",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Read in a browser, one listing at a time, ZIP 98101 and 98115. Open each gallery photo and zoom in on the seal and the date strip. EST. 45951 on any pack proves Morris, and that changes a stamp: the owner approves it."
+    },
+    {
+     "what": "Kirkland laundry detergent: prices of all eight Costco lines, the Tide offer dates, and the maker lines on each back label",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-07",
+     "due": "2026-11-16",
+     "result": "Kirkland liquid $18.49 warehouse, Tide $19.99 with coupon to 15 Nov; labels name only Costco",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Read in a browser, one listing at a time, ZIP 98101. Open each back-label photo. Any line reading Manufactured for, Made by, or a new address is a new lead on the maker; so is any change in the ingredient list. Tide's coupon ends 15 Nov, so read Tide's warehouse price on the first read after that."
+    },
+    {
+     "what": "Costco's Kirkland coffee listings",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-08",
+     "due": "2026-12-08",
+     "result": "20 listings read: Decaf House Blend still says Custom Roasted by Starbucks; the other 19 name no roaster (10 newly listed)",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Costco.com is read in a browser. Re-read every Kirkland coffee listing on the page's table, update site-data/kirkland-coffee.json, and log any listing that starts or stops naming a roaster."
     }
    ]
   },
@@ -419,12 +611,71 @@
      "what": "Kirkland medicine labels and FDA approval holders",
      "how": "script",
      "every_days": 7,
-     "last": null,
-     "due": "2026-11-09",
-     "result": null,
+     "last": "2026-11-05",
+     "due": "2026-11-12",
+     "result": "47 labels read; a change is flagged for a person",
      "edition": null,
      "file_url": null,
      "hand_note": null
+    },
+    {
+     "what": "Name-brand labels compared with Kirkland",
+     "how": "script",
+     "every_days": 7,
+     "last": "2026-11-06",
+     "due": "2026-11-13",
+     "result": "Labels read for the comparison pairs",
+     "edition": null,
+     "file_url": null,
+     "hand_note": null
+    }
+   ]
+  },
+  {
+   "id": "ecfr",
+   "name": "Electronic Code of Federal Regulations",
+   "short": "Federal rules (eCFR)",
+   "publisher": "US National Archives (Office of the Federal Register)",
+   "url": "https://www.ecfr.gov/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What a rule requires, e.g. the layout of the tire identification number in 49 CFR 574.5.",
+   "cannot_prove": "How any one maker applies the rule in practice, or who made a given product.",
+   "terms": {
+    "url": "https://www.ecfr.gov/reader-aids/using-ecfr/getting-started",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-02",
+    "due": "2027-11-02"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Tire DOT code lookup",
+     "url": "/tire-dot-code-lookup/",
+     "note": "How a tire code is laid out (49 CFR 574.5)"
+    },
+    {
+     "label": "Meat label codes",
+     "note": "What the USDA number on a label means (9 CFR 317.2)"
+    },
+    {
+     "label": "Where are Subarus made?",
+     "url": "/where-is-subaru-made/",
+     "note": "What the parts label must say (49 CFR 583)"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Federal rule texts behind our code pages",
+     "how": "hand",
+     "every_days": 365,
+     "last": "2026-11-06",
+     "due": "2027-11-06",
+     "result": "15 rule texts on file",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Re-read each rule on the eCFR, check our short quote still stands, and log any change on the corrections page."
     }
    ]
   },
@@ -497,12 +748,67 @@
      "what": "Battery date code rules from each maker",
      "how": "hand",
      "every_days": 180,
-     "last": "2026-11-06",
-     "due": "2027-05-05",
-     "result": "Nine maker rules and three third-party rules read. Newer ODYSSEY sheets and Interstate's March 2025 warranty PDF refused our read",
+     "last": "2026-11-07",
+     "due": "2027-05-07",
+     "result": "Ten maker rules and three third-party rules read, with Ford and ACDelco added 7 Nov. Newer ODYSSEY sheets and Interstate's March 2025 warranty PDF refused our read",
      "edition": null,
      "file_url": null,
-     "hand_note": "Re-read each record in data/guidance/battery-date-codes.json in a browser, one at a time. Try the newer ODYSSEY sheets and the K0 line first. Owner approves any rule change."
+     "hand_note": "Re-read each record in data/guidance/battery-date-codes.json in a browser, one at a time. Try the newer ODYSSEY sheets and the K0 line first. Look for newer Ford and ACDelco warranty sheets, since those records date from 2005 and 2015. Owner approves any rule change."
+    }
+   ]
+  },
+  {
+   "id": "nhtsa-aala",
+   "name": "NHTSA Part 583 American Automobile Labeling Act reports",
+   "short": "NHTSA AALA reports",
+   "publisher": "US National Highway Traffic Safety Administration",
+   "url": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What each carmaker filed for a model year: US and Canadian parts share, final assembly countries, and the origin of the engine and transmission for each carline.",
+   "cannot_prove": "Where one car was built. A carline can come from more than one plant, parts shares are averages rounded to 5%, and the agency publishes what makers file without auditing it here.",
+   "terms": {
+    "url": "https://www.nhtsa.gov/about-nhtsa/web-policies-notices",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are Subarus made?",
+     "url": "/where-is-subaru-made/",
+     "note": "Parts share, assembly, engine and transmission by model and year"
+    },
+    {
+     "label": "Where are Kias made?",
+     "url": "/where-is-kia-made/",
+     "note": "Every Kia row, 2018 to 2027"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Where Subarus are made: NHTSA report and Subaru releases",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2026-12-07",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "nhtsa.gov refuses scripts. Open the Part 583 page in Chrome, save the newest report, add it to data/aala/reports.json with its SHA-256, run tools/parse_aala.py and tools/build_car_origin.py (it rebuilds the Subaru and Kia pages). Check media.subaru.com for new model-year assembly lines."
+    },
+    {
+     "what": "Where Kias are made: NHTSA report and Kia releases",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2026-12-08",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "nhtsa.gov and kiamedia.com refuse scripts. Save the newest AALA report in Chrome as for Subaru, then run tools/parse_aala.py and tools/build_car_origin.py. Read kiamedia.com pricing releases and model pages in Chrome for new assembly lines; check whether the Sportage Hybrid's second plant is named."
     }
    ]
   },
@@ -585,6 +891,55 @@
    ]
   },
   {
+   "id": "sec-edgar",
+   "name": "SEC EDGAR company filings",
+   "short": "SEC filings",
+   "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+   "url": "https://www.sec.gov/edgar/search/",
+   "kind": "Company filings",
+   "primary": true,
+   "proves": "What a company told investors and regulators about itself, in a filing it signs and can be held to, such as which brands it makes batteries for.",
+   "cannot_prove": "Anything the filing doesn't spell out. A list of brands a company supplies doesn't say it makes every product sold under those brands, or which store sells them.",
+   "terms": {
+    "url": "https://www.sec.gov/os/accessing-edgar-data",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Costco car batteries: who makes them",
+     "url": "/costco-car-batteries/",
+     "note": "Clarios's 2023 IPO filing naming Interstate among the brands it supplies"
+    },
+    {
+     "label": "Who makes Kirkland Signature diapers",
+     "url": "/kirkland-signature/diapers/",
+     "note": "Kimberly-Clark's reports of its exit from a US private-label diaper business"
+    },
+    {
+     "label": "Who makes Kirkland Signature toilet paper",
+     "url": "/kirkland-signature/toilet-paper/",
+     "note": "Procter & Gamble's own list of its Family Care brands"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Kimberly-Clark quarterly results on SEC EDGAR",
+     "how": "hand",
+     "every_days": 92,
+     "last": "2026-11-08",
+     "due": "2027-02-08",
+     "result": "Eight releases from Jan 2025 to Nov 2026 mention it; Q3 2026 no longer does in North America",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "EDGAR full-text search for \"private label diaper\" with CIK 0000055785, in a browser (efts.sec.gov). Read the newest earnings release (8-K exhibit 99.1); add a row to data/makers/kimberly-clark.json filings with its own words, and an evidence record via tools/archive.py."
+    }
+   ]
+  },
+  {
    "id": "samsclub-com",
    "name": "Sam's Club website",
    "short": "Sam's Club",
@@ -625,6 +980,134 @@
      "edition": null,
      "file_url": null,
      "hand_note": "The extension can't read samsclub.com, so the owner saves the product page in Chrome, or sends screenshots. Update sams in data/guidance/costco-diapers.json."
+    },
+    {
+     "what": "Sam's Club toilet paper offers ending Nov 18 and Nov 29",
+     "how": "hand",
+     "every_days": 0,
+     "last": null,
+     "due": "2026-11-30",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The extension can't read samsclub.com, so the owner saves the page in Chrome. Update data/guidance/costco-toilet-paper.json."
+    }
+   ]
+  },
+  {
+   "id": "ttb-cola",
+   "name": "TTB Public COLA Registry (label approvals)",
+   "short": "TTB label approvals",
+   "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
+   "url": "https://ttbonline.gov/colasonline/publicSearchColasBasic.do",
+   "kind": "Label approvals",
+   "primary": true,
+   "proves": "Which licensed company applied for and got approval for a label, under which permit, and the exact label text it approved: for spirits, the bottler or importer, and for tequila the producer and its NOM number.",
+   "cannot_prove": "That a label is on shelves now, or which approved label is on the bottle in front of you. Several companies can hold approvals for the same brand at once, and an approval does not expire when a label stops being used.",
+   "terms": {
+    "url": "https://www.ttb.gov/about-ttb/linking-policy",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-08",
+    "due": "2027-11-08"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature spirits",
+     "url": "/kirkland-signature/",
+     "note": "Vodka, tequila and bourbon label approvals"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "TTB label approvals for Kirkland",
+     "how": "script",
+     "every_days": 7,
+     "last": "2026-11-08",
+     "due": "2026-11-15",
+     "result": "512 Kirkland approvals; 38 on the spirits pages, 7 not yet cited",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Runs from the Mac (TTB doesn't answer our servers): launchd com.whoactuallymakes.ttb, Sundays 20:00. New approvals are listed in data/leads/ttb/new.json; read each label and add it to data/records/ttb-label-reads.json."
+    }
+   ]
+  },
+  {
+   "id": "wsbtv",
+   "name": "WSB-TV Channel 2 Atlanta",
+   "short": "WSB-TV",
+   "publisher": "WSB-TV (Cox Media Group)",
+   "url": "https://www.wsbtv.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What a TV news station reported, and when. Here, what Costco's chief executive told a consumer reporter on camera in 2016.",
+   "cannot_prove": "That the report is right, or that it still holds. A reporter's summary of what someone said isn't the person's own words, so we show it as Reported.",
+   "terms": {
+    "url": "https://www.wsbtv.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-04",
+    "due": "2027-11-04"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature batteries",
+     "url": "/kirkland-signature/batteries/",
+     "note": "The 2016 statement that Duracell makes them"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Any new record naming who makes Kirkland AA and AAA batteries",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-08",
+     "due": "2027-02-06",
+     "result": "Nothing newer than the Nov 2016 WSB-TV report; three 2025–26 retellings read",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Search the web for who makes Kirkland batteries; open anything newer than 2016 and see what it cites. Only a Costco or Duracell statement, a pack marking or a filing lifts the stamp above Reported. Re-read the Kirkland AA listing on costco.com for a maker or country of origin."
+    }
+   ]
+  },
+  {
+   "id": "whiting-turner",
+   "name": "Whiting-Turner project pages",
+   "short": "Whiting-Turner",
+   "publisher": "The Whiting-Turner Contracting Company",
+   "url": "https://www.whiting-turner.com/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "What the contractor says it built, and for which client.",
+   "cannot_prove": "What a plant makes today, or which lot it made.",
+   "terms": {
+    "url": "https://www.whiting-turner.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Costco hot dogs",
+     "url": "/costco-hot-dogs/",
+     "note": "Plants, history and numbers sold"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Wayback saves: the Costco hot dogs page and its source records, plus the earlier records with no archive copy, plus the Subaru and Kia page records, plus the 8 Nov maker-page records (Kimberly-Clark releases, MISA, Duracell articles, East Penn, First Quality)",
+     "how": "hand",
+     "every_days": 0,
+     "last": null,
+     "due": "2026-11-14",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Wayback's save returned 429 from this Mac on Nov 7, by script and in Chrome. Run tools/archive.py one URL at a time, stop at the first 429, and paste archive_url into the record. Skip Costco URLs."
     }
    ]
   },
@@ -665,43 +1148,6 @@
      "hand_note": null
     }
    ]
-  },
-  {
-   "id": "api-eolcs",
-   "name": "API Engine Oil Licensing and Certification System (EOLCS): Directory of Licensees",
-   "short": "API engine oil license directory",
-   "publisher": "American Petroleum Institute (API)",
-   "url": "https://engineoil.api.org/Directory/EolcsSearch",
-   "kind": "Government registry",
-   "primary": true,
-   "proves": "Which company holds API's license for an engine oil sold under a given brand and grade, and the license dates. API's programme “authorizes engine oil marketers that meet specified requirements to use the API Engine Oil Quality Marks”.",
-   "cannot_prove": "Who blended or bottled a given bottle, or where. The license names the company authorised to market the oil with API's marks, not the plant.",
-   "terms": {
-    "url": "https://www.api.org/terms-and-conditions",
-    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
-    "automated": false,
-    "checked": "2026-11-03",
-    "due": "2027-11-03"
-   },
-   "credit": null,
-   "used_for": [
-    {
-     "label": "Who makes Kirkland Signature motor oil",
-     "url": "/kirkland-signature/motor-oil/",
-     "note": "API licenses for 10 Kirkland oils"
-    },
-    {
-     "label": "Highline Warren: every brand on license 0163",
-     "url": "/makers/highline-warren/",
-     "note": "All 564 listings, 52 brand names"
-    },
-    {
-     "label": "Who makes store-brand motor oil",
-     "url": "/store-brand-motor-oil/",
-     "note": "License holders for 14 store brands, from 12 brand searches and 3 full licenses"
-    }
-   ],
-   "pulls": []
   },
   {
    "id": "usga-conforming-golf-balls-archive",
@@ -758,28 +1204,28 @@
    "pulls": []
   },
   {
-   "id": "usga-conforming-golf-balls",
-   "name": "USGA and R&A List of Conforming Golf Balls",
-   "short": "USGA conforming ball list",
-   "publisher": "United States Golf Association (USGA), with The R&A",
-   "url": "https://www.usga.org/ConformingGolfBall/",
-   "kind": "Government registry",
-   "primary": true,
-   "proves": "Which golf balls the USGA and The R&A have tested and found to conform to the Rules of Golf, the markings printed on each, and the company each ball is listed under as manufacturer. Updated the first Wednesday of each month.",
-   "cannot_prove": "Which factory made the ball, or in which country. The list names the company that submitted the ball for testing; that can be the factory's owner or a company that has the ball made for it.",
+   "id": "business-425",
+   "name": "425 Business",
+   "short": "425 Business",
+   "publisher": "425 Business",
+   "url": "https://www.425business.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the outlet reported, on the date it reported it.",
+   "cannot_prove": "Whether the report is right. Press alone can only make a claim Reported.",
    "terms": {
-    "url": "https://www.usga.org/terms-of-use.html",
-    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
-    "automated": false,
-    "checked": "2026-11-03",
-    "due": "2027-11-03"
+    "url": "https://www.425business.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
    },
    "credit": null,
    "used_for": [
     {
-     "label": "Who makes Kirkland Signature golf balls",
-     "url": "/kirkland-signature/golf-balls/",
-     "note": "Manufacturer listed for every Kirkland ball on the list"
+     "label": "Who makes Costco hot dogs",
+     "url": "/costco-hot-dogs/",
+     "note": "Plants, history and numbers sold"
     }
    ],
    "pulls": []
@@ -812,6 +1258,33 @@
    "pulls": []
   },
   {
+   "id": "maker-acdelco-warranty-sheet",
+   "name": "ACDelco Battery Warranty Information",
+   "short": "ACDelco warranty sheet",
+   "publisher": "ACDelco",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/ACDelco-battery-warranty-information.pdf",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How ACDelco read its warranty date code and used it in the warranty, as of the sheet's February 2015 revision.",
+   "cannot_prove": "Whether today's labels follow the same format, or which plant built one battery. We read a copy on a distributor's site.",
+   "terms": {
+    "url": "https://delcoline.com/robots.txt",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Battery date code decoder",
+     "url": "/battery-date-code/",
+     "note": "ACDelco's P and S date code rule, and the warranty start with no receipt"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-acdelco",
    "name": "ACDelco Canada website",
    "short": "ACDelco",
@@ -822,11 +1295,11 @@
    "proves": "How ACDelco reads its date codes and its warranty terms in Canada.",
    "cannot_prove": "Which plant built one battery, or anything about a store brand it does not name.",
    "terms": {
-    "url": "https://acdelcocanada.com/robots.txt",
+    "url": "https://www.acdelcocanada.com/",
     "read": "Open license. We read it with a script.",
     "automated": true,
-    "checked": "2026-11-06",
-    "due": "2027-11-06"
+    "checked": "2026-11-08",
+    "due": "2027-11-08"
    },
    "credit": null,
    "used_for": [
@@ -861,6 +1334,33 @@
      "label": "Costco diapers: prices and sales",
      "url": "/costco-diapers/",
      "note": "Past offer dates"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "bgr",
+   "name": "BGR",
+   "short": "BGR",
+   "publisher": "BGR (Static Media)",
+   "url": "https://bgr.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What a tech news site reported, and when.",
+   "cannot_prove": "That the report is right. Where it retells an older report, it is only as good as that report.",
+   "terms": {
+    "url": "https://bgr.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-08",
+    "due": "2027-11-08"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Duracell: who makes Kirkland batteries",
+     "url": "/makers/duracell/",
+     "note": "A 2026 retelling of the 2016 report"
     }
    ],
    "pulls": []
@@ -1054,6 +1554,33 @@
    "pulls": []
   },
   {
+   "id": "consumer-reports",
+   "name": "Consumer Reports",
+   "short": "Consumer Reports",
+   "publisher": "Consumer Reports",
+   "url": "https://www.consumerreports.org/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "What Consumer Reports published about its lab tests, on that date.",
+   "cannot_prove": "Today's formula, or today's scores: the current ratings are for members and we have not read them.",
+   "terms": {
+    "url": "https://www.consumerreports.org/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland laundry detergent",
+     "url": "/kirkland-laundry-detergent/",
+     "note": "Maker records, label doses and prices"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-continental",
    "name": "Continental: tire age",
    "short": "Continental",
@@ -1076,6 +1603,33 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age recommendation, in the Who says what table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "costco-uk-sds",
+   "name": "Costco UK material safety data sheets",
+   "short": "Costco UK safety sheets",
+   "publisher": "Costco Wholesale UK",
+   "url": "https://www.costco.co.uk/material-safety-data-sheets",
+   "kind": "Retailer",
+   "primary": true,
+   "proves": "Which company a Kirkland safety sheet names as supplier, on the sheet's revision date.",
+   "cannot_prove": "Who makes the product today, or the US pack: the sheets are dated, and some name only Costco.",
+   "terms": {
+    "url": "https://www.costco.co.uk/material-safety-data-sheets",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland laundry detergent",
+     "url": "/kirkland-laundry-detergent/",
+     "note": "Maker records, label doses and prices"
     }
    ],
    "pulls": []
@@ -1172,6 +1726,33 @@
    "pulls": []
   },
   {
+   "id": "deseret-news",
+   "name": "Deseret News",
+   "short": "Deseret News",
+   "publisher": "Deseret News",
+   "url": "https://www.deseret.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What a Utah newspaper reported about a Utah company at the time.",
+   "cannot_prove": "Who makes the detergent today.",
+   "terms": {
+    "url": "https://www.deseret.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland laundry detergent",
+     "url": "/kirkland-laundry-detergent/",
+     "note": "Maker records, label doses and prices"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-diamond-pet",
    "name": "Diamond Pet Foods company website",
    "short": "Diamond Pet Foods",
@@ -1247,6 +1828,33 @@
    "pulls": []
   },
   {
+   "id": "epa-safer-choice",
+   "name": "EPA Safer Choice product list",
+   "short": "EPA Safer Choice",
+   "publisher": "U.S. Environmental Protection Agency",
+   "url": "https://www.epa.gov/saferchoice/products",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "Which products carry the Safer Choice label and which company holds each listing.",
+   "cannot_prove": "Who made the product: for Kirkland, the listing company is Costco.",
+   "terms": {
+    "url": "https://www.epa.gov/saferchoice/products",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland laundry detergent",
+     "url": "/kirkland-laundry-detergent/",
+     "note": "Maker records, label doses and prices"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-east-penn",
    "name": "East Penn Manufacturing website",
    "short": "East Penn",
@@ -1269,37 +1877,6 @@
      "label": "Battery date code decoder",
      "url": "/battery-date-code/",
      "note": "East Penn's date code rule"
-    }
-   ],
-   "pulls": []
-  },
-  {
-   "id": "ecfr",
-   "name": "Electronic Code of Federal Regulations",
-   "short": "Federal rules (eCFR)",
-   "publisher": "US National Archives (Office of the Federal Register)",
-   "url": "https://www.ecfr.gov/",
-   "kind": "Regulator",
-   "primary": true,
-   "proves": "What a rule requires, e.g. the layout of the tire identification number in 49 CFR 574.5.",
-   "cannot_prove": "How any one maker applies the rule in practice, or who made a given product.",
-   "terms": {
-    "url": "https://www.ecfr.gov/reader-aids/using-ecfr/getting-started",
-    "read": "Public domain (US government work). We read it with a script.",
-    "automated": true,
-    "checked": "2026-11-02",
-    "due": "2027-11-02"
-   },
-   "credit": null,
-   "used_for": [
-    {
-     "label": "Tire DOT code lookup",
-     "url": "/tire-dot-code-lookup/",
-     "note": "How a tire code is laid out (49 CFR 574.5)"
-    },
-    {
-     "label": "Meat label codes",
-     "note": "What the USDA number on a label means (9 CFR 317.2)"
     }
    ],
    "pulls": []
@@ -1429,6 +2006,60 @@
      "label": "Who makes Kirkland Signature diapers",
      "url": "/kirkland-signature/diapers/",
      "note": "Where Cuties diapers are made; the 2024 SFI certificate and its annex"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "food-lion",
+   "name": "Food Lion product pages",
+   "short": "Food Lion",
+   "publisher": "Food Lion LLC",
+   "url": "https://foodlion.com/",
+   "kind": "Retailer",
+   "primary": false,
+   "proves": "What a grocer lists for a product, supplied by the brand.",
+   "cannot_prove": "That the bottle on the shelf matches: the page itself warns of occasional differences.",
+   "terms": {
+    "url": "https://foodlion.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland laundry detergent",
+     "url": "/kirkland-laundry-detergent/",
+     "note": "Maker records, label doses and prices"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-ford-distributor-manual",
+   "name": "Ford Authorized Distributor Policy and Procedure Manual, Section 9400",
+   "short": "Ford distributor manual",
+   "publisher": "Ford Motor Company",
+   "url": "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Ford told its Motorcraft distributors about shipping date codes, warranty claims and battery stock, on each page's effective date.",
+   "cannot_prove": "How a label printed today looks, or how old one battery is. The pages are dated 2002 to 2010, and we read a copy on a distributor's site.",
+   "terms": {
+    "url": "https://delcoline.com/robots.txt",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Battery date code decoder",
+     "url": "/battery-date-code/",
+     "note": "Motorcraft's shipping date sticker and voltage rule"
     }
    ],
    "pulls": []
@@ -1704,6 +2335,60 @@
    "pulls": []
   },
   {
+   "id": "happi",
+   "name": "Happi",
+   "short": "Happi",
+   "publisher": "Rodman Media",
+   "url": "https://www.happi.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "Trade reports on household products companies.",
+   "cannot_prove": "Which store brands a plant makes.",
+   "terms": {
+    "url": "https://www.happi.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland laundry detergent",
+     "url": "/kirkland-laundry-detergent/",
+     "note": "Maker records, label doses and prices"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-henkel",
+   "name": "Henkel news releases",
+   "short": "Henkel",
+   "publisher": "Henkel AG & Co. KGaA",
+   "url": "https://www.henkel.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Henkel says it bought and sold, and when.",
+   "cannot_prove": "Which store brands were in a deal: its releases name no retail customer.",
+   "terms": {
+    "url": "https://www.henkel.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland laundry detergent",
+     "url": "/kirkland-laundry-detergent/",
+     "note": "Maker records, label doses and prices"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-highline-warren",
    "name": "Highline Warren company website",
    "short": "Highline Warren",
@@ -1735,11 +2420,11 @@
    "proves": "What this deal post said, and when. Here, the dates and prices of past Costco diaper offers.",
    "cannot_prove": "That the offer ran at every warehouse, or that a date the post doesn't quote from Costco is exact.",
    "terms": {
-    "url": "https://hip2save.com/terms-of-use/",
+    "url": "https://hip2save.com/website-terms-of-use/",
     "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
-    "checked": "2026-11-06",
-    "due": "2027-11-06"
+    "checked": "2026-11-08",
+    "due": "2027-11-08"
    },
    "credit": null,
    "used_for": [
@@ -1779,6 +2464,33 @@
    "pulls": []
   },
   {
+   "id": "hunker",
+   "name": "Hunker",
+   "short": "Hunker",
+   "publisher": "Static Media",
+   "url": "https://www.hunker.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What an outlet reported from Consumer Reports' tests.",
+   "cannot_prove": "The scores themselves: it is a summary of a paid rating.",
+   "terms": {
+    "url": "https://www.hunker.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland laundry detergent",
+     "url": "/kirkland-laundry-detergent/",
+     "note": "Maker records, label doses and prices"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-hyundai",
    "name": "Hyundai owner's manuals",
    "short": "Hyundai",
@@ -1801,6 +2513,60 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age advice to owners, in the carmakers table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "industrial-info",
+   "name": "Industrial Info Resources",
+   "short": "Industrial Info",
+   "publisher": "Industrial Info Resources",
+   "url": "https://www.industrialinfo.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the outlet reported, on the date it reported it.",
+   "cannot_prove": "Whether the report is right. Press alone can only make a claim Reported.",
+   "terms": {
+    "url": "https://www.industrialinfo.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Costco hot dogs",
+     "url": "/costco-hot-dogs/",
+     "note": "Plants, history and numbers sold"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "inside-indiana-business",
+   "name": "Inside INdiana Business",
+   "short": "Inside INdiana Business",
+   "publisher": "Inside INdiana Business",
+   "url": "https://www.insideindianabusiness.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the outlet reported the company said.",
+   "cannot_prove": "Anything beyond the company's statement it reports.",
+   "terms": {
+    "url": "https://www.insideindianabusiness.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are Subarus made?",
+     "url": "/where-is-subaru-made/",
+     "note": "Report of the 2024 Outback and Legacy decision"
     }
    ],
    "pulls": []
@@ -1855,6 +2621,87 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age advice to owners, in the carmakers table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "kia-media",
+   "name": "Kia America Media Center",
+   "short": "Kia press release",
+   "publisher": "Kia America, Inc.",
+   "url": "https://www.kiamedia.com/us/en",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Kia itself says about where a named model year is assembled in the US.",
+   "cannot_prove": "Where one car was built, or how a model's output splits between two plants. It's the company's own statement.",
+   "terms": {
+    "url": "https://www.kia.com/us/en/terms-of-service",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-08",
+    "due": "2027-11-08"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are Kias made?",
+     "url": "/where-is-kia-made/",
+     "note": "Kia's assembly statement for each model"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "kia-ir",
+   "name": "Kia Corporation investor relations",
+   "short": "Kia investor relations",
+   "publisher": "Kia Corporation",
+   "url": "https://worldwide.kia.com/en/company/investor-relations",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Who holds Kia Corporation's shares, as Kia reports them.",
+   "cannot_prove": "Who designs or builds any one model.",
+   "terms": {
+    "url": "https://worldwide.kia.com/en/terms-and-conditions",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-08",
+    "due": "2027-11-08"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are Kias made?",
+     "url": "/where-is-kia-made/",
+     "note": "Hyundai Motor Company's share of Kia"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "kia-newsroom",
+   "name": "Kia Global Newsroom",
+   "short": "Kia newsroom",
+   "publisher": "Kia Corporation",
+   "url": "https://kiaoldnewsroom.newsmarket.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Kia itself announced about its plants and production milestones.",
+   "cannot_prove": "Where one car was built. It's the company's own announcement.",
+   "terms": {
+    "url": "https://worldwide.kia.com/en/terms-and-conditions",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-08",
+    "due": "2027-11-08"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are Kias made?",
+     "url": "/where-is-kia-made/",
+     "note": "Kia Georgia milestones and the Telluride's only plant"
     }
    ],
    "pulls": []
@@ -1935,6 +2782,60 @@
    "pulls": []
   },
   {
+   "id": "mg2",
+   "name": "MG2 project pages",
+   "short": "MG2",
+   "publisher": "MG2",
+   "url": "https://mg2.com/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "What the design firm says about a project it worked on.",
+   "cannot_prove": "Output figures: the firm's marketing copy, not a plant record. It names the client only as CWI.",
+   "terms": {
+    "url": "https://mg2.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Costco hot dogs",
+     "url": "/costco-hot-dogs/",
+     "note": "Plants, history and numbers sold"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "misa-site",
+   "name": "MISA Imports website",
+   "short": "MISA Imports",
+   "publisher": "MISA Imports",
+   "url": "https://www.misaimports.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What MISA Imports says about itself: where it is based and what it does.",
+   "cannot_prove": "Which Kirkland Signature labels it imports. Its site names no store brands.",
+   "terms": {
+    "url": "https://www.misaimports.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-08",
+    "due": "2027-11-08"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "MISA Imports",
+     "url": "/makers/misa-imports/",
+     "note": "Where it is based and what it does"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "marketbeat-transcripts",
    "name": "MarketBeat earnings call transcripts",
    "short": "MarketBeat transcript",
@@ -1962,6 +2863,60 @@
    "pulls": []
   },
   {
+   "id": "mashed",
+   "name": "Mashed",
+   "short": "Mashed",
+   "publisher": "Static Media",
+   "url": "https://www.mashed.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the outlet reported, on the date it reported it.",
+   "cannot_prove": "Whether the report is right. Press alone can only make a claim Reported.",
+   "terms": {
+    "url": "https://www.mashed.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Costco hot dogs",
+     "url": "/costco-hot-dogs/",
+     "note": "Plants, history and numbers sold"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "court-ndcal-mattero",
+   "name": "Mattero v. Costco Wholesale Corp., U.S. District Court, Northern District of California, 18-cv-02871",
+   "short": "Mattero v. Costco court filings",
+   "publisher": "U.S. District Court for the Northern District of California (court copies on Justia and ClassAction.org)",
+   "url": "https://www.cand.uscourts.gov/",
+   "kind": "Court records",
+   "primary": true,
+   "proves": "What each side filed and what the court ordered.",
+   "cannot_prove": "That a complaint's allegations are true. It is one side's account, and the order we read decided only that the case could go forward.",
+   "terms": {
+    "url": "https://www.cand.uscourts.gov/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland laundry detergent",
+     "url": "/kirkland-laundry-detergent/",
+     "note": "Maker records, label doses and prices"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-mazda",
    "name": "Mazda owner's manuals",
    "short": "Mazda",
@@ -1984,6 +2939,60 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age advice to owners, in the carmakers table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "court-edny-medina",
+   "name": "Medina v. Costco Wholesale Corp., U.S. District Court, Eastern District of New York, 22-cv-07388",
+   "short": "Medina v. Costco order",
+   "publisher": "U.S. District Court for the Eastern District of New York (court copy on GovInfo)",
+   "url": "https://www.govinfo.gov/app/details/USCOURTS-nyed-1_22-cv-07388",
+   "kind": "Court records",
+   "primary": true,
+   "proves": "What the court ordered and how it read the label, word for word.",
+   "cannot_prove": "Who makes the detergent. The order only repeats the complaint on that, and a complaint is one side's account.",
+   "terms": {
+    "url": "https://www.govinfo.gov/app/details/USCOURTS-nyed-1_22-cv-07388",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland laundry detergent",
+     "url": "/kirkland-laundry-detergent/",
+     "note": "Maker records, label doses and prices"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "mental-floss",
+   "name": "Mental Floss",
+   "short": "Mental Floss",
+   "publisher": "Mental Floss",
+   "url": "https://www.mentalfloss.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the outlet reported, on the date it reported it.",
+   "cannot_prove": "Whether the report is right. Press alone can only make a claim Reported.",
+   "terms": {
+    "url": "https://www.mentalfloss.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Costco hot dogs",
+     "url": "/costco-hot-dogs/",
+     "note": "Plants, history and numbers sold"
     }
    ],
    "pulls": []
@@ -2236,11 +3245,11 @@
    "proves": "What the state announced about a company's investment in Georgia.",
    "cannot_prove": "What a plant makes for any one customer.",
    "terms": {
-    "url": "https://georgia.gov/privacy-security",
+    "url": "https://georgia.gov/privacy-and-security",
     "read": "Open license. We read it with a script.",
     "automated": true,
-    "checked": "2026-11-05",
-    "due": "2027-11-05"
+    "checked": "2026-11-08",
+    "due": "2027-11-08"
    },
    "credit": null,
    "used_for": [
@@ -2248,6 +3257,60 @@
      "label": "First Quality",
      "url": "/makers/first-quality/",
      "note": "The 2024 Macon expansion"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "packaging-impressions",
+   "name": "Packaging Impressions",
+   "short": "Packaging Impressions",
+   "publisher": "Packaging Impressions",
+   "url": "https://www.packagingimpressions.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the Flexible Packaging Association's award entries said about a package, as reprinted.",
+   "cannot_prove": "That the company named filled the package at any later date.",
+   "terms": {
+    "url": "https://www.packagingimpressions.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland laundry detergent",
+     "url": "/kirkland-laundry-detergent/",
+     "note": "Maker records, label doses and prices"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "packaging-strategies",
+   "name": "Packaging Strategies",
+   "short": "Packaging Strategies",
+   "publisher": "BNP Media",
+   "url": "https://www.packagingstrategies.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What a packaging supplier announced about its work.",
+   "cannot_prove": "Who makes the contents of the package.",
+   "terms": {
+    "url": "https://www.packagingstrategies.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland laundry detergent",
+     "url": "/kirkland-laundry-detergent/",
+     "note": "Maker records, label doses and prices"
     }
    ],
    "pulls": []
@@ -2295,38 +3358,55 @@
    "pulls": []
   },
   {
-   "id": "sec-edgar",
-   "name": "SEC EDGAR company filings",
-   "short": "SEC filings",
-   "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
-   "url": "https://www.sec.gov/edgar/search/",
-   "kind": "Company filings",
+   "id": "maker-radienz",
+   "name": "Radienz Living website",
+   "short": "Radienz Living",
+   "publisher": "Radienz Living",
+   "url": "https://www.radienzliving.com/",
+   "kind": "Maker's own words",
    "primary": true,
-   "proves": "What a company told investors and regulators about itself, in a filing it signs and can be held to, such as which brands it makes batteries for.",
-   "cannot_prove": "Anything the filing doesn't spell out. A list of brands a company supplies doesn't say it makes every product sold under those brands, or which store sells them.",
+   "proves": "What Radienz Living says it makes.",
+   "cannot_prove": "Which retailers it makes things for today: it names none on this page.",
    "terms": {
-    "url": "https://www.sec.gov/os/accessing-edgar-data",
-    "read": "Open license. We read it with a script.",
+    "url": "https://www.radienzliving.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
-    "checked": "2026-11-05",
-    "due": "2027-11-05"
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
    },
    "credit": null,
    "used_for": [
     {
-     "label": "Costco car batteries: who makes them",
-     "url": "/costco-car-batteries/",
-     "note": "Clarios's 2023 IPO filing naming Interstate among the brands it supplies"
-    },
+     "label": "Who makes Kirkland laundry detergent",
+     "url": "/kirkland-laundry-detergent/",
+     "note": "Maker records, label doses and prices"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "readers-digest",
+   "name": "Reader's Digest",
+   "short": "Reader's Digest",
+   "publisher": "Reader's Digest",
+   "url": "https://www.rd.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the outlet reported, on the date it reported it.",
+   "cannot_prove": "Whether the report is right. Press alone can only make a claim Reported.",
+   "terms": {
+    "url": "https://www.rd.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
     {
-     "label": "Who makes Kirkland Signature diapers",
-     "url": "/kirkland-signature/diapers/",
-     "note": "Kimberly-Clark's reports of its exit from a US private-label diaper business"
-    },
-    {
-     "label": "Who makes Kirkland Signature toilet paper",
-     "url": "/kirkland-signature/toilet-paper/",
-     "note": "Procter & Gamble's own list of its Family Care brands"
+     "label": "Who makes Costco hot dogs",
+     "url": "/costco-hot-dogs/",
+     "note": "Plants, history and numbers sold"
     }
    ],
    "pulls": []
@@ -2401,6 +3481,33 @@
    "pulls": []
   },
   {
+   "id": "shaw-local",
+   "name": "Shaw Local (Morris Herald-News)",
+   "short": "Shaw Local",
+   "publisher": "Shaw Local News Network",
+   "url": "https://www.shawlocal.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the outlet reported, on the date it reported it.",
+   "cannot_prove": "Whether the report is right. Press alone can only make a claim Reported.",
+   "terms": {
+    "url": "https://www.shawlocal.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Costco hot dogs",
+     "url": "/costco-hot-dogs/",
+     "note": "Plants, history and numbers sold"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "shopsavvy",
    "name": "ShopSavvy",
    "short": "ShopSavvy",
@@ -2455,6 +3562,33 @@
    "pulls": []
   },
   {
+   "id": "slashgear",
+   "name": "SlashGear",
+   "short": "SlashGear",
+   "publisher": "SlashGear (Static Media)",
+   "url": "https://www.slashgear.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What a tech news site reported, and when.",
+   "cannot_prove": "That the report is right. Where it retells an older report, it is only as good as that report.",
+   "terms": {
+    "url": "https://www.slashgear.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-08",
+    "due": "2027-11-08"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Duracell: who makes Kirkland batteries",
+     "url": "/makers/duracell/",
+     "note": "A 2026 retelling of the 2016 report"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "slickdeals",
    "name": "Slickdeals",
    "short": "Slickdeals",
@@ -2465,11 +3599,11 @@
    "proves": "What this deal post said, and when. Here, the dates and prices of past Costco diaper offers.",
    "cannot_prove": "That the offer ran at every warehouse, or that a date the post doesn't quote from Costco is exact.",
    "terms": {
-    "url": "https://slickdeals.net/terms",
+    "url": "https://slickdeals.net/content/list/slickdeals-terms-and-policies/",
     "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
-    "checked": "2026-11-06",
-    "due": "2027-11-06"
+    "checked": "2026-11-08",
+    "due": "2027-11-08"
    },
    "credit": null,
    "used_for": [
@@ -2503,6 +3637,87 @@
    "pulls": []
   },
   {
+   "id": "subaru-corp-ir",
+   "name": "Subaru Corporation investor relations",
+   "short": "Subaru Corporation",
+   "publisher": "Subaru Corporation",
+   "url": "https://www.subaru.co.jp/en/ir/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Subaru Corporation's own statements on its plants and shareholders on the dates given.",
+   "cannot_prove": "What each plant builds today, when the document is older.",
+   "terms": {
+    "url": "https://www.subaru.co.jp/en/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are Subarus made?",
+     "url": "/where-is-subaru-made/",
+     "note": "Plants in Gunma and Toyota’s shareholding"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "subaru-media",
+   "name": "Subaru US Media Center",
+   "short": "Subaru press release",
+   "publisher": "Subaru of America, Inc.",
+   "url": "https://media.subaru.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Subaru itself says about where a named model year is assembled and what its Indiana plant builds.",
+   "cannot_prove": "Where one car was built, or how a model's output splits between two plants. It's the company's own statement.",
+   "terms": {
+    "url": "https://www.subaru.com/support/terms-and-conditions.html",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are Subarus made?",
+     "url": "/where-is-subaru-made/",
+     "note": "Assembly statement for each model"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "subaru-sia",
+   "name": "Subaru of Indiana Automotive: About",
+   "short": "Subaru of Indiana",
+   "publisher": "Subaru of Indiana Automotive, Inc.",
+   "url": "https://www.subaru-sia.com/about",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "The Indiana plant's own account of its history, models and headcount.",
+   "cannot_prove": "Current output or parts sourcing.",
+   "terms": {
+    "url": "https://www.subaru-sia.com/about",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are Subarus made?",
+     "url": "/where-is-subaru-made/",
+     "note": "Plant history and models"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-subaru",
    "name": "Subaru owner's manuals",
    "short": "Subaru",
@@ -2530,33 +3745,6 @@
    "pulls": []
   },
   {
-   "id": "ttb-cola",
-   "name": "TTB Public COLA Registry (label approvals)",
-   "short": "TTB label approvals",
-   "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
-   "url": "https://ttbonline.gov/colasonline/publicSearchColasBasic.do",
-   "kind": "Label approvals",
-   "primary": true,
-   "proves": "Which licensed company applied for and got approval for a label, under which permit, and the exact label text it approved: for spirits, the bottler or importer, and for tequila the producer and its NOM number.",
-   "cannot_prove": "That a label is on shelves now, or which approved label is on the bottle in front of you. Several companies can hold approvals for the same brand at once, and an approval does not expire when a label stops being used.",
-   "terms": {
-    "url": "https://www.ttb.gov/about-ttb/linking-policy",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
-    "automated": true,
-    "checked": "2026-11-03",
-    "due": "2027-11-03"
-   },
-   "credit": null,
-   "used_for": [
-    {
-     "label": "Who makes Kirkland Signature spirits",
-     "url": "/kirkland-signature/",
-     "note": "Vodka, tequila and bourbon label approvals"
-    }
-   ],
-   "pulls": []
-  },
-  {
    "id": "maker-tesla",
    "name": "Tesla owner's manuals",
    "short": "Tesla",
@@ -2579,6 +3767,87 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age advice to owners, in the carmakers table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "textile-world",
+   "name": "Textile World",
+   "short": "Textile World",
+   "publisher": "Textile World",
+   "url": "https://www.textileworld.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "Company news, here a release from Radienz Living.",
+   "cannot_prove": "Anything the release doesn't say, such as customers it doesn't name.",
+   "terms": {
+    "url": "https://www.textileworld.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland laundry detergent",
+     "url": "/kirkland-laundry-detergent/",
+     "note": "Maker records, label doses and prices"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "costco-connection",
+   "name": "The Costco Connection",
+   "short": "Costco Connection",
+   "publisher": "Costco Wholesale Corporation",
+   "url": "https://www.costcoconnection.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Costco itself told members in its own magazine, on that date.",
+   "cannot_prove": "Which plant made anything. The copy we read is a scan of the page hosted on a third-party site.",
+   "terms": {
+    "url": "https://www.costcoconnection.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-08",
+    "due": "2027-11-08"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Costco hot dogs",
+     "url": "/costco-hot-dogs/",
+     "note": "Plants, history and numbers sold"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "daily-dot",
+   "name": "The Daily Dot",
+   "short": "Daily Dot",
+   "publisher": "The Daily Dot",
+   "url": "https://www.dailydot.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What a creator said in a viral video, on that date.",
+   "cannot_prove": "Who makes the detergent: it repeats the creator's claim and cites no record.",
+   "terms": {
+    "url": "https://www.dailydot.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland laundry detergent",
+     "url": "/kirkland-laundry-detergent/",
+     "note": "Maker records, label doses and prices"
     }
    ],
    "pulls": []
@@ -2626,11 +3895,11 @@
    "proves": "What this deal post said, and when. Here, the dates and prices of past Costco diaper offers.",
    "cannot_prove": "That the offer ran at every warehouse, or that a date the post doesn't quote from Costco is exact.",
    "terms": {
-    "url": "https://thekrazycouponlady.com/terms-of-use",
+    "url": "https://thekrazycouponlady.com/krazy-coupon-lady-privacy-policy",
     "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
-    "checked": "2026-11-06",
-    "due": "2027-11-06"
+    "checked": "2026-11-08",
+    "due": "2027-11-08"
    },
    "credit": null,
    "used_for": [
@@ -2638,6 +3907,33 @@
      "label": "Costco diapers: prices and sales",
      "url": "/costco-diapers/",
      "note": "Past offer dates"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "virginian-pilot",
+   "name": "The Virginian-Pilot",
+   "short": "Virginian-Pilot",
+   "publisher": "Virginian-Pilot",
+   "url": "https://www.pilotonline.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the outlet reported, on the date it reported it.",
+   "cannot_prove": "Whether the report is right. Press alone can only make a claim Reported.",
+   "terms": {
+    "url": "https://www.pilotonline.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-07",
+    "due": "2027-11-07"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Costco hot dogs",
+     "url": "/costco-hot-dogs/",
+     "note": "Plants, history and numbers sold"
     }
    ],
    "pulls": []
@@ -2800,33 +4096,6 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Which tires the date-code rule covers"
-    }
-   ],
-   "pulls": []
-  },
-  {
-   "id": "wsbtv",
-   "name": "WSB-TV Channel 2 Atlanta",
-   "short": "WSB-TV",
-   "publisher": "WSB-TV (Cox Media Group)",
-   "url": "https://www.wsbtv.com/",
-   "kind": "Press",
-   "primary": false,
-   "proves": "What a TV news station reported, and when. Here, what Costco's chief executive told a consumer reporter on camera in 2016.",
-   "cannot_prove": "That the report is right, or that it still holds. A reporter's summary of what someone said isn't the person's own words, so we show it as Reported.",
-   "terms": {
-    "url": "https://www.wsbtv.com/robots.txt",
-    "read": "Open license. We read it with a script.",
-    "automated": true,
-    "checked": "2026-11-04",
-    "due": "2027-11-04"
-   },
-   "credit": null,
-   "used_for": [
-    {
-     "label": "Who makes Kirkland Signature batteries",
-     "url": "/kirkland-signature/batteries/",
-     "note": "The 2016 statement that Duracell makes them"
     }
    ],
    "pulls": []

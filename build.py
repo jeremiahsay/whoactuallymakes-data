@@ -236,7 +236,7 @@ def datapackage(cat, v, files):
         "name": "whoactuallymakes-data",
         "id": "https://doi.org/" + DOI,
         "title": cat["title"],
-        "description": "Who makes store-brand products, from public records: Kirkland Signature makers, companies behind store brands, NHTSA tire plant codes, tire age guidance, and the evidence behind each answer.",
+        "description": summary(cat),
         "homepage": cat["url"],
         "version": v,
         "licenses": [{"name": "CC-BY-4.0", "path": cat["licence"]["url"], "title": "Creative Commons Attribution 4.0"}],
@@ -247,6 +247,12 @@ def datapackage(cat, v, files):
         "keywords": keywords(cat),
         "resources": res,
     }
+
+
+def summary(cat):
+    """One sentence listing every dataset by title, so the description can't fall behind the catalog."""
+    t = [d["title"] for d in cat["datasets"]]
+    return f"Who makes store-brand products, from public records. {len(t)} datasets, {sum(d['records'] for d in cat['datasets']):,} records: " + "; ".join(t) + "."
 
 
 def keywords(cat):
@@ -282,9 +288,9 @@ keywords:
 
 def zenodo(cat, v):
     return {
-        "title": cat["title"] + " (store-brand makers, tire plant codes, tire age guidance)",
+        "title": cat["title"] + ": who makes store brands, from public records",
         "upload_type": "dataset",
-        "description": "Who makes store-brand products, from public records: which company each Kirkland Signature product traces to, the companies behind store brands and the labels they are on record for, every NHTSA tire plant code, what tire makers and carmakers say about tire age, and the evidence (quote, date read, SHA-256), sources, corrections and update schedule behind each answer. JSON and CSV. Live copy and API: " + cat["url"],
+        "description": summary(cat) + " JSON and CSV. Live copy and API: " + cat["url"],
         "creators": [{"name": "Say, Jeremiah", "orcid": ORCID.rsplit("/", 1)[1], "affiliation": "Numbers Publishing Pte. Ltd."}],
         "license": "cc-by-4.0",
         "version": v,

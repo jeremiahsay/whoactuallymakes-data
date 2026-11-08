@@ -83,7 +83,7 @@
    "hand_note": null,
    "once": false,
    "last": "2026-11-05",
-   "due": "2026-11-09",
+   "due": "2026-11-12",
    "result": "47 labels read; a change is flagged for a person"
   },
   {
@@ -129,7 +129,7 @@
    "what": "Company pages: registers, recalls and the companies' own pages",
    "gives": "The facts on each /makers/ page: every brand registered care of the company in North Dakota, its FDA recall records, and what its own site says (plants, owners, brands)",
    "how": "script",
-   "every_days": 182,
+   "every_days": 30,
    "source": {
     "id": "nd-pet-food-registry",
     "name": "North Dakota Department of Agriculture pet food product registrations",
@@ -137,11 +137,11 @@
     "url": "https://lars.ndda.nd.gov/public/productsearch/3"
    },
    "file_url": null,
-   "hand_note": "tools/fetch_maker_registers.py re-reads the registers and recalls; a person re-reads each company's own pages and updates data/makers/.",
+   "hand_note": "tools/weekly.py runs tools/fetch_maker_registers.py all once a month: North Dakota's pet food register and FDA recall records for each company. The companies' own pages are re-read by a person at each claim check.",
    "once": false,
    "last": "2026-11-03",
-   "due": "2026-11-09",
-   "result": "10 company pages; 2 pet food register searches, 2 recall pulls"
+   "due": "2026-12-03",
+   "result": "14 company pages; 2 pet food register searches, 2 recall pulls"
   },
   {
    "id": "kirkland-battery-prices",
@@ -425,7 +425,7 @@
    "hand_note": null,
    "once": false,
    "last": "2026-11-06",
-   "due": "2026-11-09",
+   "due": "2026-11-13",
    "result": "Labels read for the comparison pairs"
   },
   {
@@ -563,7 +563,7 @@
   },
   {
    "id": "wam-wayback-saves",
-   "what": "Wayback saves: the Costco hot dogs page and its source records, plus the earlier records with no archive copy, plus the Subaru and Kia page records",
+   "what": "Wayback saves: the Costco hot dogs page and its source records, plus the earlier records with no archive copy, plus the Subaru and Kia page records, plus the 8 Nov maker-page records (Kimberly-Clark releases, MISA, Duracell articles, East Penn, First Quality)",
    "gives": "Archived copy links on the evidence records",
    "how": "hand",
    "every_days": 0,
@@ -617,6 +617,139 @@
    "last": null,
    "due": "2026-12-08",
    "result": null
+  },
+  {
+   "id": "ttb-kirkland",
+   "what": "TTB label approvals for Kirkland",
+   "gives": "Every Kirkland vodka, tequila and bourbon approval on those pages, with its status; new approvals become leads for a person to read",
+   "how": "script",
+   "every_days": 7,
+   "source": {
+    "id": "ttb-cola",
+    "name": "TTB Public COLA Registry (label approvals)",
+    "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
+    "url": "https://ttbonline.gov/colasonline/publicSearchColasBasic.do"
+   },
+   "file_url": null,
+   "hand_note": "Runs from the Mac (TTB doesn't answer our servers): launchd com.whoactuallymakes.ttb, Sundays 20:00. New approvals are listed in data/leads/ttb/new.json; read each label and add it to data/records/ttb-label-reads.json.",
+   "once": false,
+   "last": "2026-11-08",
+   "due": "2026-11-15",
+   "result": "512 Kirkland approvals; 38 on the spirits pages, 7 not yet cited"
+  },
+  {
+   "id": "usga-balls-kirkland",
+   "what": "USGA conforming golf ball list, Kirkland balls",
+   "gives": "Every Kirkland Signature ball on the list and the company it is listed under",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "usga-conforming-golf-balls",
+    "name": "USGA and R&A List of Conforming Golf Balls",
+    "publisher": "United States Golf Association (USGA), with The R&A",
+    "url": "https://www.usga.org/ConformingGolfBall/"
+   },
+   "file_url": null,
+   "hand_note": "usga.org refuses scripts. After the list's update on the first Wednesday of the month, search it for “Kirkland” and “SM Global” in a browser and add a check to each golf ball claim.",
+   "once": false,
+   "last": "2026-11-08",
+   "due": "2026-12-08",
+   "result": "November list (Nov 4): same four Kirkland balls, all SM Global LLC"
+  },
+  {
+   "id": "usga-driver-kirkland",
+   "what": "USGA conforming driver head list, Kirkland driver",
+   "gives": "Whether the Kirkland Signature Driver is still listed, under which company, and at which lofts",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "usga-conforming-driver-heads",
+    "name": "USGA and R&A List of Conforming Driver Heads",
+    "publisher": "United States Golf Association (USGA), with The R&A",
+    "url": "https://www.usga.org/ConformingGolfClub/ConformingClubList_M.pdf"
+   },
+   "file_url": null,
+   "hand_note": "usga.org refuses scripts. Open ConformingClubList_M.pdf in a browser, note its effective date, find SM Global, LLC (just before SMT Golf) and add a check to the driver claim.",
+   "once": false,
+   "last": "2026-11-08",
+   "due": "2026-12-08",
+   "result": "Edition effective Nov 2, 2026, page 937: Kirkland Signature Driver 10.5 under SM Global, LLC"
+  },
+  {
+   "id": "costco-coffee-listings",
+   "what": "Costco's Kirkland coffee listings",
+   "gives": "Which listings name a roaster (Decaf House Blend says Starbucks) and how many name none",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "costco-com",
+    "name": "Costco.com product listings",
+    "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+    "url": "https://www.costco.com/"
+   },
+   "file_url": null,
+   "hand_note": "Costco.com is read in a browser. Re-read every Kirkland coffee listing on the page's table, update site-data/kirkland-coffee.json, and log any listing that starts or stops naming a roaster.",
+   "once": false,
+   "last": "2026-11-08",
+   "due": "2026-12-08",
+   "result": "20 listings read: Decaf House Blend still says Custom Roasted by Starbucks; the other 19 name no roaster (10 newly listed)"
+  },
+  {
+   "id": "kmb-filings",
+   "what": "Kimberly-Clark quarterly results on SEC EDGAR",
+   "gives": "The quarter-by-quarter table of what Kimberly-Clark told investors about leaving its US private-label diaper business, on its maker page",
+   "how": "hand",
+   "every_days": 92,
+   "source": {
+    "id": "sec-edgar",
+    "name": "SEC EDGAR company filings",
+    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+    "url": "https://www.sec.gov/edgar/search/"
+   },
+   "file_url": null,
+   "hand_note": "EDGAR full-text search for \"private label diaper\" with CIK 0000055785, in a browser (efts.sec.gov). Read the newest earnings release (8-K exhibit 99.1); add a row to data/makers/kimberly-clark.json filings with its own words, and an evidence record via tools/archive.py.",
+   "once": false,
+   "last": "2026-11-08",
+   "due": "2027-02-08",
+   "result": "Eight releases from Jan 2025 to Nov 2026 mention it; Q3 2026 no longer does in North America"
+  },
+  {
+   "id": "kirkland-battery-maker-trail",
+   "what": "Any new record naming who makes Kirkland AA and AAA batteries",
+   "gives": "The Duracell maker page: the strength of the tie and the list of retellings",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "wsbtv",
+    "name": "WSB-TV Channel 2 Atlanta",
+    "publisher": "WSB-TV (Cox Media Group)",
+    "url": "https://www.wsbtv.com/"
+   },
+   "file_url": null,
+   "hand_note": "Search the web for who makes Kirkland batteries; open anything newer than 2016 and see what it cites. Only a Costco or Duracell statement, a pack marking or a filing lifts the stamp above Reported. Re-read the Kirkland AA listing on costco.com for a maker or country of origin.",
+   "once": false,
+   "last": "2026-11-08",
+   "due": "2027-02-06",
+   "result": "Nothing newer than the Nov 2016 WSB-TV report; three 2025–26 retellings read"
+  },
+  {
+   "id": "policy-pages-review",
+   "what": "About and policy pages, read against the site",
+   "gives": "About, privacy, terms, affiliate disclosure, trademark notice, how we make money, for makers and contact, each read against what the site actually does today (tools, analytics, ads, links)",
+   "how": "hand",
+   "every_days": 365,
+   "source": {
+    "id": "wam",
+    "name": "Our own pages",
+    "publisher": "Numbers Publishing",
+    "url": "https://whoactuallymakes.com/"
+   },
+   "file_url": null,
+   "hand_note": "Read each page against the live site. Before any ad or affiliate link goes live, re-read privacy, money and affiliate pages first, whatever the date.",
+   "once": false,
+   "last": "2026-11-08",
+   "due": "2027-11-08",
+   "result": "Read in the Nov 2026 site audit: privacy named the click count and the two tools that send nothing; terms, for-makers and the data notes corrected"
   }
  ],
  "terms": [
@@ -647,9 +780,9 @@
   {
    "source": "ACDelco Canada website",
    "publisher": "ACDelco",
-   "url": "https://acdelcocanada.com/robots.txt",
-   "checked": "2026-11-06",
-   "due": "2027-11-06",
+   "url": "https://www.acdelcocanada.com/",
+   "checked": "2026-11-08",
+   "due": "2027-11-08",
    "automated_read": "yes"
   },
   {
@@ -667,6 +800,14 @@
    "checked": "2026-11-06",
    "due": "2027-11-06",
    "automated_read": "ask"
+  },
+  {
+   "source": "BGR",
+   "publisher": "BGR (Static Media)",
+   "url": "https://bgr.com/robots.txt",
+   "checked": "2026-11-08",
+   "due": "2027-11-08",
+   "automated_read": "yes"
   },
   {
    "source": "BabyGearLab",
@@ -1023,9 +1164,9 @@
   {
    "source": "Hip2Save",
    "publisher": "Hip2Save",
-   "url": "https://hip2save.com/terms-of-use/",
-   "checked": "2026-11-06",
-   "due": "2027-11-06",
+   "url": "https://hip2save.com/website-terms-of-use/",
+   "checked": "2026-11-08",
+   "due": "2027-11-08",
    "automated_read": "ask"
   },
   {
@@ -1111,7 +1252,7 @@
   {
    "source": "Kia Corporation investor relations",
    "publisher": "Kia Corporation",
-   "url": "https://worldwide.kia.com/en/etc/terms-of-use",
+   "url": "https://worldwide.kia.com/en/terms-and-conditions",
    "checked": "2026-11-08",
    "due": "2027-11-08",
    "automated_read": "ask"
@@ -1119,7 +1260,7 @@
   {
    "source": "Kia Global Newsroom",
    "publisher": "Kia Corporation",
-   "url": "https://worldwide.kia.com/en/etc/terms-of-use",
+   "url": "https://worldwide.kia.com/en/terms-and-conditions",
    "checked": "2026-11-08",
    "due": "2027-11-08",
    "automated_read": "ask"
@@ -1154,6 +1295,14 @@
    "url": "https://mg2.com/",
    "checked": "2026-11-07",
    "due": "2027-11-07",
+   "automated_read": "yes"
+  },
+  {
+   "source": "MISA Imports website",
+   "publisher": "MISA Imports",
+   "url": "https://www.misaimports.com/robots.txt",
+   "checked": "2026-11-08",
+   "due": "2027-11-08",
    "automated_read": "yes"
   },
   {
@@ -1319,9 +1468,9 @@
   {
    "source": "Office of the Governor of Georgia, press releases",
    "publisher": "State of Georgia",
-   "url": "https://georgia.gov/privacy-security",
-   "checked": "2026-11-05",
-   "due": "2027-11-05",
+   "url": "https://georgia.gov/privacy-and-security",
+   "checked": "2026-11-08",
+   "due": "2027-11-08",
    "automated_read": "yes"
   },
   {
@@ -1445,11 +1594,19 @@
    "automated_read": "yes"
   },
   {
+   "source": "SlashGear",
+   "publisher": "SlashGear (Static Media)",
+   "url": "https://www.slashgear.com/robots.txt",
+   "checked": "2026-11-08",
+   "due": "2027-11-08",
+   "automated_read": "yes"
+  },
+  {
    "source": "Slickdeals",
    "publisher": "Slickdeals",
-   "url": "https://slickdeals.net/terms",
-   "checked": "2026-11-06",
-   "due": "2027-11-06",
+   "url": "https://slickdeals.net/content/list/slickdeals-terms-and-policies/",
+   "checked": "2026-11-08",
+   "due": "2027-11-08",
    "automated_read": "ask"
   },
   {
@@ -1496,9 +1653,9 @@
    "source": "TTB Public COLA Registry (label approvals)",
    "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
    "url": "https://www.ttb.gov/about-ttb/linking-policy",
-   "checked": "2026-11-03",
-   "due": "2027-11-03",
-   "automated_read": "ask"
+   "checked": "2026-11-08",
+   "due": "2027-11-08",
+   "automated_read": "yes"
   },
   {
    "source": "Tesla owner's manuals",
@@ -1519,9 +1676,9 @@
   {
    "source": "The Costco Connection",
    "publisher": "Costco Wholesale Corporation",
-   "url": "https://www.costco.com/connection.html",
-   "checked": "2026-11-07",
-   "due": "2027-11-07",
+   "url": "https://www.costcoconnection.com/",
+   "checked": "2026-11-08",
+   "due": "2027-11-08",
    "automated_read": "yes"
   },
   {
@@ -1543,9 +1700,9 @@
   {
    "source": "The Krazy Coupon Lady",
    "publisher": "The Krazy Coupon Lady",
-   "url": "https://thekrazycouponlady.com/terms-of-use",
-   "checked": "2026-11-06",
-   "due": "2027-11-06",
+   "url": "https://thekrazycouponlady.com/krazy-coupon-lady-privacy-policy",
+   "checked": "2026-11-08",
+   "due": "2027-11-08",
    "automated_read": "ask"
   },
   {
@@ -1613,6 +1770,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "USGA and R&A List of Conforming Driver Heads",
+   "publisher": "United States Golf Association (USGA), with The R&A",
+   "url": "https://www.usga.org/terms-of-use.html",
+   "checked": "2026-11-08",
+   "due": "2027-11-08",
+   "automated_read": "no"
+  },
+  {
    "source": "USGA and R&A List of Conforming Driver Heads, past editions",
    "publisher": "United States Golf Association (USGA), with The R&A; copies kept by the Internet Archive",
    "url": "https://archive.org/about/terms.php",
@@ -1624,8 +1789,8 @@
    "source": "USGA and R&A List of Conforming Golf Balls",
    "publisher": "United States Golf Association (USGA), with The R&A",
    "url": "https://www.usga.org/terms-of-use.html",
-   "checked": "2026-11-03",
-   "due": "2027-11-03",
+   "checked": "2026-11-08",
+   "due": "2027-11-08",
    "automated_read": "no"
   },
   {
@@ -1690,8 +1855,8 @@
    "id": "c-ks-golf-driver-sm-global",
    "product": "ks-golf-driver",
    "stamp": "documented",
-   "next_check": "2026-12-03",
-   "last_check": "2026-11-03",
+   "next_check": "2026-12-08",
+   "last_check": "2026-11-08",
    "name": "Kirkland Signature driver",
    "page": "/kirkland-signature/golf-clubs/"
   },
@@ -1699,8 +1864,8 @@
    "id": "c-ks-golf-performance-plus-sm-global",
    "product": "ks-golf-ball-performance-plus",
    "stamp": "documented",
-   "next_check": "2026-12-03",
-   "last_check": "2026-11-03",
+   "next_check": "2026-12-08",
+   "last_check": "2026-11-08",
    "name": "Kirkland Signature Performance+ golf ball",
    "page": "/kirkland-signature/golf-balls/"
   },
@@ -1708,8 +1873,8 @@
    "id": "c-ks-golf-tour-performance-sm-global",
    "product": "ks-golf-ball-tour-performance",
    "stamp": "documented",
-   "next_check": "2026-12-03",
-   "last_check": "2026-11-03",
+   "next_check": "2026-12-08",
+   "last_check": "2026-11-08",
    "name": "Kirkland Signature Tour Performance golf ball",
    "page": "/kirkland-signature/golf-balls/"
   },
@@ -1777,6 +1942,150 @@
    "page": "/kirkland-signature/toilet-paper/"
   },
   {
+   "id": "c-ks-bourbon-barton",
+   "product": "ks-bourbon",
+   "stamp": "documented",
+   "next_check": "2027-02-08",
+   "last_check": "2026-11-08",
+   "name": "Kirkland Signature bourbon",
+   "page": "/kirkland-signature/bourbon/"
+  },
+  {
+   "id": "c-ks-bourbon-buffalo-trace",
+   "product": "ks-bourbon",
+   "stamp": "documented",
+   "next_check": "2027-02-08",
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature bourbon",
+   "page": "/kirkland-signature/bourbon/"
+  },
+  {
+   "id": "c-ks-bourbon-tennessee",
+   "product": "ks-bourbon",
+   "stamp": "documented",
+   "next_check": "2027-02-08",
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature bourbon",
+   "page": "/kirkland-signature/bourbon/"
+  },
+  {
+   "id": "c-ks-french-vodka-misa",
+   "product": "ks-french-vodka",
+   "stamp": "documented",
+   "next_check": "2027-02-08",
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature vodka (France)",
+   "page": "/kirkland-signature/vodka/"
+  },
+  {
+   "id": "c-ks-tequila-la-madrilena",
+   "product": "ks-tequila",
+   "stamp": "documented",
+   "next_check": "2027-02-08",
+   "last_check": "2026-11-08",
+   "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "page": "/kirkland-signature/tequila/"
+  },
+  {
+   "id": "c-ks-tequila-magave-import",
+   "product": "ks-tequila",
+   "stamp": "documented",
+   "next_check": "2027-02-08",
+   "last_check": "2026-11-08",
+   "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "page": "/kirkland-signature/tequila/"
+  },
+  {
+   "id": "c-ks-tequila-misa-import",
+   "product": "ks-tequila",
+   "stamp": "documented",
+   "next_check": "2027-02-08",
+   "last_check": "2026-11-08",
+   "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "page": "/kirkland-signature/tequila/"
+  },
+  {
+   "id": "c-ks-tequila-mpl-import",
+   "product": "ks-tequila",
+   "stamp": "documented",
+   "next_check": "2027-02-08",
+   "last_check": "2026-11-08",
+   "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "page": "/kirkland-signature/tequila/"
+  },
+  {
+   "id": "c-ks-tequila-santa-lucia",
+   "product": "ks-tequila",
+   "stamp": "documented",
+   "next_check": "2027-02-08",
+   "last_check": "2026-11-08",
+   "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "page": "/kirkland-signature/tequila/"
+  },
+  {
+   "id": "c-ks-tequila-sazerac-import",
+   "product": "ks-tequila",
+   "stamp": "documented",
+   "next_check": "2027-02-08",
+   "last_check": "2026-11-08",
+   "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "page": "/kirkland-signature/tequila/"
+  },
+  {
+   "id": "c-ks-tequila-tequilas-finos",
+   "product": "ks-tequila",
+   "stamp": "documented",
+   "next_check": "2027-02-08",
+   "last_check": "2026-11-08",
+   "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "page": "/kirkland-signature/tequila/"
+  },
+  {
+   "id": "c-ks-tequila-valle",
+   "product": "ks-tequila",
+   "stamp": "documented",
+   "next_check": "2027-02-08",
+   "last_check": "2026-11-08",
+   "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "page": "/kirkland-signature/tequila/"
+  },
+  {
+   "id": "c-ks-vodka-bardstown",
+   "product": "ks-american-vodka",
+   "stamp": "documented",
+   "next_check": "2027-02-08",
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature American Vodka",
+   "page": "/kirkland-signature/vodka/"
+  },
+  {
+   "id": "c-ks-vodka-buffalo-trace",
+   "product": "ks-american-vodka",
+   "stamp": "documented",
+   "next_check": "2027-02-08",
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature American Vodka",
+   "page": "/kirkland-signature/vodka/"
+  },
+  {
+   "id": "c-ks-vodka-levecke",
+   "product": "ks-american-vodka",
+   "stamp": "documented",
+   "next_check": "2027-02-08",
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature American Vodka",
+   "page": "/kirkland-signature/vodka/"
+  },
+  {
+   "id": "c-ks-vodka-oneill",
+   "product": "ks-american-vodka",
+   "stamp": "documented",
+   "next_check": "2027-02-08",
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature American Vodka",
+   "page": "/kirkland-signature/vodka/"
+  },
+  {
    "id": "c-ks-albacore-bumble-bee",
    "product": "ks-albacore-tuna",
    "stamp": "documented",
@@ -1811,33 +2120,6 @@
    "last_check": "2026-11-03",
    "name": "Kirkland Signature dog biscuits",
    "page": "/kirkland-signature/dog-food/"
-  },
-  {
-   "id": "c-ks-bourbon-barton",
-   "product": "ks-bourbon",
-   "stamp": "documented",
-   "next_check": "2027-05-03",
-   "last_check": "2026-11-03",
-   "name": "Kirkland Signature bourbon",
-   "page": "/kirkland-signature/bourbon/"
-  },
-  {
-   "id": "c-ks-bourbon-buffalo-trace",
-   "product": "ks-bourbon",
-   "stamp": "documented",
-   "next_check": "2027-05-03",
-   "last_check": "2026-11-03",
-   "name": "Kirkland Signature bourbon",
-   "page": "/kirkland-signature/bourbon/"
-  },
-  {
-   "id": "c-ks-bourbon-tennessee",
-   "product": "ks-bourbon",
-   "stamp": "documented",
-   "next_check": "2027-05-03",
-   "last_check": "2026-11-03",
-   "name": "Kirkland Signature bourbon",
-   "page": "/kirkland-signature/bourbon/"
   },
   {
    "id": "c-ks-butter-continental",
@@ -1889,7 +2171,7 @@
    "product": "ks-decaf-house-blend-coffee",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03",
+   "last_check": "2026-11-08",
    "name": "Kirkland Signature Decaf House Blend coffee",
    "page": "/kirkland-signature/coffee/"
   },
@@ -1948,15 +2230,6 @@
    "page": "/kirkland-signature/"
   },
   {
-   "id": "c-ks-french-vodka-misa",
-   "product": "ks-french-vodka",
-   "stamp": "documented",
-   "next_check": "2027-05-03",
-   "last_check": "2026-11-03",
-   "name": "Kirkland Signature vodka (France)",
-   "page": "/kirkland-signature/vodka/"
-  },
-  {
    "id": "c-ks-golf-2016-nassau",
    "product": "ks-golf-ball-2016",
    "stamp": "reported",
@@ -2006,7 +2279,7 @@
    "product": "ks-motor-oil",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03",
+   "last_check": "2026-11-08",
    "name": "Kirkland Signature motor oil",
    "page": "/kirkland-signature/motor-oil/"
   },
@@ -2047,42 +2320,6 @@
    "page": "/kirkland-signature/"
   },
   {
-   "id": "c-ks-tequila-la-madrilena",
-   "product": "ks-tequila",
-   "stamp": "documented",
-   "next_check": "2027-05-03",
-   "last_check": "2026-11-03",
-   "name": "Kirkland Signature tequila (Blanco, Reposado, Extra Añejo)",
-   "page": "/kirkland-signature/tequila/"
-  },
-  {
-   "id": "c-ks-tequila-mpl-import",
-   "product": "ks-tequila",
-   "stamp": "documented",
-   "next_check": "2027-05-03",
-   "last_check": "2026-11-03",
-   "name": "Kirkland Signature tequila (Blanco, Reposado, Extra Añejo)",
-   "page": "/kirkland-signature/tequila/"
-  },
-  {
-   "id": "c-ks-tequila-santa-lucia",
-   "product": "ks-tequila",
-   "stamp": "documented",
-   "next_check": "2027-05-03",
-   "last_check": "2026-11-03",
-   "name": "Kirkland Signature tequila (Blanco, Reposado, Extra Añejo)",
-   "page": "/kirkland-signature/tequila/"
-  },
-  {
-   "id": "c-ks-tequila-sazerac-import",
-   "product": "ks-tequila",
-   "stamp": "documented",
-   "next_check": "2027-05-03",
-   "last_check": "2026-11-03",
-   "name": "Kirkland Signature tequila (Blanco, Reposado, Extra Añejo)",
-   "page": "/kirkland-signature/tequila/"
-  },
-  {
    "id": "c-ks-three-berry-townsend",
    "product": "ks-three-berry-blend",
    "stamp": "documented",
@@ -2090,42 +2327,6 @@
    "last_check": "2026-11-03",
    "name": "Kirkland Signature Three Berry Blend (frozen)",
    "page": "/kirkland-signature/"
-  },
-  {
-   "id": "c-ks-vodka-bardstown",
-   "product": "ks-american-vodka",
-   "stamp": "documented",
-   "next_check": "2027-05-03",
-   "last_check": "2026-11-03",
-   "name": "Kirkland Signature American Vodka",
-   "page": "/kirkland-signature/vodka/"
-  },
-  {
-   "id": "c-ks-vodka-buffalo-trace",
-   "product": "ks-american-vodka",
-   "stamp": "documented",
-   "next_check": "2027-05-03",
-   "last_check": "2026-11-03",
-   "name": "Kirkland Signature American Vodka",
-   "page": "/kirkland-signature/vodka/"
-  },
-  {
-   "id": "c-ks-vodka-levecke",
-   "product": "ks-american-vodka",
-   "stamp": "documented",
-   "next_check": "2027-05-03",
-   "last_check": "2026-11-03",
-   "name": "Kirkland Signature American Vodka",
-   "page": "/kirkland-signature/vodka/"
-  },
-  {
-   "id": "c-ks-vodka-oneill",
-   "product": "ks-american-vodka",
-   "stamp": "documented",
-   "next_check": "2027-05-03",
-   "last_check": "2026-11-03",
-   "name": "Kirkland Signature American Vodka",
-   "page": "/kirkland-signature/vodka/"
   },
   {
    "id": "c-ks-wet-cat-saturn",
@@ -2761,9 +2962,15 @@
   },
   {
    "path": "/kirkland-signature/",
-   "changed": "2026-11-07",
-   "next": "2026-12-03",
-   "tasks": [],
+   "changed": "2026-11-08",
+   "next": "2026-11-15",
+   "tasks": [
+    {
+     "id": "ttb-kirkland",
+     "what": "TTB label approvals for Kirkland",
+     "due": "2026-11-15"
+    }
+   ],
    "claims": null,
    "stamps": {}
   },
@@ -2839,12 +3046,12 @@
   {
    "path": "/kirkland-signature/medicine/",
    "changed": "2026-11-07",
-   "next": "2026-11-09",
+   "next": "2026-11-12",
    "tasks": [
     {
      "id": "kirkland-medicine-labels",
      "what": "Kirkland medicine labels and FDA approval holders",
-     "due": "2026-11-09"
+     "due": "2026-11-12"
     }
    ],
    "claims": 40,
@@ -2882,9 +3089,15 @@
   },
   {
    "path": "/kirkland-signature/coffee/",
-   "changed": "2026-11-03",
-   "next": "2027-05-03",
-   "tasks": [],
+   "changed": "2026-11-08",
+   "next": "2026-12-08",
+   "tasks": [
+    {
+     "id": "costco-coffee-listings",
+     "what": "Costco's Kirkland coffee listings",
+     "due": "2026-12-08"
+    }
+   ],
    "claims": 2,
    "stamps": {
     "documented": 2
@@ -2892,9 +3105,15 @@
   },
   {
    "path": "/kirkland-signature/golf-balls/",
-   "changed": "2026-11-03",
-   "next": "2026-12-03",
-   "tasks": [],
+   "changed": "2026-11-08",
+   "next": "2026-12-08",
+   "tasks": [
+    {
+     "id": "usga-balls-kirkland",
+     "what": "USGA conforming golf ball list, Kirkland balls",
+     "due": "2026-12-08"
+    }
+   ],
    "claims": 4,
    "stamps": {
     "documented": 3,
@@ -2903,9 +3122,15 @@
   },
   {
    "path": "/kirkland-signature/golf-clubs/",
-   "changed": "2026-11-03",
-   "next": "2026-12-03",
-   "tasks": [],
+   "changed": "2026-11-08",
+   "next": "2026-12-08",
+   "tasks": [
+    {
+     "id": "usga-driver-kirkland",
+     "what": "USGA conforming driver head list, Kirkland driver",
+     "due": "2026-12-08"
+    }
+   ],
    "claims": 3,
    "stamps": {
     "documented": 1,
@@ -2914,7 +3139,7 @@
   },
   {
    "path": "/kirkland-signature/motor-oil/",
-   "changed": "2026-11-03",
+   "changed": "2026-11-08",
    "next": "2027-04-05",
    "tasks": [
     {
@@ -2950,9 +3175,15 @@
   },
   {
    "path": "/kirkland-signature/vodka/",
-   "changed": "2026-11-03",
-   "next": "2027-05-03",
-   "tasks": [],
+   "changed": "2026-11-08",
+   "next": "2026-11-15",
+   "tasks": [
+    {
+     "id": "ttb-kirkland",
+     "what": "TTB label approvals for Kirkland",
+     "due": "2026-11-15"
+    }
+   ],
    "claims": 5,
    "stamps": {
     "documented": 5
@@ -2960,19 +3191,31 @@
   },
   {
    "path": "/kirkland-signature/tequila/",
-   "changed": "2026-11-03",
-   "next": "2027-05-03",
-   "tasks": [],
-   "claims": 4,
+   "changed": "2026-11-08",
+   "next": "2026-11-15",
+   "tasks": [
+    {
+     "id": "ttb-kirkland",
+     "what": "TTB label approvals for Kirkland",
+     "due": "2026-11-15"
+    }
+   ],
+   "claims": 8,
    "stamps": {
-    "documented": 4
+    "documented": 8
    }
   },
   {
    "path": "/kirkland-signature/bourbon/",
-   "changed": "2026-11-03",
-   "next": "2027-05-03",
-   "tasks": [],
+   "changed": "2026-11-08",
+   "next": "2026-11-15",
+   "tasks": [
+    {
+     "id": "ttb-kirkland",
+     "what": "TTB label approvals for Kirkland",
+     "due": "2026-11-15"
+    }
+   ],
    "claims": 3,
    "stamps": {
     "documented": 3
@@ -2981,7 +3224,7 @@
   {
    "path": "/kirkland-vs-name-brands/",
    "changed": "2026-11-06",
-   "next": "2026-11-09",
+   "next": "2026-11-13",
    "tasks": [
     {
      "id": "kirkland-vs-prices",
@@ -2991,7 +3234,7 @@
     {
      "id": "name-brand-labels",
      "what": "Name-brand labels compared with Kirkland",
-     "due": "2026-11-09"
+     "due": "2026-11-13"
     }
    ],
    "claims": 0,
@@ -3013,13 +3256,13 @@
   },
   {
    "path": "/makers/",
-   "changed": "2026-11-05",
-   "next": "2026-11-09",
+   "changed": "2026-11-08",
+   "next": "2026-12-03",
    "tasks": [
     {
      "id": "maker-pages",
      "what": "Company pages: registers, recalls and the companies' own pages",
-     "due": "2026-11-09"
+     "due": "2026-12-03"
     }
    ],
    "claims": 0,
@@ -3028,12 +3271,12 @@
   {
    "path": "/makers/diamond-pet-foods/",
    "changed": "2026-11-03",
-   "next": "2026-11-09",
+   "next": "2026-12-03",
    "tasks": [
     {
      "id": "maker-pages",
      "what": "Company pages: registers, recalls and the companies' own pages",
-     "due": "2026-11-09"
+     "due": "2026-12-03"
     }
    ],
    "claims": 4,
@@ -3044,12 +3287,12 @@
   {
    "path": "/makers/saturn-petcare/",
    "changed": "2026-11-03",
-   "next": "2026-11-09",
+   "next": "2026-12-03",
    "tasks": [
     {
      "id": "maker-pages",
      "what": "Company pages: registers, recalls and the companies' own pages",
-     "due": "2026-11-09"
+     "due": "2026-12-03"
     }
    ],
    "claims": 2,
@@ -3059,13 +3302,13 @@
   },
   {
    "path": "/makers/highline-warren/",
-   "changed": "2026-11-03",
-   "next": "2026-11-09",
+   "changed": "2026-11-08",
+   "next": "2026-12-03",
    "tasks": [
     {
      "id": "maker-pages",
      "what": "Company pages: registers, recalls and the companies' own pages",
-     "due": "2026-11-09"
+     "due": "2026-12-03"
     },
     {
      "id": "api-oil-licences",
@@ -3080,13 +3323,13 @@
   },
   {
    "path": "/makers/sazerac/",
-   "changed": "2026-11-03",
-   "next": "2026-11-09",
+   "changed": "2026-11-08",
+   "next": "2026-12-03",
    "tasks": [
     {
      "id": "maker-pages",
      "what": "Company pages: registers, recalls and the companies' own pages",
-     "due": "2026-11-09"
+     "due": "2026-12-03"
     }
    ],
    "claims": 4,
@@ -3096,13 +3339,13 @@
   },
   {
    "path": "/makers/sm-global/",
-   "changed": "2026-11-03",
-   "next": "2026-11-09",
+   "changed": "2026-11-08",
+   "next": "2026-12-03",
    "tasks": [
     {
      "id": "maker-pages",
      "what": "Company pages: registers, recalls and the companies' own pages",
-     "due": "2026-11-09"
+     "due": "2026-12-03"
     }
    ],
    "claims": 4,
@@ -3113,17 +3356,17 @@
   {
    "path": "/makers/perrigo/",
    "changed": "2026-11-05",
-   "next": "2026-11-09",
+   "next": "2026-11-12",
    "tasks": [
     {
      "id": "maker-pages",
      "what": "Company pages: registers, recalls and the companies' own pages",
-     "due": "2026-11-09"
+     "due": "2026-12-03"
     },
     {
      "id": "kirkland-medicine-labels",
      "what": "Kirkland medicine labels and FDA approval holders",
-     "due": "2026-11-09"
+     "due": "2026-11-12"
     }
    ],
    "claims": 26,
@@ -3134,17 +3377,17 @@
   {
    "path": "/makers/lnk-international/",
    "changed": "2026-11-05",
-   "next": "2026-11-09",
+   "next": "2026-11-12",
    "tasks": [
     {
      "id": "maker-pages",
      "what": "Company pages: registers, recalls and the companies' own pages",
-     "due": "2026-11-09"
+     "due": "2026-12-03"
     },
     {
      "id": "kirkland-medicine-labels",
      "what": "Kirkland medicine labels and FDA approval holders",
-     "due": "2026-11-09"
+     "due": "2026-11-12"
     }
    ],
    "claims": 8,
@@ -3155,12 +3398,12 @@
   {
    "path": "/makers/first-quality/",
    "changed": "2026-11-05",
-   "next": "2026-11-09",
+   "next": "2026-12-03",
    "tasks": [
     {
      "id": "maker-pages",
      "what": "Company pages: registers, recalls and the companies' own pages",
-     "due": "2026-11-09"
+     "due": "2026-12-03"
     },
     {
      "id": "kirkland-diaper-sfi-code",
@@ -3177,12 +3420,12 @@
   {
    "path": "/makers/georgia-pacific/",
    "changed": "2026-11-05",
-   "next": "2026-11-09",
+   "next": "2026-12-03",
    "tasks": [
     {
      "id": "maker-pages",
      "what": "Company pages: registers, recalls and the companies' own pages",
-     "due": "2026-11-09"
+     "due": "2026-12-03"
     },
     {
      "id": "kirkland-tissue-codes",
@@ -3197,13 +3440,13 @@
   },
   {
    "path": "/makers/kruger-products/",
-   "changed": "2026-11-05",
-   "next": "2026-11-09",
+   "changed": "2026-11-08",
+   "next": "2026-12-03",
    "tasks": [
     {
      "id": "maker-pages",
      "what": "Company pages: registers, recalls and the companies' own pages",
-     "due": "2026-11-09"
+     "due": "2026-12-03"
     },
     {
      "id": "kirkland-tissue-codes",
@@ -3219,14 +3462,14 @@
   {
    "path": "/how-we-know/",
    "changed": "2026-11-08",
-   "next": "2026-12-03",
+   "next": "2026-12-08",
    "tasks": [],
    "claims": null,
    "stamps": {}
   },
   {
    "path": "/sources/",
-   "changed": "2026-11-06",
+   "changed": "2026-11-08",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -3269,9 +3512,277 @@
    ],
    "claims": 0,
    "stamps": {}
+  },
+  {
+   "path": "/makers/kimberly-clark/",
+   "changed": "2026-11-08",
+   "next": "2026-12-03",
+   "tasks": [
+    {
+     "id": "maker-pages",
+     "what": "Company pages: registers, recalls and the companies' own pages",
+     "due": "2026-12-03"
+    },
+    {
+     "id": "kmb-filings",
+     "what": "Kimberly-Clark quarterly results on SEC EDGAR",
+     "due": "2027-02-08"
+    },
+    {
+     "id": "kirkland-tissue-codes",
+     "what": "The FSC and SFI codes on Kirkland paper packs, and their register entries",
+     "due": "2027-02-03"
+    },
+    {
+     "id": "kirkland-diaper-sfi-code",
+     "what": "The SFI number on Kirkland diaper packs, and its register entry",
+     "due": "2027-02-03"
+    }
+   ],
+   "claims": 2,
+   "stamps": {
+    "documented": 1,
+    "reported": 1
+   }
+  },
+  {
+   "path": "/makers/misa-imports/",
+   "changed": "2026-11-08",
+   "next": "2026-11-15",
+   "tasks": [
+    {
+     "id": "maker-pages",
+     "what": "Company pages: registers, recalls and the companies' own pages",
+     "due": "2026-12-03"
+    },
+    {
+     "id": "ttb-kirkland",
+     "what": "TTB label approvals for Kirkland",
+     "due": "2026-11-15"
+    }
+   ],
+   "claims": 2,
+   "stamps": {
+    "documented": 2
+   }
+  },
+  {
+   "path": "/makers/duracell/",
+   "changed": "2026-11-08",
+   "next": "2026-12-03",
+   "tasks": [
+    {
+     "id": "maker-pages",
+     "what": "Company pages: registers, recalls and the companies' own pages",
+     "due": "2026-12-03"
+    },
+    {
+     "id": "kirkland-battery-maker-trail",
+     "what": "Any new record naming who makes Kirkland AA and AAA batteries",
+     "due": "2027-02-06"
+    }
+   ],
+   "claims": 2,
+   "stamps": {
+    "reported": 2
+   }
+  },
+  {
+   "path": "/makers/sun-products/",
+   "changed": "2026-11-07",
+   "next": "2026-11-16",
+   "tasks": [
+    {
+     "id": "maker-pages",
+     "what": "Company pages: registers, recalls and the companies' own pages",
+     "due": "2026-12-03"
+    },
+    {
+     "id": "kirkland-laundry-reads",
+     "what": "Kirkland laundry detergent: prices of all eight Costco lines, the Tide offer dates, and the maker lines on each back label",
+     "due": "2026-11-16"
+    }
+   ],
+   "claims": 2,
+   "stamps": {
+    "documented": 2
+   }
+  },
+  {
+   "path": "/home/",
+   "changed": "2026-11-08",
+   "next": "2026-11-09",
+   "tasks": [
+    {
+     "id": "maker-pages",
+     "what": "Company pages: registers, recalls and the companies' own pages",
+     "due": "2026-12-03"
+    },
+    {
+     "id": "nhtsa-tire-plants",
+     "what": "NHTSA tire plant codes",
+     "due": "2026-11-09"
+    }
+   ],
+   "claims": null,
+   "stamps": {}
+  },
+  {
+   "path": "/about/",
+   "changed": "2026-11-08",
+   "next": "2027-11-08",
+   "tasks": [
+    {
+     "id": "policy-pages-review",
+     "what": "About and policy pages, read against the site",
+     "due": "2027-11-08"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/privacy-policy/",
+   "changed": null,
+   "next": "2027-11-08",
+   "tasks": [
+    {
+     "id": "policy-pages-review",
+     "what": "About and policy pages, read against the site",
+     "due": "2027-11-08"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/terms/",
+   "changed": null,
+   "next": "2027-11-08",
+   "tasks": [
+    {
+     "id": "policy-pages-review",
+     "what": "About and policy pages, read against the site",
+     "due": "2027-11-08"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/affiliate-disclosure/",
+   "changed": null,
+   "next": "2027-11-08",
+   "tasks": [
+    {
+     "id": "policy-pages-review",
+     "what": "About and policy pages, read against the site",
+     "due": "2027-11-08"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/trademark-notice/",
+   "changed": null,
+   "next": "2027-11-08",
+   "tasks": [
+    {
+     "id": "policy-pages-review",
+     "what": "About and policy pages, read against the site",
+     "due": "2027-11-08"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/how-we-make-money/",
+   "changed": null,
+   "next": "2027-11-08",
+   "tasks": [
+    {
+     "id": "policy-pages-review",
+     "what": "About and policy pages, read against the site",
+     "due": "2027-11-08"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/for-makers-and-brands/",
+   "changed": null,
+   "next": "2027-11-08",
+   "tasks": [
+    {
+     "id": "policy-pages-review",
+     "what": "About and policy pages, read against the site",
+     "due": "2027-11-08"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/contact/",
+   "changed": null,
+   "next": "2027-11-08",
+   "tasks": [
+    {
+     "id": "policy-pages-review",
+     "what": "About and policy pages, read against the site",
+     "due": "2027-11-08"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
   }
  ],
  "done": [
+  {
+   "on": "2026-11-08",
+   "task": "ttb-kirkland",
+   "what": "TTB label approvals for Kirkland (script, from the Mac)",
+   "result": "512 Kirkland approvals; 38 on the spirits pages, 7 not yet cited"
+  },
+  {
+   "on": "2026-11-08",
+   "task": "ttb-kirkland",
+   "what": "TTB label approvals for Kirkland (script, from the Mac)",
+   "result": "512 Kirkland approvals; 38 on the spirits pages, 7 not yet cited"
+  },
+  {
+   "on": "2026-11-08",
+   "task": "ttb-kirkland",
+   "what": "TTB label approvals for Kirkland (script, from the Mac)",
+   "result": "512 Kirkland approvals; 38 on the spirits pages, 7 not yet cited"
+  },
+  {
+   "on": "2026-11-08",
+   "task": "usga-balls-kirkland",
+   "what": "USGA ball list, Kirkland (browser)",
+   "result": "November list (Nov 4): same four Kirkland balls, all SM Global LLC"
+  },
+  {
+   "on": "2026-11-08",
+   "task": "usga-driver-kirkland",
+   "what": "USGA driver head list, Kirkland (browser)",
+   "result": "Edition effective Nov 2, 2026, page 937: Kirkland Signature Driver 10.5 under SM Global, LLC"
+  },
+  {
+   "on": "2026-11-08",
+   "task": "costco-coffee-listings",
+   "what": "Costco's Kirkland coffee listings (browser)",
+   "result": "20 listings read: Decaf House Blend still says Custom Roasted by Starbucks; the other 19 name no roaster (10 newly listed)"
+  },
+  {
+   "on": "2026-11-08",
+   "task": "ttb-kirkland",
+   "what": "TTB label approvals for Kirkland (script, from the Mac)",
+   "result": "512 Kirkland approvals; 38 on the spirits pages, 7 not yet cited"
+  },
   {
    "on": "2026-11-04",
    "task": "tire-age-carmaker-followup",

@@ -4,7 +4,7 @@
 
 Who makes store-brand products, from public records. Every list behind [Who Actually Makes](https://whoactuallymakes.com/): which company each Kirkland Signature product traces to, the companies behind store brands and the labels they're on record for, every NHTSA tire plant code, what tire makers and carmakers say about tire age, and the evidence, sources, corrections and update schedule behind it all.
 
-**14 datasets · 9,752 records · version 2026-11-08** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
+**14 datasets · 9,837 records · version 2026-11-08** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
 
 Each answer on the site carries a stamp (confirmed, documented, reported or unverified) and links to the record it rests on. The evidence file keeps the exact quote, the date it was read and a SHA-256 fingerprint of the document, so anyone can check a row against its source. How the stamps work: https://whoactuallymakes.com/how-we-know/
 
@@ -12,15 +12,15 @@ Each answer on the site carries a stamp (confirmed, documented, reported or unve
 
 | Dataset | Records | Updated | Files | On the site |
 |---|---:|---|---|---|
-| [Who makes what: store-brand answers (Kirkland Signature)](#claims) | 97 | 2026-11-07 | [JSON](data/claims.json) (93 KB) · [CSV](data/claims.csv) (60 KB) | [/kirkland-signature/](https://whoactuallymakes.com/kirkland-signature/) |
-| [Companies behind store brands (maker pages)](#companies) | 10 | 2026-11-05 | [JSON](data/companies.json) (6 KB) · [CSV](data/companies.csv) (3 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
-| [Which store labels each company is on record for](#company-labels) | 164 | 2026-11-05 | [JSON](data/company-labels.json) (85 KB) · [CSV](data/company-labels.csv) (53 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
+| [Who makes what: store-brand answers (Kirkland Signature)](#claims) | 101 | 2026-11-08 | [JSON](data/claims.json) (98 KB) · [CSV](data/claims.csv) (64 KB) | [/kirkland-signature/](https://whoactuallymakes.com/kirkland-signature/) |
+| [Companies behind store brands (maker pages)](#companies) | 14 | 2026-11-08 | [JSON](data/companies.json) (8 KB) · [CSV](data/companies.csv) (4 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
+| [Which store labels each company is on record for](#company-labels) | 172 | 2026-11-08 | [JSON](data/company-labels.json) (89 KB) · [CSV](data/company-labels.csv) (56 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
 | [Tire plant codes (NHTSA)](#tire-plants) | 1,246 | 2026-11-02 | [JSON](data/tire-plants.json) (149 KB) · [CSV](data/tire-plants.csv) (89 KB) | [/tire-dot-code-lookup/](https://whoactuallymakes.com/tire-dot-code-lookup/) |
 | [Tire age guidance from tire makers, carmakers and agencies](#tire-age) | 22 | 2026-11-04 | [JSON](data/tire-age.json) (34 KB) · [CSV](data/tire-age.csv) (19 KB) | [/tire-date-code/](https://whoactuallymakes.com/tire-date-code/) |
-| [Evidence records: every quote behind our answers](#evidence) | 455 | 2026-11-08 | [JSON](data/evidence.json) (337 KB) · [CSV](data/evidence.csv) (248 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
-| [Sources: the public records we use, and their limits](#sources) | 98 | 2026-11-06 | [JSON](data/sources.json) (105 KB) · [CSV](data/sources.csv) (47 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
-| [Corrections log](#corrections) | 17 | 2026-11-08 | [JSON](data/corrections.json) (13 KB) · [CSV](data/corrections.csv) (9 KB) | [/corrections/](https://whoactuallymakes.com/corrections/) |
-| [Update schedule: when each list is checked](#schedule) | 32 | 2026-11-08 | [JSON](data/schedule.json) (101 KB) · [CSV](data/schedule.csv) (7 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
+| [Evidence records: every quote behind our answers](#evidence) | 476 | 2026-11-08 | [JSON](data/evidence.json) (359 KB) · [CSV](data/evidence.csv) (265 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
+| [Sources: the public records we use, and their limits](#sources) | 137 | 2026-11-08 | [JSON](data/sources.json) (148 KB) · [CSV](data/sources.csv) (63 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
+| [Corrections log](#corrections) | 19 | 2026-11-08 | [JSON](data/corrections.json) (14 KB) · [CSV](data/corrections.csv) (10 KB) | [/corrections/](https://whoactuallymakes.com/corrections/) |
+| [Update schedule: when each list is checked](#schedule) | 39 | 2026-11-08 | [JSON](data/schedule.json) (117 KB) · [CSV](data/schedule.csv) (9 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
 | [Costco diaper prices: every size at every read](#costco-diaper-prices) | 30 | 2026-11-06 | [JSON](data/costco-diaper-prices.json) (9 KB) · [CSV](data/costco-diaper-prices.csv) (4 KB) | [/costco-diapers/](https://whoactuallymakes.com/costco-diapers/) |
 | [Kirkland vs name brands: every pair and its verdict](#kirkland-vs-pairs) | 63 | 2026-11-06 | [JSON](data/kirkland-vs-pairs.json) (66 KB) · [CSV](data/kirkland-vs-pairs.csv) (28 KB) | [/kirkland-vs-name-brands/](https://whoactuallymakes.com/kirkland-vs-name-brands/) |
 | [Car battery date code rules, by brand](#battery-date-codes) | 21 | 2026-11-07 | [JSON](data/battery-date-codes.json) (86 KB) · [CSV](data/battery-date-codes.csv) (4 KB) | [/battery-date-code/](https://whoactuallymakes.com/battery-date-code/) |
@@ -48,7 +48,7 @@ Every store-brand product we can answer from a public record, one row per compan
 | `category` | text | Product category. |
 | `company` | text | The company the record names. |
 | `company_legal_name` | text | Its name as the record gives it. |
-| `relation` | text | made-by, bottled-by, packed-by, imported-by or recalled-by. |
+| `relation` | text | What the record says the company did, as one of these values (taken from the data, so the list is complete): approval-holder, bottled-by, distributed-by, fsc-label-holder, imported-by, label-holder, licensed-to, listed-maker, made-at, made-by, packed-by, recalled-by or registered-via. A record never says more than its value: recalled-by names the recalling firm, label holders hold the label, and so on. |
 | `stamp` | text | confirmed, documented, reported or unverified (see /how-we-know/). |
 | `from` | date | Start of what the record covers (YYYY-MM or YYYY-MM-DD). |
 | `to` | date | End of what it covers; blank when open-ended. |
@@ -117,7 +117,7 @@ One row per link between a company and a brand or retailer: a claim on our answe
 | `company_slug` | text | The company page this row is on (see the companies file). |
 | `company` | text | The company. For claim rows, the one the record names, which can be a group company. |
 | `label` | text | The store brand or retailer, as we name it. |
-| `link_kind` | text | claim, state-pet-food-register, fda-recall or api-oil-license. |
+| `link_kind` | text | Which kind of record links the company to the label, one of: api-oil-license, claim, fda-recall or state-pet-food-register. |
 | `detail` | text | For a claim, what the record says and the product; for a register row, the registrant name as filed; for a recall row, what the link means; for a license row, the brand names exactly as API lists them. |
 | `count` | number | Claims (1), live registrations (0 = only lapsed ones), recalls that print the store name, or oils listed under the license. |
 | `first` | date | Earliest date the records cover; blank if they don’t say. |

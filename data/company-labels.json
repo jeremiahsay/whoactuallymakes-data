@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-05",
- "count": 164,
+ "generated": "2026-11-08",
+ "count": 172,
  "rows": [
   {
    "company_slug": "diamond-pet-foods",
@@ -264,6 +264,32 @@
    "company_page": "https://whoactuallymakes.com/makers/diamond-pet-foods/"
   },
   {
+   "company_slug": "duracell",
+   "company": "Duracell",
+   "label": "Kirkland Signature",
+   "link_kind": "claim",
+   "detail": "Made by: Kirkland Signature Alkaline AA batteries (48-count)",
+   "count": 1,
+   "first": "2016-11",
+   "last": "",
+   "record_url": "https://www.wsbtv.com/news/2-investigates/costco-ceo-shares-tips-with-clark-howard-to-help-you-save-money/465720155/",
+   "read_on": "2026-11-04",
+   "company_page": "https://whoactuallymakes.com/makers/duracell/"
+  },
+  {
+   "company_slug": "duracell",
+   "company": "Duracell",
+   "label": "Kirkland Signature",
+   "link_kind": "claim",
+   "detail": "Made by: Kirkland Signature Alkaline AAA batteries (48-count)",
+   "count": 1,
+   "first": "2016-11",
+   "last": "",
+   "record_url": "https://www.wsbtv.com/news/2-investigates/costco-ceo-shares-tips-with-clark-howard-to-help-you-save-money/465720155/",
+   "read_on": "2026-11-04",
+   "company_page": "https://whoactuallymakes.com/makers/duracell/"
+  },
+  {
    "company_slug": "first-quality",
    "company": "First Quality",
    "label": "Kirkland Signature",
@@ -324,8 +350,8 @@
    "count": 1,
    "first": "2026-04",
    "last": "2027-03",
-   "record_url": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10297",
-   "read_on": "2026-11-03",
+   "record_url": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10297 | https://www.costco.com/p/-/4000404314",
+   "read_on": "2026-11-08",
    "company_page": "https://whoactuallymakes.com/makers/highline-warren/"
   },
   {
@@ -333,7 +359,7 @@
    "company": "Highline Warren",
    "label": "Mag 1",
    "link_kind": "api-oil-license",
-   "detail": "On API engine oil license 0163 (its own brand) as: MAG 1; MAG 1 All Fleet; MAG 1 ALL FLEET; MAG 1 All Fleet Synthetic Blend; MAG 1 Bulk; MAG 1 Conventional; MAG 1 FULL SYNTHETIC; Mag 1 Full Synthetic; MAG 1 Full Synthetic; MAG 1 Full Synthetic All Fleet; MAG 1 Full Synthetic dexos; MAG 1 Full Synthetic EURO; MAG 1 FULL SYNTHETIC EUROPEAN FORMULA; MAG 1 Heavy Duty; MAG 1 HEAVY DUTY; MAG 1 HIGH MILEAGE; MAG 1 High Mileage Synthetic Blend; MAG 1 Premium Conventional Heavy Duty; MAG 1 Premium Conventional Heavy Duty Diesel; MAG 1 Synthetic; MAG 1 Synthetic Blend; MAG 1 SYNTHETIC BLEND; MAG 1 Synthetic Blend Heavy Duty; MAG1; MAG1 All Fleet; MAG1 Conventional; MAG1 Full Synthetic; MAG1 Full Synthetic All Fleet; MAG1 Full Synthetic dexos1 Gen2; MAG1 Full Synthetic Euro; MAG1 Heavy Duty Diesel; MAG1 High Mileage Synthetic Blend; MAG1 Premium Conventional Heavy Duty; MAG1 SAE; MAG1 synthetic Blend; MAG1 Synthetic Blend; MAG1 Synthetic Blend Heavy Duty; MAG1 Synthetic Blend Heavy Duty Diesel",
+   "detail": "On API engine oil license 0163 (its own brand) as: MAG 1; MAG 1 ALL FLEET; MAG 1 All Fleet; MAG 1 All Fleet Synthetic Blend; MAG 1 Bulk; MAG 1 Conventional; MAG 1 Full Synthetic; Mag 1 Full Synthetic; MAG 1 FULL SYNTHETIC; MAG 1 Full Synthetic All Fleet; MAG 1 Full Synthetic dexos; MAG 1 Full Synthetic EURO; MAG 1 FULL SYNTHETIC EUROPEAN FORMULA; MAG 1 Heavy Duty; MAG 1 HEAVY DUTY; MAG 1 HIGH MILEAGE; MAG 1 High Mileage Synthetic Blend; MAG 1 Premium Conventional Heavy Duty; MAG 1 Premium Conventional Heavy Duty Diesel; MAG 1 Synthetic; MAG 1 Synthetic Blend; MAG 1 SYNTHETIC BLEND; MAG 1 Synthetic Blend Heavy Duty; MAG1; MAG1 All Fleet; MAG1 Conventional; MAG1 Full Synthetic; MAG1 Full Synthetic All Fleet; MAG1 Full Synthetic dexos1 Gen2; MAG1 Full Synthetic Euro; MAG1 Heavy Duty Diesel; MAG1 High Mileage Synthetic Blend; MAG1 Premium Conventional Heavy Duty; MAG1 SAE; MAG1 Synthetic Blend; MAG1 synthetic Blend; MAG1 Synthetic Blend Heavy Duty; MAG1 Synthetic Blend Heavy Duty Diesel",
    "count": 96,
    "first": "2026-04-01",
    "last": "2027-03-31",
@@ -359,7 +385,7 @@
    "company": "Highline Warren",
    "label": "Prime Guard",
    "link_kind": "api-oil-license",
-   "detail": "On API engine oil license 0163 (its own brand) as: PRIME GUARD; Prime Guard; PRIME GUARD Full Synthetic; PRIME GUARD Full Synthetic Dexos; Prime Guard Full Synthetic Euro; PRIME GUARD Full Synthetic High Mileage; PRIME GUARD Heavy Duty; PRIME GUARD HEAVY DUTY; PRIME GUARD High Mileage Full Synthetic; Prime Guard High Mileage Synthetic Blend; Prime Guard Premium; PRIME GUARD Synthetic; PRIME GUARD Synthetic Blend; Prime Guard Synthetic Blend; PrimeGuard Diesel Heavy Duty; PrimeGuard Full Synthetic; PrimeGuard Heavy Duty; PrimeGuard Premium",
+   "detail": "On API engine oil license 0163 (its own brand) as: Prime Guard; PRIME GUARD; PRIME GUARD Full Synthetic; PRIME GUARD Full Synthetic Dexos; Prime Guard Full Synthetic Euro; PRIME GUARD Full Synthetic High Mileage; PRIME GUARD Heavy Duty; PRIME GUARD HEAVY DUTY; PRIME GUARD High Mileage Full Synthetic; Prime Guard High Mileage Synthetic Blend; Prime Guard Premium; PRIME GUARD Synthetic; Prime Guard Synthetic Blend; PRIME GUARD Synthetic Blend; PrimeGuard Diesel Heavy Duty; PrimeGuard Full Synthetic; PrimeGuard Heavy Duty; PrimeGuard Premium",
    "count": 45,
    "first": "2026-04-01",
    "last": "2027-03-31",
@@ -398,7 +424,7 @@
    "company": "Highline Warren",
    "label": "Proline",
    "link_kind": "api-oil-license",
-   "detail": "On API engine oil license 0163 as: Proline; Proline All Fleet; PROLINE ALL FLEET; Proline All Season; PROLINE ALL SEASON; PROLINE FULL SYNTHETIC; ProLine Full Synthetic; Proline Full Synthetic dexos; Proline Full Synthetic European Formula; Proline Heavy Duty; PROLINE HEAVY DUTY",
+   "detail": "On API engine oil license 0163 as: Proline; PROLINE ALL FLEET; Proline All Fleet; Proline All Season; PROLINE ALL SEASON; ProLine Full Synthetic; PROLINE FULL SYNTHETIC; Proline Full Synthetic dexos; Proline Full Synthetic European Formula; Proline Heavy Duty; PROLINE HEAVY DUTY",
    "count": 27,
    "first": "2026-04-01",
    "last": "2027-03-31",
@@ -411,7 +437,7 @@
    "company": "Highline Warren",
    "label": "UNO",
    "link_kind": "api-oil-license",
-   "detail": "On API engine oil license 0163 as: UNO; UNO Forza; UNO FORZA Full Synthetic Euro; UNO Forza Full Synthetic European Formula; UNO Forza Max Synthetic Blend; UNO Forza Pro Synthetic Blend; UNO FORZA Synthetic Blend; UNO Synthetic Blend; UNO Ultra; UNO ULTRA; UNO ULTRA Full Synthetic; UNO Ultra Full Synthetic; UNO Ultra Full Synthetic dexos1 Gen2; UNO Ultra Full Synthetic dexos1 Gen3; UNO Ultra Synthetic Blend; UNO ULTRA Synthetic Blend; UNO ULTRA Synthetic Blend High Mileage",
+   "detail": "On API engine oil license 0163 as: UNO; UNO Forza; UNO FORZA Full Synthetic Euro; UNO Forza Full Synthetic European Formula; UNO Forza Max Synthetic Blend; UNO Forza Pro Synthetic Blend; UNO FORZA Synthetic Blend; UNO Synthetic Blend; UNO ULTRA; UNO Ultra; UNO Ultra Full Synthetic; UNO ULTRA Full Synthetic; UNO Ultra Full Synthetic dexos1 Gen2; UNO Ultra Full Synthetic dexos1 Gen3; UNO ULTRA Synthetic Blend; UNO Ultra Synthetic Blend; UNO ULTRA Synthetic Blend High Mileage",
    "count": 25,
    "first": "2026-04-01",
    "last": "2027-03-31",
@@ -450,7 +476,7 @@
    "company": "Highline Warren",
    "label": "Unix",
    "link_kind": "api-oil-license",
-   "detail": "On API engine oil license 0163 as: UNIX; Unix; Unix Fleet; Unix Full Synthetic; Unix Synthetic; Unix Synthetic Blend; Unix Synthetic Blend High Mileage",
+   "detail": "On API engine oil license 0163 as: Unix; UNIX; Unix Fleet; Unix Full Synthetic; Unix Synthetic; Unix Synthetic Blend; Unix Synthetic Blend High Mileage",
    "count": 17,
    "first": "2026-04-01",
    "last": "2027-03-31",
@@ -463,7 +489,7 @@
    "company": "Highline Warren",
    "label": "Gold Star",
    "link_kind": "api-oil-license",
-   "detail": "On API engine oil license 0163 as: GODL STAR Synthetic Blend; Gold Star; GOLD STAR Premium; GOLD STAR Synthetic Blend; Gold Star Synthetic Blend",
+   "detail": "On API engine oil license 0163 as: GODL STAR Synthetic Blend; Gold Star; GOLD STAR Premium; Gold Star Synthetic Blend; GOLD STAR Synthetic Blend",
    "count": 16,
    "first": "2026-04-01",
    "last": "2027-03-31",
@@ -593,7 +619,7 @@
    "company": "Highline Warren",
    "label": "Five Point",
    "link_kind": "api-oil-license",
-   "detail": "On API engine oil license 0163 as: FIVE POINT; Five Point; Five Point Farm & Ranch; Five Point Heavy Duty",
+   "detail": "On API engine oil license 0163 as: Five Point; FIVE POINT; Five Point Farm & Ranch; Five Point Heavy Duty",
    "count": 7,
    "first": "2026-04-01",
    "last": "2027-03-31",
@@ -1005,6 +1031,32 @@
    "company_page": "https://whoactuallymakes.com/makers/highline-warren/"
   },
   {
+   "company_slug": "kimberly-clark",
+   "company": "Kimberly-Clark",
+   "label": "Kirkland Signature",
+   "link_kind": "claim",
+   "detail": "FSC label on the pack held by: Kirkland Signature Facial Tissue, 3-ply",
+   "count": 1,
+   "first": "2026-11",
+   "last": "",
+   "record_url": "https://www.costco.com/p/-/kirkland-signature-facial-tissue-3-ply-84-count-12-pack/100718359 | https://search.fsc.org/en/certificate/a0240000005tFz1AAE/ | https://cn.fsc.org/sites/default/files/2026-02/FSC-STD-50-001%20V3-0%20EN%20Use%20of%20the%20FSC%28R%29%20Trademarks%20by%20Certificate%20Holders.pdf",
+   "read_on": "2026-11-05",
+   "company_page": "https://whoactuallymakes.com/makers/kimberly-clark/"
+  },
+  {
+   "company_slug": "kimberly-clark",
+   "company": "Kimberly-Clark",
+   "label": "Kirkland Signature",
+   "link_kind": "claim",
+   "detail": "Made by: Kirkland Signature diapers, sizes 1 to 7",
+   "count": 1,
+   "first": "2024-10",
+   "last": "2025-04",
+   "record_url": "https://www.bloomberg.com/news/articles/2024-12-09/costco-s-cost-popular-kirkland-baby-diapers-are-getting-a-new-supplier | https://fortune.com/article/costco-kirkland-diapers-thinner-parents-outraged/ | https://www.marketbeat.com/earnings/reports/2024-10-22-kimberly-clark-co-stock/ | https://www.sec.gov/Archives/edgar/data/55785/000162828026003514/kmb2025q48kex-991.htm | https://www.sec.gov/Archives/edgar/data/55785/000162828026007567/kmb-20251231.htm",
+   "read_on": "2026-11-05",
+   "company_page": "https://whoactuallymakes.com/makers/kimberly-clark/"
+  },
+  {
    "company_slug": "kruger-products",
    "company": "Kruger Products",
    "label": "Kirkland Signature",
@@ -1185,6 +1237,32 @@
    "record_url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-1630-2019%22",
    "read_on": "2026-11-03",
    "company_page": "https://whoactuallymakes.com/makers/lnk-international/"
+  },
+  {
+   "company_slug": "misa-imports",
+   "company": "MISA Imports",
+   "label": "Kirkland Signature",
+   "link_kind": "claim",
+   "detail": "Imported by: Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "count": 1,
+   "first": "2016-09",
+   "last": "",
+   "record_url": "https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=16244001000228",
+   "read_on": "2026-11-08",
+   "company_page": "https://whoactuallymakes.com/makers/misa-imports/"
+  },
+  {
+   "company_slug": "misa-imports",
+   "company": "MISA Imports",
+   "label": "Kirkland Signature",
+   "link_kind": "claim",
+   "detail": "Imported by: Kirkland Signature vodka (France)",
+   "count": 1,
+   "first": "2012-06",
+   "last": "",
+   "record_url": "https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=12285001000164",
+   "read_on": "2026-11-03",
+   "company_page": "https://whoactuallymakes.com/makers/misa-imports/"
   },
   {
    "company_slug": "perrigo",
@@ -2053,8 +2131,8 @@
    "count": 1,
    "first": "2020-12",
    "last": "",
-   "record_url": "https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=20342001000264",
-   "read_on": "2026-11-03",
+   "record_url": "https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=20342001000275 | https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=20342001000264",
+   "read_on": "2026-11-08",
    "company_page": "https://whoactuallymakes.com/makers/sazerac/"
   },
   {
@@ -2075,12 +2153,12 @@
    "company": "Sazerac North America",
    "label": "Kirkland Signature",
    "link_kind": "claim",
-   "detail": "Imported by: Kirkland Signature tequila (Blanco, Reposado, Extra Añejo)",
+   "detail": "Imported by: Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
    "count": 1,
-   "first": "2020-11",
+   "first": "2017-08",
    "last": "",
-   "record_url": "https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=20301001000116",
-   "read_on": "2026-11-03",
+   "record_url": "https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=20301001000116 | https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=17230001000490",
+   "read_on": "2026-11-08",
    "company_page": "https://whoactuallymakes.com/makers/sazerac/"
   },
   {
@@ -2106,7 +2184,7 @@
    "first": "2026-11-03",
    "last": "",
    "record_url": "https://www.usga.org/ConformingGolfBall/ | https://www.costco.com/p/-/kirkland-signature-v30-golf-ball-2-dozen/4000291493",
-   "read_on": "2026-11-03",
+   "read_on": "2026-11-08",
    "company_page": "https://whoactuallymakes.com/makers/sm-global/"
   },
   {
@@ -2119,7 +2197,7 @@
    "first": "2026-11-03",
    "last": "",
    "record_url": "https://www.usga.org/ConformingGolfBall/",
-   "read_on": "2026-11-03",
+   "read_on": "2026-11-08",
    "company_page": "https://whoactuallymakes.com/makers/sm-global/"
   },
   {
@@ -2131,9 +2209,35 @@
    "count": 1,
    "first": "2025-01",
    "last": "",
-   "record_url": "https://www.usga.org/ConformingGolfClub/ConformingClubList_M.pdf | https://www.golfmonthly.com/news/costco-kirkland-signature-driver-goes-on-sale",
-   "read_on": "2026-11-03",
+   "record_url": "https://www.usga.org/ConformingGolfClub/ConformingClubList_M.pdf | https://www.usga.org/ConformingGolfClub/ConformingClubList_M.pdf | https://www.golfmonthly.com/news/costco-kirkland-signature-driver-goes-on-sale",
+   "read_on": "2026-11-08",
    "company_page": "https://whoactuallymakes.com/makers/sm-global/"
+  },
+  {
+   "company_slug": "sun-products",
+   "company": "Sun Products",
+   "label": "Kirkland Signature",
+   "link_kind": "claim",
+   "detail": "Listed manufacturer: Kirkland Signature Ultra Clean Laundry Detergent Pacs",
+   "count": 1,
+   "first": "2012-09",
+   "last": "2012-09",
+   "record_url": "https://www.costco.co.uk/mediapermalink/kirkland-msds-page-689476-datasheet",
+   "read_on": "2026-11-07",
+   "company_page": "https://whoactuallymakes.com/makers/sun-products/"
+  },
+  {
+   "company_slug": "sun-products",
+   "company": "Sun Products",
+   "label": "Kirkland Signature",
+   "link_kind": "claim",
+   "detail": "Listed manufacturer: Kirkland Signature Ultra Liquid Fabric Softener",
+   "count": 1,
+   "first": "2012-08",
+   "last": "2012-08",
+   "record_url": "https://www.costco.co.uk/mediapermalink/kirkland-msds-page-997282-datasheet",
+   "read_on": "2026-11-07",
+   "company_page": "https://whoactuallymakes.com/makers/sun-products/"
   }
  ]
 }

@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
  "generated": "2026-11-08",
- "count": 455,
+ "count": 476,
  "records": [
   {
    "id": "ev-16-cfr-1633-12",
@@ -690,6 +690,20 @@
    "note": "Read in Chrome. The note says its review below is for the previous version, and it doesn't say how it dated the change. Bloomberg put the change in January 2025."
   },
   {
+   "id": "ev-bgr-ks-batteries-2026",
+   "source": "bgr",
+   "publisher": "BGR (Static Media)",
+   "type": "press-report",
+   "title": "BGR, January 5, 2026: “Costco's Kirkland Batteries: Here's Who Makes Them And Where They're Manufactured”",
+   "url": "https://bgr.com/2064421/who-makes-where-manufactured-costco-kirkland-batteries/",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2026-01-05",
+   "quote": "former Costco CEO Craig Jelinek stated that Duracell makes the same Kirkland Signature batteries you see next to Duracell batteries on store shelves",
+   "sha256": "410cc27436bdac2b30fd0e9b79038f65172bde34b97853ae62b8c16853f18c94",
+   "note": "Doesn't link the 2016 report. “The same … batteries you see next to Duracell” isn't in WSB-TV's report. It also says it has no definitive source for where the batteries are made."
+  },
+  {
    "id": "ev-biaf-date-codes",
    "source": "batteries-in-a-flash",
    "publisher": "BatteriesInAFlash.com, Inc.",
@@ -1145,11 +1159,11 @@
    "title": "Costco.com listing: Kirkland Signature Decaf House Blend Coffee, Medium Roast, Whole Bean, 2.5 lbs (item 6979100)",
    "url": "https://www.costco.com/p/-/kirkland-signature-decaf-house-blend-coffee,-medium-roast,-whole-bean,-2.5-lbs/100493988",
    "archive_url": null,
-   "retrieved": "2026-11-03",
+   "retrieved": "2026-11-08",
    "doc_date": null,
    "quote": "Custom Roasted by Starbucks … Roasted by Starbucks Coffee Co.®",
    "sha256": null,
-   "note": "Read in a browser (Costco's terms forbid scripts). The same day we read nine other Kirkland Signature coffee listings in a browser (House Blend whole bean, French Roast, Espresso Blend, Medium Roast 40 oz, Colombian Dark Roast, Colombian Supremo, Organic Ethiopia, Organic Mexico, Organic Pacific Bold K-Cup); none named a roaster."
+   "note": "Read in a browser (Costco's terms forbid scripts). On Nov 8, 2026 we re-read it with every other Kirkland Signature coffee listing Costco.com's search shows, 19 more, among them House Blend whole bean, French Roast, Espresso Blend, the Colombians, the organic whole beans, the K-Cup pods and Colombian Cold Brew. None of the 19 names a roaster. The first read, Nov 3, 2026, covered ten listings."
   },
   {
    "id": "ev-costco-ks-diapers-ingredients",
@@ -1248,6 +1262,20 @@
    "quote": "Introducing the Kirkland Signature Three-Piece Urethane Cover Golf Ball Performance Plus V3.0 … Conforms with USGA and R&A Rules",
    "sha256": "c47c53ac2f34deaf2952b29b4e7114318b34c9ac1eb2e818abbee905b5ee86fa",
    "note": "Read in a browser. The ball Costco sells today, white and yellow, $29.99 in the Seattle warehouse. The listing names no maker and no country of origin."
+  },
+  {
+   "id": "ev-costco-ks-motor-oil-hw-contact",
+   "source": "costco-com",
+   "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+   "type": "retailer-statement",
+   "title": "Costco.com listing: Kirkland Signature 0W-20 Full Synthetic and 5W-30 High Mileage Full Synthetic Motor Oil, 5 qt, 4-pack (product 4000404314)",
+   "url": "https://www.costco.com/p/-/4000404314",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": null,
+   "quote": "Customer Service: retailteam@highlinewarren.com",
+   "sha256": "e2ee3f77b4e6ef53275eaf4e453e144eca2623df36dad8aa278ba34c60e7a570",
+   "note": "Read in a browser (Costco's terms forbid scripts). Costco's own listing gives a Highline Warren address for customer service. It names no blender or plant, and the listing links no safety data sheet. The fingerprint is of the quoted line."
   },
   {
    "id": "ev-costco-ks-towels-napkins-pack-sfi",
@@ -1774,12 +1802,12 @@
    "type": "maker-statement",
    "title": "Cuties diapers FAQ, “Where are Cuties Diapers made?”",
    "url": "https://www.firstquality.com/sitecore/content/cuties/home/contact-us-link/enanny",
-   "archive_url": "https://web.archive.org/web/20261105071306/https://www.firstquality.com/sitecore/content/cuties/home/contact-us-link/enanny",
+   "archive_url": null,
    "retrieved": "2026-11-05",
    "doc_date": null,
    "quote": "Our diapers are responsibly made in the USA, specifically in Lewistown, PA & Macon, GA.",
    "sha256": "85cae23e8bfcde3ac4c1980a3e498848907e9f6d5c4c3779ba78adcf86cd92a1",
-   "note": "About Cuties only: the page doesn't mention Kirkland. Its next answer says Cuties wipes are made in McElhattan, PA."
+   "note": "About Cuties only: the page doesn't mention Kirkland. Its next answer says Cuties wipes are made in McElhattan, PA. The Internet Archive copy we first linked was never saved (its save queue refused us); the link is removed until a save succeeds, and our own copy of the bytes is kept with the fingerprint."
   },
   {
    "id": "ev-dailydot-2025",
@@ -3112,6 +3140,20 @@
    "note": "The sheet lists production codes for 2/28/23 and 3/2/23, ship stickers 3/23 to 6/23, part numbers F3F-48BB and 648MF, and the brands affected."
   },
   {
+   "id": "ev-eastpenn-duracell-2009",
+   "source": "maker-east-penn",
+   "publisher": "East Penn Manufacturing",
+   "type": "maker-statement",
+   "title": "East Penn Manufacturing: “East Penn Releases New Duracell Automotive Batteries”",
+   "url": "https://www.eastpennmanufacturing.com/east-penn-releases-new-duracell-automotive-batteries/",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2009-03-01",
+   "quote": "East Penn Manufacturing has signed an exclusive agreement with Duracell (part of the Procter & Gamble Company [NYSE:PG]) to release batteries branded under the Duracell name.",
+   "sha256": "7ed8efe7731e29e50e322fcd3c087411ab70213d7dfbe5411ec50da1c505cb4d",
+   "note": "The date is the page's own publish date. Duracell was part of Procter & Gamble then. The release is about car and marine batteries, not AA or AAA cells."
+  },
+  {
    "id": "ev-epa-safer-choice-kirkland",
    "source": "epa-safer-choice",
    "publisher": "U.S. Environmental Protection Agency",
@@ -3496,12 +3538,12 @@
    "type": "maker-statement",
    "title": "First Quality Enterprises, LLC: SFI 2022 Certified Sourcing certificate C0260210-CS3 and annex (issued 27 Mar 2024)",
    "url": "https://healthcare.firstquality.com/-/media/project/corporate/sfi-certificate-2024.pdf",
-   "archive_url": "https://web.archive.org/web/20261105071329/https://healthcare.firstquality.com/-/media/project/corporate/sfi-certificate-2024.pdf",
+   "archive_url": null,
    "retrieved": "2026-11-05",
    "doc_date": "2024-03-27",
    "quote": "The manufacture and sale of absorbent hygiene and pad products, including baby care products, feminine hygiene products and adult incontinence products. SFI Certified Sourcing code: NSF-SFI-CS-C0260210",
    "sha256": "6418c20e72d34c0b3ed8525754c8b7764a468da9bbfb43857143d3df06d11ea5",
-   "note": "Expired 11 Jul 2026, so this is the previous edition: we haven't read the current annex. In this one, the only site whose scope names baby care is First Quality Baby Products, LLC, 2108 Avondale Mill Road, Macon, Georgia."
+   "note": "Expired 11 Jul 2026, so this is the previous edition: we haven't read the current annex. In this one, the only site whose scope names baby care is First Quality Baby Products, LLC, 2108 Avondale Mill Road, Macon, Georgia. The Internet Archive copy we first linked was never saved (its save queue refused us); the link is removed until a save succeeds, and our own copy of the bytes is kept with the fingerprint."
   },
   {
    "id": "ev-fr-1999-date-code-effective",
@@ -3567,11 +3609,11 @@
    "title": "FSC Search: licence FSC-C068161",
    "url": "https://search.fsc.org/en/certificate/a0240000005tFz1AAE/",
    "archive_url": null,
-   "retrieved": "2026-11-05",
+   "retrieved": "2026-11-08",
    "doc_date": null,
    "quote": "Kimberly-Clark Corporation · SGSCH-COC-005460 · FSC-C068161 · Valid · Until October 20, 2028",
-   "sha256": "faaf9d54027556b8b910d313956e878aeaacb64be2bcc9c2b5cf558106c14eb8",
-   "note": "Looked up in a browser. The certificate's one product type is cleaning tissues and paper towels."
+   "sha256": "ee77d7bc9fc5f9bf627f68056c961d880955c15f5e6bee2d9ed6798be9d591bd",
+   "note": "Looked up in a browser. The certificate's one product type is cleaning tissues and paper towels. Its full list of sites (opened Nov 8, 2026) has seven: five valid, in Chester, Pennsylvania; Paris, Texas; Jenks, Oklahoma; Beech Island, South Carolina; and New Milford, Connecticut; and two in Neenah, Wisconsin that left the certificate on Oct 3, 2021. The main address is 2300 Winchester Road, Neenah. The fingerprint is of the site list as read."
   },
   {
    "id": "ev-fsc-c104904-kruger",
@@ -3581,11 +3623,11 @@
    "title": "FSC Search: licence FSC-C104904",
    "url": "https://search.fsc.org/en/certificate/a0240000006vI8fAAE/",
    "archive_url": null,
-   "retrieved": "2026-11-05",
+   "retrieved": "2026-11-08",
    "doc_date": null,
    "quote": "Kruger Products, Inc. · PBN-COC-005364 · FSC-C104904 · Valid · Until June 17, 2031",
    "sha256": "87bc8c8551cb26421603250be8e60078d48274cba9e9f4278202483315103396",
-   "note": "Looked up in a browser. The certificate's products include household and sanitary paper products. Among the first entries, the one US site is Memphis, Tennessee; the rest are in Canada, and further entries weren't opened."
+   "note": "Looked up in a browser, one certificate at a time. The certificate's products include household and sanitary paper products. Its full list of group members and sites (opened Nov 8, 2026) has ten, all valid: Memphis, Tennessee is the only one in the US; the rest are in Gatineau, Richelieu, Lennoxville, Sherbrooke (two), Joliette, Scarborough and New Westminster (two), some of them warehouses."
   },
   {
    "id": "ev-fsc-c108208-georgia-pacific",
@@ -3879,7 +3921,7 @@
    "doc_date": "2016-09-02",
    "quote": "develops and manufactures",
    "sha256": null,
-   "note": "Read in a browser. Closed 1 Sep 2016. The release says Sun also develops and makes laundry brands for leading North American retailers. It names none."
+   "note": "Read in a browser (re-read Nov 8, 2026). Henkel closed the purchase of The Sun Products Corporation, based in Wilton, Connecticut, on Sep 1, 2016, buying all its shares from a fund of Vestar Capital Partners for about $3.6 billion including debt. It names all and Sun, and the fabric softener Snuggle, as Sun's brands, says Sun also develops and makes laundry brands for leading North American retailers (it names none), and gives Sun's 2015 sales as about $1.6 billion."
   },
   {
    "id": "ev-hip2save-huggies-2025-07",
@@ -3936,6 +3978,20 @@
    "quote": "much cheaper than the 22 to 37 cents per load",
    "sha256": null,
    "note": "14 Aug 2026, by Jennifer Davis. A summary of Consumer Reports' test of 49 liquids; the full ratings are for members."
+  },
+  {
+   "id": "ev-hunker-ks-batteries-2025",
+   "source": "hunker",
+   "publisher": "Static Media",
+   "type": "press-report",
+   "title": "Hunker, December 6, 2025: “The Big-Name Brand That's Quietly Behind Costco's Kirkland Batteries”",
+   "url": "https://www.hunker.com/2040072/are-costco-kirkland-batteries-made-by-duracell/",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2025-12-06",
+   "quote": "Craig Jelinek, Costco's former CEO, told an Atlanta-area TV station in 2016 that Duracell produces these batteries.",
+   "sha256": "3ab4facfa4b6e22fc3cecc77f4139e3f0ec09623c8f9cf34358cf02ce5236f61",
+   "note": "Doesn't link the 2016 report. It adds that a switch is unlikely because Duracell and Kirkland are the only battery brands Costco carries: a reason, not a record."
   },
   {
    "id": "ev-hw-2020",
@@ -4344,6 +4400,62 @@
    "note": null
   },
   {
+   "id": "ev-kmb-8k-2025-01",
+   "source": "sec-edgar",
+   "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+   "type": "company-filing",
+   "title": "Kimberly-Clark Form 8-K, exhibit 99.1: fourth quarter and full year 2024 results, January 28, 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/55785/000005578525000005/kmb2024q48kex-991.htm",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2025-01-28",
+   "quote": "a negative 240 basis point impact from a combination of its PPE divestiture and the exit of the company's private label diaper businesses in the US",
+   "sha256": "33bb1572ced8addac43ac6d05c9cf12da541f3139329c5ed56630fdcbde7175a",
+   "note": "The 2025 outlook for the whole company. It doesn't split the diaper exit from the sale of its PPE business, and names no customer. Found with EDGAR full-text search for “private label diaper” in Kimberly-Clark's filings; the fingerprint matched the copy read in a browser."
+  },
+  {
+   "id": "ev-kmb-8k-2025-04",
+   "source": "sec-edgar",
+   "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+   "type": "company-filing",
+   "title": "Kimberly-Clark Form 8-K, exhibit 99.1: first quarter 2025 results, April 22, 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/55785/000005578525000034/kmbq120258kex-991.htm",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2025-04-22",
+   "quote": "North America net sales of $2.7 billion decreased 3.9 percent in the quarter, driven by a combination of the PPE divestiture and the exit of the company's private label diaper business in the US",
+   "sha256": "c46fca2390f4823ade9d1bcb8f09d82fa972e1312e4eb5fd9b6f489608496dcf",
+   "note": "No separate figure for the diaper exit this quarter. No customer named. Found with EDGAR full-text search for “private label diaper” in Kimberly-Clark's filings; the fingerprint matched the copy read in a browser."
+  },
+  {
+   "id": "ev-kmb-8k-2025-08",
+   "source": "sec-edgar",
+   "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+   "type": "company-filing",
+   "title": "Kimberly-Clark Form 8-K, exhibit 99.1: second quarter 2025 results, August 1, 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/55785/000005578525000076/kmbq220258kex-991.htm",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2025-08-01",
+   "quote": "North America net sales of $2.7 billion decreased 1.9 percent in the quarter, driven by a combination of the PPE divestiture and the exit of the company's private label diaper business in the US",
+   "sha256": "1aba6d847a28cc433a2449c99e03bb59b039cfe91bba663c538d7b21ff1175c4",
+   "note": "No separate figure for the diaper exit this quarter. No customer named. Found with EDGAR full-text search for “private label diaper” in Kimberly-Clark's filings; the fingerprint matched the copy read in a browser."
+  },
+  {
+   "id": "ev-kmb-8k-2025-10",
+   "source": "sec-edgar",
+   "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+   "type": "company-filing",
+   "title": "Kimberly-Clark Form 8-K, exhibit 99.1: third quarter 2025 results, October 30, 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/55785/000162828025047278/kmbq320258kex-991.htm",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2025-10-30",
+   "quote": "decreased 0.8 percent in the quarter, driven by the exit of the company's private label diaper business in the US, partially offset by organic sales growth",
+   "sha256": "2cc954d696c7531804dbb0bed4297775ac81febda71955d409981e8b9119d8a9",
+   "note": "North America sales of $2.7 billion. The exit is named as the cause but not given a figure. No customer named. Found with EDGAR full-text search for “private label diaper” in Kimberly-Clark's filings; the fingerprint matched the copy read in a browser."
+  },
+  {
    "id": "ev-kmb-8k-2026-01",
    "source": "sec-edgar",
    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
@@ -4356,6 +4468,48 @@
    "quote": "North America (NA) Net sales of $2.6 billion decreased 3.0 percent in the quarter, driven by a 3.7 percent impact from the exit of the company's private label diaper business",
    "sha256": "93837d978b5622752974e6f8cd503c683a17ddad6f3e577061632b6bbcf76d78",
    "note": "Kimberly-Clark's own report that it left this business. It doesn't name Costco or any customer."
+  },
+  {
+   "id": "ev-kmb-8k-2026-04",
+   "source": "sec-edgar",
+   "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+   "type": "company-filing",
+   "title": "Kimberly-Clark Form 8-K, exhibit 99.1: first quarter 2026 results, April 28, 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/55785/000162828026027718/kmbq120268kex-991.htm",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2026-04-28",
+   "quote": "decreased 0.6 percent in the quarter, driven by a 2.7 percent impact from the exit of the company's private label diaper business in the US",
+   "sha256": "7b09e3af81250368fcf8faebb27cbfea32c5a96fb9838a03853866ebb6e27b90",
+   "note": "North America sales of $2.7 billion. No customer named. Found with EDGAR full-text search for “private label diaper” in Kimberly-Clark's filings; the fingerprint matched the copy read in a browser."
+  },
+  {
+   "id": "ev-kmb-8k-2026-08",
+   "source": "sec-edgar",
+   "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+   "type": "company-filing",
+   "title": "Kimberly-Clark Form 8-K, exhibit 99.1: second quarter 2026 results, August 4, 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/55785/000162828026052113/kmbq22026ex-991.htm",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2026-08-04",
+   "quote": "Net sales of $2.7 billion decreased 1.2 percent in the quarter, including a 0.5 percent impact from the exit",
+   "sha256": "f8e20b1c3e9ee9382536285d7765d8d85a9f29c32edd528e35216095d045401f",
+   "note": "North America. The last quarter in which the exit takes sales from North America. No customer named. Found with EDGAR full-text search for “private label diaper” in Kimberly-Clark's filings; the fingerprint matched the copy read in a browser."
+  },
+  {
+   "id": "ev-kmb-8k-2026-11",
+   "source": "sec-edgar",
+   "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+   "type": "company-filing",
+   "title": "Kimberly-Clark Form 8-K, exhibit 99.1: third quarter 2026 results, November 5, 2026",
+   "url": "https://www.sec.gov/Archives/edgar/data/55785/000162828026070514/kmbq32026ex-991.htm",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2026-11-05",
+   "quote": "Net sales of $2.7 billion increased 0.9 percent in the quarter",
+   "sha256": "ea81e1b7e2667f99cdf28fa949112c4c0058fe25d36e0f27c4f3ee344efb438d",
+   "note": "North America. The region's paragraph no longer mentions the diaper exit: a year after the business left, there is no prior-year diaper sale left to lose. Found with EDGAR full-text search for “private label diaper” in Kimberly-Clark's filings; the fingerprint matched the copy read in a browser."
   },
   {
    "id": "ev-kmb-q3-2024-call",
@@ -4566,6 +4720,20 @@
    "quote": "As a precaution, Michelin recommends replacing tires ten years after their date of manufacture, regardless of tread depth or apparent condition. This includes spare tires as well.",
    "sha256": "2d5610bbab4fb88c34baa278ceec2e7935d8384f3ccefafb537f316ceb5419d6",
    "note": null
+  },
+  {
+   "id": "ev-misa-site",
+   "source": "misa-site",
+   "publisher": "MISA Imports",
+   "type": "maker-statement",
+   "title": "MISA Imports home page",
+   "url": "https://www.misaimports.com/",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": null,
+   "quote": "From our headquarters in Dallas, Texas, we source wine & spirits from all over the world and distribute across 50 states.",
+   "sha256": "7c108e1bcfa34912209ff779b4c0b1b49c81d5aa010e1fd8336e1d7f4d3bae17",
+   "note": "The page doesn't mention Costco, Kirkland or store brands."
   },
   {
    "id": "ev-motorcraft-battery-terms",
@@ -5534,6 +5702,20 @@
    "note": "Court-stamped copy posted by ClassAction.org. Members in the matched class are paid automatically for \"the full amount of money they spent out-of-pocket for their replacement Interstate Battery\"; the others had to send a claim form within 60 days. Costco agreed to pay up to $750,000 in lawyers' fees separately."
   },
   {
+   "id": "ev-slashgear-ks-batteries-2026",
+   "source": "slashgear",
+   "publisher": "SlashGear (Static Media)",
+   "type": "press-report",
+   "title": "SlashGear, February 6, 2026: “Who Makes Costco's Kirkland Batteries And Where Are They Manufactured?”",
+   "url": "https://www.slashgear.com/2091912/who-makes-costco-batteries-where-manufactured/",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2026-02-06",
+   "quote": "Costco CEO Craig Jelinek confirmed the copper-top connection in a 2016 interview with WSB-TV In Atlanta, saying that his company merely repackages batteries it buys from Duracell.",
+   "sha256": "85ed7c429680992eb27b9257a0d588203acdc5a88243650ba7274a9722ca62e1",
+   "note": "Links the WSB-TV report. “Repackages batteries it buys from Duracell” is SlashGear's reading; the quote it gives is the CEO's “there's just packaging”, which in WSB-TV's report is about having no advertising."
+  },
+  {
    "id": "ev-slickdeals-2026",
    "source": "slickdeals",
    "publisher": "Slickdeals",
@@ -5912,6 +6094,20 @@
    "note": "The page also says to charge stored batteries fully every 3 to 6 months. These are mostly deep-cycle batteries."
   },
   {
+   "id": "ev-ttb-ks-bourbon-barton-2020",
+   "source": "ttb-cola",
+   "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
+   "type": "label-approval",
+   "title": "TTB label approval 20342001000275: Kirkland Signature Single Barrel straight bourbon (Barton 1792 Distillery, Sazerac Distillers, LLC)",
+   "url": "https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=20342001000275",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2020-12-08",
+   "quote": "BARTON 1792 DISTILLERY, SAZERAC DISTILLERS, LLC 300 BARTON RD BARDSTOWN KY 40004 BARTON 1792 DISTILLERY (Used on label) … SINGLE BARREL … by BARTON 1792 MASTER DISTILLERS … KENTUCKY STRAIGHT BOURBON WHISKEY",
+   "sha256": "a2f7f2f7bd77292e44419b1196598b6c4e97aba35c828b58b254864ac8c155ce",
+   "note": "Read in a browser: box 8, then the label images. Class STRAIGHT BOURBON WHISKY; issued Dec 8, 2020; status approved. The Small Batch label (21014001000282, Jan 15, 2021) reads 92 proof, 1 liter; the Bottled-in-Bond (20342001000281, Dec 8, 2020) says bottled at 100 proof. The fingerprint is of the approval page's HTML as we read it."
+  },
+  {
    "id": "ev-ttb-ks-bourbon-barton-2021",
    "source": "ttb-cola",
    "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
@@ -5919,11 +6115,11 @@
    "title": "TTB label approval 20342001000264: Kirkland Signature straight bourbon (Barton 1792 Distillery, Sazerac Distillers, LLC)",
    "url": "https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=20342001000264",
    "archive_url": null,
-   "retrieved": "2026-11-03",
-   "doc_date": "2021-01-29",
+   "retrieved": "2026-11-08",
+   "doc_date": "2020-12-08",
    "quote": "Barton 1792 Distillery, Sazerac Distillers, LLC 300 BARTON RD Bardstown, KY",
    "sha256": "bec1694b5ded1529b24fc45e97240a3855815380211dbf0ec1757aad26d7dfdd",
-   "note": "Read in a browser. Principal permit DSP-KY-12, Bardstown, KY. Class STRAIGHT BOURBON WHISKY; approved Jan 29, 2021. Two more approvals from the same plant date from Dec 2020 and Jan 2021, including a bottled-in-bond bourbon (20342001000281). The fingerprint is of the approval page's HTML as we read it."
+   "note": "Read in a browser. Principal permit DSP-KY-12, Bardstown, KY. Class STRAIGHT BOURBON WHISKY; issued Dec 8, 2020 (box 19). TTB now lists this approval as surrendered; its registry search shows a date completed of Jan 29, 2021, which we first gave as the approval date. Barton's other Kirkland approvals are still approved: 20342001000275 (Single Barrel) and 20342001000281 (Bottled-in-Bond), both Dec 8, 2020, and 21014001000282 (Small Batch), Jan 15, 2021. The fingerprint is of the approval page's HTML as we read it on Nov 8, 2026."
   },
   {
    "id": "ev-ttb-ks-bourbon-bib-2026",
@@ -5968,6 +6164,34 @@
    "note": "Read in a browser. Box 8 (permit DSP-TN-21029). Class STRAIGHT BOURBON WHISKY, origin Tennessee; approved Feb 10, 2026. The same permit holds a Kirkland straight bourbon approval from Jan 8, 2016 (15344001000055). The fingerprint is of the approval page's HTML as we read it."
   },
   {
+   "id": "ev-ttb-ks-tequila-anejo-2016",
+   "source": "ttb-cola",
+   "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
+   "type": "label-approval",
+   "title": "TTB label approval 16244001000228: Kirkland Signature Tequila Añejo (MISA Imports, Inc.)",
+   "url": "https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=16244001000228",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2016-09-04",
+   "quote": "PRODUCED AND BOTTLED BY: FABRICA DE TEQUILAS FINOS S.A. DE C.V. TEQUILA, JALISCO, MEXICO … IMPORTED BY: MISA IMPORTS, INC. DALLAS, TX … NOM 1472",
+   "sha256": "654e655f93387c2b9ea157f1c0d3f9d9ef31dabd3958f7972ddf56ba8820fff6",
+   "note": "Read in a browser, from the back label image. Applicant (box 8): MISA Imports, Inc., Dallas, TX, importer. 1750 ml; approved Sep 4, 2016. The Silver approved the same day, 16244001000231, names the same producer, importer and NOM. The fingerprint is of the approval page's HTML as we read it."
+  },
+  {
+   "id": "ev-ttb-ks-tequila-anejo-2019",
+   "source": "ttb-cola",
+   "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
+   "type": "label-approval",
+   "title": "TTB label approval 19177001000708: Kirkland Signature Tequila Añejo (MPL Brands NV Inc.)",
+   "url": "https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=19177001000708",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2019-07-11",
+   "quote": "PRODUCED & BOTTLED BY: DESTILERIA \"SANTA LUCIA\" … ZAPOPAN, JALISCO … IMPORTED BY: MPL BRANDS NV INC., LAS VEGAS, NV … NOM 1173",
+   "sha256": "6df7d6f6e70b702102720c2e3274b4d43bb6194fd086532f266b379c77ea5dcd",
+   "note": "Read in a browser, from the back label image. Applicant (box 8): MPL Brands NV Inc., Las Vegas, NV, importer. 1000 ml; approved Jul 11, 2019. The 2023 Reposado approvals (23095001000902, 23107001000670) and the April 2025 Añejo (25090001000346, importer shown as Patco Brands) name the same producer and NOM. The fingerprint is of the approval page's HTML as we read it."
+  },
+  {
    "id": "ev-ttb-ks-tequila-blanco-2020",
    "source": "ttb-cola",
    "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
@@ -5996,6 +6220,20 @@
    "note": "Read in a browser. From the back label image in the record. Applicant (box 8): MPL Brands NV Inc., importer's permit NV-I-21095. 1.75L, 100% de agave; approved Dec 22, 2022. The fingerprint is of the approval page's HTML as we read it."
   },
   {
+   "id": "ev-ttb-ks-tequila-cristalino-2023",
+   "source": "ttb-cola",
+   "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
+   "type": "label-approval",
+   "title": "TTB label approval 23297001000375: Kirkland Signature Tequila Añejo Cristalino (MPL Brands NV Inc.)",
+   "url": "https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=23297001000375",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2023-11-13",
+   "quote": "PRODUCED AND BOTTLED IN: CORPORATIVO DESTILERIA SANTA LUCIA, S.A. DE C.V. … ZAPOPAN, JALISCO … IMPORTED BY: MPL BRANDS NV INC., LAS VEGAS, NV … NOM 1173",
+   "sha256": "a419b57817e5934db483aad0b133bdffe657116ab3ec0c8cb9c84d28a2332543",
+   "note": "Read in a browser, from the back label image. Applicant (box 8): MPL Brands NV Inc., importer. 1000 ml; approved Nov 13, 2023. The fingerprint is of the approval page's HTML as we read it."
+  },
+  {
    "id": "ev-ttb-ks-tequila-extra-anejo-2025",
    "source": "ttb-cola",
    "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
@@ -6010,6 +6248,20 @@
    "note": "Read in a browser. From the back label image in the record. Box 8: MPL Brands NV Inc. with PATCO BRANDS used on label. 1000 ml, aged 3 years; approved Jun 2, 2025. The fingerprint is of the approval page's HTML as we read it."
   },
   {
+   "id": "ev-ttb-ks-tequila-reposado-2013",
+   "source": "ttb-cola",
+   "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
+   "type": "label-approval",
+   "title": "TTB label approval 13177001000335: Kirkland Signature Tequila Reposado (Magave Tequila LLC)",
+   "url": "https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=13177001000335",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2013-07-31",
+   "quote": "PRODUCED AND BOTTLED BY: DESTILADORA DEL VALLE DE TEQUILA S.A. DE C.V., TEQUILA, JALISCO, MEXICO … IMPORTED BY: MAGAVE TEQUILA, INC. TIBURON, CA … NOM 1438",
+   "sha256": "c0e55c90590029608a82e8ccd2ad654e5aed97d38f9af0780a2bbf2c40dea200",
+   "note": "Read in a browser, from the back label image. Applicant (box 8): Magave Tequila LLC, Tiburon, CA, importer. 1L; approved Jul 31, 2013. A second Reposado approval, 13248001000390 (Oct 18, 2013), has the same back label and NOM. The fingerprint is of the approval page's HTML as we read it."
+  },
+  {
    "id": "ev-ttb-ks-tequila-reposado-2022",
    "source": "ttb-cola",
    "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
@@ -6022,6 +6274,20 @@
    "quote": "PRODUCED & BOTTLED BY: DESTILERIA \"SANTA LUCIA\" SERVIDUMBRE DE PASO A LAS AGUJAS 450, COL. LAS AGUJAS, ZAPOPAN, JALISCO. CP 45200 IMPORTED BY: MPL BRANDS NV INC, LAS VEGAS, NV … NOM 1173",
    "sha256": "966e24dafa50f3f9d962e1e981133523825f8a603848186810efc05f5d2f47cf",
    "note": "Read in a browser. From the back label image in the record. 1 liter, barrel aged, 100% de agave. The fingerprint is of the approval page's HTML as we read it."
+  },
+  {
+   "id": "ev-ttb-ks-tequila-silver-2017",
+   "source": "ttb-cola",
+   "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
+   "type": "label-approval",
+   "title": "TTB label approval 17230001000490: Kirkland Signature Tequila Silver (Sazerac North America, Inc.)",
+   "url": "https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=17230001000490",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2017-08-19",
+   "quote": "PRODUCED AND BOTTLED BY: LA MADRILEÑA, S.A. DE C.V. … IMPORTED BY: WIDE WORLD IMPORTERS, LOUISVILLE, KY … NOM 1142",
+   "sha256": "455b451456c66aee4152658b4ca7ef2d8c564441d218c8bb69d85447ddccb264",
+   "note": "Read in a browser, from the label images. Applicant (box 8): Sazerac North America, Inc., Louisville, KY, with Wide World Importers used on label. 1750 ml; approved Aug 19, 2017. Two 2018 Silver approvals from the same applicant, 18047001000378 (Feb 23) and 18075001000730 (Mar 19), name La Madrileña and NOM 1142 too; the March one gives its address as Tototlán, Jalisco. The fingerprint is of the approval page's HTML as we read it."
   },
   {
    "id": "ev-ttb-ks-vodka-bardstown-2026",
@@ -6092,6 +6358,20 @@
    "quote": "O'NEILL VINTNERS & DISTILLERS, O'NEILL BEVERAGES CO. LLC 8418 S LAC JAC AVE PARLIER CA 93648 OBC BRANDS (Used on label)",
    "sha256": "d6307bf5033c922e08f4c8c2e3ae9e4f8f89605558bb7c58eb5aa36b4d844c17",
    "note": "Read in a browser. Box 8 (applicant, permit DSP-CA-399). Label: Kirkland Signature Premium American Vodka, distilled from corn, 1.75L; approved Jul 30, 2026. The fingerprint is of the approval page's HTML as we read it."
+  },
+  {
+   "id": "ev-ttb-misa-permit-sample",
+   "source": "ttb-cola",
+   "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
+   "type": "label-approval",
+   "title": "TTB label approvals under import permit TX-I-1277: seven Kirkland forms opened (MISA Imports, Inc.)",
+   "url": "https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=26183001000667",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2026-07-10",
+   "quote": "MISA IMPORTS, INC. 1502 VICEROY DR DALLAS TX 75235",
+   "sha256": "5b7ec6b0a4e1bf837e8fdc61739bfcea857183bda54427809707d4bf13c125ac",
+   "note": "TTB's search results list each approval's permit number. We opened seven Kirkland approvals filed under TX-I-1277, from 2012 to 2026 and across wine, Scotch, rum and fortified wine: box 8 names MISA Imports, Inc. of Dallas on every one, and box 2 gives the permit TX-I-1277. 12033001000425 (2012-02-16, table white wine, Italy); 12086001000080 (2012-04-20, scotch whisky fb, Scotland); 16358001000235 (2017-01-05, rose wine, France); 23122001000832 (2023-05-19, other rum gold fb, Guatemala); 26138001000376 (2026-05-26, single malt scotch whisky, Scotland); 26162001000540 (2026-06-17, single malt scotch whisky, Scotland); 26183001000667 (2026-07-10, dessert /port/sherry/(cooking) wine, Australia). The fingerprint is of the newest form; the others are kept in our archive too."
   },
   {
    "id": "ev-us-battery-date-codes-2023",
@@ -6176,6 +6456,20 @@
    "quote": "SM Global, LLC · Kirkland Signature Driver · 10.5 · SOLE: Kirkland, Signature, (loft) · BACK: (weight port) · CROWN: (dot alignment mark)",
    "sha256": "d08ddcf2593be9bcd8aa0aaf4c82d3850361f1a5ba90395c81656e699dbe37bb",
    "note": "The newest saved edition we could read in full: the March 2026 copy on the Internet Archive is cut off. The October 2023 edition doesn't list the driver yet. One Kirkland entry, one loft."
+  },
+  {
+   "id": "ev-usga-cdh-2026-11-ks-driver",
+   "source": "usga-conforming-driver-heads",
+   "publisher": "United States Golf Association (USGA), with The R&A",
+   "type": "registry-entry",
+   "title": "USGA and R&A List of Conforming Driver Heads, edition effective November 2, 2026: Kirkland Signature Driver, listed under SM Global, LLC",
+   "url": "https://www.usga.org/ConformingGolfClub/ConformingClubList_M.pdf",
+   "archive_url": null,
+   "retrieved": "2026-11-08",
+   "doc_date": "2026-11-02",
+   "quote": "SM Global, LLC · Kirkland Signature Driver · 10.5 · SOLE: Kirkland, Signature, (loft) · BACK: (weight port) · CROWN: (dot alignment mark) · HOSEL: (orientation indicators)",
+   "sha256": "c8fa22c956634b8bf9b33716a7569750b068e676cdd4a0ab698309a7aec879f2",
+   "note": "Read in a browser: page 937 of 1,257. One Kirkland entry, one loft, same markings as the January 2025 edition plus the hosel's orientation indicators. The fingerprint is of the quoted entry as we read it."
   },
   {
    "id": "ev-usga-cgb-2017-03-ks-golf",
