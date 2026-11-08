@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-07",
- "last_change": "2026-11-07",
+ "generated": "2026-11-08",
+ "last_change": "2026-11-08",
  "cadence_months": {
   "confirmed": 12,
   "documented": 6,
@@ -464,7 +464,7 @@
    "once": false,
    "last": "2026-11-06",
    "due": "2027-11-06",
-   "result": "14 rule texts on file"
+   "result": "15 rule texts on file"
   },
   {
    "id": "usda-legend-read",
@@ -563,7 +563,7 @@
   },
   {
    "id": "wam-wayback-saves",
-   "what": "Wayback saves: the Costco hot dogs page and its source records, plus the earlier records with no archive copy",
+   "what": "Wayback saves: the Costco hot dogs page and its source records, plus the earlier records with no archive copy, plus the Subaru and Kia page records",
    "gives": "Archived copy links on the evidence records",
    "how": "hand",
    "every_days": 0,
@@ -578,6 +578,44 @@
    "once": true,
    "last": null,
    "due": "2026-11-14",
+   "result": null
+  },
+  {
+   "id": "subaru-origin-reads",
+   "what": "Where Subarus are made: NHTSA report and Subaru releases",
+   "gives": "Whether the 2027 AALA report now has Subaru rows, and any new Subaru assembly statement, for /where-is-subaru-made/",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "nhtsa-aala",
+    "name": "NHTSA Part 583 American Automobile Labeling Act reports",
+    "publisher": "US National Highway Traffic Safety Administration",
+    "url": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
+   },
+   "file_url": null,
+   "hand_note": "nhtsa.gov refuses scripts. Open the Part 583 page in Chrome, save the newest report, add it to data/aala/reports.json with its SHA-256, run tools/parse_aala.py and tools/build_car_origin.py (it rebuilds the Subaru and Kia pages). Check media.subaru.com for new model-year assembly lines.",
+   "once": false,
+   "last": null,
+   "due": "2026-12-07",
+   "result": null
+  },
+  {
+   "id": "kia-origin-reads",
+   "what": "Where Kias are made: NHTSA report and Kia releases",
+   "gives": "New Kia rows in the 2027 AALA report (Telluride, Sorento, Sportage, EVs) and any new Kia assembly statement, for /where-is-kia-made/",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "nhtsa-aala",
+    "name": "NHTSA Part 583 American Automobile Labeling Act reports",
+    "publisher": "US National Highway Traffic Safety Administration",
+    "url": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
+   },
+   "file_url": null,
+   "hand_note": "nhtsa.gov and kiamedia.com refuse scripts. Save the newest AALA report in Chrome as for Subaru, then run tools/parse_aala.py and tools/build_car_origin.py. Read kiamedia.com pricing releases and model pages in Chrome for new assembly lines; check whether the Sportage Hybrid's second plant is named.",
+   "once": false,
+   "last": null,
+   "due": "2026-12-08",
    "result": null
   }
  ],
@@ -1031,6 +1069,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "Inside INdiana Business",
+   "publisher": "Inside INdiana Business",
+   "url": "https://www.insideindianabusiness.com/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "ask"
+  },
+  {
    "source": "Interstate Batteries website",
    "publisher": "Interstate Batteries",
    "url": "https://www.interstatebatteries.com/robots.txt",
@@ -1052,6 +1098,30 @@
    "url": "https://www.chrysler.com/crossbrand_us/terms-of-use",
    "checked": "2026-11-03",
    "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Kia America Media Center",
+   "publisher": "Kia America, Inc.",
+   "url": "https://www.kia.com/us/en/terms-of-service",
+   "checked": "2026-11-08",
+   "due": "2027-11-08",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Kia Corporation investor relations",
+   "publisher": "Kia Corporation",
+   "url": "https://worldwide.kia.com/en/etc/terms-of-use",
+   "checked": "2026-11-08",
+   "due": "2027-11-08",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Kia Global Newsroom",
+   "publisher": "Kia Corporation",
+   "url": "https://worldwide.kia.com/en/etc/terms-of-use",
+   "checked": "2026-11-08",
+   "due": "2027-11-08",
    "automated_read": "ask"
   },
   {
@@ -1149,6 +1219,14 @@
    "checked": "2026-11-06",
    "due": "2027-11-06",
    "automated_read": "yes"
+  },
+  {
+   "source": "NHTSA Part 583 American Automobile Labeling Act reports",
+   "publisher": "US National Highway Traffic Safety Administration",
+   "url": "https://www.nhtsa.gov/about-nhtsa/web-policies-notices",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "no"
   },
   {
    "source": "NHTSA recall reports and recall file",
@@ -1383,6 +1461,30 @@
    "automated_read": "no"
   },
   {
+   "source": "Subaru Corporation investor relations",
+   "publisher": "Subaru Corporation",
+   "url": "https://www.subaru.co.jp/en/",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Subaru US Media Center",
+   "publisher": "Subaru of America, Inc.",
+   "url": "https://www.subaru.com/support/terms-and-conditions.html",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Subaru of Indiana Automotive: About",
+   "publisher": "Subaru of Indiana Automotive, Inc.",
+   "url": "https://www.subaru-sia.com/about",
+   "checked": "2026-11-07",
+   "due": "2027-11-07",
+   "automated_read": "ask"
+  },
+  {
    "source": "Subaru owner's manuals",
    "publisher": "Subaru of America, Inc.",
    "url": "https://www.subaru.com/support/terms-and-conditions.html",
@@ -1589,679 +1691,1584 @@
    "product": "ks-golf-driver",
    "stamp": "documented",
    "next_check": "2026-12-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature driver",
+   "page": "/kirkland-signature/golf-clubs/"
   },
   {
    "id": "c-ks-golf-performance-plus-sm-global",
    "product": "ks-golf-ball-performance-plus",
    "stamp": "documented",
    "next_check": "2026-12-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature Performance+ golf ball",
+   "page": "/kirkland-signature/golf-balls/"
   },
   {
    "id": "c-ks-golf-tour-performance-sm-global",
    "product": "ks-golf-ball-tour-performance",
    "stamp": "documented",
    "next_check": "2026-12-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature Tour Performance golf ball",
+   "page": "/kirkland-signature/golf-balls/"
   },
   {
    "id": "c-ks-baby-wipes-nice-pak",
    "product": "ks-baby-wipes",
    "stamp": "documented",
    "next_check": "2027-02-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Baby Wipes, Fragrance Free",
+   "page": "/kirkland-signature/diapers/"
   },
   {
    "id": "c-ks-bath-tissue-georgia-pacific",
    "product": "ks-bath-tissue",
    "stamp": "documented",
    "next_check": "2027-02-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Bath Tissue, 380 sheets",
+   "page": "/kirkland-signature/toilet-paper/"
   },
   {
    "id": "c-ks-diapers-first-quality-label",
    "product": "ks-diapers",
    "stamp": "documented",
    "next_check": "2027-02-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature diapers, sizes 1 to 7",
+   "page": "/kirkland-signature/diapers/"
   },
   {
    "id": "c-ks-diapers-first-quality-press",
    "product": "ks-diapers",
    "stamp": "reported",
    "next_check": "2027-02-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature diapers, sizes 1 to 7",
+   "page": "/kirkland-signature/diapers/"
   },
   {
    "id": "c-ks-diapers-kimberly-clark",
    "product": "ks-diapers",
    "stamp": "reported",
    "next_check": "2027-02-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature diapers, sizes 1 to 7",
+   "page": "/kirkland-signature/diapers/"
   },
   {
    "id": "c-ks-facial-tissue-kimberly-clark",
    "product": "ks-facial-tissue-3-ply",
    "stamp": "documented",
    "next_check": "2027-02-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Facial Tissue, 3-ply",
+   "page": "/kirkland-signature/toilet-paper/"
   },
   {
    "id": "c-ks-ultra-soft-kruger",
    "product": "ks-ultra-soft-bath-tissue",
    "stamp": "documented",
    "next_check": "2027-02-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Ultra Soft Bath Tissue, 231 sheets",
+   "page": "/kirkland-signature/toilet-paper/"
   },
   {
    "id": "c-ks-albacore-bumble-bee",
    "product": "ks-albacore-tuna",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature Solid White Albacore Tuna",
+   "page": "/kirkland-signature/"
   },
   {
    "id": "c-ks-aller-fex-perrigo",
    "product": "ks-aller-fex",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature Aller-Fex (fexofenadine)",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-antacid-guardian",
    "product": "ks-antacid",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature Ultra Strength Antacid",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-biscuits-north-river",
    "product": "ks-dog-biscuits",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature dog biscuits",
+   "page": "/kirkland-signature/dog-food/"
   },
   {
    "id": "c-ks-bourbon-barton",
    "product": "ks-bourbon",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature bourbon",
+   "page": "/kirkland-signature/bourbon/"
   },
   {
    "id": "c-ks-bourbon-buffalo-trace",
    "product": "ks-bourbon",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature bourbon",
+   "page": "/kirkland-signature/bourbon/"
   },
   {
    "id": "c-ks-bourbon-tennessee",
    "product": "ks-bourbon",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature bourbon",
+   "page": "/kirkland-signature/bourbon/"
   },
   {
    "id": "c-ks-butter-continental",
    "product": "ks-butter",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature Sweet Cream Butter",
+   "page": "/kirkland-signature/"
   },
   {
    "id": "c-ks-cat-food-diamond-2012",
    "product": "ks-dry-cat-food",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature dry cat food",
+   "page": "/kirkland-signature/cat-food/"
   },
   {
    "id": "c-ks-cat-food-diamond-2025",
    "product": "ks-dry-cat-food",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature dry cat food",
+   "page": "/kirkland-signature/cat-food/"
   },
   {
    "id": "c-ks-cold-brew-berner",
    "product": "ks-cold-brew-coffee",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature Colombian Cold Brew Coffee",
+   "page": "/kirkland-signature/coffee/"
   },
   {
    "id": "c-ks-cold-flu-lnk",
    "product": "ks-severe-cold-flu",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Severe Cold & Flu Plus Congestion",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-decaf-house-blend-starbucks",
    "product": "ks-decaf-house-blend-coffee",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature Decaf House Blend coffee",
+   "page": "/kirkland-signature/coffee/"
   },
   {
    "id": "c-ks-dental-nylabone",
    "product": "ks-dental-chews",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature dental chews for dogs",
+   "page": "/kirkland-signature/dog-food/"
   },
   {
    "id": "c-ks-diesel-oil-chevron",
    "product": "ks-diesel-engine-oil",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature heavy-duty diesel engine oil (15W-40)",
+   "page": "/kirkland-signature/motor-oil/"
   },
   {
    "id": "c-ks-diesel-oil-highline-warren",
    "product": "ks-diesel-engine-oil",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature heavy-duty diesel engine oil (15W-40)",
+   "page": "/kirkland-signature/motor-oil/"
   },
   {
    "id": "c-ks-dog-food-diamond-2012",
    "product": "ks-dry-dog-food",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature dry dog food",
+   "page": "/kirkland-signature/dog-food/"
   },
   {
    "id": "c-ks-dog-food-diamond-2025",
    "product": "ks-dry-dog-food",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature dry dog food",
+   "page": "/kirkland-signature/dog-food/"
   },
   {
    "id": "c-ks-eggs-handsome-brook",
    "product": "ks-organic-eggs",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature Organic Pasture-Raised Eggs",
+   "page": "/kirkland-signature/"
   },
   {
    "id": "c-ks-french-vodka-misa",
    "product": "ks-french-vodka",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature vodka (France)",
+   "page": "/kirkland-signature/vodka/"
   },
   {
    "id": "c-ks-golf-2016-nassau",
    "product": "ks-golf-ball-2016",
    "stamp": "reported",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature Four-Piece Urethane golf ball (2016)",
+   "page": "/kirkland-signature/golf-balls/"
   },
   {
    "id": "c-ks-golf-irons-indi",
    "product": "ks-golf-irons-2023",
    "stamp": "reported",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature irons (2023)",
+   "page": "/kirkland-signature/golf-clubs/"
   },
   {
    "id": "c-ks-golf-performance-one-sm-global",
    "product": "ks-golf-ball-performance-one",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature Performance One golf ball (2017)",
+   "page": "/kirkland-signature/golf-balls/"
   },
   {
    "id": "c-ks-golf-wedges-scd",
    "product": "ks-golf-wedges-2020",
    "stamp": "reported",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature wedges (2020)",
+   "page": "/kirkland-signature/golf-clubs/"
   },
   {
    "id": "c-ks-jerky-phelps",
    "product": "ks-dog-jerky-treats",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature chicken jerky treats for dogs",
+   "page": "/kirkland-signature/dog-food/"
   },
   {
    "id": "c-ks-motor-oil-highline-warren",
    "product": "ks-motor-oil",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature motor oil",
+   "page": "/kirkland-signature/motor-oil/"
   },
   {
    "id": "c-ks-peanut-butter-sunland",
    "product": "ks-peanut-butter",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature peanut butter",
+   "page": "/kirkland-signature/"
   },
   {
    "id": "c-ks-sandwich-rolls-franz",
    "product": "ks-sandwich-rolls",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature Sandwich Rolls",
+   "page": "/kirkland-signature/"
   },
   {
    "id": "c-ks-smoked-salmon-acme",
    "product": "ks-smoked-salmon",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature Smoked Salmon",
+   "page": "/kirkland-signature/"
   },
   {
    "id": "c-ks-soy-beverage-sunopta",
    "product": "ks-soy-beverage",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature Organic Soy Non-Dairy Beverage",
+   "page": "/kirkland-signature/"
   },
   {
    "id": "c-ks-tequila-la-madrilena",
    "product": "ks-tequila",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature tequila (Blanco, Reposado, Extra Añejo)",
+   "page": "/kirkland-signature/tequila/"
   },
   {
    "id": "c-ks-tequila-mpl-import",
    "product": "ks-tequila",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature tequila (Blanco, Reposado, Extra Añejo)",
+   "page": "/kirkland-signature/tequila/"
   },
   {
    "id": "c-ks-tequila-santa-lucia",
    "product": "ks-tequila",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature tequila (Blanco, Reposado, Extra Añejo)",
+   "page": "/kirkland-signature/tequila/"
   },
   {
    "id": "c-ks-tequila-sazerac-import",
    "product": "ks-tequila",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature tequila (Blanco, Reposado, Extra Añejo)",
+   "page": "/kirkland-signature/tequila/"
   },
   {
    "id": "c-ks-three-berry-townsend",
    "product": "ks-three-berry-blend",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature Three Berry Blend (frozen)",
+   "page": "/kirkland-signature/"
   },
   {
    "id": "c-ks-vodka-bardstown",
    "product": "ks-american-vodka",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature American Vodka",
+   "page": "/kirkland-signature/vodka/"
   },
   {
    "id": "c-ks-vodka-buffalo-trace",
    "product": "ks-american-vodka",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature American Vodka",
+   "page": "/kirkland-signature/vodka/"
   },
   {
    "id": "c-ks-vodka-levecke",
    "product": "ks-american-vodka",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature American Vodka",
+   "page": "/kirkland-signature/vodka/"
   },
   {
    "id": "c-ks-vodka-oneill",
    "product": "ks-american-vodka",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature American Vodka",
+   "page": "/kirkland-signature/vodka/"
   },
   {
    "id": "c-ks-wet-cat-saturn",
    "product": "ks-wet-cat-food",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature wet cat food",
+   "page": "/kirkland-signature/cat-food/"
   },
   {
    "id": "c-ks-wet-dog-saturn",
    "product": "ks-wet-dog-food",
    "stamp": "documented",
    "next_check": "2027-05-03",
-   "last_check": "2026-11-03"
+   "last_check": "2026-11-03",
+   "name": "Kirkland Signature wet dog food",
+   "page": "/kirkland-signature/dog-food/"
   },
   {
    "id": "c-interstate-batteries-clarios",
    "product": "interstate-car-batteries-costco",
    "stamp": "documented",
    "next_check": "2027-05-04",
-   "last_check": "2026-11-04"
+   "last_check": "2026-11-04",
+   "name": "Interstate car and truck batteries sold at Costco",
+   "page": "/costco-car-batteries/"
   },
   {
    "id": "c-ks-aa-batteries-duracell",
    "product": "ks-aa-batteries",
    "stamp": "reported",
    "next_check": "2027-05-04",
-   "last_check": "2026-11-04"
+   "last_check": "2026-11-04",
+   "name": "Kirkland Signature Alkaline AA batteries (48-count)",
+   "page": "/kirkland-signature/batteries/"
   },
   {
    "id": "c-ks-aaa-batteries-duracell",
    "product": "ks-aaa-batteries",
    "stamp": "reported",
    "next_check": "2027-05-04",
-   "last_check": "2026-11-04"
+   "last_check": "2026-11-04",
+   "name": "Kirkland Signature Alkaline AAA batteries (48-count)",
+   "page": "/kirkland-signature/batteries/"
   },
   {
    "id": "c-ks-aller-fex-approval-holder",
    "product": "ks-aller-fex",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Aller-Fex (fexofenadine)",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-acetaminophen-made-by",
    "product": "ks-med-acetaminophen",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Acetaminophen",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-acetaminophen-pm-made-by",
    "product": "ks-med-acetaminophen-pm",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Acetaminophen PM",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-acid-controller-approval-holder",
    "product": "ks-med-acid-controller",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Acid Controller",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-aller-flo-distributed-by",
    "product": "ks-med-aller-flo",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Aller-Flo",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-aller-tec-approval-holder",
    "product": "ks-med-aller-tec",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Aller-Tec",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-allerclear-approval-holder",
    "product": "ks-med-allerclear",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature AllerClear",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-allerclear-d-12-hour-approval-holder",
    "product": "ks-med-allerclear-d-12-hour",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature AllerClear D 12 Hour",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-allerclear-d-24-hour-ohm-made-by",
    "product": "ks-med-allerclear-d-24-hour-ohm",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature AllerClear D 24 Hour",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-allerclear-d-24-hour-perrigo-approval-holder",
    "product": "ks-med-allerclear-d-24-hour-perrigo",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature AllerClear D 24 Hour",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-allergy-medicine-made-by",
    "product": "ks-med-allergy-medicine",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Allergy Medicine",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-arthritis-pain-relief-distributed-by",
    "product": "ks-med-arthritis-pain-relief",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Arthritis Pain Relief",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-arthritis-pain-reliever-approval-holder",
    "product": "ks-med-arthritis-pain-reliever",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Arthritis Pain Reliever",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-children-s-aller-tec-approval-holder",
    "product": "ks-med-children-s-aller-tec",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Children's Aller-Tec",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-esomeprazole-magnesium-approval-holder",
    "product": "ks-med-esomeprazole-magnesium",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Esomeprazole Magnesium",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-ibuprofen-ib-approval-holder",
    "product": "ks-med-ibuprofen-ib",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Ibuprofen IB",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-ibuprofen-minis-approval-holder",
    "product": "ks-med-ibuprofen-minis",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Ibuprofen Minis",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-ibuprofen-softgels-approval-holder",
    "product": "ks-med-ibuprofen-softgels",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Ibuprofen Softgels",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-ibuprofen-tablets-lnk-010-made-by",
    "product": "ks-med-ibuprofen-tablets-lnk-010",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Ibuprofen Tablets",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-ibuprofen-tablets-lnk-139-made-by",
    "product": "ks-med-ibuprofen-tablets-lnk-139",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Ibuprofen Tablets",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-ibuprofen-tablets-perrigo-approval-holder",
    "product": "ks-med-ibuprofen-tablets-perrigo",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Ibuprofen Tablets",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-lansoprazole-approval-holder",
    "product": "ks-med-lansoprazole",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Lansoprazole",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-low-dose-aspirin-made-by",
    "product": "ks-med-low-dose-aspirin",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Low Dose Aspirin",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-minoxidil-foam-distributed-by",
    "product": "ks-med-minoxidil-foam",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Minoxidil Foam",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-minoxidil-solution-made-by",
    "product": "ks-med-minoxidil-solution",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Minoxidil Solution",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-mucus-dm-approval-holder",
    "product": "ks-med-mucus-dm",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Mucus DM",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-naproxen-sodium-approval-holder",
    "product": "ks-med-naproxen-sodium",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Naproxen Sodium",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-omeprazole-approval-holder",
    "product": "ks-med-omeprazole",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Omeprazole",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-quit-2-cherry-lozenge-packed-by",
    "product": "ks-med-quit-2-cherry-lozenge",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Quit 2 Cherry Lozenge",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-quit-2-gum-perrigo-394-distributed-by",
    "product": "ks-med-quit-2-gum-perrigo-394",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Quit 2 Gum",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-quit-2-gum-perrigo-775-distributed-by",
    "product": "ks-med-quit-2-gum-perrigo-775",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Quit 2 Gum",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-quit-2-lozenge-packed-by",
    "product": "ks-med-quit-2-lozenge",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Quit 2 Lozenge",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-quit-4-cherry-lozenge-packed-by",
    "product": "ks-med-quit-4-cherry-lozenge",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Quit 4 Cherry Lozenge",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-quit-4-gum-perrigo-393-distributed-by",
    "product": "ks-med-quit-4-gum-perrigo-393",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Quit 4 Gum",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-quit-4-gum-perrigo-789-distributed-by",
    "product": "ks-med-quit-4-gum-perrigo-789",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Quit 4 Gum",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-quit-4-lozenge-packed-by",
    "product": "ks-med-quit-4-lozenge",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Quit 4 Lozenge",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-med-sleep-aid-made-by",
    "product": "ks-med-sleep-aid",
    "stamp": "documented",
    "next_check": "2027-05-05",
-   "last_check": "2026-11-05"
+   "last_check": "2026-11-05",
+   "name": "Kirkland Signature Sleep Aid",
+   "page": "/kirkland-signature/medicine/"
   },
   {
    "id": "c-ks-fabric-softener-sun-2012",
    "product": "ks-fabric-softener",
    "stamp": "documented",
    "next_check": "2027-05-07",
-   "last_check": "2026-11-07"
+   "last_check": "2026-11-07",
+   "name": "Kirkland Signature Ultra Liquid Fabric Softener",
+   "page": "/kirkland-laundry-detergent/"
   },
   {
    "id": "c-ks-food-court-hot-dog-morris",
    "product": "ks-food-court-hot-dog",
    "stamp": "reported",
    "next_check": "2027-05-07",
-   "last_check": "2026-11-07"
+   "last_check": "2026-11-07",
+   "name": "Kirkland Signature Beef Dinner Franks, Quarter Pound Plus (the Costco food court hot dog)",
+   "page": "/costco-hot-dogs/"
   },
   {
    "id": "c-ks-laundry-pacs-radienz-2021",
    "product": "ks-laundry-pacs",
    "stamp": "reported",
    "next_check": "2027-05-07",
-   "last_check": "2026-11-07"
+   "last_check": "2026-11-07",
+   "name": "Kirkland Signature Ultra Clean Laundry Detergent Pacs",
+   "page": "/kirkland-laundry-detergent/"
   },
   {
    "id": "c-ks-laundry-pacs-sun-2012",
    "product": "ks-laundry-pacs",
    "stamp": "documented",
    "next_check": "2027-05-07",
-   "last_check": "2026-11-07"
+   "last_check": "2026-11-07",
+   "name": "Kirkland Signature Ultra Clean Laundry Detergent Pacs",
+   "page": "/kirkland-laundry-detergent/"
   },
   {
    "id": "c-ks-beef-hot-dogs-tracy",
    "product": "ks-beef-hot-dogs",
    "stamp": "confirmed",
    "next_check": "2027-11-07",
-   "last_check": "2026-11-07"
+   "last_check": "2026-11-07",
+   "name": "Kirkland Signature Beef Hot Dogs",
+   "page": "/costco-hot-dogs/"
   },
   {
    "id": "c-ks-food-court-hot-dog-tracy",
    "product": "ks-food-court-hot-dog",
    "stamp": "confirmed",
    "next_check": "2027-11-07",
-   "last_check": "2026-11-07"
+   "last_check": "2026-11-07",
+   "name": "Kirkland Signature Beef Dinner Franks, Quarter Pound Plus (the Costco food court hot dog)",
+   "page": "/costco-hot-dogs/"
+  }
+ ],
+ "pages": [
+  {
+   "path": "/tire-dot-code-lookup/",
+   "changed": "2026-11-02",
+   "next": "2026-11-09",
+   "tasks": [
+    {
+     "id": "nhtsa-tire-plants",
+     "what": "NHTSA tire plant codes",
+     "due": "2026-11-09"
+    },
+    {
+     "id": "federal-rule-texts",
+     "what": "Federal rule texts behind our code pages",
+     "due": "2027-11-06"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/tire-date-code/",
+   "changed": "2026-11-04",
+   "next": "2026-11-12",
+   "tasks": [
+    {
+     "id": "tire-age-guidance",
+     "what": "Tire age guidance: who says what",
+     "due": "2027-11-04"
+    },
+    {
+     "id": "tire-age-carmaker-followup",
+     "what": "Tire age: carmaker manuals to re-check",
+     "due": "2026-11-12"
+    },
+    {
+     "id": "federal-rule-texts",
+     "what": "Federal rule texts behind our code pages",
+     "due": "2027-11-06"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/battery-date-code/",
+   "changed": "2026-11-07",
+   "next": "2027-02-04",
+   "tasks": [
+    {
+     "id": "battery-date-code-rules",
+     "what": "Battery date code rules from each maker",
+     "due": "2027-05-07"
+    },
+    {
+     "id": "battery-recalls",
+     "what": "NHTSA recalls of lead-acid starter batteries",
+     "due": "2027-02-04"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/usda-establishment-number-lookup/",
+   "changed": "2026-11-02",
+   "next": "2026-12-02",
+   "tasks": [
+    {
+     "id": "usda-establishments",
+     "what": "USDA meat, poultry and egg plant directory",
+     "due": "2026-12-02"
+    },
+    {
+     "id": "usda-legend-read",
+     "what": "USDA's letter legend and size bands",
+     "due": "2026-12-02"
+    },
+    {
+     "id": "federal-rule-texts",
+     "what": "Federal rule texts behind our code pages",
+     "due": "2027-11-06"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/costco-car-batteries/",
+   "changed": "2026-11-04",
+   "next": "2026-12-04",
+   "tasks": [
+    {
+     "id": "costco-car-battery-prices",
+     "what": "Costco car battery prices by group size",
+     "due": "2026-12-04"
+    }
+   ],
+   "claims": 1,
+   "stamps": {
+    "documented": 1
+   }
+  },
+  {
+   "path": "/costco-diapers/",
+   "changed": "2026-11-08",
+   "next": "2026-11-09",
+   "tasks": [
+    {
+     "id": "costco-diaper-prices",
+     "what": "Kirkland, Huggies Plus, Pampers Swaddlers Ultra, Pull-Ups, Easy Ups and baby wipes at Costco: every size, offers, ratings, Seattle shelf",
+     "due": "2026-11-09"
+    },
+    {
+     "id": "sams-diaper-prices",
+     "what": "Member's Mark diapers and wipes at Sam's Club: every size, Dallas setting",
+     "due": "2026-12-06"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/costco-toilet-paper/",
+   "changed": "2026-11-05",
+   "next": "2026-11-30",
+   "tasks": [
+    {
+     "id": "costco-toilet-paper-prices",
+     "what": "Every toilet paper pack at Costco, plus the Sam's Club comparison",
+     "due": "2026-12-05"
+    },
+    {
+     "id": "sams-toilet-paper-offers",
+     "what": "Sam's Club toilet paper offers ending Nov 18 and Nov 29",
+     "due": "2026-11-30"
+    },
+    {
+     "id": "kirkland-tissue-codes",
+     "what": "The FSC and SFI codes on Kirkland paper packs, and their register entries",
+     "due": "2027-02-03"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/costco-hot-dogs/",
+   "changed": "2026-11-07",
+   "next": "2026-12-02",
+   "tasks": [
+    {
+     "id": "costco-hot-dogs-reads",
+     "what": "Costco hot dogs: prices of the 12-link pack and both Dinner Franks packs, and the USDA seal in each listing photo",
+     "due": "2026-12-07"
+    },
+    {
+     "id": "usda-establishments",
+     "what": "USDA meat, poultry and egg plant directory",
+     "due": "2026-12-02"
+    }
+   ],
+   "claims": 3,
+   "stamps": {
+    "confirmed": 2,
+    "reported": 1
+   }
+  },
+  {
+   "path": "/kirkland-laundry-detergent/",
+   "changed": "2026-11-07",
+   "next": "2026-11-16",
+   "tasks": [
+    {
+     "id": "kirkland-laundry-reads",
+     "what": "Kirkland laundry detergent: prices of all eight Costco lines, the Tide offer dates, and the maker lines on each back label",
+     "due": "2026-11-16"
+    }
+   ],
+   "claims": 3,
+   "stamps": {
+    "documented": 2,
+    "reported": 1
+   }
+  },
+  {
+   "path": "/where-is-subaru-made/",
+   "changed": "2026-11-07",
+   "next": "2026-12-07",
+   "tasks": [
+    {
+     "id": "subaru-origin-reads",
+     "what": "Where Subarus are made: NHTSA report and Subaru releases",
+     "due": "2026-12-07"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/kirkland-signature/",
+   "changed": "2026-11-07",
+   "next": "2026-12-03",
+   "tasks": [],
+   "claims": null,
+   "stamps": {}
+  },
+  {
+   "path": "/kirkland-signature/batteries/",
+   "changed": "2026-11-04",
+   "next": "2026-11-16",
+   "tasks": [
+    {
+     "id": "kirkland-battery-prices",
+     "what": "Kirkland and Duracell battery prices at Costco",
+     "due": "2026-12-04"
+    },
+    {
+     "id": "kirkland-battery-offer",
+     "what": "Kirkland battery offer ending Nov 15",
+     "due": "2026-11-16"
+    }
+   ],
+   "claims": 2,
+   "stamps": {
+    "reported": 2
+   }
+  },
+  {
+   "path": "/kirkland-signature/diapers/",
+   "changed": "2026-11-05",
+   "next": "2026-12-05",
+   "tasks": [
+    {
+     "id": "kirkland-diaper-prices",
+     "what": "Kirkland, Huggies and Pampers diaper prices at Costco",
+     "due": "2026-12-05"
+    },
+    {
+     "id": "kirkland-diaper-sfi-code",
+     "what": "The SFI number on Kirkland diaper packs, and its register entry",
+     "due": "2027-02-03"
+    }
+   ],
+   "claims": 4,
+   "stamps": {
+    "documented": 2,
+    "reported": 2
+   }
+  },
+  {
+   "path": "/kirkland-signature/toilet-paper/",
+   "changed": "2026-11-05",
+   "next": "2026-12-05",
+   "tasks": [
+    {
+     "id": "kirkland-tissue-prices",
+     "what": "Kirkland, Charmin and Bounty paper prices at Costco",
+     "due": "2026-12-05"
+    },
+    {
+     "id": "kirkland-tissue-codes",
+     "what": "The FSC and SFI codes on Kirkland paper packs, and their register entries",
+     "due": "2027-02-03"
+    },
+    {
+     "id": "costco-toilet-paper-prices",
+     "what": "Every toilet paper pack at Costco, plus the Sam's Club comparison",
+     "due": "2026-12-05"
+    }
+   ],
+   "claims": 3,
+   "stamps": {
+    "documented": 3
+   }
+  },
+  {
+   "path": "/kirkland-signature/medicine/",
+   "changed": "2026-11-07",
+   "next": "2026-11-09",
+   "tasks": [
+    {
+     "id": "kirkland-medicine-labels",
+     "what": "Kirkland medicine labels and FDA approval holders",
+     "due": "2026-11-09"
+    }
+   ],
+   "claims": 40,
+   "stamps": {
+    "documented": 40
+   }
+  },
+  {
+   "path": "/kirkland-signature/rumors/",
+   "changed": "2026-11-06",
+   "next": "2026-12-06",
+   "tasks": [
+    {
+     "id": "kirkland-rumors-reads",
+     "what": "The eight Kirkland rumors: Lakeridge tag, cranberry bottle, foil box and prices, jelly beans in the US and UK, chocolate bags, plastic wrap, honey, flour",
+     "due": "2026-12-06"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/kirkland-signature/mattress/",
+   "changed": "2026-11-06",
+   "next": "2026-11-15",
+   "tasks": [
+    {
+     "id": "kirkland-mattress-prices",
+     "what": "The two Kirkland Lakeridge mattresses: prices by size, offer dates, ratings and the law label link",
+     "due": "2026-11-15"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/kirkland-signature/coffee/",
+   "changed": "2026-11-03",
+   "next": "2027-05-03",
+   "tasks": [],
+   "claims": 2,
+   "stamps": {
+    "documented": 2
+   }
+  },
+  {
+   "path": "/kirkland-signature/golf-balls/",
+   "changed": "2026-11-03",
+   "next": "2026-12-03",
+   "tasks": [],
+   "claims": 4,
+   "stamps": {
+    "documented": 3,
+    "reported": 1
+   }
+  },
+  {
+   "path": "/kirkland-signature/golf-clubs/",
+   "changed": "2026-11-03",
+   "next": "2026-12-03",
+   "tasks": [],
+   "claims": 3,
+   "stamps": {
+    "documented": 1,
+    "reported": 2
+   }
+  },
+  {
+   "path": "/kirkland-signature/motor-oil/",
+   "changed": "2026-11-03",
+   "next": "2027-04-05",
+   "tasks": [
+    {
+     "id": "api-oil-licences",
+     "what": "API motor oil licence listings",
+     "due": "2027-04-05"
+    }
+   ],
+   "claims": 3,
+   "stamps": {
+    "documented": 3
+   }
+  },
+  {
+   "path": "/kirkland-signature/dog-food/",
+   "changed": "2026-11-03",
+   "next": "2027-05-03",
+   "tasks": [],
+   "claims": 6,
+   "stamps": {
+    "documented": 6
+   }
+  },
+  {
+   "path": "/kirkland-signature/cat-food/",
+   "changed": "2026-11-03",
+   "next": "2027-05-03",
+   "tasks": [],
+   "claims": 3,
+   "stamps": {
+    "documented": 3
+   }
+  },
+  {
+   "path": "/kirkland-signature/vodka/",
+   "changed": "2026-11-03",
+   "next": "2027-05-03",
+   "tasks": [],
+   "claims": 5,
+   "stamps": {
+    "documented": 5
+   }
+  },
+  {
+   "path": "/kirkland-signature/tequila/",
+   "changed": "2026-11-03",
+   "next": "2027-05-03",
+   "tasks": [],
+   "claims": 4,
+   "stamps": {
+    "documented": 4
+   }
+  },
+  {
+   "path": "/kirkland-signature/bourbon/",
+   "changed": "2026-11-03",
+   "next": "2027-05-03",
+   "tasks": [],
+   "claims": 3,
+   "stamps": {
+    "documented": 3
+   }
+  },
+  {
+   "path": "/kirkland-vs-name-brands/",
+   "changed": "2026-11-06",
+   "next": "2026-11-09",
+   "tasks": [
+    {
+     "id": "kirkland-vs-prices",
+     "what": "Kirkland vs name brands: Bounty, Kleenex, Tide and Dawn shelf prices at ZIP 98101",
+     "due": "2026-12-06"
+    },
+    {
+     "id": "name-brand-labels",
+     "what": "Name-brand labels compared with Kirkland",
+     "due": "2026-11-09"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/store-brand-motor-oil/",
+   "changed": "2026-11-05",
+   "next": "2027-04-05",
+   "tasks": [
+    {
+     "id": "api-oil-licences",
+     "what": "API motor oil licence listings",
+     "due": "2027-04-05"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/makers/",
+   "changed": "2026-11-05",
+   "next": "2026-11-09",
+   "tasks": [
+    {
+     "id": "maker-pages",
+     "what": "Company pages: registers, recalls and the companies' own pages",
+     "due": "2026-11-09"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/makers/diamond-pet-foods/",
+   "changed": "2026-11-03",
+   "next": "2026-11-09",
+   "tasks": [
+    {
+     "id": "maker-pages",
+     "what": "Company pages: registers, recalls and the companies' own pages",
+     "due": "2026-11-09"
+    }
+   ],
+   "claims": 4,
+   "stamps": {
+    "documented": 4
+   }
+  },
+  {
+   "path": "/makers/saturn-petcare/",
+   "changed": "2026-11-03",
+   "next": "2026-11-09",
+   "tasks": [
+    {
+     "id": "maker-pages",
+     "what": "Company pages: registers, recalls and the companies' own pages",
+     "due": "2026-11-09"
+    }
+   ],
+   "claims": 2,
+   "stamps": {
+    "documented": 2
+   }
+  },
+  {
+   "path": "/makers/highline-warren/",
+   "changed": "2026-11-03",
+   "next": "2026-11-09",
+   "tasks": [
+    {
+     "id": "maker-pages",
+     "what": "Company pages: registers, recalls and the companies' own pages",
+     "due": "2026-11-09"
+    },
+    {
+     "id": "api-oil-licences",
+     "what": "API motor oil licence listings",
+     "due": "2027-04-05"
+    }
+   ],
+   "claims": 2,
+   "stamps": {
+    "documented": 2
+   }
+  },
+  {
+   "path": "/makers/sazerac/",
+   "changed": "2026-11-03",
+   "next": "2026-11-09",
+   "tasks": [
+    {
+     "id": "maker-pages",
+     "what": "Company pages: registers, recalls and the companies' own pages",
+     "due": "2026-11-09"
+    }
+   ],
+   "claims": 4,
+   "stamps": {
+    "documented": 4
+   }
+  },
+  {
+   "path": "/makers/sm-global/",
+   "changed": "2026-11-03",
+   "next": "2026-11-09",
+   "tasks": [
+    {
+     "id": "maker-pages",
+     "what": "Company pages: registers, recalls and the companies' own pages",
+     "due": "2026-11-09"
+    }
+   ],
+   "claims": 4,
+   "stamps": {
+    "documented": 4
+   }
+  },
+  {
+   "path": "/makers/perrigo/",
+   "changed": "2026-11-05",
+   "next": "2026-11-09",
+   "tasks": [
+    {
+     "id": "maker-pages",
+     "what": "Company pages: registers, recalls and the companies' own pages",
+     "due": "2026-11-09"
+    },
+    {
+     "id": "kirkland-medicine-labels",
+     "what": "Kirkland medicine labels and FDA approval holders",
+     "due": "2026-11-09"
+    }
+   ],
+   "claims": 26,
+   "stamps": {
+    "documented": 26
+   }
+  },
+  {
+   "path": "/makers/lnk-international/",
+   "changed": "2026-11-05",
+   "next": "2026-11-09",
+   "tasks": [
+    {
+     "id": "maker-pages",
+     "what": "Company pages: registers, recalls and the companies' own pages",
+     "due": "2026-11-09"
+    },
+    {
+     "id": "kirkland-medicine-labels",
+     "what": "Kirkland medicine labels and FDA approval holders",
+     "due": "2026-11-09"
+    }
+   ],
+   "claims": 8,
+   "stamps": {
+    "documented": 8
+   }
+  },
+  {
+   "path": "/makers/first-quality/",
+   "changed": "2026-11-05",
+   "next": "2026-11-09",
+   "tasks": [
+    {
+     "id": "maker-pages",
+     "what": "Company pages: registers, recalls and the companies' own pages",
+     "due": "2026-11-09"
+    },
+    {
+     "id": "kirkland-diaper-sfi-code",
+     "what": "The SFI number on Kirkland diaper packs, and its register entry",
+     "due": "2027-02-03"
+    }
+   ],
+   "claims": 2,
+   "stamps": {
+    "documented": 1,
+    "reported": 1
+   }
+  },
+  {
+   "path": "/makers/georgia-pacific/",
+   "changed": "2026-11-05",
+   "next": "2026-11-09",
+   "tasks": [
+    {
+     "id": "maker-pages",
+     "what": "Company pages: registers, recalls and the companies' own pages",
+     "due": "2026-11-09"
+    },
+    {
+     "id": "kirkland-tissue-codes",
+     "what": "The FSC and SFI codes on Kirkland paper packs, and their register entries",
+     "due": "2027-02-03"
+    }
+   ],
+   "claims": 1,
+   "stamps": {
+    "documented": 1
+   }
+  },
+  {
+   "path": "/makers/kruger-products/",
+   "changed": "2026-11-05",
+   "next": "2026-11-09",
+   "tasks": [
+    {
+     "id": "maker-pages",
+     "what": "Company pages: registers, recalls and the companies' own pages",
+     "due": "2026-11-09"
+    },
+    {
+     "id": "kirkland-tissue-codes",
+     "what": "The FSC and SFI codes on Kirkland paper packs, and their register entries",
+     "due": "2027-02-03"
+    }
+   ],
+   "claims": 1,
+   "stamps": {
+    "documented": 1
+   }
+  },
+  {
+   "path": "/how-we-know/",
+   "changed": "2026-11-08",
+   "next": "2026-12-03",
+   "tasks": [],
+   "claims": null,
+   "stamps": {}
+  },
+  {
+   "path": "/sources/",
+   "changed": "2026-11-06",
+   "next": null,
+   "tasks": [],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/corrections/",
+   "changed": "2026-11-08",
+   "next": null,
+   "tasks": [],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/data/",
+   "changed": "2026-11-08",
+   "next": null,
+   "tasks": [],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/update-schedule/",
+   "changed": null,
+   "next": null,
+   "tasks": [],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/where-is-kia-made/",
+   "changed": "2026-11-08",
+   "next": "2026-12-08",
+   "tasks": [
+    {
+     "id": "kia-origin-reads",
+     "what": "Where Kias are made: NHTSA report and Kia releases",
+     "due": "2026-12-08"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
   }
  ],
  "done": [

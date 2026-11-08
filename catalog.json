@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-07",
+ "generated": "2026-11-08",
  "title": "Who Actually Makes open data",
  "url": "https://whoactuallymakes.com/data/",
  "licence": {
@@ -8,8 +8,8 @@
   "url": "https://creativecommons.org/licenses/by/4.0/"
  },
  "credit": "Who Actually Makes (whoactuallymakes.com), CC BY 4.0",
- "count": 13,
- "records": 9464,
+ "count": 14,
+ "records": 9752,
  "datasets": [
   {
    "id": "claims",
@@ -29,8 +29,8 @@
    ],
    "rights": "Quoted words belong to their publishers; most records are US government work. CC BY covers our rows.",
    "based_on": [],
-   "records": 91,
-   "updated": "2026-11-05",
+   "records": 97,
+   "updated": "2026-11-07",
    "fields": [
     {
      "name": "claim_id",
@@ -238,13 +238,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/claims.json",
-     "bytes": 88497,
-     "sha256": "4b7a5be0a39b8f4ee640a34b62cdd787399637f66e3b5b3443823bdae9b2113d"
+     "bytes": 95053,
+     "sha256": "c56e88398eb43d88e0557b1a4e1375aaf50d151c4c210f4cf6c44f9ec7244e92"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/claims.csv",
-     "bytes": 57109,
-     "sha256": "2bb1041cfdda20a387195bbc4aa246d6e7da6fd65e052ae3331d4a6b1c3045e5"
+     "bytes": 61589,
+     "sha256": "1baae6926fe5ee3c7e4f4d464cbd1807599e763734fd5f451c9958a5bd627251"
     }
    }
   },
@@ -601,12 +601,12 @@
     "json": {
      "url": "https://whoactuallymakes.com/data/company-labels.json",
      "bytes": 86653,
-     "sha256": "ae12a4e5606a5b23d602b3a55d3a0c960fd6b507670175913408b5ff2d2c8ffc"
+     "sha256": "40b8c271510f719e7fcb20277040c3e6a7a9349e1cfad55c72d3ebbf21c01f6f"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/company-labels.csv",
      "bytes": 54202,
-     "sha256": "f934cd8ce7870970f71c65cf4cc633883cecdd7430533af68f4304c2ca3d2a24"
+     "sha256": "63479a2e11b4b2169ded490c57942054c8c2c79cc7da151692646be9bddb5d16"
     }
    }
   },
@@ -1011,8 +1011,8 @@
     "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=65d8d650-9afc-44f7-9409-a3aa3014d4ab",
     "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=74a728e1-9ca1-4219-9427-b503ab0480b4"
    ],
-   "records": 417,
-   "updated": "2026-11-07",
+   "records": 455,
+   "updated": "2026-11-08",
    "fields": [
     {
      "name": "id",
@@ -1133,30 +1133,30 @@
      "note": "Quotes Jelinek; Los Angeles appears in the editor's brackets. Reports about 135 million hot dogs a year."
     },
     {
-     "id": "ev-7-cfr-56-36",
+     "id": "ev-49-cfr-583",
      "source": "ecfr",
      "publisher": "US National Archives (Office of the Federal Register)",
      "type": "regulator-document",
-     "title": "7 CFR 56.36: Form of grademark and information required",
-     "url": "https://www.ecfr.gov/current/title-7/section-56.36",
+     "title": "49 CFR Part 583: Automobile parts content labeling",
+     "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-583",
      "archive_url": null,
      "retrieved": "2026-11-07",
      "doc_date": null,
-     "quote": "The plant number of the official plant preceded by the letter “P” must be shown on each carton",
-     "sha256": "af39aa52f231014c8f77907cf3bb3914b0b7761ae89962b8c7ec75e12de28bf2",
-     "note": "A shell-egg grading rule, separate from the directory on this page."
+     "quote": "Carline is not distinguished by country of manufacture, final assembly point",
+     "sha256": null,
+     "note": "Section 583.5 requires each new car's label to give the final assembly point by city, state and country, with percentages rounded to the nearest 5."
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/evidence.json",
-     "bytes": 321943,
-     "sha256": "4efa88d7fd78c4b36f02cb118b7702f30cde03d7a4e54632188a5d3de84d5ab8"
+     "bytes": 345309,
+     "sha256": "1ddfff0f214b1536f043e110668297dcb8d932196979d07407634a14f03aba1b"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/evidence.csv",
-     "bytes": 238366,
-     "sha256": "6b187811787001be58ac865c234b4530df354effcaaf8b9b1f199c3f2d0aaec1"
+     "bytes": 254094,
+     "sha256": "72dd5c69989ec29ac829f81d375a190ff4688bcf48c6198e65852057d2f18b10"
     }
    }
   },
@@ -1403,8 +1403,8 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 15,
-   "updated": "2026-11-07",
+   "records": 17,
+   "updated": "2026-11-08",
    "fields": [
     {
      "name": "id",
@@ -1459,6 +1459,18 @@
    ],
    "preview": [
     {
+     "id": "c-2026-11-08-costco-diapers-title",
+     "on": "2026-11-08",
+     "kind": "correction",
+     "page": "/costco-diapers/",
+     "what": "The search title of Costco diapers",
+     "was": "The title said Kirkland diapers cost “From 13¢”, rounding up the lowest price.",
+     "now": "The lowest Kirkland price on the page was 12.5¢ a diaper, so the title now says “Under 13¢”. A whole-cent price still reads “From”.",
+     "why": "Rounding 12.5¢ up made the title name a lowest price that a cheaper size undercut. Found in our site audit.",
+     "flagged_by": "Our own re-check",
+     "evidence": ""
+    },
+    {
      "id": "c-2026-11-07-motorcraft-date-code",
      "on": "2026-11-07",
      "kind": "correction",
@@ -1467,6 +1479,18 @@
      "was": "We said we found no rule from Ford or Motorcraft and showed one how-to article's rule as Reported.",
      "now": "Ford's distributor manual, on a page effective May 2005, shows a shipping date sticker on the side of the battery reading C-2 and 3-2. The decoder reads both forms as a Maker's rule, with the record's date.",
      "why": "We missed the manual on the first read; it sits in a warranty PDF, not a consumer page.",
+     "flagged_by": "Our own re-check",
+     "evidence": ""
+    },
+    {
+     "id": "c-2026-11-07-kirkland-stool-softener",
+     "on": "2026-11-07",
+     "kind": "correction",
+     "page": "/kirkland-signature/medicine/",
+     "what": "Kirkland Stool Softener, on the Kirkland medicine page",
+     "was": "We said the label file named no company.",
+     "now": "The label says “Distributed by: PL Developments”, so the table names PL Developments as the distributor. That doesn't show who made it. Labels that name no company go from 3 to 2.",
+     "why": "We missed the line on the label when we read it, and found it on a re-read.",
      "flagged_by": "Our own re-check",
      "evidence": ""
     },
@@ -1493,42 +1517,18 @@
      "why": "We found Deka's own sheet the day the page went live, while reading its storage guidance.",
      "flagged_by": "Our own re-check",
      "evidence": ""
-    },
-    {
-     "id": "c-2026-11-05-store-oil-some-or-all",
-     "on": "2026-11-05",
-     "kind": "correction",
-     "page": "/store-brand-motor-oil/",
-     "what": "Opening line of the store-brand motor oil answer",
-     "was": "For eight others, including Kirkland, Amazon Basics, Meijer, Do It Best and Signature Select, most or all of the oils are licensed to one company: Highline Warren LLC.",
-     "now": "For eight others, including Kirkland, Amazon Basics, Meijer, Do It Best and Signature Select, some or all of the oils are licensed to one company: Highline Warren LLC.",
-     "why": "\"Most or all\" was too strong for every brand: one of the five Members Mark listings is on Highline Warren's license. The company, the license and the counts were right; the summary wording was not.",
-     "flagged_by": "Our own re-check",
-     "evidence": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10297"
-    },
-    {
-     "id": "c-2026-11-05-hub-reported-count",
-     "on": "2026-11-05",
-     "kind": "correction",
-     "page": "/kirkland-signature/",
-     "what": "The stamps line under How to read this list",
-     "was": "Every answer here but three is Documented. The exceptions are the original 2016 golf ball and the 2020 wedges and 2023 irons, marked Reported.",
-     "now": "Five answers are Reported: the same three, plus the 48-count AA and AAA batteries. The count and names now come from the data, in a chart.",
-     "why": "The two battery answers are stamped Reported in our records, and the typed line had not been updated for them. The stamps themselves did not change.",
-     "flagged_by": "Our own re-check",
-     "evidence": "https://engineoil.api.org/Directory/EolcsResultsDetail?accountId=-1&companyId=10297"
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/corrections.json",
-     "bytes": 11647,
-     "sha256": "b26a480daba9834637e9dc878e00497a756949744f6ad6e4183bbdac2a587465"
+     "bytes": 12873,
+     "sha256": "090c89d6d826b89f6e47fbffd3c052caca1c5ed1405401757033f37815059367"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/corrections.csv",
-     "bytes": 8001,
-     "sha256": "e8f2ac2cbf41f049ccbc7c885d4789c20dfc0ff72231c04dc67225cd213417e5"
+     "bytes": 8935,
+     "sha256": "39a3761f6fba6338e3cf76580ff745ece340d5a64ec1e648bac3f5dcd7ffd3fa"
     }
    }
   },
@@ -1548,8 +1548,8 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 30,
-   "updated": "2026-11-07",
+   "records": 32,
+   "updated": "2026-11-08",
    "fields": [
     {
      "name": "id",
@@ -1657,13 +1657,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/schedule.json",
-     "bytes": 75015,
-     "sha256": "d6c16c84948a11607e31d8c83f692914ef5fedc4e8204eaac89c25e42ccdb7f9"
+     "bytes": 103458,
+     "sha256": "f82f3f98e9d27b4cad6af2a5c64b094dfb7572af3e1b88a0f0db9e27179c584e"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/schedule.csv",
-     "bytes": 6886,
-     "sha256": "bc10396b0a3226e06f433b47ad41027358c9a6762e90e9299af1dcd7d218c832"
+     "bytes": 7235,
+     "sha256": "5729693620c6fb3fd146ce7d392a7ec06dedd3f6ed9bb6b4d3176c2d1af70f5b"
     }
    }
   },
@@ -2160,13 +2160,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/kirkland-vs-pairs.json",
-     "bytes": 67531,
-     "sha256": "01085ccb8031e8352755f1d19ac05fb4d2dcd72ba37ca4a0c8ef579a4eb4950a"
+     "bytes": 67586,
+     "sha256": "30a22fa0405191c0363a17a595b979b8ad55478c4523f271ca24d6b03b120986"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/kirkland-vs-pairs.csv",
-     "bytes": 28271,
-     "sha256": "4b69f0707a62e8f90c9d66c407543f8a9062400a30af496865be89c90d5002b6"
+     "bytes": 28328,
+     "sha256": "8e951e16b75fa54de48e5e0b8f747a61d9efe2ca977c8832b7f2af950e851791"
     }
    }
   },
@@ -2514,6 +2514,196 @@
      "url": "https://whoactuallymakes.com/data/usda-establishments.csv",
      "bytes": 1477653,
      "sha256": "f864d55a0cdc19da9b21bef08ae26745f897c9a5b524783b875763a01e653681"
+    }
+   }
+  },
+  {
+   "id": "car-origin-filings",
+   "title": "Subaru and Kia rows in NHTSA's AALA reports, model years 2018 on",
+   "short": "Subaru and Kia AALA rows",
+   "what": "Every row for a Subaru or Kia car, by badge or by builder, in NHTSA's yearly Part 583 reports: US and Canadian parts share, top foreign parts sources, final assembly country, and engine and transmission origin.",
+   "limits": "A row covers a whole model line, not one car, and a line can come from two plants. Shares are averages by value, mostly rounded to 5%. Empty cells were left blank in the report. Country letters are as filed: J Japan, K Korea, M or MX Mexico, US United States, CH China. Two letters joined with + mean the report printed both.",
+   "use": "Powers the model tables and year grids on the Subaru and Kia pages.",
+   "page": "/where-is-subaru-made/",
+   "refresh": "Monthly check for a new report, read in a browser",
+   "keywords": [
+    "where are subarus made",
+    "AALA report",
+    "Subaru parts content",
+    "Subaru final assembly",
+    "where are kias made",
+    "Kia final assembly"
+   ],
+   "rights": "The filings are US government work. CC BY covers our table. Brand names belong to their owners.",
+   "based_on": [
+    "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
+   ],
+   "records": 240,
+   "updated": "2026-11-08",
+   "fields": [
+    {
+     "name": "model_year",
+     "type": "number",
+     "about": "Model year of the report"
+    },
+    {
+     "name": "manufacturer",
+     "type": "string",
+     "about": "Manufacturer column as filed"
+    },
+    {
+     "name": "make",
+     "type": "string",
+     "about": "Make column as filed"
+    },
+    {
+     "name": "carline",
+     "type": "string",
+     "about": "Carline as filed"
+    },
+    {
+     "name": "vehicle_type",
+     "type": "string",
+     "about": "PC or MPV as filed"
+    },
+    {
+     "name": "us_canada_pct",
+     "type": "number",
+     "about": "Percent US and Canadian parts by value; empty if blank"
+    },
+    {
+     "name": "foreign_1_pct",
+     "type": "number",
+     "about": "Largest foreign parts share"
+    },
+    {
+     "name": "foreign_1_country",
+     "type": "string",
+     "about": "Its country letter; empty if not printed"
+    },
+    {
+     "name": "foreign_2_pct",
+     "type": "number",
+     "about": "Second foreign parts share"
+    },
+    {
+     "name": "foreign_2_country",
+     "type": "string",
+     "about": "Its country letter"
+    },
+    {
+     "name": "final_assembly",
+     "type": "string",
+     "about": "Final assembly country letter"
+    },
+    {
+     "name": "engine",
+     "type": "string",
+     "about": "Engine origin letter"
+    },
+    {
+     "name": "transmission",
+     "type": "string",
+     "about": "Transmission origin letter"
+    },
+    {
+     "name": "report_url",
+     "type": "string",
+     "about": "The NHTSA PDF"
+    }
+   ],
+   "preview": [
+    {
+     "model_year": 2018,
+     "manufacturer": "Kia Motors",
+     "make": "Kia",
+     "carline": "Cadenza",
+     "vehicle_type": "PC",
+     "us_canada_pct": 0,
+     "foreign_1_pct": 87,
+     "foreign_1_country": "K",
+     "foreign_2_pct": null,
+     "foreign_2_country": "",
+     "final_assembly": "K",
+     "engine": "K",
+     "transmission": "K",
+     "report_url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf"
+    },
+    {
+     "model_year": 2018,
+     "manufacturer": "Kia Motors",
+     "make": "Kia",
+     "carline": "Forte",
+     "vehicle_type": "PC",
+     "us_canada_pct": 2,
+     "foreign_1_pct": 51,
+     "foreign_1_country": "K",
+     "foreign_2_pct": 47,
+     "foreign_2_country": "M",
+     "final_assembly": "M",
+     "engine": "M",
+     "transmission": "M+K",
+     "report_url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf"
+    },
+    {
+     "model_year": 2018,
+     "manufacturer": "Kia Motors",
+     "make": "Kia",
+     "carline": "K900",
+     "vehicle_type": "PC",
+     "us_canada_pct": null,
+     "foreign_1_pct": 72,
+     "foreign_1_country": "UK",
+     "foreign_2_pct": null,
+     "foreign_2_country": "",
+     "final_assembly": "",
+     "engine": "",
+     "transmission": "",
+     "report_url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf"
+    },
+    {
+     "model_year": 2018,
+     "manufacturer": "Kia Motors",
+     "make": "Kia",
+     "carline": "Niro",
+     "vehicle_type": "SUV",
+     "us_canada_pct": 2,
+     "foreign_1_pct": 88,
+     "foreign_1_country": "K",
+     "foreign_2_pct": null,
+     "foreign_2_country": "",
+     "final_assembly": "K",
+     "engine": "K",
+     "transmission": "K",
+     "report_url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf"
+    },
+    {
+     "model_year": 2018,
+     "manufacturer": "Kia Motors",
+     "make": "Kia",
+     "carline": "Optima",
+     "vehicle_type": "PC",
+     "us_canada_pct": 1,
+     "foreign_1_pct": 90,
+     "foreign_1_country": "K",
+     "foreign_2_pct": null,
+     "foreign_2_country": "",
+     "final_assembly": "K",
+     "engine": "K",
+     "transmission": "K",
+     "report_url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf"
+    }
+   ],
+   "files": {
+    "json": {
+     "url": "https://whoactuallymakes.com/data/car-origin-filings.json",
+     "bytes": 105774,
+     "sha256": "2c6264a95059298eb3af185503b9df4f9a1662f47714bc1b31254fd73d23e8b1"
+    },
+    "csv": {
+     "url": "https://whoactuallymakes.com/data/car-origin-filings.csv",
+     "bytes": 32854,
+     "sha256": "b39aca6c0e2b0c940935fd49f1b62669a03e5f415d81d3e1052578e7243e1fdd"
     }
    }
   }

@@ -1,0 +1,241 @@
+model_year,manufacturer,make,carline,vehicle_type,us_canada_pct,foreign_1_pct,foreign_1_country,foreign_2_pct,foreign_2_country,final_assembly,engine,transmission,report_url
+2018,Kia Motors,Kia,Cadenza,PC,0,87,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Kia Motors,Kia,Forte,PC,2,51,K,47,M,M,M,M+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Kia Motors,Kia,K900,PC,,72,UK,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Kia Motors,Kia,Niro,SUV,2,88,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Kia Motors,Kia,Optima,PC,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Kia Motors,Kia,Optima Hybrid,PC,0,89,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Kia Motors,Kia,Optima Hybrid Plug in,PC,0,92,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Kia Motors,Kia,Rio,PC,2,49,K,47,M,M,M,M+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Kia Motors,Kia,Sedona,MPV,2,92,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Kia Motors,Kia,"Sorento (2.0L, 2.4L)",MPV,,72,UK,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Kia Motors,Kia,Sorento (3.3L),MPV,,72,UK,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Kia Motors,Kia,Soul,MPV,0,91,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Kia Motors,Kia,Soul EV,MPV,0,93,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Kia Motors,Kia,Sportage (QL),MPV,0,92,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2019,Kia Motors,Kia,Cadenza,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Kia Motors,Kia,Forte,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Kia Motors,Kia,K900,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Kia Motors,Kia,Niro,SUV,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Kia Motors,Kia,Optima,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Kia Motors,Kia,Optima Hybrid,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Kia Motors,Kia,Optima Hybrid Plug in,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Kia Motors,Kia,Rio,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Kia Motors,Kia,Sedona,MPV,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Kia Motors,Kia,"Sorento (2.0L, 2.4L)",MPV,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Kia Motors,Kia,Sorento (3.3L),MPV,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Kia Motors,Kia,Soul,MPV,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Kia Motors,Kia,Soul EV,MPV,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Kia Motors,Kia,Sportage (QL),MPV,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2020,Kia Motors,Kia,Cadenza,PC,0,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Forte,PC,5,35,K,65,MX,MX,MX,MX+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,K900,PC,5,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Niro Electric,MPV,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Niro Hybrid,MPV,0,80,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Niro PHEV,MPV,0,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Niro Plug-In Hybrid,MPV,0,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Optima 1.6,PC,45,55,K,,,US,MX,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Optima 2.0,PC,50,50,K,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Optima 2.4,PC,60,40,K,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Optima Hybrid,PC,0,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Optima Hybrid Plug in,PC,5,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Rio,PC,0,45,K,55,MX,MX,MX,MX,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Sedona,MPV,0,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Sorento,MPV,55,45,K,,,US,US+K,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Soul,MPV,1,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Soul EV,MPV,5,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Sportage,MPV,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Stinger,PC,0,45,K,55,MX,MX,MX,MX,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Kia Motors,Kia,Telluride,MPV,51,49,K,,,US,K,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2021,Kia Motors,Kia,Forte,PC,5,60,M,30,K,M,M,M+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Kia Motors,Kia,K5,PC,55,35,K,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Kia Motors,Kia,Niro EV,MPV,0,65,K,30,CH,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Kia Motors,Kia,Niro HEV,MPV,0,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Kia Motors,Kia,Niro PHEV,MPV,0,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Kia Motors,Kia,Rio,PC,5,50,M,40,K,M,M,M,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Kia Motors,Kia,Sedona,MPV,0,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Kia Motors,Kia,Seltos,MPV,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Kia Motors,Kia,Sorento,MPV,50,35,K,,,US,US,US+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Kia Motors,Kia,Sorento HEV,MPV,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Kia Motors,Kia,Soul,MPV,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Kia Motors,Kia,Sportage (QL),MPV,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Kia Motors,Kia,Stinger,PC,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Kia Motors,Kia,Telluride,MPV,50,45,K,,,US,K,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2022,Kia Motors,Kia,Carnival,MPV,0,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Kia Motors,Kia,EV6 Electric,MPV,0,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Kia Motors,Kia,Forte,PC,15,40,K,45,M,M,M,M+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Kia Motors,Kia,K5,PC,60,30,K,,,US,US,US+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Kia Motors,Kia,Niro Electric,MPV,0,65,K,30,CH,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Kia Motors,Kia,Niro Hybrid,MPV,5,80,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Kia Motors,Kia,Niro Plug-In Hybrid,MPV,5,80,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Kia Motors,Kia,Rio,PC,5,35,K,55,M,M,M,M,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Kia Motors,Kia,Sorento,MPV,55,30,K,,,US,US,US+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Kia Motors,Kia,Sorento Hybrid,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Kia Motors,Kia,Sorento PHEV,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Kia Motors,Kia,Soul,MPV,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Kia Motors,Kia,Sportage,MPV,0,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Kia Motors,Kia,Stinger,PC,0,90,,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Kia Motors,Kia,Telluride,MPV,60,35,K,,,US,K,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2023,Kia Motors,Kia,Carnival,MPV,1,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Kia Motors,Kia,EV6 Electric,MPV,1,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Kia Motors,Kia,Forte,PC,16,30,K,45,M,M,M,M+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Kia Motors,Kia,K5,PC,60,30,K,,,US,US,US+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Kia Motors,Kia,Niro Electric,MPV,1,60,K,35,CH,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Kia Motors,Kia,Niro Hybrid,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Kia Motors,Kia,Niro Plug-In Hybrid,MPV,2,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Kia Motors,Kia,Rio,PC,7,40,K,50,M,M,M,M,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Kia Motors,Kia,Seltos,MPV,0,95,K,,,K,K,K+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Kia Motors,Kia,Sorento,MPV,55,35,K,,,US,US,US+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Kia Motors,Kia,Sorento Hybrid,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Kia Motors,Kia,Sorento PHEV,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Kia Motors,Kia,Soul,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Kia Motors,Kia,Sportage,MPV,1,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Kia Motors,Kia,Sportage Hybrid,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Kia Motors,Kia,Sportage PHEV,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Kia Motors,Kia,Stinger,PC,2,90,,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Kia Motors,Kia,Telluride,MPV,60,35,K,,,US,K,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2024,Kia Motors,Kia,Carnival,MPV,1,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Kia Motors,Kia,EV6 Electric,MPV,0,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Kia Motors,Kia,EV9 Electric,MPV,1,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Kia Motors,Kia,Forte,PC,10,35,K,50,M,M,M,M+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Kia Motors,Kia,K5,PC,60,30,K,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Kia Motors,Kia,Niro Electric,MPV,1,60,K,30,CH,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Kia Motors,Kia,Niro Hybrid,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Kia Motors,Kia,Niro Plug-In Hybrid,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Kia Motors,Kia,Seltos,MPV,4,85,K,,,K,K,K+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Kia Motors,Kia,Sorento,MPV,60,30,K,,,US,US,US+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Kia Motors,Kia,Sorento Hybrid,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Kia Motors,Kia,Sorento PHEV,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Kia Motors,Kia,Soul,MPV,1,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Kia Motors,Kia,Sportage,MPV,55,30,K,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Kia Motors,Kia,Sportage,MPV,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Kia Motors,Kia,Sportage Hybrid,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Kia Motors,Kia,Sportage PHEV,MPV,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Kia Motors,Kia,Telluride,MPV,60,30,K,,,US,K,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2025,Kia Motors,Kia,Carnival,MPV,2,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,EV6,MPV,80,15,K,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,EV6 GT,MPV,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,EV9 Electric,MPV,30,35,CH,30,K,US,CH,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,EV9 Electric,MPV,60,20,K,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,K4,PC,20,40,K,35,M,M,US,M,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,K4 GT-Line,PC,20,45,K,35,M,M,US,M+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,K5,PC,0,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,Niro Electric,MPV,1,70,K,25,CH,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,Niro Hybrid,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,Niro Plug-In Hybrid,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,Seltos,MPV,1,90,K,,,K,K,K+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,Sorento,MPV,55,35,K,,,US,US,US+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,Sorento Hybrid,MPV,1,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,Sorento PHEV,MPV,2,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,Soul,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,Sportage,MPV,60,30,K,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,Sportage,MPV,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,Sportage Hybrid,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,Sportage PHEV,MPV,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Kia Motors,Kia,Telluride,MPV,60,30,K,,,US,K,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2026,Kia Motors,Kia,Carnival,MPV,2,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Kia Motors,Kia,Carnival Hybrid,MPV,2,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Kia Motors,Kia,EV6,MPV,75,20,K,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Kia Motors,Kia,EV9,MPV,60,20,K,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Kia Motors,Kia,K4,PC,20,45,M,30,K,M,US,M+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Kia Motors,Kia,K5,PC,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Kia Motors,Kia,Niro Electric,MPV,0,75,K,20,CH,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Kia Motors,Kia,Niro Hybrid,MPV,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Kia Motors,Kia,Seltos,MPV,3,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Kia Motors,Kia,Sorento,MPV,55,30,K,,,US,US,US+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Kia Motors,Kia,Sorento Hybrid,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Kia Motors,Kia,Sorento PHEV,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Kia Motors,Kia,Sportage,MPV,55,30,K,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Kia Motors,Kia,Sportage,MPV,0,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Kia Motors,Kia,Sportage Hybrid,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2027,Kia Motors,Kia,Seltos,MPV,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2027-AALA-Alphabetical-06-08-26.pdf
+2027,Kia Motors,Kia,Sportage Hybrid,MPV,30,55,K,,,US,M,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2027-AALA-Alphabetical-06-08-26.pdf
+2027,Kia Motors,Kia,Telluride Hybrid,MPV,45,40,K,,,US,K,M,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2027-AALA-Alphabetical-06-08-26.pdf
+2018,Subaru,Subaru,BRZ,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Subaru,Subaru,Crosstrek,MPV,5,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Subaru,Subaru,Forester,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Subaru,Subaru,Impreza,PC,40,50,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Subaru,Subaru,Legacy,PC,45,40,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Subaru,Subaru,Outback,MPV,45,40,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Subaru,Subaru,WRX,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2019,Subaru,Subaru,Ascent,MPV,50,30,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Subaru,Subaru,BRZ,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Subaru,Subaru,Crosstrek,MPV,0,90,J,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Subaru,Subaru,Forester,MPV,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Subaru,Subaru,Impreza,PC,45,40,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Subaru,Subaru,Legacy,PC,45,40,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Subaru,Subaru,Outback,MPV,45,35,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Subaru,Subaru,WRX,PC,0,90,J,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2020,Subaru,Subaru,Ascent,MPV,50,30,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Subaru,Subaru,BRZ,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Subaru,Subaru,Crosstrek,MPV,5,90,,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Subaru,Subaru,Forester,MPV,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Subaru,Subaru,Impreza,PC,45,40,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Subaru,Subaru,Legacy,PC,50,40,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Subaru,Subaru,Outback,MPV,45,40,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Subaru,Subaru,STI S209,PC,0,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Subaru,Subaru,WRX,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2021,Subaru,Subaru,Ascent,MPV,50,30,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Subaru,Subaru,Crosstrek,MPV,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Subaru,Subaru,Crosstrek Hybrid,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Subaru,Subaru,Forester,MPV,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Subaru,Subaru,Impreza,PC,45,40,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Subaru,Subaru,Impreza 5 dr,PC,45,35,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Subaru,Subaru,Legacy,PC,50,35,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Subaru,Subaru,Outback,MPV,50,35,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Subaru,Subaru,WRX,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2022,Subaru,Subaru,Ascent,MPV,50,30,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Subaru,Subaru,BRZ,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Subaru,Subaru,Crosstrek,MPV,5,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Subaru,Subaru,Crosstrek Hybrid,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Subaru,Subaru,Forester,MPV,5,80,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Subaru,Subaru,Impreza,PC,50,35,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Subaru,Subaru,Impreza 5 dr,PC,50,35,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Subaru,Subaru,Legacy,PC,50,35,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Subaru,Subaru,Outback,MPV,50,35,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Subaru,Subaru,WRX,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2023,Subaru,Subaru,Ascent,MPV,50,30,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Subaru,Subaru,BRZ,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Subaru,Subaru,Crosstrek,MPV,5,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Subaru,Subaru,Crosstrek Hybrid,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Subaru,Subaru,Forester,MPV,5,80,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Subaru,Subaru,Impreza,PC,50,35,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Subaru,Subaru,Impreza 5 dr,PC,50,35,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Subaru,Subaru,Legacy,PC,50,30,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Subaru,Subaru,Outback,MPV,50,30,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Subaru,Subaru,WRX,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2024,Subaru,Subaru,Ascent,MPV,50,30,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Subaru,Subaru,BRZ,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Subaru,Subaru,Crosstrek,MPV,5,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Subaru,Subaru,Crosstrek,MPV,45,35,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Subaru,Subaru,Forester,MPV,0,80,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Subaru,Subaru,Impreza,PC,5,80,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Subaru,Subaru,Legacy,PC,50,30,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Subaru,Subaru,Outback,MPV,50,30,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Subaru,Subaru,WRX,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2025,Subaru,Subaru,Ascent,MPV,50,30,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Subaru,Subaru,BRZ,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Subaru,Subaru,Crosstrek,MPV,5,80,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Subaru,Subaru,Crosstrek,MPV,45,35,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Subaru,Subaru,Forester,MPV,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Subaru,Subaru,Impreza,PC,5,80,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Subaru,Subaru,Legacy,PC,50,30,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Subaru,Subaru,Outback,MPV,50,30,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Subaru,Subaru,WRX,PC,0,80,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2026,Subaru,Subaru,Ascent,MPV,45,30,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Subaru,Subaru,BRZ,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Subaru,Subaru,Crosstrek,MPV,45,35,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Subaru,Subaru,Crosstrek Hybrid,MPV,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Subaru,Subaru,Forester,MPV,50,30,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Subaru,Subaru,Impreza,PC,5,80,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Subaru,Subaru,Outback,MPV,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Subaru,Solterra,MPV,0,70,J,30,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Subaru,Uncharted,MPV,0,75,J,25,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2018,Subaru,Toyota,86,PC,0,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2019,Subaru,Toyota,86,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2020,Subaru,Toyota,86,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2022,Subaru,Toyota,GR86,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2023,Subaru,Toyota,GR86,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2024,Subaru,Toyota,GR86,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2025,Subaru,Toyota,GR86,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2026,Subaru,Toyota,GR86,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf

@@ -4,7 +4,7 @@
  "title": "Who Actually Makes open data",
  "description": "Who makes store-brand products, from public records: Kirkland Signature makers, companies behind store brands, NHTSA tire plant codes, tire age guidance, and the evidence behind each answer.",
  "homepage": "https://whoactuallymakes.com/data/",
- "version": "2026-11-07",
+ "version": "2026-11-08",
  "licenses": [
   {
    "name": "CC-BY-4.0",
@@ -59,8 +59,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 57109,
-   "hash": "sha256:2bb1041cfdda20a387195bbc4aa246d6e7da6fd65e052ae3331d4a6b1c3045e5",
+   "bytes": 61589,
+   "hash": "sha256:1baae6926fe5ee3c7e4f4d464cbd1807599e763734fd5f451c9958a5bd627251",
    "schema": {
     "fields": [
      {
@@ -279,7 +279,7 @@
    "mediatype": "text/csv",
    "encoding": "utf-8",
    "bytes": 54202,
-   "hash": "sha256:f934cd8ce7870970f71c65cf4cc633883cecdd7430533af68f4304c2ca3d2a24",
+   "hash": "sha256:63479a2e11b4b2169ded490c57942054c8c2c79cc7da151692646be9bddb5d16",
    "schema": {
     "fields": [
      {
@@ -609,8 +609,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 238366,
-   "hash": "sha256:6b187811787001be58ac865c234b4530df354effcaaf8b9b1f199c3f2d0aaec1",
+   "bytes": 254094,
+   "hash": "sha256:72dd5c69989ec29ac829f81d375a190ff4688bcf48c6198e65852057d2f18b10",
    "schema": {
     "fields": [
      {
@@ -1172,8 +1172,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 8001,
-   "hash": "sha256:e8f2ac2cbf41f049ccbc7c885d4789c20dfc0ff72231c04dc67225cd213417e5",
+   "bytes": 8935,
+   "hash": "sha256:39a3761f6fba6338e3cf76580ff745ece340d5a64ec1e648bac3f5dcd7ffd3fa",
    "schema": {
     "fields": [
      {
@@ -1240,8 +1240,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 6886,
-   "hash": "sha256:bc10396b0a3226e06f433b47ad41027358c9a6762e90e9299af1dcd7d218c832",
+   "bytes": 7235,
+   "hash": "sha256:5729693620c6fb3fd146ce7d392a7ec06dedd3f6ed9bb6b4d3176c2d1af70f5b",
    "schema": {
     "fields": [
      {
@@ -1410,8 +1410,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 28271,
-   "hash": "sha256:4b69f0707a62e8f90c9d66c407543f8a9062400a30af496865be89c90d5002b6",
+   "bytes": 28328,
+   "hash": "sha256:8e951e16b75fa54de48e5e0b8f747a61d9efe2ca977c8832b7f2af950e851791",
    "schema": {
     "fields": [
      {
@@ -1726,6 +1726,97 @@
     {
      "title": "https://www.fsis.usda.gov/inspection/establishments/meat-poultry-and-egg-product-inspection-directory",
      "path": "https://www.fsis.usda.gov/inspection/establishments/meat-poultry-and-egg-product-inspection-directory"
+    }
+   ]
+  },
+  {
+   "name": "car-origin-filings",
+   "path": "data/car-origin-filings.csv",
+   "title": "Subaru and Kia rows in NHTSA's AALA reports, model years 2018 on",
+   "description": "Every row for a Subaru or Kia car, by badge or by builder, in NHTSA's yearly Part 583 reports: US and Canadian parts share, top foreign parts sources, final assembly country, and engine and transmission origin.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 32854,
+   "hash": "sha256:b39aca6c0e2b0c940935fd49f1b62669a03e5f415d81d3e1052578e7243e1fdd",
+   "schema": {
+    "fields": [
+     {
+      "name": "model_year",
+      "type": "number",
+      "description": "Model year of the report"
+     },
+     {
+      "name": "manufacturer",
+      "type": "string",
+      "description": "Manufacturer column as filed"
+     },
+     {
+      "name": "make",
+      "type": "string",
+      "description": "Make column as filed"
+     },
+     {
+      "name": "carline",
+      "type": "string",
+      "description": "Carline as filed"
+     },
+     {
+      "name": "vehicle_type",
+      "type": "string",
+      "description": "PC or MPV as filed"
+     },
+     {
+      "name": "us_canada_pct",
+      "type": "number",
+      "description": "Percent US and Canadian parts by value; empty if blank"
+     },
+     {
+      "name": "foreign_1_pct",
+      "type": "number",
+      "description": "Largest foreign parts share"
+     },
+     {
+      "name": "foreign_1_country",
+      "type": "string",
+      "description": "Its country letter; empty if not printed"
+     },
+     {
+      "name": "foreign_2_pct",
+      "type": "number",
+      "description": "Second foreign parts share"
+     },
+     {
+      "name": "foreign_2_country",
+      "type": "string",
+      "description": "Its country letter"
+     },
+     {
+      "name": "final_assembly",
+      "type": "string",
+      "description": "Final assembly country letter"
+     },
+     {
+      "name": "engine",
+      "type": "string",
+      "description": "Engine origin letter"
+     },
+     {
+      "name": "transmission",
+      "type": "string",
+      "description": "Transmission origin letter"
+     },
+     {
+      "name": "report_url",
+      "type": "string",
+      "description": "The NHTSA PDF"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports",
+     "path": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
     }
    ]
   }

@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this data, please cite it as below and link to https://whoactuallymakes.com/data/"
 type: dataset
 title: "Who Actually Makes open data"
-version: "2026-11-07"
-date-released: "2026-11-07"
+version: "2026-11-08"
+date-released: "2026-11-08"
 license: CC-BY-4.0
 doi: "10.5281/zenodo.23920936"
 url: "https://whoactuallymakes.com/data/"

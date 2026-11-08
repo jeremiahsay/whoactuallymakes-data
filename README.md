@@ -4,7 +4,7 @@
 
 Who makes store-brand products, from public records. Every list behind [Who Actually Makes](https://whoactuallymakes.com/): which company each Kirkland Signature product traces to, the companies behind store brands and the labels they're on record for, every NHTSA tire plant code, what tire makers and carmakers say about tire age, and the evidence, sources, corrections and update schedule behind it all.
 
-**13 datasets · 9,464 records · version 2026-11-07** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
+**14 datasets · 9,752 records · version 2026-11-08** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
 
 Each answer on the site carries a stamp (confirmed, documented, reported or unverified) and links to the record it rests on. The evidence file keeps the exact quote, the date it was read and a SHA-256 fingerprint of the document, so anyone can check a row against its source. How the stamps work: https://whoactuallymakes.com/how-we-know/
 
@@ -12,19 +12,20 @@ Each answer on the site carries a stamp (confirmed, documented, reported or unve
 
 | Dataset | Records | Updated | Files | On the site |
 |---|---:|---|---|---|
-| [Who makes what: store-brand answers (Kirkland Signature)](#claims) | 91 | 2026-11-05 | [JSON](data/claims.json) (86 KB) · [CSV](data/claims.csv) (56 KB) | [/kirkland-signature/](https://whoactuallymakes.com/kirkland-signature/) |
+| [Who makes what: store-brand answers (Kirkland Signature)](#claims) | 97 | 2026-11-07 | [JSON](data/claims.json) (93 KB) · [CSV](data/claims.csv) (60 KB) | [/kirkland-signature/](https://whoactuallymakes.com/kirkland-signature/) |
 | [Companies behind store brands (maker pages)](#companies) | 10 | 2026-11-05 | [JSON](data/companies.json) (6 KB) · [CSV](data/companies.csv) (3 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
 | [Which store labels each company is on record for](#company-labels) | 164 | 2026-11-05 | [JSON](data/company-labels.json) (85 KB) · [CSV](data/company-labels.csv) (53 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
 | [Tire plant codes (NHTSA)](#tire-plants) | 1,246 | 2026-11-02 | [JSON](data/tire-plants.json) (149 KB) · [CSV](data/tire-plants.csv) (89 KB) | [/tire-dot-code-lookup/](https://whoactuallymakes.com/tire-dot-code-lookup/) |
 | [Tire age guidance from tire makers, carmakers and agencies](#tire-age) | 22 | 2026-11-04 | [JSON](data/tire-age.json) (34 KB) · [CSV](data/tire-age.csv) (19 KB) | [/tire-date-code/](https://whoactuallymakes.com/tire-date-code/) |
-| [Evidence records: every quote behind our answers](#evidence) | 417 | 2026-11-07 | [JSON](data/evidence.json) (314 KB) · [CSV](data/evidence.csv) (233 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
+| [Evidence records: every quote behind our answers](#evidence) | 455 | 2026-11-08 | [JSON](data/evidence.json) (337 KB) · [CSV](data/evidence.csv) (248 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
 | [Sources: the public records we use, and their limits](#sources) | 98 | 2026-11-06 | [JSON](data/sources.json) (105 KB) · [CSV](data/sources.csv) (47 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
-| [Corrections log](#corrections) | 15 | 2026-11-07 | [JSON](data/corrections.json) (11 KB) · [CSV](data/corrections.csv) (8 KB) | [/corrections/](https://whoactuallymakes.com/corrections/) |
-| [Update schedule: when each list is checked](#schedule) | 30 | 2026-11-07 | [JSON](data/schedule.json) (73 KB) · [CSV](data/schedule.csv) (7 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
+| [Corrections log](#corrections) | 17 | 2026-11-08 | [JSON](data/corrections.json) (13 KB) · [CSV](data/corrections.csv) (9 KB) | [/corrections/](https://whoactuallymakes.com/corrections/) |
+| [Update schedule: when each list is checked](#schedule) | 32 | 2026-11-08 | [JSON](data/schedule.json) (101 KB) · [CSV](data/schedule.csv) (7 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
 | [Costco diaper prices: every size at every read](#costco-diaper-prices) | 30 | 2026-11-06 | [JSON](data/costco-diaper-prices.json) (9 KB) · [CSV](data/costco-diaper-prices.csv) (4 KB) | [/costco-diapers/](https://whoactuallymakes.com/costco-diapers/) |
 | [Kirkland vs name brands: every pair and its verdict](#kirkland-vs-pairs) | 63 | 2026-11-06 | [JSON](data/kirkland-vs-pairs.json) (66 KB) · [CSV](data/kirkland-vs-pairs.csv) (28 KB) | [/kirkland-vs-name-brands/](https://whoactuallymakes.com/kirkland-vs-name-brands/) |
 | [Car battery date code rules, by brand](#battery-date-codes) | 21 | 2026-11-07 | [JSON](data/battery-date-codes.json) (86 KB) · [CSV](data/battery-date-codes.csv) (4 KB) | [/battery-date-code/](https://whoactuallymakes.com/battery-date-code/) |
 | [USDA meat, poultry and egg plants (FSIS directory)](#usda-establishments) | 7,257 | 2026-11-02 | [JSON](data/usda-establishments.json) (1621 KB) · [CSV](data/usda-establishments.csv) (1443 KB) | [/usda-establishment-number-lookup/](https://whoactuallymakes.com/usda-establishment-number-lookup/) |
+| [Subaru and Kia rows in NHTSA's AALA reports, model years 2018 on](#car-origin-filings) | 240 | 2026-11-08 | [JSON](data/car-origin-filings.json) (103 KB) · [CSV](data/car-origin-filings.csv) (32 KB) | [/where-is-subaru-made/](https://whoactuallymakes.com/where-is-subaru-made/) |
 
 <a id="claims"></a>
 
@@ -440,6 +441,39 @@ Every entry in USDA FSIS's Meat, Poultry and Egg Product Inspection Directory: t
 | `fsis_id` | text | USDA's internal ID for the plant. |
 | `lat` | number | Latitude from USDA's file. |
 | `lon` | number | Longitude from USDA's file. |
+
+</details>
+
+<a id="car-origin-filings"></a>
+
+### Subaru and Kia rows in NHTSA's AALA reports, model years 2018 on
+
+Every row for a Subaru or Kia car, by badge or by builder, in NHTSA's yearly Part 583 reports: US and Canadian parts share, top foreign parts sources, final assembly country, and engine and transmission origin.
+
+- **Limits:** A row covers a whole model line, not one car, and a line can come from two plants. Shares are averages by value, mostly rounded to 5%. Empty cells were left blank in the report. Country letters are as filed: J Japan, K Korea, M or MX Mexico, US United States, CH China. Two letters joined with + mean the report printed both.
+- **Kept fresh:** Monthly check for a new report, read in a browser
+- **Rights:** The filings are US government work. CC BY covers our table. Brand names belong to their owners.
+- **Based on:** 1 public source, listed in `catalog.json` (`based_on`)
+- **Files:** `data/car-origin-filings.json`, `data/car-origin-filings.csv` · live: https://whoactuallymakes.com/data/car-origin-filings.json
+
+<details><summary>The 14 fields</summary>
+
+| Field | Type | What it holds |
+|---|---|---|
+| `model_year` | number | Model year of the report |
+| `manufacturer` | string | Manufacturer column as filed |
+| `make` | string | Make column as filed |
+| `carline` | string | Carline as filed |
+| `vehicle_type` | string | PC or MPV as filed |
+| `us_canada_pct` | number | Percent US and Canadian parts by value; empty if blank |
+| `foreign_1_pct` | number | Largest foreign parts share |
+| `foreign_1_country` | string | Its country letter; empty if not printed |
+| `foreign_2_pct` | number | Second foreign parts share |
+| `foreign_2_country` | string | Its country letter |
+| `final_assembly` | string | Final assembly country letter |
+| `engine` | string | Engine origin letter |
+| `transmission` | string | Transmission origin letter |
+| `report_url` | string | The NHTSA PDF |
 
 </details>
 

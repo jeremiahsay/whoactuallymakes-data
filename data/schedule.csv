@@ -22,10 +22,12 @@ battery-date-code-rules,Battery date code rules from each maker,Interstate Batte
 battery-recalls,NHTSA recalls of lead-acid starter batteries,NHTSA recall reports and recall file,hand,90,false,2026-11-06,2027-02-04,One since 2010: East Penn 23E-044
 name-brand-labels,Name-brand labels compared with Kirkland,DailyMed drug labels,script,7,false,2026-11-06,2026-11-09,Labels read for the comparison pairs
 api-oil-licences,API motor oil licence listings,API Engine Oil Licensing and Certification System (EOLCS): Directory of Licensees,hand,150,false,2026-11-03,2027-04-05,"14 brands from 431 listings; 6 held by the store, 8 by Highline Warren"
-federal-rule-texts,Federal rule texts behind our code pages,Electronic Code of Federal Regulations,hand,365,false,2026-11-06,2027-11-06,14 rule texts on file
+federal-rule-texts,Federal rule texts behind our code pages,Electronic Code of Federal Regulations,hand,365,false,2026-11-06,2027-11-06,15 rule texts on file
 usda-legend-read,USDA's letter legend and size bands,"USDA FSIS Meat, Poultry and Egg Product Inspection Directory",hand,0,true,,2026-12-02,Not read yet: USDA's site and archive copies refused us on Nov 7
 kirkland-battery-offer,Kirkland battery offer ending Nov 15,Costco.com product listings,hand,0,true,,2026-11-16,
 sams-toilet-paper-offers,Sam's Club toilet paper offers ending Nov 18 and Nov 29,Sam's Club website,hand,0,true,,2026-11-30,
 costco-hot-dogs-reads,"Costco hot dogs: prices of the 12-link pack and both Dinner Franks packs, and the USDA seal in each listing photo",Costco.com product listings,hand,30,false,2026-11-07,2026-12-07,"Pack $19.99, 15 links $22.59, 120 links $125.99; EST. 18532 on two photos, empty seal on the 15-link pack"
 kirkland-laundry-reads,"Kirkland laundry detergent: prices of all eight Costco lines, the Tide offer dates, and the maker lines on each back label",Costco.com product listings,hand,30,false,2026-11-07,2026-11-16,"Kirkland liquid $18.49 warehouse, Tide $19.99 with coupon to 15 Nov; labels name only Costco"
-wam-wayback-saves,"Wayback saves: the Costco hot dogs page and its source records, plus the earlier records with no archive copy",Whiting-Turner project pages,hand,0,true,,2026-11-14,
+wam-wayback-saves,"Wayback saves: the Costco hot dogs page and its source records, plus the earlier records with no archive copy, plus the Subaru and Kia page records",Whiting-Turner project pages,hand,0,true,,2026-11-14,
+subaru-origin-reads,Where Subarus are made: NHTSA report and Subaru releases,NHTSA Part 583 American Automobile Labeling Act reports,hand,30,false,,2026-12-07,
+kia-origin-reads,Where Kias are made: NHTSA report and Kia releases,NHTSA Part 583 American Automobile Labeling Act reports,hand,30,false,,2026-12-08,

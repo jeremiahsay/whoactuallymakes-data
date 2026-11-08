@@ -1,13 +1,25 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-07",
+ "generated": "2026-11-08",
  "started": "2026-11-02",
  "count": {
-  "correction": 10,
+  "correction": 12,
   "update": 3,
   "clarification": 2
  },
  "items": [
+  {
+   "id": "c-2026-11-08-costco-diapers-title",
+   "on": "2026-11-08",
+   "kind": "correction",
+   "page": "/costco-diapers/",
+   "what": "The search title of Costco diapers",
+   "was": "The title said Kirkland diapers cost “From 13¢”, rounding up the lowest price.",
+   "now": "The lowest Kirkland price on the page was 12.5¢ a diaper, so the title now says “Under 13¢”. A whole-cent price still reads “From”.",
+   "why": "Rounding 12.5¢ up made the title name a lowest price that a cheaper size undercut. Found in our site audit.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
   {
    "id": "c-2026-11-07-motorcraft-date-code",
    "on": "2026-11-07",
@@ -17,6 +29,18 @@
    "was": "We said we found no rule from Ford or Motorcraft and showed one how-to article's rule as Reported.",
    "now": "Ford's distributor manual, on a page effective May 2005, shows a shipping date sticker on the side of the battery reading C-2 and 3-2. The decoder reads both forms as a Maker's rule, with the record's date.",
    "why": "We missed the manual on the first read; it sits in a warranty PDF, not a consumer page.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-07-kirkland-stool-softener",
+   "on": "2026-11-07",
+   "kind": "correction",
+   "page": "/kirkland-signature/medicine/",
+   "what": "Kirkland Stool Softener, on the Kirkland medicine page",
+   "was": "We said the label file named no company.",
+   "now": "The label says “Distributed by: PL Developments”, so the table names PL Developments as the distributor. That doesn't show who made it. Labels that name no company go from 3 to 2.",
+   "why": "We missed the line on the label when we read it, and found it on a re-read.",
    "flagged_by": "Our own re-check",
    "evidence": []
   },
