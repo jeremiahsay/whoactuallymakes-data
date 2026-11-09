@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-08",
- "last_change": "2026-11-08",
+ "generated": "2026-11-09",
+ "last_change": "2026-11-09",
  "cadence_months": {
   "confirmed": 12,
   "documented": 6,
@@ -24,9 +24,9 @@
    "file_url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetEquipmentPlantCodes?year=2016&equipmentType=1&reportType=All&format=json",
    "hand_note": null,
    "once": false,
-   "last": "2026-11-02",
-   "due": "2026-11-09",
-   "result": "1,246 entries; no changes since the previous pull"
+   "last": "2026-11-09",
+   "due": "2026-11-16",
+   "result": "1,246 entries; 1 change since the previous pull"
   },
   {
    "id": "usda-establishments",
@@ -63,8 +63,8 @@
    "file_url": null,
    "hand_note": null,
    "once": false,
-   "last": "2026-11-02",
-   "due": "2026-11-09",
+   "last": "2026-11-09",
+   "due": "2026-11-16",
    "result": "38 recalls waiting for review"
   },
   {
@@ -82,9 +82,9 @@
    "file_url": null,
    "hand_note": null,
    "once": false,
-   "last": "2026-11-05",
-   "due": "2026-11-12",
-   "result": "47 labels read; a change is flagged for a person"
+   "last": "2026-11-09",
+   "due": "2026-11-16",
+   "result": "50 Costco labels; 0 to review"
   },
   {
    "id": "tire-age-guidance",
@@ -368,7 +368,7 @@
    "hand_note": "Read Costco.com search pages in a browser, one at a time. Update shelf in data/guidance/kirkland-vs.json.",
    "once": false,
    "last": "2026-11-06",
-   "due": "2026-12-06",
+   "due": "2026-12-09",
    "result": "Four pairs read; OxiClean is warehouse-only with no price shown"
   },
   {
@@ -424,9 +424,9 @@
    "file_url": null,
    "hand_note": null,
    "once": false,
-   "last": "2026-11-06",
-   "due": "2026-11-13",
-   "result": "Labels read for the comparison pairs"
+   "last": "2026-11-09",
+   "due": "2026-11-16",
+   "result": "Label files refreshed"
   },
   {
    "id": "api-oil-licences",
@@ -563,7 +563,7 @@
   },
   {
    "id": "wam-wayback-saves",
-   "what": "Wayback saves: the Costco hot dogs page and its source records, plus the earlier records with no archive copy, plus the Subaru and Kia page records, plus the 8 Nov maker-page records (Kimberly-Clark releases, MISA, Duracell articles, East Penn, First Quality)",
+   "what": "Wayback saves for every evidence record with no archive copy yet, saved by the jobs server",
    "gives": "Archived copy links on the evidence records",
    "how": "hand",
    "every_days": 0,
@@ -574,7 +574,7 @@
     "url": "https://www.whiting-turner.com/"
    },
    "file_url": null,
-   "hand_note": "Wayback's save returned 429 from this Mac on Nov 7, by script and in Chrome. Run tools/archive.py one URL at a time, stop at the first 429, and paste archive_url into the record. Skip Costco URLs.",
+   "hand_note": "Since 8 Nov the jobs server saves them (jobs/wam-wayback.sh, hourly, 50-minute turns, stops at a 429; Wayback refuses the Mac). On this date, check ~/jobs/status/wam-wayback.json says \"nothing left to save\" and python3 tools/validate.py shows no archive warnings except Costco and Sam's Club, which refuse archiving, and the URLs Wayback saved as some other page (eCFR's bot wall, one bgr.com story: marked \"refused\" in ~/jobs/data/wam-wayback/out.jsonl, never retried). Those need a copy found another way (eCFR: the govinfo annual edition PDF).",
    "once": true,
    "last": null,
    "due": "2026-11-14",
@@ -1858,6 +1858,7 @@
    "next_check": "2026-12-08",
    "last_check": "2026-11-08",
    "name": "Kirkland Signature driver",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/golf-clubs/"
   },
   {
@@ -1867,6 +1868,7 @@
    "next_check": "2026-12-08",
    "last_check": "2026-11-08",
    "name": "Kirkland Signature Performance+ golf ball",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/golf-balls/"
   },
   {
@@ -1876,6 +1878,7 @@
    "next_check": "2026-12-08",
    "last_check": "2026-11-08",
    "name": "Kirkland Signature Tour Performance golf ball",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/golf-balls/"
   },
   {
@@ -1885,6 +1888,7 @@
    "next_check": "2027-02-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Baby Wipes, Fragrance Free",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/diapers/"
   },
   {
@@ -1894,6 +1898,7 @@
    "next_check": "2027-02-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Bath Tissue, 380 sheets",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/toilet-paper/"
   },
   {
@@ -1903,6 +1908,7 @@
    "next_check": "2027-02-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature diapers, sizes 1 to 7",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/diapers/"
   },
   {
@@ -1912,6 +1918,7 @@
    "next_check": "2027-02-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature diapers, sizes 1 to 7",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/diapers/"
   },
   {
@@ -1921,6 +1928,7 @@
    "next_check": "2027-02-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature diapers, sizes 1 to 7",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/diapers/"
   },
   {
@@ -1930,6 +1938,7 @@
    "next_check": "2027-02-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Facial Tissue, 3-ply",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/toilet-paper/"
   },
   {
@@ -1939,6 +1948,7 @@
    "next_check": "2027-02-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Ultra Soft Bath Tissue, 231 sheets",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/toilet-paper/"
   },
   {
@@ -1948,6 +1958,7 @@
    "next_check": "2027-02-08",
    "last_check": "2026-11-08",
    "name": "Kirkland Signature bourbon",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/bourbon/"
   },
   {
@@ -1957,6 +1968,7 @@
    "next_check": "2027-02-08",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature bourbon",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/bourbon/"
   },
   {
@@ -1966,6 +1978,7 @@
    "next_check": "2027-02-08",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature bourbon",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/bourbon/"
   },
   {
@@ -1975,6 +1988,7 @@
    "next_check": "2027-02-08",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature vodka (France)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/vodka/"
   },
   {
@@ -1984,6 +1998,7 @@
    "next_check": "2027-02-08",
    "last_check": "2026-11-08",
    "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/tequila/"
   },
   {
@@ -1993,6 +2008,7 @@
    "next_check": "2027-02-08",
    "last_check": "2026-11-08",
    "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/tequila/"
   },
   {
@@ -2002,6 +2018,7 @@
    "next_check": "2027-02-08",
    "last_check": "2026-11-08",
    "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/tequila/"
   },
   {
@@ -2011,6 +2028,7 @@
    "next_check": "2027-02-08",
    "last_check": "2026-11-08",
    "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/tequila/"
   },
   {
@@ -2020,6 +2038,7 @@
    "next_check": "2027-02-08",
    "last_check": "2026-11-08",
    "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/tequila/"
   },
   {
@@ -2029,6 +2048,7 @@
    "next_check": "2027-02-08",
    "last_check": "2026-11-08",
    "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/tequila/"
   },
   {
@@ -2038,6 +2058,7 @@
    "next_check": "2027-02-08",
    "last_check": "2026-11-08",
    "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/tequila/"
   },
   {
@@ -2047,6 +2068,7 @@
    "next_check": "2027-02-08",
    "last_check": "2026-11-08",
    "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/tequila/"
   },
   {
@@ -2056,6 +2078,7 @@
    "next_check": "2027-02-08",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature American Vodka",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/vodka/"
   },
   {
@@ -2065,6 +2088,7 @@
    "next_check": "2027-02-08",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature American Vodka",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/vodka/"
   },
   {
@@ -2074,6 +2098,7 @@
    "next_check": "2027-02-08",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature American Vodka",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/vodka/"
   },
   {
@@ -2083,6 +2108,7 @@
    "next_check": "2027-02-08",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature American Vodka",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/vodka/"
   },
   {
@@ -2092,6 +2118,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature Solid White Albacore Tuna",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/"
   },
   {
@@ -2101,6 +2128,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature Aller-Fex (fexofenadine)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2110,6 +2138,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature Ultra Strength Antacid",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2119,6 +2148,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature dog biscuits",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/dog-food/"
   },
   {
@@ -2128,6 +2158,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature Sweet Cream Butter",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/"
   },
   {
@@ -2137,6 +2168,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature dry cat food",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/cat-food/"
   },
   {
@@ -2146,6 +2178,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature dry cat food",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/cat-food/"
   },
   {
@@ -2155,6 +2188,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature Colombian Cold Brew Coffee",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/coffee/"
   },
   {
@@ -2164,6 +2198,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Severe Cold & Flu Plus Congestion",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2173,6 +2208,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-08",
    "name": "Kirkland Signature Decaf House Blend coffee",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/coffee/"
   },
   {
@@ -2182,6 +2218,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature dental chews for dogs",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/dog-food/"
   },
   {
@@ -2191,6 +2228,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature heavy-duty diesel engine oil (15W-40)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/motor-oil/"
   },
   {
@@ -2200,6 +2238,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature heavy-duty diesel engine oil (15W-40)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/motor-oil/"
   },
   {
@@ -2209,6 +2248,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature dry dog food",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/dog-food/"
   },
   {
@@ -2218,6 +2258,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature dry dog food",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/dog-food/"
   },
   {
@@ -2227,6 +2268,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature Organic Pasture-Raised Eggs",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/"
   },
   {
@@ -2236,6 +2278,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature Four-Piece Urethane golf ball (2016)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/golf-balls/"
   },
   {
@@ -2245,6 +2288,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature irons (2023)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/golf-clubs/"
   },
   {
@@ -2254,6 +2298,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature Performance One golf ball (2017)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/golf-balls/"
   },
   {
@@ -2263,6 +2308,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature wedges (2020)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/golf-clubs/"
   },
   {
@@ -2272,6 +2318,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature chicken jerky treats for dogs",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/dog-food/"
   },
   {
@@ -2281,6 +2328,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-08",
    "name": "Kirkland Signature motor oil",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/motor-oil/"
   },
   {
@@ -2290,6 +2338,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature peanut butter",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/"
   },
   {
@@ -2299,6 +2348,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature Sandwich Rolls",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/"
   },
   {
@@ -2308,6 +2358,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature Smoked Salmon",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/"
   },
   {
@@ -2317,6 +2368,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature Organic Soy Non-Dairy Beverage",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/"
   },
   {
@@ -2326,6 +2378,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature Three Berry Blend (frozen)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/"
   },
   {
@@ -2335,6 +2388,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature wet cat food",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/cat-food/"
   },
   {
@@ -2344,6 +2398,7 @@
    "next_check": "2027-05-03",
    "last_check": "2026-11-03",
    "name": "Kirkland Signature wet dog food",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/dog-food/"
   },
   {
@@ -2353,6 +2408,7 @@
    "next_check": "2027-05-04",
    "last_check": "2026-11-04",
    "name": "Interstate car and truck batteries sold at Costco",
+   "brand": "interstate",
    "page": "/costco-car-batteries/"
   },
   {
@@ -2362,6 +2418,7 @@
    "next_check": "2027-05-04",
    "last_check": "2026-11-04",
    "name": "Kirkland Signature Alkaline AA batteries (48-count)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/batteries/"
   },
   {
@@ -2371,6 +2428,7 @@
    "next_check": "2027-05-04",
    "last_check": "2026-11-04",
    "name": "Kirkland Signature Alkaline AAA batteries (48-count)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/batteries/"
   },
   {
@@ -2380,6 +2438,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Aller-Fex (fexofenadine)",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2389,6 +2448,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Acetaminophen",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2398,6 +2458,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Acetaminophen PM",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2407,6 +2468,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Acid Controller",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2416,6 +2478,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Aller-Flo",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2425,6 +2488,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Aller-Tec",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2434,6 +2498,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature AllerClear",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2443,6 +2508,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature AllerClear D 12 Hour",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2452,6 +2518,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature AllerClear D 24 Hour",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2461,6 +2528,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature AllerClear D 24 Hour",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2470,6 +2538,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Allergy Medicine",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2479,6 +2548,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Arthritis Pain Relief",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2488,6 +2558,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Arthritis Pain Reliever",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2497,6 +2568,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Children's Aller-Tec",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2506,6 +2578,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Esomeprazole Magnesium",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2515,6 +2588,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Ibuprofen IB",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2524,6 +2598,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Ibuprofen Minis",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2533,6 +2608,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Ibuprofen Softgels",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2542,6 +2618,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Ibuprofen Tablets",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2551,6 +2628,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Ibuprofen Tablets",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2560,6 +2638,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Ibuprofen Tablets",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2569,6 +2648,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Lansoprazole",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2578,6 +2658,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Low Dose Aspirin",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2587,6 +2668,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Minoxidil Foam",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2596,6 +2678,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Minoxidil Solution",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2605,6 +2688,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Mucus DM",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2614,6 +2698,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Naproxen Sodium",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2623,6 +2708,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Omeprazole",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2632,6 +2718,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Quit 2 Cherry Lozenge",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2641,6 +2728,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Quit 2 Gum",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2650,6 +2738,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Quit 2 Gum",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2659,6 +2748,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Quit 2 Lozenge",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2668,6 +2758,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Quit 4 Cherry Lozenge",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2677,6 +2768,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Quit 4 Gum",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2686,6 +2778,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Quit 4 Gum",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2695,6 +2788,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Quit 4 Lozenge",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2704,6 +2798,7 @@
    "next_check": "2027-05-05",
    "last_check": "2026-11-05",
    "name": "Kirkland Signature Sleep Aid",
+   "brand": "kirkland-signature",
    "page": "/kirkland-signature/medicine/"
   },
   {
@@ -2713,6 +2808,7 @@
    "next_check": "2027-05-07",
    "last_check": "2026-11-07",
    "name": "Kirkland Signature Ultra Liquid Fabric Softener",
+   "brand": "kirkland-signature",
    "page": "/kirkland-laundry-detergent/"
   },
   {
@@ -2722,6 +2818,7 @@
    "next_check": "2027-05-07",
    "last_check": "2026-11-07",
    "name": "Kirkland Signature Beef Dinner Franks, Quarter Pound Plus (the Costco food court hot dog)",
+   "brand": "kirkland-signature",
    "page": "/costco-hot-dogs/"
   },
   {
@@ -2731,6 +2828,7 @@
    "next_check": "2027-05-07",
    "last_check": "2026-11-07",
    "name": "Kirkland Signature Ultra Clean Laundry Detergent Pacs",
+   "brand": "kirkland-signature",
    "page": "/kirkland-laundry-detergent/"
   },
   {
@@ -2740,7 +2838,1788 @@
    "next_check": "2027-05-07",
    "last_check": "2026-11-07",
    "name": "Kirkland Signature Ultra Clean Laundry Detergent Pacs",
+   "brand": "kirkland-signature",
    "page": "/kirkland-laundry-detergent/"
+  },
+  {
+   "id": "c-aldi-bagged-salads-dole-fresh-vegetables",
+   "product": "aldi-bagged-salads",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Aldi bagged salads and salad kits",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-bake-shop-loaf-cake-gold-coast-bakery",
+   "product": "aldi-bake-shop-loaf-cake",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Bake Shop lemon loaf cake",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-bakers-corner-pudding-subco-foods",
+   "product": "aldi-bakers-corner-pudding",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Baker's Corner instant pudding",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-bakers-treats-swiss-rolls-flowers-foods",
+   "product": "aldi-bakers-treats-swiss-rolls",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Baker's Treats Swiss rolls",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-belmont-ice-cream-house-of-flavors",
+   "product": "aldi-belmont-ice-cream",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Belmont premium ice cream",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-bentons-cookies-interbake-foods",
+   "product": "aldi-bentons-cookies",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Benton's fudge covered peanut butter cookies",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-bremer-meals-gourmet-express",
+   "product": "aldi-bremer-meals",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Bremer frozen skillet meals",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-casa-mamita-taco-kit-teasdale-foods",
+   "product": "aldi-casa-mamita-taco-kit",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Casa Mamita Soft Taco Dinner Kit",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-cheese-ball-parkers-farm",
+   "product": "aldi-cheese-ball",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Aldi cheddar cheese ball and cold pack cheese",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-cheese-club-mac-and-cheese-fourth-street-barbeque",
+   "product": "aldi-cheese-club-mac-and-cheese",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Cheese Club macaroni and cheese bowls",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-choceur-chocolate-astor-chocolate",
+   "product": "aldi-choceur-chocolate",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Choceur chocolate bars",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-clancys-cheesemelt-great-lakes-cheese",
+   "product": "aldi-clancys-cheesemelt",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Clancy's CheeseMelt",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-emporium-selection-brie-savencia-cheese-usa",
+   "product": "aldi-emporium-selection-brie",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Emporium Selection Brie",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-fit-active-stuffed-sandwiches-jj-snack-foods",
+   "product": "aldi-fit-active-stuffed-sandwiches",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Fit & Active stuffed sandwiches",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-friendly-farms-cottage-cheese-hp-hood",
+   "product": "aldi-friendly-farms-cottage-cheese",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Friendly Farms cottage cheese",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-friendly-farms-greek-yogurt-ehrmann-arizona-dairy",
+   "product": "aldi-friendly-farms-greek-yogurt",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Friendly Farms Greek yogurt",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-fusia-spring-rolls-tai-foong-usa",
+   "product": "aldi-fusia-spring-rolls",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Fusia Asian Inspirations Veggie Spring Rolls",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-happy-farms-cream-cheese-schreiber-foods",
+   "product": "aldi-happy-farms-cream-cheese",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Happy Farms cream cheese spreads",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-happy-farms-shredded-cheese-great-lakes-cheese",
+   "product": "aldi-happy-farms-shredded-cheese",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Happy Farms shredded cheese",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-happy-harvest-beets-seneca-foods",
+   "product": "aldi-happy-harvest-beets",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Happy Harvest sliced pickled beets",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-happy-harvest-spinach-mccall-farms",
+   "product": "aldi-happy-harvest-spinach",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Happy Harvest canned leaf spinach",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-little-salad-bar-deli-salads-resers-fine-foods",
+   "product": "aldi-little-salad-bar-deli-salads",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Little Salad Bar potato salad, macaroni salad and coleslaw",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-little-salad-bar-salads-dole-fresh-vegetables",
+   "product": "aldi-little-salad-bar-salads",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Little Salad Bar coleslaw and salad bowls",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-little-salad-bar-salads-ready-pac-foods",
+   "product": "aldi-little-salad-bar-salads",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Little Salad Bar coleslaw and salad bowls",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-livegfree-buns-silver-hills-bakery",
+   "product": "aldi-livegfree-buns",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "liveGfree gluten free hamburger buns",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-livegfree-pancakes-american-waffle",
+   "product": "aldi-livegfree-pancakes",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "liveGfree gluten free pancakes",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-loven-fresh-12-grain-bread-bimbo-bakeries-usa",
+   "product": "aldi-loven-fresh-12-grain-bread",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "L'Oven Fresh 12 grain bread",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-loven-fresh-keto-wraps-rise-baking-company",
+   "product": "aldi-loven-fresh-keto-wraps",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "L'Oven Fresh Keto Friendly tortilla wraps",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-macaroni-salad-resers-fine-foods",
+   "product": "aldi-macaroni-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Aldi macaroni salad, 32 oz",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-millville-granola-new-england-natural-bakers",
+   "product": "aldi-millville-granola",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Millville Fruit & Nut granola",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-mixed-sourdough-izzio-artisan-bakery",
+   "product": "aldi-mixed-sourdough",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Aldi mixed sourdough loaf",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-natures-nectar-apple-cider-mayer-brothers",
+   "product": "aldi-natures-nectar-apple-cider",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Nature's Nectar apple cider",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-natures-nectar-orange-juice-citrus-systems",
+   "product": "aldi-natures-nectar-orange-juice",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Nature's Nectar orange juice",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-northern-catch-oysters-camerican-international",
+   "product": "aldi-northern-catch-oysters",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Northern Catch whole oysters",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-reeva-hand-soap-us-soaps",
+   "product": "aldi-reeva-hand-soap",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Reeva antibacterial hand soap and dish liquid",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-reggano-pasta-meals-treehouse-foods",
+   "product": "aldi-reggano-pasta-meals",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Reggano pasta meals",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-seasons-choice-frozen-fruit-sunopta",
+   "product": "aldi-seasons-choice-frozen-fruit",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Season's Choice frozen fruit",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-seasons-choice-frozen-fruit-wawona-frozen-foods",
+   "product": "aldi-seasons-choice-frozen-fruit",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Season's Choice frozen fruit",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-seasons-choice-frozen-vegetables-camerican-international",
+   "product": "aldi-seasons-choice-frozen-vegetables",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Season's Choice frozen vegetables",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-simply-nature-frozen-strawberries-scenic-fruit-company",
+   "product": "aldi-simply-nature-frozen-strawberries",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Simply Nature organic frozen strawberries",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-southern-grove-almonds-kanan-enterprises",
+   "product": "aldi-southern-grove-almonds",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Southern Grove almonds",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-specially-selected-creme-brulee-lactalis-canada",
+   "product": "aldi-specially-selected-creme-brulee",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Specially Selected Vanilla Crème Brûlée",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-specially-selected-granola-oakhouse-bakery",
+   "product": "aldi-specially-selected-granola",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Specially Selected Paleo Granola",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-specially-selected-smoked-salmon-ocean-beauty-seafoods",
+   "product": "aldi-specially-selected-smoked-salmon",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Specially Selected hot smoked salmon",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-sundae-shoppe-cones-mister-cookie-face",
+   "product": "aldi-sundae-shoppe-cones",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Sundae Shoppe ice cream cones",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-tuscan-garden-ranch-richelieu-foods",
+   "product": "aldi-tuscan-garden-ranch",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Tuscan Garden Ranch Dressing",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-aldi-veggie-burgers-dr-praegers",
+   "product": "aldi-veggie-burgers",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Aldi veggie burgers",
+   "brand": "aldi",
+   "page": "/aldi/"
+  },
+  {
+   "id": "c-mm-bourbon-and-american-whiskey-buffalo-trace-distillery",
+   "product": "mm-bourbon-and-american-whiskey",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Bourbon and American whiskey",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-bourbon-and-american-whiskey-sazerac-company",
+   "product": "mm-bourbon-and-american-whiskey",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Bourbon and American whiskey",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-canadian-whisky-buffalo-trace-distillery",
+   "product": "mm-canadian-whisky",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Canadian whisky",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-canadian-whisky-frank-lin-distillers-products",
+   "product": "mm-canadian-whisky",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Canadian whisky",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-canadian-whisky-sazerac-company",
+   "product": "mm-canadian-whisky",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Canadian whisky",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-cognac-aftermath-wine-spirits",
+   "product": "mm-cognac",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Cognac",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-cognac-mack-schuhle",
+   "product": "mm-cognac",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Cognac",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-colby-jack-schreiber-foods",
+   "product": "mm-colby-jack",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Colby & Monterey Jack Cheese",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-cookie-dough-rise-baking-company",
+   "product": "mm-cookie-dough",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Chocolate Chunk Cookie Dough",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-dessert-wine-and-port-delicato",
+   "product": "mm-dessert-wine-and-port",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Dessert wine and port",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-dessert-wine-and-port-e-j-gallo-winery",
+   "product": "mm-dessert-wine-and-port",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Dessert wine and port",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-dessert-wine-and-port-francis-coppola-winery",
+   "product": "mm-dessert-wine-and-port",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Dessert wine and port",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-dessert-wine-and-port-herman-ehlers-sons",
+   "product": "mm-dessert-wine-and-port",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Dessert wine and port",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-dessert-wine-and-port-infinity-bottling",
+   "product": "mm-dessert-wine-and-port",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Dessert wine and port",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-dessert-wine-and-port-mendocino-wine-group",
+   "product": "mm-dessert-wine-and-port",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Dessert wine and port",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-dessert-wine-and-port-plata-wine-partners",
+   "product": "mm-dessert-wine-and-port",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Dessert wine and port",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-dessert-wine-and-port-raymond-vineyard-cellar",
+   "product": "mm-dessert-wine-and-port",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Dessert wine and port",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-dessert-wine-and-port-rb-wine-associates",
+   "product": "mm-dessert-wine-and-port",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Dessert wine and port",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-dessert-wine-and-port-ste-michelle-wine-estates",
+   "product": "mm-dessert-wine-and-port",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Dessert wine and port",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-dessert-wine-and-port-terravant-wine-company",
+   "product": "mm-dessert-wine-and-port",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Dessert wine and port",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-dessert-wine-and-port-the-wine-group",
+   "product": "mm-dessert-wine-and-port",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Dessert wine and port",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-fexofenadine-aurolife-pharma",
+   "product": "mm-fexofenadine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Fexofenadine 180 mg",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-flavored-vodka-buffalo-trace-distillery",
+   "product": "mm-flavored-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Flavored vodka",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-flavored-vodka-cardinal-spirits",
+   "product": "mm-flavored-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Flavored vodka",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-flavored-vodka-sazerac-company",
+   "product": "mm-flavored-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Flavored vodka",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-flavored-vodka-temperance-distilling-company",
+   "product": "mm-flavored-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Flavored vodka",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-flavored-vodka-united-states-distilled-products",
+   "product": "mm-flavored-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Flavored vodka",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-flavored-wine-mr-boston-brands",
+   "product": "mm-flavored-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Flavored wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-flavored-wine-sazerac-company",
+   "product": "mm-flavored-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Flavored wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-flavored-wine-united-states-distilled-products",
+   "product": "mm-flavored-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Flavored wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-freeze-dried-fruit-doehler-north-america",
+   "product": "mm-freeze-dried-fruit",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Freeze Dried Fruit Variety Pack",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-gas-grills-2000-grand-hall",
+   "product": "mm-gas-grills-2000",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Gas Grills (sold 2000–2001)",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-gas-grills-2001-grand-hall",
+   "product": "mm-gas-grills-2001",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Gas Grills (sold 2001–2002)",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-gin-sazerac-company",
+   "product": "mm-gin",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Gin",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-hamburger-buns-flowers-foods",
+   "product": "mm-hamburger-buns",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Hamburger Buns",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-hard-cooked-eggs-almark-foods",
+   "product": "mm-hard-cooked-eggs",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Hard-Cooked Eggs",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-irish-whiskey-mack-schuhle",
+   "product": "mm-irish-whiskey",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Irish whiskey",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-kids-pajamas-hansoll-textile",
+   "product": "mm-kids-pajamas",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Children’s Pajama Sets",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-lighted-buck-seasonal-specialties",
+   "product": "mm-lighted-buck",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark 7’ Pre-Lit Twinkling Buck",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-liqueurs-mack-schuhle",
+   "product": "mm-liqueurs",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Liqueurs",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-liqueurs-united-states-distilled-products",
+   "product": "mm-liqueurs",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Liqueurs",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-macarons-sublime-desserts",
+   "product": "mm-macarons",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Holiday Macarons",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-margaritas-and-cocktails-buffalo-trace-distillery",
+   "product": "mm-margaritas-and-cocktails",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Margaritas and cocktails",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-margaritas-and-cocktails-mack-schuhle",
+   "product": "mm-margaritas-and-cocktails",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Margaritas and cocktails",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-margaritas-and-cocktails-sazerac-company",
+   "product": "mm-margaritas-and-cocktails",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Margaritas and cocktails",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-margaritas-and-cocktails-united-states-distilled-products",
+   "product": "mm-margaritas-and-cocktails",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Margaritas and cocktails",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-acetaminophen-extra-strength-lnk-international",
+   "product": "mm-med-acetaminophen-extra-strength",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Acetaminophen Extra Strength",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-acetaminophen-granules",
+   "product": "mm-med-acetaminophen",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Acetaminophen",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-acetaminophen-lnk-international",
+   "product": "mm-med-acetaminophen",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Acetaminophen",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-acetaminophen-pm-extra-strength-lnk-international",
+   "product": "mm-med-acetaminophen-pm-extra-strength",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Acetaminophen PM Extra Strength",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-acid-reducer-famotidine-perrigo",
+   "product": "mm-med-acid-reducer-famotidine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Acid Reducer (famotidine)",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-allergy-relief-perrigo",
+   "product": "mm-med-allergy-relief",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Allergy Relief",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-arthritis-pain-perrigo",
+   "product": "mm-med-arthritis-pain",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Arthritis Pain",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-arthritis-pain-reliever-perrigo",
+   "product": "mm-med-arthritis-pain-reliever",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Arthritis Pain Reliever",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-aspirin-low-dose-lnk-international",
+   "product": "mm-med-aspirin-low-dose",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Aspirin Low Dose",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-children-s-cetirizine-solution-perrigo",
+   "product": "mm-med-children-s-cetirizine-solution",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Children’s Cetirizine Solution",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-diaper-rash-cream-apollo-health-beauty",
+   "product": "mm-med-diaper-rash-cream",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Diaper Rash Cream",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-docusate-sodium-aurohealth",
+   "product": "mm-med-docusate-sodium",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Docusate Sodium",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-esomeprazole-magnesium-perrigo",
+   "product": "mm-med-esomeprazole-magnesium",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Esomeprazole Magnesium",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-ethyl-alcohol-apollo-health-beauty",
+   "product": "mm-med-ethyl-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Ethyl Alcohol",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-fluticasone-propionate-spray-apotex",
+   "product": "mm-med-fluticasone-propionate-spray",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Fluticasone Propionate Spray",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-gentle-dandruff-shampoo-apollo-health-beauty",
+   "product": "mm-med-gentle-dandruff-shampoo",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Gentle Dandruff Shampoo",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-guaifenesin-and-dextromethorphan-hydrobromide-reckitt",
+   "product": "mm-med-guaifenesin-and-dextromethorphan-hydrobromide",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Guaifenesin And Dextromethorphan Hydrobromide",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-guaifenesin-and-dextromethorphan-hydrobromide-sun-pharma",
+   "product": "mm-med-guaifenesin-and-dextromethorphan-hydrobromide",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Guaifenesin And Dextromethorphan Hydrobromide",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-guaifenesin-aurohealth",
+   "product": "mm-med-guaifenesin",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Guaifenesin",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-guaifenesin-extended-release-ohm-laboratories",
+   "product": "mm-med-guaifenesin-extended-release",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Guaifenesin Extended Release",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-guaifenesin-extended-release-reckitt",
+   "product": "mm-med-guaifenesin-extended-release",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Guaifenesin Extended Release",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-guaifenesin-granules",
+   "product": "mm-med-guaifenesin",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Guaifenesin",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-hair-regrowth-treatment-foam-perrigo",
+   "product": "mm-med-hair-regrowth-treatment-foam",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Hair Regrowth Treatment Foam",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-hair-regrowth-treatment-solution-perrigo",
+   "product": "mm-med-hair-regrowth-treatment-solution",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Hair Regrowth Treatment Solution",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-ibuprofen-humanwell-puracap",
+   "product": "mm-med-ibuprofen",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Ibuprofen",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-ibuprofen-lnk-international",
+   "product": "mm-med-ibuprofen",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Ibuprofen",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-lansoprazole-mylan",
+   "product": "mm-med-lansoprazole",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Lansoprazole",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-lansoprazole-perrigo",
+   "product": "mm-med-lansoprazole",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Lansoprazole",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-mini-nicotine-lozenge-perrigo",
+   "product": "mm-med-mini-nicotine-lozenge",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Mini Nicotine Lozenge",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-mucus-relief-dm-dr-reddys",
+   "product": "mm-med-mucus-relief-dm",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Mucus Relief DM",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-mucus-relief-dm-perrigo",
+   "product": "mm-med-mucus-relief-dm",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Mucus Relief DM",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-nicotine-gum-perrigo",
+   "product": "mm-med-nicotine-gum",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Nicotine Gum",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-nicotine-lozenge-perrigo",
+   "product": "mm-med-nicotine-lozenge",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Nicotine Lozenge",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-omeprazole-dexcel-pharma",
+   "product": "mm-med-omeprazole",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Omeprazole",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-med-pseudoephedrine-hydrochloride-ohm-laboratories",
+   "product": "mm-med-pseudoephedrine-hydrochloride",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Pseudoephedrine Hydrochloride",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-motor-oil-highline-warren",
+   "product": "mm-motor-oil",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Full Synthetic Motor Oil",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-mozzarella-sticks-rich-products",
+   "product": "mm-mozzarella-sticks",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Breaded Mozzarella Sticks",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-pet-food-diamond-pet-foods",
+   "product": "mm-pet-food",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark dog food, cat food and dental treats",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-poultry-lufkin-pilgrims-pride",
+   "product": "mm-poultry-lufkin",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark poultry",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-prepared-meals-knoxville-elevation-foods",
+   "product": "mm-prepared-meals-knoxville",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark meat and poultry items",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-raw-shrimp-az-gems",
+   "product": "mm-raw-shrimp",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Jumbo Raw Shrimp",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-red-pepper-hummus-cedars-mediterranean",
+   "product": "mm-red-pepper-hummus",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Roasted Red Pepper Hummus",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-red-wine-aftermath-wine-spirits",
+   "product": "mm-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Red wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-red-wine-e-j-gallo-winery",
+   "product": "mm-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Red wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-red-wine-fetzer-vineyards",
+   "product": "mm-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Red wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-red-wine-francis-coppola-winery",
+   "product": "mm-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Red wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-red-wine-infinity-bottling",
+   "product": "mm-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Red wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-red-wine-latitude-wines",
+   "product": "mm-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Red wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-red-wine-mack-schuhle",
+   "product": "mm-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Red wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-red-wine-the-wine-group",
+   "product": "mm-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Red wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-red-wine-united-states-distilled-products",
+   "product": "mm-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Red wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-red-wine-winery-exchange",
+   "product": "mm-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Red wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-ros-wine-aftermath-wine-spirits",
+   "product": "mm-ros-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Rosé wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-ros-wine-intercontinental-packaging-company",
+   "product": "mm-ros-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Rosé wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-ros-wine-latitude-wines",
+   "product": "mm-ros-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Rosé wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-ros-wine-united-states-distilled-products",
+   "product": "mm-ros-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Rosé wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-rum-buffalo-trace-distillery",
+   "product": "mm-rum",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Rum",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-rum-distillers-way",
+   "product": "mm-rum",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Rum",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-rum-sazerac-company",
+   "product": "mm-rum",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Rum",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-rum-united-states-distilled-products",
+   "product": "mm-rum",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Rum",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-scotch-whisky-mack-schuhle",
+   "product": "mm-scotch-whisky",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Scotch whisky",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-scotch-whisky-sazerac-company",
+   "product": "mm-scotch-whisky",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Scotch whisky",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-scotch-whisky-united-states-distilled-products",
+   "product": "mm-scotch-whisky",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Scotch whisky",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-self-rising-flour-ardent-mills",
+   "product": "mm-self-rising-flour",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Self-Rising Flour",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-shredded-cheddar-biery-cheese",
+   "product": "mm-shredded-cheddar",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Shredded Mild Cheddar",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-sparkling-wine-intercontinental-packaging-company",
+   "product": "mm-sparkling-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Sparkling wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-sparkling-wine-mack-schuhle",
+   "product": "mm-sparkling-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Sparkling wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-sparkling-wine-united-states-distilled-products",
+   "product": "mm-sparkling-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Sparkling wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-super-greens-merical",
+   "product": "mm-super-greens",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Super Greens",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-tequila-mack-schuhle",
+   "product": "mm-tequila",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Tequila",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-tequila-mexcor",
+   "product": "mm-tequila",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Tequila",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-tequila-sazerac-company",
+   "product": "mm-tequila",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Tequila",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-tomato-paste-pacific-coast-producers",
+   "product": "mm-tomato-paste",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Tomato Paste",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-vodka-buffalo-trace-distillery",
+   "product": "mm-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Vodka",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-vodka-sazerac-company",
+   "product": "mm-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark Vodka",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-white-wine-awdirect",
+   "product": "mm-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark White wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-white-wine-delicato",
+   "product": "mm-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark White wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-white-wine-infinity-bottling",
+   "product": "mm-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark White wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-white-wine-intercontinental-packaging-company",
+   "product": "mm-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark White wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-white-wine-mack-schuhle",
+   "product": "mm-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark White wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-white-wine-plata-wine-partners",
+   "product": "mm-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark White wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-white-wine-rb-wine-associates",
+   "product": "mm-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark White wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-white-wine-the-wine-group",
+   "product": "mm-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark White wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-white-wine-united-states-distilled-products",
+   "product": "mm-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark White wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
+  },
+  {
+   "id": "c-mm-white-wine-winery-exchange",
+   "product": "mm-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Member’s Mark White wine",
+   "brand": "members-mark",
+   "page": "/members-mark/"
   },
   {
    "id": "c-ks-beef-hot-dogs-tracy",
@@ -2749,6 +4628,7 @@
    "next_check": "2027-11-07",
    "last_check": "2026-11-07",
    "name": "Kirkland Signature Beef Hot Dogs",
+   "brand": "kirkland-signature",
    "page": "/costco-hot-dogs/"
   },
   {
@@ -2758,19 +4638,20 @@
    "next_check": "2027-11-07",
    "last_check": "2026-11-07",
    "name": "Kirkland Signature Beef Dinner Franks, Quarter Pound Plus (the Costco food court hot dog)",
+   "brand": "kirkland-signature",
    "page": "/costco-hot-dogs/"
   }
  ],
  "pages": [
   {
    "path": "/tire-dot-code-lookup/",
-   "changed": "2026-11-02",
-   "next": "2026-11-09",
+   "changed": "2026-11-09",
+   "next": "2026-11-16",
    "tasks": [
     {
      "id": "nhtsa-tire-plants",
      "what": "NHTSA tire plant codes",
-     "due": "2026-11-09"
+     "due": "2026-11-16"
     },
     {
      "id": "federal-rule-texts",
@@ -2975,6 +4856,38 @@
    "stamps": {}
   },
   {
+   "path": "/aldi/",
+   "changed": "2026-11-09",
+   "next": "2026-11-16",
+   "tasks": [
+    {
+     "id": "openfda-leads",
+     "what": "FDA recall records that mention store brands",
+     "due": "2026-11-16"
+    }
+   ],
+   "claims": 47,
+   "stamps": {
+    "documented": 47
+   }
+  },
+  {
+   "path": "/members-mark/",
+   "changed": "2026-11-09",
+   "next": "2026-11-16",
+   "tasks": [
+    {
+     "id": "openfda-leads",
+     "what": "FDA recall records that mention store brands",
+     "due": "2026-11-16"
+    }
+   ],
+   "claims": 131,
+   "stamps": {
+    "documented": 131
+   }
+  },
+  {
    "path": "/kirkland-signature/batteries/",
    "changed": "2026-11-04",
    "next": "2026-11-16",
@@ -3046,12 +4959,12 @@
   {
    "path": "/kirkland-signature/medicine/",
    "changed": "2026-11-07",
-   "next": "2026-11-12",
+   "next": "2026-11-16",
    "tasks": [
     {
      "id": "kirkland-medicine-labels",
      "what": "Kirkland medicine labels and FDA approval holders",
-     "due": "2026-11-12"
+     "due": "2026-11-16"
     }
    ],
    "claims": 40,
@@ -3223,18 +5136,18 @@
   },
   {
    "path": "/kirkland-vs-name-brands/",
-   "changed": "2026-11-06",
-   "next": "2026-11-13",
+   "changed": "2026-11-09",
+   "next": "2026-11-16",
    "tasks": [
     {
      "id": "kirkland-vs-prices",
      "what": "Kirkland vs name brands: Bounty, Kleenex, Tide and Dawn shelf prices at ZIP 98101",
-     "due": "2026-12-06"
+     "due": "2026-12-09"
     },
     {
      "id": "name-brand-labels",
      "what": "Name-brand labels compared with Kirkland",
-     "due": "2026-11-13"
+     "due": "2026-11-16"
     }
    ],
    "claims": 0,
@@ -3256,7 +5169,7 @@
   },
   {
    "path": "/makers/",
-   "changed": "2026-11-08",
+   "changed": "2026-11-09",
    "next": "2026-12-03",
    "tasks": [
     {
@@ -3270,7 +5183,7 @@
   },
   {
    "path": "/makers/diamond-pet-foods/",
-   "changed": "2026-11-03",
+   "changed": "2026-11-09",
    "next": "2026-12-03",
    "tasks": [
     {
@@ -3279,14 +5192,14 @@
      "due": "2026-12-03"
     }
    ],
-   "claims": 4,
+   "claims": 5,
    "stamps": {
-    "documented": 4
+    "documented": 5
    }
   },
   {
    "path": "/makers/saturn-petcare/",
-   "changed": "2026-11-03",
+   "changed": "2026-11-08",
    "next": "2026-12-03",
    "tasks": [
     {
@@ -3302,7 +5215,7 @@
   },
   {
    "path": "/makers/highline-warren/",
-   "changed": "2026-11-08",
+   "changed": "2026-11-09",
    "next": "2026-12-03",
    "tasks": [
     {
@@ -3316,14 +5229,14 @@
      "due": "2027-04-05"
     }
    ],
-   "claims": 2,
+   "claims": 3,
    "stamps": {
-    "documented": 2
+    "documented": 3
    }
   },
   {
    "path": "/makers/sazerac/",
-   "changed": "2026-11-08",
+   "changed": "2026-11-09",
    "next": "2026-12-03",
    "tasks": [
     {
@@ -3332,9 +5245,9 @@
      "due": "2026-12-03"
     }
    ],
-   "claims": 4,
+   "claims": 20,
    "stamps": {
-    "documented": 4
+    "documented": 20
    }
   },
   {
@@ -3355,8 +5268,8 @@
   },
   {
    "path": "/makers/perrigo/",
-   "changed": "2026-11-05",
-   "next": "2026-11-12",
+   "changed": "2026-11-09",
+   "next": "2026-11-16",
    "tasks": [
     {
      "id": "maker-pages",
@@ -3366,18 +5279,18 @@
     {
      "id": "kirkland-medicine-labels",
      "what": "Kirkland medicine labels and FDA approval holders",
-     "due": "2026-11-12"
+     "due": "2026-11-16"
     }
    ],
-   "claims": 26,
+   "claims": 39,
    "stamps": {
-    "documented": 26
+    "documented": 39
    }
   },
   {
    "path": "/makers/lnk-international/",
-   "changed": "2026-11-05",
-   "next": "2026-11-12",
+   "changed": "2026-11-09",
+   "next": "2026-11-16",
    "tasks": [
     {
      "id": "maker-pages",
@@ -3387,17 +5300,17 @@
     {
      "id": "kirkland-medicine-labels",
      "what": "Kirkland medicine labels and FDA approval holders",
-     "due": "2026-11-12"
+     "due": "2026-11-16"
     }
    ],
-   "claims": 8,
+   "claims": 13,
    "stamps": {
-    "documented": 8
+    "documented": 13
    }
   },
   {
    "path": "/makers/first-quality/",
-   "changed": "2026-11-05",
+   "changed": "2026-11-08",
    "next": "2026-12-03",
    "tasks": [
     {
@@ -3419,7 +5332,7 @@
   },
   {
    "path": "/makers/georgia-pacific/",
-   "changed": "2026-11-05",
+   "changed": "2026-11-08",
    "next": "2026-12-03",
    "tasks": [
     {
@@ -3461,7 +5374,7 @@
   },
   {
    "path": "/how-we-know/",
-   "changed": "2026-11-08",
+   "changed": "2026-11-09",
    "next": "2026-12-08",
    "tasks": [],
    "claims": null,
@@ -3469,7 +5382,7 @@
   },
   {
    "path": "/sources/",
-   "changed": "2026-11-08",
+   "changed": "2026-11-09",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -3485,7 +5398,7 @@
   },
   {
    "path": "/data/",
-   "changed": "2026-11-08",
+   "changed": "2026-11-09",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -3589,7 +5502,7 @@
   },
   {
    "path": "/makers/sun-products/",
-   "changed": "2026-11-07",
+   "changed": "2026-11-08",
    "next": "2026-11-16",
    "tasks": [
     {
@@ -3610,8 +5523,8 @@
   },
   {
    "path": "/home/",
-   "changed": "2026-11-08",
-   "next": "2026-11-09",
+   "changed": "2026-11-09",
+   "next": "2026-11-16",
    "tasks": [
     {
      "id": "maker-pages",
@@ -3621,7 +5534,7 @@
     {
      "id": "nhtsa-tire-plants",
      "what": "NHTSA tire plant codes",
-     "due": "2026-11-09"
+     "due": "2026-11-16"
     }
    ],
    "claims": null,
@@ -3629,7 +5542,7 @@
   },
   {
    "path": "/about/",
-   "changed": "2026-11-08",
+   "changed": "2026-11-09",
    "next": "2027-11-08",
    "tasks": [
     {
@@ -3643,7 +5556,7 @@
   },
   {
    "path": "/privacy-policy/",
-   "changed": null,
+   "changed": "2026-11-08",
    "next": "2027-11-08",
    "tasks": [
     {
@@ -3657,7 +5570,7 @@
   },
   {
    "path": "/terms/",
-   "changed": null,
+   "changed": "2026-11-08",
    "next": "2027-11-08",
    "tasks": [
     {
@@ -3713,7 +5626,7 @@
   },
   {
    "path": "/for-makers-and-brands/",
-   "changed": null,
+   "changed": "2026-11-08",
    "next": "2027-11-08",
    "tasks": [
     {
@@ -3738,9 +5651,71 @@
    ],
    "claims": 0,
    "stamps": {}
+  },
+  {
+   "path": "/kirkland-signature/wine/",
+   "changed": "2026-11-08",
+   "next": "2026-11-15",
+   "tasks": [
+    {
+     "id": "ttb-kirkland",
+     "what": "TTB label approvals for Kirkland",
+     "due": "2026-11-15"
+    },
+    {
+     "id": "federal-rule-texts",
+     "what": "Federal rule texts behind our code pages",
+     "due": "2027-11-06"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/kirkland-signature/beer/",
+   "changed": "2026-11-08",
+   "next": "2026-11-15",
+   "tasks": [
+    {
+     "id": "ttb-kirkland",
+     "what": "TTB label approvals for Kirkland",
+     "due": "2026-11-15"
+    },
+    {
+     "id": "federal-rule-texts",
+     "what": "Federal rule texts behind our code pages",
+     "due": "2027-11-06"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
   }
  ],
  "done": [
+  {
+   "on": "2026-11-09",
+   "task": "nhtsa-tire-plants",
+   "what": "Weekly pull of NHTSA tire plant codes",
+   "result": "1,246 codes; 1 changed"
+  },
+  {
+   "on": "2026-11-09",
+   "task": "openfda-leads",
+   "what": "Weekly search of FDA recall records for store brands",
+   "result": "0 new recalls found; 38 waiting for review"
+  },
+  {
+   "on": "2026-11-09",
+   "task": "kirkland-medicine-labels",
+   "what": "Weekly read of Kirkland medicine labels and FDA approval holders",
+   "result": "50 Costco labels; 0 to review"
+  },
+  {
+   "on": "2026-11-09",
+   "task": "name-brand-labels",
+   "what": "Weekly read of the name-brand labels the Kirkland comparison uses",
+   "result": "Label files refreshed"
+  },
   {
    "on": "2026-11-08",
    "task": "ttb-kirkland",
@@ -3782,6 +5757,18 @@
    "task": "ttb-kirkland",
    "what": "TTB label approvals for Kirkland (script, from the Mac)",
    "result": "512 Kirkland approvals; 38 on the spirits pages, 7 not yet cited"
+  },
+  {
+   "on": "2026-11-08",
+   "task": "ttb-kirkland",
+   "what": "TTB label approvals for Kirkland (script, from the Mac)",
+   "result": "512 Kirkland approvals; 38 on the spirits pages, 7 not yet cited"
+  },
+  {
+   "on": "2026-11-08",
+   "task": "ttb-kirkland",
+   "what": "TTB label approvals for Kirkland (script, from the Mac)",
+   "result": "512 Kirkland approvals; 413 on the spirits pages, 7 not yet cited"
   },
   {
    "on": "2026-11-04",

@@ -3,20 +3,387 @@
  "generated": "2026-11-08",
  "started": "2026-11-02",
  "count": {
-  "correction": 13,
-  "update": 3,
-  "clarification": 3
+  "correction": 21,
+  "update": 16,
+  "clarification": 11
  },
  "items": [
+  {
+   "id": "c-2026-11-08-vodka-grey-goose",
+   "on": "2026-11-08",
+   "kind": "update",
+   "page": "/kirkland-signature/vodka/",
+   "what": "Is Kirkland vodka Grey Goose?",
+   "was": "“No record we found says so”, with the two French vodka approvals held by MISA Imports, which name no distillery.",
+   "now": "No. Grey Goose’s own FAQ calls the claim “completely false” and says Grey Goose “does not produce nor privately label Kirkland vodka”. The MISA approvals are still there, and still name no distillery.",
+   "why": "We hadn’t used Grey Goose’s own answer to the question, which is a stronger record than finding nothing.",
+   "flagged_by": "Our own re-check",
+   "evidence": [
+    {
+     "title": "Grey Goose FAQ: Is Kirkland vodka Grey Goose vodka?",
+     "url": "https://www.greygoose.com/faqs/is-kirkland-vodka-grey-goose-vodka.html"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-08-terms-lookups",
+   "on": "2026-11-08",
+   "kind": "clarification",
+   "page": "/terms/",
+   "what": "What is free to use, in the terms",
+   "was": "“Use the site and the tire lookup free, as often as you like, with no sign-up.”",
+   "now": "“Use the site and its lookups free, as often as you like, with no sign-up.”",
+   "why": "The site now has four lookups: tire DOT codes, tire age, battery date codes and USDA plant numbers. Naming only the tire lookup read as if the other three weren’t covered.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-sun-products-strength-scale",
+   "on": "2026-11-08",
+   "kind": "clarification",
+   "page": "/makers/sun-products/",
+   "what": "What the 2012 safety sheets prove, on the Sun Products page",
+   "was": "The scale on the page set Confirmed at a company or Costco speaking for itself. Costco published the sheets that name Sun Products, so that tie could look Confirmed.",
+   "now": "A safety sheet names the supplier responsible, which How we know counts as Documented. Confirmed would need a code on the pack that leads to a plant, and these sheets give only Sun’s head office in Wilton, Connecticut.",
+   "why": "A safety sheet comes from the supplier, which the old wording made look like the company speaking for itself. Our stamp rules count it as a record, so Documented is the top step it can reach.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-sources-moved-links",
+   "on": "2026-11-08",
+   "kind": "update",
+   "page": "/sources/",
+   "what": "Links on eight source cards",
+   "was": "The cards for The Costco Connection, Kia’s investor pages and newsroom, Georgia’s governor, Hip2Save, Slickdeals, Krazy Coupon Lady and ACDelco Canada linked pages that had moved or no longer exist.",
+   "now": "Costco’s magazine now lives at costcoconnection.com, where Costco’s old address sends you. Kia, Georgia, Hip2Save and Slickdeals link their pages’ new addresses. Krazy Coupon Lady and ACDelco Canada have no terms page any more, so their cards link the privacy policy and home page and say so.",
+   "why": "The sites moved or removed those pages. A link check in our site audit found them; no answer depended on the old addresses.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-sources-description",
+   "on": "2026-11-08",
+   "kind": "clarification",
+   "page": "/sources/",
+   "what": "The Sources page’s summary in search results",
+   "was": "“The government records behind every answer on Who Actually Makes…”",
+   "now": "“Every source behind our answers, from government registers to company filings and press reports…”",
+   "why": "Only 24 of the 137 sources are government registers or regulators. The rest include makers’ own words, retailers and press reports, and the page says which is which.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-sm-global-strength-table",
+   "on": "2026-11-08",
+   "kind": "update",
+   "page": "/makers/sm-global/",
+   "what": "How strong each SM Global tie is",
+   "was": "The three golf ball ties and the driver tie showed their stamps without saying which USGA list each comes from.",
+   "now": "A new table puts all four at Documented and names the record behind each: the current USGA conforming ball list for the Performance+ and Tour Performance balls, a past edition for the 2017 Performance One, and the driver head list for the driver.",
+   "why": "The driver and the balls stand on different USGA lists, and the 2017 ball only on an old edition; the table now shows which is which.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-sazerac-tequila-approvals",
+   "on": "2026-11-08",
+   "kind": "update",
+   "page": "/makers/sazerac/",
+   "what": "Which Kirkland tequila approvals Sazerac North America holds",
+   "was": "One approval: the 2020 Kirkland Signature Tequila Blanco, held by Sazerac North America as importer.",
+   "now": "Approvals from 2017, 2018 and November 2020, held by Sazerac North America as importer, with Wide World Importers (later World Wide Importers) as the name on the label. A table lists every Kirkland approval a Sazerac company holds, re-read each week.",
+   "why": "We started reading every Kirkland label approval on TTB’s registry each week, and the 2017 and 2018 approvals were among those we hadn’t read.",
+   "flagged_by": "Our own re-check",
+   "evidence": [
+    {
+     "title": "TTB label approval 17230001000490: Kirkland Signature Tequila Silver (Sazerac North America, Inc.)",
+     "url": "https://ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=17230001000490"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-08-sazerac-strength-table",
+   "on": "2026-11-08",
+   "kind": "update",
+   "page": "/makers/sazerac/",
+   "what": "How strong each Sazerac tie is",
+   "was": "The vodka, bourbon and tequila ties were stamped, with their TTB approvals only in the evidence list.",
+   "now": "A new table shows all four at Documented, each from a TTB label approval: tequila from August 2017, bourbon from December 2020 and May 2026, and the American Vodka from July 2026.",
+   "why": "A label approval names who filed it. The table makes clear that is the record behind each Sazerac tie, not a code on the bottle leading to a distillery.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-saturn-petcare-strength-table",
+   "on": "2026-11-08",
+   "kind": "update",
+   "page": "/makers/saturn-petcare/",
+   "what": "How strong each Saturn Petcare tie is",
+   "was": "The wet cat and wet dog food ties showed their stamps without the record named next to them.",
+   "now": "A new table places both at Documented, each from North Dakota's pet food register, renewed December 2025, where the registrations are filed care of Saturn Petcare.",
+   "why": "Saturn's tie comes from a single state register and no other record, which readers judging it should see in one line.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-privacy-search-summary",
+   "on": "2026-11-08",
+   "kind": "correction",
+   "page": "/privacy-policy/",
+   "what": "The privacy policy’s summary in search results",
+   "was": "“No cookies for visitors, no ads, no accounts.”",
+   "now": "“No ads, accounts or forms. Google Analytics cookies only outside the EU, UK and Switzerland.”",
+   "why": "Google Analytics sets two cookies for visitors outside those places. The policy itself always said so; only the summary shown in search contradicted it.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-privacy-click-counting",
+   "on": "2026-11-08",
+   "kind": "correction",
+   "page": "/privacy-policy/",
+   "what": "What Google Analytics counts, in the privacy policy",
+   "was": "The Google Analytics row listed pages viewed, how you arrived, time on the page, and your general area and device type.",
+   "now": "It also lists which links you click in the box of other answers at the foot of a page. A new line says the tire age checker and the battery date code decoder work out the answer on your device and send the code nowhere.",
+   "why": "Since Nov 5 Google Analytics has counted those clicks, under the same rules as page views, and the policy didn’t say so. We missed it when the box was added.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-perrigo-strength-table",
+   "on": "2026-11-08",
+   "kind": "update",
+   "page": "/makers/perrigo/",
+   "what": "How strong each Perrigo tie is",
+   "was": "The 26 medicine ties sat in a folded list, each stamped, with no summary of the records they rest on.",
+   "now": "A new table groups them so the scale stays short: the medicines named on both DailyMed labels and Drugs@FDA in one row, and the January 2022 Aller-Fex recall, from FDA recall reports, in another. All are Documented, and each tie is still listed one by one below.",
+   "why": "With 26 ties, one row each would have repeated the same step and records two dozen times; grouping shows at a glance that every Perrigo tie stands on FDA records.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-perrigo-opening",
+   "on": "2026-11-08",
+   "kind": "correction",
+   "page": "/makers/perrigo/",
+   "what": "How the Perrigo page says the company is tied to Kirkland",
+   "was": "The page led with one record, Perrigo packaging Kirkland Aller-Fex in a 2022 recall, and said “Only the Aller-Fex recall names Perrigo so far.”",
+   "now": "The page leads with FDA’s own files, which tie Perrigo to 25 Kirkland Signature medicines; for 13 of them a Perrigo company holds the approval number printed on the Kirkland label. A table lists each one with its FDA number, and the Aller-Fex recall is the first of them.",
+   "why": "Our Nov 5 read of Kirkland labels on DailyMed, checked against Drugs@FDA, added the other ties to our records and to the medicine page, but this page’s wording wasn’t rewritten, so it contradicted its own list of answers for three days.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-misa-strength-scale",
+   "on": "2026-11-08",
+   "kind": "clarification",
+   "page": "/makers/misa-imports/",
+   "what": "What MISA’s label approvals prove, on the MISA Imports page",
+   "was": "Confirmed, by the page’s scale, meant the company or Costco saying so in its own words. MISA files its own label approvals with TTB, so those could read as Confirmed.",
+   "now": "A TTB label approval is a public record naming MISA as importer: Documented, by the rules on How we know. Confirmed would need a code on the bottle that leads to a factory, and the tequila’s NOM number leads to the distillery, not to MISA.",
+   "why": "An importer’s own filing is easy to mistake for the importer vouching for the maker. The scale’s old wording invited that reading, which our stamp rules don’t allow.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
   {
    "id": "c-2026-11-08-maker-strength-scale",
    "on": "2026-11-08",
    "kind": "clarification",
    "page": "/makers/kimberly-clark/",
-   "what": "The “How strong each tie is” scale on the Kimberly-Clark, Duracell, MISA Imports and Sun Products pages",
-   "was": "The scale said Confirmed meant the company or Costco says so in its own words.",
-   "now": "It now uses the same steps as How we know: Confirmed needs a code on the product that leads to the factory; a company’s own statement makes an answer Documented. No stamp changed.",
-   "why": "The scale’s wording didn’t match our published rules. Found in our site audit the day the pages went live.",
+   "what": "How the Kimberly-Clark page explains the strength of each tie",
+   "was": "Its strength scale put Confirmed at the company or Costco saying so in its own words, which read as if a statement from Kimberly-Clark would lift the facial tissue tie above the FSC code on the box.",
+   "now": "It now follows How we know: Confirmed needs a code on the product that leads to a factory. The FSC code leads to Kimberly-Clark’s certificate, not a mill, so the tissue stays Documented and the diapers stay Reported. No stamp changed.",
+   "why": "The scale was written for the four company pages published that day and didn’t follow our published stamp rules; on this page it muddied why a certificate code on the box isn’t a factory.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-maker-pages-next-check",
+   "on": "2026-11-08",
+   "kind": "correction",
+   "page": "/makers/",
+   "what": "The “Next check” date on the company pages",
+   "was": "Every company page said “Next check Nov 9”. Next week it would have said Nov 16, and so on, but no job was reading the registers and recalls behind these pages; the last read was Nov 3.",
+   "now": "A job on our server re-reads North Dakota’s pet food register and FDA’s recall records for every company each month. Each page shows the date of that next read, Dec 3, or sooner where one of its answers falls due first, as on the Perrigo page.",
+   "why": "Our schedule assumed a weekly script would run the re-read, and kept promising next Monday for it, but no script was set up to run it.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-lnk-opening",
+   "on": "2026-11-08",
+   "kind": "correction",
+   "page": "/makers/lnk-international/",
+   "what": "How many Kirkland medicines the LNK International page credits to LNK",
+   "was": "The page said LNK is named as the maker of one Kirkland product, Severe Cold & Flu Plus Congestion, in FDA’s December 2024 recall, and that no other Kirkland medicine names LNK in a record we’d read.",
+   "now": "The page says LNK makes eight Kirkland medicines, among them pain relievers, low-dose aspirin, a sleep aid and an allergy tablet. Some labels print “Manufactured by: LNK International, Inc.”; on others the label file lists LNK as the manufacturing establishment. The recall is one record among them.",
+   "why": "The label files we read on Nov 5 name LNK on seven more Kirkland medicines. They reached our records but not this page’s wording.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-lnk-international-strength-table",
+   "on": "2026-11-08",
+   "kind": "update",
+   "page": "/makers/lnk-international/",
+   "what": "How strong each LNK International tie is",
+   "was": "Eight medicine ties were listed one by one, with their stamps but without the record kinds side by side.",
+   "now": "A new table shows all eight at Documented and names what lies behind each: DailyMed labels for most, Drugs@FDA as well for the ibuprofen and sleep aid, and FDA recall reports for the December 2024 cold and flu recall.",
+   "why": "Some LNK ties rest on a label alone and some on a label plus an FDA approval record, a difference the old layout hid.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-kruger-products-strength-table",
+   "on": "2026-11-08",
+   "kind": "update",
+   "page": "/makers/kruger-products/",
+   "what": "How strong the Kruger Products tie is",
+   "was": "The Ultra Soft Bath Tissue tie showed only its stamp.",
+   "now": "A new table places it at Documented, from the FSC code on Costco's listing for the 231-sheet roll and Kruger's FSC certificate. The certificate lists ten sites, so no single mill is named.",
+   "why": "Kruger is a Canadian company and its one US site is in Memphis; readers can now see the tie rests on a certificate code rather than a statement about where a roll was made.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-highline-warren-strength-table",
+   "on": "2026-11-08",
+   "kind": "update",
+   "page": "/makers/highline-warren/",
+   "what": "How strong each Highline Warren tie is",
+   "was": "Both motor oil ties carried their stamps, with the API directory and the Costco listing only in the evidence list further down.",
+   "now": "A new table names, beside each tie, the API engine oil license directory, plus the Costco listing for the passenger-car oil, and puts both at Documented. The diesel 15W-40 tie rests on the API directory alone.",
+   "why": "An API license names the company that answers for the oil, not the plant that blended it, so the table shows which record each oil's tie comes from and why neither goes higher.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-golf-clubs-driver-card",
+   "on": "2026-11-08",
+   "kind": "correction",
+   "page": "/kirkland-signature/golf-clubs/",
+   "what": "What the record shows, on the Kirkland driver",
+   "was": "The note under the driver said “The USGA and R&A list of conforming golf balls names this company as the ball’s manufacturer.”",
+   "now": "Golf’s rule-makers, the USGA and The R&A, name SM Global as the manufacturer on their conforming list, the list of driver heads for this club. The list doesn’t say which factory made it, or where.",
+   "why": "The note was written for the golf ball page and reused on the driver without being changed. The record, the company and the stamp were right.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-georgia-pacific-strength-table",
+   "on": "2026-11-08",
+   "kind": "update",
+   "page": "/makers/georgia-pacific/",
+   "what": "How strong the Georgia-Pacific tie is",
+   "was": "The 380-sheet bath tissue tie showed its stamp without naming the records it rests on.",
+   "now": "A new table shows it at step three of four: the FSC code on the Costco listing, read against the FSC register and FSC's own label rules. It names no mill.",
+   "why": "Georgia-Pacific has many mills, so readers wanted to know why the code on the pack lifts the tie to Documented and no higher.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-for-makers-photos",
+   "on": "2026-11-08",
+   "kind": "clarification",
+   "page": "/for-makers-and-brands/",
+   "what": "What we accept as proof, on For makers and brands",
+   "was": "“No photos and no private documents. We don’t buy products or photograph them.”",
+   "now": "“No photos as proof, and no private documents.” It adds that a few tool pages show a licensed photo of where a code sits on a product, with brand names blurred, and that it never proves an answer.",
+   "why": "The battery date code and USDA number pages show licensed photos, so “no photos” wasn’t true as written. What counts as proof hasn’t changed.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-for-makers-legal-contact",
+   "on": "2026-11-08",
+   "kind": "clarification",
+   "page": "/for-makers-and-brands/",
+   "what": "How to send a legal notice, on For makers and brands",
+   "was": "“Email the same address with “Legal” in the subject line.”",
+   "now": "“Write to us through the contact page with “Legal” in the subject line”, linked to the legal part of the contact page.",
+   "why": "The page shows no email address, so “the same address” left a brand’s lawyer with nowhere to write.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-first-quality-strength-table",
+   "on": "2026-11-08",
+   "kind": "update",
+   "page": "/makers/first-quality/",
+   "what": "How strong each First Quality tie is",
+   "was": "The diaper ties were listed with their stamps but with no plain account of the records under each.",
+   "now": "A new table ranks them. The tie from the SFI code on the Costco listing, traced through the SFI register and First Quality's own pages, is Documented; Bloomberg's December 2024 report and Fortune's April 2025 retelling are marked as reports, and that tie stays Reported.",
+   "why": "This page holds one tie of each kind for the same diapers, and the gap between a certificate code on the box and a news story is the point a reader most needs to see.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-first-quality-archive-links",
+   "on": "2026-11-08",
+   "kind": "correction",
+   "page": "/makers/first-quality/",
+   "what": "Two “archived copy” links in the First Quality evidence",
+   "was": "The evidence for the Cuties FAQ page and for First Quality’s 2024 SFI certificate linked Internet Archive copies dated Nov 5, 2026.",
+   "now": "Both links are gone. The Internet Archive has no copy of either page. We keep our own copy of each, with its SHA-256 fingerprint, and will link the Archive again once a save works.",
+   "why": "The Archive’s save queue turned our requests away, so the copies were never made, and the links opened a “not archived” page. We hadn’t checked that the saves went through.",
+   "flagged_by": "Our own re-check",
+   "evidence": [
+    {
+     "title": "Cuties diapers FAQ, “Where are Cuties Diapers made?”",
+     "url": "https://www.firstquality.com/sitecore/content/cuties/home/contact-us-link/enanny"
+    },
+    {
+     "title": "First Quality Enterprises, LLC: SFI 2022 Certified Sourcing certificate C0260210-CS3 and annex (issued 27 Mar 2024)",
+     "url": "https://healthcare.firstquality.com/-/media/project/corporate/sfi-certificate-2024.pdf"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-08-duracell-strength-scale",
+   "on": "2026-11-08",
+   "kind": "clarification",
+   "page": "/makers/duracell/",
+   "what": "Why the Duracell tie is only Reported",
+   "was": "The page’s strength scale defined Confirmed as the company or Costco saying so in its own words. That suggested Costco’s chief executive naming Duracell ought to be Confirmed.",
+   "now": "Under the rules on How we know, even a direct statement from Costco would be Documented; Confirmed needs a code on the pack that leads to a plant. The tie stays Reported because the Duracell line is the reporter’s words, not Costco’s.",
+   "why": "The scale didn’t follow our published stamp rules, and on this page it blurred why a 2016 TV report, retold many times since, still counts only as Reported.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-diamond-pet-foods-strength-table",
+   "on": "2026-11-08",
+   "kind": "update",
+   "page": "/makers/diamond-pet-foods/",
+   "what": "How strong each Diamond Pet Foods tie is",
+   "was": "The page listed Diamond's four ties to Kirkland dog and cat food, each with its stamp, but didn't say what kind of record stood behind each one.",
+   "now": "A new table puts all four on our four-step scale. The two 2012 ties rest on FDA recall notices and the two current ones on North Dakota's pet food register, and every one is Documented.",
+   "why": "Readers asking whether Diamond still makes the food need to see that today's tie comes from a renewed register entry, not from the old recall.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-data-title",
+   "on": "2026-11-08",
+   "kind": "clarification",
+   "page": "/data/",
+   "what": "The data page’s title in search results",
+   "was": "“Open Data: Free Tire Plant Code and Tire Age Datasets”",
+   "now": "“Open Data: 14 Free Datasets Behind Every Answer”, with the number taken from the list of files.",
+   "why": "The page started with tire files and now holds 14, most of them about store brands, so the title described a small part of it.",
+   "flagged_by": "Our own re-check",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-08-data-relation-values",
+   "on": "2026-11-08",
+   "kind": "correction",
+   "page": "/data/",
+   "what": "The note on the relation field of the Who makes what file",
+   "was": "The note said the field holds one of five values: made-by, bottled-by, packed-by, imported-by or recalled-by.",
+   "now": "The note lists all 13 values the file holds, among them approval-holder, licensed-to, listed-maker and fsc-label-holder. The list is now read from the file each time it’s built, so it can’t fall behind again.",
+   "why": "As we added medicine, motor oil, golf and paper answers, the file gained eight kinds of tie the note never mentioned. Code that kept only the five listed values would have dropped those rows.",
    "flagged_by": "Our own re-check",
    "evidence": []
   },
@@ -206,7 +573,7 @@
    "what": "Who makes Kirkland Signature dog food",
    "was": "The only public record we'd found was Diamond Pet Foods' 2012 recall notice, so we said we couldn't name who makes today's bags.",
    "now": "North Dakota's pet food register lists all 12 Kirkland dry dog formulas as Costco's, care of Diamond Pet, renewed December 2025. We added wet food (Saturn Petcare), biscuits (North River Enterprises), jerky (Phelps Industries) and dental chews (Nylabone) from the same register.",
-   "why": "We found a newer public record: the state's pet food register and the label files filed with it.",
+   "why": "We hadn't searched North Dakota's pet food register before. It carries the 12 dry dog registrations Costco renewed in December 2025, each filed care of Diamond Pet, with the label files that go with them, which is a newer record than a 2012 recall.",
    "flagged_by": "Our own re-check",
    "evidence": [
     {
@@ -244,7 +611,7 @@
    "what": "Who makes Kirkland Signature cat food",
    "was": "The only public record we'd found was Diamond Pet Foods' 2012 recall notice; we hadn't found who makes the wet cat food.",
    "now": "North Dakota's pet food register lists the three Kirkland dry cat formulas care of Diamond Pet and the four pate cat foods care of Saturn Petcare, all renewed December 2025.",
-   "why": "We found a newer public record: the state's pet food register and the label files filed with it.",
+   "why": "The same register search turned up the cat registrations. Besides the dry formulas filed care of Diamond Pet, it gave us a named company for the wet pate for the first time: Saturn Petcare, which no record we'd read before had tied to Kirkland.",
    "flagged_by": "Our own re-check",
    "evidence": [
     {

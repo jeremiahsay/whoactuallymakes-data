@@ -1,7 +1,7 @@
 {
  "title": "Who Actually Makes open data: who makes store brands, from public records",
  "upload_type": "dataset",
- "description": "Who makes store-brand products, from public records. 14 datasets, 9,837 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru and Kia rows in NHTSA's AALA reports, model years 2018 on. JSON and CSV. Live copy and API: https://whoactuallymakes.com/data/",
+ "description": "Who makes store-brand products, from public records. 14 datasets, 10,289 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru and Kia rows in NHTSA's AALA reports, model years 2018 on. JSON and CSV. Live copy and API: https://whoactuallymakes.com/data/",
  "creators": [
   {
    "name": "Say, Jeremiah",
@@ -10,7 +10,7 @@
   }
  ],
  "license": "cc-by-4.0",
- "version": "2026-11-08",
+ "version": "2026-11-09",
  "keywords": [
   "store brands",
   "private label",

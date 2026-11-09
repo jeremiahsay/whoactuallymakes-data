@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-08",
+ "generated": "2026-11-09",
  "count": 14,
  "rows": [
   {
@@ -10,14 +10,14 @@
    "website": "https://www.diamondpet.com/",
    "category": "Pet food",
    "about": "Dry pet food maker in Meta, Missouri; family-owned since 1970",
-   "kirkland_claims": 4,
-   "kirkland_products": 2,
+   "kirkland_claims": 5,
+   "kirkland_products": 3,
    "register_other_companies": 13,
    "fda_recalls": "",
    "fda_recall_store_names": "",
    "plants": 6,
    "page": "https://whoactuallymakes.com/makers/diamond-pet-foods/",
-   "last_checked": "2026-11-03",
+   "last_checked": "2026-11-09",
    "next_check": "2027-05-03"
   },
   {
@@ -78,14 +78,14 @@
    "website": "https://www.highlinewarren.com/",
    "category": "Motor oil and car fluids",
    "about": "Motor oil and car fluid maker and distributor, Memphis, Tennessee",
-   "kirkland_claims": 2,
-   "kirkland_products": 2,
+   "kirkland_claims": 3,
+   "kirkland_products": 3,
    "register_other_companies": "",
    "fda_recalls": "",
    "fda_recall_store_names": "",
    "plants": 0,
    "page": "https://whoactuallymakes.com/makers/highline-warren/",
-   "last_checked": "2026-11-08",
+   "last_checked": "2026-11-09",
    "next_check": "2027-05-03"
   },
   {
@@ -129,14 +129,14 @@
    "website": "https://www.lnkintl.com/",
    "category": "Medicine",
    "about": "Store-brand pain, cold and allergy medicine maker, Hauppauge, New York",
-   "kirkland_claims": 8,
-   "kirkland_products": 8,
+   "kirkland_claims": 13,
+   "kirkland_products": 13,
    "register_other_companies": "",
    "fda_recalls": 6,
    "fda_recall_store_names": 5,
    "plants": 1,
    "page": "https://whoactuallymakes.com/makers/lnk-international/",
-   "last_checked": "2026-11-05",
+   "last_checked": "2026-11-09",
    "next_check": "2027-05-03"
   },
   {
@@ -163,14 +163,14 @@
    "website": "https://www.perrigo.com/",
    "category": "Medicine",
    "about": "Store-brand medicine maker since 1887, Allegan, Michigan",
-   "kirkland_claims": 26,
-   "kirkland_products": 25,
+   "kirkland_claims": 39,
+   "kirkland_products": 38,
    "register_other_companies": "",
    "fda_recalls": 140,
    "fda_recall_store_names": 32,
    "plants": 1,
    "page": "https://whoactuallymakes.com/makers/perrigo/",
-   "last_checked": "2026-11-05",
+   "last_checked": "2026-11-09",
    "next_check": "2027-05-03"
   },
   {
@@ -197,14 +197,14 @@
    "website": "https://www.sazerac.com/",
    "category": "Spirits",
    "about": "Spirits company that owns Buffalo Trace and Barton 1792, Louisville, Kentucky",
-   "kirkland_claims": 4,
-   "kirkland_products": 3,
+   "kirkland_claims": 20,
+   "kirkland_products": 13,
    "register_other_companies": "",
    "fda_recalls": "",
    "fda_recall_store_names": "",
    "plants": 2,
    "page": "https://whoactuallymakes.com/makers/sazerac/",
-   "last_checked": "2026-11-08",
+   "last_checked": "2026-11-09",
    "next_check": "2027-02-08"
   },
   {

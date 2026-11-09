@@ -1,12 +1,12 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-02",
+ "generated": "2026-11-09",
  "source": {
   "publisher": "NHTSA",
   "name": "vPIC tire plant codes",
   "url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetEquipmentPlantCodes?year=2016&equipmentType=1&reportType=All&format=json",
-  "list_changed": "2026-11-02",
-  "raw_sha256": "a2c928cf57f315d03c6a703a10b0c383d35a780806cf941ac6c9a89203678649"
+  "list_changed": "2026-11-09",
+  "raw_sha256": "b621cfc4a6be1c0d8b3510a33a720e43fe76dc62ec4a73582a52948c94331bba"
  },
  "rule": {
   "cite": "49 CFR 574.5",
@@ -8740,9 +8740,9 @@
    "P4",
    "THE CARLSTAR GROUP LLC",
    "Jackson",
-   "Tennessee",
+   "Tn",
    "United States (Usa)",
-   "Active"
+   "Closed"
   ],
   [
    "1P5",

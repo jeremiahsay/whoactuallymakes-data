@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-08",
+ "generated": "2026-11-09",
  "count": 137,
  "primary": 94,
  "by_hand": 17,
@@ -133,9 +133,9 @@
      "what": "NHTSA tire plant codes",
      "how": "script",
      "every_days": 7,
-     "last": "2026-11-02",
-     "due": "2026-11-09",
-     "result": "1,246 entries; no changes since the previous pull",
+     "last": "2026-11-09",
+     "due": "2026-11-16",
+     "result": "1,246 entries; 1 change since the previous pull",
      "edition": null,
      "file_url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetEquipmentPlantCodes?year=2016&equipmentType=1&reportType=All&format=json",
      "hand_note": null
@@ -611,9 +611,9 @@
      "what": "Kirkland medicine labels and FDA approval holders",
      "how": "script",
      "every_days": 7,
-     "last": "2026-11-05",
-     "due": "2026-11-12",
-     "result": "47 labels read; a change is flagged for a person",
+     "last": "2026-11-09",
+     "due": "2026-11-16",
+     "result": "50 Costco labels; 0 to review",
      "edition": null,
      "file_url": null,
      "hand_note": null
@@ -622,9 +622,9 @@
      "what": "Name-brand labels compared with Kirkland",
      "how": "script",
      "every_days": 7,
-     "last": "2026-11-06",
-     "due": "2026-11-13",
-     "result": "Labels read for the comparison pairs",
+     "last": "2026-11-09",
+     "due": "2026-11-16",
+     "result": "Label files refreshed",
      "edition": null,
      "file_url": null,
      "hand_note": null
@@ -1099,7 +1099,7 @@
    ],
    "pulls": [
     {
-     "what": "Wayback saves: the Costco hot dogs page and its source records, plus the earlier records with no archive copy, plus the Subaru and Kia page records, plus the 8 Nov maker-page records (Kimberly-Clark releases, MISA, Duracell articles, East Penn, First Quality)",
+     "what": "Wayback saves for every evidence record with no archive copy yet, saved by the jobs server",
      "how": "hand",
      "every_days": 0,
      "last": null,
@@ -1107,7 +1107,7 @@
      "result": null,
      "edition": null,
      "file_url": null,
-     "hand_note": "Wayback's save returned 429 from this Mac on Nov 7, by script and in Chrome. Run tools/archive.py one URL at a time, stop at the first 429, and paste archive_url into the record. Skip Costco URLs."
+     "hand_note": "Since 8 Nov the jobs server saves them (jobs/wam-wayback.sh, hourly, 50-minute turns, stops at a 429; Wayback refuses the Mac). On this date, check ~/jobs/status/wam-wayback.json says \"nothing left to save\" and python3 tools/validate.py shows no archive warnings except Costco and Sam's Club, which refuse archiving, and the URLs Wayback saved as some other page (eCFR's bot wall, one bgr.com story: marked \"refused\" in ~/jobs/data/wam-wayback/out.jsonl, never retried). Those need a copy found another way (eCFR: the govinfo annual edition PDF)."
     }
    ]
   },
@@ -1140,8 +1140,8 @@
      "what": "FDA recall records that mention store brands",
      "how": "script",
      "every_days": 7,
-     "last": "2026-11-02",
-     "due": "2026-11-09",
+     "last": "2026-11-09",
+     "due": "2026-11-16",
      "result": "38 recalls waiting for review",
      "edition": null,
      "file_url": null,
