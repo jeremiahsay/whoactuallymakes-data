@@ -231,11 +231,246 @@ model_year,manufacturer,make,carline,vehicle_type,us_canada_pct,foreign_1_pct,fo
 2026,Subaru,Subaru,Outback,MPV,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
 2026,Toyota,Subaru,Solterra,MPV,0,70,J,30,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
 2026,Toyota,Subaru,Uncharted,MPV,0,75,J,25,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2018,Toyota,Toyota,4Runner,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
 2018,Subaru,Toyota,86,PC,0,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Avalon,PC,65,20,J,,,US,US,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Avalon Hybrid,PC,40,50,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,C-HR,PC,0,45,T,40,J,T,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Camry,PC,55,30,J,,,US+J,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Camry Hybrid,PC,45,40,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Corolla,PC,60,25,J,,,US+CN,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Corolla iM,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Highlander,MPV,60,25,J,,,US,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Highlander Hybrid,MPV,40,50,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Land Cruiser200,MPV,5,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Prius C,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Prius Plug In Hybrid,PC,0,100,J,,,J+J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Prius V,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Rav4,PC,35,60,J,,,J+CN,US+CH+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Rav4 Hybrid,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Sequoia,MPV,60,25,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Sienna,MPV,60,25,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Tacoma,Truck,60,15,J,,,US+M,US+J,US+TH+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Toyota 86,PC,0,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Tundra,Truck,65,15,J,,,US,US,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Toyota,Yaris,PC,0,35,J,20,F,F,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Mazda Motor Corporation,Toyota,Yaris AT,PC,5,70,M,20,J,M,M,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Mazda Motor Corporation,Toyota,Yaris MT,PC,5,70,M,15,J,M,M,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2019,Toyota,Toyota,4Runner,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
 2019,Subaru,Toyota,86,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Avalon,PC,60,20,J,,,US,US,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Avalon Hybrid,PC,45,40,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,C-HR,PC,0,75,J,20,T,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Camry,PC,65,15,J,,,US+J,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Camry Hybrid,PC,45,40,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Corolla,PC,65,25,J,,,US+CN,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Corolla HB,PC,0,100,,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Corolla iM,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Highlander,MPV,65,20,J,,,US,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Highlander Hybrid,MPV,40,50,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Land Cruiser200,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Prius C,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Prius Plug In Hybrid,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Prius Prime,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Prius V,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Rav4,PC,45,45,J,,,J+CN,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Rav4 Hybrid,PC,15,80,J,,,J+CN,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Sequoia,MPV,60,15,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Sequoia,MPV,60,15,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Sienna,MPV,60,30,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Tacoma,Truck,60,15,J,,,US+M,US+J,US+TH,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Toyota 86,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Tundra,Truck,60,25,J,,,US,US,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Toyota,Yaris,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Mazda Motor Corporation,Toyota,Yaris AT,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Mazda Motor Corporation,Toyota,Yaris MT,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2020,Toyota,Toyota,4Runner,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
 2020,Subaru,Toyota,86,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Avalon,PC,60,15,J,,,US,US,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Avalon Hybrid,PC,45,35,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,C-HR,PC,0,70,J,,,J+T,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Camry,PC,65,10,J,,,US,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Camry Hybrid,PC,45,45,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Corolla,PC,30,60,J,,,J+US,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Corolla HB,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Corolla Hybrid,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Highlander,MPV,60,20,J,,,US,US,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Highlander Hybrid,MPV,45,40,J,,,US,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Land Cruiser200,MPV,0,100,J,,,J+J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Mirai,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Prius,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Prius Prime,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,RAV4,PC,50,40,J,,,J+CN,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,RAV4 Hybrid,PC,35,55,J,,,J+CN,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Sequoia,MPV,50,25,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Sienna,MPV,65,25,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,BMW AG,Toyota,Supra,PC,5,50,G,15,A,A,G,G,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Tacoma,Truck,55,15,J,,,US+MX,US+J,US+TH,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Toyota 86,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Toyota,Tundra,Truck,60,10,MX,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2021,Toyota,Toyota,4Runner,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Avalon,PC,55,15,J,,,US,US,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Avalon Hybrid,PC,45,30,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,C-HR,PC,0,69,J,,,J+T,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Camry,PC,55,20,J,,,US,J+US,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Camry Hybrid,PC,45,30,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Corolla,PC,30,55,J,,,J+US,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Corolla HB,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Highlander,MPV,55,15,J,,,US,US,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Highlander Hybrid,MPV,45,40,J,,,US,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Land Cruiser,MPV,0,100,J,,,J+J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Mirai,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Prius,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Prius Prime,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Rav4,PC,60,10,J,,,CN+J,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Rav4 Hybrid,PC,35,45,J,,,CN+J,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Rav4 Plug-In Hybrid,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Sequoia,MPV,55,20,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Sienna Hybrid,MPV,45,25,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,BMW AG,Toyota,Supra,PC,5,50,G,15,A,A,G,G,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Tacoma,Truck,55,20,J,,,US+MX,US+J,US+TH,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Tundra,Truck,65,10,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Toyota,Venza Hybrid,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2022,Toyota,Toyota,4Runner,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,Avalon,PC,55,15,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,Avalon Hybrid,PC,55,15,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,C-HR,PC,0,60,J,20,T,J+T,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,Camry,PC,60,15,J,,,US,J+US,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,Camry Hybrid,PC,45,30,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,Corolla,PC,30,60,J,,,US,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,Corolla Cross,MPV,40,25,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
 2022,Subaru,Toyota,GR86,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,GR86,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,Highlander,MPV,50,15,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,Highlander Hybrid,MPV,40,30,J,,,US,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,Mirai,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,Rav4,PC,65,10,J,,,CN+J,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,Rav4 Hybrid,PC,35,55,J,,,CN+US+J,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,Rav4 Prime,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,Sequoia,MPV,55,25,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,Sienna Hybrid,MPV,55,25,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,BMW AG,Toyota,Supra,PC,0,27,G,25,A,A,A,G,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,Tacoma,Truck,50,15,J,,,US+MX,US+J,US+TH,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,Tundra,Truck,50,15,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Toyota,Tundra Hybrid,Truck,50,20,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2023,Toyota,Toyota,4Runner,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Camry,PC,65,10,J,,,US,J+US,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Camry Hybrid,PC,45,30,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Corolla,PC,45,35,J,,,US+J,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Corolla Cross,MPV,60,25,J,,,US,US+B,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Corolla Cross Hybrid,MPV,45,40,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Corolla Hatchback,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Corolla Hybrid,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Crown,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,GR Corolla,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
 2023,Subaru,Toyota,GR86,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,GR86,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Highlander,MPV,60,20,J,,,US,US+J,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Highlander Hybrid,MPV,50,30,J,,,US,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Mirai,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Prius,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Prius Prime,PC,0,95,J,5,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Rav4,PC,60,20,J,,,CN+J,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Rav4 Hybrid,PC,25,65,J,,,CN+US+J,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Rav4 Prime,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Sequoia Hybrid,MPV,50,20,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Sienna Hybrid,MPV,55,25,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,BMW AG,Toyota,Supra,PC,0,23,A,20,G,A,A,G,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Tacoma,Truck,50,10,J,,,US+MX,US+J,US+TH+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Tundra,Truck,60,15,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Tundra Hybrid,Truck,50,25,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,Venza,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Toyota,bZ4x,MPV,0,80,J,20,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2024,Toyota,Toyota,4Runner,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Camry,PC,70,10,J,,,US,J+US,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Camry Hybrid,PC,50,30,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Corolla,PC,55,30,J,,,US+J,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Corolla Cross,MPV,60,25,J,,,US,US+B,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Corolla Cross Hybrid,MPV,45,40,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Corolla Hatchback,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Corolla Hybrid,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Crown,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,GR Corolla,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
 2024,Subaru,Toyota,GR86,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,GR86,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Grand Highlander,MPV,60,25,J,,,US,US+J,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Grand Highlander Hybrid,MPV,50,35,J,,,US,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Highlander,MPV,65,20,J,,,US,US+J,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Highlander Hybrid,MPV,55,30,J,,,US,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Land Cruiser,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Mirai,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Prius,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Prius Prime,PC,0,95,J,5,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Rav4,MPV,70,15,J,,,CN+J,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Rav4 Hybrid,MPV,45,45,J,,,CN+US+J,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Rav4 Prime,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Sequoia Hybrid,MPV,50,20,J,15,MX,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Sienna HV,MPV,60,30,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,BMW AG,Toyota,Supra,PC,0,30,G,26,A,A,A,G,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Tacoma,Truck,35,20,J,30,M,M+M,US,J+TH,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Tacoma Hybrid,Truck,25,40,J,20,M,M+M,US,J+TH,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Tundra,Truck,55,15,J,15,MX,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Tundra Hybrid,Truck,50,20,J,15,MX,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,Venza,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Toyota,bZ4x,MPV,0,80,J,20,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2025,Toyota,Toyota,4Runner,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,4Runner Hybrid,MPV,5,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Camry Hybrid,PC,55,30,J,,,US,US+J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Corolla,PC,55,25,J,,,US+J,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Corolla Cross,MPV,60,25,J,,,US,US+BR,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Corolla Cross Hybrid,MPV,50,40,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Corolla Hatchback,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Corolla Hybrid,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Crown,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,GR Corolla,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
 2025,Subaru,Toyota,GR86,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,GR86,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Grand Highlander,MPV,65,25,J,,,US,US+J,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Highlander,MPV,65,20,J,,,US,US+J,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Highlander Hybrid,MPV,55,30,J,,,US,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Land Cruiser,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Mirai,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Prius,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Prius Prime,PC,0,85,J,5,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Rav4 PHEV,PC,0,80,J,20,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Sequoia Hybrid,MPV,50,25,J,15,M,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Sienna HV,MPV,60,30,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,BMW AG,Toyota,Supra,PC,0,37,G,27,AT,AT,AT,G,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Tacoma,Truck,35,20,J,30,M,M+M,US,US+J+TH,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Tacoma Hybrid,Truck,30,35,J,25,M,M,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Tundra,Truck,55,15,J,15,M,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Tundra Hybrid,Truck,50,25,J,15,M,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,bZ4x,MPV,0,80,J,20,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2026,Toyota,Toyota,4Runner,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,4Runner Hybrid,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,C-HR,MPV,0,70,J,30,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Camry Hybrid,PC,60,25,J,,,US,US+J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Corolla,PC,60,25,J,,,US+J,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Corolla Cross,MPV,60,25,J,,,US,US+BR,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Corolla Cross Hybrid,MPV,55,30,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Corolla Hatchback,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Corolla Hybrid,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Crown,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Crown Signia,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,GR Corolla,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
 2026,Subaru,Toyota,GR86,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,GR86,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Grand Highlander,MPV,65,20,J,,,US,US+J,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Highlander,MPV,65,20,J,,,US,US+J,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Highlander Hybrid,MPV,60,25,J,,,US,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Land Cruiser,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Mirai,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Prius,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Prius PHEV,PC,0,85,J,15,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Rav4 Hybrid,MPV,55,25,J,,,US+CAN/J,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Rav4 PHEV,MPV,0,85,J,15,CH,J+J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Sequoia Hybrid,MPV,50,20,J,15,M,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Sienna HV,MPV,60,25,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,BMW AG,Toyota,Supra,PC,0,33,G,26,AT,AT,AT,G,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Tacoma,Truck,40,15,J,35,M,M+M,US,US+J+TH,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Tacoma Hybrid,Truck,30,30,J,30,M,M,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Tundra,Truck,55,15,J,15,M,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Tundra Hybrid,Truck,50,20,J,15,M,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,bZ Woodland,MPV,0,75,J,25,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,bZ4x,MPV,0,80,J,20,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2027,Toyota,Toyota,Land Cruiser,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2027-AALA-Alphabetical-06-08-26.pdf

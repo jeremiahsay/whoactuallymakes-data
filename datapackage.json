@@ -2,9 +2,9 @@
  "name": "whoactuallymakes-data",
  "id": "https://doi.org/10.5281/zenodo.23920936",
  "title": "Who Actually Makes open data",
- "description": "Who makes store-brand products, from public records. 14 datasets, 10,289 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru and Kia rows in NHTSA's AALA reports, model years 2018 on.",
+ "description": "Who makes store-brand products, from public records. 18 datasets, 13,666 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them.",
  "homepage": "https://whoactuallymakes.com/data/",
- "version": "2026-11-09",
+ "version": "2026-11-11",
  "licenses": [
   {
    "name": "CC-BY-4.0",
@@ -59,8 +59,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 157852,
-   "hash": "sha256:9502197ca5918cf8c1d1f3a113d839e087a4f2b56e4b7a1d1b3203af88622f61",
+   "bytes": 185069,
+   "hash": "sha256:1544faee9eba0f719100865b48848d90b38e811f5fc85fdc0a5a9e3046302d60",
    "schema": {
     "fields": [
      {
@@ -609,8 +609,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 460777,
-   "hash": "sha256:9f9bea79f400b0897522818b3bab89ce68a9ca3baa16f350d269b4a87737fbc3",
+   "bytes": 977453,
+   "hash": "sha256:a44f853d7a00b7c0698b18dc86f5d3393e65035cd9bf01ad2db97ae4fd743f6a",
    "schema": {
     "fields": [
      {
@@ -775,8 +775,76 @@
      "path": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2077-2019%22"
     },
     {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0014-2021%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0014-2021%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0029-2021%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0029-2021%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0031-2018%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0031-2018%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0032-2025%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0032-2025%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0037-2021%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0037-2021%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0038-2021%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0038-2021%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0047-2023%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0047-2023%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0070-2017%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0070-2017%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0081-2013%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0081-2013%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0085-2017%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0085-2017%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0097-2016%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0097-2016%22"
+    },
+    {
      "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0109-2021%22",
      "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0109-2021%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0115-2023%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0115-2023%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0117-2021%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0117-2021%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0121-2018%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0121-2018%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0132-2013%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0132-2013%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0140-2025%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0140-2025%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0141-2025%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0141-2025%22"
     },
     {
      "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0144-2025%22",
@@ -787,96 +855,28 @@
      "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0151-2021%22"
     },
     {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0159-2025%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0159-2025%22"
+    },
+    {
      "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2021%22",
      "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2021%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2025%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2025%22"
     },
     {
      "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0166-2022%22",
      "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0166-2022%22"
     },
     {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0217-2023%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0217-2023%22"
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0181-2025%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0181-2025%22"
     },
     {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0234-2014%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0234-2014%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0243-2025%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0243-2025%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0250-2014%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0250-2014%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0311-2025%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0311-2025%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0312-2025%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0312-2025%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0326-2014%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0326-2014%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0336-2016%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0336-2016%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0373-2019%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0373-2019%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0436-2020%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0436-2020%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0437-2020%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0437-2020%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0469-2021%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0469-2021%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0608-2020%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0608-2020%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0640-2016%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0640-2016%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0641-2016%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0641-2016%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0641-2025%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0641-2025%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0642-2016%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0642-2016%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0643-2016%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0643-2016%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0644-2016%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0644-2016%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0663-2019%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0663-2019%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0705-2023%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0705-2023%22"
+     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0183-2014%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0183-2014%22"
     }
    ]
   },
@@ -888,8 +888,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 64910,
-   "hash": "sha256:620fac65f6d86f733d8e6dc591b942aa31e1e42811f98868265a618dfd67ea63",
+   "bytes": 72128,
+   "hash": "sha256:d6206b17630c72b1682318f948554e96ad1583dfc1b5c649373b5af1aa2abee9",
    "schema": {
     "fields": [
      {
@@ -971,8 +971,16 @@
      "path": "https://bgr.com/"
     },
     {
+     "title": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx",
+     "path": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+    },
+    {
      "title": "https://centralmilling.com/",
      "path": "https://centralmilling.com/"
+    },
+    {
+     "title": "https://clariosdigitallibrary.widencollective.com/",
+     "path": "https://clariosdigitallibrary.widencollective.com/"
     },
     {
      "title": "https://community.qvc.com/",
@@ -985,6 +993,10 @@
     {
      "title": "https://dailymed.nlm.nih.gov/dailymed/",
      "path": "https://dailymed.nlm.nih.gov/dailymed/"
+    },
+    {
+     "title": "https://data.energystar.gov/",
+     "path": "https://data.energystar.gov/"
     },
     {
      "title": "https://delcoline.com/wp-content/uploads/2016/08/ACDelco-battery-warranty-information.pdf",
@@ -1021,6 +1033,10 @@
     {
      "title": "https://fsc.org/",
      "path": "https://fsc.org/"
+    },
+    {
+     "title": "https://global.toyota/en/company/profile/facilities/manufacturing-worldwide/",
+     "path": "https://global.toyota/en/company/profile/facilities/manufacturing-worldwide/"
     },
     {
      "title": "https://gov.georgia.gov/",
@@ -1075,12 +1091,20 @@
      "path": "https://open.fda.gov/apis/food/enforcement/"
     },
     {
+     "title": "https://opendata.fcc.gov/d/3b3k-34jp",
+     "path": "https://opendata.fcc.gov/d/3b3k-34jp"
+    },
+    {
      "title": "https://ownersmanual.hyundai.com/",
      "path": "https://ownersmanual.hyundai.com/"
     },
     {
      "title": "https://ownersmanual.kia.com/",
      "path": "https://ownersmanual.kia.com/"
+    },
+    {
+     "title": "https://pressroom.toyota.com/",
+     "path": "https://pressroom.toyota.com/"
     },
     {
      "title": "https://search.fsc.org/",
@@ -1101,6 +1125,10 @@
     {
      "title": "https://thekrazycouponlady.com/",
      "path": "https://thekrazycouponlady.com/"
+    },
+    {
+     "title": "https://tsdr.uspto.gov/",
+     "path": "https://tsdr.uspto.gov/"
     },
     {
      "title": "https://ttbonline.gov/colasonline/publicSearchColasBasic.do",
@@ -1133,34 +1161,6 @@
     {
      "title": "https://www.425business.com/",
      "path": "https://www.425business.com/"
-    },
-    {
-     "title": "https://www.aaa.com/",
-     "path": "https://www.aaa.com/"
-    },
-    {
-     "title": "https://www.allblogthings.com/",
-     "path": "https://www.allblogthings.com/"
-    },
-    {
-     "title": "https://www.babygearlab.com/",
-     "path": "https://www.babygearlab.com/"
-    },
-    {
-     "title": "https://www.batteriesinaflash.com/",
-     "path": "https://www.batteriesinaflash.com/"
-    },
-    {
-     "title": "https://www.bloomberg.com/",
-     "path": "https://www.bloomberg.com/"
-    },
-    {
-     "title": "https://www.bridgestoneamericas.com/en/company/safety/choosing-tires/replacement-guidance",
-     "path": "https://www.bridgestoneamericas.com/en/company/safety/choosing-tires/replacement-guidance"
-    },
-    {
-     "title": "https://www.cand.uscourts.gov/",
-     "path": "https://www.cand.uscourts.gov/"
     }
    ]
   },
@@ -1240,8 +1240,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 8756,
-   "hash": "sha256:66490b25612bb866ffa2226a34b871285304112126dddc454221fe5c3ee7b1ff",
+   "bytes": 10740,
+   "hash": "sha256:fd57468a941f41018de189a6a5b03c2446b5ee529fd2274df6d109aec3cb32f0",
    "schema": {
     "fields": [
      {
@@ -1301,8 +1301,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 4333,
-   "hash": "sha256:7437962f32360cce7960bc7d6c628d56b178ab18f4fdbcc5af10a6d30473873c",
+   "bytes": 8596,
+   "hash": "sha256:9e379fd9b5d5d1d9d67782b52648b45821271876d2f3619cc279a5af5739f835",
    "schema": {
     "fields": [
      {
@@ -1411,7 +1411,7 @@
    "mediatype": "text/csv",
    "encoding": "utf-8",
    "bytes": 7931,
-   "hash": "sha256:6b4b39a1efffcb21ab6893491f9617715a7caf062111cafaef3b6d362da648b8",
+   "hash": "sha256:b569fa1e431499ac065271d5d65d2547d8ddef50c5c02269b23a61bf39279834",
    "schema": {
     "fields": [
      {
@@ -1732,13 +1732,13 @@
   {
    "name": "car-origin-filings",
    "path": "data/car-origin-filings.csv",
-   "title": "Subaru and Kia rows in NHTSA's AALA reports, model years 2018 on",
-   "description": "Every row for a Subaru or Kia car, by badge or by builder, in NHTSA's yearly Part 583 reports: US and Canadian parts share, top foreign parts sources, final assembly country, and engine and transmission origin.",
+   "title": "Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on",
+   "description": "Every row for a Subaru, Kia or Toyota car, by badge or by builder, in NHTSA's yearly Part 583 reports: US and Canadian parts share, top foreign parts sources, final assembly country, and engine and transmission origin.",
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 32854,
-   "hash": "sha256:b39aca6c0e2b0c940935fd49f1b62669a03e5f415d81d3e1052578e7243e1fdd",
+   "bytes": 65754,
+   "hash": "sha256:b5c070a4d57d6101a041a4cc57cd91a94f247d5f84b21f6c762fe2f715fccde5",
    "schema": {
     "fields": [
      {
@@ -1817,6 +1817,333 @@
     {
      "title": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports",
      "path": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
+    }
+   ]
+  },
+  {
+   "name": "insignia-register",
+   "path": "data/insignia-register.csv",
+   "title": "Insignia model numbers on California's appliance register",
+   "description": "Every Insignia filing with a model number starting NS on the California Energy Commission's appliance register (MAEDbS): the company listed as manufacturer, the type, the date added and, for TVs, screen size and width in pixels.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 110642,
+   "hash": "sha256:01d7ca804b0a4497e50c9ddba3de735af76ae67f0ebc8dbb8ae126fa112e4122",
+   "schema": {
+    "fields": [
+     {
+      "name": "model",
+      "type": "string",
+      "description": "The model number as filed. A * or a run of x stands for characters the filer left open."
+     },
+     {
+      "name": "manufacturer_listed",
+      "type": "string",
+      "description": "The company the filing lists as manufacturer; blank when Best Buy filed it in its own name."
+     },
+     {
+      "name": "filed_by_best_buy",
+      "type": "boolean",
+      "description": "True when the filer is Best Buy, so no factory is named."
+     },
+     {
+      "name": "filer",
+      "type": "string",
+      "description": "The manufacturer field exactly as the register holds it, Best Buy included."
+     },
+     {
+      "name": "type",
+      "type": "string",
+      "description": "Product type: Dehumidifier, Dishwasher, Dryer, Microwave or cooking, Portable air conditioner, Refrigerator or freezer, Room air conditioner, TV, Washer or Wine or beverage cooler."
+     },
+     {
+      "name": "register_list",
+      "type": "string",
+      "description": "Which list on the register the row came from."
+     },
+     {
+      "name": "filed",
+      "type": "string",
+      "description": "Date the filing was added (YYYY-MM-DD); blank where our copy lost it."
+     },
+     {
+      "name": "screen_inches",
+      "type": "number",
+      "description": "Diagonal screen size for TVs."
+     },
+     {
+      "name": "width_px",
+      "type": "number",
+      "description": "Horizontal pixel count, for TVs on the federally tested list."
+     },
+     {
+      "name": "archived",
+      "type": "boolean",
+      "description": "True for rows on the register's archived list."
+     },
+     {
+      "name": "pattern",
+      "type": "boolean",
+      "description": "True when the model number is a pattern rather than one model."
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx",
+     "path": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+    }
+   ]
+  },
+  {
+   "name": "store-tools-register",
+   "path": "data/store-tools-register.csv",
+   "title": "Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register",
+   "description": "Every battery-charger filing on the California Energy Commission's appliance register (MAEDbS) under Hart, Hyper Tough, Husky and Harbor Freight's brand names: the company listed as manufacturer, the charger, basic and product model numbers, the test battery's maker, model and voltage, the power supply's maker and the date added.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 138756,
+   "hash": "sha256:bbf72fcaab4e5b93b45c73763466cfc801c3ab15b6f9a47a529118ce4dc606e6",
+   "schema": {
+    "fields": [
+     {
+      "name": "store_brand",
+      "type": "string",
+      "description": "The store brand family: Harbor Freight, Hart, Husky or Hyper Tough."
+     },
+     {
+      "name": "brand_filed",
+      "type": "string",
+      "description": "The brand field exactly as filed."
+     },
+     {
+      "name": "manufacturer_listed",
+      "type": "string",
+      "description": "The company the filing lists as manufacturer; blank when Harbor Freight filed it in its own name."
+     },
+     {
+      "name": "filed_by_harbor_freight",
+      "type": "boolean",
+      "description": "True when the filer is Harbor Freight, so no factory is named."
+     },
+     {
+      "name": "filer",
+      "type": "string",
+      "description": "The manufacturer field as the register holds it, Harbor Freight included."
+     },
+     {
+      "name": "charger_models",
+      "type": "string",
+      "description": "The charger model numbers on the filing, separated by semicolons. A * stands for characters the filer left open."
+     },
+     {
+      "name": "basic_model",
+      "type": "string",
+      "description": "The filing's basic model number."
+     },
+     {
+      "name": "product_models",
+      "type": "string",
+      "description": "Products the charger is sold with, where the filing lists them (small-charger list only)."
+     },
+     {
+      "name": "test_battery_maker",
+      "type": "string",
+      "description": "The company the filing names as maker of the battery the charger was tested with."
+     },
+     {
+      "name": "test_battery_models",
+      "type": "string",
+      "description": "The test battery's model number."
+     },
+     {
+      "name": "test_battery_volts",
+      "type": "number",
+      "description": "The test battery's nameplate voltage."
+     },
+     {
+      "name": "test_battery_wh",
+      "type": "number",
+      "description": "The test battery's energy capacity in watt-hours."
+     },
+     {
+      "name": "power_supply_maker",
+      "type": "string",
+      "description": "The company the filing names as maker of the external power supply."
+     },
+     {
+      "name": "product_type",
+      "type": "string",
+      "description": "Product type, on the small-charger list."
+     },
+     {
+      "name": "register_list",
+      "type": "string",
+      "description": "Which list on the register the row came from: Federally regulated battery chargers or Small battery chargers (California)."
+     },
+     {
+      "name": "filed",
+      "type": "string",
+      "description": "Date the filing was added (YYYY-MM-DD)."
+     },
+     {
+      "name": "archived",
+      "type": "boolean",
+      "description": "True for rows on the register's archived list."
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx",
+     "path": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+    }
+   ]
+  },
+  {
+   "name": "craftsman-records",
+   "path": "data/craftsman-records.csv",
+   "title": "Craftsman model numbers and the companies government records name for them",
+   "description": "One row per record that ties a Craftsman model number to a company: battery-charger filings on California's appliance register (MAEDbS), EPA small-engine certificates from its 1997-2010 archive that list Craftsman or Sears models, and CPSC recalls that mention Craftsman. Each row gives the company, its role in the record, the year, the model numbers and, for Sears-era models, the three-digit Sears source code.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 98488,
+   "hash": "sha256:f52cf7c6590d806f67daeaee89ade630913b9a0afcbdf64050a5f6a1130e2993",
+   "schema": {
+    "fields": [
+     {
+      "name": "record",
+      "type": "string",
+      "description": "Which record the row comes from: CPSC recall, California charger filing or EPA engine certificate."
+     },
+     {
+      "name": "company",
+      "type": "string",
+      "description": "The company the record names, as written there."
+     },
+     {
+      "name": "role",
+      "type": "string",
+      "description": "What the record says the company did."
+     },
+     {
+      "name": "year",
+      "type": "string",
+      "description": "Year the filing was added, the engine's model year or the recall date."
+     },
+     {
+      "name": "model_numbers",
+      "type": "string",
+      "description": "Model numbers the record lists, separated by semicolons. A * stands for characters a filer left open."
+     },
+     {
+      "name": "sears_source_code",
+      "type": "string",
+      "description": "For Sears-era model numbers, the three digits before the dot."
+     },
+     {
+      "name": "also_named",
+      "type": "string",
+      "description": "Another company the same record names, such as the test battery's maker."
+     },
+     {
+      "name": "product",
+      "type": "string",
+      "description": "What the record covers, in its own words where it gives them."
+     },
+     {
+      "name": "reference",
+      "type": "string",
+      "description": "The recall number or EPA engine family."
+     },
+     {
+      "name": "url",
+      "type": "string",
+      "description": "Where the record can be read."
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx",
+     "path": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+    },
+    {
+     "title": "https://www.epa.gov/compliance-and-fuel-economy-data/engine-certification-data",
+     "path": "https://www.epa.gov/compliance-and-fuel-economy-data/engine-certification-data"
+    },
+    {
+     "title": "https://www.saferproducts.gov/",
+     "path": "https://www.saferproducts.gov/"
+    }
+   ]
+  },
+  {
+   "name": "onn-tv-register",
+   "path": "data/onn-tv-register.csv",
+   "title": "Onn TV model numbers and the manufacturers California's appliance register lists for them",
+   "description": "One row per Onn TV filing on California's appliance register (MAEDbS), from all three of its TV lists, approved and archived, under both spellings it holds (ONN and onn.). Each row gives the model number, the company listed as manufacturer, the list, the date filed and the screen size.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 57462,
+   "hash": "sha256:700061a8fcfb83eb48fd19e12cb9ae28c76bd93cd2b0dc5d352103083691ef04",
+   "schema": {
+    "fields": [
+     {
+      "name": "model",
+      "type": "string",
+      "description": "The model number as filed. A * stands for characters a filer left open."
+     },
+     {
+      "name": "manufacturer_listed",
+      "type": "string",
+      "description": "The company the filing lists as manufacturer, one spelling per company."
+     },
+     {
+      "name": "brand_as_filed",
+      "type": "string",
+      "description": "The brand field as filed: ONN or onn."
+     },
+     {
+      "name": "register_list",
+      "type": "string",
+      "description": "Which of the register's TV lists the row is on."
+     },
+     {
+      "name": "filed",
+      "type": "string",
+      "description": "Date the filing was added, where the list gives one."
+     },
+     {
+      "name": "screen_inches",
+      "type": "number",
+      "description": "Screen size in inches, where the list gives one."
+     },
+     {
+      "name": "archived",
+      "type": "boolean",
+      "description": "True for rows on the register's archived lists."
+     },
+     {
+      "name": "pattern",
+      "type": "boolean",
+      "description": "True when the model number holds open characters (*)."
+     },
+     {
+      "name": "left_out_of_counts",
+      "type": "boolean",
+      "description": "True for the 2014-15 rows filed under ONN with other brands' model numbers."
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx",
+     "path": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
     }
    ]
   }

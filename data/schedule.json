@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-09",
- "last_change": "2026-11-09",
+ "generated": "2026-11-11",
+ "last_change": "2026-11-11",
  "cadence_months": {
   "confirmed": 12,
   "documented": 6,
@@ -63,8 +63,8 @@
    "file_url": null,
    "hand_note": null,
    "once": false,
-   "last": "2026-11-09",
-   "due": "2026-11-16",
+   "last": "2026-11-11",
+   "due": "2026-11-18",
    "result": "38 recalls waiting for review"
   },
   {
@@ -329,9 +329,9 @@
    "file_url": null,
    "hand_note": "Read in a browser at ZIP 98101: click each size on the six listings, plus Newborn. Log any new offer's dates in data/guidance/costco-diapers.json. Read again the day after an offer ends. Update kirkland-diapers.json too: the build stops if the two disagree.",
    "once": false,
-   "last": "2026-11-06",
-   "due": "2026-11-09",
-   "result": "Kirkland on offer to Nov 8, 12.5 to 25.9 cents; regular 15.6 to 32.4; Huggies 19.8 to 48.1; Pampers 20.5 to 46.8"
+   "last": "2026-11-09",
+   "due": "2026-11-23",
+   "result": "Kirkland regular 15.6 to 32.4 cents; Huggies on offer to Nov 22, 14.6 to 38.5; Pampers 20.5 to 46.8"
   },
   {
    "id": "sams-diaper-prices",
@@ -464,7 +464,7 @@
    "once": false,
    "last": "2026-11-06",
    "due": "2027-11-06",
-   "result": "15 rule texts on file"
+   "result": "22 rule texts on file"
   },
   {
    "id": "usda-legend-read",
@@ -619,6 +619,25 @@
    "result": null
   },
   {
+   "id": "toyota-origin-reads",
+   "what": "Where Toyotas are made: NHTSA report and Toyota plant lists",
+   "gives": "New Toyota rows in the AALA report and any change to the plant lists, for /where-is-toyota-made/",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "nhtsa-aala",
+    "name": "NHTSA Part 583 American Automobile Labeling Act reports",
+    "publisher": "US National Highway Traffic Safety Administration",
+    "url": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
+   },
+   "file_url": null,
+   "hand_note": "nhtsa.gov and pressroom.toyota.com refuse scripts. Save the newest AALA report in Chrome as for Subaru, then run tools/parse_aala.py and tools/build_car_origin.py. Re-read the two global.toyota plant lists and data/aala/placed.json rows.",
+   "once": false,
+   "last": null,
+   "due": "2026-12-09",
+   "result": null
+  },
+  {
    "id": "ttb-kirkland",
    "what": "TTB label approvals for Kirkland",
    "gives": "Every Kirkland vodka, tequila and bourbon approval on those pages, with its status; new approvals become leads for a person to read",
@@ -750,6 +769,120 @@
    "last": "2026-11-08",
    "due": "2027-11-08",
    "result": "Read in the Nov 2026 site audit: privacy named the click count and the two tools that send nothing; terms, for-makers and the data notes corrected"
+  },
+  {
+   "id": "insignia-register",
+   "what": "California appliance register: Insignia filings",
+   "gives": "The company listed as manufacturer for each Insignia model number, on the Insignia page and in the open dataset",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "cec-maedbs",
+    "name": "California Energy Commission Modernized Appliance Efficiency Database System (MAEDbS)",
+    "publisher": "California Energy Commission",
+    "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+   },
+   "file_url": null,
+   "hand_note": "Read in a browser: Advanced Search, brand Insignia, each product type; export the CSV, save it under research/ with its fingerprint, then run tools/build_insignia.py.",
+   "once": false,
+   "last": "2026-11-10",
+   "due": "2026-12-10",
+   "result": "714 filings, 34 companies named"
+  },
+  {
+   "id": "store-tools-register",
+   "what": "California appliance register: Hart, Hyper Tough, Husky and Harbor Freight battery chargers",
+   "gives": "The company listed on each charger filing for the four store brands, on the store-brand tools page and in the open dataset",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "cec-maedbs",
+    "name": "California Energy Commission Modernized Appliance Efficiency Database System (MAEDbS)",
+    "publisher": "California Energy Commission",
+    "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+   },
+   "file_url": null,
+   "hand_note": "Run tools/cec_maedbs_pull.py for each charger list (see research/2026-11-10-store-brand-tools/raw/cec/manifest.json for the searches), save into a new dated research folder with a manifest, point build_store_tools.py at it, then run it.",
+   "once": false,
+   "last": "2026-11-10",
+   "due": "2026-12-10",
+   "result": "657 filings, 32 companies named"
+  },
+  {
+   "id": "craftsman-records",
+   "what": "Craftsman records: California charger register, CPSC recalls and Stanley Black & Decker's newest SEC report",
+   "gives": "The companies named for Craftsman model numbers on the Craftsman page, its lookup and the open dataset, and the ownership timeline",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "cec-maedbs",
+    "name": "California Energy Commission Modernized Appliance Efficiency Database System (MAEDbS)",
+    "publisher": "California Energy Commission",
+    "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+   },
+   "file_url": null,
+   "hand_note": "Run tools/cec_maedbs_pull.py for Craftsman on both charger lists (see research/2026-11-10-craftsman/raw/cec/manifest.json), re-run the four CPSC searches in research/2026-11-10-craftsman/raw/cpsc-recalls-craftsman.json, and read Stanley Black & Decker's newest 10-Q or 10-K for Craftsman, MTD and Transform Holdco. Save into a new dated research folder, point build_craftsman.py at it, then run it. The EPA 1997-2010 archive doesn't change.",
+   "once": false,
+   "last": "2026-11-10",
+   "due": "2026-12-10",
+   "result": "81 charger filings, 32 recalls, 332 engine rows, 11 Sears codes decoded"
+  },
+  {
+   "id": "onn-tv-register",
+   "what": "Onn TV filings on California's appliance register, Walmart's newest SEC report and the Onn TV support sites",
+   "gives": "The companies named for Onn TV model numbers on the Onn TV page, its lookup and the open dataset, and the Vizio timeline",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "cec-maedbs",
+    "name": "California Energy Commission Modernized Appliance Efficiency Database System (MAEDbS)",
+    "publisher": "California Energy Commission",
+    "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+   },
+   "file_url": null,
+   "hand_note": "Run tools/cec_maedbs_pull.py for brands ONN and onn. on the three TV lists, status Approved, and for every brand on the archived TV lists (see research/2026-11-10-onn/raw/cec/manifest.json); rebuild other-brands.json from every approved TV row. Read Walmart's newest 10-K or 10-Q for onn. and VIZIO, and re-read the two Onn support sites in a browser. Save into a new dated research folder, point build_onn.py at it, then run it.",
+   "once": false,
+   "last": "2026-11-10",
+   "due": "2026-12-10",
+   "result": "324 Onn TV filings counted, 13 companies, 29 numbers filed by more than one"
+  },
+  {
+   "id": "fcc-id-register",
+   "what": "The FCC's open grantee register, the FCC Covered List, and the FCC grant records the FCC ID page quotes",
+   "gives": "Whose grantee code each FCC ID starts with on the FCC ID lookup page, its tables, and its Covered List section",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "fcc-open-data",
+    "name": "FCC Open Data: equipment authorization grantee registrations",
+    "publisher": "Federal Communications Commission",
+    "url": "https://opendata.fcc.gov/d/3b3k-34jp"
+   },
+   "file_url": null,
+   "hand_note": "Download https://opendata.fcc.gov/api/views/3b3k-34jp/rows.csv?accessType=DOWNLOAD and the dataset's metadata (api/views/3b3k-34jp.json) into a new dated research folder; if the newest registration date moved past 22 Mar 2021, update the page's wording about the cut-off. Re-read the FCC Covered List in a browser and update covered and covered_categories in data/guidance/fcc-id.json. Point the guidance at the new CSV and its sha256, then run tools/build_fcc.py.",
+   "once": false,
+   "last": "2026-11-10",
+   "due": "2026-12-10",
+   "result": "50,153 grantee codes, registered up to 22 Mar 2021; Covered List dated 6 Nov 2026"
+  },
+  {
+   "id": "everstart-records",
+   "what": "EverStart charger filings on California's appliance register, Walmart's EverStart listings and warranty sheet, and new SEC filings naming EverStart",
+   "gives": "The maker records, prices, free replacement periods and charger filings on the EverStart page",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "cec-maedbs",
+    "name": "California Energy Commission Modernized Appliance Efficiency Database System (MAEDbS)",
+    "publisher": "California Energy Commission",
+    "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+   },
+   "file_url": null,
+   "hand_note": "Run tools/cec_maedbs_pull.py for brands EverStart and EverStart maxx on the Federally Regulated Battery Chargers list, status Approved. Re-read in Chrome the eight Walmart listings in research/2026-11-11-everstart/raw/web/walmart-everstart-listings-2026-11-11.txt and the Clarios-hosted warranty sheet they link. Search SEC full text (efts.sec.gov) for EverStart filed since the last read. Save into a new dated research folder, point build_everstart.py and the guidance at it, then run it. A new maker named for the batteries is a correction for the owner.",
+   "once": false,
+   "last": "2026-11-11",
+   "due": "2026-12-11",
+   "result": "62 EverStart charger filings (Baccus 57); 8 Walmart listings read; Clarios filings to 31 May 2024"
   }
  ],
  "terms": [
@@ -845,9 +978,25 @@
    "source": "CPSC recalls database (SaferProducts.gov recall API)",
    "publisher": "US Consumer Product Safety Commission",
    "url": "https://www.cpsc.gov/Recalls/CPSC-Recalls-Application-Program-Interface-API-Information",
-   "checked": "2026-11-05",
-   "due": "2027-11-05",
+   "checked": "2026-11-10",
+   "due": "2027-11-10",
    "automated_read": "yes"
+  },
+  {
+   "source": "CRAFTSMAN brand website (Stanley Black & Decker)",
+   "publisher": "Stanley Black & Decker",
+   "url": "https://www.craftsman.com/robots.txt",
+   "checked": "2026-11-10",
+   "due": "2027-11-10",
+   "automated_read": "yes"
+  },
+  {
+   "source": "California Energy Commission Modernized Appliance Efficiency Database System (MAEDbS)",
+   "publisher": "California Energy Commission",
+   "url": "https://www.energy.ca.gov/conditions.html",
+   "checked": "2026-11-10",
+   "due": "2027-11-10",
+   "automated_read": "ask"
   },
   {
    "source": "Central Milling website",
@@ -864,6 +1013,14 @@
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "ask"
+  },
+  {
+   "source": "Clarios Digital Library",
+   "publisher": "Clarios",
+   "url": "https://www.clarios.com/",
+   "checked": "2026-11-11",
+   "due": "2027-11-11",
+   "automated_read": "no"
   },
   {
    "source": "Consumer Reports",
@@ -922,6 +1079,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "DOE Compliance Certification Database",
+   "publisher": "US Department of Energy",
+   "url": "https://www.regulations.doe.gov/certification-data/",
+   "checked": "2026-11-10",
+   "due": "2027-11-10",
+   "automated_read": "no"
+  },
+  {
    "source": "DailyMed drug labels",
    "publisher": "US National Library of Medicine",
    "url": "https://dailymed.nlm.nih.gov/dailymed/about-dailymed.cfm",
@@ -970,11 +1135,27 @@
    "automated_read": "yes"
   },
   {
+   "source": "ENERGY STAR certified products data (data.energystar.gov)",
+   "publisher": "US Environmental Protection Agency",
+   "url": "https://data.energystar.gov/",
+   "checked": "2026-11-10",
+   "due": "2027-11-10",
+   "automated_read": "yes"
+  },
+  {
    "source": "EPA Safer Choice product list",
    "publisher": "U.S. Environmental Protection Agency",
    "url": "https://www.epa.gov/saferchoice/products",
    "checked": "2026-11-07",
    "due": "2027-11-07",
+   "automated_read": "yes"
+  },
+  {
+   "source": "EPA engine certification data: small nonroad spark-ignition engines",
+   "publisher": "US Environmental Protection Agency",
+   "url": "https://www.epa.gov/web-policies-and-procedures/epa-disclaimers",
+   "checked": "2026-11-10",
+   "due": "2027-11-10",
    "automated_read": "yes"
   },
   {
@@ -992,6 +1173,22 @@
    "checked": "2026-11-02",
    "due": "2027-11-02",
    "automated_read": "public-domain"
+  },
+  {
+   "source": "FCC Open Data: equipment authorization grantee registrations",
+   "publisher": "Federal Communications Commission",
+   "url": "https://www.usa.gov/government-works",
+   "checked": "2026-11-10",
+   "due": "2027-11-10",
+   "automated_read": "public-domain"
+  },
+  {
+   "source": "FCC equipment authorization search and FCC web pages",
+   "publisher": "Federal Communications Commission",
+   "url": "https://www.fcc.gov/oet/ea/fccid",
+   "checked": "2026-11-10",
+   "due": "2027-11-10",
+   "automated_read": "no"
   },
   {
    "source": "FDA recalls, market withdrawals and safety alerts (company announcements)",
@@ -1525,8 +1722,8 @@
    "source": "SEC EDGAR company filings",
    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
    "url": "https://www.sec.gov/os/accessing-edgar-data",
-   "checked": "2026-11-05",
-   "due": "2027-11-05",
+   "checked": "2026-11-10",
+   "due": "2027-11-10",
    "automated_read": "yes"
   },
   {
@@ -1730,6 +1927,22 @@
    "automated_read": "ask"
   },
   {
+   "source": "Toyota USA Newsroom",
+   "publisher": "Toyota Motor North America, Inc.",
+   "url": "https://www.toyota.com/support/legal-terms/",
+   "checked": "2026-11-09",
+   "due": "2027-11-09",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Toyota global plant lists",
+   "publisher": "Toyota Motor Corporation",
+   "url": "https://global.toyota/en/terms/",
+   "checked": "2026-11-09",
+   "due": "2027-11-09",
+   "automated_read": "ask"
+  },
+  {
    "source": "Toyota owner's manuals",
    "publisher": "Toyota Motor North America, Inc.",
    "url": "https://www.toyota.com/support/legal-terms",
@@ -1794,6 +2007,14 @@
    "automated_read": "no"
   },
   {
+   "source": "USPTO Trademark Search and Trademark Status & Document Retrieval (TSDR)",
+   "publisher": "United States Patent and Trademark Office",
+   "url": "https://www.uspto.gov/terms-use-uspto-websites",
+   "checked": "2026-11-11",
+   "due": "2027-11-11",
+   "automated_read": "ask"
+  },
+  {
    "source": "United States Code (via Cornell LII)",
    "publisher": "US Congress (Office of the Law Revision Counsel); text served by Cornell Law School's Legal Information Institute",
    "url": "https://www.law.cornell.edu/lii/terms/documentation",
@@ -1808,6 +2029,14 @@
    "checked": "2026-11-04",
    "due": "2027-11-04",
    "automated_read": "yes"
+  },
+  {
+   "source": "Walmart.com",
+   "publisher": "Walmart Inc.",
+   "url": "https://www.walmart.com/help/article/walmart-com-terms-of-use/3b75080af40340d6bbd596f116fae5a0",
+   "checked": "2026-11-11",
+   "due": "2027-11-11",
+   "automated_read": "no"
   },
   {
    "source": "Whiting-Turner project pages",
@@ -1832,6 +2061,14 @@
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "ask"
+  },
+  {
+   "source": "onn. TV support websites (onntvsupport.com)",
+   "publisher": "Walmart's onn. TV support sites, run by VIZIO and by Element TV Company",
+   "url": "https://roku.onntvsupport.com/terms-of-service/",
+   "checked": "2026-11-10",
+   "due": "2027-11-10",
+   "automated_read": "no"
   },
   {
    "source": "openFDA food and drug enforcement (recall) reports",
@@ -3312,6 +3549,496 @@
    "page": "/aldi/"
   },
   {
+   "id": "c-gv-apple-juice-refresco",
+   "product": "gv-apple-juice",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Apple Juice",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-bread-bimbo-bakeries-usa",
+   "product": "gv-bread",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Sandwich Bread",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-bread-lewis-bakeries",
+   "product": "gv-bread",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Sandwich Bread",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-cashews-john-b-sanfilippo",
+   "product": "gv-cashews",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Honey Roasted Cashews",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-chia-natural-sourcing",
+   "product": "gv-chia",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Organic Black Chia Seeds",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-chicken-broth-treehouse-foods",
+   "product": "gv-chicken-broth",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Chicken Broth",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-chips-shearers-foods",
+   "product": "gv-chips",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Tortilla and Potato Chips",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-cinnamon-rolls-jm-smucker",
+   "product": "gv-cinnamon-rolls",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Cinnamon Rolls and Cheese Danish",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-cookies-shearers-foods",
+   "product": "gv-cookies",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Sandwich Cookies",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-corn-meal-ch-guenther",
+   "product": "gv-corn-meal",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Self-Rising White Corn Meal Mix",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-cottage-cheese-saputo-cheese-usa",
+   "product": "gv-cottage-cheese",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Cottage Cheese",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-donuts-united-states-bakery",
+   "product": "gv-donuts",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Old Fashioned Glazed Donuts",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-flax-healthy-food-ingredients",
+   "product": "gv-flax",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Organic Ground Flax Seed",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-frozen-fruit-oregon-potato",
+   "product": "gv-frozen-fruit",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Frozen Fruit",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-frozen-fruit-riverside-foods",
+   "product": "gv-frozen-fruit",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Frozen Fruit",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-frozen-fruit-sunopta",
+   "product": "gv-frozen-fruit",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Frozen Fruit",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-frozen-vegetables-crf-frozen-foods",
+   "product": "gv-frozen-vegetables",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Frozen Vegetables",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-frozen-vegetables-national-frozen-foods",
+   "product": "gv-frozen-vegetables",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Frozen Vegetables",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-frozen-waffles-treehouse-foods",
+   "product": "gv-frozen-waffles",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Frozen Waffles",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-fruit-cocktail-pacific-coast-producers",
+   "product": "gv-fruit-cocktail",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Fruit Cocktail",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-hamburger-buns-bimbo-bakeries-usa",
+   "product": "gv-hamburger-buns",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Hamburger Buns",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-hamburger-buns-flowers-foods",
+   "product": "gv-hamburger-buns",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Hamburger Buns",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-hard-cooked-eggs-almark-foods",
+   "product": "gv-hard-cooked-eggs",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Hard Cooked Eggs",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-hash-browns-lamb-weston",
+   "product": "gv-hash-browns",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Shredded Hash Browns",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-hawaiian-rolls-united-states-bakery",
+   "product": "gv-hawaiian-rolls",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Hawaiian Rolls",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-herbs-red-monkey-foods",
+   "product": "gv-herbs",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Organic Parsley and Herbes de Provence",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-hot-dog-buns-flowers-foods",
+   "product": "gv-hot-dog-buns",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Hot Dog Buns",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-ice-cream-bars-fieldbrook-foods",
+   "product": "gv-ice-cream-bars",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Chocolate Covered Vanilla Ice Cream Bars",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-mac-cheese-treehouse-foods",
+   "product": "gv-mac-cheese",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Macaroni and Cheese",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-macadamia-texas-star-nut",
+   "product": "gv-macadamia",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Macadamia Nuts",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-melt-cheese-great-lakes-cheese",
+   "product": "gv-melt-cheese",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Melt'n Dip Easy Melt Cheese",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-milk-hiland-dairy",
+   "product": "gv-milk",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Vitamin D Whole Milk",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-muffins-brownies-give-and-go",
+   "product": "gv-muffins-brownies",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Snack Muffins and Brownie Cups",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-oyster-crackers-shearers-foods",
+   "product": "gv-oyster-crackers",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Soup and Oyster Crackers",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-pancake-mix-continental-mills",
+   "product": "gv-pancake-mix",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Buttermilk Pancake and Waffle Mix",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-pickles-pinnacle-foods",
+   "product": "gv-pickles",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Bread and Butter Chips (pickles)",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-salsa-conagra",
+   "product": "gv-salsa",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Salsa",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-shredded-cheese-great-lakes-cheese",
+   "product": "gv-shredded-cheese",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Shredded Cheese",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-shredded-cheese-schreiber-foods",
+   "product": "gv-shredded-cheese",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Shredded Cheese",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-shrimp-beaver-street",
+   "product": "gv-shrimp",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Raw Frozen Shrimp",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-snack-bars-treehouse-foods",
+   "product": "gv-snack-bars",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Almond and Protein Bars",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-sugar-domino-foods",
+   "product": "gv-sugar",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Sugar",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-swiss-rolls-flowers-foods",
+   "product": "gv-swiss-rolls",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Swiss Rolls",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-taco-seasoning-ch-guenther",
+   "product": "gv-taco-seasoning",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Mild Taco Seasoning",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-tomato-paste-pacific-coast-producers",
+   "product": "gv-tomato-paste",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Tomato Paste",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-tomato-soup-morgan-foods",
+   "product": "gv-tomato-soup",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Gluten Free Tomato Condensed Soup",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-trail-mix-anns-house-of-nuts",
+   "product": "gv-trail-mix",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Tex Mex Trail Mix",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-vanilla-crackers-rovira-biscuit",
+   "product": "gv-vanilla-crackers",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Vanilla Crackers",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
+   "id": "c-gv-walnuts-south-georgia-pecan",
+   "product": "gv-walnuts",
+   "stamp": "documented",
+   "next_check": "2027-05-09",
+   "last_check": "2026-11-09",
+   "name": "Great Value Chopped Walnuts",
+   "brand": "great-value",
+   "page": "/great-value/"
+  },
+  {
    "id": "c-mm-bourbon-and-american-whiskey-buffalo-trace-distillery",
    "product": "mm-bourbon-and-american-whiskey",
    "stamp": "documented",
@@ -4622,6 +5349,3736 @@
    "page": "/members-mark/"
   },
   {
+   "id": "c-tj-alc-beer-sapporo-u-s-a",
+   "product": "tj-alc-beer",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Beer",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-beer-stone-brewing",
+   "product": "tj-alc-beer",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Beer",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-beer-win-it-too",
+   "product": "tj-alc-beer",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Beer",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-bourbon-and-american-whiskey-deep-ellum-distillery",
+   "product": "tj-alc-bourbon-and-american-whiskey",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Bourbon and American whiskey",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-bourbon-and-american-whiskey-dynasty-spirits-brands",
+   "product": "tj-alc-bourbon-and-american-whiskey",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Bourbon and American whiskey",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-bourbon-and-american-whiskey-modern-spirits",
+   "product": "tj-alc-bourbon-and-american-whiskey",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Bourbon and American whiskey",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-bourbon-and-american-whiskey-sazerac-company",
+   "product": "tj-alc-bourbon-and-american-whiskey",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Bourbon and American whiskey",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-bourbon-and-american-whiskey-united-states-distilled-products",
+   "product": "tj-alc-bourbon-and-american-whiskey",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Bourbon and American whiskey",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-canadian-whisky-sazerac-company",
+   "product": "tj-alc-canadian-whisky",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Canadian whisky",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-cocktails-global-universal-srl",
+   "product": "tj-alc-cocktails",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Cocktails",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-cocktails-levecke",
+   "product": "tj-alc-cocktails",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Cocktails",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-cocktails-modern-spirits",
+   "product": "tj-alc-cocktails",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Cocktails",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-cocktails-united-states-distilled-products",
+   "product": "tj-alc-cocktails",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Cocktails",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-gin-sazerac-company",
+   "product": "tj-alc-gin",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Gin",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-gin-united-states-distilled-products",
+   "product": "tj-alc-gin",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Gin",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-irish-whiskey-latitude-wines",
+   "product": "tj-alc-irish-whiskey",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Irish whiskey",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-liqueurs-levecke",
+   "product": "tj-alc-liqueurs",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Liqueurs",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-liqueurs-sazerac-company",
+   "product": "tj-alc-liqueurs",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Liqueurs",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-liqueurs-united-states-distilled-products",
+   "product": "tj-alc-liqueurs",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Liqueurs",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-mezcal-sazerac-company",
+   "product": "tj-alc-mezcal",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Mezcal",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-other-spirits-levecke",
+   "product": "tj-alc-other-spirits",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Other spirits",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-other-wine-rb-wine-associates",
+   "product": "tj-alc-other-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Other wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-8-vini",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-americal-beverage-group",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-amicus-cellars",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-ancient-peak",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-anthony-bozzano",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-asv-wines",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-barrel-27-wine",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-barrel-ten-quarter-circle",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-blom-enterprises",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-bronco-wine",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-carneros-wine",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-casparian-production",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-castoro-cellars",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-central-coast-wine-warehouse",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-da-ve-winery",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-del-rio-vineyards",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-domaine-st-george",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-duckhorn-wine",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-eugene-wine-cellars",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-evaki",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-fior-di-sole",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-firesteed",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-foley-family-wines",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-four-bears-winery",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-francis-coppola-winery",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-girard-winery",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-greg-and-greg",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-grove-acquisition",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-infinity-bottling",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-l-and-d-acquisition",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-laetitia-vineyard-and-winery",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-latitude-wines",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-levecke",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-margarita-vineyards",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-mendocino-wine-group",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-middleton-family-wines",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-miller-family-wine",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-monterey-wine",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-monticello-cellars",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-murphy-vineyards",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-new-mexico-wineries",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-oliver-wine",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-plata-wine-partners",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-plume-ridge-irrevocable-trust",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-precept-brands",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-raymond-vineyard-and-cellar",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-rb-wine-associates",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-roederer-estate",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-rutherford-wine-studios",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-safe-harbor-partners",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-scheid-vineyards-california",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-skalli",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-smith-anderson-enterprises",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-sonoma-wine",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-taft-street",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-tagaris-winery",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-top-it-off-bottling",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-treana-winery",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-union-wine",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-vinaceus",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-wine-by-joe",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-red-wine-wine-hooligans",
+   "product": "tj-alc-red-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Red wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-ros-wine-anthony-bozzano",
+   "product": "tj-alc-ros-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Rosé wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-ros-wine-domaine-st-george",
+   "product": "tj-alc-ros-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Rosé wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-ros-wine-emilio-guglielmo-winery",
+   "product": "tj-alc-ros-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Rosé wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-ros-wine-monterey-wine",
+   "product": "tj-alc-ros-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Rosé wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-ros-wine-plume-ridge-irrevocable-trust",
+   "product": "tj-alc-ros-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Rosé wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-ros-wine-skalli",
+   "product": "tj-alc-ros-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Rosé wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-ros-wine-st-supery",
+   "product": "tj-alc-ros-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Rosé wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-ros-wine-wine-wine-situation",
+   "product": "tj-alc-ros-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Rosé wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-rum-corning-and-company-distillers",
+   "product": "tj-alc-rum",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Rum",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-rum-global-universal-srl",
+   "product": "tj-alc-rum",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Rum",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-rum-ringgold-distilling",
+   "product": "tj-alc-rum",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Rum",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-rum-united-states-distilled-products",
+   "product": "tj-alc-rum",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Rum",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-scotch-whisky-alexander-murray-and-co",
+   "product": "tj-alc-scotch-whisky",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Scotch whisky",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-scotch-whisky-americal-beverage-group",
+   "product": "tj-alc-scotch-whisky",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Scotch whisky",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-scotch-whisky-catalyst-spirits",
+   "product": "tj-alc-scotch-whisky",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Scotch whisky",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-scotch-whisky-j-and-d-wines",
+   "product": "tj-alc-scotch-whisky",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Scotch whisky",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-scotch-whisky-latitude-wines",
+   "product": "tj-alc-scotch-whisky",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Scotch whisky",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-scotch-whisky-wooler-brands",
+   "product": "tj-alc-scotch-whisky",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Scotch whisky",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-sparkling-wine-americal-beverage-group",
+   "product": "tj-alc-sparkling-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Sparkling wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-sparkling-wine-freixenet-sonoma-caves",
+   "product": "tj-alc-sparkling-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Sparkling wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-sparkling-wine-latitude-wines",
+   "product": "tj-alc-sparkling-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Sparkling wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-sparkling-wine-nakedwines-com",
+   "product": "tj-alc-sparkling-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Sparkling wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-sparkling-wine-rb-wine-associates",
+   "product": "tj-alc-sparkling-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Sparkling wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-sparkling-wine-sutter-home-winery",
+   "product": "tj-alc-sparkling-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Sparkling wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-tequila-sazerac-company",
+   "product": "tj-alc-tequila",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Tequila",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-vodka-corning-and-company-distillers",
+   "product": "tj-alc-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Vodka",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-vodka-deep-ellum-distillery",
+   "product": "tj-alc-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Vodka",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-vodka-doer-spirits",
+   "product": "tj-alc-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Vodka",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-vodka-dynasty-spirits-brands",
+   "product": "tj-alc-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Vodka",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-vodka-global-universal-srl",
+   "product": "tj-alc-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Vodka",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-vodka-graton-spirits",
+   "product": "tj-alc-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Vodka",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-vodka-mayo-beverage",
+   "product": "tj-alc-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Vodka",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-vodka-modern-spirits",
+   "product": "tj-alc-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Vodka",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-vodka-primera-spirits",
+   "product": "tj-alc-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Vodka",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-vodka-sonoma-wine",
+   "product": "tj-alc-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Vodka",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-vodka-splinter-group-napa",
+   "product": "tj-alc-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Vodka",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-vodka-united-states-distilled-products",
+   "product": "tj-alc-vodka",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Vodka",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-ancient-peak",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-appellation-trading",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-asv-wines",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-barrel-27-wine",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-barrel-ten-quarter-circle",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-blom-enterprises",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-bouchaine-vineyards",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-bronco-wine",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-castoro-cellars",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-central-coast-wine-warehouse",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-delicato",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-eugene-wine-cellars",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-francis-coppola-winery",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-greg-and-greg",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-grove-acquisition",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-infinity-bottling",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-laetitia-vineyard-and-winery",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-langtry-farms",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-monterey-wine",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-monticello-cellars",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-paragon-vineyard",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-plume-ridge-irrevocable-trust",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-popcorn-design",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-raymond-vineyard-and-cellar",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-round-hill-cellars",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-rutherford-wine-studios",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-schafer-reichart-selections",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-scheid-vineyards-california",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-skalli",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-smith-anderson-enterprises",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-st-supery",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-talley-vineyards",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-the-vine-intervention",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-top-it-off-bottling",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-victor-and-leslie-roberts",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-vina-robles",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-vintage-wine-estates",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-white-wine-wine-by-joe",
+   "product": "tj-alc-white-wine",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White wine",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-8-vini",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-americal-beverage-group",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-ancient-peak",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-andrew-murray",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-anthony-bozzano",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-appellation-trading",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-arcana",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-asgram",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-asv-wines",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-barrel-27-wine",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-better-brands-international",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-blom-enterprises",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-bobag",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-bogle-vineyards",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-capataz-usa",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-carneros-wine",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-castoro-cellars",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-central-coast-wine-warehouse",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-cuvaison",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-da-ve-winery",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-delicato",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-denner-winery",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-domaine-st-george",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-duckhorn-wine",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-e-and-j-gallo-winery",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-evaki",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-fior-di-sole",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-foley-family-wines",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-francis-coppola-winery",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-greg-and-greg",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-grove-acquisition",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-infinity-bottling",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-krushwerks",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-langtry-farms",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-latitude-wines",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-levecke",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-lodi-vintners",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-margarita-vineyards",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-mcnab-ridge-winery",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-melrose-cellars",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-mendocino-wine-group",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-miller-family-wine",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-modern-spirits",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-monterey-wine",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-monticello-cellars",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-nw-wine",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-oakville-winery-acquisition-group",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-paragon-vineyard",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-patz-and-hall-premiumco",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-peachy-canyon-winery",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-pernod-ricard-kenwood-holding",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-pjk-winery",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-plata-wine-partners",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-plume-ridge-irrevocable-trust",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-popcorn-design",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-precept-brands",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-primary-fermentations",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-raymond-vineyard-and-cellar",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-rb-wine-associates",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-ren-acquisition",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-roederer-estate",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-round-hill-cellars",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-russian-river-winery",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-rutherford-wine-studios",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-safe-harbor-partners",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-san-antonio-winery",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-sans-liege",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-scheid-vineyards-california",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-smith-anderson-enterprises",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-sonoma-bespoke",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-spelletich-family",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-st-supery",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-ste-michelle-wine-estates",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-stonecushion",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-taft-street",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-the-vine-intervention",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-thomas-allen-vineyards-and-winery",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-top-it-off-bottling",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-treana-winery",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-treasury-wine-estates-americas",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-v2-wine-group",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-vaz-brothers",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-vina-robles",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-vinoenology",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-wheeler-winery",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-alc-wine-over-14-alcohol-windsor-oaks",
+   "product": "tj-alc-wine-over-14-alcohol",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine over 14% alcohol",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-almond-butter-cups-bazzini",
+   "product": "tj-almond-butter-cups",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Dark Chocolate Almond Butter Cups",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-almond-butter-flax-sunland",
+   "product": "tj-almond-butter-flax",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Almond Butter with Roasted Flaxseeds",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-almond-cookies-fantasy-cookie",
+   "product": "tj-almond-cookies",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Almond Windmill and Dark Chocolate Chunk & Almond Cookies",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-apple-cider-buells-orchard",
+   "product": "tj-apple-cider",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Apple Cider",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-apple-juice-clement-pappas",
+   "product": "tj-apple-juice",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Apple Juice",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-apple-sauce-manzana-products",
+   "product": "tj-apple-sauce",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's apple sauces (unsweetened, organic, Gravenstein)",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-balela-simmering-soups",
+   "product": "tj-balela",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Balela",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-banh-mi-tofu-salad-fuji-food-products",
+   "product": "tj-banh-mi-tofu-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Banh Mi Style Salad with Tofu",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-battered-halibut-orca-bay-foods",
+   "product": "tj-battered-halibut",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Gluten Free Battered Halibut",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-bbq-toscano-chopped-salad-taylor-farms-retail",
+   "product": "tj-bbq-toscano-chopped-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's BBQ & Black Pepper Toscano Chopped Salad",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-brie-old-europe-cheese",
+   "product": "tj-brie",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Brie (slicing)",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-broccoli-cheddar-soup-winter-gardens-quality-foods",
+   "product": "tj-broccoli-cheddar-soup",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Unexpected Broccoli Cheddar Soup",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-brussels-sprouts-4-earth-farms",
+   "product": "tj-brussels-sprouts",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Brussels sprouts",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-butternut-quinoa-salad-huxtables-kitchen",
+   "product": "tj-butternut-quinoa-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Roasted Butternut Squash, Red Quinoa and Wheatberry Salad",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-butternut-spinach-gratin-huxtables-kitchen",
+   "product": "tj-butternut-spinach-gratin",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Butternut Squash & Creamed Spinach Gratin",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-caesar-salad-ghiringhelli-specialty-foods",
+   "product": "tj-caesar-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Giotto's Caesar Salad",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-caesar-salad-h-group",
+   "product": "tj-caesar-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Giotto's Caesar Salad",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-california-rolls-fuji-food-products",
+   "product": "tj-california-rolls",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's California Rolls (regular, spicy, brown rice)",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-cantaloupe-caito-foods",
+   "product": "tj-cantaloupe",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's cut cantaloupe",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-cantaloupe-renaissance-food-group",
+   "product": "tj-cantaloupe",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's cut cantaloupe",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-carrot-juice-barsotti-juice",
+   "product": "tj-carrot-juice",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Organic Carrot Juice",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-caulilini-mann-packing",
+   "product": "tj-caulilini",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Caulilini Florets",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-chickenless-tenders-dr-praegers",
+   "product": "tj-chickenless-tenders",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Chickenless Crispy Tenders",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-chocolate-chip-cookies-food-and-beverage-inc",
+   "product": "tj-chocolate-chip-cookies",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Chocolate Chip Cookies",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-chunky-olive-hummus-two-chefs-on-a-roll",
+   "product": "tj-chunky-olive-hummus",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Chunky Olive Hummus",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-cilantro-chive-yogurt-dip-yorgo-foods",
+   "product": "tj-cilantro-chive-yogurt-dip",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Cilantro & Chive Yogurt Dip",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-cinnamon-coffee-cake-zen-bakery",
+   "product": "tj-cinnamon-coffee-cake",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Cinnamon Coffee Cake",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-classic-greek-salad-atherstone-foods",
+   "product": "tj-classic-greek-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Classic Greek Salad with Feta",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-coconut-cranberry-granola-new-england-natural-bakers",
+   "product": "tj-coconut-cranberry-granola",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Coconut Cranberry Granola",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-edamame-hummus-hot-mamas-foods",
+   "product": "tj-edamame-hummus",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Edamame Hummus",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-edamame-tesoros-trading",
+   "product": "tj-edamame",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Lightly Salted Edamame",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-egg-white-salad-bakkavor-usa",
+   "product": "tj-egg-white-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Egg White Salad with Chives",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-egg-white-salad-hot-mamas-foods",
+   "product": "tj-egg-white-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Egg White Salad with Chives",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-fiesta-shrimp-salad-taylor-fresh-foods",
+   "product": "tj-fiesta-shrimp-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Fiesta Salad with Shrimp",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-fire-roasted-vegetables-ardo",
+   "product": "tj-fire-roasted-vegetables",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Fire Roasted Vegetables with Balsamic Butter Sauce",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-five-layer-fiesta-dip-hot-mamas-foods",
+   "product": "tj-five-layer-fiesta-dip",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's 5 Layer Fiesta Dip",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-flaxseed-tortilla-chips-rw-garcia",
+   "product": "tj-flaxseed-tortilla-chips",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Veggie Flaxseed Tortilla Chips",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-focaccia-bakkavor-usa",
+   "product": "tj-focaccia",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Focaccia Bread, Roasted Tomato & Parmesan",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-fruitful-medley-renaissance-food-group",
+   "product": "tj-fruitful-medley",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Fresh Cut Fruit Fruitful Medley",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-genova-pesto-bakkavor-usa",
+   "product": "tj-genova-pesto",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Genova Pesto",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-grainless-granola-wildway",
+   "product": "tj-grainless-granola",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Grainless Granola",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-harvest-wheat-bread-athens-baking-company",
+   "product": "tj-harvest-wheat-bread",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Harvest Whole Wheat Bread",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-hatch-valley-salsa-desert-premium-group",
+   "product": "tj-hatch-valley-salsa",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Hatch Valley Salsa",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-honey-grahams-jos-candies",
+   "product": "tj-honey-grahams",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Dark Chocolate Covered Honey Grahams with Sea Salt",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-honeydew-caito-foods",
+   "product": "tj-honeydew",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's cut honeydew",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-hot-honey-mustard-dressing-resers-fine-foods",
+   "product": "tj-hot-honey-mustard-dressing",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Hot Honey Mustard Dressing",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-hummus-dip-two-chefs-on-a-roll",
+   "product": "tj-hummus-dip",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Hummus Dip",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-hummus-dressing-two-chefs-on-a-roll",
+   "product": "tj-hummus-dressing",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Hummus Salad Dressing",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-hummus-quartet-bakkavor-usa",
+   "product": "tj-hummus-quartet",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Hummus Quartet",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-hummus-snack-pack-two-chefs-on-a-roll",
+   "product": "tj-hummus-snack-pack",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Mediterranean Hummus Snack Pack with Pita Chips",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-instant-cold-brew-regal-trading",
+   "product": "tj-instant-cold-brew",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Instant Cold Brew Coffee",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-japanese-fried-rice-ajinomoto-foods-north-america",
+   "product": "tj-japanese-fried-rice",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Japanese Style Fried Rice",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-joe-joes-commercial-bakeries",
+   "product": "tj-joe-joes",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Joe-Joe's (regular and gluten free)",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-kale-edamame-salad-world-class-distribution",
+   "product": "tj-kale-edamame-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Kale & Edamame Salad",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-kohlrabi-salad-blend-mann-packing",
+   "product": "tj-kohlrabi-salad-blend",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Kohlrabi Salad Blend",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-lemony-arugula-salad-kit-taylor-farms-retail",
+   "product": "tj-lemony-arugula-salad-kit",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Lemony Arugula Basil Salad Kit",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-less-sodium-cashews-wenders",
+   "product": "tj-less-sodium-cashews",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's 50% Less Sodium Roasted & Salted Whole Cashews",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-matcha-ice-cream-mikawaya",
+   "product": "tj-matcha-ice-cream",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Matcha Green Tea Ice Cream",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-mediterranean-hummus-two-chefs-on-a-roll",
+   "product": "tj-mediterranean-hummus",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Mediterranean Hummus",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-melatonin-church-dwight",
+   "product": "tj-melatonin",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Darwin's Chewable Melatonin",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-mini-pancakes-treehouse-foods",
+   "product": "tj-mini-pancakes",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's organic mini pancakes",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-mochi-bubbies",
+   "product": "tj-mochi",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Mochi (vanilla, green tea)",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-multigrain-crackers-treehouse-foods",
+   "product": "tj-multigrain-crackers",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Multigrain Crackers with Sunflower and Flax Seeds",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-onions-garlic-shallots-gh-foods-ca",
+   "product": "tj-onions-garlic-shallots",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Diced Onions, Garlic & Shallots",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-organic-broccoli-florets-crf-frozen-foods",
+   "product": "tj-organic-broccoli-florets",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Organic Broccoli Florets",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-organic-carrots-grimmway-farms",
+   "product": "tj-organic-carrots",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's organic carrots",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-organic-foursome-crf-frozen-foods",
+   "product": "tj-organic-foursome",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Organic Foursome",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-organic-green-beans-crf-frozen-foods",
+   "product": "tj-organic-green-beans",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Organic Whole Green Beans",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-organic-sweet-corn-conagra",
+   "product": "tj-organic-sweet-corn",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Organic Super Sweet Cut Corn",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-organic-sweet-corn-crf-frozen-foods",
+   "product": "tj-organic-sweet-corn",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Organic Super Sweet Cut Corn",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-original-hummus-tahini-free-tribe-mediterranean-foods",
+   "product": "tj-original-hummus-tahini-free",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Freshly Made Original Hummus Dip (Tahini Free)",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-pea-shoots-giant-greens",
+   "product": "tj-pea-shoots",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Organic Pea Shoots",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-peanut-butter-sunland",
+   "product": "tj-peanut-butter",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Valencia and organic peanut butters",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-peas-crf-frozen-foods",
+   "product": "tj-peas",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Organic Peas and Petite Peas",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-pesto-pizza-amys-kitchen",
+   "product": "tj-pesto-pizza",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Giotto's Pesto Pizza",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-pistachios-wonderful-pistachios-almonds",
+   "product": "tj-pistachios",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's in-shell pistachios",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-pita-middle-east-bakery",
+   "product": "tj-pita",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's pita breads (whole wheat, Pocketful of Fiber, organic, mini)",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-polenta-san-gennaro-foods",
+   "product": "tj-polenta",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Traditional Organic Polenta",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-pollock-sticks-high-liner-foods",
+   "product": "tj-pollock-sticks",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Reduced Fat Crunchy Breaded Mini Pollock Sticks",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-popping-corn-preferred-popcorn",
+   "product": "tj-popping-corn",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Organic Popping Corn",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-potato-salad-bakkavor-usa",
+   "product": "tj-potato-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Old Fashioned Potato Salad",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-potato-tots-jr-simplot",
+   "product": "tj-potato-tots",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Trader Potato Tots",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-queso-fundido-fuji-food-products",
+   "product": "tj-queso-fundido",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Queso Fundido",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-quinoa-cowboy-veggie-burger-dr-praegers",
+   "product": "tj-quinoa-cowboy-veggie-burger",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Quinoa Cowboy Veggie Burger",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-raw-almond-butter-nspired-natural-foods",
+   "product": "tj-raw-almond-butter",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Raw Almond Butter, Unsalted (creamy and crunchy)",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-raw-cashew-pieces-heritage-international",
+   "product": "tj-raw-cashew-pieces",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Raw Cashew Pieces",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-roasted-garlic-hummus-two-chefs-on-a-roll",
+   "product": "tj-roasted-garlic-hummus",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Roasted Garlic Hummus Dip",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-salmon-philly-roll-fuji-food-products",
+   "product": "tj-salmon-philly-roll",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Smoked Salmon Philly Roll",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-salmon-poke-bowl-fuji-food-products",
+   "product": "tj-salmon-poke-bowl",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Smoked Salmon Poke Bowl",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-saucy-scallops-frial",
+   "product": "tj-saucy-scallops",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Saucy Scallops with Mushrooms",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-seaweed-salad-jayone-foods",
+   "product": "tj-seaweed-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Authentically Korean Seaweed Salad",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-sesame-miso-salmon-salad-taylor-farms-illinois",
+   "product": "tj-sesame-miso-salmon-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Sesame Miso Salad with Salmon",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-shrimp-crunch-roll-fuji-food-products",
+   "product": "tj-shrimp-crunch-roll",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Tempura Shrimp Crunch Roll",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-soft-baked-snickerdoodles-enjoy-life-natural-brands",
+   "product": "tj-soft-baked-snickerdoodles",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Soft-Baked Snickerdoodles",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-southwest-salad-world-class-distribution",
+   "product": "tj-southwest-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Southwest Salad",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-southwestern-chopped-salad-taylor-farms-retail",
+   "product": "tj-southwestern-chopped-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Southwestern Chopped Salad",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-soycutash-sno-pac-foods",
+   "product": "tj-soycutash",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Soycutash",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-spicy-hummus-two-chefs-on-a-roll",
+   "product": "tj-spicy-hummus",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Spicy Hummus Dip",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-spring-rolls-fuji-food-products",
+   "product": "tj-spring-rolls",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Shrimp and Tofu Spring Rolls",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-stir-fry-veggies-marys-harvest-fresh-foods",
+   "product": "tj-stir-fry-veggies",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Asian Stir Fry and Healthy 8 Chopped Veggie Mix",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-stone-fruit-wawona-packing",
+   "product": "tj-stone-fruit",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's peaches, nectarines, plums and pluots",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-super-spinach-salad-world-class-distribution",
+   "product": "tj-super-spinach-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Super Spinach Salad",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-sweet-bites-prolainat",
+   "product": "tj-sweet-bites",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's A Dozen Sweet Bites",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-sweet-potato-saute-bowl-renaissance-food-group",
+   "product": "tj-sweet-potato-saute-bowl",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Southwest Style Sweet Potato Sauté Bowl",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-tahini-sauce-yorgo-foods",
+   "product": "tj-tahini-sauce",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Tahini Sauce",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-three-layer-hummus-two-chefs-on-a-roll",
+   "product": "tj-three-layer-hummus",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Three Layer Hummus Dip",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-tiniest-chocolate-chip-cookies-commercial-bakeries",
+   "product": "tj-tiniest-chocolate-chip-cookies",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Tiniest Chocolate Chip Cookies",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-tomato-basil-hummus-bakkavor-usa",
+   "product": "tj-tomato-basil-hummus",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Tomato & Basil Hummus Dip",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-tomato-basil-hummus-two-chefs-on-a-roll",
+   "product": "tj-tomato-basil-hummus",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Tomato & Basil Hummus Dip",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-tomato-pepper-soup-pacific-foods-of-oregon",
+   "product": "tj-tomato-pepper-soup",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Organic Tomato & Roasted Red Pepper Soup",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-trader-joses-mild-salsa-simmering-soups",
+   "product": "tj-trader-joses-mild-salsa",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader José's Mild Salsa",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-tropical-fruit-blend-scenic-fruit-company",
+   "product": "tj-tropical-fruit-blend",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Organic Tropical Fruit Blend",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-tropical-fruit-blend-sunopta",
+   "product": "tj-tropical-fruit-blend",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Organic Tropical Fruit Blend",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-tropical-fruit-medley-caito-foods",
+   "product": "tj-tropical-fruit-medley",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Tropical Fruit Medley",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-tropical-fruit-medley-fs-produce",
+   "product": "tj-tropical-fruit-medley",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Tropical Fruit Medley",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-tropical-fruit-medley-united-salad",
+   "product": "tj-tropical-fruit-medley",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Tropical Fruit Medley",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-tuna-thai-union-chicken-of-the-sea",
+   "product": "tj-tuna",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's canned tuna (albacore and yellowfin)",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-turkey-stock-treehouse-foods",
+   "product": "tj-turkey-stock",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Turkey Stock",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-vanilla-creamer-good-karma-foods",
+   "product": "tj-vanilla-creamer",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Natural Creamer, Vanilla",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-vanilla-creamer-shamrock-foods",
+   "product": "tj-vanilla-creamer",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Natural Creamer, Vanilla",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-vegetable-fried-rice-ajinomoto-foods-north-america",
+   "product": "tj-vegetable-fried-rice",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Vegetable Fried Rice",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-vegetable-melange-ardo",
+   "product": "tj-vegetable-melange",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Vegetable Melange in Seasoned Butter Sauce",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-veggie-spirals-growers-express",
+   "product": "tj-veggie-spirals",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Butternut Squash and Zucchini Spirals",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-waffles-treehouse-foods",
+   "product": "tj-waffles",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's frozen waffles (blueberry, gluten free, multigrain, pumpkin)",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-walnut-baking-pieces-andersen-sons-shelling",
+   "product": "tj-walnut-baking-pieces",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Raw California Walnut Baking Pieces",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-white-bean-basil-hummus-two-chefs-on-a-roll",
+   "product": "tj-white-bean-basil-hummus",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White Bean & Basil Hummus",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-white-corn-chips-snak-king",
+   "product": "tj-white-corn-chips",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Restaurant Style White Corn Tortilla Chips",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-yellow-corn-chip-rounds-snak-king",
+   "product": "tj-yellow-corn-chip-rounds",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Organic Yellow Tortilla Chip Rounds",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
    "id": "c-ks-beef-hot-dogs-tracy",
    "product": "ks-beef-hot-dogs",
    "stamp": "confirmed",
@@ -4747,13 +9204,13 @@
   },
   {
    "path": "/costco-diapers/",
-   "changed": "2026-11-08",
-   "next": "2026-11-09",
+   "changed": "2026-11-09",
+   "next": "2026-11-23",
    "tasks": [
     {
      "id": "costco-diaper-prices",
      "what": "Kirkland, Huggies Plus, Pampers Swaddlers Ultra, Pull-Ups, Easy Ups and baby wipes at Costco: every size, offers, ratings, Seattle shelf",
-     "due": "2026-11-09"
+     "due": "2026-11-23"
     },
     {
      "id": "sams-diaper-prices",
@@ -4858,12 +9315,12 @@
   {
    "path": "/aldi/",
    "changed": "2026-11-09",
-   "next": "2026-11-16",
+   "next": "2026-11-18",
    "tasks": [
     {
      "id": "openfda-leads",
      "what": "FDA recall records that mention store brands",
-     "due": "2026-11-16"
+     "due": "2026-11-18"
     }
    ],
    "claims": 47,
@@ -4874,12 +9331,12 @@
   {
    "path": "/members-mark/",
    "changed": "2026-11-09",
-   "next": "2026-11-16",
+   "next": "2026-11-18",
    "tasks": [
     {
      "id": "openfda-leads",
      "what": "FDA recall records that mention store brands",
-     "due": "2026-11-16"
+     "due": "2026-11-18"
     }
    ],
    "claims": 131,
@@ -5374,7 +9831,7 @@
   },
   {
    "path": "/how-we-know/",
-   "changed": "2026-11-09",
+   "changed": "2026-11-11",
    "next": "2026-12-08",
    "tasks": [],
    "claims": null,
@@ -5382,7 +9839,7 @@
   },
   {
    "path": "/sources/",
-   "changed": "2026-11-09",
+   "changed": "2026-11-11",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -5398,7 +9855,7 @@
   },
   {
    "path": "/data/",
-   "changed": "2026-11-09",
+   "changed": "2026-11-11",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -5523,7 +9980,7 @@
   },
   {
    "path": "/home/",
-   "changed": "2026-11-09",
+   "changed": "2026-11-11",
    "next": "2026-11-16",
    "tasks": [
     {
@@ -5542,7 +9999,7 @@
   },
   {
    "path": "/about/",
-   "changed": "2026-11-09",
+   "changed": "2026-11-11",
    "next": "2027-11-08",
    "tasks": [
     {
@@ -5689,6 +10146,120 @@
    ],
    "claims": 0,
    "stamps": {}
+  },
+  {
+   "path": "/great-value/",
+   "changed": "2026-11-09",
+   "next": "2026-11-18",
+   "tasks": [
+    {
+     "id": "openfda-leads",
+     "what": "FDA recall records that mention store brands",
+     "due": "2026-11-18"
+    }
+   ],
+   "claims": 49,
+   "stamps": {
+    "documented": 49
+   }
+  },
+  {
+   "path": "/where-is-toyota-made/",
+   "changed": "2026-11-09",
+   "next": "2026-12-09",
+   "tasks": [
+    {
+     "id": "toyota-origin-reads",
+     "what": "Where Toyotas are made: NHTSA report and Toyota plant lists",
+     "due": "2026-12-09"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/insignia/",
+   "changed": "2026-11-10",
+   "next": "2026-12-10",
+   "tasks": [
+    {
+     "id": "insignia-register",
+     "what": "California appliance register: Insignia filings",
+     "due": "2026-12-10"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/store-brand-tools/",
+   "changed": "2026-11-10",
+   "next": "2026-12-10",
+   "tasks": [
+    {
+     "id": "store-tools-register",
+     "what": "California appliance register: Hart, Hyper Tough, Husky and Harbor Freight battery chargers",
+     "due": "2026-12-10"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/craftsman/",
+   "changed": "2026-11-10",
+   "next": "2026-12-10",
+   "tasks": [
+    {
+     "id": "craftsman-records",
+     "what": "Craftsman records: California charger register, CPSC recalls and Stanley Black & Decker's newest SEC report",
+     "due": "2026-12-10"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/onn-tv/",
+   "changed": "2026-11-10",
+   "next": "2026-12-10",
+   "tasks": [
+    {
+     "id": "onn-tv-register",
+     "what": "Onn TV filings on California's appliance register, Walmart's newest SEC report and the Onn TV support sites",
+     "due": "2026-12-10"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/fcc-id-lookup/",
+   "changed": "2026-11-10",
+   "next": "2026-12-10",
+   "tasks": [
+    {
+     "id": "fcc-id-register",
+     "what": "The FCC's open grantee register, the FCC Covered List, and the FCC grant records the FCC ID page quotes",
+     "due": "2026-12-10"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/everstart/",
+   "changed": "2026-11-11",
+   "next": "2026-12-11",
+   "tasks": [
+    {
+     "id": "everstart-records",
+     "what": "EverStart charger filings on California's appliance register, Walmart's EverStart listings and warranty sheet, and new SEC filings naming EverStart",
+     "due": "2026-12-11"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
   }
  ],
  "done": [
@@ -5715,6 +10286,18 @@
    "task": "name-brand-labels",
    "what": "Weekly read of the name-brand labels the Kirkland comparison uses",
    "result": "Label files refreshed"
+  },
+  {
+   "on": "2026-11-09",
+   "task": "costco-diaper-prices",
+   "what": "Costco diaper listings, every size, read in a browser",
+   "result": "Kirkland regular 15.6 to 32.4 cents; Huggies on offer to Nov 22, 14.6 to 38.5; Pampers 20.5 to 46.8"
+  },
+  {
+   "on": "2026-11-09",
+   "task": "costco-diaper-prices",
+   "what": "Costco Pull-Ups, Easy Ups and baby wipes, every size, read in a browser",
+   "result": "No change: training pants $39.99 at every size; Kirkland wipes $23.99 online, $19.99 at the warehouse"
   },
   {
    "on": "2026-11-08",

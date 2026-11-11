@@ -4,7 +4,7 @@
 
 Who makes store-brand products, from public records. Every list behind [Who Actually Makes](https://whoactuallymakes.com/): which company each Kirkland Signature product traces to, the companies behind store brands and the labels they're on record for, every NHTSA tire plant code, what tire makers and carmakers say about tire age, and the evidence, sources, corrections and update schedule behind it all.
 
-**14 datasets · 10,289 records · version 2026-11-09** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
+**18 datasets · 13,666 records · version 2026-11-11** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
 
 Each answer on the site carries a stamp (confirmed, documented, reported or unverified) and links to the record it rests on. The evidence file keeps the exact quote, the date it was read and a SHA-256 fingerprint of the document, so anyone can check a row against its source. How the stamps work: https://whoactuallymakes.com/how-we-know/
 
@@ -12,20 +12,24 @@ Each answer on the site carries a stamp (confirmed, documented, reported or unve
 
 | Dataset | Records | Updated | Files | On the site |
 |---|---:|---|---|---|
-| [Who makes what: store-brand answers (Kirkland Signature)](#claims) | 279 | 2026-11-09 | [JSON](data/claims.json) (248 KB) · [CSV](data/claims.csv) (154 KB) | [/kirkland-signature/](https://whoactuallymakes.com/kirkland-signature/) |
+| [Who makes what: store-brand answers (Kirkland Signature)](#claims) | 328 | 2026-11-09 | [JSON](data/claims.json) (291 KB) · [CSV](data/claims.csv) (181 KB) | [/kirkland-signature/](https://whoactuallymakes.com/kirkland-signature/) |
 | [Companies behind store brands (maker pages)](#companies) | 14 | 2026-11-09 | [JSON](data/companies.json) (8 KB) · [CSV](data/companies.csv) (4 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
 | [Which store labels each company is on record for](#company-labels) | 208 | 2026-11-09 | [JSON](data/company-labels.json) (108 KB) · [CSV](data/company-labels.csv) (68 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
 | [Tire plant codes (NHTSA)](#tire-plants) | 1,246 | 2026-11-09 | [JSON](data/tire-plants.json) (149 KB) · [CSV](data/tire-plants.csv) (89 KB) | [/tire-dot-code-lookup/](https://whoactuallymakes.com/tire-dot-code-lookup/) |
 | [Tire age guidance from tire makers, carmakers and agencies](#tire-age) | 22 | 2026-11-04 | [JSON](data/tire-age.json) (35 KB) · [CSV](data/tire-age.csv) (20 KB) | [/tire-date-code/](https://whoactuallymakes.com/tire-date-code/) |
-| [Evidence records: every quote behind our answers](#evidence) | 726 | 2026-11-09 | [JSON](data/evidence.json) (591 KB) · [CSV](data/evidence.csv) (450 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
-| [Sources: the public records we use, and their limits](#sources) | 137 | 2026-11-09 | [JSON](data/sources.json) (148 KB) · [CSV](data/sources.csv) (63 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
-| [Corrections log](#corrections) | 48 | 2026-11-08 | [JSON](data/corrections.json) (37 KB) · [CSV](data/corrections.csv) (28 KB) | [/corrections/](https://whoactuallymakes.com/corrections/) |
-| [Update schedule: when each list is checked](#schedule) | 39 | 2026-11-09 | [JSON](data/schedule.json) (173 KB) · [CSV](data/schedule.csv) (9 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
-| [Costco diaper prices: every size at every read](#costco-diaper-prices) | 30 | 2026-11-06 | [JSON](data/costco-diaper-prices.json) (9 KB) · [CSV](data/costco-diaper-prices.csv) (4 KB) | [/costco-diapers/](https://whoactuallymakes.com/costco-diapers/) |
+| [Evidence records: every quote behind our answers](#evidence) | 1,423 | 2026-11-11 | [JSON](data/evidence.json) (1231 KB) · [CSV](data/evidence.csv) (955 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
+| [Sources: the public records we use, and their limits](#sources) | 150 | 2026-11-11 | [JSON](data/sources.json) (169 KB) · [CSV](data/sources.csv) (70 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
+| [Corrections log](#corrections) | 48 | 2026-11-08 | [JSON](data/corrections.json) (38 KB) · [CSV](data/corrections.csv) (28 KB) | [/corrections/](https://whoactuallymakes.com/corrections/) |
+| [Update schedule: when each list is checked](#schedule) | 46 | 2026-11-11 | [JSON](data/schedule.json) (304 KB) · [CSV](data/schedule.csv) (10 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
+| [Costco diaper prices: every size at every read](#costco-diaper-prices) | 60 | 2026-11-09 | [JSON](data/costco-diaper-prices.json) (18 KB) · [CSV](data/costco-diaper-prices.csv) (8 KB) | [/costco-diapers/](https://whoactuallymakes.com/costco-diapers/) |
 | [Kirkland vs name brands: every pair and its verdict](#kirkland-vs-pairs) | 22 | 2026-11-09 | [JSON](data/kirkland-vs-pairs.json) (21 KB) · [CSV](data/kirkland-vs-pairs.csv) (8 KB) | [/kirkland-vs-name-brands/](https://whoactuallymakes.com/kirkland-vs-name-brands/) |
 | [Car battery date code rules, by brand](#battery-date-codes) | 21 | 2026-11-07 | [JSON](data/battery-date-codes.json) (87 KB) · [CSV](data/battery-date-codes.csv) (4 KB) | [/battery-date-code/](https://whoactuallymakes.com/battery-date-code/) |
 | [USDA meat, poultry and egg plants (FSIS directory)](#usda-establishments) | 7,257 | 2026-11-02 | [JSON](data/usda-establishments.json) (1621 KB) · [CSV](data/usda-establishments.csv) (1443 KB) | [/usda-establishment-number-lookup/](https://whoactuallymakes.com/usda-establishment-number-lookup/) |
-| [Subaru and Kia rows in NHTSA's AALA reports, model years 2018 on](#car-origin-filings) | 240 | 2026-11-08 | [JSON](data/car-origin-filings.json) (103 KB) · [CSV](data/car-origin-filings.csv) (32 KB) | [/where-is-subaru-made/](https://whoactuallymakes.com/where-is-subaru-made/) |
+| [Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on](#car-origin-filings) | 475 | 2026-11-09 | [JSON](data/car-origin-filings.json) (205 KB) · [CSV](data/car-origin-filings.csv) (64 KB) | [/where-is-subaru-made/](https://whoactuallymakes.com/where-is-subaru-made/) |
+| [Insignia model numbers on California's appliance register](#insignia-register) | 714 | 2026-11-10 | [JSON](data/insignia-register.json) (213 KB) · [CSV](data/insignia-register.csv) (108 KB) | [/insignia/](https://whoactuallymakes.com/insignia/) |
+| [Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register](#store-tools-register) | 657 | 2026-11-10 | [JSON](data/store-tools-register.json) (335 KB) · [CSV](data/store-tools-register.csv) (136 KB) | [/store-brand-tools/](https://whoactuallymakes.com/store-brand-tools/) |
+| [Craftsman model numbers and the companies government records name for them](#craftsman-records) | 442 | 2026-11-10 | [JSON](data/craftsman-records.json) (153 KB) · [CSV](data/craftsman-records.csv) (96 KB) | [/craftsman/](https://whoactuallymakes.com/craftsman/) |
+| [Onn TV model numbers and the manufacturers California's appliance register lists for them](#onn-tv-register) | 533 | 2026-11-10 | [JSON](data/onn-tv-register.json) (129 KB) · [CSV](data/onn-tv-register.csv) (56 KB) | [/onn-tv/](https://whoactuallymakes.com/onn-tv/) |
 
 <a id="claims"></a>
 
@@ -446,9 +450,9 @@ Every entry in USDA FSIS's Meat, Poultry and Egg Product Inspection Directory: t
 
 <a id="car-origin-filings"></a>
 
-### Subaru and Kia rows in NHTSA's AALA reports, model years 2018 on
+### Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on
 
-Every row for a Subaru or Kia car, by badge or by builder, in NHTSA's yearly Part 583 reports: US and Canadian parts share, top foreign parts sources, final assembly country, and engine and transmission origin.
+Every row for a Subaru, Kia or Toyota car, by badge or by builder, in NHTSA's yearly Part 583 reports: US and Canadian parts share, top foreign parts sources, final assembly country, and engine and transmission origin.
 
 - **Limits:** A row covers a whole model line, not one car, and a line can come from two plants. Shares are averages by value, mostly rounded to 5%. Empty cells were left blank in the report. Country letters are as filed: J Japan, K Korea, M or MX Mexico, US United States, CH China. Two letters joined with + mean the report printed both.
 - **Kept fresh:** Monthly check for a new report, read in a browser
@@ -474,6 +478,129 @@ Every row for a Subaru or Kia car, by badge or by builder, in NHTSA's yearly Par
 | `engine` | string | Engine origin letter |
 | `transmission` | string | Transmission origin letter |
 | `report_url` | string | The NHTSA PDF |
+
+</details>
+
+<a id="insignia-register"></a>
+
+### Insignia model numbers on California's appliance register
+
+Every Insignia filing with a model number starting NS on the California Energy Commission's appliance register (MAEDbS): the company listed as manufacturer, the type, the date added and, for TVs, screen size and width in pixels.
+
+- **Limits:** A filing names the company that told California it makes a model, not a look at any unit. Where Best Buy filed in its own name, no factory is listed. Filings under the Insignia brand with model numbers not starting NS are left out. Company names are as filed, with commas restored where the export replaced them.
+- **Kept fresh:** Monthly, read in a browser from California's register, then loaded here
+- **Rights:** Data from the California Energy Commission's Modernized Appliance Efficiency Database System. CC BY covers our compiled file; credit the California Energy Commission for the underlying records.
+- **Based on:** 1 public source, listed in `catalog.json` (`based_on`)
+- **Files:** `data/insignia-register.json`, `data/insignia-register.csv` · live: https://whoactuallymakes.com/data/insignia-register.json
+
+<details><summary>The 11 fields</summary>
+
+| Field | Type | What it holds |
+|---|---|---|
+| `model` | text | The model number as filed. A * or a run of x stands for characters the filer left open. |
+| `manufacturer_listed` | text | The company the filing lists as manufacturer; blank when Best Buy filed it in its own name. |
+| `filed_by_best_buy` | boolean | True when the filer is Best Buy, so no factory is named. |
+| `filer` | text | The manufacturer field exactly as the register holds it, Best Buy included. |
+| `type` | text | Product type: Dehumidifier, Dishwasher, Dryer, Microwave or cooking, Portable air conditioner, Refrigerator or freezer, Room air conditioner, TV, Washer or Wine or beverage cooler. |
+| `register_list` | text | Which list on the register the row came from. |
+| `filed` | text | Date the filing was added (YYYY-MM-DD); blank where our copy lost it. |
+| `screen_inches` | number | Diagonal screen size for TVs. |
+| `width_px` | number | Horizontal pixel count, for TVs on the federally tested list. |
+| `archived` | boolean | True for rows on the register's archived list. |
+| `pattern` | boolean | True when the model number is a pattern rather than one model. |
+
+</details>
+
+<a id="store-tools-register"></a>
+
+### Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register
+
+Every battery-charger filing on the California Energy Commission's appliance register (MAEDbS) under Hart, Hyper Tough, Husky and Harbor Freight's brand names: the company listed as manufacturer, the charger, basic and product model numbers, the test battery's maker, model and voltage, the power supply's maker and the date added.
+
+- **Limits:** A filing names the company that told California it makes a charger system, not a look at any unit, and not proof of who built the tool the charger ships with. Where Harbor Freight filed in its own name, no factory is listed. A filing counts for a brand when its brand field reads that name, as filed. Company names are as filed, with commas restored where the export replaced them.
+- **Kept fresh:** Monthly, from California's register search, then loaded here
+- **Rights:** Data from the California Energy Commission's Modernized Appliance Efficiency Database System. CC BY covers our compiled file; credit the California Energy Commission for the underlying records.
+- **Based on:** 1 public source, listed in `catalog.json` (`based_on`)
+- **Files:** `data/store-tools-register.json`, `data/store-tools-register.csv` · live: https://whoactuallymakes.com/data/store-tools-register.json
+
+<details><summary>The 17 fields</summary>
+
+| Field | Type | What it holds |
+|---|---|---|
+| `store_brand` | text | The store brand family: Harbor Freight, Hart, Husky or Hyper Tough. |
+| `brand_filed` | text | The brand field exactly as filed. |
+| `manufacturer_listed` | text | The company the filing lists as manufacturer; blank when Harbor Freight filed it in its own name. |
+| `filed_by_harbor_freight` | boolean | True when the filer is Harbor Freight, so no factory is named. |
+| `filer` | text | The manufacturer field as the register holds it, Harbor Freight included. |
+| `charger_models` | text | The charger model numbers on the filing, separated by semicolons. A * stands for characters the filer left open. |
+| `basic_model` | text | The filing's basic model number. |
+| `product_models` | text | Products the charger is sold with, where the filing lists them (small-charger list only). |
+| `test_battery_maker` | text | The company the filing names as maker of the battery the charger was tested with. |
+| `test_battery_models` | text | The test battery's model number. |
+| `test_battery_volts` | number | The test battery's nameplate voltage. |
+| `test_battery_wh` | number | The test battery's energy capacity in watt-hours. |
+| `power_supply_maker` | text | The company the filing names as maker of the external power supply. |
+| `product_type` | text | Product type, on the small-charger list. |
+| `register_list` | text | Which list on the register the row came from: Federally regulated battery chargers or Small battery chargers (California). |
+| `filed` | text | Date the filing was added (YYYY-MM-DD). |
+| `archived` | boolean | True for rows on the register's archived list. |
+
+</details>
+
+<a id="craftsman-records"></a>
+
+### Craftsman model numbers and the companies government records name for them
+
+One row per record that ties a Craftsman model number to a company: battery-charger filings on California's appliance register (MAEDbS), EPA small-engine certificates from its 1997-2010 archive that list Craftsman or Sears models, and CPSC recalls that mention Craftsman. Each row gives the company, its role in the record, the year, the model numbers and, for Sears-era models, the three-digit Sears source code.
+
+- **Limits:** A record names a company for the models it lists, not for every Craftsman product, and isn't a look at any unit. A charger filing names the company that filed it, which is often Stanley Black & Decker itself; an engine certificate names the engine's maker of record, not who assembled the tool; a recall names the manufacturer, importer or distributor as the CPSC gives them. Sellers (Sears, Kmart, Orchard Supply, Ace) are left out of the company column.
+- **Kept fresh:** Monthly, from California's register, CPSC recalls and Stanley Black & Decker's newest SEC report
+- **Rights:** Compiled from California Energy Commission, US EPA and US CPSC public records. CC BY covers our compiled file; credit the agencies for the underlying records.
+- **Based on:** 3 public sources, listed in `catalog.json` (`based_on`)
+- **Files:** `data/craftsman-records.json`, `data/craftsman-records.csv` · live: https://whoactuallymakes.com/data/craftsman-records.json
+
+<details><summary>The 10 fields</summary>
+
+| Field | Type | What it holds |
+|---|---|---|
+| `record` | text | Which record the row comes from: CPSC recall, California charger filing or EPA engine certificate. |
+| `company` | text | The company the record names, as written there. |
+| `role` | text | What the record says the company did. |
+| `year` | text | Year the filing was added, the engine's model year or the recall date. |
+| `model_numbers` | text | Model numbers the record lists, separated by semicolons. A * stands for characters a filer left open. |
+| `sears_source_code` | text | For Sears-era model numbers, the three digits before the dot. |
+| `also_named` | text | Another company the same record names, such as the test battery's maker. |
+| `product` | text | What the record covers, in its own words where it gives them. |
+| `reference` | text | The recall number or EPA engine family. |
+| `url` | text | Where the record can be read. |
+
+</details>
+
+<a id="onn-tv-register"></a>
+
+### Onn TV model numbers and the manufacturers California's appliance register lists for them
+
+One row per Onn TV filing on California's appliance register (MAEDbS), from all three of its TV lists, approved and archived, under both spellings it holds (ONN and onn.). Each row gives the model number, the company listed as manufacturer, the list, the date filed and the screen size.
+
+- **Limits:** A filing names the company that filed the model, not the factory of any one unit. The same Onn number is often filed by several companies, and the register doesn't say which built a given TV. Rows filed under ONN in 2014-15 by Shenyang Tongfang carry other brands' model numbers and are marked left_out_of_counts.
+- **Kept fresh:** Monthly, from California's register
+- **Rights:** Compiled from California Energy Commission public records. CC BY covers our compiled file; credit the agency for the underlying records.
+- **Based on:** 1 public source, listed in `catalog.json` (`based_on`)
+- **Files:** `data/onn-tv-register.json`, `data/onn-tv-register.csv` · live: https://whoactuallymakes.com/data/onn-tv-register.json
+
+<details><summary>The 9 fields</summary>
+
+| Field | Type | What it holds |
+|---|---|---|
+| `model` | text | The model number as filed. A * stands for characters a filer left open. |
+| `manufacturer_listed` | text | The company the filing lists as manufacturer, one spelling per company. |
+| `brand_as_filed` | text | The brand field as filed: ONN or onn. |
+| `register_list` | text | Which of the register's TV lists the row is on. |
+| `filed` | date | Date the filing was added, where the list gives one. |
+| `screen_inches` | number | Screen size in inches, where the list gives one. |
+| `archived` | boolean | True for rows on the register's archived lists. |
+| `pattern` | boolean | True when the model number holds open characters (*). |
+| `left_out_of_counts` | boolean | True for the 2014-15 rows filed under ONN with other brands' model numbers. |
 
 </details>
 

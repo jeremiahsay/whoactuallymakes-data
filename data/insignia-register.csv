@@ -1,0 +1,715 @@
+model,manufacturer_listed,filed_by_best_buy,filer,type,register_list,filed,screen_inches,width_px,archived,pattern
+NS-100F501NA26,"Guangxi Huike Intelligent Display Co., Ltd",false,"Guangxi Huike Intelligent Display Co., Ltd",TV,Federally tested TVs,2025-03-21,100,3840,false,false
+NS-19D220**16,,true,Best Buy Corp. - Exclusive Brands,TV,Televisions (older test),2015-08-13,19,,false,true
+NS-19D220MX16,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2015-08-24,19,,false,false
+NS-19D220MX16-A,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),,19,,false,false
+NS-19D220MX16-A,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2016-11-14,19,,false,false
+NS-19D220NA16,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2015-08-24,19,,false,false
+NS-19D220NA16-A,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),,19,,false,false
+NS-19D220NA16-A,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2016-11-09,19,,false,false
+NS-19D310NA19,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2018-02-26,19,,false,false
+NS-19D310NA21,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2020-02-11,19,,false,false
+NS-19E310A13,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2015-08-16,19,,false,false
+NS-19E310NA15,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2015-08-13,19,,false,false
+NS-20ED310NA15,"Zhejiang Tianle Digital Electronic Co., Ltd",false,"Zhejiang Tianle Digital Electronic Co., Ltd",TV,Televisions (older test),2014-06-11,20,,false,false
+NS-22D420CA18,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2017-07-05,22,,false,false
+NS-22D420MX18,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2017-07-05,22,,false,false
+NS-22D420NA18,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2017-07-05,22,,false,false
+NS-22D510NA19,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2018-08-16,22,,false,false
+NS-24**********,"Hefei BOE Vision-electronic Technology Co., Ltd",false,"Hefei BOE Vision-electronic Technology Co., Ltd",TV,Federally tested TVs,2025-04-01,24,1920,false,true
+NS-24D310CA21,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2020-12-23,24,,false,false
+NS-24D310MX17,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2016-11-15,24,,false,false
+NS-24D310MX21,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2020-12-23,24,,false,false
+NS-24D310NA17,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2016-11-14,24,,false,false
+NS-24D310NA19,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2018-02-26,24,,false,false
+NS-24D310NA21,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2020-02-11,24,,false,false
+NS-24D420NA16,Darwin Precisions Corp.,false,Darwin Precisions Corp.,TV,Televisions (older test),2015-04-02,24,,false,false
+NS-24D510MX17,Darwin Precisions Corp.,false,Darwin Precisions Corp.,TV,Televisions (older test),2016-01-29,24,,false,false
+NS-24D510NA15,BriView Corp.,false,BriView Corp.,TV,Televisions (older test),2014-04-28,24,,false,false
+NS-24D510NA17,Darwin Precisions Corp.,false,Darwin Precisions Corp.,TV,Televisions (older test),2016-01-29,24,,false,false
+NS-24DD220MX16,"Zhejiang Tianle Digital Electronic Co., Ltd",false,"Zhejiang Tianle Digital Electronic Co., Ltd",TV,Televisions (older test),2015-10-26,24,,false,false
+NS-24DD220NA16,"Zhejiang Tianle Digital Electronic Co., Ltd",false,"Zhejiang Tianle Digital Electronic Co., Ltd",TV,Televisions (older test),2015-10-26,24,,false,false
+NS-24DF310CA21,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2020-03-06,24,,false,false
+NS-24DF310MX21,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2020-03-08,24,,false,false
+NS-24DF310NA19,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2018-05-07,24,,false,false
+NS-24DF310NA21,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2020-03-06,24,,false,false
+NS-24DF311SE21,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2019-12-31,24,,false,false
+NS-24DR220CA18,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2017-08-11,24,,false,false
+NS-24DR220MX18,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2017-08-11,24,,false,false
+NS-24DR220NA18,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2017-08-11,24,,false,false
+NS-24ED310NA15,"Zhejiang Tianle Digital Electronic Co., Ltd",false,"Zhejiang Tianle Digital Electronic Co., Ltd",TV,Televisions (older test),2014-06-11,24,,false,false
+NS-24ER310CA17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),,24,,false,false
+NS-24ER310CA17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-05-24,24,,false,false
+NS-24ER310CA17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-06-28,24,,false,false
+NS-24ER310MX17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-05-24,24,,false,false
+NS-24ER310MX17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-06-28,24,,false,false
+NS-24ER310NA17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),,24,,false,false
+NS-24ER310NA17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-05-24,24,,false,false
+NS-24ER310NA17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-06-28,24,,false,false
+NS-24F201*****,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),,24,,false,true
+NS-24F201CA23,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),2022-03-03,24,,false,false
+NS-24F201CA26,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2025-02-24,24,1366,false,false
+NS-24F201MX23,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),2022-03-03,24,,false,false
+NS-24F201NA23,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),2022-03-03,24,,false,false
+NS-24F201NA23,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Federally tested TVs,2024-11-20,24,1366,false,false
+NS-24F201NA26,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2025-02-24,24,1366,false,false
+NS-24F202*****,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),,24,,false,true
+NS-24F202CA22,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2021-02-19,24,,false,false
+NS-24F202CA23,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),2022-03-14,24,,false,false
+NS-24F202MX23,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),2022-03-14,24,,false,false
+NS-24F202NA22,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2021-02-19,24,,false,false
+NS-24F202NA23,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),2022-03-14,24,,false,false
+NS-24F202NA23,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Federally tested TVs,2024-11-20,24,1920,false,false
+NS-24F401CA26,"Hefei BOE Vision-electronic Technology Co., Ltd",false,"Hefei BOE Vision-electronic Technology Co., Ltd",TV,Federally tested TVs,2025-04-01,24,1920,false,false
+NS-24F401NA26,"Hefei BOE Vision-electronic Technology Co., Ltd",false,"Hefei BOE Vision-electronic Technology Co., Ltd",TV,Federally tested TVs,2025-04-01,24,1920,false,false
+NS-28D220MX16,"Zhejiang Tianle Digital Electronic Co., Ltd",false,"Zhejiang Tianle Digital Electronic Co., Ltd",TV,Televisions (older test),2015-10-26,28,,false,false
+NS-28D220NA16,"Zhejiang Tianle Digital Electronic Co., Ltd",false,"Zhejiang Tianle Digital Electronic Co., Ltd",TV,Televisions (older test),2015-02-18,28,,false,false
+NS-28D310NA15,"Zhejiang Tianle Digital Electronic Co., Ltd",false,"Zhejiang Tianle Digital Electronic Co., Ltd",TV,Televisions (older test),2014-06-11,28,,false,false
+NS-28DD220MX16,"Zhejiang Tianle Digital Electronic Co., Ltd",false,"Zhejiang Tianle Digital Electronic Co., Ltd",TV,Televisions (older test),2015-02-18,28,,false,false
+NS-28DD220NA16,"Zhejiang Tianle Digital Electronic Co., Ltd",false,"Zhejiang Tianle Digital Electronic Co., Ltd",TV,Televisions (older test),2015-02-18,28,,false,false
+NS-28DD310NA15,"Zhejiang Tianle Digital Electronic Co., Ltd",false,"Zhejiang Tianle Digital Electronic Co., Ltd",TV,Televisions (older test),2014-06-11,28,,false,false
+NS-28E200NA14,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2014-04-25,28,,false,false
+NS-29D310NA15,"Huike Electronics (Shenzhen) Co., Ltd.",false,"Huike Electronics (Shenzhen) Co., Ltd.",TV,Televisions (older test),2014-08-27,29,,false,false
+NS-32D220MX16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2014-12-30,32,,false,false
+NS-32D220NA16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2014-12-30,32,,false,false
+NS-32D220NA20,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2019-01-17,32,,false,false
+NS-32D310NA21,,true,"Best Buy Purchasing, LLC.",TV,Televisions (older test),2020-01-12,32,,false,false
+NS-32D311CA17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-07-06,32,,false,false
+NS-32D311MX17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-07-06,32,,false,false
+NS-32D311NA15,"Zhejiang Tianle Digital Electronic Co., Ltd",false,"Zhejiang Tianle Digital Electronic Co., Ltd",TV,Televisions (older test),2014-06-11,32,,false,false
+NS-32D311NA17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-07-06,32,,false,false
+NS-32D312NA15,,true,Best Buy Corp. - Exclusive Brands,TV,Televisions (older test),2014-07-01,32,,false,false
+NS-32D420MX16,,true,Best Buy Corp. - Exclusive Brands,TV,Televisions (older test),2015-01-08,32,,false,false
+NS-32D420NA16,,true,Best Buy Corp. - Exclusive Brands,TV,Televisions (older test),2015-01-08,32,,false,false
+NS-32D510NA19,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2019-06-03,32,,false,false
+NS-32D511NA15,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2015-09-25,32,,false,false
+NS-32D512NA15,"Huike Electronics (Shenzhen) Co., Ltd.",false,"Huike Electronics (Shenzhen) Co., Ltd.",TV,Televisions (older test),2014-06-25,32,,false,false
+NS-32DD200NA14,"Zhejiang Tianle Digital Electronic Co., Ltd",false,"Zhejiang Tianle Digital Electronic Co., Ltd",TV,Televisions (older test),2014-06-11,32,,false,false
+NS-32DD220MX16,"Zhejiang Tianle Digital Electronic Co., Ltd",false,"Zhejiang Tianle Digital Electronic Co., Ltd",TV,Televisions (older test),2015-10-26,32,,false,false
+NS-32DD220NA16,"Zhejiang Tianle Digital Electronic Co., Ltd",false,"Zhejiang Tianle Digital Electronic Co., Ltd",TV,Televisions (older test),2015-02-18,32,,false,false
+NS-32DD310NA15,"Zhejiang Tianle Digital Electronic Co., Ltd",false,"Zhejiang Tianle Digital Electronic Co., Ltd",TV,Televisions (older test),2014-06-11,32,,false,false
+NS-32DF310CA21,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2020-02-20,32,,false,false
+NS-32DF310MX21,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2020-02-20,32,,false,false
+NS-32DF310NA19,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2018-05-11,32,,false,false
+NS-32DF310NA21,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2020-02-20,32,,false,false
+NS-32DR310CA17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-05-13,32,,false,false
+NS-32DR310MX17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-05-13,32,,false,false
+NS-32DR310NA17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-05-13,32,,false,false
+NS-32DR420CA16,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2015-03-13,32,,false,false
+NS-32DR420NA16,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2015-02-10,32,,false,false
+NS-32F201*****,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),2021-02-21,32,,false,true
+NS-32F201CA22,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),2021-02-21,32,,false,false
+NS-32F201CA23,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2021-12-12,32,,false,false
+NS-32F201MX22,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),2021-02-21,32,,false,false
+NS-32F201NA22,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),2021-02-21,32,,false,false
+NS-32F201NA23,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2021-12-12,32,,false,false
+NS-32F201NA23,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Federally tested TVs,2024-12-31,32,1366,false,false
+NS-32F201NA26,"Guangxi Huike Intelligent Display Co., Ltd",false,"Guangxi Huike Intelligent Display Co., Ltd",TV,Federally tested TVs,2025-03-21,32,1366,false,false
+NS-32F202CA22,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2021-02-19,32,,false,false
+NS-32F202CA23,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2022-02-22,32,,false,false
+NS-32F202CA23,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Federally tested TVs,2024-10-25,32,1920,false,false
+NS-32F202CA26,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2025-02-24,32,1366,false,false
+NS-32F202CA27,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2026-01-20,32,1366,false,false
+NS-32F202NA22,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2021-02-19,32,,false,false
+NS-32F202NA23,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2022-02-22,32,,false,false
+NS-32F202NA23,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Federally tested TVs,2024-10-25,32,1920,false,false
+NS-32F202NA26,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2025-02-24,32,1366,false,false
+NS-32F202NA27,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2026-01-20,32,1366,false,false
+NS-32F401CA26,"Guangxi Huike Intelligent Display Co., Ltd",false,"Guangxi Huike Intelligent Display Co., Ltd",TV,Federally tested TVs,2025-03-21,32,1920,false,false
+NS-32F401NA26,"Guangxi Huike Intelligent Display Co., Ltd",false,"Guangxi Huike Intelligent Display Co., Ltd",TV,Federally tested TVs,2025-03-21,32,1920,false,false
+NS-32N101CA22,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2021-02-04,32,,false,false
+NS-32N101MX22,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2021-02-04,32,,false,false
+NS-32N101NA22,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2021-02-04,32,,false,false
+NS-39D220NA16,Darwin Precisions Corp.,false,Darwin Precisions Corp.,TV,Televisions (older test),2015-01-29,39,,false,false
+NS-39D310CA19,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2018-01-10,39,,false,false
+NS-39D310MX17,Darwin Precisions Corp.,false,Darwin Precisions Corp.,TV,Televisions (older test),2016-01-29,39,,false,false
+NS-39D310MX19,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2018-01-10,39,,false,false
+NS-39D310NA15,BriView Corp.,false,BriView Corp.,TV,Televisions (older test),2014-05-12,39,,false,false
+NS-39D310NA17,Darwin Precisions Corp.,false,Darwin Precisions Corp.,TV,Televisions (older test),2016-01-29,39,,false,false
+NS-39D310NA19,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2018-01-10,39,,false,false
+NS-39D40SNA14,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2014-04-25,39,,false,false
+NS-39DF310CA21,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2020-03-26,39,,false,false
+NS-39DF310MX21,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2020-03-26,39,,false,false
+NS-39DF310NA21,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2020-03-26,39,,false,false
+NS-39DF510NA19,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2018-05-07,39,,false,false
+NS-39DR510CA17,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2018-03-12,39,,false,false
+NS-39DR510NA17,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2018-03-12,39,,false,false
+NS-39E400NA14,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2014-04-25,39,,false,false
+NS-39F201*****,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),,39,,false,true
+NS-39F201CA23,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),2022-04-11,39,,false,false
+NS-39F201MX23,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),2022-04-11,39,,false,false
+NS-39F201NA23,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),2022-04-11,39,,false,false
+NS-40*********,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2015-09-17,40,,false,true
+NS-40**********,"Hefei BOE Vision-electronic Technology Co., Ltd",false,"Hefei BOE Vision-electronic Technology Co., Ltd",TV,Federally tested TVs,2025-04-01,40,1920,false,true
+NS-40D40SNA14,"Zhejiang Tianle Digital Electronic Co., Ltd",false,"Zhejiang Tianle Digital Electronic Co., Ltd",TV,Televisions (older test),2014-06-11,40,,false,false
+NS-40D420MX16,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2015-10-09,40,,false,false
+NS-40D420MX18,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2017-03-21,40,,false,false
+NS-40D420MX20,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2019-03-19,40,,false,false
+NS-40D420NA16,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2015-10-09,40,,false,false
+NS-40D420NA18,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2017-03-21,40,,false,false
+NS-40D420NA20,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2019-03-19,40,,false,false
+NS-40D510MX19,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2018-08-28,40,,false,false
+NS-40D510NA15,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2014-09-15,40,,false,false
+NS-40D510NA17,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2016-02-29,40,,false,false
+NS-40D510NA19,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2018-08-28,40,,false,false
+NS-40D510NA21,,true,"Best Buy Purchasing, LLC.",TV,Televisions (older test),2020-03-04,40,,false,false
+NS-40DR420CA16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2015-09-17,40,,false,false
+NS-40DR420CA16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-06-28,40,,false,false
+NS-40DR420MX16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2015-09-17,40,,false,false
+NS-40DR420MX16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-06-28,40,,false,false
+NS-40DR420NA16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2015-09-17,40,,false,false
+NS-40DR420NA16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-06-28,40,,false,false
+NS-40F401CA26,"Hefei BOE Vision-electronic Technology Co., Ltd",false,"Hefei BOE Vision-electronic Technology Co., Ltd",TV,Federally tested TVs,2025-04-01,40,1920,false,false
+NS-40F401NA26,"Hefei BOE Vision-electronic Technology Co., Ltd",false,"Hefei BOE Vision-electronic Technology Co., Ltd",TV,Federally tested TVs,2025-04-01,40,1920,false,false
+NS-42D510NA15,BriView Corp.,false,BriView Corp.,TV,Televisions (older test),2014-07-14,42,,false,false
+NS-42F201CA22,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2021-02-14,42,,false,false
+NS-42F201CA23,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2022-03-09,42,,false,false
+NS-42F201CA23,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Federally tested TVs,2024-10-25,42,1920,false,false
+NS-42F201NA22,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2021-02-14,42,,false,false
+NS-42F201NA23,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2022-03-09,42,,false,false
+NS-42F201NA23,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Federally tested TVs,2024-10-25,42,1920,false,false
+NS-43**********,"Hefei BOE Vision-electronic Technology Co., Ltd",false,"Hefei BOE Vision-electronic Technology Co., Ltd",TV,Federally tested TVs,2025-04-01,43,3840,false,true
+NS-43D420CA20,"K-Tronics (SuZhou) Technology Co., Ltd",false,"K-Tronics (SuZhou) Technology Co., Ltd",TV,Televisions (older test),2021-04-13,43,,false,false
+NS-43D420NA16,Forhouse Corp.,false,Forhouse Corp.,TV,Televisions (older test),2015-01-06,43,,false,false
+NS-43D420NA18,,true,Best Buy Corp. - Exclusive Brands,TV,Televisions (older test),2019-06-03,43,,false,false
+NS-43D510NA21,,true,"Best Buy Purchasing, LLC.",TV,Televisions (older test),2020-03-06,43,,false,false
+NS-43DF710CA21,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2020-02-18,43,,false,false
+NS-43DF710NA19,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2018-04-30,43,,false,false
+NS-43DF710NA21,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2020-02-18,43,,false,false
+NS-43DR620CA18,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2017-02-24,43,,false,false
+NS-43DR620NA18,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2017-02-24,43,,false,false
+NS-43DR710CA17,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2015-11-02,43,,false,false
+NS-43DR710NA17,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2015-11-02,43,,false,false
+NS-43F301*****,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),,43,,false,true
+NS-43F301CA22,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),2021-04-14,43,,false,false
+NS-43F301MX22,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),2021-04-14,43,,false,false
+NS-43F301NA22,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),2021-04-14,43,,false,false
+NS-43F301NA25,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Televisions (older test),2023-11-01,43,,false,false
+NS-43F301NA25,"AmTRAN Technology Co., Ltd.",false,"AmTRAN Technology Co., Ltd.",TV,Federally tested TVs,2024-11-14,43,3840,false,false
+NS-43F501CA26,"Hefei BOE Vision-electronic Technology Co., Ltd",false,"Hefei BOE Vision-electronic Technology Co., Ltd",TV,Federally tested TVs,2025-04-01,43,3840,false,false
+NS-43F501NA26,"Hefei BOE Vision-electronic Technology Co., Ltd",false,"Hefei BOE Vision-electronic Technology Co., Ltd",TV,Federally tested TVs,2025-04-01,43,3840,false,false
+NS-43N101CA24,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2023-03-23,43,,false,false
+NS-43N101NA24,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2023-03-23,43,,false,false
+NS-48*********,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2015-09-17,48,,false,true
+NS-48*********,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-03-09,48,,false,true
+NS-48D420MX16,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2015-09-25,48,,false,false
+NS-48D420NA16,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2015-09-25,48,,false,false
+NS-48D510MX17,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2016-02-05,48,,false,false
+NS-48D510NA15,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2015-09-25,48,,false,false
+NS-48D510NA17,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2016-02-05,48,,false,false
+NS-48DR420CA16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2015-09-17,48,,false,false
+NS-48DR420CA16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-06-28,48,,false,false
+NS-48DR420MX16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2015-09-17,48,,false,false
+NS-48DR420MX16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-06-28,48,,false,false
+NS-48DR420NA16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2015-09-17,48,,false,false
+NS-48DR420NA16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-06-28,48,,false,false
+NS-48DR5******,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-05-24,48,,false,true
+NS-48DR5******,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-06-23,48,,false,true
+NS-48DR510CA17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-05-24,48,,false,false
+NS-48DR510CA17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-06-28,48,,false,false
+NS-48DR510MX17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-05-24,48,,false,false
+NS-48DR510MX17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-06-28,48,,false,false
+NS-48DR510NA17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-05-24,48,,false,false
+NS-48DR510NA17,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-06-28,48,,false,false
+NS-49D420MX18,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2017-08-11,49,,false,false
+NS-49D420NA18,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2017-08-11,49,,false,false
+NS-49DR420NA18,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2017-08-10,49,,false,false
+NS-50D420NA16,Forhouse Corp.,false,Forhouse Corp.,TV,Televisions (older test),2015-01-06,50,,false,false
+NS-50D421MX16,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2015-09-25,50,,false,false
+NS-50D421NA16,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2015-09-25,50,,false,false
+NS-50D510CA19,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2018-03-02,50,,false,false
+NS-50D510MX17,Darwin Precisions Corp.,false,Darwin Precisions Corp.,TV,Televisions (older test),2016-02-04,50,,false,false
+NS-50D510MX19,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2018-03-02,50,,false,false
+NS-50D510NA17,Darwin Precisions Corp.,false,Darwin Precisions Corp.,TV,Televisions (older test),2016-02-04,50,,false,false
+NS-50D510NA19,"Shen Zhen MTC Co., LTD",false,"Shen Zhen MTC Co., LTD",TV,Televisions (older test),2018-03-02,50,,false,false
+NS-50D550NA15,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2015-09-25,50,,false,false
+NS-50DF710CA21,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2020-02-20,50,,false,false
+NS-50DF710NA19,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2018-04-26,50,,false,false
+NS-50DF710NA21,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2020-02-20,50,,false,false
+NS-50DF711SE21,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2019-12-31,50,,false,false
+NS-50DR620CA18,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2017-02-24,50,,false,false
+NS-50DR620NA18,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2017-02-24,50,,false,false
+NS-50DR710CA17,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2015-11-02,50,,false,false
+NS-50DR710NA17,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2015-11-02,50,,false,false
+NS-50F301CA22,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2020-12-04,50,,false,false
+NS-50F301CA24,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2022-10-23,50,,false,false
+NS-50F301MX22,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2021-01-18,50,,false,false
+NS-50F301NA22,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2020-12-04,50,,false,false
+NS-50F301NA24,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2022-10-23,50,,false,false
+NS-50F301NA24,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Federally tested TVs,2024-12-31,50,3840,false,false
+NS-50F501CA22,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2021-04-26,50,,false,false
+NS-50F501CA26,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Federally tested TVs,2025-02-18,50,3840,false,false
+NS-50F501NA22,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2021-04-26,50,,false,false
+NS-50F501NA26,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Federally tested TVs,2025-02-18,50,3840,false,false
+NS-50F502CA26,"Guangxi Huike Intelligent Display Co., Ltd",false,"Guangxi Huike Intelligent Display Co., Ltd",TV,Federally tested TVs,2025-03-21,50,3840,false,false
+NS-50F502NA26,"Guangxi Huike Intelligent Display Co., Ltd",false,"Guangxi Huike Intelligent Display Co., Ltd",TV,Federally tested TVs,2025-03-21,50,3840,false,false
+NS-55*********,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2015-09-17,55,,false,true
+NS-55D420MX18,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2017-03-08,55,,false,false
+NS-55D420MX20,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2019-02-15,55,,false,false
+NS-55D420NA16,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2015-09-25,55,,false,false
+NS-55D420NA18,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2017-03-08,55,,false,false
+NS-55D420NA20,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2019-02-15,55,,false,false
+NS-55D421CA16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2015-09-17,55,,false,false
+NS-55D421CA16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-06-28,55,,false,false
+NS-55D421MX16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2015-09-17,55,,false,false
+NS-55D421MX16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-06-28,55,,false,false
+NS-55D421NA16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2015-09-17,55,,false,false
+NS-55D421NA16,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2016-06-28,55,,false,false
+NS-55D510CA19,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2017-12-28,55,,false,false
+NS-55D510MX17,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2016-09-23,55,,false,false
+NS-55D510MX19,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2017-12-28,55,,false,false
+NS-55D510NA17,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2016-09-23,55,,false,false
+NS-55D510NA19,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",false,"TCL King Electrical Appliances (Huizhou) Co., Ltd.",TV,Televisions (older test),2017-12-28,55,,false,false
+NS-55DF710CA21,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2020-02-18,55,,false,false
+NS-55DF710NA19,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2018-04-26,55,,false,false
+NS-55DF710NA21,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2020-02-18,55,,false,false
+NS-55DR420CA16,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2015-03-13,55,,false,false
+NS-55DR420NA16,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2015-03-03,55,,false,false
+NS-55DR620CA18,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2017-02-24,55,,false,false
+NS-55DR620NA18,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2017-02-24,55,,false,false
+NS-55DR710CA17,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2015-11-03,55,,false,false
+NS-55DR710NA17,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2015-11-03,55,,false,false
+NS-55F301CA22,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2020-11-19,55,,false,false
+NS-55F301NA22,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2020-11-19,55,,false,false
+NS-55F301NA25,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2023-10-23,55,,false,false
+NS-55F301NA25,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Federally tested TVs,2024-12-31,55,3840,false,false
+NS-55F501CA22,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2021-04-26,55,,false,false
+NS-55F501CA26,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Federally tested TVs,2025-02-18,55,3840,false,false
+NS-55F501NA22,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2021-04-26,55,,false,false
+NS-55F501NA26,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Federally tested TVs,2025-02-18,55,3840,false,false
+NS-55F502CA27,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2025-12-26,55,3840,false,false
+NS-55F502NA27,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2025-12-26,55,3840,false,false
+NS-55F703NA27,TTE Corporation,false,TTE Corporation,TV,Federally tested TVs,2026-04-17,55,3840,false,false
+NS-58DF620CA20,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2019-05-22,58,,false,false
+NS-58DF620NA20,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2019-05-22,58,,false,false
+NS-58F301CA22,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2021-06-15,58,,false,false
+NS-58F301NA22,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2021-06-15,58,,false,false
+NS-58F301NA25,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2023-10-23,58,,false,false
+NS-60E440NA16,"Hisense Visual Technology Co., Ltd.",false,"Hisense Visual Technology Co., Ltd.",TV,Televisions (older test),2015-09-25,60,,false,false
+NS-65********,"Hefei BOE Vision-electronic Technology Co., Ltd",false,"Hefei BOE Vision-electronic Technology Co., Ltd",TV,Federally tested TVs,2026-01-26,65,3840,false,true
+NS-65D550NA15,BriView Corp.,false,BriView Corp.,TV,Televisions (older test),2014-08-05,65,,false,false
+NS-65DF710CA21,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2020-05-21,65,,false,false
+NS-65DF710NA21,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2020-05-21,65,,false,false
+NS-65DR620CA18,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2017-07-14,65,,false,false
+NS-65DR620NA18,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2017-07-14,65,,false,false
+NS-65F301CA23,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2022-02-09,65,,false,false
+NS-65F301NA23,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2022-02-09,65,,false,false
+NS-65F301NA23,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Federally tested TVs,2024-12-31,65,3840,false,false
+NS-65F501CA22,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2021-04-26,65,,false,false
+NS-65F501CA26,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2025-02-24,65,3840,false,false
+NS-65F501CA27,"Hefei BOE Vision-electronic Technology Co., Ltd",false,"Hefei BOE Vision-electronic Technology Co., Ltd",TV,Federally tested TVs,2026-01-26,65,3840,false,false
+NS-65F501NA22,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2021-04-26,65,,false,false
+NS-65F501NA24,TTE Corporation,false,TTE Corporation,TV,Federally tested TVs,2025-03-24,65,3840,false,false
+NS-65F501NA26,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2025-02-24,65,3840,false,false
+NS-65F501NA27,"Hefei BOE Vision-electronic Technology Co., Ltd",false,"Hefei BOE Vision-electronic Technology Co., Ltd",TV,Federally tested TVs,2026-01-26,65,3840,false,false
+NS-65F703NA27,TTE Corporation,false,TTE Corporation,TV,Federally tested TVs,2026-04-17,65,3840,false,false
+NS-70DF710CA21,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2020-06-16,70,,false,false
+NS-70DF710NA21,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2020-06-16,70,,false,false
+NS-70F301CA23,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2022-01-25,70,,false,false
+NS-70F301NA23,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2022-01-25,70,,false,false
+NS-70F501CA22,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2021-04-26,70,,false,false
+NS-70F501CA25,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2024-09-19,70,3840,false,false
+NS-70F501CA26,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Federally tested TVs,2025-02-18,70,3840,false,false
+NS-70F501NA22,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2021-04-26,70,,false,false
+NS-70F501NA25,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2024-09-19,70,3840,false,false
+NS-70F501NA26,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Federally tested TVs,2025-02-18,70,3840,false,false
+NS-75********,"Hefei BOE Vision-electronic Technology Co., Ltd",false,"Hefei BOE Vision-electronic Technology Co., Ltd",TV,Federally tested TVs,2026-01-26,75,3840,false,true
+NS-75F301CA22,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2021-10-27,75,,false,false
+NS-75F301NA22,"TPV Display Technology (Xiamen) Co., Ltd.",false,"TPV Display Technology (Xiamen) Co., Ltd.",TV,Televisions (older test),2021-10-27,75,,false,false
+NS-75F501CA25,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2024-09-19,75,3840,false,false
+NS-75F501CA26,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2025-02-24,75,3840,false,false
+NS-75F501CA27,"Hefei BOE Vision-electronic Technology Co., Ltd",false,"Hefei BOE Vision-electronic Technology Co., Ltd",TV,Federally tested TVs,2026-01-26,75,3840,false,false
+NS-75F501NA25,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2024-09-19,75,3840,false,false
+NS-75F501NA26,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2025-02-24,75,3840,false,false
+NS-75F501NA27,"Hefei BOE Vision-electronic Technology Co., Ltd",false,"Hefei BOE Vision-electronic Technology Co., Ltd",TV,Federally tested TVs,2026-01-26,75,3840,false,false
+NS-7CM6-BK,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2016-08-22,,,false,false
+NS-7CM6-SS,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2016-08-22,,,false,false
+NS-7CM6-WH,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2016-08-22,,,false,false
+NS-85F501CA25,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2024-09-19,85,3840,false,false
+NS-85F501NA25,"Moka Technology (Guangdong) Co., Ltd",false,"Moka Technology (Guangdong) Co., Ltd",TV,Federally tested TVs,2024-09-19,85,3840,false,false
+NS-85F501NA26,"Guangxi Huike Intelligent Display Co., Ltd",false,"Guangxi Huike Intelligent Display Co., Ltd",TV,Federally tested TVs,2025-03-21,85,3840,false,false
+NS-AC06PWH1,"GD Midea Air-Conditioning Equipment Co., Ltd.",false,"GD Midea Air-Conditioning Equipment Co., Ltd.",Portable air conditioner,Portable Air Conditioners,2025-05-28,,,false,false
+NS-AC07PWH1,"GD Midea Air-Conditioning Equipment Co., Ltd.",false,"GD Midea Air-Conditioning Equipment Co., Ltd.",Portable air conditioner,Portable Air Conditioners,2025-05-28,,,false,false
+NS-AC08PWH1,"GD Midea Air-Conditioning Equipment Co., Ltd.",false,"GD Midea Air-Conditioning Equipment Co., Ltd.",Portable air conditioner,Portable Air Conditioners,2025-05-28,,,false,false
+NS-AC12WWH0,,true,"Best Buy Purchasing, LLC.",Room air conditioner,Room Air Co. & Heat Pumps,2019-02-21,,,false,false
+NS-AC6WWH0,,true,"Best Buy Purchasing, LLC.",Room air conditioner,Room Air Co. & Heat Pumps,2019-02-21,,,false,false
+NS-AC8WU3,"GD Midea Air-Conditioning Equipment Co., Ltd.",false,"GD Midea Air-Conditioning Equipment Co., Ltd.",Room air conditioner,Room Air Co. & Heat Pumps,2021-11-16,,,false,false
+NS-BC115**26L,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2025-07-07,,,false,true
+NS-BC115**26L,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-11-17,,,false,true
+NS-BC115SS26L,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-07-09,,,false,false
+NS-BC115SS3,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-04-26,,,false,false
+NS-BC115SS9,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-01-16,,,false,false
+NS-BC120BS8,,true,Best Buy Corp. - Exclusive Brands,Refrigerator or freezer,Non-Commercial Refrigerators,2017-08-02,,,false,false
+NS-BC120SS7,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-07-07,,,false,false
+NS-BC130GP1,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-06-07,,,false,false
+NS-BC1ZSS9,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-08-07,,,false,false
+NS-BC1ZSS9,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-02-18,,,false,false
+NS-BC2Z*****,,true,"Best Buy Purchasing, LLC.",Wine or beverage cooler,Miscellaneous Refrigeration Products,2025-09-14,,,false,true
+NS-BC2ZSS1,,true,"Best Buy Purchasing, LLC.",Wine or beverage cooler,Miscellaneous Refrigeration Products,2025-11-17,,,false,false
+NS-BC2ZSS8,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2017-08-08,,,false,false
+NS-BC2ZSS8,,true,"Best Buy Purchasing, LLC.",Wine or beverage cooler,Miscellaneous Refrigeration Products,2019-12-20,,,false,false
+NS-BC48SS3,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-04-28,,,false,false
+NS-BC48SS7,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-07-07,,,false,false
+NS-BC84SS7,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-07-07,,,false,false
+NS-BI1ZWCxxxxxx,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,,,,false,true
+NS-BI1ZWCxxxxxx,,true,"Best Buy Purchasing, LLC.",Wine or beverage cooler,Miscellaneous Refrigeration Products,,,,false,true
+NS-BK1TSS6,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2015-09-16,,,false,false
+NS-BK2TSS6,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2015-09-16,,,false,false
+NS-CF17******,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-11-29,,,false,true
+NS-CF17BK26,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2025-06-11,,,false,false
+NS-CF17BK6,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2015-04-20,,,false,false
+NS-CF17BK9,,true,Best Buy Corp. - Exclusive Brands,Refrigerator or freezer,Non-Commercial Refrigerators,2017-12-29,,,false,false
+NS-CF17WH6,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2015-04-20,,,false,false
+NS-CF17WH9,,true,Best Buy Corp. - Exclusive Brands,Refrigerator or freezer,Non-Commercial Refrigerators,2017-12-29,,,false,false
+NS-CF25BK5,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2024-06-27,,,false,false
+NS-CF25BK5-C,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2024-06-27,,,false,false
+NS-CF25WH5,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2024-06-27,,,false,false
+NS-CF26BK6,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2015-04-20,,,false,false
+NS-CF26BK8,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2017-04-20,,,false,false
+NS-CF26BK9,,true,Best Buy Corp. - Exclusive Brands,Refrigerator or freezer,Non-Commercial Refrigerators,2017-12-29,,,false,false
+NS-CF26BL7,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-04-14,,,false,false
+NS-CF26PK7,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-04-14,,,false,false
+NS-CF26WH6,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2015-04-20,,,false,false
+NS-CF26WH9,,true,Best Buy Corp. - Exclusive Brands,Refrigerator or freezer,Non-Commercial Refrigerators,2017-12-29,,,false,false
+NS-CF27**6,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2025-06-12,,,false,true
+NS-CF30******,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-11-23,,,false,true
+NS-CF30SS9,,true,Best Buy Corp. - Exclusive Brands,Refrigerator or freezer,Non-Commercial Refrigerators,2017-12-29,,,false,false
+NS-CF30TMSS6,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-05-14,,,false,false
+NS-CF30TMSS6-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-05-14,,,false,false
+NS-CF31SS6,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2015-04-20,,,false,false
+NS-CF31TM**26L,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2025-06-25,,,false,true
+NS-CF33BK#***,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-11-08,,,false,true
+NS-CF33BK3,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-11-08,,,false,false
+NS-CF33BK6,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2025-06-12,,,false,false
+NS-CF33BK8,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-10-24,,,false,false
+NS-CF33BK8,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-08-07,,,false,false
+NS-CF33SS#***,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-11-08,,,false,true
+NS-CF33SS3,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-11-08,,,false,false
+NS-CF33SS8,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-10-24,,,false,false
+NS-CF33WH6,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2025-06-12,,,false,false
+NS-CF33WH8,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-10-24,,,false,false
+NS-CF43SS6,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-01-11,,,false,false
+NS-CF43SS7,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-01-11,,,false,false
+NS-CF43SS9,,true,Best Buy Corp. - Exclusive Brands,Refrigerator or freezer,Non-Commercial Refrigerators,2017-12-29,,,false,false
+NS-CF43TMSS6,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-05-14,,,false,false
+NS-CF43TMSS6-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-05-14,,,false,false
+NS-CF44BK#***,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-11-08,,,false,true
+NS-CF44BK3,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-11-08,,,false,false
+NS-CF44BK6,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2025-06-16,,,false,false
+NS-CF44BK8,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-10-24,,,false,false
+NS-CF44GD2,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2021-02-02,,,false,false
+NS-CF44GD3,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2021-11-01,,,false,false
+NS-CF44SS#***,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-11-08,,,false,true
+NS-CF44SS6,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2025-06-16,,,false,false
+NS-CF44SS8,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2021-12-22,,,false,false
+NS-CF44WH8,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-10-24,,,false,false
+NS-CF45TM**26L,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2025-09-26,,,false,true
+NS-CF45TMSS26L,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-07-09,,,false,false
+NS-CF49BMSS2,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2024-06-17,,,false,false
+NS-CF70TMSS6,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-05-14,,,false,false
+NS-CF70TMSS6-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-05-14,,,false,false
+NS-CF72TM**26L,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2025-06-16,,,false,true
+NS-CF72TMSS26L,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2025-06-16,,,false,false
+NS-CFBM41******,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-07-17,,,false,true
+NS-CFBM41SS1,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-07-17,,,false,false
+NS-CFL45******,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-07-14,,,false,true
+NS-CFL45GP1,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-07-14,,,false,false
+NS-CFR23******,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-09-01,,,false,true
+NS-CFR23BB1,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-09-01,,,false,false
+NS-CFR23C1,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-09-01,,,false,false
+NS-CFR25######,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2021-01-21,,,false,false
+NS-CFR25BB2,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2021-01-21,,,false,false
+NS-CFR25C2,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2021-01-21,,,false,false
+NS-CFR32******,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-07-16,,,false,true
+NS-CFR32C1,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-07-16,,,false,false
+NS-CFR32MT1,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-07-16,,,false,false
+NS-CFR32RD1,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-07-16,,,false,false
+NS-CFR45******,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-09-05,,,false,true
+NS-CFR45M3,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-09-05,,,false,false
+NS-CFR45R3,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-09-05,,,false,false
+NS-CZ10**26L,PT Jaya Refrigeration Equipment,false,PT Jaya Refrigeration Equipment,Refrigerator or freezer,Non-Commercial Refrigerators,2025-09-29,,,false,true
+NS-CZ104WH27,PT Jaya Refrigeration Equipment,false,PT Jaya Refrigeration Equipment,Refrigerator or freezer,Non-Commercial Refrigerators,2026-05-12,,,false,false
+NS-CZ10WH26L,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-08-25,,,false,false
+NS-CZ10WH6,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2015-09-18,,,false,false
+NS-CZ10WH6,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-11-15,,,false,false
+NS-CZ12XWH7,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-08-29,,,false,false
+NS-CZ131WH27,"Homa Appliances Co., Ltd.",false,"Homa Appliances Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2026-06-02,,,false,false
+NS-CZ131WH27-C,"Homa Appliances Co., Ltd.",false,"Homa Appliances Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2026-06-02,,,false,false
+NS-CZ14*,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-08-14,,,false,true
+NS-CZ14WH2,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2021-02-18,,,false,false
+NS-CZ14WH2-C,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2021-02-18,,,false,false
+NS-CZ14WH9,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-10-12,,,false,false
+NS-CZ14XWH7,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-08-29,,,false,false
+NS-CZ156WH27,"Homa Appliances Co., Ltd.",false,"Homa Appliances Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2026-06-02,,,false,false
+NS-CZ156WH27-C,"Homa Appliances Co., Ltd.",false,"Homa Appliances Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2026-06-02,,,false,false
+NS-CZ18XWH7,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-08-29,,,false,false
+NS-CZ243WH27,"Homa Appliances Co., Ltd.",false,"Homa Appliances Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2026-06-02,,,false,false
+NS-CZ243WH27-C,"Homa Appliances Co., Ltd.",false,"Homa Appliances Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2026-06-02,,,false,false
+NS-CZ35**26L,PT Jaya Refrigeration Equipment,false,PT Jaya Refrigeration Equipment,Refrigerator or freezer,Non-Commercial Refrigerators,2025-09-29,,,false,true
+NS-CZ35WH26L,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-08-25,,,false,false
+NS-CZ35WH3,Wanbao electric appliance co. LTD,false,Wanbao electric appliance co. LTD,Refrigerator or freezer,Non-Commercial Refrigerators,2022-06-29,,,false,false
+NS-CZ35WH7,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-04-07,,,false,false
+NS-CZ35WH9,"Guangzhou Wanbao Group Minquan Electric AppIiance co., Ltd",false,"Guangzhou Wanbao Group Minquan Electric AppIiance co., Ltd",Refrigerator or freezer,Non-Commercial Refrigerators,2018-04-10,,,false,false
+NS-CZ35WH9,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-04-17,,,false,false
+NS-CZ50WH0,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-11-25,,,false,false
+NS-CZ50WH0*,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2021-05-12,,,false,true
+NS-CZ50WH26L,PT Jaya Refrigeration Equipment,false,PT Jaya Refrigeration Equipment,Refrigerator or freezer,Non-Commercial Refrigerators,2025-09-29,,,false,false
+NS-CZ50WH26L,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-11-17,,,false,false
+NS-CZ50WH6,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2015-09-16,,,false,false
+NS-CZ51WH27,PT Jaya Refrigeration Equipment,false,PT Jaya Refrigeration Equipment,Refrigerator or freezer,Non-Commercial Refrigerators,2026-05-12,,,false,false
+NS-CZ70**26L,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-11-17,,,false,true
+NS-CZ70WH0,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-11-25,,,false,false
+NS-CZ70WH0*,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2021-05-12,,,false,true
+NS-CZ70WH26L,PT Jaya Refrigeration Equipment,false,PT Jaya Refrigeration Equipment,Refrigerator or freezer,Non-Commercial Refrigerators,2025-09-29,,,false,false
+NS-CZ70WH26L,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-11-17,,,false,false
+NS-CZ70WH27,"Homa Appliances Co., Ltd.",false,"Homa Appliances Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2026-06-02,,,false,false
+NS-CZ70WH27-C,"Homa Appliances Co., Ltd.",false,"Homa Appliances Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2026-06-02,,,false,false
+NS-CZ70WH6,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2015-09-16,,,false,false
+NS-DH35WH1,"GD Midea Air-Conditioning Equipment Co., Ltd.",false,"GD Midea Air-Conditioning Equipment Co., Ltd.",Dehumidifier,Dehumidifiers,2022-11-21,,,false,false
+NS-DH35WH7,"GD Midea Air-Conditioning Equipment Co., Ltd.",false,"GD Midea Air-Conditioning Equipment Co., Ltd.",Dehumidifier,Dehumidifiers,2025-07-31,,,false,false
+NS-DH50WH1,"GD Midea Air-Conditioning Equipment Co., Ltd.",false,"GD Midea Air-Conditioning Equipment Co., Ltd.",Dehumidifier,Dehumidifiers,2022-11-21,,,false,false
+NS-DH50WH7,"GD Midea Air-Conditioning Equipment Co., Ltd.",false,"GD Midea Air-Conditioning Equipment Co., Ltd.",Dehumidifier,Dehumidifiers,2025-07-31,,,false,false
+NS-DRT70EMGA7,"Testing Center of Wuxi Littleswan Electric Co., Ltd",false,"Testing Center of Wuxi Littleswan Electric Co., Ltd",Dryer,Clothes Dryers,2026-04-21,,,false,false
+NS-DRT70EWA5,"Testing Center of Wuxi Littleswan Electric Co., Ltd",false,"Testing Center of Wuxi Littleswan Electric Co., Ltd",Dryer,Clothes Dryers,2024-07-23,,,false,false
+NS-DRT70GMGA7,"Testing Center of Wuxi Littleswan Electric Co., Ltd",false,"Testing Center of Wuxi Littleswan Electric Co., Ltd",Dryer,Clothes Dryers,2026-04-21,,,false,false
+NS-DRT70GWA5,"Testing Center of Wuxi Littleswan Electric Co., Ltd",false,"Testing Center of Wuxi Littleswan Electric Co., Ltd",Dryer,Clothes Dryers,2024-07-23,,,false,false
+NS-DWF2******,"Electrolux Consumer Products, Inc. - Anderson, SC",false,"Electrolux Consumer Products, Inc. - Anderson, SC",Dishwasher,Dish Washers,,,,false,true
+NS-DWH1SS9,,true,Best Buy Corp. - Exclusive Brands,Dishwasher,Dish Washers,2017-12-29,,,false,false
+NS-DWH1WH9,,true,Best Buy Corp. - Exclusive Brands,Dishwasher,Dish Washers,2017-12-29,,,false,false
+NS-DWH2BS8,"Foshan Shunde Midea Washing Appliances Mfg. Co., Ltd.",false,"Foshan Shunde Midea Washing Appliances Mfg. Co., Ltd.",Dishwasher,Dish Washers,2017-06-13,,,false,false
+NS-DWH2SS8,"Foshan Shunde Midea Washing Appliances Mfg. Co., Ltd.",false,"Foshan Shunde Midea Washing Appliances Mfg. Co., Ltd.",Dishwasher,Dish Washers,2017-06-13,,,false,false
+NS-DWR2BS8,"Foshan Shunde Midea Washing Appliances Mfg. Co., Ltd.",false,"Foshan Shunde Midea Washing Appliances Mfg. Co., Ltd.",Dishwasher,Dish Washers,2017-06-13,,,false,false
+NS-DWR2SS8,"Foshan Shunde Midea Washing Appliances Mfg. Co., Ltd.",false,"Foshan Shunde Midea Washing Appliances Mfg. Co., Ltd.",Dishwasher,Dish Washers,2017-06-13,,,false,false
+NS-DWR2WH8,"Foshan Shunde Midea Washing Appliances Mfg. Co., Ltd.",false,"Foshan Shunde Midea Washing Appliances Mfg. Co., Ltd.",Dishwasher,Dish Washers,2017-06-13,,,false,false
+NS-DWR3SS1,,true,"Best Buy Purchasing, LLC.",Dishwasher,Dish Washers,2020-04-27,,,false,false
+NS-DWRF2*****,"Foshan Shunde Midea Washing Appliances Mfg. Co., Ltd.",false,"Foshan Shunde Midea Washing Appliances Mfg. Co., Ltd.",Dishwasher,Dish Washers,2025-08-18,,,false,true
+NS-DWRF2SS3,,true,"Best Buy Purchasing, LLC.",Dishwasher,Dish Washers,2025-11-17,,,false,false
+NS-DWRF2XXXXX,,true,"Best Buy Purchasing, LLC.",Dishwasher,Dish Washers,2022-01-12,,,false,false
+NS-FDRE67WH8A,"Wuxi Little Swan Co., Ltd.",false,"Wuxi Little Swan Co., Ltd.",Dryer,Clothes Dryers,2017-09-14,,,false,false
+NS-FDRE77WH8B,"Wuxi Little Swan Co., Ltd.",false,"Wuxi Little Swan Co., Ltd.",Dryer,Clothes Dryers,2017-10-16,,,false,false
+NS-FDRE80W3,"Testing Center of Wuxi Littleswan Electric Co., Ltd",false,"Testing Center of Wuxi Littleswan Electric Co., Ltd",Dryer,Clothes Dryers,2022-06-08,,,false,false
+NS-FDRG67WH8A,"Wuxi Little Swan Co., Ltd.",false,"Wuxi Little Swan Co., Ltd.",Dryer,Clothes Dryers,2019-06-20,,,false,false
+NS-FDRG80W3,"Testing Center of Wuxi Littleswan Electric Co., Ltd",false,"Testing Center of Wuxi Littleswan Electric Co., Ltd",Dryer,Clothes Dryers,2022-06-08,,,false,false
+NS-FWM27W1,"Testing Center of Wuxi Littleswan Electric Co., Ltd",false,"Testing Center of Wuxi Littleswan Electric Co., Ltd",Washer,Clothes Washers,2021-09-02,,,false,false
+NS-FWM27W1-***,"Testing Center of Wuxi Littleswan Electric Co., Ltd",false,"Testing Center of Wuxi Littleswan Electric Co., Ltd",Washer,Clothes Washers,2021-09-02,,,false,true
+NS-FWM45W3,"Testing Center of Wuxi Littleswan Electric Co., Ltd",false,"Testing Center of Wuxi Littleswan Electric Co., Ltd",Washer,Clothes Washers,2022-06-07,,,false,false
+NS-MW07BK0,"Guangdong Galanz Appliances Manufacturing Co., Ltd",false,"Guangdong Galanz Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2019-03-15,,,false,false
+NS-MW07SS1,,true,"Best Buy Purchasing, LLC.",Microwave or cooking,Residential Cooking,2020-05-31,,,false,false
+NS-MW07WH0,"Guangdong Galanz Appliances Manufacturing Co., Ltd",false,"Guangdong Galanz Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2019-03-15,,,false,false
+NS-MW07XXXXX,"Guangdong Galanz Appliances Manufacturing Co., Ltd",false,"Guangdong Galanz Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2019-03-15,,,false,false
+NS-MW07XXXXXX,"Guangdong Galanz Appliances Manufacturing Co., Ltd",false,"Guangdong Galanz Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2019-03-15,,,false,false
+NS-MW09BK0,,true,"Best Buy Purchasing, LLC.",Microwave or cooking,Residential Cooking,2019-07-23,,,false,false
+NS-MW09RD7,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2017-03-28,,,false,false
+NS-MW09SS8,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2017-06-09,,,false,false
+NS-MW09XXXXXX,,true,"Best Buy Purchasing, LLC.",Microwave or cooking,Residential Cooking,2019-07-23,,,false,false
+NS-MW11BK0,,true,"Best Buy Purchasing, LLC.",Microwave or cooking,Residential Cooking,2019-07-23,,,false,false
+NS-MW11BK5,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2025-08-14,,,false,false
+NS-MW11BS9,,true,"Best Buy Purchasing, LLC.",Microwave or cooking,Residential Cooking,2018-05-21,,,false,false
+NS-MW11BS9-C,,true,"Best Buy Purchasing, LLC.",Microwave or cooking,Residential Cooking,2019-07-23,,,false,false
+NS-MW11SS5,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2026-06-17,,,false,false
+NS-MW11XXXXXX,,true,"Best Buy Purchasing, LLC.",Microwave or cooking,Residential Cooking,2019-07-23,,,false,false
+NS-MW12SS6,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2016-08-22,,,false,false
+NS-MW16SS6,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2025-10-10,,,false,false
+NS-MW16SS8,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2017-06-09,,,false,false
+NS-MW22SS6,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2025-10-10,,,false,false
+NS-MW7BK5,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2025-08-14,,,false,false
+NS-MW7RC5,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2025-08-14,,,false,false
+NS-MW7RM5,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2025-08-14,,,false,false
+NS-MW7RR5,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2025-08-15,,,false,false
+NS-MW7WH5,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2025-08-15,,,false,false
+NS-MW9SS5,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2025-08-15,,,false,false
+NS-MWR07M2,,true,"Best Buy Purchasing, LLC.",Microwave or cooking,Residential Cooking,2021-06-03,,,false,false
+NS-MWR07R2,,true,"Best Buy Purchasing, LLC.",Microwave or cooking,Residential Cooking,2021-06-03,,,false,false
+NS-OCF55*****,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-09-15,,,false,true
+NS-OCF55SS2,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-11-17,,,false,false
+NS-OTR16BK9,"Guangdong Galanz Appliances Manufacturing Co., Ltd",false,"Guangdong Galanz Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2019-06-06,,,false,false
+NS-OTR16BS8,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2017-06-28,,,false,false
+NS-OTR16SS8,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2017-06-28,,,false,false
+NS-OTR16SS8Q,"Guangdong Galanz Appliances Manufacturing Co., Ltd",false,"Guangdong Galanz Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2017-08-07,,,false,false
+NS-OTR16SS8Q,"Guangdong Galanz Appliances Manufacturing Co., Ltd",false,"Guangdong Galanz Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2019-06-06,,,false,false
+NS-OTR16SS9,"Guangdong Galanz Appliances Manufacturing Co., Ltd",false,"Guangdong Galanz Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2019-06-06,,,false,false
+NS-OTR16WH8,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2017-06-28,,,false,false
+NS-OTR16WH9,"Guangdong Galanz Appliances Manufacturing Co., Ltd",false,"Guangdong Galanz Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2019-06-06,,,false,false
+NS-OTR17SS26,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2025-10-10,,,false,false
+NS-OTR17SS27,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2026-01-26,,,false,false
+NS-OTR17SS3,,true,"Best Buy Purchasing, LLC.",Microwave or cooking,Residential Cooking,2022-08-08,,,false,false
+NS-OTR17SS3-C,,true,"Best Buy Purchasing, LLC.",Microwave or cooking,Residential Cooking,2022-08-08,,,false,false
+NS-OTR17WH26,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2025-10-10,,,false,false
+NS-OTR17WH27,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2026-01-26,,,false,false
+NS-OTR17WH3-C,,true,"Best Buy Purchasing, LLC.",Microwave or cooking,Residential Cooking,2022-08-08,,,false,false
+NS-OTRB16SS3,,true,"Best Buy Purchasing, LLC.",Microwave or cooking,Residential Cooking,2022-10-19,,,false,false
+NS-OTRC15SS9,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",false,"Guangdong Midea Kitchen Appliances Manufacturing Co., Ltd",Microwave or cooking,Residential Cooking,2018-01-11,,,false,false
+NS-OTRC15SS9,,true,"Best Buy Purchasing, LLC.",Microwave or cooking,Residential Cooking,2018-02-27,,,false,false
+NS-RBM10BK2,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-11-25,,,false,false
+NS-RBM10BK8,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2017-04-07,,,false,false
+NS-RBM10SS2,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-11-25,,,false,false
+NS-RBM10WH2,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-11-25,,,false,false
+NS-RBM10WH7,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-06-14,,,false,false
+NS-RBM11**2,"MIDEA INTELLIGENT MANUFACTURING (THAILAND) CO., LTD",false,"MIDEA INTELLIGENT MANUFACTURING (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2026-03-24,,,false,true
+NS-RBM11SS2,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2021-08-05,,,false,false
+NS-RBM11WH2,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2021-08-05,,,false,false
+NS-RBM18***,"MIDEA INTELLIGENT MANUFACTURING (THAILAND) CO., LTD",false,"MIDEA INTELLIGENT MANUFACTURING (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2025-03-25,,,false,true
+NS-RBM18SS0,"TOSHIBA HA MANUFACTURING (NANHAI) CO., LTD.",false,"TOSHIBA HA MANUFACTURING (NANHAI) CO., LTD.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-10-24,,,false,false
+NS-RBM18SS0-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-07-19,,,false,false
+NS-RBM18WH0-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-07-19,,,false,false
+NS-RBM92*,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-04-27,,,false,true
+NS-RBM92BK9,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-04-27,,,false,false
+NS-RBM92WH9,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-04-27,,,false,false
+NS-RFD15SS8,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2017-06-02,,,false,false
+NS-RFD21CI******,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-10-13,,,false,true
+NS-RFD21CISS****,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-06-13,,,false,true
+NS-RFD21CISS0,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-10-13,,,false,false
+NS-RFD21CXSS****,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-06-13,,,false,true
+NS-RFD21CXSS0,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-11-10,,,false,false
+NS-RFD21CXSS0-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-11-10,,,false,false
+NS-RFD21SS7,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-07-29,,,false,false
+NS-RFD26ISS****,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-06-13,,,false,true
+NS-RFD26SS9,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-08-24,,,false,false
+NS-RFD26XSS****,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",false,"Hisense Ronshen (Guangdong) Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-06-13,,,false,true
+NS-RFD26XSS0,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-11-10,,,false,false
+NS-RFD26XSS0-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-11-10,,,false,false
+NS-RGFCGS2,"Guangdong Hyxion Smart Kitchen Co., Ltd",false,"Guangdong Hyxion Smart Kitchen Co., Ltd",Microwave or cooking,Residential Cooking,2022-07-04,,,false,false
+NS-RGFGSS1,,true,"Best Buy Purchasing, LLC.",Microwave or cooking,Residential Cooking,2020-08-04,,,false,false
+NS-RGFGSS1-C,,true,"Best Buy Purchasing, LLC.",Microwave or cooking,Residential Cooking,2020-08-04,,,false,false
+NS-RNG24SS9,,true,"Best Buy Purchasing, LLC.",Microwave or cooking,Residential Cooking,2019-04-18,,,false,false
+NS-RSS26SS0,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-06-03,,,false,false
+NS-RSS26SS0,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-05-18,,,false,false
+NS-RSS26WH0,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-06-03,,,false,false
+NS-RSS26WH0,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-05-18,,,false,false
+NS-RSS26XXXXXX,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-06-03,,,false,false
+NS-RTM10******,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-05-15,,,false,true
+NS-RTM10**26L,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2025-07-07,,,false,true
+NS-RTM10**26L,"MIDEA INTELLIGENT MANUFACTURING (THAILAND) CO., LTD",false,"MIDEA INTELLIGENT MANUFACTURING (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2025-08-05,,,false,true
+NS-RTM10BK0,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-05-15,,,false,false
+NS-RTM10BK2,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-09-05,,,false,false
+NS-RTM10BK2-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-09-05,,,false,false
+NS-RTM10BK8,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2017-04-07,,,false,false
+NS-RTM10SS0,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-05-15,,,false,false
+NS-RTM10SS2,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-09-05,,,false,false
+NS-RTM10SS2-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-09-05,,,false,false
+NS-RTM10WH0,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-05-15,,,false,false
+NS-RTM10WH2,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-09-05,,,false,false
+NS-RTM10WH2-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-09-05,,,false,false
+NS-RTM10WH7,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-01-21,,,false,false
+NS-RTM10WH7-C,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-01-21,,,false,false
+NS-RTM12SS7,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-01-21,,,false,false
+NS-RTM12SS7-C,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-01-21,,,false,false
+NS-RTM12SS7L*,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-04-22,,,false,true
+NS-RTM14***,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2023-11-06,,,false,true
+NS-RTM18****,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-05-14,,,false,true
+NS-RTM18******,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-11-14,,,false,true
+NS-RTM18**2,PT Jaya Refrigeration Equipment,false,PT Jaya Refrigeration Equipment,Refrigerator or freezer,Non-Commercial Refrigerators,2025-11-16,,,false,true
+NS-RTM18**D2,PT Jaya Refrigeration Equipment,false,PT Jaya Refrigeration Equipment,Refrigerator or freezer,Non-Commercial Refrigerators,2025-12-03,,,false,true
+NS-RTM18BK2,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-08-31,,,false,false
+NS-RTM18BK2L,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-08-31,,,false,false
+NS-RTM18BK8L,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-05-14,,,false,false
+NS-RTM18BK8Q,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2017-04-07,,,false,false
+NS-RTM18BK8Q*,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2020-01-20,,,false,true
+NS-RTM18BKR8,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2017-03-09,,,false,false
+NS-RTM18BKR8*,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2020-01-03,,,false,true
+NS-RTM18BS8,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2017-02-17,,,false,false
+NS-RTM18SS2,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-08-31,,,false,false
+NS-RTM18SS2L,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-08-31,,,false,false
+NS-RTM18SS7,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-01-21,,,false,false
+NS-RTM18SS7*,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2020-01-03,,,false,true
+NS-RTM18SS7-C,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-01-22,,,false,false
+NS-RTM18SS7-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-11-14,,,false,false
+NS-RTM18WH2,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-08-31,,,false,false
+NS-RTM18WH7,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-06-14,,,false,false
+NS-RTM18WH7*,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2020-01-03,,,false,true
+NS-RTM18WH7-C,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-01-21,,,false,false
+NS-RTM18WH7-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-11-14,,,false,false
+NS-RTM18WH8Q,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2017-04-07,,,false,false
+NS-RTM18WH8Q*,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2020-01-20,,,false,true
+NS-RTM18WHD2,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-08-31,,,false,false
+NS-RTM20**#***,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-12-28,,,false,true
+NS-RTM20**3,PT Jaya Refrigeration Equipment,false,PT Jaya Refrigeration Equipment,Refrigerator or freezer,Non-Commercial Refrigerators,2025-11-16,,,false,true
+NS-RTM20SS3,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2022-12-28,,,false,false
+NS-RTM21BS8,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2017-02-17,,,false,false
+NS-RTM21SS7,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-07-05,,,false,false
+NS-RTM21SS7 VER B,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-10-12,,,false,false
+NS-RTM21SS7 VER C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-10-12,,,false,false
+NS-RTM21SS7-B,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-10-12,,,false,false
+NS-RTM21SS7-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-10-12,,,false,false
+NS-RTM21WH7,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-01-21,,,false,false
+NS-RTM21WH7-C,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-01-21,,,false,false
+NS-TDRE67W1,,true,"Best Buy Purchasing, LLC.",Dryer,Clothes Dryers,2020-09-28,,,false,false
+NS-TDRE75W1,,true,"Best Buy Purchasing, LLC.",Dryer,Clothes Dryers,2021-07-13,,,false,false
+NS-TDRG67W1,,true,"Best Buy Purchasing, LLC.",Dryer,Clothes Dryers,2020-09-28,,,false,false
+NS-TDRG75W1,,true,"Best Buy Purchasing, LLC.",Dryer,Clothes Dryers,2020-04-29,,,false,false
+NS-TWM09WH7-C,,true,"Best Buy Purchasing, LLC.",Washer,Clothes Washers,2018-01-29,,,false,false
+NS-TWM16WH9,,true,"Best Buy Purchasing, LLC.",Washer,Clothes Washers,2018-01-29,,,false,false
+NS-TWM35W1,,true,"Best Buy Purchasing, LLC.",Washer,Clothes Washers,2020-10-11,,,false,false
+NS-TWM41WH8A,"Wuxi Little Swan Co., Ltd.",false,"Wuxi Little Swan Co., Ltd.",Washer,Clothes Washers,2017-09-19,,,false,false
+NS-TWM45W1,,true,"Best Buy Purchasing, LLC.",Washer,Clothes Washers,2020-04-28,,,false,false
+NS-TWM48WH8B,"Wuxi Little Swan Co., Ltd.",false,"Wuxi Little Swan Co., Ltd.",Washer,Clothes Washers,2017-11-01,,,false,false
+NS-UZ11**27,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2026-07-02,,,false,true
+NS-UZ14***,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-03-06,,,false,true
+NS-UZ14******,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-11-14,,,false,true
+NS-UZ14**27,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2026-07-13,,,false,true
+NS-UZ14SS0,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-03-06,,,false,false
+NS-UZ14SS0*,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-03-12,,,false,true
+NS-UZ14SS0-C*,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-03-12,,,false,true
+NS-UZ14WH0,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-03-06,,,false,false
+NS-UZ14WH0*,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-03-12,,,false,true
+NS-UZ14WH0-C*,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-03-12,,,false,true
+NS-UZ14XSS8,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2017-04-20,,,false,false
+NS-UZ14XWH7,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-08-15,,,false,false
+NS-UZ14XWH7-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-11-14,,,false,false
+NS-UZ17***,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-03-06,,,false,true
+NS-UZ17******,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-11-14,,,false,true
+NS-UZ17SS0,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-03-06,,,false,false
+NS-UZ17SS0*,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2020-01-03,,,false,true
+NS-UZ17SS0-C*,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2020-01-03,,,false,true
+NS-UZ17WH0,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-03-06,,,false,false
+NS-UZ17WH0*,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2020-01-03,,,false,true
+NS-UZ17WH0-C*,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Refrigerator or freezer,Non-Commercial Refrigerators,2020-01-03,,,false,true
+NS-UZ17XSS9,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2017-09-22,,,false,false
+NS-UZ17XWH7,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-12-01,,,false,false
+NS-UZ17XWH7-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-11-14,,,false,false
+NS-UZ21***,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-03-06,,,false,true
+NS-UZ21WH0,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-03-06,,,false,false
+NS-UZ21WH0*,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-03-12,,,false,true
+NS-UZ21WH0-C*,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2020-03-12,,,false,true
+NS-UZ21XWH7,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-12-01,,,false,false
+NS-UZ53******,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-11-14,,,false,true
+NS-UZ53WH9,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",false,"Guangzhou Midea Hualing Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2017-08-29,,,false,false
+NS-UZ53WH9-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-11-14,,,false,false
+NS-UZ58WH6,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2015-09-17,,,false,false
+NS-UZ70**26L,PT Jaya Refrigeration Equipment,false,PT Jaya Refrigeration Equipment,Refrigerator or freezer,Non-Commercial Refrigerators,2025-09-29,,,false,true
+NS-UZ70**26L,PT Jaya Refrigeration Equipment,false,PT Jaya Refrigeration Equipment,Refrigerator or freezer,Non-Commercial Refrigerators,2025-10-22,,,false,true
+NS-UZ70**26L,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2025-11-17,,,false,true
+NS-UZ70SS27,"Homa Appliances Co., Ltd.",false,"Homa Appliances Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2026-06-02,,,false,false
+NS-UZ70SS27-C,"Homa Appliances Co., Ltd.",false,"Homa Appliances Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2026-06-02,,,false,false
+NS-UZ70SS4,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2023-12-02,,,false,false
+NS-UZ70SS4-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2023-12-02,,,false,false
+NS-UZ70WH27,"Homa Appliances Co., Ltd.",false,"Homa Appliances Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2026-06-02,,,false,false
+NS-UZ70WH27-C,"Homa Appliances Co., Ltd.",false,"Homa Appliances Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2026-06-02,,,false,false
+NS-UZ70WH4,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2023-12-02,,,false,false
+NS-UZ70WH4-C,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2023-12-02,,,false,false
+NS-UZ7WH0,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2019-04-30,,,false,false
+NS-WB44SS8,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2017-08-08,,,false,false
+NS-WB44SS8,,true,"Best Buy Purchasing, LLC.",Wine or beverage cooler,Miscellaneous Refrigeration Products,2019-12-20,,,false,false
+NS-WBC2Z**27,"TOSHIBA HA MANUFACTURING (NANHAI) CO., LTD.",false,"TOSHIBA HA MANUFACTURING (NANHAI) CO., LTD.",Wine or beverage cooler,Miscellaneous Refrigeration Products,2026-04-01,,,false,true
+NS-WBC2Z**27-C,"TOSHIBA HA MANUFACTURING (NANHAI) CO., LTD.",false,"TOSHIBA HA MANUFACTURING (NANHAI) CO., LTD.",Wine or beverage cooler,Miscellaneous Refrigeration Products,2026-04-01,,,false,true
+NS-WC08SS1,,true,"Best Buy Purchasing, LLC.",Wine or beverage cooler,Miscellaneous Refrigeration Products,2020-08-27,,,false,false
+NS-WC14SS3,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Wine or beverage cooler,Miscellaneous Refrigeration Products,2022-04-28,,,false,false
+NS-WC14SS9,,true,Best Buy Corp. - Exclusive Brands,Refrigerator or freezer,Non-Commercial Refrigerators,2017-12-29,,,false,false
+NS-WC29**26L,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",false,"TOSHIBA CONSUMER PRODUCTS (THAILAND) CO., LTD",Wine or beverage cooler,Miscellaneous Refrigeration Products,2025-10-01,,,false,true
+NS-WC29SS26L,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Wine or beverage cooler,Miscellaneous Refrigeration Products,2025-07-08,,,false,false
+NS-WC29SS3,"Hefei Hualing Co., Ltd.",false,"Hefei Hualing Co., Ltd.",Wine or beverage cooler,Miscellaneous Refrigeration Products,2022-04-28,,,false,false
+NS-WC29SS9,,true,"Best Buy Purchasing, LLC.",Refrigerator or freezer,Non-Commercial Refrigerators,2018-03-19,,,false,false
+NS-WC29SS9,,true,"Best Buy Purchasing, LLC.",Wine or beverage cooler,Miscellaneous Refrigeration Products,2020-02-12,,,false,false
+NS-WMT41MGA7,"Testing Center of Wuxi Littleswan Electric Co., Ltd",false,"Testing Center of Wuxi Littleswan Electric Co., Ltd",Washer,Clothes Washers,2026-04-21,,,false,false
+NS-WMT41WA5,"Testing Center of Wuxi Littleswan Electric Co., Ltd",false,"Testing Center of Wuxi Littleswan Electric Co., Ltd",Washer,Clothes Washers,2024-06-25,,,false,false
+NS32-FEFL26,TTE Corporation,false,TTE Corporation,TV,Federally tested TVs,2025-07-28,32,1920,false,false
+NS40-FEFL26,TTE Corporation,false,TTE Corporation,TV,Federally tested TVs,2025-03-25,40,,true,false
+NS40-FEFL26,TTE Corporation,false,TTE Corporation,TV,Federally tested TVs,2025-11-16,40,1920,false,false
+NS55-UQFL26,TTE Corporation,false,TTE Corporation,TV,Federally tested TVs,2025-03-24,55,3840,false,false
+NS65-UQFL26,TTE Corporation,false,TTE Corporation,TV,Federally tested TVs,2025-03-24,65,3840,false,false
+NS75-UQFL26,TTE Corporation,false,TTE Corporation,TV,Federally tested TVs,2025-03-24,75,3840,false,false
+NS85-UQFL27,TTE Corporation,false,TTE Corporation,TV,Federally tested TVs,2025-11-04,85,,true,false
+NS85-UQFL27,TTE Corporation,false,TTE Corporation,TV,Federally tested TVs,2025-11-20,85,3840,false,false
+NS98-UQFL27,TTE Corporation,false,TTE Corporation,TV,Federally tested TVs,2026-02-10,98,3840,false,false
+NSCF33WH8,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-10-24,,,false,false
+NSCF44WH8,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",false,"Guangzhou Wanbao Group Refrigerator Co., Ltd.",Refrigerator or freezer,Non-Commercial Refrigerators,2016-10-24,,,false,false

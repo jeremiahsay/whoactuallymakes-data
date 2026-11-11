@@ -1,9 +1,9 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-09",
- "count": 137,
- "primary": 94,
- "by_hand": 17,
+ "generated": "2026-11-11",
+ "count": 150,
+ "primary": 107,
+ "by_hand": 22,
  "sources": [
   {
    "id": "api-eolcs",
@@ -51,6 +51,45 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Search API's public directory in a browser, one brand at a time, then update data/registries/api-eolcs/."
+    }
+   ]
+  },
+  {
+   "id": "fcc-open-data",
+   "name": "FCC Open Data: equipment authorization grantee registrations",
+   "short": "FCC open data",
+   "publisher": "Federal Communications Commission",
+   "url": "https://opendata.fcc.gov/d/3b3k-34jp",
+   "kind": "Government registry",
+   "primary": true,
+   "proves": "Which company the FCC registered each grantee code to, with the company's country and the date the FCC received the registration.",
+   "cannot_prove": "Who built a device, which devices a code was used for, or any code registered after the export's last update (22 Mar 2021).",
+   "terms": {
+    "url": "https://www.usa.gov/government-works",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-10",
+    "due": "2027-11-10"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "FCC ID lookup",
+     "url": "/fcc-id-lookup/",
+     "note": "Whose grantee code an FCC ID starts with"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "The FCC's open grantee register, the FCC Covered List, and the FCC grant records the FCC ID page quotes",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-10",
+     "due": "2026-12-10",
+     "result": "50,153 grantee codes, registered up to 22 Mar 2021; Covered List dated 6 Nov 2026",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Download https://opendata.fcc.gov/api/views/3b3k-34jp/rows.csv?accessType=DOWNLOAD and the dataset's metadata (api/views/3b3k-34jp.json) into a new dated research folder; if the newest registration date moved past 22 Mar 2021, update the page's wording about the cut-off. Re-read the FCC Covered List in a browser and update covered and covered_categories in data/guidance/fcc-id.json. Point the guidance at the new CSV and its sha256, then run tools/build_fcc.py."
     }
    ]
   },
@@ -126,6 +165,11 @@
      "label": "Where are Kias made?",
      "url": "/where-is-kia-made/",
      "note": "VIN checker and Kia plant codes"
+    },
+    {
+     "label": "Where are Toyotas made?",
+     "url": "/where-is-toyota-made/",
+     "note": "Toyota VIN codes"
     }
    ],
    "pulls": [
@@ -358,6 +402,109 @@
    ]
   },
   {
+   "id": "cec-maedbs",
+   "name": "California Energy Commission Modernized Appliance Efficiency Database System (MAEDbS)",
+   "short": "California appliance register (MAEDbS)",
+   "publisher": "California Energy Commission",
+   "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "Which company a filing lists as the manufacturer for a model number on California's appliance register, the brand it is sold under, and the date it was added.",
+   "cannot_prove": "That the listed manufacturer built the unit in your hands. It records the company named in the filing, which can be the brand's own buyer, and makers can change between production runs.",
+   "terms": {
+    "url": "https://www.energy.ca.gov/conditions.html",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-10",
+    "due": "2027-11-10"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Insignia TVs and appliances",
+     "url": "/insignia/",
+     "note": "The manufacturer listed for each Insignia model number"
+    },
+    {
+     "label": "Who makes Hart, Hyper Tough, Husky and Harbor Freight tools",
+     "url": "/store-brand-tools/",
+     "note": "The company listed on each battery-charger filing for Hart, Hyper Tough, Husky and Harbor Freight's brands"
+    },
+    {
+     "label": "Who makes Craftsman tools and mowers",
+     "url": "/craftsman/",
+     "note": "The company listed on each Craftsman battery-charger filing"
+    },
+    {
+     "label": "Who makes Onn TVs",
+     "url": "/onn-tv/",
+     "note": "Every Onn TV filing, and the other brands the same companies file TVs for"
+    },
+    {
+     "label": "Who makes EverStart batteries",
+     "url": "/everstart/",
+     "note": "Every EverStart charger and jump starter filing"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "California appliance register: Insignia filings",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-10",
+     "due": "2026-12-10",
+     "result": "714 filings, 34 companies named",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Read in a browser: Advanced Search, brand Insignia, each product type; export the CSV, save it under research/ with its fingerprint, then run tools/build_insignia.py."
+    },
+    {
+     "what": "California appliance register: Hart, Hyper Tough, Husky and Harbor Freight battery chargers",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-10",
+     "due": "2026-12-10",
+     "result": "657 filings, 32 companies named",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Run tools/cec_maedbs_pull.py for each charger list (see research/2026-11-10-store-brand-tools/raw/cec/manifest.json for the searches), save into a new dated research folder with a manifest, point build_store_tools.py at it, then run it."
+    },
+    {
+     "what": "Craftsman records: California charger register, CPSC recalls and Stanley Black & Decker's newest SEC report",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-10",
+     "due": "2026-12-10",
+     "result": "81 charger filings, 32 recalls, 332 engine rows, 11 Sears codes decoded",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Run tools/cec_maedbs_pull.py for Craftsman on both charger lists (see research/2026-11-10-craftsman/raw/cec/manifest.json), re-run the four CPSC searches in research/2026-11-10-craftsman/raw/cpsc-recalls-craftsman.json, and read Stanley Black & Decker's newest 10-Q or 10-K for Craftsman, MTD and Transform Holdco. Save into a new dated research folder, point build_craftsman.py at it, then run it. The EPA 1997-2010 archive doesn't change."
+    },
+    {
+     "what": "Onn TV filings on California's appliance register, Walmart's newest SEC report and the Onn TV support sites",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-10",
+     "due": "2026-12-10",
+     "result": "324 Onn TV filings counted, 13 companies, 29 numbers filed by more than one",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Run tools/cec_maedbs_pull.py for brands ONN and onn. on the three TV lists, status Approved, and for every brand on the archived TV lists (see research/2026-11-10-onn/raw/cec/manifest.json); rebuild other-brands.json from every approved TV row. Read Walmart's newest 10-K or 10-Q for onn. and VIZIO, and re-read the two Onn support sites in a browser. Save into a new dated research folder, point build_onn.py at it, then run it."
+    },
+    {
+     "what": "EverStart charger filings on California's appliance register, Walmart's EverStart listings and warranty sheet, and new SEC filings naming EverStart",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-11",
+     "due": "2026-12-11",
+     "result": "62 EverStart charger filings (Baccus 57); 8 Walmart listings read; Clarios filings to 31 May 2024",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Run tools/cec_maedbs_pull.py for brands EverStart and EverStart maxx on the Federally Regulated Battery Chargers list, status Approved. Re-read in Chrome the eight Walmart listings in research/2026-11-11-everstart/raw/web/walmart-everstart-listings-2026-11-11.txt and the Clarios-hosted warranty sheet they link. Search SEC full text (efts.sec.gov) for EverStart filed since the last read. Save into a new dated research folder, point build_everstart.py and the guidance at it, then run it. A new maker named for the batteries is a correction for the owner."
+    }
+   ]
+  },
+  {
    "id": "costco-interstate-finder",
    "name": "Costco's car battery finder (costco.interstatebatteries.com)",
    "short": "Costco battery finder",
@@ -517,9 +664,9 @@
      "what": "Kirkland, Huggies Plus, Pampers Swaddlers Ultra, Pull-Ups, Easy Ups and baby wipes at Costco: every size, offers, ratings, Seattle shelf",
      "how": "hand",
      "every_days": 30,
-     "last": "2026-11-06",
-     "due": "2026-11-09",
-     "result": "Kirkland on offer to Nov 8, 12.5 to 25.9 cents; regular 15.6 to 32.4; Huggies 19.8 to 48.1; Pampers 20.5 to 46.8",
+     "last": "2026-11-09",
+     "due": "2026-11-23",
+     "result": "Kirkland regular 15.6 to 32.4 cents; Huggies on offer to Nov 22, 14.6 to 38.5; Pampers 20.5 to 46.8",
      "edition": null,
      "file_url": null,
      "hand_note": "Read in a browser at ZIP 98101: click each size on the six listings, plus Newborn. Log any new offer's dates in data/guidance/costco-diapers.json. Read again the day after an offer ends. Update kirkland-diapers.json too: the build stops if the two disagree."
@@ -529,7 +676,7 @@
      "how": "hand",
      "every_days": 30,
      "last": "2026-11-06",
-     "due": "2026-12-06",
+     "due": "2026-12-09",
      "result": "Four pairs read; OxiClean is warehouse-only with no price shown",
      "edition": null,
      "file_url": null,
@@ -663,6 +810,11 @@
      "label": "Where are Subarus made?",
      "url": "/where-is-subaru-made/",
      "note": "What the parts label must say (49 CFR 583)"
+    },
+    {
+     "label": "FCC ID lookup",
+     "url": "/fcc-id-lookup/",
+     "note": "How an FCC ID, a module label and a self-declared device work (47 CFR 2.925, 2.926, 15.212, 2.1077)"
     }
    ],
    "pulls": [
@@ -672,7 +824,7 @@
      "every_days": 365,
      "last": "2026-11-06",
      "due": "2027-11-06",
-     "result": "15 rule texts on file",
+     "result": "22 rule texts on file",
      "edition": null,
      "file_url": null,
      "hand_note": "Re-read each rule on the eCFR, check our short quote still stands, and log any change on the corrections page."
@@ -785,6 +937,11 @@
      "label": "Where are Kias made?",
      "url": "/where-is-kia-made/",
      "note": "Every Kia row, 2018 to 2027"
+    },
+    {
+     "label": "Where are Toyotas made?",
+     "url": "/where-is-toyota-made/",
+     "note": "Toyota rows"
     }
    ],
    "pulls": [
@@ -809,6 +966,17 @@
      "edition": null,
      "file_url": null,
      "hand_note": "nhtsa.gov and kiamedia.com refuse scripts. Save the newest AALA report in Chrome as for Subaru, then run tools/parse_aala.py and tools/build_car_origin.py. Read kiamedia.com pricing releases and model pages in Chrome for new assembly lines; check whether the Sportage Hybrid's second plant is named."
+    },
+    {
+     "what": "Where Toyotas are made: NHTSA report and Toyota plant lists",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2026-12-09",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "nhtsa.gov and pressroom.toyota.com refuse scripts. Save the newest AALA report in Chrome as for Subaru, then run tools/parse_aala.py and tools/build_car_origin.py. Re-read the two global.toyota plant lists and data/aala/placed.json rows."
     }
    ]
   },
@@ -904,8 +1072,8 @@
     "url": "https://www.sec.gov/os/accessing-edgar-data",
     "read": "Open license. We read it with a script.",
     "automated": true,
-    "checked": "2026-11-05",
-    "due": "2027-11-05"
+    "checked": "2026-11-10",
+    "due": "2027-11-10"
    },
    "credit": null,
    "used_for": [
@@ -923,6 +1091,21 @@
      "label": "Who makes Kirkland Signature toilet paper",
      "url": "/kirkland-signature/toilet-paper/",
      "note": "Procter & Gamble's own list of its Family Care brands"
+    },
+    {
+     "label": "Who makes Craftsman tools and mowers",
+     "url": "/craftsman/",
+     "note": "Stanley Black & Decker's filings on buying Craftsman (2017) and MTD (2021), and its newest quarterly report"
+    },
+    {
+     "label": "Who makes Onn TVs",
+     "url": "/onn-tv/",
+     "note": "Walmart's own list of its private brands, and its purchase of VIZIO"
+    },
+    {
+     "label": "Who makes EverStart batteries",
+     "url": "/everstart/",
+     "note": "Clarios, Exide, Johnson Controls and Walmart filings on EverStart and Walmart's battery suppliers"
     }
    ],
    "pulls": [
@@ -1140,8 +1323,8 @@
      "what": "FDA recall records that mention store brands",
      "how": "script",
      "every_days": 7,
-     "last": "2026-11-09",
-     "due": "2026-11-16",
+     "last": "2026-11-11",
+     "due": "2026-11-18",
      "result": "38 recalls waiting for review",
      "edition": null,
      "file_url": null,
@@ -1199,6 +1382,33 @@
      "label": "Who makes Kirkland Signature golf clubs",
      "url": "/kirkland-signature/golf-clubs/",
      "note": "Listed manufacturer of the Kirkland Signature driver"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "uspto-tsdr",
+   "name": "USPTO Trademark Search and Trademark Status & Document Retrieval (TSDR)",
+   "short": "USPTO trademarks",
+   "publisher": "United States Patent and Trademark Office",
+   "url": "https://tsdr.uspto.gov/",
+   "kind": "Government registry",
+   "primary": true,
+   "proves": "Who owns a US trademark, for which goods, and when it was filed, registered and renewed.",
+   "cannot_prove": "Who makes the goods sold under the mark.",
+   "terms": {
+    "url": "https://www.uspto.gov/terms-use-uspto-websites",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-11",
+    "due": "2027-11-11"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes EverStart batteries",
+     "url": "/everstart/",
+     "note": "Walmart's EverStart trademarks"
     }
    ],
    "pulls": []
@@ -1487,8 +1697,8 @@
     "url": "https://www.cpsc.gov/Recalls/CPSC-Recalls-Application-Program-Interface-API-Information",
     "read": "Open license. We read it with a script.",
     "automated": true,
-    "checked": "2026-11-05",
-    "due": "2027-11-05"
+    "checked": "2026-11-10",
+    "due": "2027-11-10"
    },
    "credit": null,
    "used_for": [
@@ -1501,6 +1711,58 @@
      "label": "Who makes Kirkland Signature toilet paper",
      "url": "/kirkland-signature/toilet-paper/",
      "note": "Search for toilet paper and paper towel recalls"
+    },
+    {
+     "label": "Who makes Insignia TVs and appliances",
+     "url": "/insignia/",
+     "note": "Six Insignia recalls, 2007 to 2026"
+    },
+    {
+     "label": "Who makes Hart, Hyper Tough, Husky and Harbor Freight tools",
+     "url": "/store-brand-tools/",
+     "note": "22 recalls across the four, 1999 to 2025"
+    },
+    {
+     "label": "Who makes Craftsman tools and mowers",
+     "url": "/craftsman/",
+     "note": "Craftsman recalls 1980 to 2024 and the companies each names"
+    },
+    {
+     "label": "Who makes Onn TVs",
+     "url": "/onn-tv/",
+     "note": "Searched for Onn recalls; none for a TV"
+    },
+    {
+     "label": "Who makes EverStart batteries",
+     "url": "/everstart/",
+     "note": "Recalls searched for EverStart and Baccus"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-craftsman",
+   "name": "CRAFTSMAN brand website (Stanley Black & Decker)",
+   "short": "Craftsman",
+   "publisher": "Stanley Black & Decker",
+   "url": "https://www.craftsman.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What the brand's owner says about Craftsman products in its own words, such as the warranty it gives.",
+   "cannot_prove": "Who built a given Craftsman product. The site names no factories or suppliers.",
+   "terms": {
+    "url": "https://www.craftsman.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-10",
+    "due": "2027-11-10"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Craftsman tools and mowers",
+     "url": "/craftsman/",
+     "note": "The warranty terms for hand tools and older Sears-era model numbers"
     }
    ],
    "pulls": []
@@ -1549,6 +1811,33 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age advice to owners, in the carmakers table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-clarios-library",
+   "name": "Clarios Digital Library",
+   "short": "Clarios Digital Library",
+   "publisher": "Clarios",
+   "url": "https://clariosdigitallibrary.widencollective.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which documents Clarios keeps in its own library, and what they say.",
+   "cannot_prove": "That Clarios built a given battery. A document in its library shows a working tie to a brand, not the factory behind one unit.",
+   "terms": {
+    "url": "https://www.clarios.com/",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-11",
+    "due": "2027-11-11"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes EverStart batteries",
+     "url": "/everstart/",
+     "note": "The EverStart warranty sheet Walmart links to"
     }
    ],
    "pulls": []
@@ -1699,6 +1988,33 @@
    "pulls": []
   },
   {
+   "id": "doe-ccd",
+   "name": "DOE Compliance Certification Database",
+   "short": "DOE certification database",
+   "publisher": "US Department of Energy",
+   "url": "https://www.regulations.doe.gov/certification-data/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "Which current basic models are certified to DOE under a brand name, by product group.",
+   "cannot_prove": "Who made a model. The public view shows brand and model numbers, with no manufacturer or factory field.",
+   "terms": {
+    "url": "https://www.regulations.doe.gov/certification-data/",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-10",
+    "due": "2027-11-10"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Insignia TVs and appliances",
+     "url": "/insignia/",
+     "note": "The manufacturer listed for each Insignia model number"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "dealmoon",
    "name": "Dealmoon",
    "short": "Dealmoon",
@@ -1828,6 +2144,38 @@
    "pulls": []
   },
   {
+   "id": "energy-star-data",
+   "name": "ENERGY STAR certified products data (data.energystar.gov)",
+   "short": "ENERGY STAR data",
+   "publisher": "US Environmental Protection Agency",
+   "url": "https://data.energystar.gov/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "Which models are ENERGY STAR certified under a brand, and, in the datasets that carry it, the partner company that certified them.",
+   "cannot_prove": "Who built the product. The partner is the company that holds the certification, often the brand owner, not the factory.",
+   "terms": {
+    "url": "https://data.energystar.gov/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-10",
+    "due": "2027-11-10"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Insignia TVs and appliances",
+     "url": "/insignia/",
+     "note": "The manufacturer listed for each Insignia model number"
+    },
+    {
+     "label": "Who makes Onn TVs",
+     "url": "/onn-tv/",
+     "note": "Searched the TV list for Onn; none listed"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "epa-safer-choice",
    "name": "EPA Safer Choice product list",
    "short": "EPA Safer Choice",
@@ -1855,6 +2203,33 @@
    "pulls": []
   },
   {
+   "id": "epa-engine-cert",
+   "name": "EPA engine certification data: small nonroad spark-ignition engines",
+   "short": "EPA engine certificates",
+   "publisher": "US Environmental Protection Agency",
+   "url": "https://www.epa.gov/compliance-and-fuel-economy-data/engine-certification-data",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "Which company certified a small gas engine family with EPA, the model year, the equipment it goes in, and the engine models the company listed for it, sometimes under the brand they were sold as.",
+   "cannot_prove": "Who assembled the finished machine. The certificate holder is the engine's maker of record; a trimmer, saw or mower built around it can come from another company.",
+   "terms": {
+    "url": "https://www.epa.gov/web-policies-and-procedures/epa-disclaimers",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-10",
+    "due": "2027-11-10"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Craftsman tools and mowers",
+     "url": "/craftsman/",
+     "note": "Engine certificates for Craftsman and Sears gas trimmers, blowers and chainsaws, 1997 to 2010"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-east-penn",
    "name": "East Penn Manufacturing website",
    "short": "East Penn",
@@ -1877,6 +2252,33 @@
      "label": "Battery date code decoder",
      "url": "/battery-date-code/",
      "note": "East Penn's date code rule"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "fcc-eas",
+   "name": "FCC equipment authorization search and FCC web pages",
+   "short": "FCC equipment authorization",
+   "publisher": "Federal Communications Commission",
+   "url": "https://www.fcc.gov/oet/ea/fccid",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What a grant of certification lists (applicant, FCC ID, dates, exhibits), how the FCC says to read an FCC ID, and what is on the FCC Covered List.",
+   "cannot_prove": "Who physically built a device. The grantee is whoever applied and took responsibility for compliance, which can be a brand, a parts supplier or a factory.",
+   "terms": {
+    "url": "https://www.fcc.gov/oet/ea/fccid",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-10",
+    "due": "2027-11-10"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "FCC ID lookup",
+     "url": "/fcc-id-lookup/",
+     "note": "Grant records, FCC ID rules and the Covered List"
     }
    ],
    "pulls": []
@@ -3993,6 +4395,60 @@
    "pulls": []
   },
   {
+   "id": "toyota-pressroom",
+   "name": "Toyota USA Newsroom",
+   "short": "Toyota newsroom",
+   "publisher": "Toyota Motor North America, Inc.",
+   "url": "https://pressroom.toyota.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Toyota itself announced about its US plants and which vehicles they build.",
+   "cannot_prove": "Where one car was built. It's the company's own announcement.",
+   "terms": {
+    "url": "https://www.toyota.com/support/legal-terms/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-09",
+    "due": "2027-11-09"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are Toyotas made?",
+     "url": "/where-is-toyota-made/",
+     "note": "US plants and the Tacoma move to Texas"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "toyota-global",
+   "name": "Toyota global plant lists",
+   "short": "Toyota plant list",
+   "publisher": "Toyota Motor Corporation",
+   "url": "https://global.toyota/en/company/profile/facilities/manufacturing-worldwide/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which models Toyota lists at each of its plants on the date shown on the page.",
+   "cannot_prove": "Where one car was built, or which plant builds cars for the US when a model is listed at several.",
+   "terms": {
+    "url": "https://global.toyota/en/terms/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-09",
+    "due": "2027-11-09"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are Toyotas made?",
+     "url": "/where-is-toyota-made/",
+     "note": "Plants in North America and Japan"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-toyota",
    "name": "Toyota owner's manuals",
    "short": "Toyota",
@@ -4101,6 +4557,33 @@
    "pulls": []
   },
   {
+   "id": "walmart-com",
+   "name": "Walmart.com",
+   "short": "Walmart.com",
+   "publisher": "Walmart Inc.",
+   "url": "https://www.walmart.com/",
+   "kind": "Retailer",
+   "primary": true,
+   "proves": "What Walmart lists and charges on its own website on the day, and the warranty text and links on its listings.",
+   "cannot_prove": "What another store charges, or who makes a product. The listing's \"Manufacturer\" field can name the brand owner.",
+   "terms": {
+    "url": "https://www.walmart.com/help/article/walmart-com-terms-of-use/3b75080af40340d6bbd596f116fae5a0",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-11",
+    "due": "2027-11-11"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes EverStart batteries",
+     "url": "/everstart/",
+     "note": "EverStart listings, prices and warranty text"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "whoreallymakes",
    "name": "Who Really Makes (whoreallymakes.com)",
    "short": "Who Really Makes",
@@ -4144,6 +4627,33 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age recommendation, in the Who says what table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-onn",
+   "name": "onn. TV support websites (onntvsupport.com)",
+   "short": "onn. TV support",
+   "publisher": "Walmart's onn. TV support sites, run by VIZIO and by Element TV Company",
+   "url": "https://www.onntvsupport.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Who runs support, software and warranty registration for Onn TVs, in the support sites' own words.",
+   "cannot_prove": "Who built a given Onn TV. Running support or supplying software is not building the set, and the sites name no factories.",
+   "terms": {
+    "url": "https://roku.onntvsupport.com/terms-of-service/",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-10",
+    "due": "2027-11-10"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Onn TVs",
+     "url": "/onn-tv/",
+     "note": "Who runs Onn TV support and warranty registration"
     }
    ],
    "pulls": []

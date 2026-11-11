@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-09",
+ "generated": "2026-11-11",
  "title": "Who Actually Makes open data",
  "url": "https://whoactuallymakes.com/data/",
  "licence": {
@@ -13,8 +13,8 @@
   "doi_note": "Concept DOI: always resolves to the newest archived version on Zenodo.",
   "mirror": "https://github.com/jeremiahsay/whoactuallymakes-data"
  },
- "count": 14,
- "records": 10289,
+ "count": 18,
+ "records": 13666,
  "datasets": [
   {
    "id": "claims",
@@ -34,7 +34,7 @@
    ],
    "rights": "Quoted words belong to their publishers; most records are US government work. CC BY covers our rows.",
    "based_on": [],
-   "records": 279,
+   "records": 328,
    "updated": "2026-11-09",
    "fields": [
     {
@@ -243,13 +243,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/claims.json",
-     "bytes": 254125,
-     "sha256": "07ac392c265b467d415d94ffc6c1442bbb4d20a3a0c6b5ec0316e1dc040e00ed"
+     "bytes": 298321,
+     "sha256": "3e4c8b7824bc2fa728f97d7d6e9ed9a2d47d11be542647fb906ad14eb2b58db9"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/claims.csv",
-     "bytes": 157852,
-     "sha256": "9502197ca5918cf8c1d1f3a113d839e087a4f2b56e4b7a1d1b3203af88622f61"
+     "bytes": 185069,
+     "sha256": "1544faee9eba0f719100865b48848d90b38e811f5fc85fdc0a5a9e3046302d60"
     }
    }
   },
@@ -989,35 +989,35 @@
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0631-2022%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0648-2023%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2077-2019%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0014-2021%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0029-2021%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0031-2018%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0032-2025%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0037-2021%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0038-2021%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0047-2023%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0070-2017%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0081-2013%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0085-2017%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0097-2016%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0109-2021%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0115-2023%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0117-2021%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0121-2018%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0132-2013%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0140-2025%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0141-2025%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0144-2025%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0151-2021%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0159-2025%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2021%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2025%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0166-2022%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0217-2023%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0234-2014%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0243-2025%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0250-2014%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0311-2025%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0312-2025%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0326-2014%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0336-2016%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0373-2019%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0436-2020%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0437-2020%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0469-2021%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0608-2020%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0640-2016%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0641-2016%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0641-2025%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0642-2016%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0643-2016%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0644-2016%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0663-2019%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0705-2023%22"
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0181-2025%22",
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0183-2014%22"
    ],
-   "records": 726,
-   "updated": "2026-11-09",
+   "records": 1423,
+   "updated": "2026-11-11",
    "fields": [
     {
      "name": "id",
@@ -1155,13 +1155,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/evidence.json",
-     "bytes": 605545,
-     "sha256": "15bcffccf71e9b56f1a9562228e5b2962df03fcb46364a0a099e3881bef24df4"
+     "bytes": 1260550,
+     "sha256": "c110862c5563de8b3bdbd76b93812890de60ebef6250ce6344521c6591dc9e5e"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/evidence.csv",
-     "bytes": 460777,
-     "sha256": "9f9bea79f400b0897522818b3bab89ce68a9ca3baa16f350d269b4a87737fbc3"
+     "bytes": 977453,
+     "sha256": "a44f853d7a00b7c0698b18dc86f5d3393e65035cd9bf01ad2db97ae4fd743f6a"
     }
    }
   },
@@ -1184,10 +1184,13 @@
    "based_on": [
     "https://acdelcocanada.com/",
     "https://bgr.com/",
+    "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx",
     "https://centralmilling.com/",
+    "https://clariosdigitallibrary.widencollective.com/",
     "https://community.qvc.com/",
     "https://costco.interstatebatteries.com/",
     "https://dailymed.nlm.nih.gov/dailymed/",
+    "https://data.energystar.gov/",
     "https://delcoline.com/wp-content/uploads/2016/08/ACDelco-battery-warranty-information.pdf",
     "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf",
     "https://diamondpetcompany.com/",
@@ -1197,6 +1200,7 @@
     "https://forests.org/",
     "https://fortune.com/",
     "https://fsc.org/",
+    "https://global.toyota/en/company/profile/facilities/manufacturing-worldwide/",
     "https://gov.georgia.gov/",
     "https://hip2save.com/",
     "https://itstillruns.com/",
@@ -1210,13 +1214,16 @@
     "https://novolex.com/",
     "https://open.fda.gov/apis/drug/drugsfda/",
     "https://open.fda.gov/apis/food/enforcement/",
+    "https://opendata.fcc.gov/d/3b3k-34jp",
     "https://ownersmanual.hyundai.com/",
     "https://ownersmanual.kia.com/",
+    "https://pressroom.toyota.com/",
     "https://search.fsc.org/",
     "https://shopsavvy.com/",
     "https://slickdeals.net/",
     "https://thegolfnewsnet.com/",
     "https://thekrazycouponlady.com/",
+    "https://tsdr.uspto.gov/",
     "https://ttbonline.gov/colasonline/publicSearchColasBasic.do",
     "https://uscode.house.gov/",
     "https://vpic.nhtsa.dot.gov/api/",
@@ -1224,17 +1231,10 @@
     "https://web.archive.org/web/*/usga.org/ConformingGolfClub/ConformingClubList_M.pdf",
     "https://whoreallymakes.com/",
     "https://worldwide.kia.com/en/company/investor-relations",
-    "https://www.425business.com/",
-    "https://www.aaa.com/",
-    "https://www.allblogthings.com/",
-    "https://www.babygearlab.com/",
-    "https://www.batteriesinaflash.com/",
-    "https://www.bloomberg.com/",
-    "https://www.bridgestoneamericas.com/en/company/safety/choosing-tires/replacement-guidance",
-    "https://www.cand.uscourts.gov/"
+    "https://www.425business.com/"
    ],
-   "records": 137,
-   "updated": "2026-11-09",
+   "records": 150,
+   "updated": "2026-11-11",
    "fields": [
     {
      "name": "id",
@@ -1319,6 +1319,21 @@
      "pulls": "every 150 days in a browser, last 2026-11-03"
     },
     {
+     "id": "fcc-open-data",
+     "name": "FCC Open Data: equipment authorization grantee registrations",
+     "publisher": "Federal Communications Commission",
+     "url": "https://opendata.fcc.gov/d/3b3k-34jp",
+     "kind": "Government registry",
+     "primary": true,
+     "proves": "Which company the FCC registered each grantee code to, with the company's country and the date the FCC received the registration.",
+     "cannot_prove": "Who built a device, which devices a code was used for, or any code registered after the export's last update (22 Mar 2021).",
+     "terms_url": "https://www.usa.gov/government-works",
+     "terms_read": "Public domain (US government work). We read it with a script.",
+     "terms_checked": "2026-11-10",
+     "credit": "",
+     "pulls": "every 30 days in a browser, last 2026-11-10"
+    },
+    {
      "id": "fsc-search",
      "name": "FSC Search (FSC certificate register)",
      "publisher": "Forest Stewardship Council",
@@ -1362,33 +1377,18 @@
      "terms_checked": "2026-11-03",
      "credit": "",
      "pulls": "every 30 days by script, last 2026-11-03"
-    },
-    {
-     "id": "sfi-database",
-     "name": "SFI Certification Database",
-     "publisher": "Sustainable Forestry Initiative Inc.",
-     "url": "https://www.sfidatabase.org/",
-     "kind": "Government registry",
-     "primary": true,
-     "proves": "Which company holds a Sustainable Forestry Initiative certificate or label number, its certificate name, status, expiry and certified locations.",
-     "cannot_prove": "Who made a particular product, or at which listed location. It shows who holds the label number; it doesn't use the word maker, and a store-brand label can be issued a private number that hides the supplier.",
-     "terms_url": "https://forests.org/legal/#terms",
-     "terms_read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
-     "terms_checked": "2026-11-05",
-     "credit": "",
-     "pulls": "every 90 days in a browser, last 2026-11-05"
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/sources.json",
-     "bytes": 151724,
-     "sha256": "0e87ef3f924e8b839170b12d735970237b87c6ac710d1d42dace6533d5c54838"
+     "bytes": 172610,
+     "sha256": "23e46035f8faabee2cfa732102efec06c0600824b879fc327f4c73ac90450241"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/sources.csv",
-     "bytes": 64910,
-     "sha256": "620fac65f6d86f733d8e6dc591b942aa31e1e42811f98868265a618dfd67ea63"
+     "bytes": 72128,
+     "sha256": "d6206b17630c72b1682318f948554e96ad1583dfc1b5c649373b5af1aa2abee9"
     }
    }
   },
@@ -1527,8 +1527,8 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/corrections.json",
-     "bytes": 37950,
-     "sha256": "0386c04598cf4c87a19472c12896162dd09189d140a6b542d14073da2fe3cc6e"
+     "bytes": 38991,
+     "sha256": "77a04a0c1ae3e5c986d729a23bd5b976d55685f3e95f67822b3bde7edada0d27"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/corrections.csv",
@@ -1553,8 +1553,8 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 39,
-   "updated": "2026-11-09",
+   "records": 46,
+   "updated": "2026-11-11",
    "fields": [
     {
      "name": "id",
@@ -1632,8 +1632,8 @@
      "how": "script",
      "every_days": 7,
      "once": false,
-     "last": "2026-11-09",
-     "due": "2026-11-16",
+     "last": "2026-11-11",
+     "due": "2026-11-18",
      "result": "38 recalls waiting for review"
     },
     {
@@ -1662,13 +1662,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/schedule.json",
-     "bytes": 176885,
-     "sha256": "5a77614f25f7ce0edd03b09290a43fe61956c360f2c8aaa4e0c3c68921fb05b3"
+     "bytes": 311617,
+     "sha256": "eeecbe1e6514fa0e5b841029e228a863cfddd434536feb1fe92993166d89aa49"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/schedule.csv",
-     "bytes": 8756,
-     "sha256": "66490b25612bb866ffa2226a34b871285304112126dddc454221fe5c3ee7b1ff"
+     "bytes": 10740,
+     "sha256": "fd57468a941f41018de189a6a5b03c2446b5ee529fd2274df6d109aec3cb32f0"
     }
    }
   },
@@ -1699,8 +1699,8 @@
     "https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-1---2/4000436297",
     "https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-3---7/4000423015"
    ],
-   "records": 30,
-   "updated": "2026-11-06",
+   "records": 60,
+   "updated": "2026-11-09",
    "fields": [
     {
      "name": "read_on",
@@ -1828,13 +1828,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/costco-diaper-prices.json",
-     "bytes": 9505,
-     "sha256": "c22bb95f73d6fefb4ccbf80c7381baa65830f293cea44bede1a91796cb52d3d8"
+     "bytes": 18928,
+     "sha256": "46bd7ffe261c2eb7b2a36f61519b6a8e2255ebf5b6b30ad021ff5e6b33df7001"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/costco-diaper-prices.csv",
-     "bytes": 4333,
-     "sha256": "7437962f32360cce7960bc7d6c628d56b178ab18f4fdbcc5af10a6d30473873c"
+     "bytes": 8596,
+     "sha256": "9e379fd9b5d5d1d9d67782b52648b45821271876d2f3619cc279a5af5739f835"
     }
    }
   },
@@ -2166,12 +2166,12 @@
     "json": {
      "url": "https://whoactuallymakes.com/data/kirkland-vs-pairs.json",
      "bytes": 21461,
-     "sha256": "ff74b8155bb6f39f4489b73653f9c949aa2833363e5b16129c8a1e63d2a60bd4"
+     "sha256": "125be39494a4ee18f7df89c3110669ea3a6de58850549edcbbf14fe4bc488e0f"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/kirkland-vs-pairs.csv",
      "bytes": 7931,
-     "sha256": "6b4b39a1efffcb21ab6893491f9617715a7caf062111cafaef3b6d362da648b8"
+     "sha256": "b569fa1e431499ac065271d5d65d2547d8ddef50c5c02269b23a61bf39279834"
     }
    }
   },
@@ -2524,11 +2524,11 @@
   },
   {
    "id": "car-origin-filings",
-   "title": "Subaru and Kia rows in NHTSA's AALA reports, model years 2018 on",
-   "short": "Subaru and Kia AALA rows",
-   "what": "Every row for a Subaru or Kia car, by badge or by builder, in NHTSA's yearly Part 583 reports: US and Canadian parts share, top foreign parts sources, final assembly country, and engine and transmission origin.",
+   "title": "Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on",
+   "short": "Subaru, Kia and Toyota AALA rows",
+   "what": "Every row for a Subaru, Kia or Toyota car, by badge or by builder, in NHTSA's yearly Part 583 reports: US and Canadian parts share, top foreign parts sources, final assembly country, and engine and transmission origin.",
    "limits": "A row covers a whole model line, not one car, and a line can come from two plants. Shares are averages by value, mostly rounded to 5%. Empty cells were left blank in the report. Country letters are as filed: J Japan, K Korea, M or MX Mexico, US United States, CH China. Two letters joined with + mean the report printed both.",
-   "use": "Powers the model tables and year grids on the Subaru and Kia pages.",
+   "use": "Powers the model tables and year grids on the Subaru, Kia and Toyota pages.",
    "page": "/where-is-subaru-made/",
    "refresh": "Monthly check for a new report, read in a browser",
    "keywords": [
@@ -2537,14 +2537,16 @@
     "Subaru parts content",
     "Subaru final assembly",
     "where are kias made",
-    "Kia final assembly"
+    "Kia final assembly",
+    "where are toyotas made",
+    "Toyota final assembly"
    ],
    "rights": "The filings are US government work. CC BY covers our table. Brand names belong to their owners.",
    "based_on": [
     "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
    ],
-   "records": 240,
-   "updated": "2026-11-08",
+   "records": 475,
+   "updated": "2026-11-09",
    "fields": [
     {
      "name": "model_year",
@@ -2702,13 +2704,703 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/car-origin-filings.json",
-     "bytes": 105774,
-     "sha256": "2c6264a95059298eb3af185503b9df4f9a1662f47714bc1b31254fd73d23e8b1"
+     "bytes": 210010,
+     "sha256": "c5db542cd77d1390cd9217b0d3cc59d9046d1bbe48d7123d3efb3565e8128bd1"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/car-origin-filings.csv",
-     "bytes": 32854,
-     "sha256": "b39aca6c0e2b0c940935fd49f1b62669a03e5f415d81d3e1052578e7243e1fdd"
+     "bytes": 65754,
+     "sha256": "b5c070a4d57d6101a041a4cc57cd91a94f247d5f84b21f6c762fe2f715fccde5"
+    }
+   }
+  },
+  {
+   "id": "insignia-register",
+   "title": "Insignia model numbers on California's appliance register",
+   "short": "Insignia register",
+   "what": "Every Insignia filing with a model number starting NS on the California Energy Commission's appliance register (MAEDbS): the company listed as manufacturer, the type, the date added and, for TVs, screen size and width in pixels.",
+   "limits": "A filing names the company that told California it makes a model, not a look at any unit. Where Best Buy filed in its own name, no factory is listed. Filings under the Insignia brand with model numbers not starting NS are left out. Company names are as filed, with commas restored where the export replaced them.",
+   "use": "Powers the Insignia model lookup.",
+   "page": "/insignia/",
+   "refresh": "Monthly, read in a browser from California's register, then loaded here",
+   "keywords": [
+    "Insignia",
+    "Best Buy",
+    "who makes Insignia TVs",
+    "Insignia manufacturer",
+    "Insignia model number",
+    "MAEDbS",
+    "California Energy Commission"
+   ],
+   "rights": "Data from the California Energy Commission's Modernized Appliance Efficiency Database System. CC BY covers our compiled file; credit the California Energy Commission for the underlying records.",
+   "based_on": [
+    "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+   ],
+   "records": 714,
+   "updated": "2026-11-10",
+   "fields": [
+    {
+     "name": "model",
+     "type": "text",
+     "about": "The model number as filed. A * or a run of x stands for characters the filer left open."
+    },
+    {
+     "name": "manufacturer_listed",
+     "type": "text",
+     "about": "The company the filing lists as manufacturer; blank when Best Buy filed it in its own name."
+    },
+    {
+     "name": "filed_by_best_buy",
+     "type": "boolean",
+     "about": "True when the filer is Best Buy, so no factory is named."
+    },
+    {
+     "name": "filer",
+     "type": "text",
+     "about": "The manufacturer field exactly as the register holds it, Best Buy included."
+    },
+    {
+     "name": "type",
+     "type": "text",
+     "about": "Product type: Dehumidifier, Dishwasher, Dryer, Microwave or cooking, Portable air conditioner, Refrigerator or freezer, Room air conditioner, TV, Washer or Wine or beverage cooler."
+    },
+    {
+     "name": "register_list",
+     "type": "text",
+     "about": "Which list on the register the row came from."
+    },
+    {
+     "name": "filed",
+     "type": "text",
+     "about": "Date the filing was added (YYYY-MM-DD); blank where our copy lost it."
+    },
+    {
+     "name": "screen_inches",
+     "type": "number",
+     "about": "Diagonal screen size for TVs."
+    },
+    {
+     "name": "width_px",
+     "type": "number",
+     "about": "Horizontal pixel count, for TVs on the federally tested list."
+    },
+    {
+     "name": "archived",
+     "type": "boolean",
+     "about": "True for rows on the register's archived list."
+    },
+    {
+     "name": "pattern",
+     "type": "boolean",
+     "about": "True when the model number is a pattern rather than one model."
+    }
+   ],
+   "preview": [
+    {
+     "model": "NS-100F501NA26",
+     "manufacturer_listed": "Guangxi Huike Intelligent Display Co., Ltd",
+     "filed_by_best_buy": false,
+     "filer": "Guangxi Huike Intelligent Display Co., Ltd",
+     "type": "TV",
+     "register_list": "Federally tested TVs",
+     "filed": "2025-03-21",
+     "screen_inches": 100,
+     "width_px": 3840,
+     "archived": false,
+     "pattern": false
+    },
+    {
+     "model": "NS-19D220**16",
+     "manufacturer_listed": "",
+     "filed_by_best_buy": true,
+     "filer": "Best Buy Corp. - Exclusive Brands",
+     "type": "TV",
+     "register_list": "Televisions (older test)",
+     "filed": "2015-08-13",
+     "screen_inches": 19,
+     "width_px": "",
+     "archived": false,
+     "pattern": true
+    },
+    {
+     "model": "NS-19D220MX16",
+     "manufacturer_listed": "K-Tronics (SuZhou) Technology Co., Ltd",
+     "filed_by_best_buy": false,
+     "filer": "K-Tronics (SuZhou) Technology Co., Ltd",
+     "type": "TV",
+     "register_list": "Televisions (older test)",
+     "filed": "2015-08-24",
+     "screen_inches": 19,
+     "width_px": "",
+     "archived": false,
+     "pattern": false
+    },
+    {
+     "model": "NS-19D220MX16-A",
+     "manufacturer_listed": "K-Tronics (SuZhou) Technology Co., Ltd",
+     "filed_by_best_buy": false,
+     "filer": "K-Tronics (SuZhou) Technology Co., Ltd",
+     "type": "TV",
+     "register_list": "Televisions (older test)",
+     "filed": "",
+     "screen_inches": 19,
+     "width_px": "",
+     "archived": false,
+     "pattern": false
+    },
+    {
+     "model": "NS-19D220MX16-A",
+     "manufacturer_listed": "K-Tronics (SuZhou) Technology Co., Ltd",
+     "filed_by_best_buy": false,
+     "filer": "K-Tronics (SuZhou) Technology Co., Ltd",
+     "type": "TV",
+     "register_list": "Televisions (older test)",
+     "filed": "2016-11-14",
+     "screen_inches": 19,
+     "width_px": "",
+     "archived": false,
+     "pattern": false
+    }
+   ],
+   "files": {
+    "json": {
+     "url": "https://whoactuallymakes.com/data/insignia-register.json",
+     "bytes": 218128,
+     "sha256": "b92ab636c3c370f1454f8e0cb0e8aaf0defda7eb98d917c326c3dc91a71d2b6b"
+    },
+    "csv": {
+     "url": "https://whoactuallymakes.com/data/insignia-register.csv",
+     "bytes": 110642,
+     "sha256": "01d7ca804b0a4497e50c9ddba3de735af76ae67f0ebc8dbb8ae126fa112e4122"
+    }
+   }
+  },
+  {
+   "id": "store-tools-register",
+   "title": "Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register",
+   "short": "Store-brand chargers",
+   "what": "Every battery-charger filing on the California Energy Commission's appliance register (MAEDbS) under Hart, Hyper Tough, Husky and Harbor Freight's brand names: the company listed as manufacturer, the charger, basic and product model numbers, the test battery's maker, model and voltage, the power supply's maker and the date added.",
+   "limits": "A filing names the company that told California it makes a charger system, not a look at any unit, and not proof of who built the tool the charger ships with. Where Harbor Freight filed in its own name, no factory is listed. A filing counts for a brand when its brand field reads that name, as filed. Company names are as filed, with commas restored where the export replaced them.",
+   "use": "Powers the store-brand tool lookup.",
+   "page": "/store-brand-tools/",
+   "refresh": "Monthly, from California's register search, then loaded here",
+   "keywords": [
+    "Hart",
+    "Hyper Tough",
+    "Husky",
+    "Harbor Freight",
+    "Bauer",
+    "Hercules",
+    "Warrior",
+    "who makes Hart tools",
+    "who makes Hyper Tough",
+    "who makes Husky tools",
+    "who makes Harbor Freight tools",
+    "battery charger",
+    "MAEDbS",
+    "California Energy Commission"
+   ],
+   "rights": "Data from the California Energy Commission's Modernized Appliance Efficiency Database System. CC BY covers our compiled file; credit the California Energy Commission for the underlying records.",
+   "based_on": [
+    "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+   ],
+   "records": 657,
+   "updated": "2026-11-10",
+   "fields": [
+    {
+     "name": "store_brand",
+     "type": "text",
+     "about": "The store brand family: Harbor Freight, Hart, Husky or Hyper Tough."
+    },
+    {
+     "name": "brand_filed",
+     "type": "text",
+     "about": "The brand field exactly as filed."
+    },
+    {
+     "name": "manufacturer_listed",
+     "type": "text",
+     "about": "The company the filing lists as manufacturer; blank when Harbor Freight filed it in its own name."
+    },
+    {
+     "name": "filed_by_harbor_freight",
+     "type": "boolean",
+     "about": "True when the filer is Harbor Freight, so no factory is named."
+    },
+    {
+     "name": "filer",
+     "type": "text",
+     "about": "The manufacturer field as the register holds it, Harbor Freight included."
+    },
+    {
+     "name": "charger_models",
+     "type": "text",
+     "about": "The charger model numbers on the filing, separated by semicolons. A * stands for characters the filer left open."
+    },
+    {
+     "name": "basic_model",
+     "type": "text",
+     "about": "The filing's basic model number."
+    },
+    {
+     "name": "product_models",
+     "type": "text",
+     "about": "Products the charger is sold with, where the filing lists them (small-charger list only)."
+    },
+    {
+     "name": "test_battery_maker",
+     "type": "text",
+     "about": "The company the filing names as maker of the battery the charger was tested with."
+    },
+    {
+     "name": "test_battery_models",
+     "type": "text",
+     "about": "The test battery's model number."
+    },
+    {
+     "name": "test_battery_volts",
+     "type": "number",
+     "about": "The test battery's nameplate voltage."
+    },
+    {
+     "name": "test_battery_wh",
+     "type": "number",
+     "about": "The test battery's energy capacity in watt-hours."
+    },
+    {
+     "name": "power_supply_maker",
+     "type": "text",
+     "about": "The company the filing names as maker of the external power supply."
+    },
+    {
+     "name": "product_type",
+     "type": "text",
+     "about": "Product type, on the small-charger list."
+    },
+    {
+     "name": "register_list",
+     "type": "text",
+     "about": "Which list on the register the row came from: Federally regulated battery chargers or Small battery chargers (California)."
+    },
+    {
+     "name": "filed",
+     "type": "text",
+     "about": "Date the filing was added (YYYY-MM-DD)."
+    },
+    {
+     "name": "archived",
+     "type": "boolean",
+     "about": "True for rows on the register's archived list."
+    }
+   ],
+   "preview": [
+    {
+     "store_brand": "Hart",
+     "brand_filed": "Hart",
+     "manufacturer_listed": "Techtronic Industries, North America, Inc.",
+     "filed_by_harbor_freight": false,
+     "filer": "Techtronic Industries, North America, Inc.",
+     "charger_models": "CGH001",
+     "basic_model": "",
+     "product_models": "",
+     "test_battery_maker": "Techtronic Industries, North America, Inc.",
+     "test_battery_models": "BPH003",
+     "test_battery_volts": 20,
+     "test_battery_wh": 80,
+     "power_supply_maker": "",
+     "product_type": "",
+     "register_list": "Federally regulated battery chargers",
+     "filed": "2019-08-05",
+     "archived": false
+    },
+    {
+     "store_brand": "Hart",
+     "brand_filed": "Hart",
+     "manufacturer_listed": "Techtronic Industries, North America, Inc.",
+     "filed_by_harbor_freight": false,
+     "filer": "Techtronic Industries, North America, Inc.",
+     "charger_models": "CGH002",
+     "basic_model": "",
+     "product_models": "",
+     "test_battery_maker": "Techtronic Industries, North America, Inc.",
+     "test_battery_models": "BPH003",
+     "test_battery_volts": 20,
+     "test_battery_wh": 80,
+     "power_supply_maker": "",
+     "product_type": "",
+     "register_list": "Federally regulated battery chargers",
+     "filed": "2019-08-05",
+     "archived": false
+    },
+    {
+     "store_brand": "Hart",
+     "brand_filed": "Hart",
+     "manufacturer_listed": "Techtronic Industries, North America, Inc.",
+     "filed_by_harbor_freight": false,
+     "filer": "Techtronic Industries, North America, Inc.",
+     "charger_models": "HFSD01",
+     "basic_model": "",
+     "product_models": "",
+     "test_battery_maker": "Techtronic Industries, North America, Inc.",
+     "test_battery_models": "ICR18650/15P",
+     "test_battery_volts": 4,
+     "test_battery_wh": 6,
+     "power_supply_maker": "",
+     "product_type": "",
+     "register_list": "Federally regulated battery chargers",
+     "filed": "2019-08-22",
+     "archived": false
+    },
+    {
+     "store_brand": "Hart",
+     "brand_filed": "Hart",
+     "manufacturer_listed": "Techtronic Industries, North America, Inc.",
+     "filed_by_harbor_freight": false,
+     "filer": "Techtronic Industries, North America, Inc.",
+     "charger_models": "HPCK302BN",
+     "basic_model": "",
+     "product_models": "",
+     "test_battery_maker": "Techtronic Industries, North America, Inc.",
+     "test_battery_models": "BPH003",
+     "test_battery_volts": 20,
+     "test_battery_wh": 80,
+     "power_supply_maker": "",
+     "product_type": "",
+     "register_list": "Federally regulated battery chargers",
+     "filed": "2020-03-16",
+     "archived": false
+    },
+    {
+     "store_brand": "Hart",
+     "brand_filed": "Hart",
+     "manufacturer_listed": "Techtronic Industries, North America, Inc.",
+     "filed_by_harbor_freight": false,
+     "filer": "Techtronic Industries, North America, Inc.",
+     "charger_models": "HPCK202BN",
+     "basic_model": "",
+     "product_models": "",
+     "test_battery_maker": "Techtronic Industries, North America, Inc.",
+     "test_battery_models": "BPH001",
+     "test_battery_volts": 20,
+     "test_battery_wh": 30,
+     "power_supply_maker": "",
+     "product_type": "",
+     "register_list": "Federally regulated battery chargers",
+     "filed": "2020-04-23",
+     "archived": false
+    }
+   ],
+   "files": {
+    "json": {
+     "url": "https://whoactuallymakes.com/data/store-tools-register.json",
+     "bytes": 342655,
+     "sha256": "7ff71ba05c49a05d2704337cf4da43be0591aa81c9e84fe4021b536ceb6107d8"
+    },
+    "csv": {
+     "url": "https://whoactuallymakes.com/data/store-tools-register.csv",
+     "bytes": 138756,
+     "sha256": "bbf72fcaab4e5b93b45c73763466cfc801c3ab15b6f9a47a529118ce4dc606e6"
+    }
+   }
+  },
+  {
+   "id": "craftsman-records",
+   "title": "Craftsman model numbers and the companies government records name for them",
+   "short": "Craftsman records",
+   "what": "One row per record that ties a Craftsman model number to a company: battery-charger filings on California's appliance register (MAEDbS), EPA small-engine certificates from its 1997-2010 archive that list Craftsman or Sears models, and CPSC recalls that mention Craftsman. Each row gives the company, its role in the record, the year, the model numbers and, for Sears-era models, the three-digit Sears source code.",
+   "limits": "A record names a company for the models it lists, not for every Craftsman product, and isn't a look at any unit. A charger filing names the company that filed it, which is often Stanley Black & Decker itself; an engine certificate names the engine's maker of record, not who assembled the tool; a recall names the manufacturer, importer or distributor as the CPSC gives them. Sellers (Sears, Kmart, Orchard Supply, Ace) are left out of the company column.",
+   "use": "Powers the Craftsman model number lookup and its Sears code decoder.",
+   "page": "/craftsman/",
+   "refresh": "Monthly, from California's register, CPSC recalls and Stanley Black & Decker's newest SEC report",
+   "keywords": [
+    "Craftsman",
+    "who makes Craftsman",
+    "Craftsman mowers",
+    "Craftsman lawn tractor",
+    "Craftsman chainsaw",
+    "Sears model number",
+    "917",
+    "358",
+    "Stanley Black & Decker",
+    "MTD",
+    "MAEDbS",
+    "CPSC",
+    "EPA engine certification"
+   ],
+   "rights": "Compiled from California Energy Commission, US EPA and US CPSC public records. CC BY covers our compiled file; credit the agencies for the underlying records.",
+   "based_on": [
+    "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx",
+    "https://www.epa.gov/compliance-and-fuel-economy-data/engine-certification-data",
+    "https://www.saferproducts.gov/"
+   ],
+   "records": 442,
+   "updated": "2026-11-10",
+   "fields": [
+    {
+     "name": "record",
+     "type": "text",
+     "about": "Which record the row comes from: CPSC recall, California charger filing or EPA engine certificate."
+    },
+    {
+     "name": "company",
+     "type": "text",
+     "about": "The company the record names, as written there."
+    },
+    {
+     "name": "role",
+     "type": "text",
+     "about": "What the record says the company did."
+    },
+    {
+     "name": "year",
+     "type": "text",
+     "about": "Year the filing was added, the engine's model year or the recall date."
+    },
+    {
+     "name": "model_numbers",
+     "type": "text",
+     "about": "Model numbers the record lists, separated by semicolons. A * stands for characters a filer left open."
+    },
+    {
+     "name": "sears_source_code",
+     "type": "text",
+     "about": "For Sears-era model numbers, the three digits before the dot."
+    },
+    {
+     "name": "also_named",
+     "type": "text",
+     "about": "Another company the same record names, such as the test battery's maker."
+    },
+    {
+     "name": "product",
+     "type": "text",
+     "about": "What the record covers, in its own words where it gives them."
+    },
+    {
+     "name": "reference",
+     "type": "text",
+     "about": "The recall number or EPA engine family."
+    },
+    {
+     "name": "url",
+     "type": "text",
+     "about": "Where the record can be read."
+    }
+   ],
+   "preview": [
+    {
+     "record": "California charger filing",
+     "company": "Techtronic Industries, North America, Inc.",
+     "role": "Filed as manufacturer",
+     "year": "2018",
+     "model_numbers": "CH2000",
+     "sears_source_code": "",
+     "also_named": "",
+     "product": "Charger, 19.2 V test battery",
+     "reference": "",
+     "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+    },
+    {
+     "record": "California charger filing",
+     "company": "Techtronic Industries, North America, Inc.",
+     "role": "Filed as manufacturer",
+     "year": "2018",
+     "model_numbers": "CH2021",
+     "sears_source_code": "",
+     "also_named": "",
+     "product": "Charger, 19.2 V test battery",
+     "reference": "",
+     "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+    },
+    {
+     "record": "California charger filing",
+     "company": "Techtronic Industries, North America, Inc.",
+     "role": "Filed as manufacturer",
+     "year": "2018",
+     "model_numbers": "CH2045",
+     "sears_source_code": "",
+     "also_named": "",
+     "product": "Charger, 19.2 V test battery",
+     "reference": "",
+     "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+    },
+    {
+     "record": "California charger filing",
+     "company": "Techtronic Industries, North America, Inc.",
+     "role": "Filed as manufacturer",
+     "year": "2018",
+     "model_numbers": "EL2200",
+     "sears_source_code": "",
+     "also_named": "",
+     "product": "Charger, 19.2 V test battery",
+     "reference": "",
+     "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+    },
+    {
+     "record": "California charger filing",
+     "company": "Techtronic Industries, North America, Inc.",
+     "role": "Filed as manufacturer",
+     "year": "2018",
+     "model_numbers": "CH2030",
+     "sears_source_code": "",
+     "also_named": "",
+     "product": "Charger, 19.2 V test battery",
+     "reference": "",
+     "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+    }
+   ],
+   "files": {
+    "json": {
+     "url": "https://whoactuallymakes.com/data/craftsman-records.json",
+     "bytes": 156249,
+     "sha256": "e47d7a151e4b354a30198d4232dfdf223f8e015090df38fa88f05f5f349841d9"
+    },
+    "csv": {
+     "url": "https://whoactuallymakes.com/data/craftsman-records.csv",
+     "bytes": 98488,
+     "sha256": "f52cf7c6590d806f67daeaee89ade630913b9a0afcbdf64050a5f6a1130e2993"
+    }
+   }
+  },
+  {
+   "id": "onn-tv-register",
+   "title": "Onn TV model numbers and the manufacturers California's appliance register lists for them",
+   "short": "Onn TV register",
+   "what": "One row per Onn TV filing on California's appliance register (MAEDbS), from all three of its TV lists, approved and archived, under both spellings it holds (ONN and onn.). Each row gives the model number, the company listed as manufacturer, the list, the date filed and the screen size.",
+   "limits": "A filing names the company that filed the model, not the factory of any one unit. The same Onn number is often filed by several companies, and the register doesn't say which built a given TV. Rows filed under ONN in 2014-15 by Shenyang Tongfang carry other brands' model numbers and are marked left_out_of_counts.",
+   "use": "Powers the Onn TV model number lookup.",
+   "page": "/onn-tv/",
+   "refresh": "Monthly, from California's register",
+   "keywords": [
+    "Onn",
+    "onn.",
+    "who makes Onn TV",
+    "Walmart TV",
+    "Onn Roku TV",
+    "Vizio",
+    "MAEDbS",
+    "California appliance register"
+   ],
+   "rights": "Compiled from California Energy Commission public records. CC BY covers our compiled file; credit the agency for the underlying records.",
+   "based_on": [
+    "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+   ],
+   "records": 533,
+   "updated": "2026-11-10",
+   "fields": [
+    {
+     "name": "model",
+     "type": "text",
+     "about": "The model number as filed. A * stands for characters a filer left open."
+    },
+    {
+     "name": "manufacturer_listed",
+     "type": "text",
+     "about": "The company the filing lists as manufacturer, one spelling per company."
+    },
+    {
+     "name": "brand_as_filed",
+     "type": "text",
+     "about": "The brand field as filed: ONN or onn."
+    },
+    {
+     "name": "register_list",
+     "type": "text",
+     "about": "Which of the register's TV lists the row is on."
+    },
+    {
+     "name": "filed",
+     "type": "date",
+     "about": "Date the filing was added, where the list gives one."
+    },
+    {
+     "name": "screen_inches",
+     "type": "number",
+     "about": "Screen size in inches, where the list gives one."
+    },
+    {
+     "name": "archived",
+     "type": "boolean",
+     "about": "True for rows on the register's archived lists."
+    },
+    {
+     "name": "pattern",
+     "type": "boolean",
+     "about": "True when the model number holds open characters (*)."
+    },
+    {
+     "name": "left_out_of_counts",
+     "type": "boolean",
+     "about": "True for the 2014-15 rows filed under ONN with other brands' model numbers."
+    }
+   ],
+   "preview": [
+    {
+     "model": "100002430",
+     "manufacturer_listed": "TPV Display Technology (Xiamen) Co., Ltd.",
+     "brand_as_filed": "ONN",
+     "register_list": "TVs and signage displays",
+     "filed": "2019-09-11",
+     "screen_inches": 24,
+     "archived": false,
+     "pattern": false,
+     "left_out_of_counts": false
+    },
+    {
+     "model": "100002458",
+     "manufacturer_listed": "Shenzhen MTC Co., Ltd.",
+     "brand_as_filed": "ONN",
+     "register_list": "TVs and signage displays",
+     "filed": "2019-11-03",
+     "screen_inches": 32,
+     "archived": false,
+     "pattern": false,
+     "left_out_of_counts": false
+    },
+    {
+     "model": "100002458",
+     "manufacturer_listed": "TPV Display Technology (Xiamen) Co., Ltd.",
+     "brand_as_filed": "ONN",
+     "register_list": "TVs and signage displays",
+     "filed": "2019-11-19",
+     "screen_inches": 32,
+     "archived": false,
+     "pattern": false,
+     "left_out_of_counts": false
+    },
+    {
+     "model": "100002460",
+     "manufacturer_listed": "Guangdong Changhong Electronics Co., LTD.",
+     "brand_as_filed": "onn.",
+     "register_list": "TVs and signage displays",
+     "filed": "2020-01-05",
+     "screen_inches": 43,
+     "archived": false,
+     "pattern": false,
+     "left_out_of_counts": false
+    },
+    {
+     "model": "100002461",
+     "manufacturer_listed": "Guangdong Changhong Electronics Co., LTD.",
+     "brand_as_filed": "onn.",
+     "register_list": "TVs and signage displays",
+     "filed": "2019-12-29",
+     "screen_inches": 50,
+     "archived": false,
+     "pattern": false,
+     "left_out_of_counts": false
+    }
+   ],
+   "files": {
+    "json": {
+     "url": "https://whoactuallymakes.com/data/onn-tv-register.json",
+     "bytes": 131615,
+     "sha256": "181fbaea061f89fb7a057a33a859e539f0817a6a4f22e7fe43ad5e7cd76e36b0"
+    },
+    "csv": {
+     "url": "https://whoactuallymakes.com/data/onn-tv-register.csv",
+     "bytes": 57462,
+     "sha256": "700061a8fcfb83eb48fd19e12cb9ae28c76bd93cd2b0dc5d352103083691ef04"
     }
    }
   }

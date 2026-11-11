@@ -29,3 +29,33 @@ read_on,product,size,lb_from,lb_to,count,item,regular,offer,cents_each,url
 2026-11-06,Pampers Swaddlers Ultra,5,20,37,140,1984025,46.79,,33.4,https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-3---7/4000423015
 2026-11-06,Pampers Swaddlers Ultra,6,23,44,120,1984026,46.79,,39.0,https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-3---7/4000423015
 2026-11-06,Pampers Swaddlers Ultra,7,26,50,100,1984027,46.79,,46.8,https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-3---7/4000423015
+2026-11-09,Huggies Plus,3,16,28,204,1914459,49.99,39.99,19.6,https://www.costco.com/p/-/huggies-plus-diapers-sizes-3---7/4000350943
+2026-11-09,Huggies Plus,4,22,37,180,1914460,49.99,39.99,22.2,https://www.costco.com/p/-/huggies-plus-diapers-sizes-3---7/4000350943
+2026-11-09,Huggies Plus,5,27,,156,1914461,49.99,39.99,25.6,https://www.costco.com/p/-/huggies-plus-diapers-sizes-3---7/4000350943
+2026-11-09,Huggies Plus,6,35,,126,1914462,49.99,39.99,31.7,https://www.costco.com/p/-/huggies-plus-diapers-sizes-3---7/4000350943
+2026-11-09,Huggies Plus,7,41,,104,1914463,49.99,39.99,38.5,https://www.costco.com/p/-/huggies-plus-diapers-sizes-3---7/4000350943
+2026-11-09,Huggies Plus,Newborn,,,148,2009060,34.99,26.99,18.2,https://www.costco.com/p/-/huggies-plus-diapers-size-newborn/4201011902
+2026-11-09,Huggies Plus,1,8,14,192,2009061,37.99,27.99,14.6,https://www.costco.com/p/-/huggies-plus-diapers-size-1-2/4201012875
+2026-11-09,Huggies Plus,2,12,18,174,2009062,37.99,27.99,16.1,https://www.costco.com/p/-/huggies-plus-diapers-size-1-2/4201012875
+2026-11-09,Huggies Pull-Ups Plus,2T–3T,16,34,128,1935000,39.99,,31.2,https://www.costco.com/p/-/huggies-pull-ups-plus-training-pants-unisex/4000361179
+2026-11-09,Huggies Pull-Ups Plus,3T–4T,32,40,116,1935001,39.99,,34.5,https://www.costco.com/p/-/huggies-pull-ups-plus-training-pants-unisex/4000361179
+2026-11-09,Huggies Pull-Ups Plus,4T–5T,38,50,102,1935002,39.99,,39.2,https://www.costco.com/p/-/huggies-pull-ups-plus-training-pants-unisex/4000361179
+2026-11-09,Huggies Pull-Ups Plus,5T–6T,46,60,84,1935003,39.99,,47.6,https://www.costco.com/p/-/huggies-pull-ups-plus-training-pants-unisex/4000361179
+2026-11-09,Kirkland Signature,1,8,14,160,1987111,24.99,,15.6,https://www.costco.com/p/-/kirkland-signature-diaper-sizes-1-2/4201002118
+2026-11-09,Kirkland Signature,2,12,18,144,1987112,24.99,,17.4,https://www.costco.com/p/-/kirkland-signature-diaper-sizes-1-2/4201002118
+2026-11-09,Kirkland Signature,3,16,28,222,1987113,39.99,,18.0,https://www.costco.com/p/-/kirkland-signature-diaper-sizes-3-7/4201002177
+2026-11-09,Kirkland Signature,4,22,37,198,1987114,39.99,,20.2,https://www.costco.com/p/-/kirkland-signature-diaper-sizes-3-7/4201002177
+2026-11-09,Kirkland Signature,5,27,,168,1987115,39.99,,23.8,https://www.costco.com/p/-/kirkland-signature-diaper-sizes-3-7/4201002177
+2026-11-09,Kirkland Signature,6,35,,132,1987116,39.99,,30.3,https://www.costco.com/p/-/kirkland-signature-diaper-sizes-3-7/4201002177
+2026-11-09,Kirkland Signature,7,41,,108,1987117,34.99,,32.4,https://www.costco.com/p/-/kirkland-signature-diaper-sizes-3-7/4201002177
+2026-11-09,Pampers Easy Ups Ultra,2T–3T,15,34,144,1999032,39.99,,27.8,https://www.costco.com/p/-/pampers-easy-ups-ultra-training-pants-unisex/4000438951
+2026-11-09,Pampers Easy Ups Ultra,3T–4T,20,40,126,1999033,39.99,,31.7,https://www.costco.com/p/-/pampers-easy-ups-ultra-training-pants-unisex/4000438951
+2026-11-09,Pampers Easy Ups Ultra,4T–5T,23,50,105,1999034,39.99,,38.1,https://www.costco.com/p/-/pampers-easy-ups-ultra-training-pants-unisex/4000438951
+2026-11-09,Pampers Easy Ups Ultra,5T–6T,35,60,86,1999035,39.99,,46.5,https://www.costco.com/p/-/pampers-easy-ups-ultra-training-pants-unisex/4000438951
+2026-11-09,Pampers Swaddlers Ultra,1,8,14,210,1984021,42.99,,20.5,https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-1---2/4000436297
+2026-11-09,Pampers Swaddlers Ultra,2,10,22,180,1984022,42.99,,23.9,https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-1---2/4000436297
+2026-11-09,Pampers Swaddlers Ultra,3,13,26,180,1984023,46.79,,26.0,https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-3---7/4000423015
+2026-11-09,Pampers Swaddlers Ultra,4,15,34,160,1984024,46.79,,29.2,https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-3---7/4000423015
+2026-11-09,Pampers Swaddlers Ultra,5,20,37,140,1984025,46.79,,33.4,https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-3---7/4000423015
+2026-11-09,Pampers Swaddlers Ultra,6,23,44,120,1984026,46.79,,39.0,https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-3---7/4000423015
+2026-11-09,Pampers Swaddlers Ultra,7,26,50,100,1984027,46.79,,46.8,https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-3---7/4000423015
