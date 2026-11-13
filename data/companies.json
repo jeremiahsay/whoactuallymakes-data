@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-09",
+ "generated": "2026-11-11",
  "count": 14,
  "rows": [
   {
@@ -197,14 +197,14 @@
    "website": "https://www.sazerac.com/",
    "category": "Spirits",
    "about": "Spirits company that owns Buffalo Trace and Barton 1792, Louisville, Kentucky",
-   "kirkland_claims": 20,
-   "kirkland_products": 13,
+   "kirkland_claims": 26,
+   "kirkland_products": 19,
    "register_other_companies": "",
    "fda_recalls": "",
    "fda_recall_store_names": "",
    "plants": 2,
    "page": "https://whoactuallymakes.com/makers/sazerac/",
-   "last_checked": "2026-11-09",
+   "last_checked": "2026-11-11",
    "next_check": "2027-02-08"
   },
   {

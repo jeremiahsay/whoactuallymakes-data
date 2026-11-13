@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-04",
+ "generated": "2026-11-12",
  "rows": [
   {
    "who": "NHTSA",
@@ -701,9 +701,9 @@
     {
      "id": "ev-toyota-rav4-2025-six-years-check",
      "title": "2025 Toyota RAV4 owner's manual (US), Tire life",
-     "url": "https://assets.sia.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf",
+     "url": "https://assets.sipb.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf",
      "quote": "Any tire over 6 years old must be checked by a qualified technician even if it has seldom or never been used or damage is not obvious.",
-     "read": "2026-11-03",
+     "read": "2026-11-12",
      "doc_date": null,
      "archive_url": "https://web.archive.org/web/20250901152511/https://assets.sia.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf",
      "publisher": "Toyota Motor North America, Inc."

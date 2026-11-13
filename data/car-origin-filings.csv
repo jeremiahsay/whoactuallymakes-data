@@ -1,4 +1,202 @@
 model_year,manufacturer,make,carline,vehicle_type,us_canada_pct,foreign_1_pct,foreign_1_country,foreign_2_pct,foreign_2_country,final_assembly,engine,transmission,report_url
+2018,"Honda Motor Co., Ltd.",Acura,ILX,PC,60,20,J,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Honda Motor Co., Ltd.",Acura,MDX 2WD,MPV,70,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Honda Motor Co., Ltd.",Acura,MDX AWD,MPV,70,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Honda Motor Co., Ltd.",Acura,NSX AWD,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Honda Motor Co., Ltd.",Acura,RDX 2WD,MPV,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Honda Motor Co., Ltd.",Acura,RDX 2WD,MPV,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Honda Motor Co., Ltd.",Acura,RDX AWD,MPV,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Honda Motor Co., Ltd.",Acura,RDX AWD,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Honda Motor Co., Ltd.",Acura,RDX FWD,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Honda Motor Co., Ltd.",Acura,RLX 2WD,PC,15,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Honda Motor Co., Ltd.",Acura,RLX AWD,PC,10,85,J,,,J,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Honda Motor Co., Ltd.",Acura,RLX Sport Hybrid,PC,,,,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Honda Motor Co., Ltd.",Acura,TLX AWD,PC,70,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Honda Motor Co., Ltd.",Acura,TLX AWD A-Spec,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Honda Motor Co., Ltd.",Acura,TLX FWD,PC,65,,,,,US,US,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Honda Motor Co., Ltd.",Acura,TLX FWD,PC,65,,,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Honda Motor Co., Ltd.",Acura,TLX FWD A-Spec,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2019,"Honda Motor Co., Ltd.",Acura,ILX,PC,60,20,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,MDX 2WD,MPV,70,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,MDX A-Spec,MPV,75,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,MDX AWD,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,MDX AWD,MPV,65,,,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,NSX AWD,PC,40,30,J,15,UK,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,RDX 2WD,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,RDX 2WD,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,RDX 2WD A Special,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,RDX 2WD A-Spec,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,RDX AWD,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,RDX AWD,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,RDX AWD A- Special,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,RDX AWD A-Spec,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,RLX 2WD,PC,20,70,J,,,J,J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,RLX AWD,PC,15,75,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,RLX Sport Hybrid,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,TLX AWD,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,TLX AWD A-Spec,PC,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,TLX FWD,PC,60,15,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,TLX FWD,PC,60,15,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,TLX FWD A-Spec,PC,60,15,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Honda Motor Co., Ltd.",Acura,TLX FWD A-Spec,PC,60,15,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2020,"Honda Motor Co., Ltd.",Acura,ILX,PC,55,20,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Honda Motor Co., Ltd.",Acura,MDX AWD,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Honda Motor Co., Ltd.",Acura,MDX AWD,MPV,60,,,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Honda Motor Co., Ltd.",Acura,MDX AWD A- Spec,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Honda Motor Co., Ltd.",Acura,MDX FWD,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Honda Motor Co., Ltd.",Acura,NSX AWD,PC,35,35,J,25,UK,US,UK,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Honda Motor Co., Ltd.",Acura,RDX AWD,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Honda Motor Co., Ltd.",Acura,RDX AWD A- Spec,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Honda Motor Co., Ltd.",Acura,RLX AWD,PC,5,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Honda Motor Co., Ltd.",Acura,RLX FWD,PC,20,70,J,,,J,J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Honda Motor Co., Ltd.",Acura,TLX AWD,PC,70,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Honda Motor Co., Ltd.",Acura,TLX AWD A-Spec,PC,70,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Honda Motor Co., Ltd.",Acura,TLX FWD,PC,70,,,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Honda Motor Co., Ltd.",Acura,TLX FWD,PC,70,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Honda Motor Co., Ltd.",Acura,TLX FWD A-Spec,PC,70,,,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Honda Motor Co., Ltd.",Acura,TLX FWD A-Spec,PC,70,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2021,"Honda Motor Co., Ltd.",Acura,ILX AWD,PC,55,25,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,"Honda Motor Co., Ltd.",Acura,RDX AWD,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,"Honda Motor Co., Ltd.",Acura,RDX AWD A- Spec,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,"Honda Motor Co., Ltd.",Acura,RDX AWD A- Spec,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,"Honda Motor Co., Ltd.",Acura,RDX FWD,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,"Honda Motor Co., Ltd.",Acura,RDX FWD A- Spec,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,"Honda Motor Co., Ltd.",Acura,TLX AWD,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,"Honda Motor Co., Ltd.",Acura,TLX AWD A-Spec,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,"Honda Motor Co., Ltd.",Acura,TLX FWD,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,"Honda Motor Co., Ltd.",Acura,TLX FWD A-Spec,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2022,"Honda Motor Co., Ltd.",Acura,ILX AWD,PC,55,25,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Honda Motor Co., Ltd.",Acura,MDX AWD,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Honda Motor Co., Ltd.",Acura,MDX AWD Type S,MPV,60,15,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Honda Motor Co., Ltd.",Acura,MDX FWD,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Honda Motor Co., Ltd.",Acura,NSX AWD,PC,35,35,J,20,UK,US,UK,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Honda Motor Co., Ltd.",Acura,RDX AWD,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Honda Motor Co., Ltd.",Acura,RDX AWD A- Spec,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Honda Motor Co., Ltd.",Acura,RDX AWD A- Spec,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Honda Motor Co., Ltd.",Acura,RDX FWD,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Honda Motor Co., Ltd.",Acura,RDX FWD A- Spec,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Honda Motor Co., Ltd.",Acura,TLX AWD,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Honda Motor Co., Ltd.",Acura,TLX AWD A-Spec,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Honda Motor Co., Ltd.",Acura,TLX FWD,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Honda Motor Co., Ltd.",Acura,TLX FWD A-Spec,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Honda Motor Co., Ltd.",Acura,TLX Type-S,PC,55,,,,,US,J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Honda Motor Co., Ltd.",Acura,TLX Type-S Perf Tire,PC,55,,,,,US,J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2023,"Honda Motor Co., Ltd.",Acura,Integra,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Honda Motor Co., Ltd.",Acura,Integra,PC,65,,,,,US,US,IND,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Honda Motor Co., Ltd.",Acura,MDX AWD,MPV,70,,,,,US,US,MX,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Honda Motor Co., Ltd.",Acura,MDX AWD Type S,MPV,55,15,J,,,US,J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Honda Motor Co., Ltd.",Acura,MDX FWD,MPV,70,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Honda Motor Co., Ltd.",Acura,RDX AWD,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Honda Motor Co., Ltd.",Acura,RDX AWD A- Spec,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Honda Motor Co., Ltd.",Acura,RDX FWD,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Honda Motor Co., Ltd.",Acura,RDX FWD A- Spec,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Honda Motor Co., Ltd.",Acura,TLX AWD,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Honda Motor Co., Ltd.",Acura,TLX AWD A-Spec,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Honda Motor Co., Ltd.",Acura,TLX FWD,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Honda Motor Co., Ltd.",Acura,TLX FWD A-Spec,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Honda Motor Co., Ltd.",Acura,TLX Type-S,PC,55,15,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Honda Motor Co., Ltd.",Acura,TLX Type-S Perf Tire,PC,60,15,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2024,"Honda Motor Co., Ltd.",Acura,Integra,PC,60,15,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,"Honda Motor Co., Ltd.",Acura,Integra,PC,60,15,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,"Honda Motor Co., Ltd.",Acura,Integra A-Spec,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,"Honda Motor Co., Ltd.",Acura,Integra A-Spec,PC,65,,,,,US,US,IND,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,"Honda Motor Co., Ltd.",Acura,MDX AWD,MPV,65,,,,,US,US,MX,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,"Honda Motor Co., Ltd.",Acura,MDX AWD Type S,MPV,55,,,,,US,J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,"Honda Motor Co., Ltd.",Acura,MDX FWD,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,"Honda Motor Co., Ltd.",Acura,RDX AWD,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,"Honda Motor Co., Ltd.",Acura,RDX AWD A- Spec,MPV,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,"Honda Motor Co., Ltd.",Acura,TLX AWD A-Spec,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,"Honda Motor Co., Ltd.",Acura,TLX FWD,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,"Honda Motor Co., Ltd.",Acura,TLX Type-S,PC,55,15,J,,,US,J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,GM LLC,Acura,ZDX,MPV,63,19,M,16,CH,US,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2025,"Honda Motor Co., Ltd.",Acura,ADX AWD,MPV,30,35,M,,,M,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Honda Motor Co., Ltd.",Acura,ADX FWD,MPV,30,35,M,,,M,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Honda Motor Co., Ltd.",Acura,Integra,PC,60,15,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Honda Motor Co., Ltd.",Acura,Integra,PC,60,15,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Honda Motor Co., Ltd.",Acura,Integra A-Spec,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Honda Motor Co., Ltd.",Acura,Integra A-Spec,PC,65,,,,,US,US,IND,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Honda Motor Co., Ltd.",Acura,MDX AWD,MPV,70,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Honda Motor Co., Ltd.",Acura,MDX AWD Type S,MPV,60,,,,,US,J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Honda Motor Co., Ltd.",Acura,MDX FWD,MPV,70,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Honda Motor Co., Ltd.",Acura,RDX AWD,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Honda Motor Co., Ltd.",Acura,RDX AWD A- Spec,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Honda Motor Co., Ltd.",Acura,TLX AWD,PC,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Honda Motor Co., Ltd.",Acura,TLX FWD,PC,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Honda Motor Co., Ltd.",Acura,TLX FWD A-Spec,PC,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Honda Motor Co., Ltd.",Acura,TLX Type-S,PC,50,15,J,,,US,J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Honda Motor Co., Ltd.",Acura,TLX Type-S Perf Tire,PC,55,15,J,,,US,J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,GM LLC,Acura,ZDX,MPV,55,19,M,,,US,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2026,"Honda Motor Co., Ltd.",Acura,ADX AWD,MPV,30,40,M,,,M,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,"Honda Motor Co., Ltd.",Acura,ADX FWD,MPV,30,40,M,,,M,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,"Honda Motor Co., Ltd.",Acura,Integra,PC,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,"Honda Motor Co., Ltd.",Acura,Integra,PC,60,,,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,"Honda Motor Co., Ltd.",Acura,Integra A-Spec,PC,65,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,"Honda Motor Co., Ltd.",Acura,Integra A-Spec,PC,65,,,,,US,US,IND,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,"Honda Motor Co., Ltd.",Acura,MDX AWD,MPV,70,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,"Honda Motor Co., Ltd.",Acura,MDX AWD Type S,MPV,60,,,,,US,J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,"Honda Motor Co., Ltd.",Acura,MDX FWD,MPV,70,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,"Honda Motor Co., Ltd.",Acura,RDX AWD,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,"Honda Motor Co., Ltd.",Acura,RDX AWD A- Spec,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2018,"Nissan North America, Inc",Infiniti,Q50 4 CYL,PC,0,95,J,,,J,G,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Nissan North America, Inc",Infiniti,Q50 6 CYL,PC,0,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Nissan North America, Inc",Infiniti,Q60 4CYL,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Nissan North America, Inc",Infiniti,Q60 6CYL,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Nissan North America, Inc",Infiniti,Q70 & Q70L,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Nissan North America, Inc",Infiniti,Q70 Conv & HEV,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Nissan North America, Inc",Infiniti,QX 60,MPV,50,,,,,US,US,M,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Nissan North America, Inc",Infiniti,QX30,PC,0,55,UK,25,G,UK,G,G,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Nissan North America, Inc",Infiniti,QX50,MPV,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Nissan North America, Inc",Infiniti,QX60 4CYL,MPV,0,95,J,,,J,G,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Nissan North America, Inc",Infiniti,QX60 6CYL,MPV,0,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Nissan North America, Inc",Infiniti,QX60 HEV 4CYL,MPV,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Nissan North America, Inc",Infiniti,QX60 HEV 6CYL,MPV,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Nissan North America, Inc",Infiniti,QX70 & Q70 L,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,"Nissan North America, Inc",Infiniti,QX80,MPV,5,95,J,,,J+J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2019,"Nissan North America, Inc",Infiniti,Q50 6CYL,PC,0,100,J,,,J,J,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Nissan North America, Inc",Infiniti,Q70 Conv & HEV,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Nissan North America, Inc",Infiniti,QX 60,MPV,50,,,,,US,US,M,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Nissan North America, Inc",Infiniti,QX30,PC,0,55,UK,25,G,UK,G,G,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Nissan North America, Inc",Infiniti,QX50,MPV,10,45,M,20,J,M,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Nissan North America, Inc",Infiniti,QX60 4CYL,MPV,0,95,J,,,J,G,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Nissan North America, Inc Nissan North America, Inc",Infiniti,QX60 6CYL,MPV,0,95,,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Nissan North America, Inc",Infiniti,QX60 HEV 4CYL QX60 HEV 6CYL,MPV,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Nissan North America, Inc",Infiniti,QX70 & Q70 L,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Nissan North America, Inc",Infiniti,QX80,MPV,5,95,J,,,J,J,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,"Nissan North America, Inc",Infiniti,QX80,MPV,5,95,,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2020,"Nissan North America, Inc",Infiniti,Q50,PC,0,100,J,,,J,J,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Nissan North America, Inc",Infiniti,Q60,PC,0,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Nissan North America, Inc",Infiniti,QX 60,MPV,50,,,,,US,US,MX,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Nissan North America, Inc",Infiniti,QX50,MPV,15,45,MX,25,J,MX,J,MX,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,"Nissan North America, Inc",Infiniti,QX80,MPV,5,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2021,"Nissan North America, Inc",Infiniti,Q50,PC,0,95,J,,,J,J,,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,"Nissan North America, Inc",Infiniti,Q60,PC,0,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,"Nissan North America, Inc",Infiniti,QX50,MPV,10,55,MX,20,J,MX,J,MX,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,"Nissan North America, Inc",Infiniti,QX80,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2022,"Nissan North America, Inc",Infiniti,Q50,PC,0,95,J,,,J,J,,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Nissan North America, Inc",Infiniti,Q60,PC,0,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Nissan North America, Inc",Infiniti,QX 60,MPV,45,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Nissan North America, Inc",Infiniti,QX50,MPV,10,55,MX,25,J,MX,J,MX,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Nissan North America, Inc",Infiniti,QX55,MPV,10,60,MX,20,J,MX,J,MX,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,"Nissan North America, Inc",Infiniti,QX80,MPV,5,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2023,"Nissan North America, Inc",Infiniti,Q50,PC,0,90,J,,,J,J,,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Nissan North America, Inc",Infiniti,QX 60,MPV,45,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Nissan North America, Inc",Infiniti,QX50,MPV,10,60,M,20,J,M,J,M,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Nissan North America, Inc",Infiniti,QX55,MPV,10,55,M,25,J,M,J,M,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,"Nissan North America, Inc",Infiniti,QX80,MPV,5,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2024,"Nissan North America, Inc",Infiniti,Q50,PC,0,90,J,,,J,J,,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,"Nissan North America, Inc",Infiniti,QX 60,MPV,45,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,"Nissan North America, Inc",Infiniti,QX50,MPV,15,45,M,25,J,M,J,M,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,"Nissan North America, Inc",Infiniti,QX55,MPV,10,55,M,20,J,M,J,M,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,"Nissan North America, Inc",Infiniti,QX80,MPV,5,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2025,"Nissan North America, Inc",Infiniti,QX 60,MPV,45,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Nissan North America, Inc",Infiniti,QX50,MPV,10,45,M,30,J,M,J,M,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Nissan North America, Inc",Infiniti,QX55,MPV,15,55,M,25,J,M,J,M,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,"Nissan North America, Inc",Infiniti,QX80,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2026,"Nissan North America, Inc",Infiniti,QX60,MPV,45,,,,,US,J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,"Nissan North America, Inc",Infiniti,QX80,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2027,"Nissan North America, Inc",Infiniti,QX60,MPV,40,20,M,,,US,J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2027-AALA-Alphabetical-06-08-26.pdf
+2027,"Nissan North America, Inc",Infiniti,QX65,MPV,45,15,M,,,US,J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2027-AALA-Alphabetical-06-08-26.pdf
+2027,"Nissan North America, Inc",Infiniti,QX80,MPV,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2027-AALA-Alphabetical-06-08-26.pdf
 2018,Kia Motors,Kia,Cadenza,PC,0,87,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
 2018,Kia Motors,Kia,Forte,PC,2,51,K,47,M,M,M,M+K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
 2018,Kia Motors,Kia,K900,PC,,72,UK,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
@@ -151,6 +349,194 @@ model_year,manufacturer,make,carline,vehicle_type,us_canada_pct,foreign_1_pct,fo
 2027,Kia Motors,Kia,Seltos,MPV,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2027-AALA-Alphabetical-06-08-26.pdf
 2027,Kia Motors,Kia,Sportage Hybrid,MPV,30,55,K,,,US,M,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2027-AALA-Alphabetical-06-08-26.pdf
 2027,Kia Motors,Kia,Telluride Hybrid,MPV,45,40,K,,,US,K,M,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2027-AALA-Alphabetical-06-08-26.pdf
+2018,Toyota,Lexus,ES 350,PC,35,55,J,,,US+J,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Lexus,ES Hybrid,PC,5,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Lexus,GS 450 h,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Lexus,GS F,PC,,0,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Lexus,GS300,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Lexus,GS350,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Lexus,GX460,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Lexus,IS300 / 350,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Lexus,LC 500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Lexus,LS 500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Lexus,LS 600h,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Lexus,LX570,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Lexus,Lexus NX Hybrid,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Lexus,NX,MPV,5,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Lexus,RC,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Lexus,RC F,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Lexus,RX350,MPV,50,35,J,,,J+CN,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Toyota,Lexus,RX450h,MPV,35,55,J,,,CN,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2019,Toyota,Lexus,CT200h,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,ES 350,PC,50,35,J,,,US/J,US/J,US/J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,ES Hybrid,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,GS 450 h,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,GS F,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,GS300,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,GS350,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,GX460,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,IS300 / 350,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,LC 500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,LC 500h,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,LS 500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,LS 500h,PC,5,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,LX570,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,Lexus ES Hybrid,PC,5,95,J,,,J+US,J+US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,Lexus NX Hybrid,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,NX,MPV,5,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,RC,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,RC F,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,RX350,MPV,55,35,J,,,J+CAN,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,RX350 L,MPV,5,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,RX450h,MPV,35,55,J,,,CAN,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Toyota,Lexus,RX450h L,MPV,5,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2020,Toyota,Lexus,ES 350,PC,60,25,J,,,US,US+J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,ES Hybrid,PC,40,50,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,GS F,PC,0,100,J,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,GS350,PC,0,100,J,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,GX460,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,IS300 / 350,PC,0,100,J,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,LC 500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,LC 500h,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,LS 500,PC,0,100,J,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,LS 500h,PC,0,100,J,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,LX570,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,NX,MPV,5,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,NX Hybrid,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,RC,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,RC F,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,RX350,MPV,55,35,J,,,CAN,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,RX350L,MPV,5,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,RX450h,MPV,35,55,J,,,CAN,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,RX450hL,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,UX,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Toyota,Lexus,UX Hybrid,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2021,Toyota,Lexus,ES 300h,PC,40,35,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,ES 350,PC,55,20,J,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,GX460,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,IS300 / 350,PC,5,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,LC 500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,LC 500h,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,LC Convertible,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,LS 500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,LS 500h,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,LX570,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,NX,MPV,5,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,NX Hybrid,MPV,5,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,RC,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,RC F,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,RX L,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,RX350,MPV,45,30,J,,,CAN+J,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,RX450h,MPV,30,55,J,,,CAN,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,RXh L,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,UX,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Toyota,Lexus,UX Hybrid,MPV,5,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2022,Toyota,Lexus,ES 250/350,PC,55,35,J,,,US,US+J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,ES 300h,PC,50,40,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,GX460,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,IS300 / 350,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,LC 500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,LC 500h,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,LC Convertible,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,LS 500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,LS 500h,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,LX600,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,NX,MPV,25,55,J,,,J+CAN,J+US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,NX Hybrid,MPV,30,55,J,,,J+CAN,J+US,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,NX PHV,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,RC,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,RC F,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,RX350,MPV,55,25,J,,,CAN+J,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,RX450h,MPV,35,45,J,,,CAN,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,UX,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Toyota,Lexus,UX Hybrid,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2023,Toyota,Lexus,ES 350,PC,55,20,J,,,US,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,GX460,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,IS300 / 350,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,LC 500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,LC 500h,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,LC Convertible,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,LS 500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,LS 500h,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,LX600,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,NX 250/350,MPV,35,50,J,,,J+CAN,J+US,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,NX 350h,MPV,40,45,J,,,J+CAN,J+US,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,NX 450h,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,RC,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,RC F,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,RX350,MPV,40,45,J,,,CAN+J,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,RX350h/500h,MPV,45,35,J,,,CAN,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,RZ 450e,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,UX200,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Toyota,Lexus,UX250h,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2024,Toyota,Lexus,ES 250/350,PC,50,35,J,,,US,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,ES 300h,PC,45,40,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,GX550,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,IS 300/350,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,LC 500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,LC 500h,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,LC Convertible,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,LS 500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,LS 500h,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,LX 600,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,NX 250/350,MPV,40,45,J,,,J+CAN,J+US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,NX 350h,MPV,40,55,J,,,J+CAN,J+US,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,NX 450h+,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,RC 300/350,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,RC F,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,RX 350,MPV,55,30,J,,,CN+J,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,RX 350h/500h,MPV,40,45,J,,,CN,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,RX 450h+,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,RZ 300e/450e,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,TX 350,MPV,65,20,J,,,US,US+J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,TX 500h,MPV,50,35,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,TX 550h+,MPV,30,60,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Toyota,Lexus,UX 250h,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2025,Toyota,Lexus,ES 250/350,PC,50,35,J,,,US,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,ES 300h,PC,45,40,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,GX550,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,IS 300/350/500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,LC 500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,LC 500 Convertible,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,LC 500h,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,LS 500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,LS 500h,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,LX 600,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,LX 700h,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,NX 250/350,MPV,50,30,J,,,J+CN,J+US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,NX 350h,MPV,45,45,J,,,J+CN,J+US,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,NX 450h+,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,RC 300/350,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,RC F,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,RX 350,MPV,55,25,J,,,CN+J,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,RX 350h/500h,MPV,40,35,J,,,CN,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,RX 450h+,MPV,0,85,J,15,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,RZ 300e/450e,MPV,0,90,J,10,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,TX 350,MPV,65,20,J,,,US,US+J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,TX 500h,MPV,45,40,J,,,US,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,TX 550h+,MPV,25,65,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Lexus,UX 300h,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2026,Toyota,Lexus,ES 350e/500e,PC,0,70,J,30,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,ES 350h,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,GX550,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,IS 350,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,LC 500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,LC 500 Convertible,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,LS 500,PC,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,LX 600,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,LX 700h,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,NX 250/350,MPV,45,35,J,,,J+CN,J+US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,NX 350,MPV,45,35,J,,,J+CN,J+US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,NX 350h,MPV,45,40,J,,,J+CN,J+US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,NX 450h+,MPV,0,80,J,20,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,RX 350,MPV,55,30,J,,,CN+J,US+J,US+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,RX 350h/500h,MPV,55,25,J,,,CN,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,RX 450h+,MPV,0,85,J,15,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,RZ 350e/450e/550e,MPV,0,80,J,20,CH,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,TX 350,MPV,65,20,J,,,US,US+J,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,TX 500h,MPV,50,40,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,TX 550h+,MPV,30,60,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Lexus,UX 300h,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
 2018,Subaru,Subaru,BRZ,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
 2018,Subaru,Subaru,Crosstrek,MPV,5,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
 2018,Subaru,Subaru,Forester,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
@@ -426,6 +812,7 @@ model_year,manufacturer,make,carline,vehicle_type,us_canada_pct,foreign_1_pct,fo
 2025,Subaru,Toyota,GR86,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
 2025,Toyota,Toyota,GR86,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
 2025,Toyota,Toyota,Grand Highlander,MPV,65,25,J,,,US,US+J,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Toyota,Toyota,Grand Highlander Hybrid,MPV,55,35,J,,,US,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
 2025,Toyota,Toyota,Highlander,MPV,65,20,J,,,US,US+J,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
 2025,Toyota,Toyota,Highlander Hybrid,MPV,55,30,J,,,US,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
 2025,Toyota,Toyota,Land Cruiser,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
@@ -456,6 +843,7 @@ model_year,manufacturer,make,carline,vehicle_type,us_canada_pct,foreign_1_pct,fo
 2026,Subaru,Toyota,GR86,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
 2026,Toyota,Toyota,GR86,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
 2026,Toyota,Toyota,Grand Highlander,MPV,65,20,J,,,US,US+J,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Toyota,Toyota,Grand Highlander Hybrid,MPV,60,30,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
 2026,Toyota,Toyota,Highlander,MPV,65,20,J,,,US,US+J,J+US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
 2026,Toyota,Toyota,Highlander Hybrid,MPV,60,25,J,,,US,US+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
 2026,Toyota,Toyota,Land Cruiser,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf

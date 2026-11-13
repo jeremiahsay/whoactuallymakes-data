@@ -1,9 +1,9 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-11",
- "count": 150,
- "primary": 107,
- "by_hand": 22,
+ "generated": "2026-11-13",
+ "count": 194,
+ "primary": 139,
+ "by_hand": 26,
  "sources": [
   {
    "id": "api-eolcs",
@@ -50,7 +50,7 @@
      "result": "14 brands from 431 listings; 6 held by the store, 8 by Highline Warren",
      "edition": null,
      "file_url": null,
-     "hand_note": "Search API's public directory in a browser, one brand at a time, then update data/registries/api-eolcs/."
+     "hand_note": "API's public licence directory, searched in a browser one brand at a time."
     }
    ]
   },
@@ -89,7 +89,7 @@
      "result": "50,153 grantee codes, registered up to 22 Mar 2021; Covered List dated 6 Nov 2026",
      "edition": null,
      "file_url": null,
-     "hand_note": "Download https://opendata.fcc.gov/api/views/3b3k-34jp/rows.csv?accessType=DOWNLOAD and the dataset's metadata (api/views/3b3k-34jp.json) into a new dated research folder; if the newest registration date moved past 22 Mar 2021, update the page's wording about the cut-off. Re-read the FCC Covered List in a browser and update covered and covered_categories in data/guidance/fcc-id.json. Point the guidance at the new CSV and its sha256, then run tools/build_fcc.py."
+     "hand_note": "The FCC's open grantee register, downloaded fresh: if its newest registration date has moved past 22 Mar 2021, the page's wording about the cut-off changes. The FCC Covered List is re-read in a browser."
     }
    ]
   },
@@ -107,8 +107,8 @@
     "url": "https://search.fsc.org/en/disclaimer/",
     "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
     "automated": false,
-    "checked": "2026-11-05",
-    "due": "2027-11-05"
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
    },
    "credit": null,
    "used_for": [
@@ -116,6 +116,11 @@
      "label": "Who makes Kirkland Signature toilet paper",
      "url": "/kirkland-signature/toilet-paper/",
      "note": "What each code on a pack resolves to"
+    },
+    {
+     "label": "Who makes Pokémon cards",
+     "url": "/who-makes-pokemon-cards/",
+     "note": "Millennium Print Group's Greensboro certificate; the code on a pack that wouldn't resolve"
     }
    ],
    "pulls": [
@@ -170,6 +175,21 @@
      "label": "Where are Toyotas made?",
      "url": "/where-is-toyota-made/",
      "note": "Toyota VIN codes"
+    },
+    {
+     "label": "Who makes Lexus?",
+     "url": "/who-makes-lexus/",
+     "note": "Lexus VIN codes"
+    },
+    {
+     "label": "Who makes Acura?",
+     "url": "/who-makes-acura/",
+     "note": "Which VIN codes decode to Acura, and from which Honda plant country"
+    },
+    {
+     "label": "Who makes Infiniti?",
+     "url": "/who-makes-infiniti/",
+     "note": "Which VIN codes decode to Infiniti, and from which country"
     }
    ],
    "pulls": [
@@ -226,7 +246,7 @@
      "result": "14 company pages; 2 pet food register searches, 2 recall pulls",
      "edition": null,
      "file_url": null,
-     "hand_note": "tools/weekly.py runs tools/fetch_maker_registers.py all once a month: North Dakota's pet food register and FDA recall records for each company. The companies' own pages are re-read by a person at each claim check."
+     "hand_note": "Once a month our script re-reads North Dakota's pet food register and FDA's recall records for every company. A person re-reads the companies' own pages each time a claim is checked."
     }
    ]
   },
@@ -308,7 +328,7 @@
      "result": "7,257 entries; first pull",
      "edition": "2026-10-26",
      "file_url": "https://www.fsis.usda.gov/sites/default/files/media_file/documents/MPI_Directory_by_Establishment_Number.csv",
-     "hand_note": "USDA's site refuses scripts, so a person downloads the file in a browser and we load it with tools/load_usda_mpi.py. The lookup, charts and CSV follow at the next build."
+     "hand_note": "USDA's site turns away automated readers, so a person downloads the directory in a browser. The plant lookup, charts and CSV update at the next build."
     },
     {
      "what": "USDA's letter legend and size bands",
@@ -402,6 +422,95 @@
    ]
   },
   {
+   "id": "cpsc-recalls",
+   "name": "CPSC recalls database (SaferProducts.gov recall API)",
+   "short": "CPSC recalls",
+   "publisher": "US Consumer Product Safety Commission",
+   "url": "https://www.saferproducts.gov/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "Which recalls the CPSC holds with a given word in the title or product name, on the day we searched.",
+   "cannot_prove": "That a product has never had a problem. A search for a word finds only recalls that use it, and CPSC isn't the only agency that can act.",
+   "terms": {
+    "url": "https://www.cpsc.gov/Recalls/CPSC-Recalls-Application-Program-Interface-API-Information",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-10",
+    "due": "2027-11-10"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature diapers",
+     "url": "/kirkland-signature/diapers/",
+     "note": "Search for recalls with diaper in the title or product name"
+    },
+    {
+     "label": "Who makes Kirkland Signature toilet paper",
+     "url": "/kirkland-signature/toilet-paper/",
+     "note": "Search for toilet paper and paper towel recalls"
+    },
+    {
+     "label": "Who makes Insignia TVs and appliances",
+     "url": "/insignia/",
+     "note": "Six Insignia recalls, 2007 to 2026"
+    },
+    {
+     "label": "Who makes Hart, Hyper Tough, Husky and Harbor Freight tools",
+     "url": "/store-brand-tools/",
+     "note": "22 recalls across the four, 1999 to 2025"
+    },
+    {
+     "label": "Who makes Craftsman tools and mowers",
+     "url": "/craftsman/",
+     "note": "Craftsman recalls 1980 to 2024 and the companies each names"
+    },
+    {
+     "label": "Who makes Onn TVs",
+     "url": "/onn-tv/",
+     "note": "Searched for Onn recalls; none for a TV"
+    },
+    {
+     "label": "Who makes EverStart batteries",
+     "url": "/everstart/",
+     "note": "Recalls searched for EverStart and Baccus"
+    },
+    {
+     "label": "How long do dishwashers last?",
+     "url": "/how-long-do-dishwashers-last/"
+    },
+    {
+     "label": "How long do refrigerators last?",
+     "url": "/how-long-do-refrigerators-last/",
+     "note": "35 household fridge, freezer and minifridge recalls, 1977 to 2026, and two old-appliance warnings"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "CPSC's recall database for any new recall with 'dishwasher' in its title or product name; eCFR 10 CFR 430.32(f) for any change to the dishwasher limits or the April 23, 2027 date",
+     "how": "script",
+     "every_days": 90,
+     "last": "2026-11-12",
+     "due": "2027-02-12",
+     "result": "22 notices (20 recalls, 1988-2021), all fire or overheating; eCFR as of Nov 9, 2026 keeps the 2027 limits (223 kWh, 3.3 gal)",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "CPSC's recall database for any new recall with 'dishwasher' in its title or product, and the federal dishwasher limits (10 CFR 430.32(f)) and their April 23, 2027 date. A new recall or a changed limit goes on the page after the site owner approves the wording."
+    },
+    {
+     "what": "CPSC's recall database for any new household refrigerator, freezer or minifridge recall; eCFR 10 CFR 430.32(a) for any change to the refrigerator limits or the 2029/2030 dates; Hisense's recall page and Sub-Zero's age page",
+     "how": "script",
+     "every_days": 90,
+     "last": "2026-11-12",
+     "due": "2027-02-12",
+     "result": "35 household recalls (24 fridge, 5 freezer, 6 minifridge, 1977-2026) plus 2 CPSC old-appliance warnings; eCFR as of Nov 9, 2026 keeps the 2029/2030 dates",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "CPSC's recall database for any new household refrigerator, freezer or minifridge recall, and the federal refrigerator limits (10 CFR 430.32(a)) and their 2029 and 2030 dates. A new recall or a changed limit goes on the page after the site owner approves the wording."
+    }
+   ]
+  },
+  {
    "id": "cec-maedbs",
    "name": "California Energy Commission Modernized Appliance Efficiency Database System (MAEDbS)",
    "short": "California appliance register (MAEDbS)",
@@ -456,7 +565,7 @@
      "result": "714 filings, 34 companies named",
      "edition": null,
      "file_url": null,
-     "hand_note": "Read in a browser: Advanced Search, brand Insignia, each product type; export the CSV, save it under research/ with its fingerprint, then run tools/build_insignia.py."
+     "hand_note": "California's appliance register, searched for Insignia by product type. The export is saved and fingerprinted, so the page can show exactly what the register said."
     },
     {
      "what": "California appliance register: Hart, Hyper Tough, Husky and Harbor Freight battery chargers",
@@ -467,7 +576,7 @@
      "result": "657 filings, 32 companies named",
      "edition": null,
      "file_url": null,
-     "hand_note": "Run tools/cec_maedbs_pull.py for each charger list (see research/2026-11-10-store-brand-tools/raw/cec/manifest.json for the searches), save into a new dated research folder with a manifest, point build_store_tools.py at it, then run it."
+     "hand_note": "California's appliance register, searched again for each store brand's battery chargers, saved with the date of the read."
     },
     {
      "what": "Craftsman records: California charger register, CPSC recalls and Stanley Black & Decker's newest SEC report",
@@ -478,7 +587,7 @@
      "result": "81 charger filings, 32 recalls, 332 engine rows, 11 Sears codes decoded",
      "edition": null,
      "file_url": null,
-     "hand_note": "Run tools/cec_maedbs_pull.py for Craftsman on both charger lists (see research/2026-11-10-craftsman/raw/cec/manifest.json), re-run the four CPSC searches in research/2026-11-10-craftsman/raw/cpsc-recalls-craftsman.json, and read Stanley Black & Decker's newest 10-Q or 10-K for Craftsman, MTD and Transform Holdco. Save into a new dated research folder, point build_craftsman.py at it, then run it. The EPA 1997-2010 archive doesn't change."
+     "hand_note": "California's charger register for Craftsman, the four CPSC recall searches, and Stanley Black & Decker's newest 10-Q or 10-K on Craftsman, MTD and Transform Holdco. The EPA archive for 1997 to 2010 doesn't change."
     },
     {
      "what": "Onn TV filings on California's appliance register, Walmart's newest SEC report and the Onn TV support sites",
@@ -489,7 +598,7 @@
      "result": "324 Onn TV filings counted, 13 companies, 29 numbers filed by more than one",
      "edition": null,
      "file_url": null,
-     "hand_note": "Run tools/cec_maedbs_pull.py for brands ONN and onn. on the three TV lists, status Approved, and for every brand on the archived TV lists (see research/2026-11-10-onn/raw/cec/manifest.json); rebuild other-brands.json from every approved TV row. Read Walmart's newest 10-K or 10-Q for onn. and VIZIO, and re-read the two Onn support sites in a browser. Save into a new dated research folder, point build_onn.py at it, then run it."
+     "hand_note": "California's TV lists for onn. (and every brand on the archived lists, for the comparison table), Walmart's newest 10-K or 10-Q on onn. and VIZIO, and the two onn. support sites, read in a browser."
     },
     {
      "what": "EverStart charger filings on California's appliance register, Walmart's EverStart listings and warranty sheet, and new SEC filings naming EverStart",
@@ -500,7 +609,7 @@
      "result": "62 EverStart charger filings (Baccus 57); 8 Walmart listings read; Clarios filings to 31 May 2024",
      "edition": null,
      "file_url": null,
-     "hand_note": "Run tools/cec_maedbs_pull.py for brands EverStart and EverStart maxx on the Federally Regulated Battery Chargers list, status Approved. Re-read in Chrome the eight Walmart listings in research/2026-11-11-everstart/raw/web/walmart-everstart-listings-2026-11-11.txt and the Clarios-hosted warranty sheet they link. Search SEC full text (efts.sec.gov) for EverStart filed since the last read. Save into a new dated research folder, point build_everstart.py and the guidance at it, then run it. A new maker named for the batteries is a correction for the owner."
+     "hand_note": "California's charger register for EverStart and EverStart maxx, Walmart's eight EverStart listings and the warranty sheet they link (in a browser), and a full-text search of SEC filings naming EverStart. A newly named battery maker is a correction, approved by the site owner."
     }
    ]
   },
@@ -539,7 +648,7 @@
      "result": "Standard $114.99-$129.99, AGM $179.99-$184.99, $15 core charge; same at ZIPs 75254, 98101, 10001",
      "edition": null,
      "file_url": null,
-     "hand_note": "Costco forbids scripts, so a person looks up the same cars in the finder in a browser, updates data/guidance/costco-car-batteries.json and this task."
+     "hand_note": "Costco blocks automated readers, so a person looks up the same cars in Costco's battery finder in a browser, so prices compare like for like."
     }
    ]
   },
@@ -603,7 +712,7 @@
      "result": "Kirkland AA 48 $16.99 ($14.99 on offer to Nov 15); Duracell Coppertop AA 40 $20.99",
      "edition": null,
      "file_url": null,
-     "hand_note": "Costco forbids scripts, so we read both listings in a browser, then update data/guidance/kirkland-batteries.json and this task. The page follows."
+     "hand_note": "Costco blocks automated readers, so a person reads both listings in a browser. The page's prices update from that read."
     },
     {
      "what": "Kirkland, Huggies and Pampers diaper prices at Costco",
@@ -614,7 +723,7 @@
      "result": "Kirkland 16 to 32 cents a diaper at regular prices; 13 to 26 cents on the offer to Nov 8",
      "edition": null,
      "file_url": null,
-     "hand_note": "Costco forbids scripts, so we read each size in a browser, updates data/guidance/kirkland-diapers.json and this task. The cost section's prose is typed in a browser: re-check its \"16 to 32 cents\" and $39.99 lines, and log any new offer's dates."
+     "hand_note": "Costco blocks automated readers, so a person reads each size in a browser, re-checks the page's \"16 to 32 cents\" and $39.99 lines, and notes the dates of any new offer."
     },
     {
      "what": "Kirkland, Charmin and Bounty paper prices at Costco",
@@ -625,7 +734,7 @@
      "result": "Kirkland bath tissue $1.47 to $2.12 per 100 sq ft in the warehouse, $1.75 to $2.40 online; Charmin $3.87; Kirkland towels $2.34; Bounty $4.93",
      "edition": null,
      "file_url": null,
-     "hand_note": "Costco forbids scripts, so we read each listing in a browser, then update data/guidance/kirkland-toilet-paper.json and this task. The page's prose repeats these figures: re-check the Charmin and Bounty sections. If Seattle shows no warehouse price, pick another warehouse on Costco's picker. Do this with costco-toilet-paper-prices."
+     "hand_note": "Costco blocks automated readers, so a person reads each listing in a browser, along with the Charmin and Bounty sections that repeat these prices. If the Seattle warehouse shows no price, we use another warehouse."
     },
     {
      "what": "Every toilet paper pack at Costco, plus the Sam's Club comparison",
@@ -636,7 +745,7 @@
      "result": "10 packs; cheapest by paper Marathon $1.20 per 100 sq ft in the warehouse; Kirkland $20.99 warehouse, $24.99 online; Charmin $29.99 warehouse; no offers",
      "edition": null,
      "file_url": null,
-     "hand_note": "Costco forbids scripts, so we read each listing in a browser, changing warehouse on Costco's picker when one shows no price. Update data/guidance/costco-toilet-paper.json; the build stops on any prose dollar figure the data doesn't hold, so re-read the prose too. Sam's Club offers end Nov 18 and Nov 29."
+     "hand_note": "Costco blocks automated readers, so a person reads each pack's listing in a browser, switching warehouse when one shows no price. The page won't publish a dollar figure the read doesn't back. Sam's Club offers end Nov 18 and Nov 29."
     },
     {
      "what": "The eight Kirkland rumors: Lakeridge tag, cranberry bottle, foil box and prices, jelly beans in the US and UK, chocolate bags, plastic wrap, honey, flour",
@@ -647,7 +756,7 @@
      "result": "2 on the label (Sealy Mattress, Ocean Spray), 3 named by Costco, 1 partly true, 2 not on the pack",
      "edition": null,
      "file_url": null,
-     "hand_note": "Read in a browser, one listing at a time, ZIP 98101. Open each gallery back-panel photo and the Product Label PDF. A new maker line changes a verdict, and that needs the owner."
+     "hand_note": "Read in a browser one listing at a time (ZIP 98101), including each back-panel photo and the product label PDF. If a new maker line appears, the verdict changes only after the site owner approves it."
     },
     {
      "what": "The two Kirkland Lakeridge mattresses: prices by size, offer dates, ratings and the law label link",
@@ -669,7 +778,7 @@
      "result": "Kirkland regular 15.6 to 32.4 cents; Huggies on offer to Nov 22, 14.6 to 38.5; Pampers 20.5 to 46.8",
      "edition": null,
      "file_url": null,
-     "hand_note": "Read in a browser at ZIP 98101: click each size on the six listings, plus Newborn. Log any new offer's dates in data/guidance/costco-diapers.json. Read again the day after an offer ends. Update kirkland-diapers.json too: the build stops if the two disagree."
+     "hand_note": "Read in a browser at ZIP 98101, size by size on all six listings plus Newborn. Offers are re-read the day after they end. The page won't publish if these prices and the Kirkland diaper page disagree."
     },
     {
      "what": "Kirkland vs name brands: Bounty, Kleenex, Tide and Dawn shelf prices at ZIP 98101",
@@ -680,7 +789,7 @@
      "result": "Four pairs read; OxiClean is warehouse-only with no price shown",
      "edition": null,
      "file_url": null,
-     "hand_note": "Read Costco.com search pages in a browser, one at a time. Update shelf in data/guidance/kirkland-vs.json."
+     "hand_note": "Costco's search pages, read in a browser one at a time, for the shelf prices the comparison uses."
     },
     {
      "what": "Kirkland battery offer ending Nov 15",
@@ -691,7 +800,7 @@
      "result": null,
      "edition": null,
      "file_url": null,
-     "hand_note": "Read the listing in a browser the day after the offer ends, then update data/guidance/kirkland-batteries.json."
+     "hand_note": "The listing is re-read the day after the offer ends, to see what replaced it."
     },
     {
      "what": "Costco hot dogs: prices of the 12-link pack and both Dinner Franks packs, and the USDA seal in each listing photo",
@@ -702,7 +811,7 @@
      "result": "Pack $19.99, 15 links $22.59, 120 links $125.99; EST. 18532 on two photos, empty seal on the 15-link pack",
      "edition": null,
      "file_url": null,
-     "hand_note": "Read in a browser, one listing at a time, ZIP 98101 and 98115. Open each gallery photo and zoom in on the seal and the date strip. EST. 45951 on any pack proves Morris, and that changes a stamp: the owner approves it."
+     "hand_note": "Read in a browser one listing at a time (ZIPs 98101 and 98115), zooming in on the USDA seal and date strip in each photo. Plant number EST. 45951 on a pack would prove Morris made it; that changes a stamp only after the site owner approves it."
     },
     {
      "what": "Kirkland laundry detergent: prices of all eight Costco lines, the Tide offer dates, and the maker lines on each back label",
@@ -724,7 +833,49 @@
      "result": "20 listings read: Decaf House Blend still says Custom Roasted by Starbucks; the other 19 name no roaster (10 newly listed)",
      "edition": null,
      "file_url": null,
-     "hand_note": "Costco.com is read in a browser. Re-read every Kirkland coffee listing on the page's table, update site-data/kirkland-coffee.json, and log any listing that starts or stops naming a roaster."
+     "hand_note": "Every Kirkland coffee listing in the page's table, read in a browser. We note any listing that starts or stops naming a roaster."
+    }
+   ]
+  },
+  {
+   "id": "doe-rulemaking-dockets",
+   "name": "DOE appliance standards technical support documents (regulations.gov dockets and energy.gov)",
+   "short": "DOE technical support document",
+   "publisher": "US Department of Energy, Appliance and Equipment Standards Program",
+   "url": "https://www.energy.gov/eere/buildings/appliance-and-equipment-standards-program",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "The survival curves and average lifetimes DOE uses when it sets efficiency standards, with the data behind them.",
+   "cannot_prove": "How long one model, brand or machine lasts, or why a unit was retired: DOE counts every unit taken out of service.",
+   "terms": {
+    "url": "https://www.regulations.gov/user-notice",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "How old is my appliance, and is it due?",
+     "url": "/how-old-is-my-appliance/"
+    },
+    {
+     "label": "How long do dishwashers last?",
+     "url": "/how-long-do-dishwashers-last/"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "DOE's newest rule or proposal for dishwashers, refrigerators and freezers, clothes washers, dryers, microwaves, cooking products and dehumidifiers; GE's serial chart and label-location pages; Whirlpool's technical manuals; AppliancePartsPros, Hunker, ServiceMag and Splaitor guides; any new maker page for LG, Samsung, Bosch or Frigidaire",
+     "how": "hand",
+     "every_days": 180,
+     "last": "2026-11-12",
+     "due": "2027-05-12",
+     "result": "DOE lifetimes 10.78 (microwave) to 18.4 (freezer) yrs from 2023-24 rules; GE chart is GE's; Whirlpool manual covers 2019-2022; LG, Frigidaire, Bosch third-party; Samsung no rule",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The Federal Register for each product's newest efficiency rule and the lifetime it assumes, GE's serial chart and label pages, and Whirlpool's technical manuals for year codes. A changed lifetime or rule is a correction approved by the site owner, and the page's diagrams are redrawn."
     }
    ]
   },
@@ -815,6 +966,15 @@
      "label": "FCC ID lookup",
      "url": "/fcc-id-lookup/",
      "note": "How an FCC ID, a module label and a self-declared device work (47 CFR 2.925, 2.926, 15.212, 2.1077)"
+    },
+    {
+     "label": "How long do dishwashers last?",
+     "url": "/how-long-do-dishwashers-last/"
+    },
+    {
+     "label": "How long do refrigerators last?",
+     "url": "/how-long-do-refrigerators-last/",
+     "note": "The 2014 and 2029/2030 refrigerator limits"
     }
    ],
    "pulls": [
@@ -824,7 +984,7 @@
      "every_days": 365,
      "last": "2026-11-06",
      "due": "2027-11-06",
-     "result": "22 rule texts on file",
+     "result": "26 rule texts on file",
      "edition": null,
      "file_url": null,
      "hand_note": "Re-read each rule on the eCFR, check our short quote still stands, and log any change on the corrections page."
@@ -861,12 +1021,12 @@
      "what": "Tire age: carmaker manuals to re-check",
      "how": "hand",
      "every_days": 0,
-     "last": "2026-11-04",
-     "due": "2026-11-12",
+     "last": "2026-11-12",
+     "due": "2026-11-26",
      "result": "Every carmaker on the list has a row",
      "edition": null,
      "file_url": null,
-     "hand_note": "Honda: read the 2026 CR-V manual on Honda’s own server (down for maintenance on Nov 3 and Nov 4; the table uses an archived 2024 copy). Toyota: try the live 2026 RAV4 manual (the 2025 PDF refused our request on Nov 3 and Nov 4; the table uses an archived 2025 copy). Nissan done Nov 4: the live 2026 Rogue manual says the same as 2024."
+     "hand_note": "Honda: read the 2026 CR-V manual on Honda’s own server (still down for maintenance on Nov 12, its third failed read; the table uses an archived 2024 copy, and the Internet Archive holds no 2026 copy). Toyota: see whether toyota.com has posted a 2026 RAV4 owner’s manual (none on Nov 12); the 2025 manual was re-read live on Nov 12 and still says the same. Nissan done Nov 4: the live 2026 Rogue manual says the same as 2024."
     }
    ]
   },
@@ -905,7 +1065,7 @@
      "result": "Ten maker rules and three third-party rules read, with Ford and ACDelco added 7 Nov. Newer ODYSSEY sheets and Interstate's March 2025 warranty PDF refused our read",
      "edition": null,
      "file_url": null,
-     "hand_note": "Re-read each record in data/guidance/battery-date-codes.json in a browser, one at a time. Try the newer ODYSSEY sheets and the K0 line first. Look for newer Ford and ACDelco warranty sheets, since those records date from 2005 and 2015. Owner approves any rule change."
+     "hand_note": "Each maker's date code sheet is re-read in a browser, with the newer ODYSSEY sheets and the K0 line first. We also look for newer Ford and ACDelco warranty sheets, because ours date from 2005 and 2015. A rule change needs the site owner's approval."
     }
    ]
   },
@@ -942,6 +1102,26 @@
      "label": "Where are Toyotas made?",
      "url": "/where-is-toyota-made/",
      "note": "Toyota rows"
+    },
+    {
+     "label": "Who owns which car brands?",
+     "url": "/who-owns-which-car-brands/",
+     "note": "Who files each brand's cars and where its US models are assembled, model year 2026"
+    },
+    {
+     "label": "Who makes Lexus?",
+     "url": "/who-makes-lexus/",
+     "note": "Where each Lexus model is assembled, and its US/Canada parts share"
+    },
+    {
+     "label": "Who makes Acura?",
+     "url": "/who-makes-acura/",
+     "note": "Where each Acura model is assembled, and its US/Canada parts share"
+    },
+    {
+     "label": "Who makes Infiniti?",
+     "url": "/who-makes-infiniti/",
+     "note": "Where each Infiniti model is assembled, and its US/Canada parts share"
     }
    ],
    "pulls": [
@@ -954,7 +1134,7 @@
      "result": null,
      "edition": null,
      "file_url": null,
-     "hand_note": "nhtsa.gov refuses scripts. Open the Part 583 page in Chrome, save the newest report, add it to data/aala/reports.json with its SHA-256, run tools/parse_aala.py and tools/build_car_origin.py (it rebuilds the Subaru and Kia pages). Check media.subaru.com for new model-year assembly lines."
+     "hand_note": "NHTSA's yearly parts-content report (where each model is assembled), saved in a browser because nhtsa.gov turns away automated readers, plus Subaru's newsroom for new model-year assembly lines. The Subaru and Kia pages rebuild from it."
     },
     {
      "what": "Where Kias are made: NHTSA report and Kia releases",
@@ -965,7 +1145,7 @@
      "result": null,
      "edition": null,
      "file_url": null,
-     "hand_note": "nhtsa.gov and kiamedia.com refuse scripts. Save the newest AALA report in Chrome as for Subaru, then run tools/parse_aala.py and tools/build_car_origin.py. Read kiamedia.com pricing releases and model pages in Chrome for new assembly lines; check whether the Sportage Hybrid's second plant is named."
+     "hand_note": "The same NHTSA report, plus Kia's US newsroom (pricing releases and model pages) for new assembly lines. Is the Sportage Hybrid's second plant named yet?"
     },
     {
      "what": "Where Toyotas are made: NHTSA report and Toyota plant lists",
@@ -976,7 +1156,40 @@
      "result": null,
      "edition": null,
      "file_url": null,
-     "hand_note": "nhtsa.gov and pressroom.toyota.com refuse scripts. Save the newest AALA report in Chrome as for Subaru, then run tools/parse_aala.py and tools/build_car_origin.py. Re-read the two global.toyota plant lists and data/aala/placed.json rows."
+     "hand_note": "The same NHTSA report, plus Toyota's two global plant lists, read in a browser because Toyota's newsroom turns away automated readers."
+    },
+    {
+     "what": "Who makes Lexus: NHTSA report and Toyota plant lists",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2026-12-13",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The same NHTSA report as Toyota. The page won't rebuild if a Lexus model is filed by anyone but Toyota, or if the count of US-built or Japan-only models changes, until the lines that rely on them are rewritten. Is the RC still sold, and are the Shanghai plant's cars for the US?"
+    },
+    {
+     "what": "Who makes Acura: NHTSA report and Honda plant lists",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2026-12-13",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The same NHTSA report as the other car pages. The page won't rebuild if an Acura model is filed by anyone but Honda (GM for the ZDX), or if the count of US-built or Mexican-built models changes, until the lines that rely on them are rewritten. Is the TLX still sold, and does Honda itself name the ADX plant?"
+    },
+    {
+     "what": "Who makes Infiniti: NHTSA report and Nissan releases",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2026-12-13",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The same NHTSA report as the other car pages. The page won't rebuild if an Infiniti model is filed by anyone but Nissan, or if the count of US-built or Japan-built models changes, until the lines that rely on them are rewritten. Has Nissan itself said when the QX50 and QX55 ended?"
     }
    ]
   },
@@ -1015,7 +1228,7 @@
      "result": "One since 2010: East Penn 23E-044",
      "edition": null,
      "file_url": null,
-     "hand_note": "Read NHTSA's FLAT_RCL_POST_2010 file and filter equipment recalls (type E) for 12V starter batteries. Lithium, traction and jump starters don't count. A new campaign needs owner approval before the page changes."
+     "hand_note": "NHTSA's full recall file, filtered to equipment recalls of 12V starter batteries (not lithium, traction batteries or jump starters). A new recall goes on the page after the site owner approves it."
     }
    ]
   },
@@ -1049,8 +1262,8 @@
      "what": "Tire age guidance: who says what",
      "how": "hand",
      "every_days": 365,
-     "last": "2026-11-04",
-     "due": "2027-11-04",
+     "last": "2026-11-12",
+     "due": "2027-11-12",
      "result": "10 rows and 12 carmakers from 24 documents",
      "edition": null,
      "file_url": null,
@@ -1072,8 +1285,8 @@
     "url": "https://www.sec.gov/os/accessing-edgar-data",
     "read": "Open license. We read it with a script.",
     "automated": true,
-    "checked": "2026-11-10",
-    "due": "2027-11-10"
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
    },
    "credit": null,
    "used_for": [
@@ -1106,6 +1319,36 @@
      "label": "Who makes EverStart batteries",
      "url": "/everstart/",
      "note": "Clarios, Exide, Johnson Controls and Walmart filings on EverStart and Walmart's battery suppliers"
+    },
+    {
+     "label": "Who makes Pokémon cards",
+     "url": "/who-makes-pokemon-cards/",
+     "note": "Hasbro's reports on the Pokémon card line its Wizards of the Coast sold"
+    },
+    {
+     "label": "Who owns which car brands?",
+     "url": "/who-owns-which-car-brands/",
+     "note": "Annual reports of GM, Ford, Stellantis, Toyota, Honda, Ferrari, Tesla, Rivian, Lucid, Polestar, VinFast and Lotus Technology: brands and largest shareholders"
+    },
+    {
+     "label": "Who owns which soda brands?",
+     "url": "/who-owns-which-soda-brands/",
+     "note": "Annual reports of Coca-Cola, PepsiCo, Keurig Dr Pepper, National Beverage, Coca-Cola Consolidated and Celsius, and KDP's 2026 releases: brand owners, bottling and stakes"
+    },
+    {
+     "label": "Who owns Dr Pepper?",
+     "url": "/who-owns-dr-pepper/",
+     "note": "Keurig Dr Pepper's filings since 2009 (history, bottlers, holders, the planned split), and PepsiCo, Coca-Cola Consolidated and Coca-Cola Europacific Partners on the Dr Pepper they make or sell"
+    },
+    {
+     "label": "Who makes Lexus?",
+     "url": "/who-makes-lexus/",
+     "note": "Toyota's annual report on Lexus"
+    },
+    {
+     "label": "Who makes Acura?",
+     "url": "/who-makes-acura/",
+     "note": "Honda's own account of Acura: launched 1986, counted in its car sales"
     }
    ],
    "pulls": [
@@ -1118,7 +1361,40 @@
      "result": "Eight releases from Jan 2025 to Nov 2026 mention it; Q3 2026 no longer does in North America",
      "edition": null,
      "file_url": null,
-     "hand_note": "EDGAR full-text search for \"private label diaper\" with CIK 0000055785, in a browser (efts.sec.gov). Read the newest earnings release (8-K exhibit 99.1); add a row to data/makers/kimberly-clark.json filings with its own words, and an evidence record via tools/archive.py."
+     "hand_note": "Kimberly-Clark's newest earnings release on SEC EDGAR, and a full-text search of its filings for \"private label diaper\". Anything new is quoted in its own words and archived."
+    },
+    {
+     "what": "Carmakers' annual filings and shareholder pages (SEC 10-K and 20-F, Volkswagen, BMW, JLR, Volvo Cars, Nissan, Mitsubishi Motors, Mazda, Subaru, Kia) and NHTSA's newest AALA report",
+     "how": "hand",
+     "every_days": 182,
+     "last": null,
+     "due": "2027-05-13",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Each carmaker's newest annual filing or shareholder page, re-checked against every quote on the page, and NHTSA's newest parts-content report. A changed stake, a brand changing hands, or a deal closing (Bugatti, Lotus UK) is a correction approved by the site owner."
+    },
+    {
+     "what": "Soda companies' annual filings and releases (Coca-Cola, PepsiCo, Keurig Dr Pepper, National Beverage, Coca-Cola Consolidated and Celsius 10-Ks; KDP 8-Ks) and the Coca-Cola US and KDP brand pages",
+     "how": "hand",
+     "every_days": 106,
+     "last": null,
+     "due": "2027-02-27",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Each soda company's newest annual filing after the February 10-Ks, re-checked against every quote on the page. When Keurig Dr Pepper's split into a drinks company and a coffee company completes (targeted for early 2027), every KDP soda changes owner, and the page changes with it."
+    },
+    {
+     "what": "Keurig Dr Pepper's newest 8-Ks and 10-Q (EDGAR, CIK 1418135)",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2027-02-27",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Keurig Dr Pepper's filings since our last read. If an 8-K or 10-Q changes the split's target date or the drinks company's name, the page quotes it. When the split completes, every KDP brand changes owner on both pages, as a correction approved by the site owner."
     }
    ]
   },
@@ -1162,7 +1438,7 @@
      "result": "Newborn 16.6 cents; sizes 1 to 8 run 16.1 to 37.0; wipes 1.9",
      "edition": null,
      "file_url": null,
-     "hand_note": "The extension can't read samsclub.com, so the owner saves the product page in Chrome, or sends screenshots. Update sams in data/guidance/costco-diapers.json."
+     "hand_note": "Sam's Club's site can't be read automatically, so we save the product page in a browser or work from screenshots."
     },
     {
      "what": "Sam's Club toilet paper offers ending Nov 18 and Nov 29",
@@ -1173,7 +1449,7 @@
      "result": null,
      "edition": null,
      "file_url": null,
-     "hand_note": "The extension can't read samsclub.com, so the owner saves the page in Chrome. Update data/guidance/costco-toilet-paper.json."
+     "hand_note": "Sam's Club's site can't be read automatically, so we save the page in a browser after each offer ends."
     }
    ]
   },
@@ -1212,7 +1488,85 @@
      "result": "512 Kirkland approvals; 38 on the spirits pages, 7 not yet cited",
      "edition": null,
      "file_url": null,
-     "hand_note": "Runs from the Mac (TTB doesn't answer our servers): launchd com.whoactuallymakes.ttb, Sundays 20:00. New approvals are listed in data/leads/ttb/new.json; read each label and add it to data/records/ttb-label-reads.json."
+     "hand_note": "A weekly read of TTB's label approvals for Kirkland (Sundays). TTB doesn't answer our servers, so it runs from a desktop computer. A person reads each new label before it is added."
+    }
+   ]
+  },
+  {
+   "id": "tpc-press",
+   "name": "The Pokémon Company International press site",
+   "short": "Pokémon press site",
+   "publisher": "The Pokémon Company International",
+   "url": "https://press.pokemon.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What The Pokémon Company International announced about its own business, and on what date.",
+   "cannot_prove": "Anything the announcement doesn't state, such as which plant prints a given set.",
+   "terms": {
+    "url": "https://www.pokemon.com/us/terms-of-use/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Pokémon cards",
+     "url": "/who-makes-pokemon-cards/",
+     "note": "The 2022 announcement naming Millennium Print Group as its card printer"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Millennium Print Group's site, The Pokémon Company International's press site, Nintendo's newest securities report, FSC Search for Millennium, and new reports on Millennium's plants",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-12",
+     "due": "2027-02-12",
+     "result": "TPCi 2022 release names Millennium (since 2015); Millennium says TPCi subsidiary, NC + Netherlands; Nintendo 32% (FY to Mar 2026); FSC Greensboro valid",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Millennium Print Group's site, The Pokémon Company's press site, Nintendo's newest securities report (its affiliate table) and FSC's certificate search. A new printer, or Nintendo's share changing, is a correction approved by the site owner."
+    }
+   ]
+  },
+  {
+   "id": "tpc-corporate",
+   "name": "The Pokémon Company corporate site",
+   "short": "Pokémon corporate site",
+   "publisher": "The Pokémon Company (Japan)",
+   "url": "https://corporate.pokemon.co.jp/en/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "The company's own history, founders, the roles of Nintendo, Creatures and GAME FREAK, and its published production totals.",
+   "cannot_prove": "Who prints the cards, or where. The totals are rounded (\"over\") and cover every language.",
+   "terms": {
+    "url": "https://corporate.pokemon.co.jp/en/privacy/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Pokémon cards",
+     "url": "/who-makes-pokemon-cards/",
+     "note": "Founders, card-game developer, cards produced by year"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "The Pokémon Company's Pokémon in Figures page (cards produced, languages, countries)",
+     "how": "hand",
+     "every_days": 365,
+     "last": "2026-11-12",
+     "due": "2027-06-15",
+     "result": "Over 85 billion cards to end of March 2026; 16 languages; over 90 countries and regions",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The Pokémon Company updates this page once a year, usually by summer, with totals to the end of March. We read it in a browser and save a copy, so the production figures can be traced."
     }
    ]
   },
@@ -1282,7 +1636,7 @@
    ],
    "pulls": [
     {
-     "what": "Wayback saves for every evidence record with no archive copy yet, saved by the jobs server",
+     "what": "Internet Archive copies of every source we cite",
      "how": "hand",
      "every_days": 0,
      "last": null,
@@ -1290,7 +1644,7 @@
      "result": null,
      "edition": null,
      "file_url": null,
-     "hand_note": "Since 8 Nov the jobs server saves them (jobs/wam-wayback.sh, hourly, 50-minute turns, stops at a 429; Wayback refuses the Mac). On this date, check ~/jobs/status/wam-wayback.json says \"nothing left to save\" and python3 tools/validate.py shows no archive warnings except Costco and Sam's Club, which refuse archiving, and the URLs Wayback saved as some other page (eCFR's bot wall, one bgr.com story: marked \"refused\" in ~/jobs/data/wam-wayback/out.jsonl, never retried). Those need a copy found another way (eCFR: the govinfo annual edition PDF)."
+     "hand_note": "Our server asks the Internet Archive to save a copy of every source we cite that has none yet, a few each hour. Costco and Sam's Club refuse archiving, and a few pages that saved as the wrong page need a copy found another way (for eCFR, the government's annual PDF edition)."
     }
    ]
   },
@@ -1522,6 +1876,33 @@
    "pulls": []
   },
   {
+   "id": "acura-newsroom",
+   "name": "Acura newsroom",
+   "short": "Acura newsroom",
+   "publisher": "American Honda Motor Co., Inc.",
+   "url": "https://acuranews.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Acura itself announced, on the date of the release.",
+   "cannot_prove": "Where one car was built.",
+   "terms": {
+    "url": "https://acuranews.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Acura?",
+     "url": "/who-makes-acura/",
+     "note": "Where Acura models are built"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "allblogthings",
    "name": "All Blog Things",
    "short": "All Blog Things",
@@ -1549,6 +1930,63 @@
    "pulls": []
   },
   {
+   "id": "appliancepartspros",
+   "name": "AppliancePartsPros blog",
+   "short": "AppliancePartsPros",
+   "publisher": "AppliancePartsPros",
+   "url": "https://www.appliancepartspros.com/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "What a parts retailer says about a brand's serial format, and the maker documents it says it used.",
+   "cannot_prove": "A maker's rule: we haven't seen the manuals it cites, so its readings stay Reported.",
+   "terms": {
+    "url": "https://www.appliancepartspros.com/terms-of-use.aspx",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "How old is my appliance, and is it due?",
+     "url": "/how-old-is-my-appliance/"
+    },
+    {
+     "label": "How long do dishwashers last?",
+     "url": "/how-long-do-dishwashers-last/"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "autoguide",
+   "name": "AutoGuide",
+   "short": "AutoGuide",
+   "publisher": "VerticalScope Inc.",
+   "url": "https://www.autoguide.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the publication reported, and when.",
+   "cannot_prove": "That the report is right. We check it against a filing where one exists.",
+   "terms": {
+    "url": "https://www.autoguide.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Acura?",
+     "url": "/who-makes-acura/",
+     "note": "Where Acura models are built"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "bgr",
    "name": "BGR",
    "short": "BGR",
@@ -1571,6 +2009,33 @@
      "label": "Duracell: who makes Kirkland batteries",
      "url": "/makers/duracell/",
      "note": "A 2026 retelling of the 2016 report"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "bmw-group",
+   "name": "BMW Group company pages",
+   "short": "BMW Group",
+   "publisher": "Bayerische Motoren Werke AG",
+   "url": "https://www.bmwgroup.com/en/company.html",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which brands the BMW Group says are its own.",
+   "cannot_prove": "Who owns BMW AG's shares, or where any one model is built.",
+   "terms": {
+    "url": "https://www.bmwgroup.com/en/company.html",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which car brands?",
+     "url": "/who-owns-which-car-brands/",
+     "note": "Owners and shareholdings"
     }
    ],
    "pulls": []
@@ -1630,6 +2095,33 @@
    "pulls": []
   },
   {
+   "id": "bisnow",
+   "name": "Bisnow",
+   "short": "Bisnow",
+   "publisher": "Bisnow Media",
+   "url": "https://www.bisnow.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What a commercial property news site reported, and when.",
+   "cannot_prove": "That the report is right; this one rests on unnamed sources quoted by another paper.",
+   "terms": {
+    "url": "https://www.bisnow.com/terms",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Pokémon cards",
+     "url": "/who-makes-pokemon-cards/",
+     "note": "The reported Spark LS lease in Morrisville"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "bloomberg",
    "name": "Bloomberg News",
    "short": "Bloomberg",
@@ -1679,63 +2171,6 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age recommendation, in the Who says what table"
-    }
-   ],
-   "pulls": []
-  },
-  {
-   "id": "cpsc-recalls",
-   "name": "CPSC recalls database (SaferProducts.gov recall API)",
-   "short": "CPSC recalls",
-   "publisher": "US Consumer Product Safety Commission",
-   "url": "https://www.saferproducts.gov/",
-   "kind": "Regulator",
-   "primary": true,
-   "proves": "Which recalls the CPSC holds with a given word in the title or product name, on the day we searched.",
-   "cannot_prove": "That a product has never had a problem. A search for a word finds only recalls that use it, and CPSC isn't the only agency that can act.",
-   "terms": {
-    "url": "https://www.cpsc.gov/Recalls/CPSC-Recalls-Application-Program-Interface-API-Information",
-    "read": "Open license. We read it with a script.",
-    "automated": true,
-    "checked": "2026-11-10",
-    "due": "2027-11-10"
-   },
-   "credit": null,
-   "used_for": [
-    {
-     "label": "Who makes Kirkland Signature diapers",
-     "url": "/kirkland-signature/diapers/",
-     "note": "Search for recalls with diaper in the title or product name"
-    },
-    {
-     "label": "Who makes Kirkland Signature toilet paper",
-     "url": "/kirkland-signature/toilet-paper/",
-     "note": "Search for toilet paper and paper towel recalls"
-    },
-    {
-     "label": "Who makes Insignia TVs and appliances",
-     "url": "/insignia/",
-     "note": "Six Insignia recalls, 2007 to 2026"
-    },
-    {
-     "label": "Who makes Hart, Hyper Tough, Husky and Harbor Freight tools",
-     "url": "/store-brand-tools/",
-     "note": "22 recalls across the four, 1999 to 2025"
-    },
-    {
-     "label": "Who makes Craftsman tools and mowers",
-     "url": "/craftsman/",
-     "note": "Craftsman recalls 1980 to 2024 and the companies each names"
-    },
-    {
-     "label": "Who makes Onn TVs",
-     "url": "/onn-tv/",
-     "note": "Searched for Onn recalls; none for a TV"
-    },
-    {
-     "label": "Who makes EverStart batteries",
-     "url": "/everstart/",
-     "note": "Recalls searched for EverStart and Baccus"
     }
    ],
    "pulls": []
@@ -1838,6 +2273,118 @@
      "label": "Who makes EverStart batteries",
      "url": "/everstart/",
      "note": "The EverStart warranty sheet Walmart links to"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "cluster-industrial",
+   "name": "Cluster Industrial",
+   "short": "Cluster Industrial",
+   "publisher": "Cluster Industrial (Mexico)",
+   "url": "https://clusterindustrial.com.mx/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the publication reported, and when.",
+   "cannot_prove": "That the report is right. We check it against a filing where one exists.",
+   "terms": {
+    "url": "https://clusterindustrial.com.mx/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Infiniti?",
+     "url": "/who-makes-infiniti/",
+     "note": "Where Infiniti models are built"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "coca-cola-us",
+   "name": "Coca-Cola US brand pages",
+   "short": "Coca-Cola US",
+   "publisher": "The Coca-Cola Company",
+   "url": "https://www.coca-cola.com/us/en/brands",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which drinks The Coca-Cola Company presents as its own brands in the US.",
+   "cannot_prove": "Who bottles a drink in a given area, or where else Coca-Cola owns the brand.",
+   "terms": {
+    "url": "https://www.coca-cola.com/us/en/brands",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which soda brands?",
+     "url": "/who-owns-which-soda-brands/",
+     "note": "Brand owners"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "coca-cola-country",
+   "name": "Coca-Cola country sites",
+   "short": "Coca-Cola country sites",
+   "publisher": "The Coca-Cola Company",
+   "url": "https://www.coca-cola.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which drinks Coca-Cola presents on its own site for a given country.",
+   "cannot_prove": "Who owns a brand's trademark in that country, or which bottler makes it.",
+   "terms": {
+    "url": "https://www.coca-cola.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns Dr Pepper?",
+     "url": "/who-owns-dr-pepper/",
+     "note": "Who sells Dr Pepper outside North America"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "govinfo-cfr",
+   "name": "Code of Federal Regulations, annual edition (govinfo)",
+   "short": "CFR annual edition",
+   "publisher": "US Government Publishing Office",
+   "url": "https://www.govinfo.gov/app/collection/cfr",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What a federal rule said in the year of that edition, e.g. the dishwasher limits in force in 2009 or 2012.",
+   "cannot_prove": "How any one product performed, or what a rule says today (eCFR is the current text).",
+   "terms": {
+    "url": "https://www.govinfo.gov/about/policies",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "How long do dishwashers last?",
+     "url": "/how-long-do-dishwashers-last/"
+    },
+    {
+     "label": "How long do refrigerators last?",
+     "url": "/how-long-do-refrigerators-last/",
+     "note": "The 1993 and 2001 refrigerator limits, 2002 edition"
     }
    ],
    "pulls": []
@@ -2360,6 +2907,19 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "When the four-digit date code began (64 FR 36807)"
+    },
+    {
+     "label": "How old is my appliance, and is it due?",
+     "url": "/how-old-is-my-appliance/"
+    },
+    {
+     "label": "How long do dishwashers last?",
+     "url": "/how-long-do-dishwashers-last/"
+    },
+    {
+     "label": "How long do refrigerators last?",
+     "url": "/how-long-do-refrigerators-last/",
+     "note": "DOE's 2011 and 2024 refrigerator rules"
     }
    ],
    "pulls": []
@@ -2516,6 +3076,41 @@
      "label": "Who makes Kirkland Signature diapers",
      "url": "/kirkland-signature/diapers/",
      "note": "Costco's on-record response in April 2025"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-ge-appliances",
+   "name": "GE Appliances support pages",
+   "short": "GE Appliances",
+   "publisher": "GE Appliances, a Haier company",
+   "url": "https://www.geappliances.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How GE Appliances reads the date letters in its own serial numbers, and where it puts the label.",
+   "cannot_prove": "Anything about other makers' serials, or which plant built a unit.",
+   "terms": {
+    "url": "https://www.geappliances.com/ge/terms-of-use.htm",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "How old is my appliance, and is it due?",
+     "url": "/how-old-is-my-appliance/"
+    },
+    {
+     "label": "How long do dishwashers last?",
+     "url": "/how-long-do-dishwashers-last/"
+    },
+    {
+     "label": "How long do refrigerators last?",
+     "url": "/how-long-do-refrigerators-last/",
+     "note": "Label spots for fridges and freezers"
     }
    ],
    "pulls": []
@@ -2839,6 +3434,87 @@
    "pulls": []
   },
   {
+   "id": "maker-hisense",
+   "name": "Hisense USA product safety recall pages",
+   "short": "Hisense USA",
+   "publisher": "Hisense USA",
+   "url": "https://www.hisense-usa.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Hisense says about its own recalled models: build months, serial ranges and the label spot.",
+   "cannot_prove": "How Hisense numbers serials outside the recall it describes.",
+   "terms": {
+    "url": "https://www.hisense-usa.com/terms-of-use",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "How long do refrigerators last?",
+     "url": "/how-long-do-refrigerators-last/",
+     "note": "Hisense's 2022 fridge recall: serial = build date"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "honda-global-newsroom",
+   "name": "Honda global newsroom",
+   "short": "Honda newsroom",
+   "publisher": "Honda Motor Co., Ltd.",
+   "url": "https://global.honda/en/newsroom/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Honda itself announced, on the date of the release.",
+   "cannot_prove": "Where one car was built.",
+   "terms": {
+    "url": "https://global.honda/en/newsroom/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Acura?",
+     "url": "/who-makes-acura/",
+     "note": "Where Acura models are built"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "honda-manufacturing",
+   "name": "Honda manufacturing site",
+   "short": "Honda manufacturing",
+   "publisher": "Honda Development and Manufacturing of America, LLC",
+   "url": "https://manufacturing.honda.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which vehicles Honda says each of its US plants builds, and when production started.",
+   "cannot_prove": "Where one car was built, or how many of a model come from each plant.",
+   "terms": {
+    "url": "https://manufacturing.honda.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Acura?",
+     "url": "/who-makes-acura/",
+     "note": "Where Acura models are built"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "house-digest",
    "name": "House Digest",
    "short": "House Digest",
@@ -2888,6 +3564,14 @@
      "label": "Who makes Kirkland laundry detergent",
      "url": "/kirkland-laundry-detergent/",
      "note": "Maker records, label doses and prices"
+    },
+    {
+     "label": "How old is my appliance, and is it due?",
+     "url": "/how-old-is-my-appliance/"
+    },
+    {
+     "label": "How long do dishwashers last?",
+     "url": "/how-long-do-dishwashers-last/"
     }
    ],
    "pulls": []
@@ -2915,6 +3599,33 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age advice to owners, in the carmakers table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "infiniti-newsroom",
+   "name": "INFINITI USA newsroom",
+   "short": "INFINITI newsroom",
+   "publisher": "Nissan North America, Inc.",
+   "url": "https://usa.infinitinews.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What INFINITI itself announced, on the date of the release.",
+   "cannot_prove": "Where one car was built.",
+   "terms": {
+    "url": "https://usa.infinitinews.com/",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Infiniti?",
+     "url": "/who-makes-infiniti/",
+     "note": "Where Infiniti models are built"
     }
    ],
    "pulls": []
@@ -3001,6 +3712,33 @@
    "pulls": []
   },
   {
+   "id": "jlr-media",
+   "name": "JLR corporate newsroom",
+   "short": "JLR newsroom",
+   "publisher": "JLR (Jaguar Land Rover Limited)",
+   "url": "https://media.jlr.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What JLR says about itself and its owner, on the date of the release.",
+   "cannot_prove": "Anything about the owner's own shareholders.",
+   "terms": {
+    "url": "https://media.jlr.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which car brands?",
+     "url": "/who-owns-which-car-brands/",
+     "note": "Owners and shareholdings"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-stellantis",
    "name": "Jeep and Ram owner's manuals (Mopar)",
    "short": "Jeep and Ram (Stellantis)",
@@ -3023,6 +3761,33 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age advice to owners, in the carmakers table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "kdp-brands",
+   "name": "Keurig Dr Pepper brand list",
+   "short": "KDP brands",
+   "publisher": "Keurig Dr Pepper Inc.",
+   "url": "https://www.keurigdrpepper.com/brands/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which drinks Keurig Dr Pepper lists as its own brands, and which it sells for partners.",
+   "cannot_prove": "Who owns a brand outside North America, or who bottles it in a given area.",
+   "terms": {
+    "url": "https://www.keurigdrpepper.com/brands/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which soda brands?",
+     "url": "/who-owns-which-soda-brands/",
+     "note": "Brand owners"
     }
    ],
    "pulls": []
@@ -3076,6 +3841,11 @@
     {
      "label": "Where are Kias made?",
      "url": "/where-is-kia-made/",
+     "note": "Hyundai Motor Company's share of Kia"
+    },
+    {
+     "label": "Who owns which car brands?",
+     "url": "/who-owns-which-car-brands/",
      "note": "Hyundai Motor Company's share of Kia"
     }
    ],
@@ -3136,6 +3906,33 @@
    "pulls": []
   },
   {
+   "id": "kodak-stories",
+   "name": "Kodak customer stories",
+   "short": "Kodak",
+   "publisher": "Eastman Kodak Company",
+   "url": "https://www.kodak.com/en/customer-stories/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "What a print-equipment supplier wrote about a customer it sells to.",
+   "cannot_prove": "Anything about the customer beyond what the supplier was told; it's marketing, undated on the page.",
+   "terms": {
+    "url": "https://www.kodak.com/en/company/page/site-terms/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Pokémon cards",
+     "url": "/who-makes-pokemon-cards/",
+     "note": "Millennium's staff and floor space in Morrisville"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "kruger-site",
    "name": "Kruger Products company website",
    "short": "Kruger Products",
@@ -3181,6 +3978,33 @@
    },
    "credit": null,
    "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "lexus-pressroom",
+   "name": "Lexus newsroom",
+   "short": "Lexus newsroom",
+   "publisher": "Toyota Motor North America, Inc.",
+   "url": "https://pressroom.lexus.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Lexus itself says about its history and models in the US.",
+   "cannot_prove": "Where one car was built. It's the company's own account.",
+   "terms": {
+    "url": "https://pressroom.lexus.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Lexus?",
+     "url": "/who-makes-lexus/",
+     "note": "Lexus history and where it's built"
+    }
+   ],
    "pulls": []
   },
   {
@@ -3233,6 +4057,33 @@
      "label": "MISA Imports",
      "url": "/makers/misa-imports/",
      "note": "Where it is based and what it does"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "manufacturing-dive",
+   "name": "Manufacturing Dive",
+   "short": "Manufacturing Dive",
+   "publisher": "Industry Dive, Inc.",
+   "url": "https://www.manufacturingdive.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the publication reported, and when, including what a company spokesperson told it.",
+   "cannot_prove": "That the report is right. We check it against a filing where one exists.",
+   "terms": {
+    "url": "https://www.manufacturingdive.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Lexus?",
+     "url": "/who-makes-lexus/",
+     "note": "Lexus history and where it's built"
     }
    ],
    "pulls": []
@@ -3319,6 +4170,33 @@
    "pulls": []
   },
   {
+   "id": "mazda-ir",
+   "name": "Mazda investor relations",
+   "short": "Mazda IR",
+   "publisher": "Mazda Motor Corporation",
+   "url": "https://www.mazda.com/en/investors/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Mazda's own statements of its major shareholders and capital alliances on the dates given.",
+   "cannot_prove": "Changes after the date given, or what Toyota's shareholding lets it decide.",
+   "terms": {
+    "url": "https://www.mazda.com/en/investors/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which car brands?",
+     "url": "/who-owns-which-car-brands/",
+     "note": "Owners and shareholdings"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-mazda",
    "name": "Mazda owner's manuals",
    "short": "Mazda",
@@ -3400,6 +4278,38 @@
    "pulls": []
   },
   {
+   "id": "mexico-business-news",
+   "name": "Mexico Business News",
+   "short": "Mexico Business News",
+   "publisher": "Mexico Business Publishing",
+   "url": "https://mexicobusiness.news/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the publication reported, and when.",
+   "cannot_prove": "That the report is right. We check it against a filing where one exists.",
+   "terms": {
+    "url": "https://mexicobusiness.news/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Acura?",
+     "url": "/who-makes-acura/",
+     "note": "Where Acura models are built"
+    },
+    {
+     "label": "Who makes Infiniti?",
+     "url": "/who-makes-infiniti/",
+     "note": "The QX50 and QX55 end at Nissan's COMPAS plant in Mexico"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-michelin",
    "name": "Michelin: when to replace tires",
    "short": "Michelin",
@@ -3422,6 +4332,60 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age recommendation, in the Who says what table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-mpg",
+   "name": "Millennium Print Group website",
+   "short": "Millennium Print Group",
+   "publisher": "Millennium Print Group",
+   "url": "https://mprintgroup.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Millennium Print Group says about itself: its owner, what it makes and where it has sites.",
+   "cannot_prove": "Which of its sites prints a given card, or what share of all Pokémon cards it prints.",
+   "terms": {
+    "url": "https://mprintgroup.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Pokémon cards",
+     "url": "/who-makes-pokemon-cards/",
+     "note": "Owned by The Pokémon Company International; sites in North Carolina and the Netherlands"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "mmc-ir",
+   "name": "Mitsubishi Motors investor relations",
+   "short": "Mitsubishi Motors IR",
+   "publisher": "Mitsubishi Motors Corporation",
+   "url": "https://www.mitsubishi-motors.com/en/investors/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Mitsubishi Motors' own statements of its major shareholders on the dates given.",
+   "cannot_prove": "Who holds the shares after the date given.",
+   "terms": {
+    "url": "https://www.mitsubishi-motors.com/en/investors/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which car brands?",
+     "url": "/who-owns-which-car-brands/",
+     "note": "Owners and shareholdings"
     }
    ],
    "pulls": []
@@ -3503,6 +4467,119 @@
      "label": "Who makes Kirkland Signature diapers",
      "url": "/kirkland-signature/diapers/",
      "note": "A hands-on comparison that includes Kirkland"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "edinet-nintendo",
+   "name": "Nintendo annual securities report (EDINET)",
+   "short": "Nintendo filing",
+   "publisher": "Nintendo Co., Ltd., filed with Japan's Financial Services Agency",
+   "url": "https://disclosure2.edinet-fsa.go.jp/",
+   "kind": "Company filings",
+   "primary": true,
+   "proves": "The companies Nintendo reports as subsidiaries and affiliates, and the share of voting rights it holds in each.",
+   "cannot_prove": "Who holds the rest of the shares, or who makes any product.",
+   "terms": {
+    "url": "https://disclosure2.edinet-fsa.go.jp/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Pokémon cards",
+     "url": "/who-makes-pokemon-cards/",
+     "note": "Nintendo's 32% of The Pokémon Company"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "nissan-ir",
+   "name": "Nissan corporate governance reports",
+   "short": "Nissan governance report",
+   "publisher": "Nissan Motor Co., Ltd.",
+   "url": "https://www.nissan-global.com/EN/COMPANY/GOVERNANCE/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Nissan's own statement of its major shareholders and of Renault's voting rights, on the dates given.",
+   "cannot_prove": "Changes after the report's date.",
+   "terms": {
+    "url": "https://www.nissan-global.com/EN/COMPANY/GOVERNANCE/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which car brands?",
+     "url": "/who-owns-which-car-brands/",
+     "note": "Owners and shareholdings"
+    },
+    {
+     "label": "Who makes Infiniti?",
+     "url": "/who-makes-infiniti/",
+     "note": "Renault's stake in Nissan, Infiniti's owner"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "nissan-global-site",
+   "name": "Nissan corporate website",
+   "short": "Nissan corporate site",
+   "publisher": "Nissan Motor Co., Ltd.",
+   "url": "https://www.nissan-global.com/EN/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Nissan says about its own brands and plants.",
+   "cannot_prove": "Where one car was built.",
+   "terms": {
+    "url": "https://www.nissan-global.com/EN/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Infiniti?",
+     "url": "/who-makes-infiniti/",
+     "note": "Where Infiniti models are built"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "nissan-newsroom",
+   "name": "Nissan newsroom",
+   "short": "Nissan newsroom",
+   "publisher": "Nissan Motor Co., Ltd.",
+   "url": "https://global.nissannews.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Nissan itself announced, on the date of the release.",
+   "cannot_prove": "Where one car was built.",
+   "terms": {
+    "url": "https://global.nissannews.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Infiniti?",
+     "url": "/who-makes-infiniti/",
+     "note": "Where Infiniti models are built"
     }
    ],
    "pulls": []
@@ -3664,6 +4741,33 @@
    "pulls": []
   },
   {
+   "id": "open-food-facts",
+   "name": "Open Food Facts product photos",
+   "short": "Open Food Facts photos",
+   "publisher": "Open Food Facts (a nonprofit, open database built by contributors)",
+   "url": "https://world.openfoodfacts.org/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "What a contributor's photo shows printed on one pack, such as the USDA establishment number beside its date code.",
+   "cannot_prove": "Which plant makes the product now: a photo shows one pack, and anyone can upload one. We use a photo only for a code we can read in it, and resolve the code in the official register.",
+   "terms": {
+    "url": "https://world.openfoodfacts.org/terms-of-use",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-11",
+    "due": "2027-11-11"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Trader Joe's products",
+     "url": "/trader-joes/",
+     "note": "The USDA plant number on a photographed Mandarin Orange Chicken bag"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "packaging-impressions",
    "name": "Packaging Impressions",
    "short": "Packaging Impressions",
@@ -3736,6 +4840,33 @@
    },
    "credit": null,
    "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "porsche-newsroom",
+   "name": "Porsche Newsroom",
+   "short": "Porsche Newsroom",
+   "publisher": "Dr. Ing. h.c. F. Porsche AG",
+   "url": "https://newsroom.porsche.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Porsche AG announced, on the date of the release.",
+   "cannot_prove": "Whether an announced deal later closed.",
+   "terms": {
+    "url": "https://newsroom.porsche.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which car brands?",
+     "url": "/who-owns-which-car-brands/",
+     "note": "Owners and shareholdings"
+    }
+   ],
    "pulls": []
   },
   {
@@ -3883,6 +5014,36 @@
    "pulls": []
   },
   {
+   "id": "servicemag",
+   "name": "ServiceMag guides",
+   "short": "ServiceMag",
+   "publisher": "ServiceMag",
+   "url": "https://www.servicemag.org/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "What one appliance-repair guide says about serial date codes.",
+   "cannot_prove": "Any maker's rule.",
+   "terms": {
+    "url": "https://www.servicemag.org/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "How old is my appliance, and is it due?",
+     "url": "/how-old-is-my-appliance/"
+    },
+    {
+     "label": "How long do dishwashers last?",
+     "url": "/how-long-do-dishwashers-last/"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "shaw-local",
    "name": "Shaw Local (Morris Herald-News)",
    "short": "Shaw Local",
@@ -4018,6 +5179,59 @@
    "pulls": []
   },
   {
+   "id": "sd-news-watch",
+   "name": "South Dakota News Watch fact brief (via Dakota News Now)",
+   "short": "SD News Watch",
+   "publisher": "South Dakota News Watch",
+   "url": "https://www.sdnewswatch.org/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What a news fact check reported, and when.",
+   "cannot_prove": "That the report is right; it relies on older press stories, not company records.",
+   "terms": {
+    "url": "https://www.dakotanewsnow.com/terms-of-service/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Pokémon cards",
+     "url": "/who-makes-pokemon-cards/",
+     "note": "Millennium's Howard, South Dakota plant"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "splaitor",
+   "name": "Splaitor",
+   "short": "Splaitor",
+   "publisher": "Splaitor",
+   "url": "https://splaitor.com/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "What one tech blog says about reading Samsung labels.",
+   "cannot_prove": "Any Samsung rule.",
+   "terms": {
+    "url": "https://splaitor.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "How old is my appliance, and is it due?",
+     "url": "/how-old-is-my-appliance/"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-stretch-tite",
    "name": "Stretch-Tite website",
    "short": "Stretch-Tite",
@@ -4036,6 +5250,33 @@
    },
    "credit": null,
    "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "maker-subzero",
+   "name": "Sub-Zero Group support answers",
+   "short": "Sub-Zero",
+   "publisher": "Sub-Zero Group, Inc.",
+   "url": "https://www.subzero-wolf.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where Sub-Zero prints the build date on its own serial tags.",
+   "cannot_prove": "How to decode a Sub-Zero serial number itself.",
+   "terms": {
+    "url": "https://www.subzero-wolf.com/terms-of-use",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "How long do refrigerators last?",
+     "url": "/how-long-do-refrigerators-last/",
+     "note": "Where Sub-Zero prints the build date"
+    }
+   ],
    "pulls": []
   },
   {
@@ -4061,6 +5302,11 @@
      "label": "Where are Subarus made?",
      "url": "/where-is-subaru-made/",
      "note": "Plants in Gunma and Toyota’s shareholding"
+    },
+    {
+     "label": "Who owns which car brands?",
+     "url": "/who-owns-which-car-brands/",
+     "note": "Toyota's share of Subaru"
     }
    ],
    "pulls": []
@@ -4142,6 +5388,60 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age advice to owners, in the carmakers table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "sunkist-growers",
+   "name": "Sunkist Growers licensing page",
+   "short": "Sunkist Growers",
+   "publisher": "Sunkist Growers, Inc.",
+   "url": "https://sunkist.com/en-us/global-licensing",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which companies Sunkist Growers lists as licensees of the Sunkist brand.",
+   "cannot_prove": "What a licensee makes in a given country, or the licence's terms.",
+   "terms": {
+    "url": "https://sunkist.com/en-us/global-licensing",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which soda brands?",
+     "url": "/who-owns-which-soda-brands/",
+     "note": "Brand owners"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "sbfe",
+   "name": "Suntory Beverage & Food Europe newsroom",
+   "short": "SBFE newsroom",
+   "publisher": "Suntory Beverage & Food Europe",
+   "url": "https://suntorybeverageandfood-europe.com/newsroom/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Suntory Beverage & Food Europe announced about its own business and partnerships, on the date of the release.",
+   "cannot_prove": "Who owns a brand's trademark in a given country.",
+   "terms": {
+    "url": "https://suntorybeverageandfood-europe.com/newsroom/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns Dr Pepper?",
+     "url": "/who-owns-dr-pepper/",
+     "note": "Who sells Dr Pepper outside North America"
     }
    ],
    "pulls": []
@@ -4444,6 +5744,11 @@
      "label": "Where are Toyotas made?",
      "url": "/where-is-toyota-made/",
      "note": "Plants in North America and Japan"
+    },
+    {
+     "label": "Who makes Lexus?",
+     "url": "/who-makes-lexus/",
+     "note": "Which plant builds each Lexus model"
     }
    ],
    "pulls": []
@@ -4530,6 +5835,60 @@
    "pulls": []
   },
   {
+   "id": "usda-fsis-recalls",
+   "name": "USDA FSIS recalls and public health alerts",
+   "short": "USDA recall notices",
+   "publisher": "US Department of Agriculture, Food Safety and Inspection Service",
+   "url": "https://www.fsis.usda.gov/recalls",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "Which company recalled a meat, poultry or egg product, the brand and product names on the recalled packs, and the plant number in the USDA mark.",
+   "cannot_prove": "Who makes a product outside the recalled lots and dates. A notice names the recalling establishment, which may pack rather than make the product.",
+   "terms": {
+    "url": "https://www.usda.gov/about-usda/policies-and-links",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-11",
+    "due": "2027-11-11"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Trader Joe's products",
+     "url": "/trader-joes/",
+     "note": "Every FSIS recall and public health alert that names a Trader Joe's pack, read in a browser from FSIS's recall feed"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "govinfo-uscode",
+   "name": "United States Code (govinfo)",
+   "short": "US Code",
+   "publisher": "US Government Publishing Office",
+   "url": "https://www.govinfo.gov/app/collection/uscode",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What a federal statute says, e.g. the refrigerator limits Congress wrote into law for 1990.",
+   "cannot_prove": "How any one product performed, or how a later rule changed the statute's numbers.",
+   "terms": {
+    "url": "https://www.govinfo.gov/about/policies",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "How long do refrigerators last?",
+     "url": "/how-long-do-refrigerators-last/",
+     "note": "The 1990 refrigerator limits in 42 USC 6295"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "us-code",
    "name": "United States Code (via Cornell LII)",
    "short": "US Code",
@@ -4557,6 +5916,60 @@
    "pulls": []
   },
   {
+   "id": "vw-group-ir",
+   "name": "Volkswagen Group annual report",
+   "short": "VW annual report",
+   "publisher": "Volkswagen AG",
+   "url": "https://annualreport2025.volkswagen-group.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Volkswagen AG reports about its own brands and shareholders, as of the reporting date.",
+   "cannot_prove": "Exact holdings in each brand company; the annual report keeps those in a separate list of shareholdings.",
+   "terms": {
+    "url": "https://annualreport2025.volkswagen-group.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which car brands?",
+     "url": "/who-owns-which-car-brands/",
+     "note": "Owners and shareholdings"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "volvo-cars-ir",
+   "name": "Volvo Cars investor relations",
+   "short": "Volvo Cars IR",
+   "publisher": "Volvo Car AB (publ)",
+   "url": "https://investors.volvocars.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Volvo Cars' own statement of its largest owner, as of the report.",
+   "cannot_prove": "Changes after the report's date.",
+   "terms": {
+    "url": "https://investors.volvocars.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which car brands?",
+     "url": "/who-owns-which-car-brands/",
+     "note": "Owners and shareholdings"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "walmart-com",
    "name": "Walmart.com",
    "short": "Walmart.com",
@@ -4579,6 +5992,36 @@
      "label": "Who makes EverStart batteries",
      "url": "/everstart/",
      "note": "EverStart listings, prices and warranty text"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-whirlpool",
+   "name": "Whirlpool Corporation technical manuals",
+   "short": "Whirlpool",
+   "publisher": "Whirlpool Corporation",
+   "url": "https://www.whirlpoolcorp.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How Whirlpool's service manuals lay out a serial number, for the products and years each manual covers.",
+   "cannot_prove": "Serial layouts for years or products a manual doesn't list.",
+   "terms": {
+    "url": "https://www.whirlpool.com/terms-of-use.html",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "How old is my appliance, and is it due?",
+     "url": "/how-old-is-my-appliance/"
+    },
+    {
+     "label": "How long do dishwashers last?",
+     "url": "/how-long-do-dishwashers-last/"
     }
    ],
    "pulls": []
@@ -4627,6 +6070,33 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age recommendation, in the Who says what table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "ebay-listings",
+   "name": "eBay listings (sellers' photos)",
+   "short": "eBay listing photos",
+   "publisher": "eBay sellers",
+   "url": "https://www.ebay.com/",
+   "kind": "Retailer",
+   "primary": false,
+   "proves": "What a seller's photo of one pack shows, on the day we saved it.",
+   "cannot_prove": "That every pack of that set carries the same print, or who printed it: a pack names its publisher, not its printer.",
+   "terms": {
+    "url": "https://www.ebay.com/help/policies/member-behavior-policies/user-agreement?id=4259",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-12",
+    "due": "2027-11-12"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Pokémon cards",
+     "url": "/who-makes-pokemon-cards/",
+     "note": "Printed in the USA and Made in Japan lines on 2026 packs"
     }
    ],
    "pulls": []

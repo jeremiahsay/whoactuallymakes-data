@@ -4,7 +4,7 @@
 
 Who makes store-brand products, from public records. Every list behind [Who Actually Makes](https://whoactuallymakes.com/): which company each Kirkland Signature product traces to, the companies behind store brands and the labels they're on record for, every NHTSA tire plant code, what tire makers and carmakers say about tire age, and the evidence, sources, corrections and update schedule behind it all.
 
-**18 datasets · 13,666 records · version 2026-11-11** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
+**19 datasets · 15,748 records · version 2026-11-13** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
 
 Each answer on the site carries a stamp (confirmed, documented, reported or unverified) and links to the record it rests on. The evidence file keeps the exact quote, the date it was read and a SHA-256 fingerprint of the document, so anyone can check a row against its source. How the stamps work: https://whoactuallymakes.com/how-we-know/
 
@@ -12,24 +12,25 @@ Each answer on the site carries a stamp (confirmed, documented, reported or unve
 
 | Dataset | Records | Updated | Files | On the site |
 |---|---:|---|---|---|
-| [Who makes what: store-brand answers (Kirkland Signature)](#claims) | 328 | 2026-11-09 | [JSON](data/claims.json) (291 KB) · [CSV](data/claims.csv) (181 KB) | [/kirkland-signature/](https://whoactuallymakes.com/kirkland-signature/) |
-| [Companies behind store brands (maker pages)](#companies) | 14 | 2026-11-09 | [JSON](data/companies.json) (8 KB) · [CSV](data/companies.csv) (4 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
-| [Which store labels each company is on record for](#company-labels) | 208 | 2026-11-09 | [JSON](data/company-labels.json) (108 KB) · [CSV](data/company-labels.csv) (68 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
+| [Who makes what: store-brand answers (Kirkland Signature)](#claims) | 730 | 2026-11-11 | [JSON](data/claims.json) (644 KB) · [CSV](data/claims.csv) (398 KB) | [/kirkland-signature/](https://whoactuallymakes.com/kirkland-signature/) |
+| [Companies behind store brands (maker pages)](#companies) | 14 | 2026-11-11 | [JSON](data/companies.json) (8 KB) · [CSV](data/companies.csv) (4 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
+| [Which store labels each company is on record for](#company-labels) | 214 | 2026-11-11 | [JSON](data/company-labels.json) (111 KB) · [CSV](data/company-labels.csv) (69 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
 | [Tire plant codes (NHTSA)](#tire-plants) | 1,246 | 2026-11-09 | [JSON](data/tire-plants.json) (149 KB) · [CSV](data/tire-plants.csv) (89 KB) | [/tire-dot-code-lookup/](https://whoactuallymakes.com/tire-dot-code-lookup/) |
-| [Tire age guidance from tire makers, carmakers and agencies](#tire-age) | 22 | 2026-11-04 | [JSON](data/tire-age.json) (35 KB) · [CSV](data/tire-age.csv) (20 KB) | [/tire-date-code/](https://whoactuallymakes.com/tire-date-code/) |
-| [Evidence records: every quote behind our answers](#evidence) | 1,423 | 2026-11-11 | [JSON](data/evidence.json) (1231 KB) · [CSV](data/evidence.csv) (955 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
-| [Sources: the public records we use, and their limits](#sources) | 150 | 2026-11-11 | [JSON](data/sources.json) (169 KB) · [CSV](data/sources.csv) (70 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
-| [Corrections log](#corrections) | 48 | 2026-11-08 | [JSON](data/corrections.json) (38 KB) · [CSV](data/corrections.csv) (28 KB) | [/corrections/](https://whoactuallymakes.com/corrections/) |
-| [Update schedule: when each list is checked](#schedule) | 46 | 2026-11-11 | [JSON](data/schedule.json) (304 KB) · [CSV](data/schedule.csv) (10 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
+| [Tire age guidance from tire makers, carmakers and agencies](#tire-age) | 22 | 2026-11-12 | [JSON](data/tire-age.json) (35 KB) · [CSV](data/tire-age.csv) (20 KB) | [/tire-date-code/](https://whoactuallymakes.com/tire-date-code/) |
+| [Evidence records: every quote behind our answers](#evidence) | 1,694 | 2026-11-13 | [JSON](data/evidence.json) (1474 KB) · [CSV](data/evidence.csv) (1145 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
+| [Sources: the public records we use, and their limits](#sources) | 194 | 2026-11-13 | [JSON](data/sources.json) (217 KB) · [CSV](data/sources.csv) (89 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
+| [Corrections log](#corrections) | 54 | 2026-11-12 | [JSON](data/corrections.json) (46 KB) · [CSV](data/corrections.csv) (34 KB) | [/corrections/](https://whoactuallymakes.com/corrections/) |
+| [Update schedule: when each list is checked](#schedule) | 57 | 2026-11-13 | [JSON](data/schedule.json) (338 KB) · [CSV](data/schedule.csv) (14 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
 | [Costco diaper prices: every size at every read](#costco-diaper-prices) | 60 | 2026-11-09 | [JSON](data/costco-diaper-prices.json) (18 KB) · [CSV](data/costco-diaper-prices.csv) (8 KB) | [/costco-diapers/](https://whoactuallymakes.com/costco-diapers/) |
 | [Kirkland vs name brands: every pair and its verdict](#kirkland-vs-pairs) | 22 | 2026-11-09 | [JSON](data/kirkland-vs-pairs.json) (21 KB) · [CSV](data/kirkland-vs-pairs.csv) (8 KB) | [/kirkland-vs-name-brands/](https://whoactuallymakes.com/kirkland-vs-name-brands/) |
 | [Car battery date code rules, by brand](#battery-date-codes) | 21 | 2026-11-07 | [JSON](data/battery-date-codes.json) (87 KB) · [CSV](data/battery-date-codes.csv) (4 KB) | [/battery-date-code/](https://whoactuallymakes.com/battery-date-code/) |
 | [USDA meat, poultry and egg plants (FSIS directory)](#usda-establishments) | 7,257 | 2026-11-02 | [JSON](data/usda-establishments.json) (1621 KB) · [CSV](data/usda-establishments.csv) (1443 KB) | [/usda-establishment-number-lookup/](https://whoactuallymakes.com/usda-establishment-number-lookup/) |
-| [Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on](#car-origin-filings) | 475 | 2026-11-09 | [JSON](data/car-origin-filings.json) (205 KB) · [CSV](data/car-origin-filings.csv) (64 KB) | [/where-is-subaru-made/](https://whoactuallymakes.com/where-is-subaru-made/) |
+| [Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on](#car-origin-filings) | 863 | 2026-11-13 | [JSON](data/car-origin-filings.json) (375 KB) · [CSV](data/car-origin-filings.csv) (119 KB) | [/where-is-subaru-made/](https://whoactuallymakes.com/where-is-subaru-made/) |
 | [Insignia model numbers on California's appliance register](#insignia-register) | 714 | 2026-11-10 | [JSON](data/insignia-register.json) (213 KB) · [CSV](data/insignia-register.csv) (108 KB) | [/insignia/](https://whoactuallymakes.com/insignia/) |
 | [Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register](#store-tools-register) | 657 | 2026-11-10 | [JSON](data/store-tools-register.json) (335 KB) · [CSV](data/store-tools-register.csv) (136 KB) | [/store-brand-tools/](https://whoactuallymakes.com/store-brand-tools/) |
 | [Craftsman model numbers and the companies government records name for them](#craftsman-records) | 442 | 2026-11-10 | [JSON](data/craftsman-records.json) (153 KB) · [CSV](data/craftsman-records.csv) (96 KB) | [/craftsman/](https://whoactuallymakes.com/craftsman/) |
 | [Onn TV model numbers and the manufacturers California's appliance register lists for them](#onn-tv-register) | 533 | 2026-11-10 | [JSON](data/onn-tv-register.json) (129 KB) · [CSV](data/onn-tv-register.csv) (56 KB) | [/onn-tv/](https://whoactuallymakes.com/onn-tv/) |
+| [Trader Joe's wine, beer and spirits label approvals (TTB)](#trader-joes-alcohol) | 954 | 2026-11-11 | [JSON](data/trader-joes-alcohol.json) (498 KB) · [CSV](data/trader-joes-alcohol.csv) (265 KB) | [/trader-joes/](https://whoactuallymakes.com/trader-joes/) |
 
 <a id="claims"></a>
 
@@ -601,6 +602,38 @@ One row per Onn TV filing on California's appliance register (MAEDbS), from all 
 | `archived` | boolean | True for rows on the register's archived lists. |
 | `pattern` | boolean | True when the model number holds open characters (*). |
 | `left_out_of_counts` | boolean | True for the 2014-15 rows filed under ONN with other brands' model numbers. |
+
+</details>
+
+<a id="trader-joes-alcohol"></a>
+
+### Trader Joe's wine, beer and spirits label approvals (TTB)
+
+Every label approval in TTB's public COLA registry with a brand name starting "Trader Joe", for the 15 years the registry's search allows: the approval number, the kind of drink, TTB's class, the company that holds the approval (box 8 of the form), the trade name the form says goes on the bottle, origin, date and status, with a link to each form.
+
+- **Limits:** An approval shows which company applied for a label and got it approved, not that the label is on shelves now, and not which of several holders filled the bottle in front of you. One approval covers one label design, so a new vintage or size adds a row; it is not a count of bottles. Six approvals whose form gave no applicant are left out. "holder" groups spellings and related Sazerac companies; "applicant" is as filed.
+- **Kept fresh:** Read in full from TTB's registry when the page is re-checked (next May 2027)
+- **Rights:** US government records in the public domain (TTB). CC BY covers our compiled file; credit TTB for the underlying approvals.
+- **Based on:** 1 public source, listed in `catalog.json` (`based_on`)
+- **Files:** `data/trader-joes-alcohol.json`, `data/trader-joes-alcohol.csv` · live: https://whoactuallymakes.com/data/trader-joes-alcohol.json
+
+<details><summary>The 13 fields</summary>
+
+| Field | Type | What it holds |
+|---|---|---|
+| `ttb_id` | text | TTB's approval number (TTB ID). |
+| `kind` | text | Our grouping of TTB's class: Beer, Bourbon and American whiskey, Canadian whisky, Cocktails, Gin, Irish whiskey, Liqueurs, Mezcal, Other spirits, Other wine, Red wine, Rosé wine, Rum, Scotch whisky, Sparkling wine, Tequila, Vodka, White wine or Wine over 14% alcohol. TTB files still wine over 14% alcohol in its dessert wine class, shown here as "Wine over 14% alcohol". |
+| `ttb_class` | text | TTB's class and type, as on the form. |
+| `brand_on_form` | text | The brand name as filed. |
+| `fanciful_name` | text | The fanciful name, if the form gives one. |
+| `holder` | text | The holder, with spellings and related companies grouped. |
+| `applicant` | text | The applicant name exactly as on the form (box 8). |
+| `holder_place` | text | The holder's city and state as on the form. |
+| `name_on_label` | text | The trade name the form says goes on the bottle, separated by semicolons; blank when the holder's own name is used. |
+| `origin` | text | Origin as filed: a US state or a country. |
+| `approved_on` | date | The date TTB approved the label. |
+| `status` | text | The approval's status when read: Approved, Expired or Surrendered. |
+| `form_url` | url | TTB's public copy of the form. |
 
 </details>
 

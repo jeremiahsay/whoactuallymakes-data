@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-11",
- "last_change": "2026-11-11",
+ "generated": "2026-11-13",
+ "last_change": "2026-11-13",
  "cadence_months": {
   "confirmed": 12,
   "documented": 6,
@@ -41,7 +41,7 @@
     "url": "https://www.fsis.usda.gov/inspection/establishments/meat-poultry-and-egg-product-inspection-directory"
    },
    "file_url": "https://www.fsis.usda.gov/sites/default/files/media_file/documents/MPI_Directory_by_Establishment_Number.csv",
-   "hand_note": "USDA's site refuses scripts, so a person downloads the file in a browser and we load it with tools/load_usda_mpi.py. The lookup, charts and CSV follow at the next build.",
+   "hand_note": "USDA's site turns away automated readers, so a person downloads the directory in a browser. The plant lookup, charts and CSV update at the next build.",
    "once": false,
    "last": "2026-11-02",
    "due": "2026-12-02",
@@ -101,8 +101,8 @@
    "file_url": null,
    "hand_note": "A person re-reads each maker's and agency's page, checks the quote still stands, keeps a new dated copy, and logs any change on the corrections page.",
    "once": false,
-   "last": "2026-11-04",
-   "due": "2027-11-04",
+   "last": "2026-11-12",
+   "due": "2027-11-12",
    "result": "10 rows and 12 carmakers from 24 documents"
   },
   {
@@ -118,10 +118,10 @@
     "url": "https://mygarage.honda.com/s/find-honda"
    },
    "file_url": null,
-   "hand_note": "Honda: read the 2026 CR-V manual on Honda’s own server (down for maintenance on Nov 3 and Nov 4; the table uses an archived 2024 copy). Toyota: try the live 2026 RAV4 manual (the 2025 PDF refused our request on Nov 3 and Nov 4; the table uses an archived 2025 copy). Nissan done Nov 4: the live 2026 Rogue manual says the same as 2024.",
+   "hand_note": "Honda: read the 2026 CR-V manual on Honda’s own server (still down for maintenance on Nov 12, its third failed read; the table uses an archived 2024 copy, and the Internet Archive holds no 2026 copy). Toyota: see whether toyota.com has posted a 2026 RAV4 owner’s manual (none on Nov 12); the 2025 manual was re-read live on Nov 12 and still says the same. Nissan done Nov 4: the live 2026 Rogue manual says the same as 2024.",
    "once": true,
-   "last": "2026-11-04",
-   "due": "2026-11-12",
+   "last": "2026-11-12",
+   "due": "2026-11-26",
    "result": "Every carmaker on the list has a row"
   },
   {
@@ -137,7 +137,7 @@
     "url": "https://lars.ndda.nd.gov/public/productsearch/3"
    },
    "file_url": null,
-   "hand_note": "tools/weekly.py runs tools/fetch_maker_registers.py all once a month: North Dakota's pet food register and FDA recall records for each company. The companies' own pages are re-read by a person at each claim check.",
+   "hand_note": "Once a month our script re-reads North Dakota's pet food register and FDA's recall records for every company. A person re-reads the companies' own pages each time a claim is checked.",
    "once": false,
    "last": "2026-11-03",
    "due": "2026-12-03",
@@ -156,7 +156,7 @@
     "url": "https://www.costco.com/"
    },
    "file_url": null,
-   "hand_note": "Costco forbids scripts, so we read both listings in a browser, then update data/guidance/kirkland-batteries.json and this task. The page follows.",
+   "hand_note": "Costco blocks automated readers, so a person reads both listings in a browser. The page's prices update from that read.",
    "once": false,
    "last": "2026-11-04",
    "due": "2026-12-04",
@@ -175,7 +175,7 @@
     "url": "https://costco.interstatebatteries.com/"
    },
    "file_url": null,
-   "hand_note": "Costco forbids scripts, so a person looks up the same cars in the finder in a browser, updates data/guidance/costco-car-batteries.json and this task.",
+   "hand_note": "Costco blocks automated readers, so a person looks up the same cars in Costco's battery finder in a browser, so prices compare like for like.",
    "once": false,
    "last": "2026-11-04",
    "due": "2026-12-04",
@@ -194,7 +194,7 @@
     "url": "https://www.costco.com/"
    },
    "file_url": null,
-   "hand_note": "Costco forbids scripts, so we read each size in a browser, updates data/guidance/kirkland-diapers.json and this task. The cost section's prose is typed in a browser: re-check its \"16 to 32 cents\" and $39.99 lines, and log any new offer's dates.",
+   "hand_note": "Costco blocks automated readers, so a person reads each size in a browser, re-checks the page's \"16 to 32 cents\" and $39.99 lines, and notes the dates of any new offer.",
    "once": false,
    "last": "2026-11-05",
    "due": "2026-12-05",
@@ -232,7 +232,7 @@
     "url": "https://www.costco.com/"
    },
    "file_url": null,
-   "hand_note": "Costco forbids scripts, so we read each listing in a browser, then update data/guidance/kirkland-toilet-paper.json and this task. The page's prose repeats these figures: re-check the Charmin and Bounty sections. If Seattle shows no warehouse price, pick another warehouse on Costco's picker. Do this with costco-toilet-paper-prices.",
+   "hand_note": "Costco blocks automated readers, so a person reads each listing in a browser, along with the Charmin and Bounty sections that repeat these prices. If the Seattle warehouse shows no price, we use another warehouse.",
    "once": false,
    "last": "2026-11-05",
    "due": "2026-12-05",
@@ -270,7 +270,7 @@
     "url": "https://www.costco.com/"
    },
    "file_url": null,
-   "hand_note": "Costco forbids scripts, so we read each listing in a browser, changing warehouse on Costco's picker when one shows no price. Update data/guidance/costco-toilet-paper.json; the build stops on any prose dollar figure the data doesn't hold, so re-read the prose too. Sam's Club offers end Nov 18 and Nov 29.",
+   "hand_note": "Costco blocks automated readers, so a person reads each pack's listing in a browser, switching warehouse when one shows no price. The page won't publish a dollar figure the read doesn't back. Sam's Club offers end Nov 18 and Nov 29.",
    "once": false,
    "last": "2026-11-05",
    "due": "2026-12-05",
@@ -289,7 +289,7 @@
     "url": "https://www.costco.com/"
    },
    "file_url": null,
-   "hand_note": "Read in a browser, one listing at a time, ZIP 98101. Open each gallery back-panel photo and the Product Label PDF. A new maker line changes a verdict, and that needs the owner.",
+   "hand_note": "Read in a browser one listing at a time (ZIP 98101), including each back-panel photo and the product label PDF. If a new maker line appears, the verdict changes only after the site owner approves it.",
    "once": false,
    "last": "2026-11-06",
    "due": "2026-12-06",
@@ -327,7 +327,7 @@
     "url": "https://www.costco.com/"
    },
    "file_url": null,
-   "hand_note": "Read in a browser at ZIP 98101: click each size on the six listings, plus Newborn. Log any new offer's dates in data/guidance/costco-diapers.json. Read again the day after an offer ends. Update kirkland-diapers.json too: the build stops if the two disagree.",
+   "hand_note": "Read in a browser at ZIP 98101, size by size on all six listings plus Newborn. Offers are re-read the day after they end. The page won't publish if these prices and the Kirkland diaper page disagree.",
    "once": false,
    "last": "2026-11-09",
    "due": "2026-11-23",
@@ -346,7 +346,7 @@
     "url": "https://www.samsclub.com/"
    },
    "file_url": null,
-   "hand_note": "The extension can't read samsclub.com, so the owner saves the product page in Chrome, or sends screenshots. Update sams in data/guidance/costco-diapers.json.",
+   "hand_note": "Sam's Club's site can't be read automatically, so we save the product page in a browser or work from screenshots.",
    "once": false,
    "last": "2026-11-06",
    "due": "2026-12-06",
@@ -365,7 +365,7 @@
     "url": "https://www.costco.com/"
    },
    "file_url": null,
-   "hand_note": "Read Costco.com search pages in a browser, one at a time. Update shelf in data/guidance/kirkland-vs.json.",
+   "hand_note": "Costco's search pages, read in a browser one at a time, for the shelf prices the comparison uses.",
    "once": false,
    "last": "2026-11-06",
    "due": "2026-12-09",
@@ -384,7 +384,7 @@
     "url": "https://www.interstatebatteries.com/"
    },
    "file_url": null,
-   "hand_note": "Re-read each record in data/guidance/battery-date-codes.json in a browser, one at a time. Try the newer ODYSSEY sheets and the K0 line first. Look for newer Ford and ACDelco warranty sheets, since those records date from 2005 and 2015. Owner approves any rule change.",
+   "hand_note": "Each maker's date code sheet is re-read in a browser, with the newer ODYSSEY sheets and the K0 line first. We also look for newer Ford and ACDelco warranty sheets, because ours date from 2005 and 2015. A rule change needs the site owner's approval.",
    "once": false,
    "last": "2026-11-07",
    "due": "2027-05-07",
@@ -403,7 +403,7 @@
     "url": "https://www.nhtsa.gov/recalls"
    },
    "file_url": null,
-   "hand_note": "Read NHTSA's FLAT_RCL_POST_2010 file and filter equipment recalls (type E) for 12V starter batteries. Lithium, traction and jump starters don't count. A new campaign needs owner approval before the page changes.",
+   "hand_note": "NHTSA's full recall file, filtered to equipment recalls of 12V starter batteries (not lithium, traction batteries or jump starters). A new recall goes on the page after the site owner approves it.",
    "once": false,
    "last": "2026-11-06",
    "due": "2027-02-04",
@@ -441,7 +441,7 @@
     "url": "https://engineoil.api.org/Directory/EolcsSearch"
    },
    "file_url": null,
-   "hand_note": "Search API's public directory in a browser, one brand at a time, then update data/registries/api-eolcs/.",
+   "hand_note": "API's public licence directory, searched in a browser one brand at a time.",
    "once": false,
    "last": "2026-11-03",
    "due": "2027-04-05",
@@ -464,7 +464,7 @@
    "once": false,
    "last": "2026-11-06",
    "due": "2027-11-06",
-   "result": "22 rule texts on file"
+   "result": "26 rule texts on file"
   },
   {
    "id": "usda-legend-read",
@@ -498,7 +498,7 @@
     "url": "https://www.costco.com/"
    },
    "file_url": null,
-   "hand_note": "Read the listing in a browser the day after the offer ends, then update data/guidance/kirkland-batteries.json.",
+   "hand_note": "The listing is re-read the day after the offer ends, to see what replaced it.",
    "once": true,
    "last": null,
    "due": "2026-11-16",
@@ -517,7 +517,7 @@
     "url": "https://www.samsclub.com/"
    },
    "file_url": null,
-   "hand_note": "The extension can't read samsclub.com, so the owner saves the page in Chrome. Update data/guidance/costco-toilet-paper.json.",
+   "hand_note": "Sam's Club's site can't be read automatically, so we save the page in a browser after each offer ends.",
    "once": true,
    "last": null,
    "due": "2026-11-30",
@@ -536,7 +536,7 @@
     "url": "https://www.costco.com/"
    },
    "file_url": null,
-   "hand_note": "Read in a browser, one listing at a time, ZIP 98101 and 98115. Open each gallery photo and zoom in on the seal and the date strip. EST. 45951 on any pack proves Morris, and that changes a stamp: the owner approves it.",
+   "hand_note": "Read in a browser one listing at a time (ZIPs 98101 and 98115), zooming in on the USDA seal and date strip in each photo. Plant number EST. 45951 on a pack would prove Morris made it; that changes a stamp only after the site owner approves it.",
    "once": false,
    "last": "2026-11-07",
    "due": "2026-12-07",
@@ -563,7 +563,7 @@
   },
   {
    "id": "wam-wayback-saves",
-   "what": "Wayback saves for every evidence record with no archive copy yet, saved by the jobs server",
+   "what": "Internet Archive copies of every source we cite",
    "gives": "Archived copy links on the evidence records",
    "how": "hand",
    "every_days": 0,
@@ -574,7 +574,7 @@
     "url": "https://www.whiting-turner.com/"
    },
    "file_url": null,
-   "hand_note": "Since 8 Nov the jobs server saves them (jobs/wam-wayback.sh, hourly, 50-minute turns, stops at a 429; Wayback refuses the Mac). On this date, check ~/jobs/status/wam-wayback.json says \"nothing left to save\" and python3 tools/validate.py shows no archive warnings except Costco and Sam's Club, which refuse archiving, and the URLs Wayback saved as some other page (eCFR's bot wall, one bgr.com story: marked \"refused\" in ~/jobs/data/wam-wayback/out.jsonl, never retried). Those need a copy found another way (eCFR: the govinfo annual edition PDF).",
+   "hand_note": "Our server asks the Internet Archive to save a copy of every source we cite that has none yet, a few each hour. Costco and Sam's Club refuse archiving, and a few pages that saved as the wrong page need a copy found another way (for eCFR, the government's annual PDF edition).",
    "once": true,
    "last": null,
    "due": "2026-11-14",
@@ -593,7 +593,7 @@
     "url": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
    },
    "file_url": null,
-   "hand_note": "nhtsa.gov refuses scripts. Open the Part 583 page in Chrome, save the newest report, add it to data/aala/reports.json with its SHA-256, run tools/parse_aala.py and tools/build_car_origin.py (it rebuilds the Subaru and Kia pages). Check media.subaru.com for new model-year assembly lines.",
+   "hand_note": "NHTSA's yearly parts-content report (where each model is assembled), saved in a browser because nhtsa.gov turns away automated readers, plus Subaru's newsroom for new model-year assembly lines. The Subaru and Kia pages rebuild from it.",
    "once": false,
    "last": null,
    "due": "2026-12-07",
@@ -612,7 +612,7 @@
     "url": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
    },
    "file_url": null,
-   "hand_note": "nhtsa.gov and kiamedia.com refuse scripts. Save the newest AALA report in Chrome as for Subaru, then run tools/parse_aala.py and tools/build_car_origin.py. Read kiamedia.com pricing releases and model pages in Chrome for new assembly lines; check whether the Sportage Hybrid's second plant is named.",
+   "hand_note": "The same NHTSA report, plus Kia's US newsroom (pricing releases and model pages) for new assembly lines. Is the Sportage Hybrid's second plant named yet?",
    "once": false,
    "last": null,
    "due": "2026-12-08",
@@ -631,10 +631,29 @@
     "url": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
    },
    "file_url": null,
-   "hand_note": "nhtsa.gov and pressroom.toyota.com refuse scripts. Save the newest AALA report in Chrome as for Subaru, then run tools/parse_aala.py and tools/build_car_origin.py. Re-read the two global.toyota plant lists and data/aala/placed.json rows.",
+   "hand_note": "The same NHTSA report, plus Toyota's two global plant lists, read in a browser because Toyota's newsroom turns away automated readers.",
    "once": false,
    "last": null,
    "due": "2026-12-09",
+   "result": null
+  },
+  {
+   "id": "lexus-origin-reads",
+   "what": "Who makes Lexus: NHTSA report and Toyota plant lists",
+   "gives": "New Lexus rows in the AALA report and any change to Toyota's plant lists for Lexus models, for /who-makes-lexus/",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "nhtsa-aala",
+    "name": "NHTSA Part 583 American Automobile Labeling Act reports",
+    "publisher": "US National Highway Traffic Safety Administration",
+    "url": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
+   },
+   "file_url": null,
+   "hand_note": "The same NHTSA report as Toyota. The page won't rebuild if a Lexus model is filed by anyone but Toyota, or if the count of US-built or Japan-only models changes, until the lines that rely on them are rewritten. Is the RC still sold, and are the Shanghai plant's cars for the US?",
+   "once": false,
+   "last": null,
+   "due": "2026-12-13",
    "result": null
   },
   {
@@ -650,7 +669,7 @@
     "url": "https://ttbonline.gov/colasonline/publicSearchColasBasic.do"
    },
    "file_url": null,
-   "hand_note": "Runs from the Mac (TTB doesn't answer our servers): launchd com.whoactuallymakes.ttb, Sundays 20:00. New approvals are listed in data/leads/ttb/new.json; read each label and add it to data/records/ttb-label-reads.json.",
+   "hand_note": "A weekly read of TTB's label approvals for Kirkland (Sundays). TTB doesn't answer our servers, so it runs from a desktop computer. A person reads each new label before it is added.",
    "once": false,
    "last": "2026-11-08",
    "due": "2026-11-15",
@@ -707,7 +726,7 @@
     "url": "https://www.costco.com/"
    },
    "file_url": null,
-   "hand_note": "Costco.com is read in a browser. Re-read every Kirkland coffee listing on the page's table, update site-data/kirkland-coffee.json, and log any listing that starts or stops naming a roaster.",
+   "hand_note": "Every Kirkland coffee listing in the page's table, read in a browser. We note any listing that starts or stops naming a roaster.",
    "once": false,
    "last": "2026-11-08",
    "due": "2026-12-08",
@@ -726,7 +745,7 @@
     "url": "https://www.sec.gov/edgar/search/"
    },
    "file_url": null,
-   "hand_note": "EDGAR full-text search for \"private label diaper\" with CIK 0000055785, in a browser (efts.sec.gov). Read the newest earnings release (8-K exhibit 99.1); add a row to data/makers/kimberly-clark.json filings with its own words, and an evidence record via tools/archive.py.",
+   "hand_note": "Kimberly-Clark's newest earnings release on SEC EDGAR, and a full-text search of its filings for \"private label diaper\". Anything new is quoted in its own words and archived.",
    "once": false,
    "last": "2026-11-08",
    "due": "2027-02-08",
@@ -783,7 +802,7 @@
     "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
    },
    "file_url": null,
-   "hand_note": "Read in a browser: Advanced Search, brand Insignia, each product type; export the CSV, save it under research/ with its fingerprint, then run tools/build_insignia.py.",
+   "hand_note": "California's appliance register, searched for Insignia by product type. The export is saved and fingerprinted, so the page can show exactly what the register said.",
    "once": false,
    "last": "2026-11-10",
    "due": "2026-12-10",
@@ -802,7 +821,7 @@
     "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
    },
    "file_url": null,
-   "hand_note": "Run tools/cec_maedbs_pull.py for each charger list (see research/2026-11-10-store-brand-tools/raw/cec/manifest.json for the searches), save into a new dated research folder with a manifest, point build_store_tools.py at it, then run it.",
+   "hand_note": "California's appliance register, searched again for each store brand's battery chargers, saved with the date of the read.",
    "once": false,
    "last": "2026-11-10",
    "due": "2026-12-10",
@@ -821,7 +840,7 @@
     "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
    },
    "file_url": null,
-   "hand_note": "Run tools/cec_maedbs_pull.py for Craftsman on both charger lists (see research/2026-11-10-craftsman/raw/cec/manifest.json), re-run the four CPSC searches in research/2026-11-10-craftsman/raw/cpsc-recalls-craftsman.json, and read Stanley Black & Decker's newest 10-Q or 10-K for Craftsman, MTD and Transform Holdco. Save into a new dated research folder, point build_craftsman.py at it, then run it. The EPA 1997-2010 archive doesn't change.",
+   "hand_note": "California's charger register for Craftsman, the four CPSC recall searches, and Stanley Black & Decker's newest 10-Q or 10-K on Craftsman, MTD and Transform Holdco. The EPA archive for 1997 to 2010 doesn't change.",
    "once": false,
    "last": "2026-11-10",
    "due": "2026-12-10",
@@ -840,7 +859,7 @@
     "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
    },
    "file_url": null,
-   "hand_note": "Run tools/cec_maedbs_pull.py for brands ONN and onn. on the three TV lists, status Approved, and for every brand on the archived TV lists (see research/2026-11-10-onn/raw/cec/manifest.json); rebuild other-brands.json from every approved TV row. Read Walmart's newest 10-K or 10-Q for onn. and VIZIO, and re-read the two Onn support sites in a browser. Save into a new dated research folder, point build_onn.py at it, then run it.",
+   "hand_note": "California's TV lists for onn. (and every brand on the archived lists, for the comparison table), Walmart's newest 10-K or 10-Q on onn. and VIZIO, and the two onn. support sites, read in a browser.",
    "once": false,
    "last": "2026-11-10",
    "due": "2026-12-10",
@@ -859,7 +878,7 @@
     "url": "https://opendata.fcc.gov/d/3b3k-34jp"
    },
    "file_url": null,
-   "hand_note": "Download https://opendata.fcc.gov/api/views/3b3k-34jp/rows.csv?accessType=DOWNLOAD and the dataset's metadata (api/views/3b3k-34jp.json) into a new dated research folder; if the newest registration date moved past 22 Mar 2021, update the page's wording about the cut-off. Re-read the FCC Covered List in a browser and update covered and covered_categories in data/guidance/fcc-id.json. Point the guidance at the new CSV and its sha256, then run tools/build_fcc.py.",
+   "hand_note": "The FCC's open grantee register, downloaded fresh: if its newest registration date has moved past 22 Mar 2021, the page's wording about the cut-off changes. The FCC Covered List is re-read in a browser.",
    "once": false,
    "last": "2026-11-10",
    "due": "2026-12-10",
@@ -878,11 +897,201 @@
     "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
    },
    "file_url": null,
-   "hand_note": "Run tools/cec_maedbs_pull.py for brands EverStart and EverStart maxx on the Federally Regulated Battery Chargers list, status Approved. Re-read in Chrome the eight Walmart listings in research/2026-11-11-everstart/raw/web/walmart-everstart-listings-2026-11-11.txt and the Clarios-hosted warranty sheet they link. Search SEC full text (efts.sec.gov) for EverStart filed since the last read. Save into a new dated research folder, point build_everstart.py and the guidance at it, then run it. A new maker named for the batteries is a correction for the owner.",
+   "hand_note": "California's charger register for EverStart and EverStart maxx, Walmart's eight EverStart listings and the warranty sheet they link (in a browser), and a full-text search of SEC filings naming EverStart. A newly named battery maker is a correction, approved by the site owner.",
    "once": false,
    "last": "2026-11-11",
    "due": "2026-12-11",
    "result": "62 EverStart charger filings (Baccus 57); 8 Walmart listings read; Clarios filings to 31 May 2024"
+  },
+  {
+   "id": "pokemon-cards-records",
+   "what": "Millennium Print Group's site, The Pokémon Company International's press site, Nintendo's newest securities report, FSC Search for Millennium, and new reports on Millennium's plants",
+   "gives": "The printer, owner share, plants and pack lines on the Pokémon cards page",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "tpc-press",
+    "name": "The Pokémon Company International press site",
+    "publisher": "The Pokémon Company International",
+    "url": "https://press.pokemon.com/"
+   },
+   "file_url": null,
+   "hand_note": "Millennium Print Group's site, The Pokémon Company's press site, Nintendo's newest securities report (its affiliate table) and FSC's certificate search. A new printer, or Nintendo's share changing, is a correction approved by the site owner.",
+   "once": false,
+   "last": "2026-11-12",
+   "due": "2027-02-12",
+   "result": "TPCi 2022 release names Millennium (since 2015); Millennium says TPCi subsidiary, NC + Netherlands; Nintendo 32% (FY to Mar 2026); FSC Greensboro valid"
+  },
+  {
+   "id": "pokemon-cards-figures",
+   "what": "The Pokémon Company's Pokémon in Figures page (cards produced, languages, countries)",
+   "gives": "The cards-per-year chart and the totals on the Pokémon cards page",
+   "how": "hand",
+   "every_days": 365,
+   "source": {
+    "id": "tpc-corporate",
+    "name": "The Pokémon Company corporate site",
+    "publisher": "The Pokémon Company (Japan)",
+    "url": "https://corporate.pokemon.co.jp/en/"
+   },
+   "file_url": null,
+   "hand_note": "The Pokémon Company updates this page once a year, usually by summer, with totals to the end of March. We read it in a browser and save a copy, so the production figures can be traced.",
+   "once": false,
+   "last": "2026-11-12",
+   "due": "2027-06-15",
+   "result": "Over 85 billion cards to end of March 2026; 16 languages; over 90 countries and regions"
+  },
+  {
+   "id": "appliance-age-rules",
+   "what": "DOE's newest rule or proposal for dishwashers, refrigerators and freezers, clothes washers, dryers, microwaves, cooking products and dehumidifiers; GE's serial chart and label-location pages; Whirlpool's technical manuals; AppliancePartsPros, Hunker, ServiceMag and Splaitor guides; any new maker page for LG, Samsung, Bosch or Frigidaire",
+   "gives": "The lifetimes, survival curves, serial rules and label spots on /how-old-is-my-appliance/",
+   "how": "hand",
+   "every_days": 180,
+   "source": {
+    "id": "doe-rulemaking-dockets",
+    "name": "DOE appliance standards technical support documents (regulations.gov dockets and energy.gov)",
+    "publisher": "US Department of Energy, Appliance and Equipment Standards Program",
+    "url": "https://www.energy.gov/eere/buildings/appliance-and-equipment-standards-program"
+   },
+   "file_url": null,
+   "hand_note": "The Federal Register for each product's newest efficiency rule and the lifetime it assumes, GE's serial chart and label pages, and Whirlpool's technical manuals for year codes. A changed lifetime or rule is a correction approved by the site owner, and the page's diagrams are redrawn.",
+   "once": false,
+   "last": "2026-11-12",
+   "due": "2027-05-12",
+   "result": "DOE lifetimes 10.78 (microwave) to 18.4 (freezer) yrs from 2023-24 rules; GE chart is GE's; Whirlpool manual covers 2019-2022; LG, Frigidaire, Bosch third-party; Samsung no rule"
+  },
+  {
+   "id": "dishwasher-recalls",
+   "what": "CPSC's recall database for any new recall with 'dishwasher' in its title or product name; eCFR 10 CFR 430.32(f) for any change to the dishwasher limits or the April 23, 2027 date",
+   "gives": "The recall list, the decoder's recall card and the limits table on /how-long-do-dishwashers-last/",
+   "how": "script",
+   "every_days": 90,
+   "source": {
+    "id": "cpsc-recalls",
+    "name": "CPSC recalls database (SaferProducts.gov recall API)",
+    "publisher": "US Consumer Product Safety Commission",
+    "url": "https://www.saferproducts.gov/"
+   },
+   "file_url": null,
+   "hand_note": "CPSC's recall database for any new recall with 'dishwasher' in its title or product, and the federal dishwasher limits (10 CFR 430.32(f)) and their April 23, 2027 date. A new recall or a changed limit goes on the page after the site owner approves the wording.",
+   "once": false,
+   "last": "2026-11-12",
+   "due": "2027-02-12",
+   "result": "22 notices (20 recalls, 1988-2021), all fire or overheating; eCFR as of Nov 9, 2026 keeps the 2027 limits (223 kWh, 3.3 gal)"
+  },
+  {
+   "id": "fridge-recalls",
+   "what": "CPSC's recall database for any new household refrigerator, freezer or minifridge recall; eCFR 10 CFR 430.32(a) for any change to the refrigerator limits or the 2029/2030 dates; Hisense's recall page and Sub-Zero's age page",
+   "gives": "The recall list, the decoder's recall card, the era limits and the Hisense and Sub-Zero rules on /how-long-do-refrigerators-last/",
+   "how": "script",
+   "every_days": 90,
+   "source": {
+    "id": "cpsc-recalls",
+    "name": "CPSC recalls database (SaferProducts.gov recall API)",
+    "publisher": "US Consumer Product Safety Commission",
+    "url": "https://www.saferproducts.gov/"
+   },
+   "file_url": null,
+   "hand_note": "CPSC's recall database for any new household refrigerator, freezer or minifridge recall, and the federal refrigerator limits (10 CFR 430.32(a)) and their 2029 and 2030 dates. A new recall or a changed limit goes on the page after the site owner approves the wording.",
+   "once": false,
+   "last": "2026-11-12",
+   "due": "2027-02-12",
+   "result": "35 household recalls (24 fridge, 5 freezer, 6 minifridge, 1977-2026) plus 2 CPSC old-appliance warnings; eCFR as of Nov 9, 2026 keeps the 2029/2030 dates"
+  },
+  {
+   "id": "car-brands-records",
+   "what": "Carmakers' annual filings and shareholder pages (SEC 10-K and 20-F, Volkswagen, BMW, JLR, Volvo Cars, Nissan, Mitsubishi Motors, Mazda, Subaru, Kia) and NHTSA's newest AALA report",
+   "gives": "The owners, stakes, assembly countries and rival-built models on /who-owns-which-car-brands/",
+   "how": "hand",
+   "every_days": 182,
+   "source": {
+    "id": "sec-edgar",
+    "name": "SEC EDGAR company filings",
+    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+    "url": "https://www.sec.gov/edgar/search/"
+   },
+   "file_url": null,
+   "hand_note": "Each carmaker's newest annual filing or shareholder page, re-checked against every quote on the page, and NHTSA's newest parts-content report. A changed stake, a brand changing hands, or a deal closing (Bugatti, Lotus UK) is a correction approved by the site owner.",
+   "once": false,
+   "last": null,
+   "due": "2027-05-13",
+   "result": null
+  },
+  {
+   "id": "soda-brands-records",
+   "what": "Soda companies' annual filings and releases (Coca-Cola, PepsiCo, Keurig Dr Pepper, National Beverage, Coca-Cola Consolidated and Celsius 10-Ks; KDP 8-Ks) and the Coca-Cola US and KDP brand pages",
+   "gives": "The owners, country splits, bottling facts, Coca-Cola stakes and timeline on /who-owns-which-soda-brands/",
+   "how": "hand",
+   "every_days": 106,
+   "source": {
+    "id": "sec-edgar",
+    "name": "SEC EDGAR company filings",
+    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+    "url": "https://www.sec.gov/edgar/search/"
+   },
+   "file_url": null,
+   "hand_note": "Each soda company's newest annual filing after the February 10-Ks, re-checked against every quote on the page. When Keurig Dr Pepper's split into a drinks company and a coffee company completes (targeted for early 2027), every KDP soda changes owner, and the page changes with it.",
+   "once": false,
+   "last": null,
+   "due": "2027-02-27",
+   "result": null
+  },
+  {
+   "id": "dr-pepper-split",
+   "what": "Keurig Dr Pepper's newest 8-Ks and 10-Q (EDGAR, CIK 1418135)",
+   "gives": "The split status, its target date and the new company's name on /who-owns-dr-pepper/ and the soda hub",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "sec-edgar",
+    "name": "SEC EDGAR company filings",
+    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+    "url": "https://www.sec.gov/edgar/search/"
+   },
+   "file_url": null,
+   "hand_note": "Keurig Dr Pepper's filings since our last read. If an 8-K or 10-Q changes the split's target date or the drinks company's name, the page quotes it. When the split completes, every KDP brand changes owner on both pages, as a correction approved by the site owner.",
+   "once": false,
+   "last": null,
+   "due": "2027-02-27",
+   "result": null
+  },
+  {
+   "id": "acura-origin-reads",
+   "what": "Who makes Acura: NHTSA report and Honda plant lists",
+   "gives": "New Acura rows in the AALA report and any change to Honda's plant lists for Acura models, for /who-makes-acura/",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "nhtsa-aala",
+    "name": "NHTSA Part 583 American Automobile Labeling Act reports",
+    "publisher": "US National Highway Traffic Safety Administration",
+    "url": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
+   },
+   "file_url": null,
+   "hand_note": "The same NHTSA report as the other car pages. The page won't rebuild if an Acura model is filed by anyone but Honda (GM for the ZDX), or if the count of US-built or Mexican-built models changes, until the lines that rely on them are rewritten. Is the TLX still sold, and does Honda itself name the ADX plant?",
+   "once": false,
+   "last": null,
+   "due": "2026-12-13",
+   "result": null
+  },
+  {
+   "id": "infiniti-origin-reads",
+   "what": "Who makes Infiniti: NHTSA report and Nissan releases",
+   "gives": "New Infiniti rows in the AALA report and any Nissan or INFINITI statement on where a model is built, for /who-makes-infiniti/",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "nhtsa-aala",
+    "name": "NHTSA Part 583 American Automobile Labeling Act reports",
+    "publisher": "US National Highway Traffic Safety Administration",
+    "url": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
+   },
+   "file_url": null,
+   "hand_note": "The same NHTSA report as the other car pages. The page won't rebuild if an Infiniti model is filed by anyone but Nissan, or if the count of US-built or Japan-built models changes, until the lines that rely on them are rewritten. Has Nissan itself said when the QX50 and QX55 ended?",
+   "once": false,
+   "last": null,
+   "due": "2026-12-13",
+   "result": null
   }
  ],
  "terms": [
@@ -927,11 +1136,35 @@
    "automated_read": "no"
   },
   {
+   "source": "Acura newsroom",
+   "publisher": "American Honda Motor Co., Inc.",
+   "url": "https://acuranews.com/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
    "source": "All Blog Things",
    "publisher": "All Blog Things",
    "url": "https://www.allblogthings.com/",
    "checked": "2026-11-06",
    "due": "2027-11-06",
+   "automated_read": "ask"
+  },
+  {
+   "source": "AppliancePartsPros blog",
+   "publisher": "AppliancePartsPros",
+   "url": "https://www.appliancepartspros.com/terms-of-use.aspx",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
+   "automated_read": "yes"
+  },
+  {
+   "source": "AutoGuide",
+   "publisher": "VerticalScope Inc.",
+   "url": "https://www.autoguide.com/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
    "automated_read": "ask"
   },
   {
@@ -941,6 +1174,14 @@
    "checked": "2026-11-08",
    "due": "2027-11-08",
    "automated_read": "yes"
+  },
+  {
+   "source": "BMW Group company pages",
+   "publisher": "Bayerische Motoren Werke AG",
+   "url": "https://www.bmwgroup.com/en/company.html",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
   },
   {
    "source": "BabyGearLab",
@@ -956,6 +1197,14 @@
    "url": "https://www.batteriesinaflash.com/robots.txt",
    "checked": "2026-11-06",
    "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Bisnow",
+   "publisher": "Bisnow Media",
+   "url": "https://www.bisnow.com/terms",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
    "automated_read": "yes"
   },
   {
@@ -1023,6 +1272,38 @@
    "automated_read": "no"
   },
   {
+   "source": "Cluster Industrial",
+   "publisher": "Cluster Industrial (Mexico)",
+   "url": "https://clusterindustrial.com.mx/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Coca-Cola US brand pages",
+   "publisher": "The Coca-Cola Company",
+   "url": "https://www.coca-cola.com/us/en/brands",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Coca-Cola country sites",
+   "publisher": "The Coca-Cola Company",
+   "url": "https://www.coca-cola.com/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Code of Federal Regulations, annual edition (govinfo)",
+   "publisher": "US Government Publishing Office",
+   "url": "https://www.govinfo.gov/about/policies",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
+   "automated_read": "public-domain"
+  },
+  {
    "source": "Consumer Reports",
    "publisher": "Consumer Reports",
    "url": "https://www.consumerreports.org/",
@@ -1085,6 +1366,14 @@
    "checked": "2026-11-10",
    "due": "2027-11-10",
    "automated_read": "no"
+  },
+  {
+   "source": "DOE appliance standards technical support documents (regulations.gov dockets and energy.gov)",
+   "publisher": "US Department of Energy, Appliance and Equipment Standards Program",
+   "url": "https://www.regulations.gov/user-notice",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
+   "automated_read": "public-domain"
   },
   {
    "source": "DailyMed drug labels",
@@ -1202,8 +1491,8 @@
    "source": "FSC Search (FSC certificate register)",
    "publisher": "Forest Stewardship Council",
    "url": "https://search.fsc.org/en/disclaimer/",
-   "checked": "2026-11-05",
-   "due": "2027-11-05",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
    "automated_read": "no"
   },
   {
@@ -1269,6 +1558,14 @@
    "checked": "2026-11-05",
    "due": "2027-11-05",
    "automated_read": "ask"
+  },
+  {
+   "source": "GE Appliances support pages",
+   "publisher": "GE Appliances, a Haier company",
+   "url": "https://www.geappliances.com/ge/terms-of-use.htm",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
+   "automated_read": "yes"
   },
   {
    "source": "GOV.UK: Department for Transport and DVSA",
@@ -1367,6 +1664,30 @@
    "automated_read": "ask"
   },
   {
+   "source": "Hisense USA product safety recall pages",
+   "publisher": "Hisense USA",
+   "url": "https://www.hisense-usa.com/terms-of-use",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Honda global newsroom",
+   "publisher": "Honda Motor Co., Ltd.",
+   "url": "https://global.honda/en/newsroom/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Honda manufacturing site",
+   "publisher": "Honda Development and Manufacturing of America, LLC",
+   "url": "https://manufacturing.honda.com/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
    "source": "Honda owner's manuals",
    "publisher": "American Honda Motor Co., Inc.",
    "url": "https://www.honda.com/",
@@ -1397,6 +1718,14 @@
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "ask"
+  },
+  {
+   "source": "INFINITI USA newsroom",
+   "publisher": "Nissan North America, Inc.",
+   "url": "https://usa.infinitinews.com/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "no"
   },
   {
    "source": "Industrial Info Resources",
@@ -1431,11 +1760,27 @@
    "automated_read": "yes"
   },
   {
+   "source": "JLR corporate newsroom",
+   "publisher": "JLR (Jaguar Land Rover Limited)",
+   "url": "https://media.jlr.com/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
    "source": "Jeep and Ram owner's manuals (Mopar)",
    "publisher": "FCA US LLC (Stellantis)",
    "url": "https://www.chrysler.com/crossbrand_us/terms-of-use",
    "checked": "2026-11-03",
    "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Keurig Dr Pepper brand list",
+   "publisher": "Keurig Dr Pepper Inc.",
+   "url": "https://www.keurigdrpepper.com/brands/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
    "automated_read": "ask"
   },
   {
@@ -1471,6 +1816,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "Kodak customer stories",
+   "publisher": "Eastman Kodak Company",
+   "url": "https://www.kodak.com/en/company/page/site-terms/",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
+   "automated_read": "yes"
+  },
+  {
    "source": "Kruger Products company website",
    "publisher": "Kruger Products",
    "url": "https://www.krugerproducts.ca/",
@@ -1487,6 +1840,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "Lexus newsroom",
+   "publisher": "Toyota Motor North America, Inc.",
+   "url": "https://pressroom.lexus.com/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
    "source": "MG2 project pages",
    "publisher": "MG2",
    "url": "https://mg2.com/",
@@ -1501,6 +1862,14 @@
    "checked": "2026-11-08",
    "due": "2027-11-08",
    "automated_read": "yes"
+  },
+  {
+   "source": "Manufacturing Dive",
+   "publisher": "Industry Dive, Inc.",
+   "url": "https://www.manufacturingdive.com/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
   },
   {
    "source": "MarketBeat earnings call transcripts",
@@ -1527,6 +1896,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "Mazda investor relations",
+   "publisher": "Mazda Motor Corporation",
+   "url": "https://www.mazda.com/en/investors/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
    "source": "Mazda owner's manuals",
    "publisher": "Mazda North American Operations",
    "url": "https://www.mazdausa.com/site/terms-of-use",
@@ -1551,11 +1928,35 @@
    "automated_read": "yes"
   },
   {
+   "source": "Mexico Business News",
+   "publisher": "Mexico Business Publishing",
+   "url": "https://mexicobusiness.news/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
    "source": "Michelin: when to replace tires",
    "publisher": "Michelin North America (Canada)",
    "url": "https://www.michelin.ca/en/legal-privacy-center/terms-of-use",
    "checked": "2026-11-03",
    "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Millennium Print Group website",
+   "publisher": "Millennium Print Group",
+   "url": "https://mprintgroup.com/",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Mitsubishi Motors investor relations",
+   "publisher": "Mitsubishi Motors Corporation",
+   "url": "https://www.mitsubishi-motors.com/en/investors/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
    "automated_read": "ask"
   },
   {
@@ -1615,6 +2016,38 @@
    "automated_read": "ask"
   },
   {
+   "source": "Nintendo annual securities report (EDINET)",
+   "publisher": "Nintendo Co., Ltd., filed with Japan's Financial Services Agency",
+   "url": "https://disclosure2.edinet-fsa.go.jp/",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Nissan corporate governance reports",
+   "publisher": "Nissan Motor Co., Ltd.",
+   "url": "https://www.nissan-global.com/EN/COMPANY/GOVERNANCE/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Nissan corporate website",
+   "publisher": "Nissan Motor Co., Ltd.",
+   "url": "https://www.nissan-global.com/EN/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Nissan newsroom",
+   "publisher": "Nissan Motor Co., Ltd.",
+   "url": "https://global.nissannews.com/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
    "source": "Nissan owner's manuals",
    "publisher": "Nissan North America, Inc.",
    "url": "https://www.nissanusa.com/",
@@ -1671,6 +2104,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "Open Food Facts product photos",
+   "publisher": "Open Food Facts (a nonprofit, open database built by contributors)",
+   "url": "https://world.openfoodfacts.org/terms-of-use",
+   "checked": "2026-11-11",
+   "due": "2027-11-11",
+   "automated_read": "yes"
+  },
+  {
    "source": "Packaging Impressions",
    "publisher": "Packaging Impressions",
    "url": "https://www.packagingimpressions.com/",
@@ -1693,6 +2134,14 @@
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "yes"
+  },
+  {
+   "source": "Porsche Newsroom",
+   "publisher": "Dr. Ing. h.c. F. Porsche AG",
+   "url": "https://newsroom.porsche.com/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
   },
   {
    "source": "QVC community forum",
@@ -1722,8 +2171,8 @@
    "source": "SEC EDGAR company filings",
    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
    "url": "https://www.sec.gov/os/accessing-edgar-data",
-   "checked": "2026-11-10",
-   "due": "2027-11-10",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
    "automated_read": "yes"
   },
   {
@@ -1767,6 +2216,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "ServiceMag guides",
+   "publisher": "ServiceMag",
+   "url": "https://www.servicemag.org/",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
+   "automated_read": "yes"
+  },
+  {
    "source": "Shaw Local (Morris Herald-News)",
    "publisher": "Shaw Local News Network",
    "url": "https://www.shawlocal.com/",
@@ -1807,12 +2264,36 @@
    "automated_read": "ask"
   },
   {
+   "source": "South Dakota News Watch fact brief (via Dakota News Now)",
+   "publisher": "South Dakota News Watch",
+   "url": "https://www.dakotanewsnow.com/terms-of-service/",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Splaitor",
+   "publisher": "Splaitor",
+   "url": "https://splaitor.com/",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
+   "automated_read": "yes"
+  },
+  {
    "source": "Stretch-Tite website",
    "publisher": "Stretch-Tite (Polyvinyl family of food wraps)",
    "url": "https://www.stretchtite.com/",
    "checked": "2026-11-06",
    "due": "2027-11-06",
    "automated_read": "no"
+  },
+  {
+   "source": "Sub-Zero Group support answers",
+   "publisher": "Sub-Zero Group, Inc.",
+   "url": "https://www.subzero-wolf.com/terms-of-use",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
+   "automated_read": "yes"
   },
   {
    "source": "Subaru Corporation investor relations",
@@ -1844,6 +2325,22 @@
    "url": "https://www.subaru.com/support/terms-and-conditions.html",
    "checked": "2026-11-03",
    "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Sunkist Growers licensing page",
+   "publisher": "Sunkist Growers, Inc.",
+   "url": "https://sunkist.com/en-us/global-licensing",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Suntory Beverage & Food Europe newsroom",
+   "publisher": "Suntory Beverage & Food Europe",
+   "url": "https://suntorybeverageandfood-europe.com/newsroom/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
    "automated_read": "ask"
   },
   {
@@ -1900,6 +2397,22 @@
    "url": "https://thekrazycouponlady.com/krazy-coupon-lady-privacy-policy",
    "checked": "2026-11-08",
    "due": "2027-11-08",
+   "automated_read": "ask"
+  },
+  {
+   "source": "The Pokémon Company International press site",
+   "publisher": "The Pokémon Company International",
+   "url": "https://www.pokemon.com/us/terms-of-use/",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
+   "automated_read": "ask"
+  },
+  {
+   "source": "The Pokémon Company corporate site",
+   "publisher": "The Pokémon Company (Japan)",
+   "url": "https://corporate.pokemon.co.jp/en/privacy/",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
    "automated_read": "ask"
   },
   {
@@ -1975,6 +2488,14 @@
    "automated_read": "no"
   },
   {
+   "source": "USDA FSIS recalls and public health alerts",
+   "publisher": "US Department of Agriculture, Food Safety and Inspection Service",
+   "url": "https://www.usda.gov/about-usda/policies-and-links",
+   "checked": "2026-11-11",
+   "due": "2027-11-11",
+   "automated_read": "no"
+  },
+  {
    "source": "USGA List of Conforming Golf Balls, past editions",
    "publisher": "United States Golf Association (USGA), with The R&A; copies kept by the Internet Archive",
    "url": "https://archive.org/about/terms.php",
@@ -2015,12 +2536,36 @@
    "automated_read": "ask"
   },
   {
+   "source": "United States Code (govinfo)",
+   "publisher": "US Government Publishing Office",
+   "url": "https://www.govinfo.gov/about/policies",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
+   "automated_read": "public-domain"
+  },
+  {
    "source": "United States Code (via Cornell LII)",
    "publisher": "US Congress (Office of the Law Revision Counsel); text served by Cornell Law School's Legal Information Institute",
    "url": "https://www.law.cornell.edu/lii/terms/documentation",
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "public-domain"
+  },
+  {
+   "source": "Volkswagen Group annual report",
+   "publisher": "Volkswagen AG",
+   "url": "https://annualreport2025.volkswagen-group.com/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Volvo Cars investor relations",
+   "publisher": "Volvo Car AB (publ)",
+   "url": "https://investors.volvocars.com/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
   },
   {
    "source": "WSB-TV Channel 2 Atlanta",
@@ -2036,6 +2581,14 @@
    "url": "https://www.walmart.com/help/article/walmart-com-terms-of-use/3b75080af40340d6bbd596f116fae5a0",
    "checked": "2026-11-11",
    "due": "2027-11-11",
+   "automated_read": "no"
+  },
+  {
+   "source": "Whirlpool Corporation technical manuals",
+   "publisher": "Whirlpool Corporation",
+   "url": "https://www.whirlpool.com/terms-of-use.html",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
    "automated_read": "no"
   },
   {
@@ -2061,6 +2614,14 @@
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "ask"
+  },
+  {
+   "source": "eBay listings (sellers' photos)",
+   "publisher": "eBay sellers",
+   "url": "https://www.ebay.com/help/policies/member-behavior-policies/user-agreement?id=4259",
+   "checked": "2026-11-12",
+   "due": "2027-11-12",
+   "automated_read": "no"
   },
   {
    "source": "onn. TV support websites (onntvsupport.com)",
@@ -7899,6 +8460,16 @@
    "page": "/trader-joes/"
   },
   {
+   "id": "c-tj-bbq-white-chicken-salad-ghsw",
+   "product": "tj-bbq-white-chicken-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's BBQ Seasoned White Chicken Salad",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
    "id": "c-tj-brie-old-europe-cheese",
    "product": "tj-brie",
    "stamp": "documented",
@@ -7915,6 +8486,26 @@
    "next_check": "2027-05-11",
    "last_check": "2026-11-11",
    "name": "Trader Joe's Unexpected Broccoli Cheddar Soup",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-broccoli-slaw-kale-salad-chicken-ghiringhelli-specialty-foods-034-2016",
+   "product": "tj-broccoli-slaw-kale-salad-chicken",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Broccoli Slaw & Kale Salad with White Chicken Meat",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-broccoli-slaw-kale-salad-chicken-ghiringhelli-specialty-foods",
+   "product": "tj-broccoli-slaw-kale-salad-chicken",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Broccoli Slaw & Kale Salad with White Chicken Meat",
    "brand": "trader-joes",
    "page": "/trader-joes/"
   },
@@ -7969,6 +8560,16 @@
    "page": "/trader-joes/"
   },
   {
+   "id": "c-tj-caesar-salad-white-chicken-fs-produce-west",
+   "product": "tj-caesar-salad-white-chicken",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Caesar Salad with White Chicken Meat",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
    "id": "c-tj-california-rolls-fuji-food-products",
    "product": "tj-california-rolls",
    "stamp": "documented",
@@ -7999,6 +8600,16 @@
    "page": "/trader-joes/"
   },
   {
+   "id": "c-tj-carnitas-salsa-verde-burrito-bakkavor-usa",
+   "product": "tj-carnitas-salsa-verde-burrito",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Carnitas with Salsa Verde Burrito",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
    "id": "c-tj-carrot-juice-barsotti-juice",
    "product": "tj-carrot-juice",
    "stamp": "documented",
@@ -8019,12 +8630,62 @@
    "page": "/trader-joes/"
   },
   {
+   "id": "c-tj-chicken-breakfast-sausage-diluigi-foods",
+   "product": "tj-chicken-breakfast-sausage",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Chicken Breakfast Sausage",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-chicken-fried-rice-ajinomoto-foods-north-america",
+   "product": "tj-chicken-fried-rice",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Chicken Fried Rice",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-chicken-fried-rice-ajinomoto-windsor",
+   "product": "tj-chicken-fried-rice",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Chicken Fried Rice",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-chicken-lentil-pilaf-mama-vickys",
+   "product": "tj-chicken-lentil-pilaf",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Chicken, Lentil & Caramelized Onion Pilaf",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
    "id": "c-tj-chickenless-tenders-dr-praegers",
    "product": "tj-chickenless-tenders",
    "stamp": "documented",
    "next_check": "2027-05-11",
    "last_check": "2026-11-11",
    "name": "Trader Joe's Chickenless Crispy Tenders",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-chile-lime-chicken-burgers-innovative-solutions-kent",
+   "product": "tj-chile-lime-chicken-burgers",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Chile Lime Chicken Burgers",
    "brand": "trader-joes",
    "page": "/trader-joes/"
   },
@@ -8079,12 +8740,42 @@
    "page": "/trader-joes/"
   },
   {
+   "id": "c-tj-cobb-salad-huxtables-kitchen",
+   "product": "tj-cobb-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Cobb Salad",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
    "id": "c-tj-coconut-cranberry-granola-new-england-natural-bakers",
    "product": "tj-coconut-cranberry-granola",
    "stamp": "documented",
    "next_check": "2027-05-11",
    "last_check": "2026-11-11",
    "name": "Trader Joe's Coconut Cranberry Granola",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-crunchy-slaw-chicken-r-and-g-fine-foods",
+   "product": "tj-crunchy-slaw-chicken",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Crunchy Slaw with Chicken",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-curried-white-chicken-salad-green-cuisine",
+   "product": "tj-curried-white-chicken-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Curried White Chicken Deli Salad",
    "brand": "trader-joes",
    "page": "/trader-joes/"
   },
@@ -8125,6 +8816,16 @@
    "next_check": "2027-05-11",
    "last_check": "2026-11-11",
    "name": "Trader Joe's Egg White Salad with Chives",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-field-fresh-chopped-salad-chicken-ghsw",
+   "product": "tj-field-fresh-chopped-salad-chicken",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Field Fresh Chopped Salad with Grilled White Chicken",
    "brand": "trader-joes",
    "page": "/trader-joes/"
   },
@@ -8195,6 +8896,16 @@
    "next_check": "2027-05-11",
    "last_check": "2026-11-11",
    "name": "Trader Joe's Genova Pesto",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-giotto-caesar-salad-chicken-ghiringhelli-specialty-foods",
+   "product": "tj-giotto-caesar-salad-chicken",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Giotto's Caesar Salad with Chicken Breast",
    "brand": "trader-joes",
    "page": "/trader-joes/"
   },
@@ -8329,6 +9040,16 @@
    "page": "/trader-joes/"
   },
   {
+   "id": "c-tj-jose-breakfast-burritos-flagship-food-group",
+   "product": "tj-jose-breakfast-burritos",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader José's Breakfast Burritos",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
    "id": "c-tj-kale-edamame-salad-world-class-distribution",
    "product": "tj-kale-edamame-salad",
    "stamp": "documented",
@@ -8349,6 +9070,16 @@
    "page": "/trader-joes/"
   },
   {
+   "id": "c-tj-lemon-chicken-arugula-salad-gh-foods-nw",
+   "product": "tj-lemon-chicken-arugula-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Lemon Chicken & Arugula Salad",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
    "id": "c-tj-lemony-arugula-salad-kit-taylor-farms-retail",
    "product": "tj-lemony-arugula-salad-kit",
    "stamp": "documented",
@@ -8365,6 +9096,16 @@
    "next_check": "2027-05-11",
    "last_check": "2026-11-11",
    "name": "Trader Joe's 50% Less Sodium Roasted & Salted Whole Cashews",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-mandarin-orange-chicken-out-of-the-shell",
+   "product": "tj-mandarin-orange-chicken",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Mandarin Orange Chicken",
    "brand": "trader-joes",
    "page": "/trader-joes/"
   },
@@ -8395,6 +9136,36 @@
    "next_check": "2027-05-11",
    "last_check": "2026-11-11",
    "name": "Trader Darwin's Chewable Melatonin",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-mexicali-salad-chicken-ghse",
+   "product": "tj-mexicali-salad-chicken",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader José's Mexicali Inspired Salad with Chili Seasoned Chicken",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-mexicali-salad-chicken-ghsw",
+   "product": "tj-mexicali-salad-chicken",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader José's Mexicali Inspired Salad with Chili Seasoned Chicken",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-mexicali-salad-chicken-marys-harvest-fresh-foods",
+   "product": "tj-mexicali-salad-chicken",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader José's Mexicali Inspired Salad with Chili Seasoned Chicken",
    "brand": "trader-joes",
    "page": "/trader-joes/"
   },
@@ -8789,6 +9560,16 @@
    "page": "/trader-joes/"
   },
   {
+   "id": "c-tj-steamed-chicken-soup-dumplings-cj-foods-manufacturing-beaumont",
+   "product": "tj-steamed-chicken-soup-dumplings",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Steamed Chicken Soup Dumplings",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
    "id": "c-tj-stir-fry-veggies-marys-harvest-fresh-foods",
    "product": "tj-stir-fry-veggies",
    "stamp": "documented",
@@ -8815,6 +9596,16 @@
    "next_check": "2027-05-11",
    "last_check": "2026-11-11",
    "name": "Trader Joe's Super Spinach Salad",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-sweet-apple-chicken-sausage-kayem-foods",
+   "product": "tj-sweet-apple-chicken-sausage",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Sweet Apple Chicken Sausage",
    "brand": "trader-joes",
    "page": "/trader-joes/"
   },
@@ -8969,12 +9760,52 @@
    "page": "/trader-joes/"
   },
   {
+   "id": "c-tj-turkey-cranberry-apple-salad-green-cuisine",
+   "product": "tj-turkey-cranberry-apple-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Turkey Cranberry Apple Salad",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-turkey-gobbler-wrap-wcd-kitchen-minooka",
+   "product": "tj-turkey-gobbler-wrap",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Turkey Gobbler Wrap",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
    "id": "c-tj-turkey-stock-treehouse-foods",
    "product": "tj-turkey-stock",
    "stamp": "documented",
    "next_check": "2027-05-11",
    "last_check": "2026-11-11",
    "name": "Trader Joe's Turkey Stock",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-uncured-bacon-ganache-bar-vosges-haut-chocolat",
+   "product": "tj-uncured-bacon-ganache-bar",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Uncured Bacon Ganache Bar",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-uncured-bacon-spinach-salad-huxtables-kitchen",
+   "product": "tj-uncured-bacon-spinach-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Uncured Bacon & Spinach Salad",
    "brand": "trader-joes",
    "page": "/trader-joes/"
   },
@@ -9069,6 +9900,26 @@
    "page": "/trader-joes/"
   },
   {
+   "id": "c-tj-white-meat-chicken-salad-green-cuisine",
+   "product": "tj-white-meat-chicken-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's White Meat Chicken Salad",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
+   "id": "c-tj-wine-country-chicken-salad-taylor-farms-northwest",
+   "product": "tj-wine-country-chicken-salad",
+   "stamp": "documented",
+   "next_check": "2027-05-11",
+   "last_check": "2026-11-11",
+   "name": "Trader Joe's Wine Country White Chicken Salad",
+   "brand": "trader-joes",
+   "page": "/trader-joes/"
+  },
+  {
    "id": "c-tj-yellow-corn-chip-rounds-snak-king",
    "product": "tj-yellow-corn-chip-rounds",
    "stamp": "documented",
@@ -9121,18 +9972,18 @@
   },
   {
    "path": "/tire-date-code/",
-   "changed": "2026-11-04",
-   "next": "2026-11-12",
+   "changed": "2026-11-12",
+   "next": "2026-11-26",
    "tasks": [
     {
      "id": "tire-age-guidance",
      "what": "Tire age guidance: who says what",
-     "due": "2027-11-04"
+     "due": "2027-11-12"
     },
     {
      "id": "tire-age-carmaker-followup",
      "what": "Tire age: carmaker manuals to re-check",
-     "due": "2026-11-12"
+     "due": "2026-11-26"
     },
     {
      "id": "federal-rule-texts",
@@ -9342,6 +10193,22 @@
    "claims": 131,
    "stamps": {
     "documented": 131
+   }
+  },
+  {
+   "path": "/trader-joes/",
+   "changed": "2026-11-11",
+   "next": "2026-11-18",
+   "tasks": [
+    {
+     "id": "openfda-leads",
+     "what": "FDA recall records that mention store brands",
+     "due": "2026-11-18"
+    }
+   ],
+   "claims": 402,
+   "stamps": {
+    "documented": 402
    }
   },
   {
@@ -9626,7 +10493,7 @@
   },
   {
    "path": "/makers/",
-   "changed": "2026-11-09",
+   "changed": "2026-11-11",
    "next": "2026-12-03",
    "tasks": [
     {
@@ -9693,7 +10560,7 @@
   },
   {
    "path": "/makers/sazerac/",
-   "changed": "2026-11-09",
+   "changed": "2026-11-11",
    "next": "2026-12-03",
    "tasks": [
     {
@@ -9702,9 +10569,9 @@
      "due": "2026-12-03"
     }
    ],
-   "claims": 20,
+   "claims": 26,
    "stamps": {
-    "documented": 20
+    "documented": 26
    }
   },
   {
@@ -9725,7 +10592,7 @@
   },
   {
    "path": "/makers/perrigo/",
-   "changed": "2026-11-09",
+   "changed": "2026-11-12",
    "next": "2026-11-16",
    "tasks": [
     {
@@ -9746,7 +10613,7 @@
   },
   {
    "path": "/makers/lnk-international/",
-   "changed": "2026-11-09",
+   "changed": "2026-11-12",
    "next": "2026-11-16",
    "tasks": [
     {
@@ -9831,7 +10698,7 @@
   },
   {
    "path": "/how-we-know/",
-   "changed": "2026-11-11",
+   "changed": "2026-11-13",
    "next": "2026-12-08",
    "tasks": [],
    "claims": null,
@@ -9839,7 +10706,7 @@
   },
   {
    "path": "/sources/",
-   "changed": "2026-11-11",
+   "changed": "2026-11-13",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -9847,7 +10714,7 @@
   },
   {
    "path": "/corrections/",
-   "changed": "2026-11-08",
+   "changed": "2026-11-12",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -9855,7 +10722,7 @@
   },
   {
    "path": "/data/",
-   "changed": "2026-11-11",
+   "changed": "2026-11-13",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -9980,7 +10847,7 @@
   },
   {
    "path": "/home/",
-   "changed": "2026-11-11",
+   "changed": "2026-11-13",
    "next": "2026-11-16",
    "tasks": [
     {
@@ -9999,7 +10866,7 @@
   },
   {
    "path": "/about/",
-   "changed": "2026-11-11",
+   "changed": "2026-11-13",
    "next": "2027-11-08",
    "tasks": [
     {
@@ -10260,9 +11127,175 @@
    ],
    "claims": 0,
    "stamps": {}
+  },
+  {
+   "path": "/who-makes-pokemon-cards/",
+   "changed": "2026-11-12",
+   "next": "2027-02-12",
+   "tasks": [
+    {
+     "id": "pokemon-cards-records",
+     "what": "Millennium Print Group's site, The Pokémon Company International's press site, Nintendo's newest securities report, FSC Search for Millennium, and new reports on Millennium's plants",
+     "due": "2027-02-12"
+    },
+    {
+     "id": "pokemon-cards-figures",
+     "what": "The Pokémon Company's Pokémon in Figures page (cards produced, languages, countries)",
+     "due": "2027-06-15"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/how-old-is-my-appliance/",
+   "changed": "2026-11-12",
+   "next": "2027-05-12",
+   "tasks": [
+    {
+     "id": "appliance-age-rules",
+     "what": "DOE's newest rule or proposal for dishwashers, refrigerators and freezers, clothes washers, dryers, microwaves, cooking products and dehumidifiers; GE's serial chart and label-location pages; Whirlpool's technical manuals; AppliancePartsPros, Hunker, ServiceMag and Splaitor guides; any new maker page for LG, Samsung, Bosch or Frigidaire",
+     "due": "2027-05-12"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/how-long-do-dishwashers-last/",
+   "changed": "2026-11-12",
+   "next": "2027-02-12",
+   "tasks": [
+    {
+     "id": "appliance-age-rules",
+     "what": "DOE's newest rule or proposal for dishwashers, refrigerators and freezers, clothes washers, dryers, microwaves, cooking products and dehumidifiers; GE's serial chart and label-location pages; Whirlpool's technical manuals; AppliancePartsPros, Hunker, ServiceMag and Splaitor guides; any new maker page for LG, Samsung, Bosch or Frigidaire",
+     "due": "2027-05-12"
+    },
+    {
+     "id": "dishwasher-recalls",
+     "what": "CPSC's recall database for any new recall with 'dishwasher' in its title or product name; eCFR 10 CFR 430.32(f) for any change to the dishwasher limits or the April 23, 2027 date",
+     "due": "2027-02-12"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/how-long-do-refrigerators-last/",
+   "changed": "2026-11-12",
+   "next": "2027-02-12",
+   "tasks": [
+    {
+     "id": "appliance-age-rules",
+     "what": "DOE's newest rule or proposal for dishwashers, refrigerators and freezers, clothes washers, dryers, microwaves, cooking products and dehumidifiers; GE's serial chart and label-location pages; Whirlpool's technical manuals; AppliancePartsPros, Hunker, ServiceMag and Splaitor guides; any new maker page for LG, Samsung, Bosch or Frigidaire",
+     "due": "2027-05-12"
+    },
+    {
+     "id": "fridge-recalls",
+     "what": "CPSC's recall database for any new household refrigerator, freezer or minifridge recall; eCFR 10 CFR 430.32(a) for any change to the refrigerator limits or the 2029/2030 dates; Hisense's recall page and Sub-Zero's age page",
+     "due": "2027-02-12"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/who-owns-which-car-brands/",
+   "changed": "2026-11-13",
+   "next": "2027-05-13",
+   "tasks": [
+    {
+     "id": "car-brands-records",
+     "what": "Carmakers' annual filings and shareholder pages (SEC 10-K and 20-F, Volkswagen, BMW, JLR, Volvo Cars, Nissan, Mitsubishi Motors, Mazda, Subaru, Kia) and NHTSA's newest AALA report",
+     "due": "2027-05-13"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/who-owns-which-soda-brands/",
+   "changed": "2026-11-13",
+   "next": "2027-02-27",
+   "tasks": [
+    {
+     "id": "soda-brands-records",
+     "what": "Soda companies' annual filings and releases (Coca-Cola, PepsiCo, Keurig Dr Pepper, National Beverage, Coca-Cola Consolidated and Celsius 10-Ks; KDP 8-Ks) and the Coca-Cola US and KDP brand pages",
+     "due": "2027-02-27"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/who-owns-dr-pepper/",
+   "changed": "2026-11-13",
+   "next": "2027-02-27",
+   "tasks": [
+    {
+     "id": "soda-brands-records",
+     "what": "Soda companies' annual filings and releases (Coca-Cola, PepsiCo, Keurig Dr Pepper, National Beverage, Coca-Cola Consolidated and Celsius 10-Ks; KDP 8-Ks) and the Coca-Cola US and KDP brand pages",
+     "due": "2027-02-27"
+    },
+    {
+     "id": "dr-pepper-split",
+     "what": "Keurig Dr Pepper's newest 8-Ks and 10-Q (EDGAR, CIK 1418135)",
+     "due": "2027-02-27"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/who-makes-lexus/",
+   "changed": "2026-11-13",
+   "next": "2026-12-13",
+   "tasks": [
+    {
+     "id": "lexus-origin-reads",
+     "what": "Who makes Lexus: NHTSA report and Toyota plant lists",
+     "due": "2026-12-13"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/who-makes-acura/",
+   "changed": "2026-11-13",
+   "next": "2026-12-13",
+   "tasks": [
+    {
+     "id": "acura-origin-reads",
+     "what": "Who makes Acura: NHTSA report and Honda plant lists",
+     "due": "2026-12-13"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/who-makes-infiniti/",
+   "changed": "2026-11-13",
+   "next": "2026-12-13",
+   "tasks": [
+    {
+     "id": "infiniti-origin-reads",
+     "what": "Who makes Infiniti: NHTSA report and Nissan releases",
+     "due": "2026-12-13"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
   }
  ],
  "done": [
+  {
+   "on": "2026-11-12",
+   "task": "tire-age-carmaker-followup",
+   "what": "Second re-check of the Honda and Toyota manuals behind the tire age table",
+   "result": "Toyota: 2025 RAV4 manual opened live at the address toyota.com now uses, byte for byte the copy we quoted, so the link was switched to it; no 2026 manual posted yet. Honda: manual server still down for maintenance, no archived 2026 copy. Re-booked for Nov 26."
+  },
   {
    "on": "2026-11-09",
    "task": "nhtsa-tire-plants",
@@ -10362,13 +11395,13 @@
   {
    "on": "2026-11-04",
    "task": "costco-car-battery-prices",
-   "what": "Costco car battery prices by group size (hand re-read in Chrome, same day as the first read)",
+   "what": "Costco car battery prices by group size (hand re-read in a browser, same day as the first read)",
    "result": "No change: all 12 group sizes and 19 items at the same prices at ZIPs 75254, 98101 and 10001 (standard $114.99-$129.99, AGM $179.99-$184.99, $15 core); 2012 Malibu 2.4L still no result; online AGM 1624802 still $299.99 and out of stock (the search tile showed $199.99, the product page $299.99)."
   },
   {
    "on": "2026-11-04",
    "task": "kirkland-battery-prices",
-   "what": "Kirkland and Duracell battery prices at Costco (hand re-read in Chrome)",
+   "what": "Kirkland and Duracell battery prices at Costco (hand re-read in a browser)",
    "result": "No change: Kirkland AA 48 $16.99, $14.99 with $2 off valid through Nov 15; Duracell Coppertop AA 40 $20.99; both in stock."
   },
   {

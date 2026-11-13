@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-09",
- "count": 208,
+ "generated": "2026-11-11",
+ "count": 214,
  "rows": [
   {
    "company_slug": "diamond-pet-foods",
@@ -2627,6 +2627,84 @@
    "last": "2023-12",
    "record_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=23117001000888 | https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=23352001000306",
    "read_on": "2026-11-09",
+   "company_page": "https://whoactuallymakes.com/makers/sazerac/"
+  },
+  {
+   "company_slug": "sazerac",
+   "company": "Sazerac",
+   "label": "Trader Joe's",
+   "link_kind": "claim",
+   "detail": "Label approval held by: Trader Joe's Bourbon and American whiskey",
+   "count": 1,
+   "first": "2012-05",
+   "last": "",
+   "record_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=12122001000132",
+   "read_on": "2026-11-11",
+   "company_page": "https://whoactuallymakes.com/makers/sazerac/"
+  },
+  {
+   "company_slug": "sazerac",
+   "company": "Sazerac",
+   "label": "Trader Joe's",
+   "link_kind": "claim",
+   "detail": "Label approval held by: Trader Joe's Canadian whisky",
+   "count": 1,
+   "first": "2014-01",
+   "last": "",
+   "record_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=13347001000028",
+   "read_on": "2026-11-11",
+   "company_page": "https://whoactuallymakes.com/makers/sazerac/"
+  },
+  {
+   "company_slug": "sazerac",
+   "company": "Sazerac",
+   "label": "Trader Joe's",
+   "link_kind": "claim",
+   "detail": "Label approval held by: Trader Joe's Gin",
+   "count": 1,
+   "first": "2017-07",
+   "last": "",
+   "record_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=17170001000285",
+   "read_on": "2026-11-11",
+   "company_page": "https://whoactuallymakes.com/makers/sazerac/"
+  },
+  {
+   "company_slug": "sazerac",
+   "company": "Sazerac",
+   "label": "Trader Joe's",
+   "link_kind": "claim",
+   "detail": "Label approval held by: Trader Joe's Liqueurs",
+   "count": 1,
+   "first": "2021-03",
+   "last": "2021-06",
+   "record_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=21082001000683 | https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=21176001000370",
+   "read_on": "2026-11-11",
+   "company_page": "https://whoactuallymakes.com/makers/sazerac/"
+  },
+  {
+   "company_slug": "sazerac",
+   "company": "Sazerac",
+   "label": "Trader Joe's",
+   "link_kind": "claim",
+   "detail": "Label approval held by: Trader Joe's Mezcal",
+   "count": 1,
+   "first": "2018-07",
+   "last": "",
+   "record_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=18199001000112",
+   "read_on": "2026-11-11",
+   "company_page": "https://whoactuallymakes.com/makers/sazerac/"
+  },
+  {
+   "company_slug": "sazerac",
+   "company": "Sazerac",
+   "label": "Trader Joe's",
+   "link_kind": "claim",
+   "detail": "Label approval held by: Trader Joe's Tequila",
+   "count": 1,
+   "first": "2018-01",
+   "last": "2023-03",
+   "record_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=23046001000223 | https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=23072001000216",
+   "read_on": "2026-11-11",
    "company_page": "https://whoactuallymakes.com/makers/sazerac/"
   },
   {

@@ -2,9 +2,9 @@
  "name": "whoactuallymakes-data",
  "id": "https://doi.org/10.5281/zenodo.23920936",
  "title": "Who Actually Makes open data",
- "description": "Who makes store-brand products, from public records. 18 datasets, 13,666 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them.",
+ "description": "Who makes store-brand products, from public records. 19 datasets, 15,748 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them; Trader Joe's wine, beer and spirits label approvals (TTB).",
  "homepage": "https://whoactuallymakes.com/data/",
- "version": "2026-11-11",
+ "version": "2026-11-13",
  "licenses": [
   {
    "name": "CC-BY-4.0",
@@ -59,8 +59,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 185069,
-   "hash": "sha256:1544faee9eba0f719100865b48848d90b38e811f5fc85fdc0a5a9e3046302d60",
+   "bytes": 407514,
+   "hash": "sha256:042c0ee5ed976e71163a3e5c9528328460429b02a19fe6e2469f53269d088151",
    "schema": {
     "fields": [
      {
@@ -173,7 +173,7 @@
    "mediatype": "text/csv",
    "encoding": "utf-8",
    "bytes": 3822,
-   "hash": "sha256:c859e9299d093190a60a57208626d8aaf7214c2fb1035e9978a5c2d7f2ae3bc6",
+   "hash": "sha256:3aaa336e783f8f7c07b8adcafa2ded9909e556bc4012db903f708bd8667f4730",
    "schema": {
     "fields": [
      {
@@ -278,8 +278,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 69158,
-   "hash": "sha256:4358bbf4098a4e51e70196451b85d4b74ad6fb616505fe57e611e0e686a549a8",
+   "bytes": 70907,
+   "hash": "sha256:64f73afbc906f364d573684ec7a0771364ddddf3795aaeda77c99ad913462210",
    "schema": {
     "fields": [
      {
@@ -424,8 +424,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 20322,
-   "hash": "sha256:1c5202b8273c1dcbe7aefbc24bf1a730be966b238657330bdc218986cd07ac7b",
+   "bytes": 20323,
+   "hash": "sha256:4bf479cd0dc67e5ce41211293906b0918ec2518c9a3f3263921756de53ab8fe0",
    "schema": {
     "fields": [
      {
@@ -504,8 +504,8 @@
    },
    "sources": [
     {
-     "title": "https://assets.sia.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf",
-     "path": "https://assets.sia.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf"
+     "title": "https://assets.sipb.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf",
+     "path": "https://assets.sipb.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf"
     },
     {
      "title": "https://contentdelivery.ext.gm.com/content/dam/cope/en_us/public/pdf_assets/active/owners_manuals_browse/2025/chevrolet/silverado_1500/25_CHEV_Silverado_1500_OM_en_US_U_87855274B_2024OCT31_2P.pdf",
@@ -609,8 +609,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 977453,
-   "hash": "sha256:a44f853d7a00b7c0698b18dc86f5d3393e65035cd9bf01ad2db97ae4fd743f6a",
+   "bytes": 1172799,
+   "hash": "sha256:94b77af611aaedfc4ff4edb2badf2253a79ba576629479b5d37bca6fe2a927b0",
    "schema": {
     "fields": [
      {
@@ -689,6 +689,18 @@
     {
      "title": "https://acdelcocanada.com/parts/batteries/battery-warranty",
      "path": "https://acdelcocanada.com/parts/batteries/battery-warranty"
+    },
+    {
+     "title": "https://acuranews.com/en-US/releases/production-start-of-acura-integra-signals-return-of-iconic-model-being-built-for-first-time-in-america",
+     "path": "https://acuranews.com/en-US/releases/production-start-of-acura-integra-signals-return-of-iconic-model-being-built-for-first-time-in-america"
+    },
+    {
+     "title": "https://annualreport2025.volkswagen-group.com/group-management-report/shares-and-bonds/shareholder-structure.html",
+     "path": "https://annualreport2025.volkswagen-group.com/group-management-report/shares-and-bonds/shareholder-structure.html"
+    },
+    {
+     "title": "https://annualreport2025.volkswagen-group.com/group-management-report/structure-and-business-activities.html",
+     "path": "https://annualreport2025.volkswagen-group.com/group-management-report/structure-and-business-activities.html"
     },
     {
      "title": "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA075077",
@@ -865,18 +877,6 @@
     {
      "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2025%22",
      "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2025%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0166-2022%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0166-2022%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0181-2025%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0181-2025%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0183-2014%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0183-2014%22"
     }
    ]
   },
@@ -888,8 +888,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 72128,
-   "hash": "sha256:d6206b17630c72b1682318f948554e96ad1583dfc1b5c649373b5af1aa2abee9",
+   "bytes": 91023,
+   "hash": "sha256:c83ecd5ed3a51fdd7bafd35684b7ec3d1fdcef2ffe8260a5eafebb8e72deb581",
    "schema": {
     "fields": [
      {
@@ -967,6 +967,14 @@
      "path": "https://acdelcocanada.com/"
     },
     {
+     "title": "https://acuranews.com/",
+     "path": "https://acuranews.com/"
+    },
+    {
+     "title": "https://annualreport2025.volkswagen-group.com/",
+     "path": "https://annualreport2025.volkswagen-group.com/"
+    },
+    {
      "title": "https://bgr.com/",
      "path": "https://bgr.com/"
     },
@@ -983,8 +991,16 @@
      "path": "https://clariosdigitallibrary.widencollective.com/"
     },
     {
+     "title": "https://clusterindustrial.com.mx/",
+     "path": "https://clusterindustrial.com.mx/"
+    },
+    {
      "title": "https://community.qvc.com/",
      "path": "https://community.qvc.com/"
+    },
+    {
+     "title": "https://corporate.pokemon.co.jp/en/",
+     "path": "https://corporate.pokemon.co.jp/en/"
     },
     {
      "title": "https://costco.interstatebatteries.com/",
@@ -1011,6 +1027,10 @@
      "path": "https://diamondpetcompany.com/"
     },
     {
+     "title": "https://disclosure2.edinet-fsa.go.jp/",
+     "path": "https://disclosure2.edinet-fsa.go.jp/"
+    },
+    {
      "title": "https://duracell.com/",
      "path": "https://duracell.com/"
     },
@@ -1035,6 +1055,14 @@
      "path": "https://fsc.org/"
     },
     {
+     "title": "https://global.honda/en/newsroom/",
+     "path": "https://global.honda/en/newsroom/"
+    },
+    {
+     "title": "https://global.nissannews.com/",
+     "path": "https://global.nissannews.com/"
+    },
+    {
      "title": "https://global.toyota/en/company/profile/facilities/manufacturing-worldwide/",
      "path": "https://global.toyota/en/company/profile/facilities/manufacturing-worldwide/"
     },
@@ -1045,6 +1073,10 @@
     {
      "title": "https://hip2save.com/",
      "path": "https://hip2save.com/"
+    },
+    {
+     "title": "https://investors.volvocars.com/",
+     "path": "https://investors.volvocars.com/"
     },
     {
      "title": "https://itstillruns.com/",
@@ -1059,12 +1091,28 @@
      "path": "https://lars.ndda.nd.gov/public/productsearch/3"
     },
     {
+     "title": "https://manufacturing.honda.com/",
+     "path": "https://manufacturing.honda.com/"
+    },
+    {
+     "title": "https://media.jlr.com/",
+     "path": "https://media.jlr.com/"
+    },
+    {
      "title": "https://media.subaru.com/",
      "path": "https://media.subaru.com/"
     },
     {
+     "title": "https://mexicobusiness.news/",
+     "path": "https://mexicobusiness.news/"
+    },
+    {
      "title": "https://mg2.com/",
      "path": "https://mg2.com/"
+    },
+    {
+     "title": "https://mprintgroup.com/",
+     "path": "https://mprintgroup.com/"
     },
     {
      "title": "https://mygarage.honda.com/s/find-honda",
@@ -1077,6 +1125,10 @@
     {
      "title": "https://newmodernmom.com/",
      "path": "https://newmodernmom.com/"
+    },
+    {
+     "title": "https://newsroom.porsche.com/",
+     "path": "https://newsroom.porsche.com/"
     },
     {
      "title": "https://novolex.com/",
@@ -1103,64 +1155,12 @@
      "path": "https://ownersmanual.kia.com/"
     },
     {
-     "title": "https://pressroom.toyota.com/",
-     "path": "https://pressroom.toyota.com/"
+     "title": "https://press.pokemon.com/",
+     "path": "https://press.pokemon.com/"
     },
     {
-     "title": "https://search.fsc.org/",
-     "path": "https://search.fsc.org/"
-    },
-    {
-     "title": "https://shopsavvy.com/",
-     "path": "https://shopsavvy.com/"
-    },
-    {
-     "title": "https://slickdeals.net/",
-     "path": "https://slickdeals.net/"
-    },
-    {
-     "title": "https://thegolfnewsnet.com/",
-     "path": "https://thegolfnewsnet.com/"
-    },
-    {
-     "title": "https://thekrazycouponlady.com/",
-     "path": "https://thekrazycouponlady.com/"
-    },
-    {
-     "title": "https://tsdr.uspto.gov/",
-     "path": "https://tsdr.uspto.gov/"
-    },
-    {
-     "title": "https://ttbonline.gov/colasonline/publicSearchColasBasic.do",
-     "path": "https://ttbonline.gov/colasonline/publicSearchColasBasic.do"
-    },
-    {
-     "title": "https://uscode.house.gov/",
-     "path": "https://uscode.house.gov/"
-    },
-    {
-     "title": "https://vpic.nhtsa.dot.gov/api/",
-     "path": "https://vpic.nhtsa.dot.gov/api/"
-    },
-    {
-     "title": "https://web.archive.org/web/*/usga.org/ConformingGolfBall/gball_list.pdf",
-     "path": "https://web.archive.org/web/*/usga.org/ConformingGolfBall/gball_list.pdf"
-    },
-    {
-     "title": "https://web.archive.org/web/*/usga.org/ConformingGolfClub/ConformingClubList_M.pdf",
-     "path": "https://web.archive.org/web/*/usga.org/ConformingGolfClub/ConformingClubList_M.pdf"
-    },
-    {
-     "title": "https://whoreallymakes.com/",
-     "path": "https://whoreallymakes.com/"
-    },
-    {
-     "title": "https://worldwide.kia.com/en/company/investor-relations",
-     "path": "https://worldwide.kia.com/en/company/investor-relations"
-    },
-    {
-     "title": "https://www.425business.com/",
-     "path": "https://www.425business.com/"
+     "title": "https://pressroom.lexus.com/",
+     "path": "https://pressroom.lexus.com/"
     }
    ]
   },
@@ -1172,8 +1172,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 28987,
-   "hash": "sha256:4e096a340c8a43b1c4adb80364a5cc99f5ff468f7e4cc460c981a0f0345380ad",
+   "bytes": 34445,
+   "hash": "sha256:47c616f62850404cf730af06c55870accd447b45ea2eb476a92442af838ba365",
    "schema": {
     "fields": [
      {
@@ -1240,8 +1240,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 10740,
-   "hash": "sha256:fd57468a941f41018de189a6a5b03c2446b5ee529fd2274df6d109aec3cb32f0",
+   "bytes": 14111,
+   "hash": "sha256:ad0142fc828ff35707a1db8bb94045038ebe6d1151a8169856aa6ed5e1408567",
    "schema": {
     "fields": [
      {
@@ -1737,8 +1737,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 65754,
-   "hash": "sha256:b5c070a4d57d6101a041a4cc57cd91a94f247d5f84b21f6c762fe2f715fccde5",
+   "bytes": 121704,
+   "hash": "sha256:3cf60ecfebcefbe7cfd35a8851e3ca06ba3db7085f8c10bb3ca9b9b9eabfcd1e",
    "schema": {
     "fields": [
      {
@@ -2144,6 +2144,93 @@
     {
      "title": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx",
      "path": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+    }
+   ]
+  },
+  {
+   "name": "trader-joes-alcohol",
+   "path": "data/trader-joes-alcohol.csv",
+   "title": "Trader Joe's wine, beer and spirits label approvals (TTB)",
+   "description": "Every label approval in TTB's public COLA registry with a brand name starting \"Trader Joe\", for the 15 years the registry's search allows: the approval number, the kind of drink, TTB's class, the company that holds the approval (box 8 of the form), the trade name the form says goes on the bottle, origin, date and status, with a link to each form.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 271345,
+   "hash": "sha256:3d0c6c3446e4e351d9d07280fcd5c7a6ac0dc978b9efea1abbd983ad77e0e818",
+   "schema": {
+    "fields": [
+     {
+      "name": "ttb_id",
+      "type": "string",
+      "description": "TTB's approval number (TTB ID)."
+     },
+     {
+      "name": "kind",
+      "type": "string",
+      "description": "Our grouping of TTB's class: Beer, Bourbon and American whiskey, Canadian whisky, Cocktails, Gin, Irish whiskey, Liqueurs, Mezcal, Other spirits, Other wine, Red wine, Rosé wine, Rum, Scotch whisky, Sparkling wine, Tequila, Vodka, White wine or Wine over 14% alcohol. TTB files still wine over 14% alcohol in its dessert wine class, shown here as \"Wine over 14% alcohol\"."
+     },
+     {
+      "name": "ttb_class",
+      "type": "string",
+      "description": "TTB's class and type, as on the form."
+     },
+     {
+      "name": "brand_on_form",
+      "type": "string",
+      "description": "The brand name as filed."
+     },
+     {
+      "name": "fanciful_name",
+      "type": "string",
+      "description": "The fanciful name, if the form gives one."
+     },
+     {
+      "name": "holder",
+      "type": "string",
+      "description": "The holder, with spellings and related companies grouped."
+     },
+     {
+      "name": "applicant",
+      "type": "string",
+      "description": "The applicant name exactly as on the form (box 8)."
+     },
+     {
+      "name": "holder_place",
+      "type": "string",
+      "description": "The holder's city and state as on the form."
+     },
+     {
+      "name": "name_on_label",
+      "type": "string",
+      "description": "The trade name the form says goes on the bottle, separated by semicolons; blank when the holder's own name is used."
+     },
+     {
+      "name": "origin",
+      "type": "string",
+      "description": "Origin as filed: a US state or a country."
+     },
+     {
+      "name": "approved_on",
+      "type": "string",
+      "description": "The date TTB approved the label."
+     },
+     {
+      "name": "status",
+      "type": "string",
+      "description": "The approval's status when read: Approved, Expired or Surrendered."
+     },
+     {
+      "name": "form_url",
+      "type": "string",
+      "format": "uri",
+      "description": "TTB's public copy of the form."
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "https://ttbonline.gov/colasonline/publicSearchColasBasic.do",
+     "path": "https://ttbonline.gov/colasonline/publicSearchColasBasic.do"
     }
    ]
   }

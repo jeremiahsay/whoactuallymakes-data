@@ -1,13 +1,147 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-08",
+ "generated": "2026-11-12",
  "started": "2026-11-02",
  "count": {
-  "correction": 21,
-  "update": 16,
+  "correction": 24,
+  "update": 19,
   "clarification": 11
  },
  "items": [
+  {
+   "id": "c-2026-11-12-tire-date-code-toyota-link",
+   "on": "2026-11-12",
+   "kind": "update",
+   "page": "/tire-date-code/",
+   "what": "Where the Toyota row of the carmaker table links",
+   "was": "Toyota’s RAV4 manual was linked at assets.sia.toyota.com. That address now refuses every request, so only the archived copy next to it would open.",
+   "now": "The row points at assets.sipb.toyota.com, the address Toyota’s own 2025 RAV4 manuals page uses today, and its read date is Nov 12, 2026. The archived copy is still linked beside it.",
+   "why": "Toyota moved its manual files. The PDF at the new address has the same SHA-256 as the copy we quoted on Nov 3, so the RAV4 advice, a technician check for any tire over 6 years old, has not changed.",
+   "flagged_by": "Our own re-check",
+   "evidence": [
+    {
+     "title": "2025 Toyota RAV4 owner's manual (US), Tire life",
+     "url": "https://assets.sipb.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf"
+    }
+   ],
+   "event": "none"
+  },
+  {
+   "id": "c-2026-11-12-perrigo-kirkland-count",
+   "on": "2026-11-12",
+   "kind": "correction",
+   "page": "/makers/perrigo/",
+   "what": "How many Kirkland Signature medicines the Perrigo page credits to Perrigo",
+   "was": "The page and its description said FDA files tie Perrigo to 38 Kirkland Signature medicines, 20 of them through an FDA approval Perrigo holds, and the table was titled as 38 Kirkland products.",
+   "now": "The page says 25 Kirkland Signature medicines, 13 of them through an FDA approval Perrigo holds. The table, which also lists Member’s Mark medicines, is titled as 38 Kirkland Signature and Member’s Mark products.",
+   "why": "When Member’s Mark medicines were added to Perrigo’s record, the count on the page took them in too, though the sentence names only Kirkland Signature.",
+   "flagged_by": "Our own re-check",
+   "event": "we-were-wrong",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-12-lnk-kirkland-count",
+   "on": "2026-11-12",
+   "kind": "correction",
+   "page": "/makers/lnk-international/",
+   "what": "How many Kirkland Signature medicines the LNK International page credits to LNK",
+   "was": "The page and its description said LNK makes 13 Kirkland Signature medicines, and the table was titled as 13 Kirkland products.",
+   "now": "The page says eight Kirkland Signature medicines. The table, which also lists five Member’s Mark medicines, is titled as 13 Kirkland Signature and Member’s Mark products.",
+   "why": "When Member’s Mark medicines were added to LNK’s record, the count on the page took them in too, though the sentence names only Kirkland Signature.",
+   "flagged_by": "Our own re-check",
+   "event": "we-were-wrong",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-12-appliance-age-navigant-year",
+   "on": "2026-11-12",
+   "kind": "correction",
+   "page": "/how-old-is-my-appliance/",
+   "what": "The year of the consultant's dishwasher life study",
+   "was": "The chart of DOE's dishwasher estimates called the 12.6-year figure a 2016 consultant's study.",
+   "now": "It is Navigant's 2010 study for ACEEE, as DOE's 2022 technical support document says.",
+   "why": "Re-reading AHAM's comment in DOE's support document for the dishwasher page showed the study date we had printed was wrong.",
+   "flagged_by": "Our own re-check",
+   "evidence": [
+    {
+     "title": "Dishwashers preliminary analysis technical support document (January 2022)",
+     "url": "https://www.energy.gov/sites/default/files/2022-01/dw-tsd.pdf"
+    }
+   ],
+   "event": "none"
+  },
+  {
+   "id": "c-2026-11-12-appliance-age-hisense-subzero-kenmore",
+   "on": "2026-11-12",
+   "kind": "update",
+   "page": "/how-old-is-my-appliance/",
+   "what": "Brands the decoder reads",
+   "was": "The decoder didn't read Hisense or Sub-Zero, read every Kenmore serial in Whirlpool's layout, and cited one Viking recall notice (dishwashers, 2015).",
+   "now": "Hisense fridge serials starting C and a year are read as the build date (Recall record, from Hisense's 2022 recall). Sub-Zero points to the Date Code printed on its tag, from Sub-Zero's support page. Kenmore serials starting with a digit are read in LG's layout, still Unconfirmed, as CPSC notices show LG built Kenmore fridges with model numbers starting 795. Viking also cites its 2009 and 2013 fridge recall notices.",
+   "why": "While building the fridge and freezer page we read every household fridge and freezer recall in CPSC's database and the Hisense and Sub-Zero pages.",
+   "flagged_by": "Our own re-check",
+   "evidence": [
+    {
+     "title": "Hisense USA: French door refrigerator recall (HRF266N6CSE)",
+     "url": "https://www.hisense-usa.com/product-safety-recall/french-door-refrigerator-2020"
+    },
+    {
+     "title": "CPSC recall 22151: Hisense USA Recalls Bottom Freezer, French Door Refrigerators Due to Impact Injury Hazard; Sold Exclusively at Lowe's",
+     "url": "https://www.cpsc.gov/Recalls/2022/Hisense-USA-Recalls-Bottom-Freezer-French-Door-Refrigerators-Due-to-Impact-Injury-Hazard-Sold-Exclusively-at-Lowes"
+    },
+    {
+     "title": "Sub-Zero: Age of Sub-Zero, Wolf, or Cove Appliance",
+     "url": "https://www.subzero-wolf.com/assistance/answers/multi-brand/age-of-subzero-wolf-or-cove"
+    },
+    {
+     "title": "CPSC recall 05213: CPSC, LG Electronics and Sears, Roebuck and Co. Announce Recall to Repair Refrigerators",
+     "url": "https://www.cpsc.gov/Recalls/2005/CPSC-LG-Electronics-and-Sears-Roebuck-and-Co-Announce-Recall-to-Repair-Refrigerators"
+    },
+    {
+     "title": "CPSC recall 03533: CPSC, Maytag Corporation Announce Recall of Kenmore Elite-Brand TRIO Model Refrigerators",
+     "url": "https://www.cpsc.gov/Recalls/2003/CPSC-Maytag-Corporation-Announce-Recall-of-Kenmore-Elite-Brand-TRIO-Model-Refrigerators-"
+    },
+    {
+     "title": "CPSC recall 95023: CPSC And Amana Work To Fix Refrigerator Shock Hazard",
+     "url": "https://www.cpsc.gov/Recalls/1995/CPSC-And-Amana-Work-To-Fix-Refrigerator-Shock-Hazard"
+    },
+    {
+     "title": "CPSC recall 13248: Viking Range Expands Recall of Built-In Refrigerators with Bottom Freezers Due to Injury Hazard; Doors Can Detach",
+     "url": "https://www.cpsc.gov/Recalls/2013/Viking-Range-Expands-Recall-of-Built-In-Refrigerators-with-Bottom-Freezers"
+    },
+    {
+     "title": "CPSC recall 09242: Viking Range Corporation Recalls Built-In Refrigerators Due to Injury Hazard; Doors Can Detach",
+     "url": "https://www.cpsc.gov/Recalls/2009/Viking-Range-Corporation-Recalls-Built-In-Refrigerators-Due-to-Injury-Hazard-Doors-Can-Detach"
+    }
+   ],
+   "event": "none"
+  },
+  {
+   "id": "c-2026-11-12-appliance-age-bosch-recall-record",
+   "on": "2026-11-12",
+   "kind": "update",
+   "page": "/how-old-is-my-appliance/",
+   "what": "How sure we are of the Bosch FD date rule",
+   "was": "Bosch was marked Reported: the FD rule came only from two how-to guides, Hunker and ServiceMag, neither of which cites Bosch.",
+   "now": "Bosch is marked Recall record. Two CPSC recall notices issued with Bosch's maker BSH give build dates that fit the rule: dishwashers manufactured from January 2008 through December 2013 carry FD 8801 to FD 9312 (2015), and May 1999 to July 2005 runs from FD 7905 to FD 8507 (2009). Viking joins the decoder on the same footing, from its 2015 recall notice.",
+   "why": "While building the dishwasher page we read every CPSC dishwasher recall; the BSH notices pair FD ranges with build dates.",
+   "flagged_by": "Our own re-check",
+   "evidence": [
+    {
+     "title": "CPSC recall 16003: BSH Home Appliances Recalls Dishwashers Due to Fire Hazard",
+     "url": "https://www.cpsc.gov/Recalls/2016/BSH-Home-Appliances-Recalls-Dishwashers"
+    },
+    {
+     "title": "CPSC recall 09100: Bosch and Siemens Model Dishwashers Recalled by BSH Home Appliances Corporation Due to Fire Hazard",
+     "url": "https://www.cpsc.gov/Recalls/2009/Bosch-and-Siemens-Model-Dishwashers-Recalled-by-BSH-Home-Appliances-Corporation-Due-to-Fire-Hazard"
+    },
+    {
+     "title": "CPSC recall 15210: Viking Range Expands Dishwasher Recall Due to Fire Hazard",
+     "url": "https://www.cpsc.gov/Recalls/2015/Viking-Range-Expands-Dishwasher-Recall"
+    }
+   ],
+   "event": "none"
+  },
   {
    "id": "c-2026-11-08-vodka-grey-goose",
    "on": "2026-11-08",

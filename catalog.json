@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-11",
+ "generated": "2026-11-13",
  "title": "Who Actually Makes open data",
  "url": "https://whoactuallymakes.com/data/",
  "licence": {
@@ -13,8 +13,8 @@
   "doi_note": "Concept DOI: always resolves to the newest archived version on Zenodo.",
   "mirror": "https://github.com/jeremiahsay/whoactuallymakes-data"
  },
- "count": 18,
- "records": 13666,
+ "count": 19,
+ "records": 15748,
  "datasets": [
   {
    "id": "claims",
@@ -34,8 +34,8 @@
    ],
    "rights": "Quoted words belong to their publishers; most records are US government work. CC BY covers our rows.",
    "based_on": [],
-   "records": 328,
-   "updated": "2026-11-09",
+   "records": 730,
+   "updated": "2026-11-11",
    "fields": [
     {
      "name": "claim_id",
@@ -243,13 +243,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/claims.json",
-     "bytes": 298321,
-     "sha256": "3e4c8b7824bc2fa728f97d7d6e9ed9a2d47d11be542647fb906ad14eb2b58db9"
+     "bytes": 659282,
+     "sha256": "017cb64b92759e9e59329848ef39610d4f113f50036b853c33b6560957df854c"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/claims.csv",
-     "bytes": 185069,
-     "sha256": "1544faee9eba0f719100865b48848d90b38e811f5fc85fdc0a5a9e3046302d60"
+     "bytes": 407514,
+     "sha256": "042c0ee5ed976e71163a3e5c9528328460429b02a19fe6e2469f53269d088151"
     }
    }
   },
@@ -276,7 +276,7 @@
     "https://open.fda.gov/apis/drug/enforcement/"
    ],
    "records": 14,
-   "updated": "2026-11-09",
+   "updated": "2026-11-11",
    "fields": [
     {
      "name": "company_slug",
@@ -445,12 +445,12 @@
     "json": {
      "url": "https://whoactuallymakes.com/data/companies.json",
      "bytes": 8201,
-     "sha256": "14f6e37e9ba317602b8282af5fa38d9286d9bb8df1a26efe0917694c701b0cc9"
+     "sha256": "2831ca9151874678653ec556b9fdf42d31c84ea83ae7328825c4b28dea1a4b64"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/companies.csv",
      "bytes": 3822,
-     "sha256": "c859e9299d093190a60a57208626d8aaf7214c2fb1035e9978a5c2d7f2ae3bc6"
+     "sha256": "3aaa336e783f8f7c07b8adcafa2ded9909e556bc4012db903f708bd8667f4730"
     }
    }
   },
@@ -476,8 +476,8 @@
     "https://open.fda.gov/apis/food/enforcement/",
     "https://open.fda.gov/apis/drug/enforcement/"
    ],
-   "records": 208,
-   "updated": "2026-11-09",
+   "records": 214,
+   "updated": "2026-11-11",
    "fields": [
     {
      "name": "company_slug",
@@ -605,13 +605,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/company-labels.json",
-     "bytes": 110313,
-     "sha256": "0edd37e0f9344e208384268296108145cb67565866b1f0bbd90a99ddd6948e19"
+     "bytes": 113250,
+     "sha256": "e907bcfb1a5ab86d2d271a22d6c76fa80e2a4cda80a87a02d0123bee7099087c"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/company-labels.csv",
-     "bytes": 69158,
-     "sha256": "4358bbf4098a4e51e70196451b85d4b74ad6fb616505fe57e611e0e686a549a8"
+     "bytes": 70907,
+     "sha256": "64f73afbc906f364d573684ec7a0771364ddddf3795aaeda77c99ad913462210"
     }
    }
   },
@@ -753,7 +753,7 @@
    ],
    "rights": "Quoted words in the source columns belong to their publishers; we quote them so you can check each row. CC BY covers our rows and wording.",
    "based_on": [
-    "https://assets.sia.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf",
+    "https://assets.sipb.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf",
     "https://contentdelivery.ext.gm.com/content/dam/cope/en_us/public/pdf_assets/active/owners_manuals_browse/2025/chevrolet/silverado_1500/25_CHEV_Silverado_1500_OM_en_US_U_87855274B_2024OCT31_2P.pdf",
     "https://movingon.blog.gov.uk/2020/12/09/ban-on-tyres-over-10-years-old-for-heavy-vehicles-and-some-minibuses/",
     "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
@@ -779,7 +779,7 @@
     "https://www.yokohamatire.com/tires-101/maintenance-care-1/tire-life"
    ],
    "records": 22,
-   "updated": "2026-11-04",
+   "updated": "2026-11-12",
    "fields": [
     {
      "name": "group",
@@ -937,13 +937,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/tire-age.json",
-     "bytes": 35667,
-     "sha256": "fc24c9f147e73a333ede65667220cb9b174a0f7bf2e023ac9c192d2719029334"
+     "bytes": 35668,
+     "sha256": "8446deb02dd899c5c18a42c44d7d8cb44a1cd94c3f83028afec541089438ad18"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/tire-age.csv",
-     "bytes": 20322,
-     "sha256": "1c5202b8273c1dcbe7aefbc24bf1a730be966b238657330bdc218986cd07ac7b"
+     "bytes": 20323,
+     "sha256": "4bf479cd0dc67e5ce41211293906b0918ec2518c9a3f3263921756de53ab8fe0"
     }
    }
   },
@@ -968,6 +968,9 @@
     "http://www.fda.gov/Safety/Recalls/ucm303034.htm",
     "http://www.usga.org/ConformingGolfBall/gball_list.pdf",
     "https://acdelcocanada.com/parts/batteries/battery-warranty",
+    "https://acuranews.com/en-US/releases/production-start-of-acura-integra-signals-return-of-iconic-model-being-built-for-first-time-in-america",
+    "https://annualreport2025.volkswagen-group.com/group-management-report/shares-and-bonds/shareholder-structure.html",
+    "https://annualreport2025.volkswagen-group.com/group-management-report/structure-and-business-activities.html",
     "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA075077",
     "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA203187",
     "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA206568",
@@ -1011,13 +1014,10 @@
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0151-2021%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0159-2025%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2021%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2025%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0166-2022%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0181-2025%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0183-2014%22"
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2025%22"
    ],
-   "records": 1423,
-   "updated": "2026-11-11",
+   "records": 1694,
+   "updated": "2026-11-13",
    "fields": [
     {
      "name": "id",
@@ -1155,13 +1155,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/evidence.json",
-     "bytes": 1260550,
-     "sha256": "c110862c5563de8b3bdbd76b93812890de60ebef6250ce6344521c6591dc9e5e"
+     "bytes": 1509236,
+     "sha256": "89fa684e32ad1bf567d54a8cfaafac1805ed27f846f00cc267f446bdac978631"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/evidence.csv",
-     "bytes": 977453,
-     "sha256": "a44f853d7a00b7c0698b18dc86f5d3393e65035cd9bf01ad2db97ae4fd743f6a"
+     "bytes": 1172799,
+     "sha256": "94b77af611aaedfc4ff4edb2badf2253a79ba576629479b5d37bca6fe2a927b0"
     }
    }
   },
@@ -1183,58 +1183,58 @@
    "rights": "CC BY covers the whole file.",
    "based_on": [
     "https://acdelcocanada.com/",
+    "https://acuranews.com/",
+    "https://annualreport2025.volkswagen-group.com/",
     "https://bgr.com/",
     "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx",
     "https://centralmilling.com/",
     "https://clariosdigitallibrary.widencollective.com/",
+    "https://clusterindustrial.com.mx/",
     "https://community.qvc.com/",
+    "https://corporate.pokemon.co.jp/en/",
     "https://costco.interstatebatteries.com/",
     "https://dailymed.nlm.nih.gov/dailymed/",
     "https://data.energystar.gov/",
     "https://delcoline.com/wp-content/uploads/2016/08/ACDelco-battery-warranty-information.pdf",
     "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf",
     "https://diamondpetcompany.com/",
+    "https://disclosure2.edinet-fsa.go.jp/",
     "https://duracell.com/",
     "https://engineoil.api.org/Directory/EolcsSearch",
     "https://foodlion.com/",
     "https://forests.org/",
     "https://fortune.com/",
     "https://fsc.org/",
+    "https://global.honda/en/newsroom/",
+    "https://global.nissannews.com/",
     "https://global.toyota/en/company/profile/facilities/manufacturing-worldwide/",
     "https://gov.georgia.gov/",
     "https://hip2save.com/",
+    "https://investors.volvocars.com/",
     "https://itstillruns.com/",
     "https://kiaoldnewsroom.newsmarket.com/",
     "https://lars.ndda.nd.gov/public/productsearch/3",
+    "https://manufacturing.honda.com/",
+    "https://media.jlr.com/",
     "https://media.subaru.com/",
+    "https://mexicobusiness.news/",
     "https://mg2.com/",
+    "https://mprintgroup.com/",
     "https://mygarage.honda.com/s/find-honda",
     "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
     "https://newmodernmom.com/",
+    "https://newsroom.porsche.com/",
     "https://novolex.com/",
     "https://open.fda.gov/apis/drug/drugsfda/",
     "https://open.fda.gov/apis/food/enforcement/",
     "https://opendata.fcc.gov/d/3b3k-34jp",
     "https://ownersmanual.hyundai.com/",
     "https://ownersmanual.kia.com/",
-    "https://pressroom.toyota.com/",
-    "https://search.fsc.org/",
-    "https://shopsavvy.com/",
-    "https://slickdeals.net/",
-    "https://thegolfnewsnet.com/",
-    "https://thekrazycouponlady.com/",
-    "https://tsdr.uspto.gov/",
-    "https://ttbonline.gov/colasonline/publicSearchColasBasic.do",
-    "https://uscode.house.gov/",
-    "https://vpic.nhtsa.dot.gov/api/",
-    "https://web.archive.org/web/*/usga.org/ConformingGolfBall/gball_list.pdf",
-    "https://web.archive.org/web/*/usga.org/ConformingGolfClub/ConformingClubList_M.pdf",
-    "https://whoreallymakes.com/",
-    "https://worldwide.kia.com/en/company/investor-relations",
-    "https://www.425business.com/"
+    "https://press.pokemon.com/",
+    "https://pressroom.lexus.com/"
    ],
-   "records": 150,
-   "updated": "2026-11-11",
+   "records": 194,
+   "updated": "2026-11-13",
    "fields": [
     {
      "name": "id",
@@ -1344,7 +1344,7 @@
      "cannot_prove": "Who physically made a particular product, or at which site. The register shows who holds the code; another certified company can apply that code under a labelling agreement, and FSC says it can't guarantee the data is complete.",
      "terms_url": "https://search.fsc.org/en/disclaimer/",
      "terms_read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
-     "terms_checked": "2026-11-05",
+     "terms_checked": "2026-11-12",
      "credit": "",
      "pulls": "every 90 days in a browser, last 2026-11-05"
     },
@@ -1382,13 +1382,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/sources.json",
-     "bytes": 172610,
-     "sha256": "23e46035f8faabee2cfa732102efec06c0600824b879fc327f4c73ac90450241"
+     "bytes": 222264,
+     "sha256": "96defb82775a6f282a0f533dd7f418945eb5535beb6a0325ac4c3450fe24dc9c"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/sources.csv",
-     "bytes": 72128,
-     "sha256": "d6206b17630c72b1682318f948554e96ad1583dfc1b5c649373b5af1aa2abee9"
+     "bytes": 91023,
+     "sha256": "c83ecd5ed3a51fdd7bafd35684b7ec3d1fdcef2ffe8260a5eafebb8e72deb581"
     }
    }
   },
@@ -1408,8 +1408,8 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 48,
-   "updated": "2026-11-08",
+   "records": 54,
+   "updated": "2026-11-12",
    "fields": [
     {
      "name": "id",
@@ -1464,76 +1464,76 @@
    ],
    "preview": [
     {
-     "id": "c-2026-11-08-vodka-grey-goose",
-     "on": "2026-11-08",
+     "id": "c-2026-11-12-tire-date-code-toyota-link",
+     "on": "2026-11-12",
      "kind": "update",
-     "page": "/kirkland-signature/vodka/",
-     "what": "Is Kirkland vodka Grey Goose?",
-     "was": "“No record we found says so”, with the two French vodka approvals held by MISA Imports, which name no distillery.",
-     "now": "No. Grey Goose’s own FAQ calls the claim “completely false” and says Grey Goose “does not produce nor privately label Kirkland vodka”. The MISA approvals are still there, and still name no distillery.",
-     "why": "We hadn’t used Grey Goose’s own answer to the question, which is a stronger record than finding nothing.",
+     "page": "/tire-date-code/",
+     "what": "Where the Toyota row of the carmaker table links",
+     "was": "Toyota’s RAV4 manual was linked at assets.sia.toyota.com. That address now refuses every request, so only the archived copy next to it would open.",
+     "now": "The row points at assets.sipb.toyota.com, the address Toyota’s own 2025 RAV4 manuals page uses today, and its read date is Nov 12, 2026. The archived copy is still linked beside it.",
+     "why": "Toyota moved its manual files. The PDF at the new address has the same SHA-256 as the copy we quoted on Nov 3, so the RAV4 advice, a technician check for any tire over 6 years old, has not changed.",
      "flagged_by": "Our own re-check",
-     "evidence": "https://www.greygoose.com/faqs/is-kirkland-vodka-grey-goose-vodka.html"
+     "evidence": "https://assets.sipb.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf"
     },
     {
-     "id": "c-2026-11-08-terms-lookups",
-     "on": "2026-11-08",
-     "kind": "clarification",
-     "page": "/terms/",
-     "what": "What is free to use, in the terms",
-     "was": "“Use the site and the tire lookup free, as often as you like, with no sign-up.”",
-     "now": "“Use the site and its lookups free, as often as you like, with no sign-up.”",
-     "why": "The site now has four lookups: tire DOT codes, tire age, battery date codes and USDA plant numbers. Naming only the tire lookup read as if the other three weren’t covered.",
-     "flagged_by": "Our own re-check",
-     "evidence": ""
-    },
-    {
-     "id": "c-2026-11-08-sun-products-strength-scale",
-     "on": "2026-11-08",
-     "kind": "clarification",
-     "page": "/makers/sun-products/",
-     "what": "What the 2012 safety sheets prove, on the Sun Products page",
-     "was": "The scale on the page set Confirmed at a company or Costco speaking for itself. Costco published the sheets that name Sun Products, so that tie could look Confirmed.",
-     "now": "A safety sheet names the supplier responsible, which How we know counts as Documented. Confirmed would need a code on the pack that leads to a plant, and these sheets give only Sun’s head office in Wilton, Connecticut.",
-     "why": "A safety sheet comes from the supplier, which the old wording made look like the company speaking for itself. Our stamp rules count it as a record, so Documented is the top step it can reach.",
+     "id": "c-2026-11-12-perrigo-kirkland-count",
+     "on": "2026-11-12",
+     "kind": "correction",
+     "page": "/makers/perrigo/",
+     "what": "How many Kirkland Signature medicines the Perrigo page credits to Perrigo",
+     "was": "The page and its description said FDA files tie Perrigo to 38 Kirkland Signature medicines, 20 of them through an FDA approval Perrigo holds, and the table was titled as 38 Kirkland products.",
+     "now": "The page says 25 Kirkland Signature medicines, 13 of them through an FDA approval Perrigo holds. The table, which also lists Member’s Mark medicines, is titled as 38 Kirkland Signature and Member’s Mark products.",
+     "why": "When Member’s Mark medicines were added to Perrigo’s record, the count on the page took them in too, though the sentence names only Kirkland Signature.",
      "flagged_by": "Our own re-check",
      "evidence": ""
     },
     {
-     "id": "c-2026-11-08-sources-moved-links",
-     "on": "2026-11-08",
+     "id": "c-2026-11-12-lnk-kirkland-count",
+     "on": "2026-11-12",
+     "kind": "correction",
+     "page": "/makers/lnk-international/",
+     "what": "How many Kirkland Signature medicines the LNK International page credits to LNK",
+     "was": "The page and its description said LNK makes 13 Kirkland Signature medicines, and the table was titled as 13 Kirkland products.",
+     "now": "The page says eight Kirkland Signature medicines. The table, which also lists five Member’s Mark medicines, is titled as 13 Kirkland Signature and Member’s Mark products.",
+     "why": "When Member’s Mark medicines were added to LNK’s record, the count on the page took them in too, though the sentence names only Kirkland Signature.",
+     "flagged_by": "Our own re-check",
+     "evidence": ""
+    },
+    {
+     "id": "c-2026-11-12-appliance-age-navigant-year",
+     "on": "2026-11-12",
+     "kind": "correction",
+     "page": "/how-old-is-my-appliance/",
+     "what": "The year of the consultant's dishwasher life study",
+     "was": "The chart of DOE's dishwasher estimates called the 12.6-year figure a 2016 consultant's study.",
+     "now": "It is Navigant's 2010 study for ACEEE, as DOE's 2022 technical support document says.",
+     "why": "Re-reading AHAM's comment in DOE's support document for the dishwasher page showed the study date we had printed was wrong.",
+     "flagged_by": "Our own re-check",
+     "evidence": "https://www.energy.gov/sites/default/files/2022-01/dw-tsd.pdf"
+    },
+    {
+     "id": "c-2026-11-12-appliance-age-hisense-subzero-kenmore",
+     "on": "2026-11-12",
      "kind": "update",
-     "page": "/sources/",
-     "what": "Links on eight source cards",
-     "was": "The cards for The Costco Connection, Kia’s investor pages and newsroom, Georgia’s governor, Hip2Save, Slickdeals, Krazy Coupon Lady and ACDelco Canada linked pages that had moved or no longer exist.",
-     "now": "Costco’s magazine now lives at costcoconnection.com, where Costco’s old address sends you. Kia, Georgia, Hip2Save and Slickdeals link their pages’ new addresses. Krazy Coupon Lady and ACDelco Canada have no terms page any more, so their cards link the privacy policy and home page and say so.",
-     "why": "The sites moved or removed those pages. A link check in our site audit found them; no answer depended on the old addresses.",
+     "page": "/how-old-is-my-appliance/",
+     "what": "Brands the decoder reads",
+     "was": "The decoder didn't read Hisense or Sub-Zero, read every Kenmore serial in Whirlpool's layout, and cited one Viking recall notice (dishwashers, 2015).",
+     "now": "Hisense fridge serials starting C and a year are read as the build date (Recall record, from Hisense's 2022 recall). Sub-Zero points to the Date Code printed on its tag, from Sub-Zero's support page. Kenmore serials starting with a digit are read in LG's layout, still Unconfirmed, as CPSC notices show LG built Kenmore fridges with model numbers starting 795. Viking also cites its 2009 and 2013 fridge recall notices.",
+     "why": "While building the fridge and freezer page we read every household fridge and freezer recall in CPSC's database and the Hisense and Sub-Zero pages.",
      "flagged_by": "Our own re-check",
-     "evidence": ""
-    },
-    {
-     "id": "c-2026-11-08-sources-description",
-     "on": "2026-11-08",
-     "kind": "clarification",
-     "page": "/sources/",
-     "what": "The Sources page’s summary in search results",
-     "was": "“The government records behind every answer on Who Actually Makes…”",
-     "now": "“Every source behind our answers, from government registers to company filings and press reports…”",
-     "why": "Only 24 of the 137 sources are government registers or regulators. The rest include makers’ own words, retailers and press reports, and the page says which is which.",
-     "flagged_by": "Our own re-check",
-     "evidence": ""
+     "evidence": "https://www.hisense-usa.com/product-safety-recall/french-door-refrigerator-2020 | https://www.cpsc.gov/Recalls/2022/Hisense-USA-Recalls-Bottom-Freezer-French-Door-Refrigerators-Due-to-Impact-Injury-Hazard-Sold-Exclusively-at-Lowes | https://www.subzero-wolf.com/assistance/answers/multi-brand/age-of-subzero-wolf-or-cove | https://www.cpsc.gov/Recalls/2005/CPSC-LG-Electronics-and-Sears-Roebuck-and-Co-Announce-Recall-to-Repair-Refrigerators | https://www.cpsc.gov/Recalls/2003/CPSC-Maytag-Corporation-Announce-Recall-of-Kenmore-Elite-Brand-TRIO-Model-Refrigerators- | https://www.cpsc.gov/Recalls/1995/CPSC-And-Amana-Work-To-Fix-Refrigerator-Shock-Hazard | https://www.cpsc.gov/Recalls/2013/Viking-Range-Expands-Recall-of-Built-In-Refrigerators-with-Bottom-Freezers | https://www.cpsc.gov/Recalls/2009/Viking-Range-Corporation-Recalls-Built-In-Refrigerators-Due-to-Injury-Hazard-Doors-Can-Detach"
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/corrections.json",
-     "bytes": 38991,
-     "sha256": "77a04a0c1ae3e5c986d729a23bd5b976d55685f3e95f67822b3bde7edada0d27"
+     "bytes": 47212,
+     "sha256": "247e62a2046587dc24a9e186a80add508a26b904978982c89f6a828b8080df29"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/corrections.csv",
-     "bytes": 28987,
-     "sha256": "4e096a340c8a43b1c4adb80364a5cc99f5ff468f7e4cc460c981a0f0345380ad"
+     "bytes": 34445,
+     "sha256": "47c616f62850404cf730af06c55870accd447b45ea2eb476a92442af838ba365"
     }
    }
   },
@@ -1553,8 +1553,8 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 46,
-   "updated": "2026-11-11",
+   "records": 57,
+   "updated": "2026-11-13",
    "fields": [
     {
      "name": "id",
@@ -1654,21 +1654,21 @@
      "how": "hand",
      "every_days": 365,
      "once": false,
-     "last": "2026-11-04",
-     "due": "2027-11-04",
+     "last": "2026-11-12",
+     "due": "2027-11-12",
      "result": "10 rows and 12 carmakers from 24 documents"
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/schedule.json",
-     "bytes": 311617,
-     "sha256": "eeecbe1e6514fa0e5b841029e228a863cfddd434536feb1fe92993166d89aa49"
+     "bytes": 346153,
+     "sha256": "647b30a3b3ce7b29c2a92105b8ad7cc6bec1f9efa32d3b697683425559d8e9d4"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/schedule.csv",
-     "bytes": 10740,
-     "sha256": "fd57468a941f41018de189a6a5b03c2446b5ee529fd2274df6d109aec3cb32f0"
+     "bytes": 14111,
+     "sha256": "ad0142fc828ff35707a1db8bb94045038ebe6d1151a8169856aa6ed5e1408567"
     }
    }
   },
@@ -2545,8 +2545,8 @@
    "based_on": [
     "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
    ],
-   "records": 475,
-   "updated": "2026-11-09",
+   "records": 863,
+   "updated": "2026-11-13",
    "fields": [
     {
      "name": "model_year",
@@ -2622,45 +2622,13 @@
    "preview": [
     {
      "model_year": 2018,
-     "manufacturer": "Kia Motors",
-     "make": "Kia",
-     "carline": "Cadenza",
+     "manufacturer": "Honda Motor Co., Ltd.",
+     "make": "Acura",
+     "carline": "ILX",
      "vehicle_type": "PC",
-     "us_canada_pct": 0,
-     "foreign_1_pct": 87,
-     "foreign_1_country": "K",
-     "foreign_2_pct": null,
-     "foreign_2_country": "",
-     "final_assembly": "K",
-     "engine": "K",
-     "transmission": "K",
-     "report_url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf"
-    },
-    {
-     "model_year": 2018,
-     "manufacturer": "Kia Motors",
-     "make": "Kia",
-     "carline": "Forte",
-     "vehicle_type": "PC",
-     "us_canada_pct": 2,
-     "foreign_1_pct": 51,
-     "foreign_1_country": "K",
-     "foreign_2_pct": 47,
-     "foreign_2_country": "M",
-     "final_assembly": "M",
-     "engine": "M",
-     "transmission": "M+K",
-     "report_url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf"
-    },
-    {
-     "model_year": 2018,
-     "manufacturer": "Kia Motors",
-     "make": "Kia",
-     "carline": "K900",
-     "vehicle_type": "PC",
-     "us_canada_pct": null,
-     "foreign_1_pct": 72,
-     "foreign_1_country": "UK",
+     "us_canada_pct": 60,
+     "foreign_1_pct": 20,
+     "foreign_1_country": "J",
      "foreign_2_pct": null,
      "foreign_2_country": "",
      "final_assembly": "",
@@ -2670,47 +2638,79 @@
     },
     {
      "model_year": 2018,
-     "manufacturer": "Kia Motors",
-     "make": "Kia",
-     "carline": "Niro",
-     "vehicle_type": "SUV",
-     "us_canada_pct": 2,
-     "foreign_1_pct": 88,
-     "foreign_1_country": "K",
+     "manufacturer": "Honda Motor Co., Ltd.",
+     "make": "Acura",
+     "carline": "MDX 2WD",
+     "vehicle_type": "MPV",
+     "us_canada_pct": 70,
+     "foreign_1_pct": null,
+     "foreign_1_country": "",
      "foreign_2_pct": null,
      "foreign_2_country": "",
-     "final_assembly": "K",
-     "engine": "K",
-     "transmission": "K",
+     "final_assembly": "US",
+     "engine": "US",
+     "transmission": "US",
      "report_url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf"
     },
     {
      "model_year": 2018,
-     "manufacturer": "Kia Motors",
-     "make": "Kia",
-     "carline": "Optima",
-     "vehicle_type": "PC",
-     "us_canada_pct": 1,
-     "foreign_1_pct": 90,
-     "foreign_1_country": "K",
+     "manufacturer": "Honda Motor Co., Ltd.",
+     "make": "Acura",
+     "carline": "MDX AWD",
+     "vehicle_type": "MPV",
+     "us_canada_pct": 70,
+     "foreign_1_pct": null,
+     "foreign_1_country": "",
      "foreign_2_pct": null,
      "foreign_2_country": "",
-     "final_assembly": "K",
-     "engine": "K",
-     "transmission": "K",
+     "final_assembly": "US",
+     "engine": "US",
+     "transmission": "US",
+     "report_url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf"
+    },
+    {
+     "model_year": 2018,
+     "manufacturer": "Honda Motor Co., Ltd.",
+     "make": "Acura",
+     "carline": "NSX AWD",
+     "vehicle_type": "PC",
+     "us_canada_pct": null,
+     "foreign_1_pct": null,
+     "foreign_1_country": "",
+     "foreign_2_pct": null,
+     "foreign_2_country": "",
+     "final_assembly": "",
+     "engine": "",
+     "transmission": "",
+     "report_url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf"
+    },
+    {
+     "model_year": 2018,
+     "manufacturer": "Honda Motor Co., Ltd.",
+     "make": "Acura",
+     "carline": "RDX 2WD",
+     "vehicle_type": "MPV",
+     "us_canada_pct": null,
+     "foreign_1_pct": null,
+     "foreign_1_country": "",
+     "foreign_2_pct": null,
+     "foreign_2_country": "",
+     "final_assembly": "",
+     "engine": "",
+     "transmission": "",
      "report_url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf"
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/car-origin-filings.json",
-     "bytes": 210010,
-     "sha256": "c5db542cd77d1390cd9217b0d3cc59d9046d1bbe48d7123d3efb3565e8128bd1"
+     "bytes": 384004,
+     "sha256": "b9628426619c2f9d62571f71c667e29b47aa23ad6743cf8b6f3ea5d9b49d7c69"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/car-origin-filings.csv",
-     "bytes": 65754,
-     "sha256": "b5c070a4d57d6101a041a4cc57cd91a94f247d5f84b21f6c762fe2f715fccde5"
+     "bytes": 121704,
+     "sha256": "3cf60ecfebcefbe7cfd35a8851e3ca06ba3db7085f8c10bb3ca9b9b9eabfcd1e"
     }
    }
   },
@@ -3401,6 +3401,190 @@
      "url": "https://whoactuallymakes.com/data/onn-tv-register.csv",
      "bytes": 57462,
      "sha256": "700061a8fcfb83eb48fd19e12cb9ae28c76bd93cd2b0dc5d352103083691ef04"
+    }
+   }
+  },
+  {
+   "id": "trader-joes-alcohol",
+   "title": "Trader Joe's wine, beer and spirits label approvals (TTB)",
+   "short": "Trader Joe's alcohol labels",
+   "what": "Every label approval in TTB's public COLA registry with a brand name starting \"Trader Joe\", for the 15 years the registry's search allows: the approval number, the kind of drink, TTB's class, the company that holds the approval (box 8 of the form), the trade name the form says goes on the bottle, origin, date and status, with a link to each form.",
+   "limits": "An approval shows which company applied for a label and got it approved, not that the label is on shelves now, and not which of several holders filled the bottle in front of you. One approval covers one label design, so a new vintage or size adds a row; it is not a count of bottles. Six approvals whose form gave no applicant are left out. \"holder\" groups spellings and related Sazerac companies; \"applicant\" is as filed.",
+   "use": "Powers the wine, beer and spirits section of the Trader Joe's page.",
+   "page": "/trader-joes/",
+   "refresh": "Read in full from TTB's registry when the page is re-checked (next May 2027)",
+   "keywords": [
+    "Trader Joe's",
+    "Trader Joe's wine",
+    "who makes Trader Joe's wine",
+    "Charles Shaw",
+    "Two Buck Chuck",
+    "Trader Joe's beer",
+    "Trader Joe's spirits",
+    "TTB",
+    "COLA",
+    "label approval"
+   ],
+   "rights": "US government records in the public domain (TTB). CC BY covers our compiled file; credit TTB for the underlying approvals.",
+   "based_on": [
+    "https://ttbonline.gov/colasonline/publicSearchColasBasic.do"
+   ],
+   "records": 954,
+   "updated": "2026-11-11",
+   "fields": [
+    {
+     "name": "ttb_id",
+     "type": "text",
+     "about": "TTB's approval number (TTB ID)."
+    },
+    {
+     "name": "kind",
+     "type": "text",
+     "about": "Our grouping of TTB's class: Beer, Bourbon and American whiskey, Canadian whisky, Cocktails, Gin, Irish whiskey, Liqueurs, Mezcal, Other spirits, Other wine, Red wine, Rosé wine, Rum, Scotch whisky, Sparkling wine, Tequila, Vodka, White wine or Wine over 14% alcohol. TTB files still wine over 14% alcohol in its dessert wine class, shown here as \"Wine over 14% alcohol\"."
+    },
+    {
+     "name": "ttb_class",
+     "type": "text",
+     "about": "TTB's class and type, as on the form."
+    },
+    {
+     "name": "brand_on_form",
+     "type": "text",
+     "about": "The brand name as filed."
+    },
+    {
+     "name": "fanciful_name",
+     "type": "text",
+     "about": "The fanciful name, if the form gives one."
+    },
+    {
+     "name": "holder",
+     "type": "text",
+     "about": "The holder, with spellings and related companies grouped."
+    },
+    {
+     "name": "applicant",
+     "type": "text",
+     "about": "The applicant name exactly as on the form (box 8)."
+    },
+    {
+     "name": "holder_place",
+     "type": "text",
+     "about": "The holder's city and state as on the form."
+    },
+    {
+     "name": "name_on_label",
+     "type": "text",
+     "about": "The trade name the form says goes on the bottle, separated by semicolons; blank when the holder's own name is used."
+    },
+    {
+     "name": "origin",
+     "type": "text",
+     "about": "Origin as filed: a US state or a country."
+    },
+    {
+     "name": "approved_on",
+     "type": "date",
+     "about": "The date TTB approved the label."
+    },
+    {
+     "name": "status",
+     "type": "text",
+     "about": "The approval's status when read: Approved, Expired or Surrendered."
+    },
+    {
+     "name": "form_url",
+     "type": "url",
+     "about": "TTB's public copy of the form."
+    }
+   ],
+   "preview": [
+    {
+     "ttb_id": "26308001000176",
+     "kind": "Red wine",
+     "ttb_class": "TABLE RED WINE",
+     "brand_on_form": "TRADER JOE'S GROWERS RESERVE",
+     "fanciful_name": "",
+     "holder": "Asv Wines",
+     "applicant": "Asv Wines, Inc.",
+     "holder_place": "Mc Farland, CA",
+     "name_on_label": "",
+     "origin": "California",
+     "approved_on": "2026-11-05",
+     "status": "Approved",
+     "form_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=26308001000176"
+    },
+    {
+     "ttb_id": "26308001000181",
+     "kind": "Red wine",
+     "ttb_class": "TABLE RED WINE",
+     "brand_on_form": "TRADER JOE'S GROWERS RESERVE",
+     "fanciful_name": "",
+     "holder": "Asv Wines",
+     "applicant": "Asv Wines, Inc.",
+     "holder_place": "San Martin, CA",
+     "name_on_label": "",
+     "origin": "California",
+     "approved_on": "2026-11-05",
+     "status": "Approved",
+     "form_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=26308001000181"
+    },
+    {
+     "ttb_id": "26295001000493",
+     "kind": "Vodka",
+     "ttb_class": "VODKA 80-89 PROOF",
+     "brand_on_form": "TRADER JOE'S",
+     "fanciful_name": "VERSATILE SPIRIT",
+     "holder": "Corning & Company Distillers",
+     "applicant": "Corning & Company Distillers, LLC",
+     "holder_place": "Rohnert Park, CA",
+     "name_on_label": "Healdsburg Distillers",
+     "origin": "California",
+     "approved_on": "2026-10-27",
+     "status": "Approved",
+     "form_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=26295001000493"
+    },
+    {
+     "ttb_id": "26295001000757",
+     "kind": "White wine",
+     "ttb_class": "TABLE WHITE WINE",
+     "brand_on_form": "TRADER JOE'S",
+     "fanciful_name": "",
+     "holder": "Schafer-Reichart Selections",
+     "applicant": "Schafer-Reichart Selections, Inc.",
+     "holder_place": "Jacksonville, FL",
+     "name_on_label": "",
+     "origin": "Germany",
+     "approved_on": "2026-10-26",
+     "status": "Approved",
+     "form_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=26295001000757"
+    },
+    {
+     "ttb_id": "26258001000194",
+     "kind": "Vodka",
+     "ttb_class": "VODKA 80-89 PROOF",
+     "brand_on_form": "TRADER JOES",
+     "fanciful_name": "",
+     "holder": "Mayo Beverage",
+     "applicant": "Mayo Beverage Company LLC",
+     "holder_place": "Smithville, TX",
+     "name_on_label": "Bottled BY Dynasty Spirits In Smithville Texas",
+     "origin": "Texas",
+     "approved_on": "2026-10-01",
+     "status": "Approved",
+     "form_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=26258001000194"
+    }
+   ],
+   "files": {
+    "json": {
+     "url": "https://whoactuallymakes.com/data/trader-joes-alcohol.json",
+     "bytes": 510336,
+     "sha256": "b58413e580ec7900bdf2fd900c443b2065e845408e4414693f09335656911162"
+    },
+    "csv": {
+     "url": "https://whoactuallymakes.com/data/trader-joes-alcohol.csv",
+     "bytes": 271345,
+     "sha256": "3d0c6c3446e4e351d9d07280fcd5c7a6ac0dc978b9efea1abbd983ad77e0e818"
     }
    }
   }
