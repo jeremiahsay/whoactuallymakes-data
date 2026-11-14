@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-13",
+ "generated": "2026-11-14",
  "title": "Who Actually Makes open data",
  "url": "https://whoactuallymakes.com/data/",
  "licence": {
@@ -13,8 +13,8 @@
   "doi_note": "Concept DOI: always resolves to the newest archived version on Zenodo.",
   "mirror": "https://github.com/jeremiahsay/whoactuallymakes-data"
  },
- "count": 19,
- "records": 15748,
+ "count": 20,
+ "records": 16030,
  "datasets": [
   {
    "id": "claims",
@@ -937,13 +937,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/tire-age.json",
-     "bytes": 35668,
-     "sha256": "8446deb02dd899c5c18a42c44d7d8cb44a1cd94c3f83028afec541089438ad18"
+     "bytes": 35924,
+     "sha256": "34733ce4d473ca627382b8ca32b100a05577d31f37a3be2684e916ce6a35ca34"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/tire-age.csv",
-     "bytes": 20323,
-     "sha256": "4bf479cd0dc67e5ce41211293906b0918ec2518c9a3f3263921756de53ab8fe0"
+     "bytes": 20583,
+     "sha256": "1f8b9036f976f7af566619b090c9164a7e922dd1f3f17a7362af43dda44d04d5"
     }
    }
   },
@@ -967,6 +967,7 @@
    "based_on": [
     "http://www.fda.gov/Safety/Recalls/ucm303034.htm",
     "http://www.usga.org/ConformingGolfBall/gball_list.pdf",
+    "https://about.usps.com/what/financials/10k-reports/fy2026.pdf",
     "https://acdelcocanada.com/parts/batteries/battery-warranty",
     "https://acuranews.com/en-US/releases/production-start-of-acura-integra-signals-return-of-iconic-model-being-built-for-first-time-in-america",
     "https://annualreport2025.volkswagen-group.com/group-management-report/shares-and-bonds/shareholder-structure.html",
@@ -1013,11 +1014,10 @@
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0144-2025%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0151-2021%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0159-2025%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2021%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2025%22"
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2021%22"
    ],
-   "records": 1694,
-   "updated": "2026-11-13",
+   "records": 1771,
+   "updated": "2026-11-14",
    "fields": [
     {
      "name": "id",
@@ -1155,13 +1155,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/evidence.json",
-     "bytes": 1509236,
-     "sha256": "89fa684e32ad1bf567d54a8cfaafac1805ed27f846f00cc267f446bdac978631"
+     "bytes": 1585047,
+     "sha256": "543c700ac2be8e7bcfd993fd78db4e730e9e6a0d798c9a26bd922ff3b631bdd5"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/evidence.csv",
-     "bytes": 1172799,
-     "sha256": "94b77af611aaedfc4ff4edb2badf2253a79ba576629479b5d37bca6fe2a927b0"
+     "bytes": 1233604,
+     "sha256": "ae1b056a9a09196703c5dd89c6f501b44803fd3754b782b327841b0d8f3594d7"
     }
    }
   },
@@ -1182,6 +1182,7 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [
+    "https://about.usps.com/what/financials/",
     "https://acdelcocanada.com/",
     "https://acuranews.com/",
     "https://annualreport2025.volkswagen-group.com/",
@@ -1209,7 +1210,9 @@
     "https://global.nissannews.com/",
     "https://global.toyota/en/company/profile/facilities/manufacturing-worldwide/",
     "https://gov.georgia.gov/",
+    "https://gruppe.schwarz/en",
     "https://hip2save.com/",
+    "https://investors.ups.com/news-events/press-releases",
     "https://investors.volvocars.com/",
     "https://itstillruns.com/",
     "https://kiaoldnewsroom.newsmarket.com/",
@@ -1223,18 +1226,15 @@
     "https://mygarage.honda.com/s/find-honda",
     "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
     "https://newmodernmom.com/",
+    "https://newsroom.genesis.com/",
     "https://newsroom.porsche.com/",
     "https://novolex.com/",
     "https://open.fda.gov/apis/drug/drugsfda/",
     "https://open.fda.gov/apis/food/enforcement/",
-    "https://opendata.fcc.gov/d/3b3k-34jp",
-    "https://ownersmanual.hyundai.com/",
-    "https://ownersmanual.kia.com/",
-    "https://press.pokemon.com/",
-    "https://pressroom.lexus.com/"
+    "https://opendata.fcc.gov/d/3b3k-34jp"
    ],
-   "records": 194,
-   "updated": "2026-11-13",
+   "records": 211,
+   "updated": "2026-11-14",
    "fields": [
     {
      "name": "id",
@@ -1382,13 +1382,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/sources.json",
-     "bytes": 222264,
-     "sha256": "96defb82775a6f282a0f533dd7f418945eb5535beb6a0325ac4c3450fe24dc9c"
+     "bytes": 239526,
+     "sha256": "2ed216ee60dfb94f08bc03f7da7469a682ea8ca6663e86a633b0e3856220f735"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/sources.csv",
-     "bytes": 91023,
-     "sha256": "c83ecd5ed3a51fdd7bafd35684b7ec3d1fdcef2ffe8260a5eafebb8e72deb581"
+     "bytes": 98306,
+     "sha256": "c0ea2806f6f816d2481edcaa5ceaf73ba33623c10d046dcc4e0512c9cf8575e5"
     }
    }
   },
@@ -1553,8 +1553,8 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 57,
-   "updated": "2026-11-13",
+   "records": 61,
+   "updated": "2026-11-14",
    "fields": [
     {
      "name": "id",
@@ -1662,13 +1662,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/schedule.json",
-     "bytes": 346153,
-     "sha256": "647b30a3b3ce7b29c2a92105b8ad7cc6bec1f9efa32d3b697683425559d8e9d4"
+     "bytes": 356590,
+     "sha256": "c5f9f18c674beab98525422534ccf05c7456c03c03e35d52a27e4b730c076e1e"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/schedule.csv",
-     "bytes": 14111,
-     "sha256": "ad0142fc828ff35707a1db8bb94045038ebe6d1151a8169856aa6ed5e1408567"
+     "bytes": 15304,
+     "sha256": "f38212a60a67ae3fc762743cb4fbb9621f8eefc6b4142de81658f77190b12644"
     }
    }
   },
@@ -2545,7 +2545,7 @@
    "based_on": [
     "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
    ],
-   "records": 863,
+   "records": 908,
    "updated": "2026-11-13",
    "fields": [
     {
@@ -2704,13 +2704,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/car-origin-filings.json",
-     "bytes": 384004,
-     "sha256": "b9628426619c2f9d62571f71c667e29b47aa23ad6743cf8b6f3ea5d9b49d7c69"
+     "bytes": 404365,
+     "sha256": "4bc1c060c09aee5b9b40ca87a9fd8b284f5081675e1727c4054ae9b7ad55354b"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/car-origin-filings.csv",
-     "bytes": 121704,
-     "sha256": "3cf60ecfebcefbe7cfd35a8851e3ca06ba3db7085f8c10bb3ca9b9b9eabfcd1e"
+     "bytes": 128397,
+     "sha256": "d417e128e9a6319a756a3557f8f95909ebae8a7b9d5e68f1d276e3e412512263"
     }
    }
   },
@@ -3585,6 +3585,165 @@
      "url": "https://whoactuallymakes.com/data/trader-joes-alcohol.csv",
      "bytes": 271345,
      "sha256": "3d0c6c3446e4e351d9d07280fcd5c7a6ac0dc978b9efea1abbd983ad77e0e818"
+    }
+   }
+  },
+  {
+   "id": "ownership-links",
+   "title": "Who owns which brand: ownership links between brands, companies and their controlling holders",
+   "short": "Ownership links",
+   "what": "One row per link behind the same-company check: a brand belonging to a company, a company controlled by a holder, a minority stake with its share and date, or one company making or delivering for another. Car and soda links are the same rows the car and soda hubs use.",
+   "limits": "Only links a filing, a law or the company's own site states; index funds and other passive holders are left out. A link marked with a place holds only there, as for 7UP or Corona. A stake is the share on the date given, not today's.",
+   "use": "Powers the two-name check and the pairs table on the same-company page.",
+   "page": "/are-they-the-same-company/",
+   "refresh": "Each spring after the annual reports, and when a filing shows an owner change",
+   "keywords": [
+    "are they the same company",
+    "who owns which brand",
+    "brand ownership data",
+    "parent company lookup",
+    "same parent company"
+   ],
+   "rights": "The filings are public records. CC BY covers our table. Brand names belong to their owners.",
+   "based_on": [
+    "https://www.sec.gov/edgar/search/"
+   ],
+   "records": 139,
+   "updated": "2026-11-13",
+   "fields": [
+    {
+     "name": "from",
+     "type": "string",
+     "about": "The brand or company owned, controlled or part-owned (or, for makes-or-delivers-for, the one doing the work)"
+    },
+    {
+     "name": "from_kind",
+     "type": "string",
+     "about": "agency, brand, company or holder"
+    },
+    {
+     "name": "link",
+     "type": "string",
+     "about": "controls, makes-or-delivers-for, owns or stake"
+    },
+    {
+     "name": "to",
+     "type": "string",
+     "about": "The owner, controlling holder or stakeholder (or the company worked for)"
+    },
+    {
+     "name": "to_kind",
+     "type": "string",
+     "about": "brand, company or holder"
+    },
+    {
+     "name": "where",
+     "type": "string",
+     "about": "Where the link holds, if only in some places; empty if everywhere"
+    },
+    {
+     "name": "share_pct",
+     "type": "number",
+     "about": "Share held, for stakes and controlling holders; empty otherwise"
+    },
+    {
+     "name": "share_of",
+     "type": "string",
+     "about": "What the share is of: the shares or the votes"
+    },
+    {
+     "name": "as_of",
+     "type": "string",
+     "about": "Date of the share"
+    },
+    {
+     "name": "record_title",
+     "type": "string",
+     "about": "The record the link comes from"
+    },
+    {
+     "name": "record_url",
+     "type": "string",
+     "about": "Its URL"
+    }
+   ],
+   "preview": [
+    {
+     "from": "General Motors",
+     "from_kind": "company",
+     "link": "makes-or-delivers-for",
+     "to": "Acura",
+     "to_kind": "brand",
+     "where": "",
+     "share_pct": "",
+     "share_of": "",
+     "as_of": "",
+     "record_title": "NHTSA Part 583 AALA report, model year 2025, listed alphabetically",
+     "record_url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf"
+    },
+    {
+     "from": "Aldi (US stores)",
+     "from_kind": "brand",
+     "link": "owns",
+     "to": "ALDI SÜD group",
+     "to_kind": "company",
+     "where": "",
+     "share_pct": "",
+     "share_of": "",
+     "as_of": "",
+     "record_title": "ALDI SÜD Group sustainability site: About ALDI",
+     "record_url": "https://sustainability.aldisuedgroup.com/about-aldi/aldi-purpose"
+    },
+    {
+     "from": "Bud Light",
+     "from_kind": "brand",
+     "link": "owns",
+     "to": "Anheuser-Busch InBev",
+     "to_kind": "company",
+     "where": "",
+     "share_pct": "",
+     "share_of": "",
+     "as_of": "",
+     "record_title": "Anheuser-Busch InBev SA/NV, Form 20-F for fiscal 2025, filed 3 Mar 2026: its beer brands",
+     "record_url": "https://www.sec.gov/Archives/edgar/data/1668717/000119312526088105/d65314d20f.htm"
+    },
+    {
+     "from": "Budweiser",
+     "from_kind": "brand",
+     "link": "owns",
+     "to": "Anheuser-Busch InBev",
+     "to_kind": "company",
+     "where": "",
+     "share_pct": "",
+     "share_of": "",
+     "as_of": "",
+     "record_title": "Anheuser-Busch InBev SA/NV, Form 20-F for fiscal 2025, filed 3 Mar 2026: its beer brands",
+     "record_url": "https://www.sec.gov/Archives/edgar/data/1668717/000119312526088105/d65314d20f.htm"
+    },
+    {
+     "from": "Corona",
+     "from_kind": "brand",
+     "link": "owns",
+     "to": "Anheuser-Busch InBev",
+     "to_kind": "company",
+     "where": "outside the US",
+     "share_pct": "",
+     "share_of": "",
+     "as_of": "",
+     "record_title": "Anheuser-Busch InBev SA/NV, Form 20-F for fiscal 2025, filed 3 Mar 2026: its beer brands",
+     "record_url": "https://www.sec.gov/Archives/edgar/data/1668717/000119312526088105/d65314d20f.htm"
+    }
+   ],
+   "files": {
+    "json": {
+     "url": "https://whoactuallymakes.com/data/ownership-links.json",
+     "bytes": 55568,
+     "sha256": "53a2b18e31c91dd8d06570adef6ec599bc2a38dcbd3319ff7ff1d76d4d25acfb"
+    },
+    "csv": {
+     "url": "https://whoactuallymakes.com/data/ownership-links.csv",
+     "bytes": 28987,
+     "sha256": "59f66b5790f50d8fe3dc2abe2946bf99504885491dd09e239c8b0b042adb2bf2"
     }
    }
   }

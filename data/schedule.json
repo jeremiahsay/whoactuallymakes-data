@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-13",
- "last_change": "2026-11-13",
+ "generated": "2026-11-14",
+ "last_change": "2026-11-14",
  "cadence_months": {
   "confirmed": 12,
   "documented": 6,
@@ -576,9 +576,9 @@
    "file_url": null,
    "hand_note": "Our server asks the Internet Archive to save a copy of every source we cite that has none yet, a few each hour. Costco and Sam's Club refuse archiving, and a few pages that saved as the wrong page need a copy found another way (for eCFR, the government's annual PDF edition).",
    "once": true,
-   "last": null,
-   "due": "2026-11-14",
-   "result": null
+   "last": "2026-11-14",
+   "due": "2026-11-21",
+   "result": "Not finished: 1,169 evidence records still have no archive copy. The job had saved copies every hour but failed at its rebuild from 13 Nov 03:47 UTC, so none were applied (the car brands build needed pdftotext, which the jobs server lacks; fixed). Re-booked for 21 Nov"
   },
   {
    "id": "subaru-origin-reads",
@@ -1092,6 +1092,82 @@
    "last": null,
    "due": "2026-12-13",
    "result": null
+  },
+  {
+   "id": "genesis-origin-reads",
+   "what": "Who makes Genesis: NHTSA report, Hyundai Alabama and Hyundai IR",
+   "gives": "New Genesis rows in the AALA report, any change to Hyundai Alabama's product list, and Hyundai's largest shareholders, for /who-makes-genesis/",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "nhtsa-aala",
+    "name": "NHTSA Part 583 American Automobile Labeling Act reports",
+    "publisher": "US National Highway Traffic Safety Administration",
+    "url": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
+   },
+   "file_url": null,
+   "hand_note": "The same NHTSA report as the other car pages. The page won't rebuild if a Genesis model is filed by anyone but Hyundai, or if the count of Korea-built or Alabama-built models changes, until the lines that rely on them are rewritten. Why does the filing still list a Korea-built GV70, and which Korean plants build Genesis?",
+   "once": false,
+   "last": null,
+   "due": "2026-12-13",
+   "result": null
+  },
+  {
+   "id": "same-company-records",
+   "what": "The annual filings and pages behind the same-company check that the car and soda hubs don't hold: Whirlpool, TJX, AB InBev, Constellation, UPS, CVS, Lowe's, Home Depot, Petco, Chewy and Unilever filings, Walgreens' merger 8-K, 39 USC 201, the DOVE chocolate, ALDI SÜD, aldi.com and Schwarz Group pages",
+   "gives": "The brands, owners, controlling holders and work-for links on /are-they-the-same-company/",
+   "how": "hand",
+   "every_days": 106,
+   "source": {
+    "id": "sec-edgar",
+    "name": "SEC EDGAR company filings",
+    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+    "url": "https://www.sec.gov/edgar/search/"
+   },
+   "file_url": null,
+   "hand_note": "Each company's newest annual filing and the group pages, re-checked against every quote on the page. If an owner changes, the build stops until the pair's answer is rewritten and logged as a correction.",
+   "once": false,
+   "last": null,
+   "due": "2027-03-31",
+   "result": null
+  },
+  {
+   "id": "hyundai-kia-records",
+   "what": "Are Hyundai and Kia the same company: Kia, Hyundai and Hyundai Mobis shareholder pages, NHTSA report",
+   "gives": "Hyundai's share of Kia, Kia's share of Hyundai Mobis, Mobis's share of Hyundai, and the look-alike rows in the AALA report, for /are-hyundai-and-kia-the-same-company/",
+   "how": "hand",
+   "every_days": 120,
+   "source": {
+    "id": "kia-ir",
+    "name": "Kia Corporation investor relations",
+    "publisher": "Kia Corporation",
+    "url": "https://worldwide.kia.com/en/company/investor-relations"
+   },
+   "file_url": null,
+   "hand_note": "The three companies' shareholder pages after each year-end, and each new NHTSA report. If a stake or a look-alike's country changes, the page won't rebuild until the lines that rely on it are rewritten.",
+   "once": false,
+   "last": null,
+   "due": "2027-03-31",
+   "result": null
+  },
+  {
+   "id": "usps-ups-records",
+   "what": "Are USPS and UPS the same company: UPS and USPS annual reports, UPS service pages, USPS Publication 199",
+   "gives": "The deals between the two (air cargo, last-leg delivery), each side's revenue and staff, the UPS services the Postal Service can deliver, and the tracking-number formats, for /are-usps-and-ups-the-same-company/",
+   "how": "hand",
+   "every_days": 120,
+   "source": {
+    "id": "sec-edgar",
+    "name": "SEC EDGAR company filings",
+    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+    "url": "https://www.sec.gov/edgar/search/"
+   },
+   "file_url": null,
+   "hand_note": "Both annual reports each year, UPS's service pages, and the Postal Service's tracking-number specification. If a deal ends or a figure changes, the page won't rebuild until the lines that rely on it are rewritten.",
+   "once": false,
+   "last": null,
+   "due": "2027-02-28",
+   "result": null
   }
  ],
  "terms": [
@@ -1126,6 +1202,14 @@
    "checked": "2026-11-08",
    "due": "2027-11-08",
    "automated_read": "yes"
+  },
+  {
+   "source": "ALDI SÜD Group",
+   "publisher": "ALDI SÜD Dienstleistungs-SE & Co. oHG",
+   "url": "https://www.aldi.com/impressum.html",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
   },
   {
    "source": "API Engine Oil Licensing and Certification System (EOLCS): Directory of Licensees",
@@ -1576,6 +1660,22 @@
    "automated_read": "yes"
   },
   {
+   "source": "Genesis Motor America releases",
+   "publisher": "Genesis Motor America",
+   "url": "https://www.genesisnewsusa.com/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Genesis newsroom",
+   "publisher": "Hyundai Motor Company",
+   "url": "https://newsroom.genesis.com/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "no"
+  },
+  {
    "source": "Georgia-Pacific company website",
    "publisher": "Georgia-Pacific LLC",
    "url": "https://www.gp.com/legal/legal-notices",
@@ -1712,11 +1812,43 @@
    "automated_read": "ask"
   },
   {
+   "source": "Hyundai Mobis investor relations",
+   "publisher": "Hyundai Mobis Co., Ltd.",
+   "url": "https://www.mobis.com/en/index.do",
+   "checked": "2026-11-14",
+   "due": "2027-11-14",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Hyundai Motor Company investor relations",
+   "publisher": "Hyundai Motor Company",
+   "url": "https://www.hyundai.com/worldwide/en/company/ir",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Hyundai Motor Manufacturing Alabama",
+   "publisher": "Hyundai Motor Manufacturing Alabama, LLC",
+   "url": "https://www.hmmausa.com/",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
    "source": "Hyundai owner's manuals",
    "publisher": "Hyundai Motor America",
    "url": "https://www.hyundaiusa.com/us/en/terms-conditions.html",
    "checked": "2026-11-03",
    "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Hyundai worldwide newsroom",
+   "publisher": "Hyundai Motor Company",
+   "url": "https://www.hyundai.com/worldwide/en/company/ir",
+   "checked": "2026-11-14",
+   "due": "2027-11-14",
    "automated_read": "ask"
   },
   {
@@ -1808,6 +1940,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "Kia Heritage Archive",
+   "publisher": "Kia Corporation",
+   "url": "https://worldwide.kia.com/en/terms-and-conditions",
+   "checked": "2026-11-14",
+   "due": "2027-11-14",
+   "automated_read": "ask"
+  },
+  {
    "source": "Kia owner's manuals",
    "publisher": "Kia America, Inc.",
    "url": "https://www.kia.com/us/en/terms-of-service",
@@ -1877,6 +2017,14 @@
    "url": "https://www.marketbeat.com/terms/",
    "checked": "2026-11-05",
    "due": "2027-11-05",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Mars, Incorporated",
+   "publisher": "Mars, Incorporated",
+   "url": "https://www.mars.com/legal",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
    "automated_read": "ask"
   },
   {
@@ -1974,6 +2122,14 @@
    "checked": "2026-11-07",
    "due": "2027-11-07",
    "automated_read": "no"
+  },
+  {
+   "source": "NHTSA press releases",
+   "publisher": "US National Highway Traffic Safety Administration",
+   "url": "https://www.nhtsa.gov/about-nhtsa/web-policies-notices",
+   "checked": "2026-11-14",
+   "due": "2027-11-14",
+   "automated_read": "public-domain"
   },
   {
    "source": "NHTSA recall reports and recall file",
@@ -2208,6 +2364,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "Schwarz Group",
+   "publisher": "Schwarz Corporate Affairs GmbH & Co. KG",
+   "url": "https://gruppe.schwarz/en",
+   "checked": "2026-11-13",
+   "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
    "source": "Sealy website",
    "publisher": "Sealy, Inc.",
    "url": "https://www.sealy.com/",
@@ -2416,6 +2580,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "The UPS Store website",
+   "publisher": "The UPS Store, Inc.",
+   "url": "https://www.theupsstore.com/terms-of-use",
+   "checked": "2026-11-14",
+   "due": "2027-11-14",
+   "automated_read": "ask"
+  },
+  {
    "source": "The Virginian-Pilot",
    "publisher": "Virginian-Pilot",
    "url": "https://www.pilotonline.com/",
@@ -2480,6 +2652,22 @@
    "automated_read": "yes"
   },
   {
+   "source": "UPS investor relations releases",
+   "publisher": "United Parcel Service, Inc.",
+   "url": "https://investors.ups.com/",
+   "checked": "2026-11-14",
+   "due": "2027-11-14",
+   "automated_read": "ask"
+  },
+  {
+   "source": "UPS support and service pages",
+   "publisher": "United Parcel Service, Inc.",
+   "url": "https://www.ups.com/us/en/support/shipping-support/legal-terms-conditions/website-terms-of-use",
+   "checked": "2026-11-14",
+   "due": "2027-11-14",
+   "automated_read": "no"
+  },
+  {
    "source": "USDA FSIS Meat, Poultry and Egg Product Inspection Directory",
    "publisher": "US Department of Agriculture, Food Safety and Inspection Service",
    "url": "https://www.usda.gov/about-usda/policies-and-links",
@@ -2526,6 +2714,30 @@
    "checked": "2026-11-08",
    "due": "2027-11-08",
    "automated_read": "no"
+  },
+  {
+   "source": "USPS Domestic Mail Manual",
+   "publisher": "United States Postal Service",
+   "url": "https://about.usps.com/who/legal/",
+   "checked": "2026-11-14",
+   "due": "2027-11-14",
+   "automated_read": "public-domain"
+  },
+  {
+   "source": "USPS PostalPro technical publications",
+   "publisher": "United States Postal Service",
+   "url": "https://about.usps.com/who/legal/",
+   "checked": "2026-11-14",
+   "due": "2027-11-14",
+   "automated_read": "public-domain"
+  },
+  {
+   "source": "USPS annual report (Form 10-K)",
+   "publisher": "United States Postal Service",
+   "url": "https://about.usps.com/who/legal/",
+   "checked": "2026-11-14",
+   "due": "2027-11-14",
+   "automated_read": "public-domain"
   },
   {
    "source": "USPTO Trademark Search and Trademark Status & Document Retrieval (TSDR)",
@@ -10698,7 +10910,7 @@
   },
   {
    "path": "/how-we-know/",
-   "changed": "2026-11-13",
+   "changed": "2026-11-14",
    "next": "2026-12-08",
    "tasks": [],
    "claims": null,
@@ -10706,7 +10918,7 @@
   },
   {
    "path": "/sources/",
-   "changed": "2026-11-13",
+   "changed": "2026-11-14",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -10722,7 +10934,7 @@
   },
   {
    "path": "/data/",
-   "changed": "2026-11-13",
+   "changed": "2026-11-14",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -10847,7 +11059,7 @@
   },
   {
    "path": "/home/",
-   "changed": "2026-11-13",
+   "changed": "2026-11-14",
    "next": "2026-11-16",
    "tasks": [
     {
@@ -10866,7 +11078,7 @@
   },
   {
    "path": "/about/",
-   "changed": "2026-11-13",
+   "changed": "2026-11-14",
    "next": "2027-11-08",
    "tasks": [
     {
@@ -11287,9 +11499,76 @@
    ],
    "claims": 0,
    "stamps": {}
+  },
+  {
+   "path": "/who-makes-genesis/",
+   "changed": "2026-11-13",
+   "next": "2026-12-13",
+   "tasks": [
+    {
+     "id": "genesis-origin-reads",
+     "what": "Who makes Genesis: NHTSA report, Hyundai Alabama and Hyundai IR",
+     "due": "2026-12-13"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/are-they-the-same-company/",
+   "changed": "2026-11-13",
+   "next": "2027-02-27",
+   "tasks": [
+    {
+     "id": "same-company-records",
+     "what": "The annual filings and pages behind the same-company check that the car and soda hubs don't hold: Whirlpool, TJX, AB InBev, Constellation, UPS, CVS, Lowe's, Home Depot, Petco, Chewy and Unilever filings, Walgreens' merger 8-K, 39 USC 201, the DOVE chocolate, ALDI SÜD, aldi.com and Schwarz Group pages",
+     "due": "2027-03-31"
+    },
+    {
+     "id": "soda-brands-records",
+     "what": "Soda companies' annual filings and releases (Coca-Cola, PepsiCo, Keurig Dr Pepper, National Beverage, Coca-Cola Consolidated and Celsius 10-Ks; KDP 8-Ks) and the Coca-Cola US and KDP brand pages",
+     "due": "2027-02-27"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/are-hyundai-and-kia-the-same-company/",
+   "changed": "2026-11-14",
+   "next": "2027-03-31",
+   "tasks": [
+    {
+     "id": "hyundai-kia-records",
+     "what": "Are Hyundai and Kia the same company: Kia, Hyundai and Hyundai Mobis shareholder pages, NHTSA report",
+     "due": "2027-03-31"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/are-usps-and-ups-the-same-company/",
+   "changed": "2026-11-14",
+   "next": "2027-02-28",
+   "tasks": [
+    {
+     "id": "usps-ups-records",
+     "what": "Are USPS and UPS the same company: UPS and USPS annual reports, UPS service pages, USPS Publication 199",
+     "due": "2027-02-28"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
   }
  ],
  "done": [
+  {
+   "on": "2026-11-14",
+   "task": "wam-wayback-saves",
+   "what": "Checked the Wayback save job and the archive warnings",
+   "result": "Not finished: 1,169 evidence records still have no archive copy. The job had saved copies every hour but failed at its rebuild from 13 Nov 03:47 UTC, so none were applied (the car brands build needed pdftotext, which the jobs server lacks; fixed). Re-booked for 21 Nov"
+  },
   {
    "on": "2026-11-12",
    "task": "tire-age-carmaker-followup",

@@ -1,9 +1,9 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-13",
- "count": 194,
- "primary": 139,
- "by_hand": 26,
+ "generated": "2026-11-14",
+ "count": 211,
+ "primary": 156,
+ "by_hand": 28,
  "sources": [
   {
    "id": "api-eolcs",
@@ -190,6 +190,11 @@
      "label": "Who makes Infiniti?",
      "url": "/who-makes-infiniti/",
      "note": "Which VIN codes decode to Infiniti, and from which country"
+    },
+    {
+     "label": "Who makes Genesis?",
+     "url": "/who-makes-genesis/",
+     "note": "Which VIN codes decode to Genesis, and from which country"
     }
    ],
    "pulls": [
@@ -1070,6 +1075,55 @@
    ]
   },
   {
+   "id": "kia-ir",
+   "name": "Kia Corporation investor relations",
+   "short": "Kia investor relations",
+   "publisher": "Kia Corporation",
+   "url": "https://worldwide.kia.com/en/company/investor-relations",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Who holds Kia Corporation's shares, as Kia reports them.",
+   "cannot_prove": "Who designs or builds any one model.",
+   "terms": {
+    "url": "https://worldwide.kia.com/en/terms-and-conditions",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-08",
+    "due": "2027-11-08"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are Kias made?",
+     "url": "/where-is-kia-made/",
+     "note": "Hyundai Motor Company's share of Kia"
+    },
+    {
+     "label": "Who owns which car brands?",
+     "url": "/who-owns-which-car-brands/",
+     "note": "Hyundai Motor Company's share of Kia"
+    },
+    {
+     "label": "Who makes Genesis?",
+     "url": "/who-makes-genesis/",
+     "note": "Hyundai's 35.17% of Kia, for who owns Genesis"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Are Hyundai and Kia the same company: Kia, Hyundai and Hyundai Mobis shareholder pages, NHTSA report",
+     "how": "hand",
+     "every_days": 120,
+     "last": null,
+     "due": "2027-03-31",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The three companies' shareholder pages after each year-end, and each new NHTSA report. If a stake or a look-alike's country changes, the page won't rebuild until the lines that rely on it are rewritten."
+    }
+   ]
+  },
+  {
    "id": "nhtsa-aala",
    "name": "NHTSA Part 583 American Automobile Labeling Act reports",
    "short": "NHTSA AALA reports",
@@ -1122,6 +1176,11 @@
      "label": "Who makes Infiniti?",
      "url": "/who-makes-infiniti/",
      "note": "Where each Infiniti model is assembled, and its US/Canada parts share"
+    },
+    {
+     "label": "Who makes Genesis?",
+     "url": "/who-makes-genesis/",
+     "note": "Where each Genesis model is assembled, and its US/Canada parts share"
     }
    ],
    "pulls": [
@@ -1190,6 +1249,17 @@
      "edition": null,
      "file_url": null,
      "hand_note": "The same NHTSA report as the other car pages. The page won't rebuild if an Infiniti model is filed by anyone but Nissan, or if the count of US-built or Japan-built models changes, until the lines that rely on them are rewritten. Has Nissan itself said when the QX50 and QX55 ended?"
+    },
+    {
+     "what": "Who makes Genesis: NHTSA report, Hyundai Alabama and Hyundai IR",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2026-12-13",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The same NHTSA report as the other car pages. The page won't rebuild if a Genesis model is filed by anyone but Hyundai, or if the count of Korea-built or Alabama-built models changes, until the lines that rely on them are rewritten. Why does the filing still list a Korea-built GV70, and which Korean plants build Genesis?"
     }
    ]
   },
@@ -1349,6 +1419,11 @@
      "label": "Who makes Acura?",
      "url": "/who-makes-acura/",
      "note": "Honda's own account of Acura: launched 1986, counted in its car sales"
+    },
+    {
+     "label": "Are they the same company?",
+     "url": "/are-they-the-same-company/",
+     "note": "Who owns whom, for the most-asked pairs of brands"
     }
    ],
    "pulls": [
@@ -1395,6 +1470,28 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Keurig Dr Pepper's filings since our last read. If an 8-K or 10-Q changes the split's target date or the drinks company's name, the page quotes it. When the split completes, every KDP brand changes owner on both pages, as a correction approved by the site owner."
+    },
+    {
+     "what": "The annual filings and pages behind the same-company check that the car and soda hubs don't hold: Whirlpool, TJX, AB InBev, Constellation, UPS, CVS, Lowe's, Home Depot, Petco, Chewy and Unilever filings, Walgreens' merger 8-K, 39 USC 201, the DOVE chocolate, ALDI SÜD, aldi.com and Schwarz Group pages",
+     "how": "hand",
+     "every_days": 106,
+     "last": null,
+     "due": "2027-03-31",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Each company's newest annual filing and the group pages, re-checked against every quote on the page. If an owner changes, the build stops until the pair's answer is rewritten and logged as a correction."
+    },
+    {
+     "what": "Are USPS and UPS the same company: UPS and USPS annual reports, UPS service pages, USPS Publication 199",
+     "how": "hand",
+     "every_days": 120,
+     "last": null,
+     "due": "2027-02-28",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Both annual reports each year, UPS's service pages, and the Postal Service's tracking-number specification. If a deal ends or a figure changes, the page won't rebuild until the lines that rely on it are rewritten."
     }
    ]
   },
@@ -1639,9 +1736,9 @@
      "what": "Internet Archive copies of every source we cite",
      "how": "hand",
      "every_days": 0,
-     "last": null,
-     "due": "2026-11-14",
-     "result": null,
+     "last": "2026-11-14",
+     "due": "2026-11-21",
+     "result": "Not finished: 1,169 evidence records still have no archive copy. The job had saved copies every hour but failed at its rebuild from 13 Nov 03:47 UTC, so none were applied (the car brands build needed pdftotext, which the jobs server lacks; fixed). Re-booked for 21 Nov",
      "edition": null,
      "file_url": null,
      "hand_note": "Our server asks the Internet Archive to save a copy of every source we cite that has none yet, a few each hour. Costco and Sam's Club refuse archiving, and a few pages that saved as the wrong page need a copy found another way (for eCFR, the government's annual PDF edition)."
@@ -1871,6 +1968,33 @@
      "label": "Battery date code decoder",
      "url": "/battery-date-code/",
      "note": "ACDelco's date code rule"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "aldi-sued",
+   "name": "ALDI SÜD Group",
+   "short": "ALDI SÜD",
+   "publisher": "ALDI SÜD Dienstleistungs-SE & Co. oHG",
+   "url": "https://sustainability.aldisuedgroup.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which countries the ALDI SÜD group operates in.",
+   "cannot_prove": "Who owns the group, or which supplier makes an Aldi product.",
+   "terms": {
+    "url": "https://www.aldi.com/impressum.html",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Are they the same company?",
+     "url": "/are-they-the-same-company/",
+     "note": "Who owns whom, for the most-asked pairs of brands"
     }
    ],
    "pulls": []
@@ -3143,6 +3267,60 @@
    "pulls": []
   },
   {
+   "id": "genesis-motor-america",
+   "name": "Genesis Motor America releases",
+   "short": "Genesis Motor America",
+   "publisher": "Genesis Motor America",
+   "url": "https://www.genesisnewsusa.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Genesis Motor America announced, on the date of the release.",
+   "cannot_prove": "Where one car was built.",
+   "terms": {
+    "url": "https://www.genesisnewsusa.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Genesis?",
+     "url": "/who-makes-genesis/",
+     "note": "Where Genesis models are built, and who owns Hyundai"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "genesis-newsroom",
+   "name": "Genesis newsroom",
+   "short": "Genesis newsroom",
+   "publisher": "Hyundai Motor Company",
+   "url": "https://newsroom.genesis.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Genesis and Hyundai announced, on the date of the release.",
+   "cannot_prove": "Where one car was built.",
+   "terms": {
+    "url": "https://newsroom.genesis.com/",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Genesis?",
+     "url": "/who-makes-genesis/",
+     "note": "Where Genesis models are built, and who owns Hyundai"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "gp-site",
    "name": "Georgia-Pacific company website",
    "short": "Georgia-Pacific",
@@ -3577,6 +3755,81 @@
    "pulls": []
   },
   {
+   "id": "mobis-ir",
+   "name": "Hyundai Mobis investor relations",
+   "short": "Hyundai Mobis investor relations",
+   "publisher": "Hyundai Mobis Co., Ltd.",
+   "url": "https://www.mobis.com/en/ir/irinfo.do",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Who holds Hyundai Mobis’s shares among its affiliated persons, as Mobis reports them, with the date given.",
+   "cannot_prove": "Who controls Hyundai Mobis, or what it supplies to any one car.",
+   "terms": {
+    "url": "https://www.mobis.com/en/index.do",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-14",
+    "due": "2027-11-14"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "hyundai-ir",
+   "name": "Hyundai Motor Company investor relations",
+   "short": "Hyundai IR",
+   "publisher": "Hyundai Motor Company",
+   "url": "https://www.hyundai.com/worldwide/en/company/ir",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Hyundai's largest shareholders and its share count, as of the date given.",
+   "cannot_prove": "Who controls the shareholders themselves.",
+   "terms": {
+    "url": "https://www.hyundai.com/worldwide/en/company/ir",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Genesis?",
+     "url": "/who-makes-genesis/",
+     "note": "Where Genesis models are built, and who owns Hyundai"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "hmma",
+   "name": "Hyundai Motor Manufacturing Alabama",
+   "short": "HMMA",
+   "publisher": "Hyundai Motor Manufacturing Alabama, LLC",
+   "url": "https://www.hmmausa.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which vehicles Hyundai's Alabama plant says it builds, and when production started.",
+   "cannot_prove": "Where one car was built, or how many of a model come from the plant.",
+   "terms": {
+    "url": "https://www.hmmausa.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Genesis?",
+     "url": "/who-makes-genesis/",
+     "note": "Where Genesis models are built, and who owns Hyundai"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-hyundai",
    "name": "Hyundai owner's manuals",
    "short": "Hyundai",
@@ -3601,6 +3854,27 @@
      "note": "Its tire age advice to owners, in the carmakers table"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "hyundai-newsroom",
+   "name": "Hyundai worldwide newsroom",
+   "short": "Hyundai worldwide newsroom",
+   "publisher": "Hyundai Motor Company",
+   "url": "https://www.hyundai.com/worldwide/en/newsroom",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Hyundai Motor Company and Hyundai Motor Group announced, in their own words.",
+   "cannot_prove": "What was actually built later; an announcement is a plan.",
+   "terms": {
+    "url": "https://www.hyundai.com/worldwide/en/company/ir",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-14",
+    "due": "2027-11-14"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -3820,38 +4094,6 @@
    "pulls": []
   },
   {
-   "id": "kia-ir",
-   "name": "Kia Corporation investor relations",
-   "short": "Kia investor relations",
-   "publisher": "Kia Corporation",
-   "url": "https://worldwide.kia.com/en/company/investor-relations",
-   "kind": "Maker's own words",
-   "primary": true,
-   "proves": "Who holds Kia Corporation's shares, as Kia reports them.",
-   "cannot_prove": "Who designs or builds any one model.",
-   "terms": {
-    "url": "https://worldwide.kia.com/en/terms-and-conditions",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
-    "automated": true,
-    "checked": "2026-11-08",
-    "due": "2027-11-08"
-   },
-   "credit": null,
-   "used_for": [
-    {
-     "label": "Where are Kias made?",
-     "url": "/where-is-kia-made/",
-     "note": "Hyundai Motor Company's share of Kia"
-    },
-    {
-     "label": "Who owns which car brands?",
-     "url": "/who-owns-which-car-brands/",
-     "note": "Hyundai Motor Company's share of Kia"
-    }
-   ],
-   "pulls": []
-  },
-  {
    "id": "kia-newsroom",
    "name": "Kia Global Newsroom",
    "short": "Kia newsroom",
@@ -3876,6 +4118,27 @@
      "note": "Kia Georgia milestones and the Telluride's only plant"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "kia-heritage",
+   "name": "Kia Heritage Archive",
+   "short": "Kia Heritage Archive",
+   "publisher": "Kia Corporation",
+   "url": "https://worldwide.kia.com/en/brand/our-brand/heritage/history/chapter-3",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Kia’s own account of its history, including the 1998 acquisition by Hyundai Motor.",
+   "cannot_prove": "Share counts or deal terms; it’s the company’s own history, not a filing.",
+   "terms": {
+    "url": "https://worldwide.kia.com/en/terms-and-conditions",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-14",
+    "due": "2027-11-14"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -4111,6 +4374,33 @@
      "label": "Who makes Kirkland Signature diapers",
      "url": "/kirkland-signature/diapers/",
      "note": "Kimberly-Clark's chief executive on the club private-label diaper exit"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "mars",
+   "name": "Mars, Incorporated",
+   "short": "Mars",
+   "publisher": "Mars, Incorporated",
+   "url": "https://www.mars.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which brands Mars says are its own.",
+   "cannot_prove": "Who owns the same brand name in another product category or country.",
+   "terms": {
+    "url": "https://www.mars.com/legal",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Are they the same company?",
+     "url": "/are-they-the-same-company/",
+     "note": "Who owns whom, for the most-asked pairs of brands"
     }
    ],
    "pulls": []
@@ -4415,6 +4705,27 @@
      "note": "Motorcraft's battery terms"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "nhtsa-press",
+   "name": "NHTSA press releases",
+   "short": "NHTSA press releases",
+   "publisher": "US National Highway Traffic Safety Administration",
+   "url": "https://www.nhtsa.gov/press-releases",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What the US road-safety regulator announced: consent orders, penalties and safety campaigns, with their dates.",
+   "cannot_prove": "Which individual cars are affected; the recall records and each maker’s VIN lookup answer that.",
+   "terms": {
+    "url": "https://www.nhtsa.gov/about-nhtsa/web-policies-notices",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-14",
+    "due": "2027-11-14"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -4990,6 +5301,33 @@
    },
    "credit": null,
    "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "schwarz-group",
+   "name": "Schwarz Group",
+   "short": "Schwarz Group",
+   "publisher": "Schwarz Corporate Affairs GmbH & Co. KG",
+   "url": "https://gruppe.schwarz/en",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which businesses Schwarz Group lists as its own, such as Lidl and Kaufland.",
+   "cannot_prove": "Who owns Schwarz Group, or which supplier makes a Lidl product.",
+   "terms": {
+    "url": "https://gruppe.schwarz/en",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-13",
+    "due": "2027-11-13"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Are they the same company?",
+     "url": "/are-they-the-same-company/",
+     "note": "Who owns whom, for the most-asked pairs of brands"
+    }
+   ],
    "pulls": []
   },
   {
@@ -5614,6 +5952,27 @@
    "pulls": []
   },
   {
+   "id": "theupsstore",
+   "name": "The UPS Store website",
+   "short": "The UPS Store website",
+   "publisher": "The UPS Store, Inc.",
+   "url": "https://www.theupsstore.com/",
+   "kind": "Retailer",
+   "primary": true,
+   "proves": "What The UPS Store says its stores offer.",
+   "cannot_prove": "What one franchise store offers today; stores are independently owned.",
+   "terms": {
+    "url": "https://www.theupsstore.com/terms-of-use",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-14",
+    "due": "2027-11-14"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "virginian-pilot",
    "name": "The Virginian-Pilot",
    "short": "Virginian-Pilot",
@@ -5835,6 +6194,48 @@
    "pulls": []
   },
   {
+   "id": "ups-investors",
+   "name": "UPS investor relations releases",
+   "short": "UPS investor relations releases",
+   "publisher": "United Parcel Service, Inc.",
+   "url": "https://investors.ups.com/news-events/press-releases",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What UPS announced, on the date given.",
+   "cannot_prove": "What happened later; an announcement is a plan.",
+   "terms": {
+    "url": "https://investors.ups.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-14",
+    "due": "2027-11-14"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "ups-help",
+   "name": "UPS support and service pages",
+   "short": "UPS support and service pages",
+   "publisher": "United Parcel Service, Inc.",
+   "url": "https://www.ups.com/us/en/support",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What UPS says about its own services, in its own words, on the day read.",
+   "cannot_prove": "What happened to any one parcel; UPS tracking answers that.",
+   "terms": {
+    "url": "https://www.ups.com/us/en/support/shipping-support/legal-terms-conditions/website-terms-of-use",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-14",
+    "due": "2027-11-14"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "usda-fsis-recalls",
    "name": "USDA FSIS recalls and public health alerts",
    "short": "USDA recall notices",
@@ -5862,6 +6263,69 @@
    "pulls": []
   },
   {
+   "id": "usps-dmm",
+   "name": "USPS Domestic Mail Manual",
+   "short": "USPS Domestic Mail Manual",
+   "publisher": "United States Postal Service",
+   "url": "https://pe.usps.com/text/dmm300/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "The Postal Service’s own rules for mail, mailboxes and mail-receiving businesses.",
+   "cannot_prove": "How a rule was applied in one case.",
+   "terms": {
+    "url": "https://about.usps.com/who/legal/",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-14",
+    "due": "2027-11-14"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "usps-postalpro",
+   "name": "USPS PostalPro technical publications",
+   "short": "USPS PostalPro technical publications",
+   "publisher": "United States Postal Service",
+   "url": "https://postalpro.usps.com/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "The Postal Service’s published technical specifications, such as its package barcode and tracking number format.",
+   "cannot_prove": "Where a parcel is now.",
+   "terms": {
+    "url": "https://about.usps.com/who/legal/",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-14",
+    "due": "2027-11-14"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "usps-10k",
+   "name": "USPS annual report (Form 10-K)",
+   "short": "USPS annual report (Form 10-K)",
+   "publisher": "United States Postal Service",
+   "url": "https://about.usps.com/what/financials/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "The Postal Service’s own account of how it is set up, governed and funded, with its yearly figures, filed with the Postal Regulatory Commission.",
+   "cannot_prove": "What it does for any one customer, or the terms of its contracts.",
+   "terms": {
+    "url": "https://about.usps.com/who/legal/",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-14",
+    "due": "2027-11-14"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "govinfo-uscode",
    "name": "United States Code (govinfo)",
    "short": "US Code",
@@ -5884,6 +6348,11 @@
      "label": "How long do refrigerators last?",
      "url": "/how-long-do-refrigerators-last/",
      "note": "The 1990 refrigerator limits in 42 USC 6295"
+    },
+    {
+     "label": "Are they the same company?",
+     "url": "/are-they-the-same-company/",
+     "note": "Who owns whom, for the most-asked pairs of brands"
     }
    ],
    "pulls": []

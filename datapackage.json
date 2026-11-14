@@ -2,9 +2,9 @@
  "name": "whoactuallymakes-data",
  "id": "https://doi.org/10.5281/zenodo.23920936",
  "title": "Who Actually Makes open data",
- "description": "Who makes store-brand products, from public records. 19 datasets, 15,748 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them; Trader Joe's wine, beer and spirits label approvals (TTB).",
+ "description": "Who makes store-brand products, from public records. 20 datasets, 16,030 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them; Trader Joe's wine, beer and spirits label approvals (TTB); Who owns which brand: ownership links between brands, companies and their controlling holders.",
  "homepage": "https://whoactuallymakes.com/data/",
- "version": "2026-11-13",
+ "version": "2026-11-14",
  "licenses": [
   {
    "name": "CC-BY-4.0",
@@ -424,8 +424,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 20323,
-   "hash": "sha256:4bf479cd0dc67e5ce41211293906b0918ec2518c9a3f3263921756de53ab8fe0",
+   "bytes": 20583,
+   "hash": "sha256:1f8b9036f976f7af566619b090c9164a7e922dd1f3f17a7362af43dda44d04d5",
    "schema": {
     "fields": [
      {
@@ -609,8 +609,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 1172799,
-   "hash": "sha256:94b77af611aaedfc4ff4edb2badf2253a79ba576629479b5d37bca6fe2a927b0",
+   "bytes": 1233604,
+   "hash": "sha256:ae1b056a9a09196703c5dd89c6f501b44803fd3754b782b327841b0d8f3594d7",
    "schema": {
     "fields": [
      {
@@ -685,6 +685,10 @@
     {
      "title": "http://www.usga.org/ConformingGolfBall/gball_list.pdf",
      "path": "http://www.usga.org/ConformingGolfBall/gball_list.pdf"
+    },
+    {
+     "title": "https://about.usps.com/what/financials/10k-reports/fy2026.pdf",
+     "path": "https://about.usps.com/what/financials/10k-reports/fy2026.pdf"
     },
     {
      "title": "https://acdelcocanada.com/parts/batteries/battery-warranty",
@@ -873,10 +877,6 @@
     {
      "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2021%22",
      "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2021%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2025%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0163-2025%22"
     }
    ]
   },
@@ -888,8 +888,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 91023,
-   "hash": "sha256:c83ecd5ed3a51fdd7bafd35684b7ec3d1fdcef2ffe8260a5eafebb8e72deb581",
+   "bytes": 98306,
+   "hash": "sha256:c0ea2806f6f816d2481edcaa5ceaf73ba33623c10d046dcc4e0512c9cf8575e5",
    "schema": {
     "fields": [
      {
@@ -962,6 +962,10 @@
     ]
    },
    "sources": [
+    {
+     "title": "https://about.usps.com/what/financials/",
+     "path": "https://about.usps.com/what/financials/"
+    },
     {
      "title": "https://acdelcocanada.com/",
      "path": "https://acdelcocanada.com/"
@@ -1071,8 +1075,16 @@
      "path": "https://gov.georgia.gov/"
     },
     {
+     "title": "https://gruppe.schwarz/en",
+     "path": "https://gruppe.schwarz/en"
+    },
+    {
      "title": "https://hip2save.com/",
      "path": "https://hip2save.com/"
+    },
+    {
+     "title": "https://investors.ups.com/news-events/press-releases",
+     "path": "https://investors.ups.com/news-events/press-releases"
     },
     {
      "title": "https://investors.volvocars.com/",
@@ -1127,6 +1139,10 @@
      "path": "https://newmodernmom.com/"
     },
     {
+     "title": "https://newsroom.genesis.com/",
+     "path": "https://newsroom.genesis.com/"
+    },
+    {
      "title": "https://newsroom.porsche.com/",
      "path": "https://newsroom.porsche.com/"
     },
@@ -1145,22 +1161,6 @@
     {
      "title": "https://opendata.fcc.gov/d/3b3k-34jp",
      "path": "https://opendata.fcc.gov/d/3b3k-34jp"
-    },
-    {
-     "title": "https://ownersmanual.hyundai.com/",
-     "path": "https://ownersmanual.hyundai.com/"
-    },
-    {
-     "title": "https://ownersmanual.kia.com/",
-     "path": "https://ownersmanual.kia.com/"
-    },
-    {
-     "title": "https://press.pokemon.com/",
-     "path": "https://press.pokemon.com/"
-    },
-    {
-     "title": "https://pressroom.lexus.com/",
-     "path": "https://pressroom.lexus.com/"
     }
    ]
   },
@@ -1240,8 +1240,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 14111,
-   "hash": "sha256:ad0142fc828ff35707a1db8bb94045038ebe6d1151a8169856aa6ed5e1408567",
+   "bytes": 15304,
+   "hash": "sha256:f38212a60a67ae3fc762743cb4fbb9621f8eefc6b4142de81658f77190b12644",
    "schema": {
     "fields": [
      {
@@ -1737,8 +1737,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 121704,
-   "hash": "sha256:3cf60ecfebcefbe7cfd35a8851e3ca06ba3db7085f8c10bb3ca9b9b9eabfcd1e",
+   "bytes": 128397,
+   "hash": "sha256:d417e128e9a6319a756a3557f8f95909ebae8a7b9d5e68f1d276e3e412512263",
    "schema": {
     "fields": [
      {
@@ -2231,6 +2231,82 @@
     {
      "title": "https://ttbonline.gov/colasonline/publicSearchColasBasic.do",
      "path": "https://ttbonline.gov/colasonline/publicSearchColasBasic.do"
+    }
+   ]
+  },
+  {
+   "name": "ownership-links",
+   "path": "data/ownership-links.csv",
+   "title": "Who owns which brand: ownership links between brands, companies and their controlling holders",
+   "description": "One row per link behind the same-company check: a brand belonging to a company, a company controlled by a holder, a minority stake with its share and date, or one company making or delivering for another. Car and soda links are the same rows the car and soda hubs use.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 28987,
+   "hash": "sha256:59f66b5790f50d8fe3dc2abe2946bf99504885491dd09e239c8b0b042adb2bf2",
+   "schema": {
+    "fields": [
+     {
+      "name": "from",
+      "type": "string",
+      "description": "The brand or company owned, controlled or part-owned (or, for makes-or-delivers-for, the one doing the work)"
+     },
+     {
+      "name": "from_kind",
+      "type": "string",
+      "description": "agency, brand, company or holder"
+     },
+     {
+      "name": "link",
+      "type": "string",
+      "description": "controls, makes-or-delivers-for, owns or stake"
+     },
+     {
+      "name": "to",
+      "type": "string",
+      "description": "The owner, controlling holder or stakeholder (or the company worked for)"
+     },
+     {
+      "name": "to_kind",
+      "type": "string",
+      "description": "brand, company or holder"
+     },
+     {
+      "name": "where",
+      "type": "string",
+      "description": "Where the link holds, if only in some places; empty if everywhere"
+     },
+     {
+      "name": "share_pct",
+      "type": "number",
+      "description": "Share held, for stakes and controlling holders; empty otherwise"
+     },
+     {
+      "name": "share_of",
+      "type": "string",
+      "description": "What the share is of: the shares or the votes"
+     },
+     {
+      "name": "as_of",
+      "type": "string",
+      "description": "Date of the share"
+     },
+     {
+      "name": "record_title",
+      "type": "string",
+      "description": "The record the link comes from"
+     },
+     {
+      "name": "record_url",
+      "type": "string",
+      "description": "Its URL"
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "https://www.sec.gov/edgar/search/",
+     "path": "https://www.sec.gov/edgar/search/"
     }
    ]
   }

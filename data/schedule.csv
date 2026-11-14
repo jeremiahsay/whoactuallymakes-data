@@ -28,7 +28,7 @@ kirkland-battery-offer,Kirkland battery offer ending Nov 15,Costco.com product l
 sams-toilet-paper-offers,Sam's Club toilet paper offers ending Nov 18 and Nov 29,Sam's Club website,hand,0,true,,2026-11-30,
 costco-hot-dogs-reads,"Costco hot dogs: prices of the 12-link pack and both Dinner Franks packs, and the USDA seal in each listing photo",Costco.com product listings,hand,30,false,2026-11-07,2026-12-07,"Pack $19.99, 15 links $22.59, 120 links $125.99; EST. 18532 on two photos, empty seal on the 15-link pack"
 kirkland-laundry-reads,"Kirkland laundry detergent: prices of all eight Costco lines, the Tide offer dates, and the maker lines on each back label",Costco.com product listings,hand,30,false,2026-11-07,2026-11-16,"Kirkland liquid $18.49 warehouse, Tide $19.99 with coupon to 15 Nov; labels name only Costco"
-wam-wayback-saves,Internet Archive copies of every source we cite,Whiting-Turner project pages,hand,0,true,,2026-11-14,
+wam-wayback-saves,Internet Archive copies of every source we cite,Whiting-Turner project pages,hand,0,true,2026-11-14,2026-11-21,"Not finished: 1,169 evidence records still have no archive copy. The job had saved copies every hour but failed at its rebuild from 13 Nov 03:47 UTC, so none were applied (the car brands build needed pdftotext, which the jobs server lacks; fixed). Re-booked for 21 Nov"
 subaru-origin-reads,Where Subarus are made: NHTSA report and Subaru releases,NHTSA Part 583 American Automobile Labeling Act reports,hand,30,false,,2026-12-07,
 kia-origin-reads,Where Kias are made: NHTSA report and Kia releases,NHTSA Part 583 American Automobile Labeling Act reports,hand,30,false,,2026-12-08,
 toyota-origin-reads,Where Toyotas are made: NHTSA report and Toyota plant lists,NHTSA Part 583 American Automobile Labeling Act reports,hand,30,false,,2026-12-09,
@@ -56,3 +56,7 @@ soda-brands-records,"Soda companies' annual filings and releases (Coca-Cola, Pep
 dr-pepper-split,"Keurig Dr Pepper's newest 8-Ks and 10-Q (EDGAR, CIK 1418135)",SEC EDGAR company filings,hand,30,false,,2027-02-27,
 acura-origin-reads,Who makes Acura: NHTSA report and Honda plant lists,NHTSA Part 583 American Automobile Labeling Act reports,hand,30,false,,2026-12-13,
 infiniti-origin-reads,Who makes Infiniti: NHTSA report and Nissan releases,NHTSA Part 583 American Automobile Labeling Act reports,hand,30,false,,2026-12-13,
+genesis-origin-reads,"Who makes Genesis: NHTSA report, Hyundai Alabama and Hyundai IR",NHTSA Part 583 American Automobile Labeling Act reports,hand,30,false,,2026-12-13,
+same-company-records,"The annual filings and pages behind the same-company check that the car and soda hubs don't hold: Whirlpool, TJX, AB InBev, Constellation, UPS, CVS, Lowe's, Home Depot, Petco, Chewy and Unilever filings, Walgreens' merger 8-K, 39 USC 201, the DOVE chocolate, ALDI SÜD, aldi.com and Schwarz Group pages",SEC EDGAR company filings,hand,106,false,,2027-03-31,
+hyundai-kia-records,"Are Hyundai and Kia the same company: Kia, Hyundai and Hyundai Mobis shareholder pages, NHTSA report",Kia Corporation investor relations,hand,120,false,,2027-03-31,
+usps-ups-records,"Are USPS and UPS the same company: UPS and USPS annual reports, UPS service pages, USPS Publication 199",SEC EDGAR company filings,hand,120,false,,2027-02-28,

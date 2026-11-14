@@ -137,6 +137,51 @@ model_year,manufacturer,make,carline,vehicle_type,us_canada_pct,foreign_1_pct,fo
 2026,"Honda Motor Co., Ltd.",Acura,MDX FWD,MPV,70,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
 2026,"Honda Motor Co., Ltd.",Acura,RDX AWD,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
 2026,"Honda Motor Co., Ltd.",Acura,RDX AWD A- Spec,MPV,60,,,,,US,US,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2020,Hyundai Motor Company,Genesis,G70,PC,5,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Hyundai Motor Company,Genesis,G80,PC,5,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Hyundai Motor Company,Genesis,G90,PC,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2021,Hyundai Motor Company,Genesis,G70,PC,5,80,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Hyundai Motor Company,Genesis,G80,PC,0,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Hyundai Motor Company,Genesis,G90,PC,0,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Hyundai Motor Company,Genesis,GV80,MPV,5,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2022,Hyundai Motor Company,Genesis,G80,PC,5,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Hyundai Motor Company,Genesis,G90,PC,0,80,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Hyundai Motor Company,Genesis,GV70,MPV,5,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Hyundai Motor Company,Genesis,GV80,MPV,2,80,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2023,Hyundai Motor Company,Genesis,G70,PC,3,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Hyundai Motor Company,Genesis,G80,PC,3,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Hyundai Motor Company,Genesis,G90,PC,2,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Hyundai Motor Company,Genesis,GV60 EV,MPV,3,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Hyundai Motor Company,Genesis,GV70,MPV,4,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Hyundai Motor Company,Genesis,GV70 EV,MPV,12,85,K,,,US,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Hyundai Motor Company,Genesis,GV80,MPV,3,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2024,Hyundai Motor Company,Genesis,G80,PC,2,80,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Hyundai Motor Company,Genesis,G80 EV,PC,2,65,K,30,CH,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Hyundai Motor Company,Genesis,G90,PC,3,80,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Hyundai Motor Company,Genesis,GV60 EV,MPV,1,90,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Hyundai Motor Company,Genesis,GV70,MPV,25,70,K,,,US,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Hyundai Motor Company,Genesis,GV70,MPV,2,80,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Hyundai Motor Company,Genesis,GV70 EV,MPV,17,80,K,,,US,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Hyundai Motor Company,Genesis,GV80,MPV,3,80,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2025,Hyundai Motor Company,Genesis,G70,PC,3,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Hyundai Motor Company,Genesis,G80,PC,3,80,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Hyundai Motor Company,Genesis,G80 EV,PC,2,70,K,25,CH,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Hyundai Motor Company,Genesis,G90,PC,2,80,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Hyundai Motor Company,Genesis,GV60,MPV,1,70,K,25,CH,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Hyundai Motor Company,Genesis,GV70,MPV,3,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Hyundai Motor Company,Genesis,GV70,MPV,25,70,K,,,US,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Hyundai Motor Company,Genesis,GV70 EV,MPV,17,80,K,,,US,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Hyundai Motor Company,Genesis,GV80,MPV,3,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2026,Hyundai Motor Company,Genesis,G70,PC,5,80,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Hyundai Motor Company,Genesis,G80,PC,3,80,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Hyundai Motor Company,Genesis,G80 EV,PC,1,98,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Hyundai Motor Company,Genesis,G90,PC,2,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Hyundai Motor Company,Genesis,GV60,MPV,1,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Hyundai Motor Company,Genesis,GV70,MPV,2,85,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Hyundai Motor Company,Genesis,GV70,MPV,26,64,K,,,US,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Hyundai Motor Company,Genesis,GV70 EV,MPV,44,50,K,,,US,K,US,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Hyundai Motor Company,Genesis,GV80,MPV,3,80,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2027,Hyundai Motor Company,Genesis,GV80,MPV,1,95,K,,,K,K,K,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2027-AALA-Alphabetical-06-08-26.pdf
 2018,"Nissan North America, Inc",Infiniti,Q50 4 CYL,PC,0,95,J,,,J,G,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
 2018,"Nissan North America, Inc",Infiniti,Q50 6 CYL,PC,0,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
 2018,"Nissan North America, Inc",Infiniti,Q60 4CYL,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
