@@ -1,9 +1,9 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-14",
- "count": 211,
- "primary": 156,
- "by_hand": 28,
+ "generated": "2026-11-15",
+ "count": 221,
+ "primary": 163,
+ "by_hand": 29,
  "sources": [
   {
    "id": "api-eolcs",
@@ -427,6 +427,45 @@
    ]
   },
   {
+   "id": "uspto-tsdr",
+   "name": "USPTO Trademark Search and Trademark Status & Document Retrieval (TSDR)",
+   "short": "USPTO trademarks",
+   "publisher": "United States Patent and Trademark Office",
+   "url": "https://tsdr.uspto.gov/",
+   "kind": "Government registry",
+   "primary": true,
+   "proves": "Who owns a US trademark, for which goods, and when it was filed, registered and renewed.",
+   "cannot_prove": "Who makes the goods sold under the mark.",
+   "terms": {
+    "url": "https://www.uspto.gov/terms-use-uspto-websites",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-11",
+    "due": "2027-11-11"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes EverStart batteries",
+     "url": "/everstart/",
+     "note": "Walmart's EverStart trademarks"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Are Dove chocolate and Dove soap the same company: Mars's DOVE Chocolate, Galaxy and history pages, Unilever's Dove pages and 20-F, the USPTO DOVE marks",
+     "how": "hand",
+     "every_days": 182,
+     "last": null,
+     "due": "2027-05-14",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The US trademark register's DOVE marks and both companies' own pages, twice a year. If a count or owner changes, the page rebuilds from the new numbers; if a product changes hands, its line is rewritten and logged."
+    }
+   ]
+  },
+  {
    "id": "cpsc-recalls",
    "name": "CPSC recalls database (SaferProducts.gov recall API)",
    "short": "CPSC recalls",
@@ -839,6 +878,50 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Every Kirkland coffee listing in the page's table, read in a browser. We note any listing that starts or stops naming a roaster."
+    }
+   ]
+  },
+  {
+   "id": "courtlistener-recap",
+   "name": "CourtListener RECAP archive (federal court filings)",
+   "short": "Court filings (RECAP)",
+   "publisher": "Free Law Project (copies of US federal court records from PACER)",
+   "url": "https://www.courtlistener.com/recap/",
+   "kind": "Court records",
+   "primary": true,
+   "proves": "What a party said in a federal court filing, word for word.",
+   "cannot_prove": "That a party's statements are true; a complaint is one side's account. Only filings someone bought from PACER are in the archive.",
+   "terms": {
+    "url": "https://www.courtlistener.com/terms/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-05",
+    "due": "2027-11-05"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland Signature golf balls",
+     "url": "/kirkland-signature/golf-balls/",
+     "note": "Acushnet v. Costco (2017) and the 2018 settlement filing"
+    },
+    {
+     "label": "Who makes Kirkland Signature diapers",
+     "url": "/kirkland-signature/diapers/#wipes",
+     "note": "The Kirkland baby wipes case, its order and docket"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Are Trader Joe's and Aldi the same company: both companies' federal-court disclosure statements, ALDI Nord's group and chronicle pages, ALDI SÜD's country list, Aldi US's history page",
+     "how": "hand",
+     "every_days": 182,
+     "last": null,
+     "due": "2027-05-15",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Both companies' newest court disclosures and the two Aldi groups' own pages, twice a year. If either names a new parent, the page's answer is rewritten and logged; the shared-maker counts follow our store pages."
     }
    ]
   },
@@ -1492,6 +1575,17 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Both annual reports each year, UPS's service pages, and the Postal Service's tracking-number specification. If a deal ends or a figure changes, the page won't rebuild until the lines that rely on it are rewritten."
+    },
+    {
+     "what": "Are Pepsi and Coca-Cola the same company: both annual reports and proxy statements, PepsiCo's history story, the Justice Department releases",
+     "how": "hand",
+     "every_days": 150,
+     "last": null,
+     "due": "2027-04-15",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Both companies' annual reports and proxy statements each year. If someone joins both boards, the page won't rebuild until its lines are rewritten."
     }
    ]
   },
@@ -1776,7 +1870,7 @@
      "every_days": 7,
      "last": "2026-11-11",
      "due": "2026-11-18",
-     "result": "38 recalls waiting for review",
+     "result": "18 recalls waiting for review",
      "edition": null,
      "file_url": null,
      "hand_note": null
@@ -1833,33 +1927,6 @@
      "label": "Who makes Kirkland Signature golf clubs",
      "url": "/kirkland-signature/golf-clubs/",
      "note": "Listed manufacturer of the Kirkland Signature driver"
-    }
-   ],
-   "pulls": []
-  },
-  {
-   "id": "uspto-tsdr",
-   "name": "USPTO Trademark Search and Trademark Status & Document Retrieval (TSDR)",
-   "short": "USPTO trademarks",
-   "publisher": "United States Patent and Trademark Office",
-   "url": "https://tsdr.uspto.gov/",
-   "kind": "Government registry",
-   "primary": true,
-   "proves": "Who owns a US trademark, for which goods, and when it was filed, registered and renewed.",
-   "cannot_prove": "Who makes the goods sold under the mark.",
-   "terms": {
-    "url": "https://www.uspto.gov/terms-use-uspto-websites",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
-    "automated": true,
-    "checked": "2026-11-11",
-    "due": "2027-11-11"
-   },
-   "credit": null,
-   "used_for": [
-    {
-     "label": "Who makes EverStart batteries",
-     "url": "/everstart/",
-     "note": "Walmart's EverStart trademarks"
     }
    ],
    "pulls": []
@@ -1973,6 +2040,27 @@
    "pulls": []
   },
   {
+   "id": "aldi-nord",
+   "name": "ALDI Nord (aldi-nord.de)",
+   "short": "ALDI Nord",
+   "publisher": "ALDI Einkauf SE & Co. oHG (ALDI Nord)",
+   "url": "https://www.aldi-nord.de/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which countries the ALDI Nord group operates in, and how it tells its own history.",
+   "cannot_prove": "Who owns the ALDI Nord group, or anything it doesn’t mention; a company’s history page is its own telling.",
+   "terms": {
+    "url": "https://www.aldi-nord.de/impressum.html",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-15",
+    "due": "2027-11-15"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "aldi-sued",
    "name": "ALDI SÜD Group",
    "short": "ALDI SÜD",
@@ -1997,6 +2085,27 @@
      "note": "Who owns whom, for the most-asked pairs of brands"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "aldi-us",
+   "name": "ALDI US corporate site (corporate.aldi.us)",
+   "short": "ALDI US",
+   "publisher": "ALDI Inc.",
+   "url": "https://corporate.aldi.us/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What ALDI US says about its own history and size.",
+   "cannot_prove": "Who owns ALDI US; the site doesn’t say.",
+   "terms": {
+    "url": "https://www.aldi.us/terms-of-use/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-15",
+    "due": "2027-11-15"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -2300,6 +2409,27 @@
    "pulls": []
   },
   {
+   "id": "cnbc",
+   "name": "CNBC",
+   "short": "CNBC",
+   "publisher": "NBCUniversal",
+   "url": "https://www.cnbc.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What CNBC published, and when.",
+   "cannot_prove": "That the report is right; where it cites no record, it is a report, not a record.",
+   "terms": {
+    "url": "https://www.nbcuniversal.com/terms",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-15",
+    "due": "2027-11-15"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "maker-craftsman",
    "name": "CRAFTSMAN brand website (Stanley Black & Decker)",
    "short": "Craftsman",
@@ -2595,6 +2725,33 @@
    "pulls": []
   },
   {
+   "id": "costco-us-sds",
+   "name": "Costco US customer service safety data sheets",
+   "short": "Costco US safety sheets",
+   "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+   "url": "https://customerservice.costco.com/",
+   "kind": "Retailer",
+   "primary": true,
+   "proves": "Which company a Kirkland safety sheet names as supplier or distributor, on the sheet's revision date.",
+   "cannot_prove": "Who makes the product today: the sheets are dated, some name only Costco, and an item number can be reused for a newer product.",
+   "terms": {
+    "url": "https://www.costco.com/f/-/terms-and-conditions-of-use",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-14",
+    "due": "2027-11-14"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland laundry detergent",
+     "url": "/kirkland-laundry-detergent/",
+     "note": "Safety-sheet supplier records"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "costco-international",
    "name": "Costco listings outside the US (UK, Australia, Mexico)",
    "short": "Costco UK, Australia and Mexico listings",
@@ -2622,38 +2779,6 @@
      "label": "Who makes Kirkland Signature diapers",
      "url": "/kirkland-signature/diapers/",
      "note": "UK and Mexico listings, which name no maker"
-    }
-   ],
-   "pulls": []
-  },
-  {
-   "id": "courtlistener-recap",
-   "name": "CourtListener RECAP archive (federal court filings)",
-   "short": "Court filings (RECAP)",
-   "publisher": "Free Law Project (copies of US federal court records from PACER)",
-   "url": "https://www.courtlistener.com/recap/",
-   "kind": "Court records",
-   "primary": true,
-   "proves": "What a party said in a federal court filing, word for word.",
-   "cannot_prove": "That a party's statements are true; a complaint is one side's account. Only filings someone bought from PACER are in the archive.",
-   "terms": {
-    "url": "https://www.courtlistener.com/terms/",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
-    "automated": true,
-    "checked": "2026-11-05",
-    "due": "2027-11-05"
-   },
-   "credit": null,
-   "used_for": [
-    {
-     "label": "Who makes Kirkland Signature golf balls",
-     "url": "/kirkland-signature/golf-balls/",
-     "note": "Acushnet v. Costco (2017) and the 2018 settlement filing"
-    },
-    {
-     "label": "Who makes Kirkland Signature diapers",
-     "url": "/kirkland-signature/diapers/#wipes",
-     "note": "The Kirkland baby wipes case, its order and docket"
     }
    ],
    "pulls": []
@@ -3532,6 +3657,33 @@
      "label": "Who makes Kirkland laundry detergent",
      "url": "/kirkland-laundry-detergent/",
      "note": "Maker records, label doses and prices"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "henkel-sds",
+   "name": "Henkel Corporation safety data sheets",
+   "short": "Henkel safety sheets",
+   "publisher": "Henkel Corporation (sheets hosted by whatsinproducts.com)",
+   "url": "https://www.henkel-northamerica.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Henkel prints on its own product safety sheets, such as its medical emergency number and layout.",
+   "cannot_prove": "Which store-brand products Henkel made: its sheets for its own brands name no retailer.",
+   "terms": {
+    "url": "https://whatsinproducts.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-14",
+    "due": "2027-11-14"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Kirkland laundry detergent",
+     "url": "/kirkland-laundry-detergent/",
+     "note": "Henkel's medical line, to compare with Costco's sheet"
     }
    ],
    "pulls": []
@@ -4708,6 +4860,27 @@
    "pulls": []
   },
   {
+   "id": "nbc-news",
+   "name": "NBC News (Associated Press stories)",
+   "short": "AP via NBC News",
+   "publisher": "NBCUniversal",
+   "url": "https://www.nbcnews.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the Associated Press reported, and when.",
+   "cannot_prove": "That the report is right.",
+   "terms": {
+    "url": "https://www.nbcuniversal.com/terms",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-15",
+    "due": "2027-11-15"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "nhtsa-press",
    "name": "NHTSA press releases",
    "short": "NHTSA press releases",
@@ -5130,6 +5303,27 @@
      "note": "Maker records, label doses and prices"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "pepsico-newsroom",
+   "name": "PepsiCo newsroom",
+   "short": "PepsiCo newsroom",
+   "publisher": "PepsiCo, Inc.",
+   "url": "https://www.pepsico.com/newsroom",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What PepsiCo says about its own brands and history.",
+   "cannot_prove": "Anything PepsiCo doesn't say; a company's history page is its own telling.",
+   "terms": {
+    "url": "https://www.pepsico.com/legal/terms-of-use",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-14",
+    "due": "2027-11-14"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -5785,6 +5979,27 @@
    "pulls": []
   },
   {
+   "id": "supermarket-news",
+   "name": "Supermarket News",
+   "short": "Supermarket News",
+   "publisher": "Informa",
+   "url": "https://supermarketnews.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the grocery trade paper published, and when.",
+   "cannot_prove": "That the report is right.",
+   "terms": {
+    "url": "https://www.informa.com/generic-content/terms-and-conditions/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-15",
+    "due": "2027-11-15"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "maker-tesla",
    "name": "Tesla owner's manuals",
    "short": "Tesla",
@@ -6236,6 +6451,27 @@
    "pulls": []
   },
   {
+   "id": "us-doj",
+   "name": "US Justice Department press releases",
+   "short": "US Justice Department press releases",
+   "publisher": "U.S. Department of Justice",
+   "url": "https://www.justice.gov/news",
+   "kind": "Court records",
+   "primary": true,
+   "proves": "What prosecutors said in public about a federal case, on the date of the release.",
+   "cannot_prove": "Anything a court decided later, or facts the release doesn't state.",
+   "terms": {
+    "url": "https://www.justice.gov/legalpolicies",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-14",
+    "due": "2027-11-14"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "usda-fsis-recalls",
    "name": "USDA FSIS recalls and public health alerts",
    "short": "USDA recall notices",
@@ -6317,6 +6553,27 @@
    "terms": {
     "url": "https://about.usps.com/who/legal/",
     "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-14",
+    "due": "2027-11-14"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "unilever",
+   "name": "Unilever brand sites (unilever.com, dove.com)",
+   "short": "Unilever",
+   "publisher": "Unilever PLC",
+   "url": "https://www.unilever.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which brands Unilever says are its own, and what it says about their history.",
+   "cannot_prove": "Who owns the same name in another product category; a company's history page is its own telling.",
+   "terms": {
+    "url": "https://www.unilever.com/legal/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
     "automated": true,
     "checked": "2026-11-14",
     "due": "2027-11-14"

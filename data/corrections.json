@@ -1,13 +1,65 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-12",
+ "generated": "2026-11-14",
  "started": "2026-11-02",
  "count": {
-  "correction": 24,
-  "update": 19,
+  "correction": 25,
+  "update": 22,
   "clarification": 11
  },
  "items": [
+  {
+   "id": "c-2026-11-14-tequila-lawsuit",
+   "on": "2026-11-14",
+   "kind": "update",
+   "page": "/kirkland-signature/tequila/",
+   "what": "The 2025 class action over Kirkland tequila’s “100% de Agave” label",
+   "was": "The page didn’t mention the case.",
+   "now": "A new section covers Salisbury v. Costco: what the shoppers alleged, the October 16, 2026 dismissal with prejudice, the Mexican rulings the court deferred to, and the appeal filed October 19, 2026. The court order is now a record behind the Santa Lucía answer.",
+   "why": "Readers asking who makes Kirkland tequila also ask whether it’s really 100% agave; we read the docket, the complaint and the order before adding it.",
+   "flagged_by": "Our own re-check",
+   "event": "better-record",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-14-sun-products-sds-label",
+   "on": "2026-11-14",
+   "kind": "correction",
+   "page": "/makers/sun-products/",
+   "what": "How the Sun Products page labels its tie to Kirkland Pacs and fabric softener",
+   "was": "The page called Sun Products the “Listed manufacturer” of both, with an explanation written for golf ball listings, and its picture called Sun the manufacturer.",
+   "now": "The page calls Sun Products the “Supplier on the safety sheet”, explains what a safety sheet’s supplier line does and doesn’t prove, and its picture says supplier.",
+   "why": "Costco’s 2012 safety sheets name Sun Products as supplier and never use the word maker or manufacturer.",
+   "flagged_by": "Our own re-check",
+   "event": "we-were-wrong",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-14-laundry-safety-sheets",
+   "on": "2026-11-14",
+   "kind": "update",
+   "page": "/kirkland-laundry-detergent/",
+   "what": "Two more Costco safety sheets for Kirkland liquid detergent",
+   "was": "The page had no safety sheet for the liquid newer than 2012 and said nothing about KIK International.",
+   "now": "The page adds Costco’s February 2023 Fresh Scent sheet, which names only Costco but carries the medical emergency line and layout of Henkel’s own Persil sheets, and Costco’s April 2020 Fresh Lavender sheet, which gives KIK International as supplier.",
+   "why": "A rival page pointed to both sheets; we read each one and Henkel’s own sheet before adding them.",
+   "flagged_by": "Our own re-check",
+   "event": "better-record",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-14-kirkland-food-recalls",
+   "on": "2026-11-14",
+   "kind": "update",
+   "page": "/kirkland-signature/",
+   "what": "Nine more Kirkland Signature foods on the list",
+   "was": "The list had no record for Kirkland poke, frozen organic strawberries or blueberries, hard cooked eggs, organic stir-fry, fresh Atlantic salmon, Malabar pepper, Real Sliced Fruit or cooked shrimp, and one recall behind the butter and peanut butter answers each.",
+   "now": "Each now shows the company FDA's recall record names as the recalling firm, with the recall date. Two firms, Scenic Fruit Company and California Splendor, recalled the frozen organic strawberries in 2023. The salted butter recall now sits beside the unsalted one, and a second 2012 Sunland recall beside the peanut butter one.",
+   "why": "We read every pending FDA recall that names a Kirkland Signature food. Recalls Costco filed itself name no other company, so they don't answer who makes it and we left them out.",
+   "flagged_by": "Our own re-check",
+   "event": "better-record",
+   "evidence": []
+  },
   {
    "id": "c-2026-11-12-tire-date-code-toyota-link",
    "on": "2026-11-12",

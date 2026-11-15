@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
  "generated": "2026-11-13",
- "count": 139,
+ "count": 140,
  "rows": [
   {
    "from": "General Motors",
@@ -26,8 +26,8 @@
    "share_pct": "",
    "share_of": "",
    "as_of": "",
-   "record_title": "ALDI SÜD Group sustainability site: About ALDI",
-   "record_url": "https://sustainability.aldisuedgroup.com/about-aldi/aldi-purpose"
+   "record_title": "Piney v. City of New York (S.D.N.Y. 1:25-cv-00671), Aldi, Inc. Rule 7.1 disclosure statement (ECF 1014)",
+   "record_url": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.635542/gov.uscourts.nysd.635542.1014.0.pdf"
   },
   {
    "from": "Bud Light",
@@ -1185,6 +1185,19 @@
    "as_of": "",
    "record_title": "Walgreens Boots Alliance, Inc., Form 8-K filed 28 Aug 2025: completion of its merger",
    "record_url": "https://www.sec.gov/Archives/edgar/data/1618921/000119312525190603/d87240d8k.htm"
+  },
+  {
+   "from": "Trader Joe's",
+   "from_kind": "company",
+   "link": "owns",
+   "to": "T.A.C.T. Holding, Inc.",
+   "to_kind": "company",
+   "where": "",
+   "share_pct": "",
+   "share_of": "",
+   "as_of": "",
+   "record_title": "Trader Joe's Company v. Trader Joe's United (C.D. Cal. 2:23-cv-05664), Trader Joe's corporate disclosure statement (ECF 3)",
+   "record_url": "https://storage.courtlistener.com/recap/gov.uscourts.cacd.891520/gov.uscourts.cacd.891520.3.0.pdf"
   },
   {
    "from": "JLR",

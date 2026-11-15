@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-14",
- "last_change": "2026-11-14",
+ "generated": "2026-11-15",
+ "last_change": "2026-11-15",
  "cadence_months": {
   "confirmed": 12,
   "documented": 6,
@@ -65,7 +65,7 @@
    "once": false,
    "last": "2026-11-11",
    "due": "2026-11-18",
-   "result": "38 recalls waiting for review"
+   "result": "18 recalls waiting for review"
   },
   {
    "id": "kirkland-medicine-labels",
@@ -1168,6 +1168,63 @@
    "last": null,
    "due": "2027-02-28",
    "result": null
+  },
+  {
+   "id": "pepsi-coca-cola-records",
+   "what": "Are Pepsi and Coca-Cola the same company: both annual reports and proxy statements, PepsiCo's history story, the Justice Department releases",
+   "gives": "Each company's holders over 5%, its board, revenue, US drink share and brand lists, and where the two meet (Dr Pepper, Schweppes, 7UP, Monster, Celsius), for /are-pepsi-and-coca-cola-the-same-company/",
+   "how": "hand",
+   "every_days": 150,
+   "source": {
+    "id": "sec-edgar",
+    "name": "SEC EDGAR company filings",
+    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+    "url": "https://www.sec.gov/edgar/search/"
+   },
+   "file_url": null,
+   "hand_note": "Both companies' annual reports and proxy statements each year. If someone joins both boards, the page won't rebuild until its lines are rewritten.",
+   "once": false,
+   "last": null,
+   "due": "2027-04-15",
+   "result": null
+  },
+  {
+   "id": "dove-records",
+   "what": "Are Dove chocolate and Dove soap the same company: Mars's DOVE Chocolate, Galaxy and history pages, Unilever's Dove pages and 20-F, the USPTO DOVE marks",
+   "gives": "Who owns each Dove product, the live US DOVE trademark counts by class, the five marks in the table and the two 2022 digital-goods applications, for /are-dove-chocolate-and-dove-soap-the-same-company/",
+   "how": "hand",
+   "every_days": 182,
+   "source": {
+    "id": "uspto-tsdr",
+    "name": "USPTO Trademark Search and Trademark Status & Document Retrieval (TSDR)",
+    "publisher": "United States Patent and Trademark Office",
+    "url": "https://tsdr.uspto.gov/"
+   },
+   "file_url": null,
+   "hand_note": "The US trademark register's DOVE marks and both companies' own pages, twice a year. If a count or owner changes, the page rebuilds from the new numbers; if a product changes hands, its line is rewritten and logged.",
+   "once": false,
+   "last": null,
+   "due": "2027-05-14",
+   "result": null
+  },
+  {
+   "id": "trader-joes-aldi-records",
+   "what": "Are Trader Joe's and Aldi the same company: both companies' federal-court disclosure statements, ALDI Nord's group and chronicle pages, ALDI SÜD's country list, Aldi US's history page",
+   "gives": "Who each company names as its parent, the two Aldi groups' countries and the family history, for /are-trader-joes-and-aldi-the-same-company/; the shared-maker counts rebuild from the store hubs on their own",
+   "how": "hand",
+   "every_days": 182,
+   "source": {
+    "id": "courtlistener-recap",
+    "name": "CourtListener RECAP archive (federal court filings)",
+    "publisher": "Free Law Project (copies of US federal court records from PACER)",
+    "url": "https://www.courtlistener.com/recap/"
+   },
+   "file_url": null,
+   "hand_note": "Both companies' newest court disclosures and the two Aldi groups' own pages, twice a year. If either names a new parent, the page's answer is rewritten and logged; the shared-maker counts follow our store pages.",
+   "once": false,
+   "last": null,
+   "due": "2027-05-15",
+   "result": null
   }
  ],
  "terms": [
@@ -1204,11 +1261,27 @@
    "automated_read": "yes"
   },
   {
+   "source": "ALDI Nord (aldi-nord.de)",
+   "publisher": "ALDI Einkauf SE & Co. oHG (ALDI Nord)",
+   "url": "https://www.aldi-nord.de/impressum.html",
+   "checked": "2026-11-15",
+   "due": "2027-11-15",
+   "automated_read": "ask"
+  },
+  {
    "source": "ALDI SÜD Group",
    "publisher": "ALDI SÜD Dienstleistungs-SE & Co. oHG",
    "url": "https://www.aldi.com/impressum.html",
    "checked": "2026-11-13",
    "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
+   "source": "ALDI US corporate site (corporate.aldi.us)",
+   "publisher": "ALDI Inc.",
+   "url": "https://www.aldi.us/terms-of-use/",
+   "checked": "2026-11-15",
+   "due": "2027-11-15",
    "automated_read": "ask"
   },
   {
@@ -1305,6 +1378,14 @@
    "url": "https://www.bridgestoneamericas.com/en/terms-of-use",
    "checked": "2026-11-03",
    "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "CNBC",
+   "publisher": "NBCUniversal",
+   "url": "https://www.nbcuniversal.com/terms",
+   "checked": "2026-11-15",
+   "due": "2027-11-15",
    "automated_read": "ask"
   },
   {
@@ -1409,6 +1490,14 @@
    "url": "https://www.costco.co.uk/material-safety-data-sheets",
    "checked": "2026-11-07",
    "due": "2027-11-07",
+   "automated_read": "no"
+  },
+  {
+   "source": "Costco US customer service safety data sheets",
+   "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
+   "url": "https://www.costco.com/f/-/terms-and-conditions-of-use",
+   "checked": "2026-11-14",
+   "due": "2027-11-14",
    "automated_read": "no"
   },
   {
@@ -1738,6 +1827,14 @@
    "checked": "2026-11-07",
    "due": "2027-11-07",
    "automated_read": "ask"
+  },
+  {
+   "source": "Henkel Corporation safety data sheets",
+   "publisher": "Henkel Corporation (sheets hosted by whatsinproducts.com)",
+   "url": "https://whatsinproducts.com/",
+   "checked": "2026-11-14",
+   "due": "2027-11-14",
+   "automated_read": "yes"
   },
   {
    "source": "Henkel news releases",
@@ -2116,6 +2213,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "NBC News (Associated Press stories)",
+   "publisher": "NBCUniversal",
+   "url": "https://www.nbcuniversal.com/terms",
+   "checked": "2026-11-15",
+   "due": "2027-11-15",
+   "automated_read": "ask"
+  },
+  {
    "source": "NHTSA Part 583 American Automobile Labeling Act reports",
    "publisher": "US National Highway Traffic Safety Administration",
    "url": "https://www.nhtsa.gov/about-nhtsa/web-policies-notices",
@@ -2281,6 +2386,14 @@
    "url": "https://www.packagingstrategies.com/",
    "checked": "2026-11-07",
    "due": "2027-11-07",
+   "automated_read": "ask"
+  },
+  {
+   "source": "PepsiCo newsroom",
+   "publisher": "PepsiCo, Inc.",
+   "url": "https://www.pepsico.com/legal/terms-of-use",
+   "checked": "2026-11-14",
+   "due": "2027-11-14",
    "automated_read": "ask"
   },
   {
@@ -2508,6 +2621,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "Supermarket News",
+   "publisher": "Informa",
+   "url": "https://www.informa.com/generic-content/terms-and-conditions/",
+   "checked": "2026-11-15",
+   "due": "2027-11-15",
+   "automated_read": "ask"
+  },
+  {
    "source": "TTB Public COLA Registry (label approvals)",
    "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
    "url": "https://www.ttb.gov/about-ttb/linking-policy",
@@ -2668,6 +2789,14 @@
    "automated_read": "no"
   },
   {
+   "source": "US Justice Department press releases",
+   "publisher": "U.S. Department of Justice",
+   "url": "https://www.justice.gov/legalpolicies",
+   "checked": "2026-11-14",
+   "due": "2027-11-14",
+   "automated_read": "public-domain"
+  },
+  {
    "source": "USDA FSIS Meat, Poultry and Egg Product Inspection Directory",
    "publisher": "US Department of Agriculture, Food Safety and Inspection Service",
    "url": "https://www.usda.gov/about-usda/policies-and-links",
@@ -2745,6 +2874,14 @@
    "url": "https://www.uspto.gov/terms-use-uspto-websites",
    "checked": "2026-11-11",
    "due": "2027-11-11",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Unilever brand sites (unilever.com, dove.com)",
+   "publisher": "Unilever PLC",
+   "url": "https://www.unilever.com/legal/",
+   "checked": "2026-11-14",
+   "due": "2027-11-14",
    "automated_read": "ask"
   },
   {
@@ -2892,6 +3029,16 @@
    "page": "/kirkland-signature/golf-balls/"
   },
   {
+   "id": "c-ks-tequila-santa-lucia",
+   "product": "ks-tequila",
+   "stamp": "documented",
+   "next_check": "2027-01-14",
+   "last_check": "2026-11-14",
+   "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-signature/tequila/"
+  },
+  {
    "id": "c-ks-baby-wipes-nice-pak",
    "product": "ks-baby-wipes",
    "stamp": "documented",
@@ -3033,16 +3180,6 @@
   },
   {
    "id": "c-ks-tequila-mpl-import",
-   "product": "ks-tequila",
-   "stamp": "documented",
-   "next_check": "2027-02-08",
-   "last_check": "2026-11-08",
-   "name": "Kirkland Signature tequila (Blanco, Silver, Reposado, Añejo, Cristalino, Extra Añejo)",
-   "brand": "kirkland-signature",
-   "page": "/kirkland-signature/tequila/"
-  },
-  {
-   "id": "c-ks-tequila-santa-lucia",
    "product": "ks-tequila",
    "stamp": "documented",
    "next_check": "2027-02-08",
@@ -10142,6 +10279,116 @@
    "page": "/trader-joes/"
   },
   {
+   "id": "c-ks-ahi-poke-western-united",
+   "product": "ks-ahi-poke",
+   "stamp": "documented",
+   "next_check": "2027-05-14",
+   "last_check": "2026-11-14",
+   "name": "Kirkland Signature Ahi Tuna Wasabi Poke",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-signature/"
+  },
+  {
+   "id": "c-ks-atlantic-salmon-marine-harvest",
+   "product": "ks-atlantic-salmon",
+   "stamp": "documented",
+   "next_check": "2027-05-14",
+   "last_check": "2026-11-14",
+   "name": "Kirkland Signature fresh farmed Atlantic salmon",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-signature/"
+  },
+  {
+   "id": "c-ks-blueberries-scenic-fruit",
+   "product": "ks-frozen-organic-blueberries",
+   "stamp": "documented",
+   "next_check": "2027-05-14",
+   "last_check": "2026-11-14",
+   "name": "Kirkland Signature Frozen Organic Blueberries",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-signature/"
+  },
+  {
+   "id": "c-ks-cooked-shrimp-kader",
+   "product": "ks-cooked-shrimp",
+   "stamp": "documented",
+   "next_check": "2027-05-14",
+   "last_check": "2026-11-14",
+   "name": "Kirkland Signature cooked, peeled and deveined shrimp",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-signature/"
+  },
+  {
+   "id": "c-ks-hard-cooked-eggs-almark",
+   "product": "ks-hard-cooked-eggs",
+   "stamp": "documented",
+   "next_check": "2027-05-14",
+   "last_check": "2026-11-14",
+   "name": "Kirkland Signature Organic Hard Cooked Eggs",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-signature/"
+  },
+  {
+   "id": "c-ks-laundry-lavender-kik-2020",
+   "product": "ks-laundry-liquid-lavender",
+   "stamp": "documented",
+   "next_check": "2027-05-14",
+   "last_check": "2026-11-14",
+   "name": "Kirkland Signature Ultra Clean Premium Laundry Detergent, Fresh Lavender Scent",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-laundry-detergent/"
+  },
+  {
+   "id": "c-ks-malabar-pepper-olde-thompson",
+   "product": "ks-malabar-pepper",
+   "stamp": "documented",
+   "next_check": "2027-05-14",
+   "last_check": "2026-11-14",
+   "name": "Kirkland Signature Coarse Ground Malabar Pepper",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-signature/"
+  },
+  {
+   "id": "c-ks-real-sliced-fruit-oregon-freeze-dry",
+   "product": "ks-real-sliced-fruit",
+   "stamp": "documented",
+   "next_check": "2027-05-14",
+   "last_check": "2026-11-14",
+   "name": "Kirkland Signature Real Sliced Fruit (freeze-dried)",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-signature/"
+  },
+  {
+   "id": "c-ks-stir-fry-crf",
+   "product": "ks-organic-stir-fry",
+   "stamp": "documented",
+   "next_check": "2027-05-14",
+   "last_check": "2026-11-14",
+   "name": "Kirkland Signature Organic Stir-Fry vegetables",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-signature/"
+  },
+  {
+   "id": "c-ks-strawberries-california-splendor",
+   "product": "ks-frozen-organic-strawberries",
+   "stamp": "documented",
+   "next_check": "2027-05-14",
+   "last_check": "2026-11-14",
+   "name": "Kirkland Signature Frozen Organic Strawberries",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-signature/"
+  },
+  {
+   "id": "c-ks-strawberries-scenic-fruit",
+   "product": "ks-frozen-organic-strawberries",
+   "stamp": "documented",
+   "next_check": "2027-05-14",
+   "last_check": "2026-11-14",
+   "name": "Kirkland Signature Frozen Organic Strawberries",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-signature/"
+  },
+  {
    "id": "c-ks-beef-hot-dogs-tracy",
    "product": "ks-beef-hot-dogs",
    "stamp": "confirmed",
@@ -10332,7 +10579,7 @@
   },
   {
    "path": "/kirkland-laundry-detergent/",
-   "changed": "2026-11-07",
+   "changed": "2026-11-14",
    "next": "2026-11-16",
    "tasks": [
     {
@@ -10341,9 +10588,9 @@
      "due": "2026-11-16"
     }
    ],
-   "claims": 3,
+   "claims": 4,
    "stamps": {
-    "documented": 2,
+    "documented": 3,
     "reported": 1
    }
   },
@@ -10363,7 +10610,7 @@
   },
   {
    "path": "/kirkland-signature/",
-   "changed": "2026-11-08",
+   "changed": "2026-11-14",
    "next": "2026-11-15",
    "tasks": [
     {
@@ -10640,7 +10887,7 @@
   },
   {
    "path": "/kirkland-signature/tequila/",
-   "changed": "2026-11-08",
+   "changed": "2026-11-14",
    "next": "2026-11-15",
    "tasks": [
     {
@@ -10910,7 +11157,7 @@
   },
   {
    "path": "/how-we-know/",
-   "changed": "2026-11-14",
+   "changed": "2026-11-15",
    "next": "2026-12-08",
    "tasks": [],
    "claims": null,
@@ -10918,7 +11165,7 @@
   },
   {
    "path": "/sources/",
-   "changed": "2026-11-14",
+   "changed": "2026-11-15",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -10926,7 +11173,7 @@
   },
   {
    "path": "/corrections/",
-   "changed": "2026-11-12",
+   "changed": "2026-11-14",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -10934,7 +11181,7 @@
   },
   {
    "path": "/data/",
-   "changed": "2026-11-14",
+   "changed": "2026-11-15",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -11038,7 +11285,7 @@
   },
   {
    "path": "/makers/sun-products/",
-   "changed": "2026-11-08",
+   "changed": "2026-11-14",
    "next": "2026-11-16",
    "tasks": [
     {
@@ -11059,7 +11306,7 @@
   },
   {
    "path": "/home/",
-   "changed": "2026-11-14",
+   "changed": "2026-11-15",
    "next": "2026-11-16",
    "tasks": [
     {
@@ -11078,7 +11325,7 @@
   },
   {
    "path": "/about/",
-   "changed": "2026-11-14",
+   "changed": "2026-11-15",
    "next": "2027-11-08",
    "tasks": [
     {
@@ -11556,6 +11803,48 @@
      "id": "usps-ups-records",
      "what": "Are USPS and UPS the same company: UPS and USPS annual reports, UPS service pages, USPS Publication 199",
      "due": "2027-02-28"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/are-pepsi-and-coca-cola-the-same-company/",
+   "changed": "2026-11-14",
+   "next": "2027-04-15",
+   "tasks": [
+    {
+     "id": "pepsi-coca-cola-records",
+     "what": "Are Pepsi and Coca-Cola the same company: both annual reports and proxy statements, PepsiCo's history story, the Justice Department releases",
+     "due": "2027-04-15"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/are-dove-chocolate-and-dove-soap-the-same-company/",
+   "changed": "2026-11-14",
+   "next": "2027-05-14",
+   "tasks": [
+    {
+     "id": "dove-records",
+     "what": "Are Dove chocolate and Dove soap the same company: Mars's DOVE Chocolate, Galaxy and history pages, Unilever's Dove pages and 20-F, the USPTO DOVE marks",
+     "due": "2027-05-14"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/are-trader-joes-and-aldi-the-same-company/",
+   "changed": "2026-11-15",
+   "next": "2027-05-15",
+   "tasks": [
+    {
+     "id": "trader-joes-aldi-records",
+     "what": "Are Trader Joe's and Aldi the same company: both companies' federal-court disclosure statements, ALDI Nord's group and chronicle pages, ALDI SÜD's country list, Aldi US's history page",
+     "due": "2027-05-15"
     }
    ],
    "claims": 0,

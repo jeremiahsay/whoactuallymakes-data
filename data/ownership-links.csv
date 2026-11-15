@@ -1,6 +1,6 @@
 from,from_kind,link,to,to_kind,where,share_pct,share_of,as_of,record_title,record_url
 General Motors,company,makes-or-delivers-for,Acura,brand,,,,,"NHTSA Part 583 AALA report, model year 2025, listed alphabetically",https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
-Aldi (US stores),brand,owns,ALDI SÜD group,company,,,,,ALDI SÜD Group sustainability site: About ALDI,https://sustainability.aldisuedgroup.com/about-aldi/aldi-purpose
+Aldi (US stores),brand,owns,ALDI SÜD group,company,,,,,"Piney v. City of New York (S.D.N.Y. 1:25-cv-00671), Aldi, Inc. Rule 7.1 disclosure statement (ECF 1014)",https://storage.courtlistener.com/recap/gov.uscourts.nysd.635542/gov.uscourts.nysd.635542.1014.0.pdf
 Bud Light,brand,owns,Anheuser-Busch InBev,company,,,,,"Anheuser-Busch InBev SA/NV, Form 20-F for fiscal 2025, filed 3 Mar 2026: its beer brands",https://www.sec.gov/Archives/edgar/data/1668717/000119312526088105/d65314d20f.htm
 Budweiser,brand,owns,Anheuser-Busch InBev,company,,,,,"Anheuser-Busch InBev SA/NV, Form 20-F for fiscal 2025, filed 3 Mar 2026: its beer brands",https://www.sec.gov/Archives/edgar/data/1668717/000119312526088105/d65314d20f.htm
 Corona,brand,owns,Anheuser-Busch InBev,company,outside the US,,,,"Anheuser-Busch InBev SA/NV, Form 20-F for fiscal 2025, filed 3 Mar 2026: its beer brands",https://www.sec.gov/Archives/edgar/data/1668717/000119312526088105/d65314d20f.htm
@@ -90,6 +90,7 @@ Toyota Motor Corporation,company,makes-or-delivers-for,Subaru,brand,,,,,"NHTSA P
 Toyota Motor Corporation,company,makes-or-delivers-for,Subaru,brand,,,,,"NHTSA Part 583 AALA report, model year 2026, listed alphabetically",https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
 Subaru,brand,owns,Subaru Corporation,company,,,,,"NHTSA Part 583 AALA report, model year 2026, listed alphabetically",https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
 Walgreens,company,controls,Sycamore Partners,holder,,,,,"Walgreens Boots Alliance, Inc., Form 8-K filed 28 Aug 2025: completion of its merger",https://www.sec.gov/Archives/edgar/data/1618921/000119312525190603/d87240d8k.htm
+Trader Joe's,company,owns,"T.A.C.T. Holding, Inc.",company,,,,,"Trader Joe's Company v. Trader Joe's United (C.D. Cal. 2:23-cv-05664), Trader Joe's corporate disclosure statement (ECF 3)",https://storage.courtlistener.com/recap/gov.uscourts.cacd.891520/gov.uscourts.cacd.891520.3.0.pdf
 JLR,company,owns,Tata Motors Passenger Vehicles,company,,,,,JLR: executive board change comes into effect,https://media.jlr.com/corporate/news/2025/11/jlr-executive-board-change-comes-effect
 AC Bebidas,company,stake,The Coca-Cola Company,company,,20,of the shares,2025-12-31,"The Coca-Cola Company, Form 10-K for fiscal 2025, filed 20 Feb 2026: equity stakes",https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm
 Barq's,brand,owns,The Coca-Cola Company,company,,,,,Coca-Cola US: Barq's brand page,https://www.coca-cola.com/us/en/brands/barq-s

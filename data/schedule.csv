@@ -1,7 +1,7 @@
 id,what,source,how,every_days,once,last,due,result
 nhtsa-tire-plants,NHTSA tire plant codes,NHTSA vPIC: tire plant codes and vehicle identification,script,7,false,2026-11-09,2026-11-16,"1,246 entries; 1 change since the previous pull"
 usda-establishments,"USDA meat, poultry and egg plant directory","USDA FSIS Meat, Poultry and Egg Product Inspection Directory",hand,30,false,2026-11-02,2026-12-02,"7,257 entries; first pull"
-openfda-leads,FDA recall records that mention store brands,openFDA food and drug enforcement (recall) reports,script,7,false,2026-11-11,2026-11-18,38 recalls waiting for review
+openfda-leads,FDA recall records that mention store brands,openFDA food and drug enforcement (recall) reports,script,7,false,2026-11-11,2026-11-18,18 recalls waiting for review
 kirkland-medicine-labels,Kirkland medicine labels and FDA approval holders,DailyMed drug labels,script,7,false,2026-11-09,2026-11-16,50 Costco labels; 0 to review
 tire-age-guidance,Tire age guidance: who says what,NHTSA tire safety pages (TireWise),hand,365,false,2026-11-12,2027-11-12,10 rows and 12 carmakers from 24 documents
 tire-age-carmaker-followup,Tire age: carmaker manuals to re-check,Honda owner's manuals,hand,0,true,2026-11-12,2026-11-26,Every carmaker on the list has a row
@@ -60,3 +60,6 @@ genesis-origin-reads,"Who makes Genesis: NHTSA report, Hyundai Alabama and Hyund
 same-company-records,"The annual filings and pages behind the same-company check that the car and soda hubs don't hold: Whirlpool, TJX, AB InBev, Constellation, UPS, CVS, Lowe's, Home Depot, Petco, Chewy and Unilever filings, Walgreens' merger 8-K, 39 USC 201, the DOVE chocolate, ALDI SÜD, aldi.com and Schwarz Group pages",SEC EDGAR company filings,hand,106,false,,2027-03-31,
 hyundai-kia-records,"Are Hyundai and Kia the same company: Kia, Hyundai and Hyundai Mobis shareholder pages, NHTSA report",Kia Corporation investor relations,hand,120,false,,2027-03-31,
 usps-ups-records,"Are USPS and UPS the same company: UPS and USPS annual reports, UPS service pages, USPS Publication 199",SEC EDGAR company filings,hand,120,false,,2027-02-28,
+pepsi-coca-cola-records,"Are Pepsi and Coca-Cola the same company: both annual reports and proxy statements, PepsiCo's history story, the Justice Department releases",SEC EDGAR company filings,hand,150,false,,2027-04-15,
+dove-records,"Are Dove chocolate and Dove soap the same company: Mars's DOVE Chocolate, Galaxy and history pages, Unilever's Dove pages and 20-F, the USPTO DOVE marks",USPTO Trademark Search and Trademark Status & Document Retrieval (TSDR),hand,182,false,,2027-05-14,
+trader-joes-aldi-records,"Are Trader Joe's and Aldi the same company: both companies' federal-court disclosure statements, ALDI Nord's group and chronicle pages, ALDI SÜD's country list, Aldi US's history page",CourtListener RECAP archive (federal court filings),hand,182,false,,2027-05-15,
