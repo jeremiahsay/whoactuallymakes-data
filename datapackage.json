@@ -2,9 +2,9 @@
  "name": "whoactuallymakes-data",
  "id": "https://doi.org/10.5281/zenodo.23920936",
  "title": "Who Actually Makes open data",
- "description": "Who makes store-brand products, from public records. 20 datasets, 16,144 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them; Trader Joe's wine, beer and spirits label approvals (TTB); Who owns which brand: ownership links between brands, companies and their controlling holders.",
+ "description": "Who makes store-brand products, from public records. 20 datasets, 16,342 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them; Trader Joe's wine, beer and spirits label approvals (TTB); Who owns which brand: ownership links between brands, companies and their controlling holders.",
  "homepage": "https://whoactuallymakes.com/data/",
- "version": "2026-11-15",
+ "version": "2026-11-16",
  "licenses": [
   {
    "name": "CC-BY-4.0",
@@ -364,8 +364,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 91550,
-   "hash": "sha256:738403ea03cacf1bcc001008b587a956a0650037201b7f46694b249a22a72c67",
+   "bytes": 91826,
+   "hash": "sha256:5798d756ae4b5d1f1cc5d58efcd0b5a78a321b8aa27bcf78f3ffea91b44aa0c9",
    "schema": {
     "fields": [
      {
@@ -609,8 +609,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 1293469,
-   "hash": "sha256:1a25e31d6319e6502e7561059137ab921586eb3cb4f4fa699124f31c1389f710",
+   "bytes": 1406279,
+   "hash": "sha256:248f4c6bacea5b0156e40173d6f23adeab258d7d47077cc4389f5e0d68b7aab1",
    "schema": {
     "fields": [
      {
@@ -755,6 +755,22 @@
      "path": "https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-893-2013%22"
     },
     {
+     "title": "https://api.fda.gov/drug/label.json?search=openfda.manufacturer_name%3ACVS+AND+openfda.product_type%3A%22HUMAN+OTC+DRUG%22&limit=1000&skip=0",
+     "path": "https://api.fda.gov/drug/label.json?search=openfda.manufacturer_name%3ACVS+AND+openfda.product_type%3A%22HUMAN+OTC+DRUG%22&limit=1000&skip=0"
+    },
+    {
+     "title": "https://api.fda.gov/drug/label.json?search=openfda.manufacturer_name%3AWalgreen+AND+openfda.product_type%3A%22HUMAN+OTC+DRUG%22&limit=1000&skip=0",
+     "path": "https://api.fda.gov/drug/label.json?search=openfda.manufacturer_name%3AWalgreen+AND+openfda.product_type%3A%22HUMAN+OTC+DRUG%22&limit=1000&skip=0"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=product_description%3A%22aldi%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=product_description%3A%22aldi%22"
+    },
+    {
+     "title": "https://api.fda.gov/food/enforcement.json?search=product_description%3A%22lidl%22",
+     "path": "https://api.fda.gov/food/enforcement.json?search=product_description%3A%22lidl%22"
+    },
+    {
      "title": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0011-2020%22",
      "path": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0011-2020%22"
     },
@@ -861,22 +877,6 @@
     {
      "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0037-2021%22",
      "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0037-2021%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0038-2021%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0038-2021%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0047-2023%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0047-2023%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0070-2017%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0070-2017%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0081-2013%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0081-2013%22"
     }
    ]
   },
@@ -888,8 +888,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 102586,
-   "hash": "sha256:f933e134429ed4f8f1c02fe81b51de4539a2ddcccd3804656d7f74970e4b66f9",
+   "bytes": 110565,
+   "hash": "sha256:260cebc34eccdd79847f4675ab0c7e79a0abdf1599761402fbcaaae5b4a35b8c",
    "schema": {
     "fields": [
      {
@@ -1051,6 +1051,10 @@
      "path": "https://engineoil.api.org/Directory/EolcsSearch"
     },
     {
+     "title": "https://find-and-update.company-information.service.gov.uk/",
+     "path": "https://find-and-update.company-information.service.gov.uk/"
+    },
+    {
      "title": "https://foodlion.com/",
      "path": "https://foodlion.com/"
     },
@@ -1157,10 +1161,6 @@
     {
      "title": "https://novolex.com/",
      "path": "https://novolex.com/"
-    },
-    {
-     "title": "https://open.fda.gov/apis/drug/drugsfda/",
-     "path": "https://open.fda.gov/apis/drug/drugsfda/"
     }
    ]
   },
@@ -1240,8 +1240,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 16085,
-   "hash": "sha256:75a0a5f9efce90d47b3418e47b29bcee8ae79ae263a59a602331565e040c1486",
+   "bytes": 20319,
+   "hash": "sha256:4323bace704764c82542a36df1b1e440e0898d3ec1f96e089fe6156fb8ea2063",
    "schema": {
     "fields": [
      {
@@ -1411,7 +1411,7 @@
    "mediatype": "text/csv",
    "encoding": "utf-8",
    "bytes": 7931,
-   "hash": "sha256:b569fa1e431499ac065271d5d65d2547d8ddef50c5c02269b23a61bf39279834",
+   "hash": "sha256:01e3115866370976c0262d4a777e4ddc3399e44a12e8a9ff361e7fe15ffd7685",
    "schema": {
     "fields": [
      {

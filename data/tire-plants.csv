@@ -305,7 +305,10 @@ code,old_code,name,city,state,country,status
 0AN,,BILLAS LASTIK VE KAUCUK SAN. TIC. A.S.,Kemalpasa,Izmir,Turkey,Active
 0AP,,"QINGDAO YUCHEN HAND TRUCK CO., LTD",Qingdao,Shandong,China,Active
 0AT,,"XINGTAI YINA BICYCLE CO., LTD.",Xingtai,Hebei,China,Active
+0AU,,"DONGGUAN RUITUO TECHNOLOGY CO., LTD.",Dongguan,Guangdong,China,Active
 0AV,,"Hebei Pan Tuo Rubber Products Co., Ltd.",Xingtai,Hebei,China,Active
+0AW,,"QINGDAO DONGHENGDA RUBBER PRODUCTS CO., LTD.",Qingdao,Shandong,China,Active
+0AX,,CENTRE DE RECHERCHE ET DE TECHNOLOGIES DE LADOUX,Cebazat,Auvergne-Rhône-Alpes,France,Active
 101,01,CHINA MANUFACTURERS ALLIANCE,Valencia,California,United States,Active
 102,02,CAOXIAN GUIDESTONE TYRE CO. LTD.,Caoxian,Shandong,China,Closed
 103,03,TANGSHAN LINGFENG TIRE CO.,Tangshan,Hebei,China,Active
@@ -778,7 +781,7 @@ code,old_code,name,city,state,country,status
 1FN,FN,MANUFACTURE FRANCAISE DES PNEUMATIQUES MICHELIN,Clermont Ferrand,,France,Active
 1FP,FP,STE. D'APPLICATIONS TECHNIQUES,Algiers,,Algeria,Active
 1FR,FR,"COAXIAN GUIDESTONE TYRE CO., LTD.","Caoxian, Shandong",,China,Active
-1FT,FT,"MICHELIN REIFENWERKE, A.G. & CO. K.G.A.A",Bad Kreuznach,,Germany,Active
+1FT,FT,"MICHELIN REIFENWERKE, A.G. & CO. K.G.A.A",Bad Kreuznach,Rhineland-Palatinate,Germany,Active
 1FU,FU,"MICHELIN REIFENWERKE, A.G. & CO. K.G.A.A",Hallstadt,,Germany,Active
 1FV,FV,"MICHELIN REIFENWERKE, A.G. & CO. K.G.A.A",Homburg-Saar,,Germany,Active
 1FW,FW,"MICHELIN REIFENWERKE, A.G. & CO. K.G.A.A",Karlsruhe,,Germany,Active

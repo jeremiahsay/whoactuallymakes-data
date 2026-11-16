@@ -1,18 +1,18 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-09",
+ "generated": "2026-11-16",
  "source": {
   "publisher": "NHTSA",
   "name": "vPIC tire plant codes",
   "url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetEquipmentPlantCodes?year=2016&equipmentType=1&reportType=All&format=json",
-  "list_changed": "2026-11-09",
-  "raw_sha256": "b621cfc4a6be1c0d8b3510a33a720e43fe76dc62ec4a73582a52948c94331bba"
+  "list_changed": "2026-11-16",
+  "raw_sha256": "dd952cd9d1946546ab842587bf738c5031ef0d1c4000a3854354fd0d8250b772"
  },
  "rule": {
   "cite": "49 CFR 574.5",
   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-574/section-574.5"
  },
- "count": 1246,
+ "count": 1249,
  "cols": [
   "code",
   "old_code",
@@ -2778,12 +2778,39 @@
    "Active"
   ],
   [
+   "0AU",
+   "",
+   "DONGGUAN RUITUO TECHNOLOGY CO., LTD.",
+   "Dongguan",
+   "Guangdong",
+   "China",
+   "Active"
+  ],
+  [
    "0AV",
    "",
    "Hebei Pan Tuo Rubber Products Co., Ltd.",
    "Xingtai",
    "Hebei",
    "China",
+   "Active"
+  ],
+  [
+   "0AW",
+   "",
+   "QINGDAO DONGHENGDA RUBBER PRODUCTS CO., LTD.",
+   "Qingdao",
+   "Shandong",
+   "China",
+   "Active"
+  ],
+  [
+   "0AX",
+   "",
+   "CENTRE DE RECHERCHE ET DE TECHNOLOGIES DE LADOUX",
+   "Cebazat",
+   "Auvergne-Rhône-Alpes",
+   "France",
    "Active"
   ],
   [
@@ -7039,7 +7066,7 @@
    "FT",
    "MICHELIN REIFENWERKE, A.G. & CO. K.G.A.A",
    "Bad Kreuznach",
-   "",
+   "Rhineland-Palatinate",
    "Germany",
    "Active"
   ],

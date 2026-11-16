@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-15",
+ "generated": "2026-11-16",
  "title": "Who Actually Makes open data",
  "url": "https://whoactuallymakes.com/data/",
  "licence": {
@@ -14,7 +14,7 @@
   "mirror": "https://github.com/jeremiahsay/whoactuallymakes-data"
  },
  "count": 20,
- "records": 16144,
+ "records": 16342,
  "datasets": [
   {
    "id": "claims",
@@ -636,8 +636,8 @@
     "https://vpic.nhtsa.dot.gov/api/",
     "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-574/section-574.5"
    ],
-   "records": 1246,
-   "updated": "2026-11-09",
+   "records": 1249,
+   "updated": "2026-11-16",
    "fields": [
     {
      "name": "code",
@@ -725,13 +725,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/tire-plants.json",
-     "bytes": 153005,
-     "sha256": "802aa532702a984bc6c4af73ec6ba800d80037f9ec7d2f2b2765d23d55f1d191"
+     "bytes": 153427,
+     "sha256": "805a8077ac9f82d52a3352017a84b02a7b4ebe9cbac1bc5c9ec7a230cbe37d70"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/tire-plants.csv",
-     "bytes": 91550,
-     "sha256": "738403ea03cacf1bcc001008b587a956a0650037201b7f46694b249a22a72c67"
+     "bytes": 91826,
+     "sha256": "5798d756ae4b5d1f1cc5d58efcd0b5a78a321b8aa27bcf78f3ffea91b44aa0c9"
     }
    }
   },
@@ -984,6 +984,10 @@
     "https://api.fda.gov/drug/enforcement.json?search=recall_number%3A%22D-0557-2026%22",
     "https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-1867-2019%22",
     "https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-893-2013%22",
+    "https://api.fda.gov/drug/label.json?search=openfda.manufacturer_name%3ACVS+AND+openfda.product_type%3A%22HUMAN+OTC+DRUG%22&limit=1000&skip=0",
+    "https://api.fda.gov/drug/label.json?search=openfda.manufacturer_name%3AWalgreen+AND+openfda.product_type%3A%22HUMAN+OTC+DRUG%22&limit=1000&skip=0",
+    "https://api.fda.gov/food/enforcement.json?search=product_description%3A%22aldi%22",
+    "https://api.fda.gov/food/enforcement.json?search=product_description%3A%22lidl%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0011-2020%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0033-2021%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-0121-2025%22",
@@ -1010,14 +1014,10 @@
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0029-2021%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0031-2018%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0032-2025%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0037-2021%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0038-2021%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0047-2023%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0070-2017%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0081-2013%22"
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0037-2021%22"
    ],
-   "records": 1856,
-   "updated": "2026-11-15",
+   "records": 2018,
+   "updated": "2026-11-16",
    "fields": [
     {
      "name": "id",
@@ -1155,13 +1155,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/evidence.json",
-     "bytes": 1661624,
-     "sha256": "89a579adcc77bb70bbc35490b0c8fb65dd9c0e26e80af77aab0f068327a721e8"
+     "bytes": 1806450,
+     "sha256": "3e917d10732976bf4249bb05fc2e92b5200d2764d85bae0d5a0472a7e18a6b32"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/evidence.csv",
-     "bytes": 1293469,
-     "sha256": "1a25e31d6319e6502e7561059137ab921586eb3cb4f4fa699124f31c1389f710"
+     "bytes": 1406279,
+     "sha256": "248f4c6bacea5b0156e40173d6f23adeab258d7d47077cc4389f5e0d68b7aab1"
     }
    }
   },
@@ -1204,6 +1204,7 @@
     "https://disclosure2.edinet-fsa.go.jp/",
     "https://duracell.com/",
     "https://engineoil.api.org/Directory/EolcsSearch",
+    "https://find-and-update.company-information.service.gov.uk/",
     "https://foodlion.com/",
     "https://forests.org/",
     "https://fortune.com/",
@@ -1230,11 +1231,10 @@
     "https://newmodernmom.com/",
     "https://newsroom.genesis.com/",
     "https://newsroom.porsche.com/",
-    "https://novolex.com/",
-    "https://open.fda.gov/apis/drug/drugsfda/"
+    "https://novolex.com/"
    ],
-   "records": 221,
-   "updated": "2026-11-15",
+   "records": 237,
+   "updated": "2026-11-16",
    "fields": [
     {
      "name": "id",
@@ -1319,6 +1319,21 @@
      "pulls": "every 150 days in a browser, last 2026-11-03"
     },
     {
+     "id": "companies-house",
+     "name": "Companies House (UK register of companies)",
+     "publisher": "Companies House, UK government",
+     "url": "https://find-and-update.company-information.service.gov.uk/",
+     "kind": "Government registry",
+     "primary": true,
+     "proves": "What a UK company files about itself: its annual accounts, including the parent the directors name, and its register of people with significant control.",
+     "cannot_prove": "Who owns a foreign parent; the accounts give the directors’ view of the parent, and the register names only registrable people and companies.",
+     "terms_url": "https://find-and-update.company-information.service.gov.uk/help/terms-conditions",
+     "terms_read": "Open license. We read it with a script.",
+     "terms_checked": "2026-11-15",
+     "credit": "",
+     "pulls": "every 182 days in a browser, last not yet"
+    },
+    {
      "id": "fcc-open-data",
      "name": "FCC Open Data: equipment authorization grantee registrations",
      "publisher": "Federal Communications Commission",
@@ -1361,34 +1376,19 @@
      "terms_read": "Public domain (US government work). We read it with a script.",
      "terms_checked": "2026-11-02",
      "credit": "",
-     "pulls": "every 7 days by script, last 2026-11-09"
-    },
-    {
-     "id": "nd-pet-food-registry",
-     "name": "North Dakota Department of Agriculture pet food product registrations",
-     "publisher": "North Dakota Department of Agriculture",
-     "url": "https://lars.ndda.nd.gov/public/productsearch/3",
-     "kind": "Government registry",
-     "primary": true,
-     "proves": "That a pet food is registered for sale in North Dakota, under which company name, when the registration was last renewed and when it expires, and the label files the company sent with it.",
-     "cannot_prove": "That the named company makes every bag sold, or where. The register lists the company on the registration; it doesn't use the word maker, and label files can be printer's proofs older than the registration.",
-     "terms_url": "https://www.nd.gov/disclaimer",
-     "terms_read": "Open license. We read it with a script.",
-     "terms_checked": "2026-11-03",
-     "credit": "",
-     "pulls": "every 30 days by script, last 2026-11-03"
+     "pulls": "every 7 days by script, last 2026-11-16"
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/sources.json",
-     "bytes": 248950,
-     "sha256": "0fad45cd34900d01ca54040b203006fd70812ad146296c37d585a7fb15d5e1a5"
+     "bytes": 269913,
+     "sha256": "4b0c0b28b9bc85d0331ec9ddae3a7d1943ba500cd5d26a60a220b204f7dc062a"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/sources.csv",
-     "bytes": 102586,
-     "sha256": "f933e134429ed4f8f1c02fe81b51de4539a2ddcccd3804656d7f74970e4b66f9"
+     "bytes": 110565,
+     "sha256": "260cebc34eccdd79847f4675ab0c7e79a0abdf1599761402fbcaaae5b4a35b8c"
     }
    }
   },
@@ -1553,8 +1553,8 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 64,
-   "updated": "2026-11-15",
+   "records": 81,
+   "updated": "2026-11-16",
    "fields": [
     {
      "name": "id",
@@ -1610,9 +1610,9 @@
      "how": "script",
      "every_days": 7,
      "once": false,
-     "last": "2026-11-09",
-     "due": "2026-11-16",
-     "result": "1,246 entries; 1 change since the previous pull"
+     "last": "2026-11-16",
+     "due": "2026-11-23",
+     "result": "1,249 entries; 4 changes since the previous pull"
     },
     {
      "id": "usda-establishments",
@@ -1632,8 +1632,8 @@
      "how": "script",
      "every_days": 7,
      "once": false,
-     "last": "2026-11-11",
-     "due": "2026-11-18",
+     "last": "2026-11-16",
+     "due": "2026-11-23",
      "result": "18 recalls waiting for review"
     },
     {
@@ -1643,8 +1643,8 @@
      "how": "script",
      "every_days": 7,
      "once": false,
-     "last": "2026-11-09",
-     "due": "2026-11-16",
+     "last": "2026-11-16",
+     "due": "2026-11-23",
      "result": "50 Costco labels; 0 to review"
     },
     {
@@ -1662,13 +1662,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/schedule.json",
-     "bytes": 366683,
-     "sha256": "e1f8b0219e5493eb5ad12e36c9be0ded3648a893e07fcb2d8eda19e8e39aec92"
+     "bytes": 390589,
+     "sha256": "4fa0396391e0fde850c4abc82535fcd02f41c2771dab9074a8b959a12ce190d1"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/schedule.csv",
-     "bytes": 16085,
-     "sha256": "75a0a5f9efce90d47b3418e47b29bcee8ae79ae263a59a602331565e040c1486"
+     "bytes": 20319,
+     "sha256": "4323bace704764c82542a36df1b1e440e0898d3ec1f96e089fe6156fb8ea2063"
     }
    }
   },
@@ -1857,7 +1857,7 @@
    "rights": "CC BY covers our table. Product names belong to their owners.",
    "based_on": [],
    "records": 22,
-   "updated": "2026-11-09",
+   "updated": "2026-11-16",
    "fields": [
     {
      "name": "pair",
@@ -2035,7 +2035,7 @@
      "price_read_on": "2026-11-04",
      "evidence": "ev-wsbtv-ks-batteries-2016",
      "answer_page": "https://whoactuallymakes.com/kirkland-signature/batteries/#vs",
-     "read_on": "2026-11-09"
+     "read_on": "2026-11-16"
     },
     {
      "pair": "starbucks",
@@ -2066,7 +2066,7 @@
      "price_read_on": "",
      "evidence": "ev-costco-ks-decaf-house-blend",
      "answer_page": "https://whoactuallymakes.com/kirkland-signature/coffee/",
-     "read_on": "2026-11-09"
+     "read_on": "2026-11-16"
     },
     {
      "pair": "buffalo-trace",
@@ -2097,7 +2097,7 @@
      "price_read_on": "",
      "evidence": "ev-ttb-ks-bourbon-small-batch-2026 | ev-ttb-ks-bourbon-bib-2026",
      "answer_page": "https://whoactuallymakes.com/kirkland-signature/bourbon/",
-     "read_on": "2026-11-09"
+     "read_on": "2026-11-16"
     },
     {
      "pair": "kleenex",
@@ -2128,7 +2128,7 @@
      "price_read_on": "2026-11-06",
      "evidence": "ev-costco-ks-facial-tissue-pack-fsc | ev-fsc-c068161-kimberly-clark | ev-fsc-std-50-001-labelling | ev-kmb-10k-2025-brands",
      "answer_page": "https://whoactuallymakes.com/kirkland-signature/toilet-paper/",
-     "read_on": "2026-11-09"
+     "read_on": "2026-11-16"
     },
     {
      "pair": "ocean-spray",
@@ -2159,19 +2159,19 @@
      "price_read_on": "",
      "evidence": "ev-costco-ocean-spray-bottle",
      "answer_page": "https://whoactuallymakes.com/kirkland-signature/rumors/#cranberry",
-     "read_on": "2026-11-09"
+     "read_on": "2026-11-16"
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/kirkland-vs-pairs.json",
      "bytes": 21461,
-     "sha256": "125be39494a4ee18f7df89c3110669ea3a6de58850549edcbbf14fe4bc488e0f"
+     "sha256": "8354b71a1d871fcf9af62e781e6456a892d3e369c9db98fc31dde31f2b8cf803"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/kirkland-vs-pairs.csv",
      "bytes": 7931,
-     "sha256": "b569fa1e431499ac065271d5d65d2547d8ddef50c5c02269b23a61bf39279834"
+     "sha256": "01e3115866370976c0262d4a777e4ddc3399e44a12e8a9ff361e7fe15ffd7685"
     }
    }
   },

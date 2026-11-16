@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-15",
- "last_change": "2026-11-15",
+ "generated": "2026-11-16",
+ "last_change": "2026-11-16",
  "cadence_months": {
   "confirmed": 12,
   "documented": 6,
@@ -24,9 +24,9 @@
    "file_url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetEquipmentPlantCodes?year=2016&equipmentType=1&reportType=All&format=json",
    "hand_note": null,
    "once": false,
-   "last": "2026-11-09",
-   "due": "2026-11-16",
-   "result": "1,246 entries; 1 change since the previous pull"
+   "last": "2026-11-16",
+   "due": "2026-11-23",
+   "result": "1,249 entries; 4 changes since the previous pull"
   },
   {
    "id": "usda-establishments",
@@ -63,8 +63,8 @@
    "file_url": null,
    "hand_note": null,
    "once": false,
-   "last": "2026-11-11",
-   "due": "2026-11-18",
+   "last": "2026-11-16",
+   "due": "2026-11-23",
    "result": "18 recalls waiting for review"
   },
   {
@@ -82,8 +82,8 @@
    "file_url": null,
    "hand_note": null,
    "once": false,
-   "last": "2026-11-09",
-   "due": "2026-11-16",
+   "last": "2026-11-16",
+   "due": "2026-11-23",
    "result": "50 Costco labels; 0 to review"
   },
   {
@@ -311,7 +311,7 @@
    "hand_note": "Read in a browser at ZIP 98101. Click each size. Check the Product Label PDF: a new file or maker line changes the page. Read again the day after an offer ends.",
    "once": false,
    "last": "2026-11-06",
-   "due": "2026-11-15",
+   "due": "2026-11-16",
    "result": "Pillow Top queen $899.99 to Nov 15; Tight Top queen $949.99; tag says Sealy Mattress"
   },
   {
@@ -368,7 +368,7 @@
    "hand_note": "Costco's search pages, read in a browser one at a time, for the shelf prices the comparison uses.",
    "once": false,
    "last": "2026-11-06",
-   "due": "2026-12-09",
+   "due": "2026-12-16",
    "result": "Four pairs read; OxiClean is warehouse-only with no price shown"
   },
   {
@@ -424,8 +424,8 @@
    "file_url": null,
    "hand_note": null,
    "once": false,
-   "last": "2026-11-09",
-   "due": "2026-11-16",
+   "last": "2026-11-16",
+   "due": "2026-11-23",
    "result": "Label files refreshed"
   },
   {
@@ -671,9 +671,9 @@
    "file_url": null,
    "hand_note": "A weekly read of TTB's label approvals for Kirkland (Sundays). TTB doesn't answer our servers, so it runs from a desktop computer. A person reads each new label before it is added.",
    "once": false,
-   "last": "2026-11-08",
-   "due": "2026-11-15",
-   "result": "512 Kirkland approvals; 38 on the spirits pages, 7 not yet cited"
+   "last": "2026-11-15",
+   "due": "2026-11-22",
+   "result": "512 Kirkland approvals; 413 on the spirits pages, 7 not yet cited"
   },
   {
    "id": "usga-balls-kirkland",
@@ -1225,6 +1225,329 @@
    "last": null,
    "due": "2027-05-15",
    "result": null
+  },
+  {
+   "id": "cvs-walgreens-records",
+   "what": "Are CVS and Walgreens the same company: CVS Health's 10-K, exhibit 21 and proxy statement; Walgreen Co.'s newest federal-court disclosure of its owners",
+   "gives": "Who owns each company, CVS's holders of more than 5%, Walgreens' owners of 5% or more and the store names each chain runs, for /are-cvs-and-walgreens-the-same-company/",
+   "how": "hand",
+   "every_days": 182,
+   "source": {
+    "id": "sec-edgar",
+    "name": "SEC EDGAR company filings",
+    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+    "url": "https://www.sec.gov/edgar/search/"
+   },
+   "file_url": null,
+   "hand_note": "CVS's newest SEC filings and Walgreens' newest court disclosures, twice a year. If either names a new owner, the page's answer is rewritten and logged.",
+   "once": false,
+   "last": null,
+   "due": "2027-05-15",
+   "result": null
+  },
+  {
+   "id": "cvs-walgreens-labels",
+   "what": "Every CVS and Walgreens OTC drug label on file with FDA, and the Drugs@FDA holder of each application number on them",
+   "gives": "The store-brand medicine table and holder chart on /are-cvs-and-walgreens-the-same-company/. The build stops if the writing's statements (most medicines share an approval, the top holder, no Walgreens-only medicines) stop being true",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "openfda-drug-labels",
+    "name": "openFDA drug labels",
+    "publisher": "US Food and Drug Administration",
+    "url": "https://open.fda.gov/apis/drug/label/"
+   },
+   "file_url": null,
+   "hand_note": "Both chains' OTC labels and FDA's approval records, every month. A changed holder or a new label shows up on the page after a person has read it.",
+   "once": false,
+   "last": null,
+   "due": "2027-05-15",
+   "result": null
+  },
+  {
+   "id": "aldi-lidl-records",
+   "what": "Are Aldi and Lidl the same company: each chain's newest US court disclosure of its parents and its UK company's newest annual accounts",
+   "gives": "Who owns each chain, in the US and the UK, for /are-aldi-and-lidl-the-same-company/",
+   "how": "hand",
+   "every_days": 182,
+   "source": {
+    "id": "companies-house",
+    "name": "Companies House (UK register of companies)",
+    "publisher": "Companies House, UK government",
+    "url": "https://find-and-update.company-information.service.gov.uk/"
+   },
+   "file_url": null,
+   "hand_note": "Both chains' newest court disclosures and UK accounts, twice a year. If either names a new owner, the page's answer is rewritten and logged.",
+   "once": false,
+   "last": null,
+   "due": "2027-05-15",
+   "result": null
+  },
+  {
+   "id": "aldi-lidl-recalls",
+   "what": "Every FDA food recall whose product description names Lidl, Aldi, Great Value, Trader Joe's, Kirkland Signature or Member's Mark",
+   "gives": "The shared-supplier count on /are-aldi-and-lidl-the-same-company/. The build stops if Lidl ever shares more recalling firms with Aldi than with Great Value, because the writing says it doesn't",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "openfda-enforcement",
+    "name": "openFDA food and drug enforcement (recall) reports",
+    "publisher": "US Food and Drug Administration",
+    "url": "https://open.fda.gov/apis/food/enforcement/"
+   },
+   "file_url": null,
+   "hand_note": "FDA's food recall records for each chain, every month. A new shared firm shows up on the page after a person has read it.",
+   "once": false,
+   "last": null,
+   "due": "2027-05-15",
+   "result": null
+  },
+  {
+   "id": "lowes-home-depot-filings",
+   "what": "Are Lowe’s and Home Depot the same company: each company’s newest 10-K and proxy statement (holders over 5%, director nominees, pay peers), Stanley Black & Decker’s 10-K and TTI’s annual report",
+   "gives": "Who owns each company, the shared holders and boards on /are-lowes-and-home-depot-the-same-company/. The build stops if a director surname is ever on both boards",
+   "how": "hand",
+   "every_days": 182,
+   "source": {
+    "id": "sec-edgar",
+    "name": "SEC EDGAR company filings",
+    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+    "url": "https://www.sec.gov/edgar/search/"
+   },
+   "file_url": null,
+   "hand_note": "Both companies’ newest annual report and proxy statement, twice a year. A new owner, holder or shared director is written up and logged.",
+   "once": false,
+   "last": null,
+   "due": "2027-05-15",
+   "result": null
+  },
+  {
+   "id": "lowes-home-depot-chargers",
+   "what": "California appliance register: approved battery chargers filed under Kobalt, Husky, Hart, Hyper Tough and Craftsman",
+   "gives": "The Kobalt and Husky charger-maker comparison on /are-lowes-and-home-depot-the-same-company/",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "cec-maedbs",
+    "name": "California Energy Commission Modernized Appliance Efficiency Database System (MAEDbS)",
+    "publisher": "California Energy Commission",
+    "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+   },
+   "file_url": null,
+   "hand_note": "Every Kobalt and Husky charger filing, every month. A new shared maker shows up after a person has read it.",
+   "once": false,
+   "last": null,
+   "due": "2027-05-15",
+   "result": null
+  },
+  {
+   "id": "lowes-home-depot-recalls",
+   "what": "CPSC recall database: recalls whose sold-at list names Home Depot, Lowe’s or both",
+   "gives": "The shared-products counts on /are-lowes-and-home-depot-the-same-company/",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "cpsc-recalls",
+    "name": "CPSC recalls database (SaferProducts.gov recall API)",
+    "publisher": "US Consumer Product Safety Commission",
+    "url": "https://www.saferproducts.gov/"
+   },
+   "file_url": null,
+   "hand_note": "CPSC’s recall list for both stores, every month.",
+   "once": false,
+   "last": null,
+   "due": "2027-05-15",
+   "result": null
+  },
+  {
+   "id": "lowes-home-depot-price-match",
+   "what": "Lowe’s Lowest Price Guarantee page and Home Depot’s price-match page",
+   "gives": "The price-matching section on /are-lowes-and-home-depot-the-same-company/",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "lowes",
+    "name": "Lowe’s (lowes.com)",
+    "publisher": "Lowe’s Companies, Inc.",
+    "url": "https://www.lowes.com/"
+   },
+   "file_url": null,
+   "hand_note": "Both stores’ price-match pages, every month.",
+   "once": false,
+   "last": null,
+   "due": "2027-05-15",
+   "result": null
+  },
+  {
+   "id": "petco-petsmart-filings",
+   "what": "Are Petco and PetSmart the same company: Petco’s newest 10-K and proxy statement (controller, voting power, pay peers) and Chewy’s newest 10-K and proxy (BC Partners’ stake, directors on PetSmart’s board, PetSmart dealings)",
+   "gives": "Who controls each chain and the PetSmart–Chewy ties on /are-petco-and-petsmart-the-same-company/",
+   "how": "hand",
+   "every_days": 182,
+   "source": {
+    "id": "sec-edgar",
+    "name": "SEC EDGAR company filings",
+    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+    "url": "https://www.sec.gov/edgar/search/"
+   },
+   "file_url": null,
+   "hand_note": "Petco’s and Chewy’s newest annual report and proxy statement, twice a year. A change of controller or of shared directors is written up and logged.",
+   "once": false,
+   "last": null,
+   "due": "2027-05-15",
+   "result": null
+  },
+  {
+   "id": "petco-petsmart-register",
+   "what": "North Dakota pet food register: registrations under PetSmart, Authority, Simply Nourish, Petco, International Pet Supplies, Costco Wholesale and Tractor Supply",
+   "gives": "The shared-firm count in the food section of /are-petco-and-petsmart-the-same-company/",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "nd-pet-food-registry",
+    "name": "North Dakota Department of Agriculture pet food product registrations",
+    "publisher": "North Dakota Department of Agriculture",
+    "url": "https://lars.ndda.nd.gov/public/productsearch/3"
+   },
+   "file_url": null,
+   "hand_note": "Both chains’ own-brand food registrations, every month. A new shared firm shows up after a person has read it.",
+   "once": false,
+   "last": null,
+   "due": "2027-05-15",
+   "result": null
+  },
+  {
+   "id": "petco-petsmart-price-match",
+   "what": "PetSmart’s Price Match Promise page and Petco’s help menu",
+   "gives": "The price-matching section on /are-petco-and-petsmart-the-same-company/",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "petsmart",
+    "name": "PetSmart (petsmart.com)",
+    "publisher": "PetSmart LLC",
+    "url": "https://www.petsmart.com/"
+   },
+   "file_url": null,
+   "hand_note": "Both chains’ price-match pages, every month.",
+   "once": false,
+   "last": null,
+   "due": "2027-05-15",
+   "result": null
+  },
+  {
+   "id": "tjmaxx-marshalls-filings",
+   "what": "Are TJ Maxx and Marshalls the same company: TJX’s newest 10-K and proxy statement, Ross Stores’ and Burlington Stores’ newest 10-Ks",
+   "gives": "Who owns TJ Maxx and Marshalls, the Marmaxx division, store counts, how the chains differ, and the Ross and Burlington lines on /are-tj-maxx-and-marshalls-the-same-company/",
+   "how": "hand",
+   "every_days": 182,
+   "source": {
+    "id": "sec-edgar",
+    "name": "SEC EDGAR company filings",
+    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+    "url": "https://www.sec.gov/edgar/search/"
+   },
+   "file_url": null,
+   "hand_note": "TJX’s, Ross’s and Burlington’s newest annual reports, twice a year. A change of owner or division is written up and logged.",
+   "once": false,
+   "last": null,
+   "due": "2027-02-16",
+   "result": null
+  },
+  {
+   "id": "tjmaxx-marshalls-policies",
+   "what": "TJ Maxx, Marshalls and HomeGoods return policies (in-store and online), gift card and Rewards certificate FAQs",
+   "gives": "The ‘what works at the other store’ table on /are-tj-maxx-and-marshalls-the-same-company/",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "tjmaxx",
+    "name": "TJ Maxx (tjmaxx.com)",
+    "publisher": "The TJX Companies, Inc.",
+    "url": "https://tjmaxx.tjx.com/"
+   },
+   "file_url": null,
+   "hand_note": "The stores’ own return, gift card and Rewards pages, every three months.",
+   "once": false,
+   "last": null,
+   "due": "2027-02-16",
+   "result": null
+  },
+  {
+   "id": "tjmaxx-marshalls-recalls",
+   "what": "CPSC recall database: recalls whose sold-at list names TJ Maxx, Marshalls, both, HomeGoods, Ross or Burlington",
+   "gives": "The shared-recalls counts on /are-tj-maxx-and-marshalls-the-same-company/. The hero stops if Ross or Burlington ever shares as many recalls as the pair",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "cpsc-recalls",
+    "name": "CPSC recalls database (SaferProducts.gov recall API)",
+    "publisher": "US Consumer Product Safety Commission",
+    "url": "https://www.saferproducts.gov/"
+   },
+   "file_url": null,
+   "hand_note": "CPSC’s recall list for both stores, every month.",
+   "once": false,
+   "last": null,
+   "due": "2027-02-16",
+   "result": null
+  },
+  {
+   "id": "fender-serial-rules",
+   "what": "Fender's serial number dating charts",
+   "gives": "The rules, tables and examples on the Fender serial number lookup",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "fender-support",
+    "name": "Fender support articles (support.fender.com and jp-support.fender.com)",
+    "publisher": "Fender Musical Instruments Corporation",
+    "url": "https://support.fender.com/hc/en-us"
+   },
+   "file_url": null,
+   "hand_note": "Fender's dating articles for US, Mexican, Japanese, Korean and Indonesian instruments are read again and compared with our saved copies; new chart rows go into the decoder after the site owner approves them.",
+   "once": false,
+   "last": "2026-11-16",
+   "due": "2027-02-16",
+   "result": "Five country charts, the odd-serial list and the serial-location article read from Fender's support feed; Fender's lookup notice and Fender Japan's support pages read in a browser. 162 rules, 139 chart rows, each checked against its saved article."
+  },
+  {
+   "id": "fender-amp-charts",
+   "what": "Fender's amp dating charts",
+   "gives": "The QA sticker, tube chart and transformer rules on the Fender amp serial lookup",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "fender-support",
+    "name": "Fender support articles (support.fender.com and jp-support.fender.com)",
+    "publisher": "Fender Musical Instruments Corporation",
+    "url": "https://support.fender.com/hc/en-us"
+   },
+   "file_url": null,
+   "hand_note": "Fender's amp dating article, in English and Fender Japan's copy, is read again and compared with our saved copy; if Fender extends its QA sticker chart, the reader follows after the site owner approves.",
+   "once": false,
+   "last": "2026-11-16",
+   "due": "2027-02-14",
+   "result": "Fender's amp article (US) and Fender Japan's copy read from the help centres' public feeds: QA sticker A-K (1990-2000), tube chart A-S (1951-69), EIA 606 transformer rule; every letter checked against the saved copy."
+  },
+  {
+   "id": "coach-10k",
+   "what": "Tapestry's annual report (Form 10-K)",
+   "gives": "The countries named for Coach's manufacturers on Where are Coach bags made",
+   "how": "hand",
+   "every_days": 365,
+   "source": {
+    "id": "sec-edgar",
+    "name": "SEC EDGAR company filings",
+    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+    "url": "https://www.sec.gov/edgar/search/"
+   },
+   "file_url": null,
+   "hand_note": "Tapestry's new annual report is read when it is filed each August and its list of Coach's manufacturing countries added to the chart and checker.",
+   "once": false,
+   "last": "2026-11-16",
+   "due": "2027-08-20",
+   "result": "Coach's 2000 prospectus and all 26 Coach/Tapestry 10-Ks (fiscal 2001-2026) read from EDGAR: 28 countries; fiscal 2026 main countries Vietnam, Cambodia, the Philippines and India; every sentence checked against the saved filing."
   }
  ],
  "terms": [
@@ -1298,6 +1621,14 @@
    "url": "https://acuranews.com/",
    "checked": "2026-11-13",
    "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Alex Lee, Inc. (alexlee.com)",
+   "publisher": "Alex Lee, Inc.",
+   "url": "https://www.alexlee.com/",
+   "checked": "2026-11-15",
+   "due": "2027-11-15",
    "automated_read": "ask"
   },
   {
@@ -1469,6 +1800,14 @@
    "automated_read": "public-domain"
   },
   {
+   "source": "Companies House (UK register of companies)",
+   "publisher": "Companies House, UK government",
+   "url": "https://find-and-update.company-information.service.gov.uk/help/terms-conditions",
+   "checked": "2026-11-15",
+   "due": "2027-11-15",
+   "automated_read": "yes"
+  },
+  {
    "source": "Consumer Reports",
    "publisher": "Consumer Reports",
    "url": "https://www.consumerreports.org/",
@@ -1597,6 +1936,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "ECIA: EIA source codes and date codes",
+   "publisher": "Electronic Components Industry Association (successor to the EIA codes program)",
+   "url": "https://www.ecianow.org/robots.txt",
+   "checked": "2026-11-16",
+   "due": "2027-11-16",
+   "automated_read": "yes"
+  },
+  {
    "source": "ENERGY STAR certified products data (data.energystar.gov)",
    "publisher": "US Environmental Protection Agency",
    "url": "https://data.energystar.gov/",
@@ -1683,6 +2030,22 @@
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "public-domain"
+  },
+  {
+   "source": "Fender serial number lookup (serialnumberlookup.fender.com)",
+   "publisher": "Fender Musical Instruments Corporation",
+   "url": "https://serialnumberlookup.fender.com/lookup/",
+   "checked": "2026-11-16",
+   "due": "2027-11-16",
+   "automated_read": "no"
+  },
+  {
+   "source": "Fender support articles (support.fender.com and jp-support.fender.com)",
+   "publisher": "Fender Musical Instruments Corporation",
+   "url": "https://support.fender.com/robots.txt",
+   "checked": "2026-11-16",
+   "due": "2027-11-16",
+   "automated_read": "yes"
   },
   {
    "source": "Ferrara newsroom",
@@ -1867,6 +2230,14 @@
    "checked": "2026-11-12",
    "due": "2027-11-12",
    "automated_read": "yes"
+  },
+  {
+   "source": "HomeGoods (homegoods.com)",
+   "publisher": "The TJX Companies, Inc.",
+   "url": "https://www.homegoods.com/returns",
+   "checked": "2026-11-16",
+   "due": "2027-11-16",
+   "automated_read": "no"
   },
   {
    "source": "Honda global newsroom",
@@ -2085,6 +2456,30 @@
    "automated_read": "ask"
   },
   {
+   "source": "Lidl (lidl.com and unternehmen.lidl.de)",
+   "publisher": "Lidl US, LLC; Lidl Stiftung & Co. KG",
+   "url": "https://www.lidl.com/terms",
+   "checked": "2026-11-15",
+   "due": "2027-11-15",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Lowes Foods (lowesfoods.com)",
+   "publisher": "Lowes Foods, LLC",
+   "url": "https://www.lowesfoods.com/",
+   "checked": "2026-11-15",
+   "due": "2027-11-15",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Lowe’s (lowes.com)",
+   "publisher": "Lowe’s Companies, Inc.",
+   "url": "https://www.lowes.com/l/about/terms-and-conditions-of-use",
+   "checked": "2026-11-15",
+   "due": "2027-11-15",
+   "automated_read": "no"
+  },
+  {
    "source": "MG2 project pages",
    "publisher": "MG2",
    "url": "https://mg2.com/",
@@ -2123,6 +2518,14 @@
    "checked": "2026-11-13",
    "due": "2027-11-13",
    "automated_read": "ask"
+  },
+  {
+   "source": "Marshalls (marshalls.com)",
+   "publisher": "The TJX Companies, Inc.",
+   "url": "https://www.marshalls.com/us/store/jump/topic/easy-returns/18400006p",
+   "checked": "2026-11-16",
+   "due": "2027-11-16",
+   "automated_read": "no"
   },
   {
    "source": "Mashed",
@@ -2405,6 +2808,22 @@
    "automated_read": "yes"
   },
   {
+   "source": "PetSmart (petsmart.com)",
+   "publisher": "PetSmart LLC",
+   "url": "https://www.petsmart.com/help/returns-and-refunds-H0008b.html",
+   "checked": "2026-11-15",
+   "due": "2027-11-15",
+   "automated_read": "no"
+  },
+  {
+   "source": "Petco (petco.com)",
+   "publisher": "Petco Animal Supplies Stores, Inc.",
+   "url": "https://www.petco.com/help",
+   "checked": "2026-11-15",
+   "due": "2027-11-15",
+   "automated_read": "no"
+  },
+  {
    "source": "Porsche Newsroom",
    "publisher": "Dr. Ing. h.c. F. Porsche AG",
    "url": "https://newsroom.porsche.com/",
@@ -2629,12 +3048,28 @@
    "automated_read": "ask"
   },
   {
+   "source": "TJ Maxx (tjmaxx.com)",
+   "publisher": "The TJX Companies, Inc.",
+   "url": "https://tjmaxx.tjx.com/store/jump/topic/find-help/easy-returns/18400006p",
+   "checked": "2026-11-16",
+   "due": "2027-11-16",
+   "automated_read": "no"
+  },
+  {
    "source": "TTB Public COLA Registry (label approvals)",
    "publisher": "US Alcohol and Tobacco Tax and Trade Bureau (TTB)",
    "url": "https://www.ttb.gov/about-ttb/linking-policy",
    "checked": "2026-11-08",
    "due": "2027-11-08",
    "automated_read": "yes"
+  },
+  {
+   "source": "Techtronic Industries Co. Ltd. (ttigroup.com), annual reports",
+   "publisher": "Techtronic Industries Co. Ltd.",
+   "url": "https://www.ttigroup.com/",
+   "checked": "2026-11-15",
+   "due": "2027-11-15",
+   "automated_read": "ask"
   },
   {
    "source": "Tesla owner's manuals",
@@ -2787,6 +3222,14 @@
    "checked": "2026-11-14",
    "due": "2027-11-14",
    "automated_read": "no"
+  },
+  {
+   "source": "US Consumer Product Safety Commission news releases (cpsc.gov)",
+   "publisher": "US Consumer Product Safety Commission",
+   "url": "https://www.cpsc.gov/",
+   "checked": "2026-11-16",
+   "due": "2027-11-16",
+   "automated_read": "yes"
   },
   {
    "source": "US Justice Department press releases",
@@ -2979,6 +3422,14 @@
    "checked": "2026-11-10",
    "due": "2027-11-10",
    "automated_read": "no"
+  },
+  {
+   "source": "openFDA drug labels",
+   "publisher": "US Food and Drug Administration",
+   "url": "https://open.fda.gov/terms/",
+   "checked": "2026-11-15",
+   "due": "2027-11-15",
+   "automated_read": "public-domain"
   },
   {
    "source": "openFDA food and drug enforcement (recall) reports",
@@ -10412,13 +10863,13 @@
  "pages": [
   {
    "path": "/tire-dot-code-lookup/",
-   "changed": "2026-11-09",
-   "next": "2026-11-16",
+   "changed": "2026-11-16",
+   "next": "2026-11-23",
    "tasks": [
     {
      "id": "nhtsa-tire-plants",
      "what": "NHTSA tire plant codes",
-     "due": "2026-11-16"
+     "due": "2026-11-23"
     },
     {
      "id": "federal-rule-texts",
@@ -10611,12 +11062,12 @@
   {
    "path": "/kirkland-signature/",
    "changed": "2026-11-14",
-   "next": "2026-11-15",
+   "next": "2026-11-22",
    "tasks": [
     {
      "id": "ttb-kirkland",
      "what": "TTB label approvals for Kirkland",
-     "due": "2026-11-15"
+     "due": "2026-11-22"
     }
    ],
    "claims": null,
@@ -10625,12 +11076,12 @@
   {
    "path": "/aldi/",
    "changed": "2026-11-09",
-   "next": "2026-11-18",
+   "next": "2026-11-23",
    "tasks": [
     {
      "id": "openfda-leads",
      "what": "FDA recall records that mention store brands",
-     "due": "2026-11-18"
+     "due": "2026-11-23"
     }
    ],
    "claims": 47,
@@ -10641,12 +11092,12 @@
   {
    "path": "/members-mark/",
    "changed": "2026-11-09",
-   "next": "2026-11-18",
+   "next": "2026-11-23",
    "tasks": [
     {
      "id": "openfda-leads",
      "what": "FDA recall records that mention store brands",
-     "due": "2026-11-18"
+     "due": "2026-11-23"
     }
    ],
    "claims": 131,
@@ -10657,12 +11108,12 @@
   {
    "path": "/trader-joes/",
    "changed": "2026-11-11",
-   "next": "2026-11-18",
+   "next": "2026-11-23",
    "tasks": [
     {
      "id": "openfda-leads",
      "what": "FDA recall records that mention store brands",
-     "due": "2026-11-18"
+     "due": "2026-11-23"
     }
    ],
    "claims": 402,
@@ -10742,12 +11193,12 @@
   {
    "path": "/kirkland-signature/medicine/",
    "changed": "2026-11-07",
-   "next": "2026-11-16",
+   "next": "2026-11-23",
    "tasks": [
     {
      "id": "kirkland-medicine-labels",
      "what": "Kirkland medicine labels and FDA approval holders",
-     "due": "2026-11-16"
+     "due": "2026-11-23"
     }
    ],
    "claims": 40,
@@ -10772,12 +11223,12 @@
   {
    "path": "/kirkland-signature/mattress/",
    "changed": "2026-11-06",
-   "next": "2026-11-15",
+   "next": "2026-11-16",
    "tasks": [
     {
      "id": "kirkland-mattress-prices",
      "what": "The two Kirkland Lakeridge mattresses: prices by size, offer dates, ratings and the law label link",
-     "due": "2026-11-15"
+     "due": "2026-11-16"
     }
    ],
    "claims": 0,
@@ -10872,12 +11323,12 @@
   {
    "path": "/kirkland-signature/vodka/",
    "changed": "2026-11-08",
-   "next": "2026-11-15",
+   "next": "2026-11-22",
    "tasks": [
     {
      "id": "ttb-kirkland",
      "what": "TTB label approvals for Kirkland",
-     "due": "2026-11-15"
+     "due": "2026-11-22"
     }
    ],
    "claims": 5,
@@ -10888,12 +11339,12 @@
   {
    "path": "/kirkland-signature/tequila/",
    "changed": "2026-11-14",
-   "next": "2026-11-15",
+   "next": "2026-11-22",
    "tasks": [
     {
      "id": "ttb-kirkland",
      "what": "TTB label approvals for Kirkland",
-     "due": "2026-11-15"
+     "due": "2026-11-22"
     }
    ],
    "claims": 8,
@@ -10904,12 +11355,12 @@
   {
    "path": "/kirkland-signature/bourbon/",
    "changed": "2026-11-08",
-   "next": "2026-11-15",
+   "next": "2026-11-22",
    "tasks": [
     {
      "id": "ttb-kirkland",
      "what": "TTB label approvals for Kirkland",
-     "due": "2026-11-15"
+     "due": "2026-11-22"
     }
    ],
    "claims": 3,
@@ -10919,18 +11370,18 @@
   },
   {
    "path": "/kirkland-vs-name-brands/",
-   "changed": "2026-11-09",
-   "next": "2026-11-16",
+   "changed": "2026-11-16",
+   "next": "2026-11-23",
    "tasks": [
     {
      "id": "kirkland-vs-prices",
      "what": "Kirkland vs name brands: Bounty, Kleenex, Tide and Dawn shelf prices at ZIP 98101",
-     "due": "2026-12-09"
+     "due": "2026-12-16"
     },
     {
      "id": "name-brand-labels",
      "what": "Name-brand labels compared with Kirkland",
-     "due": "2026-11-16"
+     "due": "2026-11-23"
     }
    ],
    "claims": 0,
@@ -11052,7 +11503,7 @@
   {
    "path": "/makers/perrigo/",
    "changed": "2026-11-12",
-   "next": "2026-11-16",
+   "next": "2026-11-23",
    "tasks": [
     {
      "id": "maker-pages",
@@ -11062,7 +11513,7 @@
     {
      "id": "kirkland-medicine-labels",
      "what": "Kirkland medicine labels and FDA approval holders",
-     "due": "2026-11-16"
+     "due": "2026-11-23"
     }
    ],
    "claims": 39,
@@ -11073,7 +11524,7 @@
   {
    "path": "/makers/lnk-international/",
    "changed": "2026-11-12",
-   "next": "2026-11-16",
+   "next": "2026-11-23",
    "tasks": [
     {
      "id": "maker-pages",
@@ -11083,7 +11534,7 @@
     {
      "id": "kirkland-medicine-labels",
      "what": "Kirkland medicine labels and FDA approval holders",
-     "due": "2026-11-16"
+     "due": "2026-11-23"
     }
    ],
    "claims": 13,
@@ -11157,7 +11608,7 @@
   },
   {
    "path": "/how-we-know/",
-   "changed": "2026-11-15",
+   "changed": "2026-11-16",
    "next": "2026-12-08",
    "tasks": [],
    "claims": null,
@@ -11165,7 +11616,7 @@
   },
   {
    "path": "/sources/",
-   "changed": "2026-11-15",
+   "changed": "2026-11-16",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -11181,7 +11632,7 @@
   },
   {
    "path": "/data/",
-   "changed": "2026-11-15",
+   "changed": "2026-11-16",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -11244,7 +11695,7 @@
   {
    "path": "/makers/misa-imports/",
    "changed": "2026-11-08",
-   "next": "2026-11-15",
+   "next": "2026-11-22",
    "tasks": [
     {
      "id": "maker-pages",
@@ -11254,7 +11705,7 @@
     {
      "id": "ttb-kirkland",
      "what": "TTB label approvals for Kirkland",
-     "due": "2026-11-15"
+     "due": "2026-11-22"
     }
    ],
    "claims": 2,
@@ -11306,8 +11757,8 @@
   },
   {
    "path": "/home/",
-   "changed": "2026-11-15",
-   "next": "2026-11-16",
+   "changed": "2026-11-16",
+   "next": "2026-11-23",
    "tasks": [
     {
      "id": "maker-pages",
@@ -11317,7 +11768,7 @@
     {
      "id": "nhtsa-tire-plants",
      "what": "NHTSA tire plant codes",
-     "due": "2026-11-16"
+     "due": "2026-11-23"
     }
    ],
    "claims": null,
@@ -11325,7 +11776,7 @@
   },
   {
    "path": "/about/",
-   "changed": "2026-11-15",
+   "changed": "2026-11-16",
    "next": "2027-11-08",
    "tasks": [
     {
@@ -11438,12 +11889,12 @@
   {
    "path": "/kirkland-signature/wine/",
    "changed": "2026-11-08",
-   "next": "2026-11-15",
+   "next": "2026-11-22",
    "tasks": [
     {
      "id": "ttb-kirkland",
      "what": "TTB label approvals for Kirkland",
-     "due": "2026-11-15"
+     "due": "2026-11-22"
     },
     {
      "id": "federal-rule-texts",
@@ -11457,12 +11908,12 @@
   {
    "path": "/kirkland-signature/beer/",
    "changed": "2026-11-08",
-   "next": "2026-11-15",
+   "next": "2026-11-22",
    "tasks": [
     {
      "id": "ttb-kirkland",
      "what": "TTB label approvals for Kirkland",
-     "due": "2026-11-15"
+     "due": "2026-11-22"
     },
     {
      "id": "federal-rule-texts",
@@ -11476,12 +11927,12 @@
   {
    "path": "/great-value/",
    "changed": "2026-11-09",
-   "next": "2026-11-18",
+   "next": "2026-11-23",
    "tasks": [
     {
      "id": "openfda-leads",
      "what": "FDA recall records that mention store brands",
-     "due": "2026-11-18"
+     "due": "2026-11-23"
     }
    ],
    "claims": 49,
@@ -11849,9 +12300,196 @@
    ],
    "claims": 0,
    "stamps": {}
+  },
+  {
+   "path": "/are-cvs-and-walgreens-the-same-company/",
+   "changed": "2026-11-15",
+   "next": "2027-05-15",
+   "tasks": [
+    {
+     "id": "cvs-walgreens-records",
+     "what": "Are CVS and Walgreens the same company: CVS Health's 10-K, exhibit 21 and proxy statement; Walgreen Co.'s newest federal-court disclosure of its owners",
+     "due": "2027-05-15"
+    },
+    {
+     "id": "cvs-walgreens-labels",
+     "what": "Every CVS and Walgreens OTC drug label on file with FDA, and the Drugs@FDA holder of each application number on them",
+     "due": "2027-05-15"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/are-aldi-and-lidl-the-same-company/",
+   "changed": "2026-11-15",
+   "next": "2027-05-15",
+   "tasks": [
+    {
+     "id": "aldi-lidl-records",
+     "what": "Are Aldi and Lidl the same company: each chain's newest US court disclosure of its parents and its UK company's newest annual accounts",
+     "due": "2027-05-15"
+    },
+    {
+     "id": "aldi-lidl-recalls",
+     "what": "Every FDA food recall whose product description names Lidl, Aldi, Great Value, Trader Joe's, Kirkland Signature or Member's Mark",
+     "due": "2027-05-15"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/are-lowes-and-home-depot-the-same-company/",
+   "changed": "2026-11-15",
+   "next": "2027-05-15",
+   "tasks": [
+    {
+     "id": "lowes-home-depot-filings",
+     "what": "Are Lowe’s and Home Depot the same company: each company’s newest 10-K and proxy statement (holders over 5%, director nominees, pay peers), Stanley Black & Decker’s 10-K and TTI’s annual report",
+     "due": "2027-05-15"
+    },
+    {
+     "id": "lowes-home-depot-chargers",
+     "what": "California appliance register: approved battery chargers filed under Kobalt, Husky, Hart, Hyper Tough and Craftsman",
+     "due": "2027-05-15"
+    },
+    {
+     "id": "lowes-home-depot-recalls",
+     "what": "CPSC recall database: recalls whose sold-at list names Home Depot, Lowe’s or both",
+     "due": "2027-05-15"
+    },
+    {
+     "id": "lowes-home-depot-price-match",
+     "what": "Lowe’s Lowest Price Guarantee page and Home Depot’s price-match page",
+     "due": "2027-05-15"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/are-petco-and-petsmart-the-same-company/",
+   "changed": "2026-11-15",
+   "next": "2027-05-15",
+   "tasks": [
+    {
+     "id": "petco-petsmart-filings",
+     "what": "Are Petco and PetSmart the same company: Petco’s newest 10-K and proxy statement (controller, voting power, pay peers) and Chewy’s newest 10-K and proxy (BC Partners’ stake, directors on PetSmart’s board, PetSmart dealings)",
+     "due": "2027-05-15"
+    },
+    {
+     "id": "petco-petsmart-register",
+     "what": "North Dakota pet food register: registrations under PetSmart, Authority, Simply Nourish, Petco, International Pet Supplies, Costco Wholesale and Tractor Supply",
+     "due": "2027-05-15"
+    },
+    {
+     "id": "petco-petsmart-price-match",
+     "what": "PetSmart’s Price Match Promise page and Petco’s help menu",
+     "due": "2027-05-15"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/are-tj-maxx-and-marshalls-the-same-company/",
+   "changed": "2026-11-16",
+   "next": "2027-02-16",
+   "tasks": [
+    {
+     "id": "tjmaxx-marshalls-filings",
+     "what": "Are TJ Maxx and Marshalls the same company: TJX’s newest 10-K and proxy statement, Ross Stores’ and Burlington Stores’ newest 10-Ks",
+     "due": "2027-02-16"
+    },
+    {
+     "id": "tjmaxx-marshalls-policies",
+     "what": "TJ Maxx, Marshalls and HomeGoods return policies (in-store and online), gift card and Rewards certificate FAQs",
+     "due": "2027-02-16"
+    },
+    {
+     "id": "tjmaxx-marshalls-recalls",
+     "what": "CPSC recall database: recalls whose sold-at list names TJ Maxx, Marshalls, both, HomeGoods, Ross or Burlington",
+     "due": "2027-02-16"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/fender-serial-number-lookup/",
+   "changed": "2026-11-16",
+   "next": "2027-02-16",
+   "tasks": [
+    {
+     "id": "fender-serial-rules",
+     "what": "Fender's serial number dating charts",
+     "due": "2027-02-16"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/fender-amp-serial-number-lookup/",
+   "changed": "2026-11-16",
+   "next": "2027-02-14",
+   "tasks": [
+    {
+     "id": "fender-amp-charts",
+     "what": "Fender's amp dating charts",
+     "due": "2027-02-14"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/where-are-coach-bags-made/",
+   "changed": "2026-11-16",
+   "next": "2027-08-20",
+   "tasks": [
+    {
+     "id": "coach-10k",
+     "what": "Tapestry's annual report (Form 10-K)",
+     "due": "2027-08-20"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
   }
  ],
  "done": [
+  {
+   "on": "2026-11-16",
+   "task": "nhtsa-tire-plants",
+   "what": "Weekly pull of NHTSA tire plant codes",
+   "result": "1,249 codes; 3 added, 1 changed"
+  },
+  {
+   "on": "2026-11-16",
+   "task": "openfda-leads",
+   "what": "Weekly search of FDA recall records for store brands",
+   "result": "0 new recalls found; 18 waiting for review"
+  },
+  {
+   "on": "2026-11-16",
+   "task": "kirkland-medicine-labels",
+   "what": "Weekly read of Kirkland medicine labels and FDA approval holders",
+   "result": "50 Costco labels; 0 to review"
+  },
+  {
+   "on": "2026-11-16",
+   "task": "name-brand-labels",
+   "what": "Weekly read of the name-brand labels the Kirkland comparison uses",
+   "result": "Label files refreshed"
+  },
+  {
+   "on": "2026-11-15",
+   "task": "ttb-kirkland",
+   "what": "TTB label approvals for Kirkland (script, from the Mac)",
+   "result": "512 Kirkland approvals; 413 on the spirits pages, 7 not yet cited"
+  },
   {
    "on": "2026-11-14",
    "task": "wam-wayback-saves",

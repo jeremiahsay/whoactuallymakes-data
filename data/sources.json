@@ -1,9 +1,9 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-15",
- "count": 221,
- "primary": 163,
- "by_hand": 29,
+ "generated": "2026-11-16",
+ "count": 237,
+ "primary": 179,
+ "by_hand": 36,
  "sources": [
   {
    "id": "api-eolcs",
@@ -51,6 +51,39 @@
      "edition": null,
      "file_url": null,
      "hand_note": "API's public licence directory, searched in a browser one brand at a time."
+    }
+   ]
+  },
+  {
+   "id": "companies-house",
+   "name": "Companies House (UK register of companies)",
+   "short": "Companies House",
+   "publisher": "Companies House, UK government",
+   "url": "https://find-and-update.company-information.service.gov.uk/",
+   "kind": "Government registry",
+   "primary": true,
+   "proves": "What a UK company files about itself: its annual accounts, including the parent the directors name, and its register of people with significant control.",
+   "cannot_prove": "Who owns a foreign parent; the accounts give the directors’ view of the parent, and the register names only registrable people and companies.",
+   "terms": {
+    "url": "https://find-and-update.company-information.service.gov.uk/help/terms-conditions",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-15",
+    "due": "2027-11-15"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": [
+    {
+     "what": "Are Aldi and Lidl the same company: each chain's newest US court disclosure of its parents and its UK company's newest annual accounts",
+     "how": "hand",
+     "every_days": 182,
+     "last": null,
+     "due": "2027-05-15",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Both chains' newest court disclosures and UK accounts, twice a year. If either names a new owner, the page's answer is rewritten and logged."
     }
    ]
   },
@@ -202,9 +235,9 @@
      "what": "NHTSA tire plant codes",
      "how": "script",
      "every_days": 7,
-     "last": "2026-11-09",
-     "due": "2026-11-16",
-     "result": "1,246 entries; 1 change since the previous pull",
+     "last": "2026-11-16",
+     "due": "2026-11-23",
+     "result": "1,249 entries; 4 changes since the previous pull",
      "edition": null,
      "file_url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetEquipmentPlantCodes?year=2016&equipmentType=1&reportType=All&format=json",
      "hand_note": null
@@ -252,6 +285,17 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Once a month our script re-reads North Dakota's pet food register and FDA's recall records for every company. A person re-reads the companies' own pages each time a claim is checked."
+    },
+    {
+     "what": "North Dakota pet food register: registrations under PetSmart, Authority, Simply Nourish, Petco, International Pet Supplies, Costco Wholesale and Tractor Supply",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2027-05-15",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Both chains’ own-brand food registrations, every month. A new shared firm shows up after a person has read it."
     }
    ]
   },
@@ -551,6 +595,28 @@
      "edition": null,
      "file_url": null,
      "hand_note": "CPSC's recall database for any new household refrigerator, freezer or minifridge recall, and the federal refrigerator limits (10 CFR 430.32(a)) and their 2029 and 2030 dates. A new recall or a changed limit goes on the page after the site owner approves the wording."
+    },
+    {
+     "what": "CPSC recall database: recalls whose sold-at list names Home Depot, Lowe’s or both",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2027-05-15",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "CPSC’s recall list for both stores, every month."
+    },
+    {
+     "what": "CPSC recall database: recalls whose sold-at list names TJ Maxx, Marshalls, both, HomeGoods, Ross or Burlington",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2027-02-16",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "CPSC’s recall list for both stores, every month."
     }
    ]
   },
@@ -654,6 +720,17 @@
      "edition": null,
      "file_url": null,
      "hand_note": "California's charger register for EverStart and EverStart maxx, Walmart's eight EverStart listings and the warranty sheet they link (in a browser), and a full-text search of SEC filings naming EverStart. A newly named battery maker is a correction, approved by the site owner."
+    },
+    {
+     "what": "California appliance register: approved battery chargers filed under Kobalt, Husky, Hart, Hyper Tough and Craftsman",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2027-05-15",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Every Kobalt and Husky charger filing, every month. A new shared maker shows up after a person has read it."
     }
    ]
   },
@@ -807,7 +884,7 @@
      "how": "hand",
      "every_days": 30,
      "last": "2026-11-06",
-     "due": "2026-11-15",
+     "due": "2026-11-16",
      "result": "Pillow Top queen $899.99 to Nov 15; Tight Top queen $949.99; tag says Sealy Mattress",
      "edition": null,
      "file_url": null,
@@ -997,8 +1074,8 @@
      "what": "Kirkland medicine labels and FDA approval holders",
      "how": "script",
      "every_days": 7,
-     "last": "2026-11-09",
-     "due": "2026-11-16",
+     "last": "2026-11-16",
+     "due": "2026-11-23",
      "result": "50 Costco labels; 0 to review",
      "edition": null,
      "file_url": null,
@@ -1008,8 +1085,8 @@
      "what": "Name-brand labels compared with Kirkland",
      "how": "script",
      "every_days": 7,
-     "last": "2026-11-09",
-     "due": "2026-11-16",
+     "last": "2026-11-16",
+     "due": "2026-11-23",
      "result": "Label files refreshed",
      "edition": null,
      "file_url": null,
@@ -1076,6 +1153,50 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Re-read each rule on the eCFR, check our short quote still stands, and log any change on the corrections page."
+    }
+   ]
+  },
+  {
+   "id": "fender-support",
+   "name": "Fender support articles (support.fender.com and jp-support.fender.com)",
+   "short": "Fender support",
+   "publisher": "Fender Musical Instruments Corporation",
+   "url": "https://support.fender.com/hc/en-us",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How Fender itself says its serial numbers were laid out, and which countries and factories it names for them.",
+   "cannot_prove": "The build date of one instrument (Fender calls serial dating a guide), whether an instrument is genuine, or its value.",
+   "terms": {
+    "url": "https://support.fender.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-16",
+    "due": "2027-11-16"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": [
+    {
+     "what": "Fender's serial number dating charts",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-16",
+     "due": "2027-02-16",
+     "result": "Five country charts, the odd-serial list and the serial-location article read from Fender's support feed; Fender's lookup notice and Fender Japan's support pages read in a browser. 162 rules, 139 chart rows, each checked against its saved article.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Fender's dating articles for US, Mexican, Japanese, Korean and Indonesian instruments are read again and compared with our saved copies; new chart rows go into the decoder after the site owner approves them."
+    },
+    {
+     "what": "Fender's amp dating charts",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-16",
+     "due": "2027-02-14",
+     "result": "Fender's amp article (US) and Fender Japan's copy read from the help centres' public feeds: QA sticker A-K (1990-2000), tube chart A-S (1951-69), EIA 606 transformer rule; every letter checked against the saved copy.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Fender's amp dating article, in English and Fender Japan's copy, is read again and compared with our saved copy; if Fender extends its QA sticker chart, the reader follows after the site owner approves."
     }
    ]
   },
@@ -1203,6 +1324,39 @@
      "edition": null,
      "file_url": null,
      "hand_note": "The three companies' shareholder pages after each year-end, and each new NHTSA report. If a stake or a look-alike's country changes, the page won't rebuild until the lines that rely on it are rewritten."
+    }
+   ]
+  },
+  {
+   "id": "lowes",
+   "name": "Lowe’s (lowes.com)",
+   "short": "Lowe’s",
+   "publisher": "Lowe’s Companies, Inc.",
+   "url": "https://www.lowes.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Lowe’s own store policies, as the site states them on the day read.",
+   "cannot_prove": "How a given store applies a policy.",
+   "terms": {
+    "url": "https://www.lowes.com/l/about/terms-and-conditions-of-use",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-15",
+    "due": "2027-11-15"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": [
+    {
+     "what": "Lowe’s Lowest Price Guarantee page and Home Depot’s price-match page",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2027-05-15",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Both stores’ price-match pages, every month."
     }
    ]
   },
@@ -1425,6 +1579,39 @@
    ]
   },
   {
+   "id": "petsmart",
+   "name": "PetSmart (petsmart.com)",
+   "short": "PetSmart",
+   "publisher": "PetSmart LLC",
+   "url": "https://www.petsmart.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "PetSmart’s own store policies, as its site states them on the day read.",
+   "cannot_prove": "How a given store applies a policy, or who owns PetSmart; it publishes no annual report.",
+   "terms": {
+    "url": "https://www.petsmart.com/help/returns-and-refunds-H0008b.html",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-15",
+    "due": "2027-11-15"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": [
+    {
+     "what": "PetSmart’s Price Match Promise page and Petco’s help menu",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2027-05-15",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Both chains’ price-match pages, every month."
+    }
+   ]
+  },
+  {
    "id": "sec-edgar",
    "name": "SEC EDGAR company filings",
    "short": "SEC filings",
@@ -1507,6 +1694,11 @@
      "label": "Are they the same company?",
      "url": "/are-they-the-same-company/",
      "note": "Who owns whom, for the most-asked pairs of brands"
+    },
+    {
+     "label": "Where are Coach bags made?",
+     "url": "/where-are-coach-bags-made/",
+     "note": "Coach's 2000 prospectus and every Coach and Tapestry annual report since: the countries named for its manufacturers, year by year"
     }
    ],
    "pulls": [
@@ -1586,6 +1778,61 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Both companies' annual reports and proxy statements each year. If someone joins both boards, the page won't rebuild until its lines are rewritten."
+    },
+    {
+     "what": "Are CVS and Walgreens the same company: CVS Health's 10-K, exhibit 21 and proxy statement; Walgreen Co.'s newest federal-court disclosure of its owners",
+     "how": "hand",
+     "every_days": 182,
+     "last": null,
+     "due": "2027-05-15",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "CVS's newest SEC filings and Walgreens' newest court disclosures, twice a year. If either names a new owner, the page's answer is rewritten and logged."
+    },
+    {
+     "what": "Are Lowe’s and Home Depot the same company: each company’s newest 10-K and proxy statement (holders over 5%, director nominees, pay peers), Stanley Black & Decker’s 10-K and TTI’s annual report",
+     "how": "hand",
+     "every_days": 182,
+     "last": null,
+     "due": "2027-05-15",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Both companies’ newest annual report and proxy statement, twice a year. A new owner, holder or shared director is written up and logged."
+    },
+    {
+     "what": "Are Petco and PetSmart the same company: Petco’s newest 10-K and proxy statement (controller, voting power, pay peers) and Chewy’s newest 10-K and proxy (BC Partners’ stake, directors on PetSmart’s board, PetSmart dealings)",
+     "how": "hand",
+     "every_days": 182,
+     "last": null,
+     "due": "2027-05-15",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Petco’s and Chewy’s newest annual report and proxy statement, twice a year. A change of controller or of shared directors is written up and logged."
+    },
+    {
+     "what": "Are TJ Maxx and Marshalls the same company: TJX’s newest 10-K and proxy statement, Ross Stores’ and Burlington Stores’ newest 10-Ks",
+     "how": "hand",
+     "every_days": 182,
+     "last": null,
+     "due": "2027-02-16",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "TJX’s, Ross’s and Burlington’s newest annual reports, twice a year. A change of owner or division is written up and logged."
+    },
+    {
+     "what": "Tapestry's annual report (Form 10-K)",
+     "how": "hand",
+     "every_days": 365,
+     "last": "2026-11-16",
+     "due": "2027-08-20",
+     "result": "Coach's 2000 prospectus and all 26 Coach/Tapestry 10-Ks (fiscal 2001-2026) read from EDGAR: 28 countries; fiscal 2026 main countries Vietnam, Cambodia, the Philippines and India; every sentence checked against the saved filing.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Tapestry's new annual report is read when it is filed each August and its list of Coach's manufacturing countries added to the chart and checker."
     }
    ]
   },
@@ -1645,6 +1892,39 @@
    ]
   },
   {
+   "id": "tjmaxx",
+   "name": "TJ Maxx (tjmaxx.com)",
+   "short": "TJ Maxx",
+   "publisher": "The TJX Companies, Inc.",
+   "url": "https://tjmaxx.tjx.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "TJ Maxx’s own store policies, as its site states them on the day read.",
+   "cannot_prove": "How a given store applies a policy.",
+   "terms": {
+    "url": "https://tjmaxx.tjx.com/store/jump/topic/find-help/easy-returns/18400006p",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-16",
+    "due": "2027-11-16"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": [
+    {
+     "what": "TJ Maxx, Marshalls and HomeGoods return policies (in-store and online), gift card and Rewards certificate FAQs",
+     "how": "hand",
+     "every_days": 90,
+     "last": null,
+     "due": "2027-02-16",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The stores’ own return, gift card and Rewards pages, every three months."
+    }
+   ]
+  },
+  {
    "id": "ttb-cola",
    "name": "TTB Public COLA Registry (label approvals)",
    "short": "TTB label approvals",
@@ -1674,9 +1954,9 @@
      "what": "TTB label approvals for Kirkland",
      "how": "script",
      "every_days": 7,
-     "last": "2026-11-08",
-     "due": "2026-11-15",
-     "result": "512 Kirkland approvals; 38 on the spirits pages, 7 not yet cited",
+     "last": "2026-11-15",
+     "due": "2026-11-22",
+     "result": "512 Kirkland approvals; 413 on the spirits pages, 7 not yet cited",
      "edition": null,
      "file_url": null,
      "hand_note": "A weekly read of TTB's label approvals for Kirkland (Sundays). TTB doesn't answer our servers, so it runs from a desktop computer. A person reads each new label before it is added."
@@ -1840,6 +2120,45 @@
    ]
   },
   {
+   "id": "openfda-drug-labels",
+   "name": "openFDA drug labels",
+   "short": "openFDA labels",
+   "publisher": "US Food and Drug Administration",
+   "url": "https://open.fda.gov/apis/drug/label/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "Which drug labels are on file with FDA under a company’s name as labeler, and the FDA application number, if any, each one carries. The same labels DailyMed shows.",
+   "cannot_prove": "Who made a product. A store brand’s labeler is the store; labels without an application number name no other company, and a label can stay on file after the product leaves the shelf.",
+   "terms": {
+    "url": "https://open.fda.gov/terms/",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-15",
+    "due": "2027-11-15"
+   },
+   "credit": "Data provided by the U.S. Food and Drug Administration (https://open.fda.gov)",
+   "used_for": [
+    {
+     "label": "Are CVS and Walgreens the same company?",
+     "url": "/are-cvs-and-walgreens-the-same-company/",
+     "note": "Every CVS and Walgreens OTC label and its FDA number"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Every CVS and Walgreens OTC drug label on file with FDA, and the Drugs@FDA holder of each application number on them",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2027-05-15",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Both chains' OTC labels and FDA's approval records, every month. A changed holder or a new label shows up on the page after a person has read it."
+    }
+   ]
+  },
+  {
    "id": "openfda-enforcement",
    "name": "openFDA food and drug enforcement (recall) reports",
    "short": "FDA recall reports",
@@ -1868,14 +2187,46 @@
      "what": "FDA recall records that mention store brands",
      "how": "script",
      "every_days": 7,
-     "last": "2026-11-11",
-     "due": "2026-11-18",
+     "last": "2026-11-16",
+     "due": "2026-11-23",
      "result": "18 recalls waiting for review",
      "edition": null,
      "file_url": null,
      "hand_note": null
+    },
+    {
+     "what": "Every FDA food recall whose product description names Lidl, Aldi, Great Value, Trader Joe's, Kirkland Signature or Member's Mark",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2027-05-15",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "FDA's food recall records for each chain, every month. A new shared firm shows up on the page after a person has read it."
     }
    ]
+  },
+  {
+   "id": "ecia",
+   "name": "ECIA: EIA source codes and date codes",
+   "short": "ECIA",
+   "publisher": "Electronic Components Industry Association (successor to the EIA codes program)",
+   "url": "https://www.ecianow.org/eia-source-codes",
+   "kind": "Government registry",
+   "primary": true,
+   "proves": "Which company an EIA source code was registered to, and how the year and week were added to it.",
+   "cannot_prove": "That a part carrying a code is original to an instrument, or when it was fitted.",
+   "terms": {
+    "url": "https://www.ecianow.org/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-16",
+    "due": "2027-11-16"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
   },
   {
    "id": "usga-conforming-golf-balls-archive",
@@ -2133,6 +2484,27 @@
      "note": "Where Acura models are built"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "alex-lee",
+   "name": "Alex Lee, Inc. (alexlee.com)",
+   "short": "Alex Lee, Inc.",
+   "publisher": "Alex Lee, Inc.",
+   "url": "https://www.alexlee.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which grocery and wholesale businesses Alex Lee says it owns.",
+   "cannot_prove": "Who owns Alex Lee; it says only that it is privately held.",
+   "terms": {
+    "url": "https://www.alexlee.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-15",
+    "due": "2027-11-15"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -3174,6 +3546,27 @@
    "pulls": []
   },
   {
+   "id": "fender-serial-lookup",
+   "name": "Fender serial number lookup (serialnumberlookup.fender.com)",
+   "short": "Fender lookup",
+   "publisher": "Fender Musical Instruments Corporation",
+   "url": "https://serialnumberlookup.fender.com/lookup/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Fender says its own lookup does and doesn't cover.",
+   "cannot_prove": "Anything about a serial we didn't search; we read the page's notice and don't search on readers' behalf.",
+   "terms": {
+    "url": "https://serialnumberlookup.fender.com/lookup/",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-16",
+    "due": "2027-11-16"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "maker-ferrara",
    "name": "Ferrara newsroom",
    "short": "Ferrara",
@@ -3788,6 +4181,27 @@
      "note": "Hisense's 2022 fridge recall: serial = build date"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "homegoods",
+   "name": "HomeGoods (homegoods.com)",
+   "short": "HomeGoods",
+   "publisher": "The TJX Companies, Inc.",
+   "url": "https://www.homegoods.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "HomeGoods’ own store policies, as its site states them on the day read.",
+   "cannot_prove": "How a given store applies a policy.",
+   "terms": {
+    "url": "https://www.homegoods.com/returns",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-16",
+    "due": "2027-11-16"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -4423,6 +4837,48 @@
    "pulls": []
   },
   {
+   "id": "lidl",
+   "name": "Lidl (lidl.com and unternehmen.lidl.de)",
+   "short": "Lidl",
+   "publisher": "Lidl US, LLC; Lidl Stiftung & Co. KG",
+   "url": "https://www.lidl.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How Lidl tells its own history and size, in the US and in Germany.",
+   "cannot_prove": "Who owns Lidl; the pages don’t say. A company’s history page is its own telling.",
+   "terms": {
+    "url": "https://www.lidl.com/terms",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-15",
+    "due": "2027-11-15"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "lowes-foods",
+   "name": "Lowes Foods (lowesfoods.com)",
+   "short": "Lowes Foods",
+   "publisher": "Lowes Foods, LLC",
+   "url": "https://www.lowesfoods.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How the Lowes Foods grocery chain describes itself.",
+   "cannot_prove": "Who owns it; its parent says so on its own site.",
+   "terms": {
+    "url": "https://www.lowesfoods.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-15",
+    "due": "2027-11-15"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "mg2",
    "name": "MG2 project pages",
    "short": "MG2",
@@ -4555,6 +5011,27 @@
      "note": "Who owns whom, for the most-asked pairs of brands"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "marshalls",
+   "name": "Marshalls (marshalls.com)",
+   "short": "Marshalls",
+   "publisher": "The TJX Companies, Inc.",
+   "url": "https://www.marshalls.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Marshalls’ own store policies, as its site states them on the day read.",
+   "cannot_prove": "How a given store applies a policy.",
+   "terms": {
+    "url": "https://www.marshalls.com/us/store/jump/topic/easy-returns/18400006p",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-16",
+    "due": "2027-11-16"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -5348,6 +5825,27 @@
    "pulls": []
   },
   {
+   "id": "petco",
+   "name": "Petco (petco.com)",
+   "short": "Petco",
+   "publisher": "Petco Animal Supplies Stores, Inc.",
+   "url": "https://www.petco.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Petco’s own store policies and help pages, as its site shows them on the day read.",
+   "cannot_prove": "Policies a store applies that aren’t written on the site.",
+   "terms": {
+    "url": "https://www.petco.com/help",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-15",
+    "due": "2027-11-15"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "porsche-newsroom",
    "name": "Porsche Newsroom",
    "short": "Porsche Newsroom",
@@ -6000,6 +6498,27 @@
    "pulls": []
   },
   {
+   "id": "tti",
+   "name": "Techtronic Industries Co. Ltd. (ttigroup.com), annual reports",
+   "short": "Techtronic Industries (TTI)",
+   "publisher": "Techtronic Industries Co. Ltd.",
+   "url": "https://www.ttigroup.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What TTI, a Hong Kong-listed company that sells Ryobi and Milwaukee tools, reports about its brands, trademarks and customers.",
+   "cannot_prove": "Which customer is which; the annual report gives the largest customer’s share without naming it.",
+   "terms": {
+    "url": "https://www.ttigroup.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-15",
+    "due": "2027-11-15"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "maker-tesla",
    "name": "Tesla owner's manuals",
    "short": "Tesla",
@@ -6445,6 +6964,27 @@
     "automated": false,
     "checked": "2026-11-14",
     "due": "2027-11-14"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "cpsc-gov",
+   "name": "US Consumer Product Safety Commission news releases (cpsc.gov)",
+   "short": "CPSC news releases",
+   "publisher": "US Consumer Product Safety Commission",
+   "url": "https://www.cpsc.gov/Newsroom/News-Releases",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What the CPSC announced about a recall, penalty or settlement, on the date of the release.",
+   "cannot_prove": "What happened after the release, or that a company admitted a violation unless the release says so.",
+   "terms": {
+    "url": "https://www.cpsc.gov/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-16",
+    "due": "2027-11-16"
    },
    "credit": null,
    "used_for": [],
