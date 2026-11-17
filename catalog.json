@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-16",
+ "generated": "2026-11-17",
  "title": "Who Actually Makes open data",
  "url": "https://whoactuallymakes.com/data/",
  "licence": {
@@ -14,7 +14,7 @@
   "mirror": "https://github.com/jeremiahsay/whoactuallymakes-data"
  },
  "count": 20,
- "records": 16342,
+ "records": 16344,
  "datasets": [
   {
    "id": "claims",
@@ -276,7 +276,7 @@
     "https://open.fda.gov/apis/drug/enforcement/"
    ],
    "records": 14,
-   "updated": "2026-11-11",
+   "updated": "2026-11-16",
    "fields": [
     {
      "name": "company_slug",
@@ -386,7 +386,7 @@
      "fda_recall_store_names": "",
      "plants": 2,
      "page": "https://whoactuallymakes.com/makers/duracell/",
-     "last_checked": "2026-11-08",
+     "last_checked": "2026-11-16",
      "next_check": "2027-05-04"
     },
     {
@@ -445,12 +445,12 @@
     "json": {
      "url": "https://whoactuallymakes.com/data/companies.json",
      "bytes": 8201,
-     "sha256": "2831ca9151874678653ec556b9fdf42d31c84ea83ae7328825c4b28dea1a4b64"
+     "sha256": "d3e8ef958d331c0e0aca22788a2148d728afc8e56b9068e2906aebc3c543fa66"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/companies.csv",
      "bytes": 3822,
-     "sha256": "3aaa336e783f8f7c07b8adcafa2ded9909e556bc4012db903f708bd8667f4730"
+     "sha256": "1fc9372b6e818bbfacd0ee39f884e156b6a1111cb2a70c6039445344f9637260"
     }
    }
   },
@@ -477,7 +477,7 @@
     "https://open.fda.gov/apis/drug/enforcement/"
    ],
    "records": 214,
-   "updated": "2026-11-11",
+   "updated": "2026-11-16",
    "fields": [
     {
      "name": "company_slug",
@@ -606,7 +606,7 @@
     "json": {
      "url": "https://whoactuallymakes.com/data/company-labels.json",
      "bytes": 113268,
-     "sha256": "937e5bb702e449404b2aa63e7b6f78aa7cc126b0214e3ba15885fcaada7b8b7b"
+     "sha256": "40e3aebfe89647aa3ae21df06e7c9bc0906c2107057c5cff417e7bb77a4c0b0f"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/company-labels.csv",
@@ -1155,13 +1155,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/evidence.json",
-     "bytes": 1806450,
-     "sha256": "3e917d10732976bf4249bb05fc2e92b5200d2764d85bae0d5a0472a7e18a6b32"
+     "bytes": 1818759,
+     "sha256": "b184ff91ac378c63be6643408c0e73178a5624379c6c690be072ece8b60ba752"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/evidence.csv",
-     "bytes": 1406279,
-     "sha256": "248f4c6bacea5b0156e40173d6f23adeab258d7d47077cc4389f5e0d68b7aab1"
+     "bytes": 1418746,
+     "sha256": "8a5e5521ba3779551d3d40c8ae22d28fdb6bca3e0c5342473ee7de86d92bac93"
     }
    }
   },
@@ -1382,13 +1382,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/sources.json",
-     "bytes": 269913,
-     "sha256": "4b0c0b28b9bc85d0331ec9ddae3a7d1943ba500cd5d26a60a220b204f7dc062a"
+     "bytes": 269701,
+     "sha256": "925e96c85b07d29c7ac79df77fe9a580a5ce4f75ec26e9ab5da434c71816c20d"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/sources.csv",
-     "bytes": 110565,
-     "sha256": "260cebc34eccdd79847f4675ab0c7e79a0abdf1599761402fbcaaae5b4a35b8c"
+     "bytes": 110523,
+     "sha256": "99408e577af60c813dad5f72a4e5ad1c74d7f6c901cb786c49e1f59f4885dbd4"
     }
    }
   },
@@ -1408,8 +1408,8 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 58,
-   "updated": "2026-11-14",
+   "records": 61,
+   "updated": "2026-11-16",
    "fields": [
     {
      "name": "id",
@@ -1464,6 +1464,42 @@
    ],
    "preview": [
     {
+     "id": "c-2026-11-16-laundry-prices-after-tide-coupon",
+     "on": "2026-11-16",
+     "kind": "update",
+     "page": "/kirkland-laundry-detergent/",
+     "what": "Prices after Tide's coupon ended, and a new Kirkland liquid offer",
+     "was": "With Tide's coupon, Tide Original liquid was $19.99 in the warehouse against $18.49 for Kirkland Ultra Clean, and the page said Kirkland's lead was smaller than you'd think.",
+     "now": "Tide Original liquid is back to $24.99 in the warehouse, about 16 cents a load. Kirkland Ultra Clean and Free & Clear are $14.89 until December 20, 2026, about 10 cents a load, so the answer now says Kirkland has been cheaper at every Costco price we've read. Tide Pods Spring Meadow is $31.49 after its offer, and Tide Pods Free & Gentle is $23.99 on a new offer to December 20. The back labels we could open still name no maker, only Costco.",
+     "why": "Tide's coupon ended November 15, which the page's schedule had marked for a re-read of all eight Costco lines and their back-label photos.",
+     "flagged_by": "Our own re-check",
+     "evidence": ""
+    },
+    {
+     "id": "c-2026-11-16-lakeridge-offer-moved",
+     "on": "2026-11-16",
+     "kind": "update",
+     "page": "/kirkland-signature/mattress/",
+     "what": "Costco's Lakeridge offer moved from the Pillow Top to the Tight Top",
+     "was": "The Pillow Top queen was $899.99 on an offer that ended November 15, 2026, and the Tight Top queen was $949.99 at full price.",
+     "now": "The Pillow Top is back to $999.99 for a queen and $1,199.99 for a king or California king. The Tight Top is $849.99 for a queen and $949.99 for a king or California king until December 20, 2026, so the firm model is the cheaper of the two in every size, and it stays cheaper at regular prices. The Sealy law tag Costco links is the same file as before.",
+     "why": "We re-read both listings at ZIP 98101 the day after the Pillow Top offer ended, as the page's schedule says, and hashed the tag PDF to see if it had changed.",
+     "flagged_by": "Our own re-check",
+     "evidence": ""
+    },
+    {
+     "id": "c-2026-11-16-kirkland-aa-duracell-offer",
+     "on": "2026-11-16",
+     "kind": "update",
+     "page": "/kirkland-signature/batteries/",
+     "what": "Kirkland AA back to $16.99; Duracell Coppertop now on offer",
+     "was": "Kirkland's 48-pack of AA was $14.99 with $2 off until November 15, 2026, and Duracell's 40-pack was $20.99.",
+     "now": "Kirkland's 48-pack is $16.99, about 35 cents a battery, with no new offer. Duracell's 40-pack is $18.49 until December 20, 2026, about 46 cents a battery, so the price chart and the calculator now show Duracell's offer instead of Kirkland's.",
+     "why": "Costco's listing still prints the ended $2 OFF note, so we read the price itself, on both listings, the day after the offer ended.",
+     "flagged_by": "Our own re-check",
+     "evidence": ""
+    },
+    {
      "id": "c-2026-11-14-tequila-lawsuit",
      "on": "2026-11-14",
      "kind": "update",
@@ -1486,54 +1522,18 @@
      "why": "Costco’s 2012 safety sheets name Sun Products as supplier and never use the word maker or manufacturer.",
      "flagged_by": "Our own re-check",
      "evidence": ""
-    },
-    {
-     "id": "c-2026-11-14-laundry-safety-sheets",
-     "on": "2026-11-14",
-     "kind": "update",
-     "page": "/kirkland-laundry-detergent/",
-     "what": "Two more Costco safety sheets for Kirkland liquid detergent",
-     "was": "The page had no safety sheet for the liquid newer than 2012 and said nothing about KIK International.",
-     "now": "The page adds Costco’s February 2023 Fresh Scent sheet, which names only Costco but carries the medical emergency line and layout of Henkel’s own Persil sheets, and Costco’s April 2020 Fresh Lavender sheet, which gives KIK International as supplier.",
-     "why": "A rival page pointed to both sheets; we read each one and Henkel’s own sheet before adding them.",
-     "flagged_by": "Our own re-check",
-     "evidence": ""
-    },
-    {
-     "id": "c-2026-11-14-kirkland-food-recalls",
-     "on": "2026-11-14",
-     "kind": "update",
-     "page": "/kirkland-signature/",
-     "what": "Nine more Kirkland Signature foods on the list",
-     "was": "The list had no record for Kirkland poke, frozen organic strawberries or blueberries, hard cooked eggs, organic stir-fry, fresh Atlantic salmon, Malabar pepper, Real Sliced Fruit or cooked shrimp, and one recall behind the butter and peanut butter answers each.",
-     "now": "Each now shows the company FDA's recall record names as the recalling firm, with the recall date. Two firms, Scenic Fruit Company and California Splendor, recalled the frozen organic strawberries in 2023. The salted butter recall now sits beside the unsalted one, and a second 2012 Sunland recall beside the peanut butter one.",
-     "why": "We read every pending FDA recall that names a Kirkland Signature food. Recalls Costco filed itself name no other company, so they don't answer who makes it and we left them out.",
-     "flagged_by": "Our own re-check",
-     "evidence": ""
-    },
-    {
-     "id": "c-2026-11-12-tire-date-code-toyota-link",
-     "on": "2026-11-12",
-     "kind": "update",
-     "page": "/tire-date-code/",
-     "what": "Where the Toyota row of the carmaker table links",
-     "was": "Toyota’s RAV4 manual was linked at assets.sia.toyota.com. That address now refuses every request, so only the archived copy next to it would open.",
-     "now": "The row points at assets.sipb.toyota.com, the address Toyota’s own 2025 RAV4 manuals page uses today, and its read date is Nov 12, 2026. The archived copy is still linked beside it.",
-     "why": "Toyota moved its manual files. The PDF at the new address has the same SHA-256 as the copy we quoted on Nov 3, so the RAV4 advice, a technician check for any tire over 6 years old, has not changed.",
-     "flagged_by": "Our own re-check",
-     "evidence": "https://assets.sipb.toyota.com/publications/en/om-s/OM0R063U/pdf/OM0R063U.pdf"
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/corrections.json",
-     "bytes": 50691,
-     "sha256": "ae749e68b5fd3172281fc7477d400b23266d342872a990c8ee0f846780fd7214"
+     "bytes": 53592,
+     "sha256": "4fe271d37d0aa5b9522157288bf78ff4d26f85510402023e2c55e0e512b6f668"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/corrections.csv",
-     "bytes": 37220,
-     "sha256": "57f04d1d847138ea8a31449769217fffa6f2a47c0cfc2c55b55cbe040ef30f2e"
+     "bytes": 39628,
+     "sha256": "c3b24e9eead964f9509d76b61091d627ecc347d991def80d0fdabed1f46512c8"
     }
    }
   },
@@ -1553,8 +1553,8 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 81,
-   "updated": "2026-11-16",
+   "records": 80,
+   "updated": "2026-11-17",
    "fields": [
     {
      "name": "id",
@@ -1662,13 +1662,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/schedule.json",
-     "bytes": 390589,
-     "sha256": "4fa0396391e0fde850c4abc82535fcd02f41c2771dab9074a8b959a12ce190d1"
+     "bytes": 391096,
+     "sha256": "7d13a4f629ca12ad190357da22daaaa68a4c1472cf1a9c53ac42d7727c7dbba1"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/schedule.csv",
-     "bytes": 20319,
-     "sha256": "4323bace704764c82542a36df1b1e440e0898d3ec1f96e089fe6156fb8ea2063"
+     "bytes": 20313,
+     "sha256": "25dde04937362f8baafa54a366ade23be6472d03829b61bb0b8c9bb0a5eea419"
     }
    }
   },
@@ -2032,7 +2032,7 @@
      "price_unit": "AA battery",
      "kirkland_cents": 35.4,
      "name_brand_cents": 52.5,
-     "price_read_on": "2026-11-04",
+     "price_read_on": "2026-11-16",
      "evidence": "ev-wsbtv-ks-batteries-2016",
      "answer_page": "https://whoactuallymakes.com/kirkland-signature/batteries/#vs",
      "read_on": "2026-11-16"
@@ -2166,12 +2166,12 @@
     "json": {
      "url": "https://whoactuallymakes.com/data/kirkland-vs-pairs.json",
      "bytes": 21461,
-     "sha256": "8354b71a1d871fcf9af62e781e6456a892d3e369c9db98fc31dde31f2b8cf803"
+     "sha256": "7c68af548bbfbb7b0c934b3deabd7fdda5681cee6fcad8665a79f8ab698635f1"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/kirkland-vs-pairs.csv",
      "bytes": 7931,
-     "sha256": "01e3115866370976c0262d4a777e4ddc3399e44a12e8a9ff361e7fe15ffd7685"
+     "sha256": "a27c270ff2ce0aa263e15f8a13b11a44bdb2c184de13d1bda6fd2f9c9ed933e3"
     }
    }
   },

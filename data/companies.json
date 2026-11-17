@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-11",
+ "generated": "2026-11-16",
  "count": 14,
  "rows": [
   {
@@ -34,7 +34,7 @@
    "fda_recall_store_names": "",
    "plants": 2,
    "page": "https://whoactuallymakes.com/makers/duracell/",
-   "last_checked": "2026-11-08",
+   "last_checked": "2026-11-16",
    "next_check": "2027-05-04"
   },
   {

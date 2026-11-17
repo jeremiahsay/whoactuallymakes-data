@@ -1,13 +1,52 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-14",
+ "generated": "2026-11-16",
  "started": "2026-11-02",
  "count": {
   "correction": 25,
-  "update": 22,
+  "update": 25,
   "clarification": 11
  },
  "items": [
+  {
+   "id": "c-2026-11-16-laundry-prices-after-tide-coupon",
+   "on": "2026-11-16",
+   "kind": "update",
+   "page": "/kirkland-laundry-detergent/",
+   "what": "Prices after Tide's coupon ended, and a new Kirkland liquid offer",
+   "was": "With Tide's coupon, Tide Original liquid was $19.99 in the warehouse against $18.49 for Kirkland Ultra Clean, and the page said Kirkland's lead was smaller than you'd think.",
+   "now": "Tide Original liquid is back to $24.99 in the warehouse, about 16 cents a load. Kirkland Ultra Clean and Free & Clear are $14.89 until December 20, 2026, about 10 cents a load, so the answer now says Kirkland has been cheaper at every Costco price we've read. Tide Pods Spring Meadow is $31.49 after its offer, and Tide Pods Free & Gentle is $23.99 on a new offer to December 20. The back labels we could open still name no maker, only Costco.",
+   "why": "Tide's coupon ended November 15, which the page's schedule had marked for a re-read of all eight Costco lines and their back-label photos.",
+   "flagged_by": "Our own re-check",
+   "event": "none",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-16-lakeridge-offer-moved",
+   "on": "2026-11-16",
+   "kind": "update",
+   "page": "/kirkland-signature/mattress/",
+   "what": "Costco's Lakeridge offer moved from the Pillow Top to the Tight Top",
+   "was": "The Pillow Top queen was $899.99 on an offer that ended November 15, 2026, and the Tight Top queen was $949.99 at full price.",
+   "now": "The Pillow Top is back to $999.99 for a queen and $1,199.99 for a king or California king. The Tight Top is $849.99 for a queen and $949.99 for a king or California king until December 20, 2026, so the firm model is the cheaper of the two in every size, and it stays cheaper at regular prices. The Sealy law tag Costco links is the same file as before.",
+   "why": "We re-read both listings at ZIP 98101 the day after the Pillow Top offer ended, as the page's schedule says, and hashed the tag PDF to see if it had changed.",
+   "flagged_by": "Our own re-check",
+   "event": "none",
+   "evidence": []
+  },
+  {
+   "id": "c-2026-11-16-kirkland-aa-duracell-offer",
+   "on": "2026-11-16",
+   "kind": "update",
+   "page": "/kirkland-signature/batteries/",
+   "what": "Kirkland AA back to $16.99; Duracell Coppertop now on offer",
+   "was": "Kirkland's 48-pack of AA was $14.99 with $2 off until November 15, 2026, and Duracell's 40-pack was $20.99.",
+   "now": "Kirkland's 48-pack is $16.99, about 35 cents a battery, with no new offer. Duracell's 40-pack is $18.49 until December 20, 2026, about 46 cents a battery, so the price chart and the calculator now show Duracell's offer instead of Kirkland's.",
+   "why": "Costco's listing still prints the ended $2 OFF note, so we read the price itself, on both listings, the day after the offer ended.",
+   "flagged_by": "Our own re-check",
+   "event": "none",
+   "evidence": []
+  },
   {
    "id": "c-2026-11-14-tequila-lawsuit",
    "on": "2026-11-14",

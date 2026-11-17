@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-16",
+ "generated": "2026-11-17",
  "last_change": "2026-11-16",
  "cadence_months": {
   "confirmed": 12,
@@ -158,9 +158,9 @@
    "file_url": null,
    "hand_note": "Costco blocks automated readers, so a person reads both listings in a browser. The page's prices update from that read.",
    "once": false,
-   "last": "2026-11-04",
-   "due": "2026-12-04",
-   "result": "Kirkland AA 48 $16.99 ($14.99 on offer to Nov 15); Duracell Coppertop AA 40 $20.99"
+   "last": "2026-11-16",
+   "due": "2026-12-16",
+   "result": "Kirkland AA 48 $16.99 (its offer ended Nov 15, none since); Duracell Coppertop AA 40 $20.99, $18.49 on offer to Dec 20"
   },
   {
    "id": "costco-car-battery-prices",
@@ -310,9 +310,9 @@
    "file_url": null,
    "hand_note": "Read in a browser at ZIP 98101. Click each size. Check the Product Label PDF: a new file or maker line changes the page. Read again the day after an offer ends.",
    "once": false,
-   "last": "2026-11-06",
-   "due": "2026-11-16",
-   "result": "Pillow Top queen $899.99 to Nov 15; Tight Top queen $949.99; tag says Sealy Mattress"
+   "last": "2026-11-16",
+   "due": "2026-12-16",
+   "result": "Pillow Top offer ended: queen $999.99; Tight Top now on offer, queen $849.99 to Dec 20; law label PDF unchanged (Sealy Mattress)"
   },
   {
    "id": "costco-diaper-prices",
@@ -486,25 +486,6 @@
    "result": "Not read yet: USDA's site and archive copies refused us on Nov 7"
   },
   {
-   "id": "kirkland-battery-offer",
-   "what": "Kirkland battery offer ending Nov 15",
-   "gives": "The offer price on Who makes Kirkland Signature batteries, so it doesn't outlive the offer",
-   "how": "hand",
-   "every_days": 0,
-   "source": {
-    "id": "costco-com",
-    "name": "Costco.com product listings",
-    "publisher": "Costco Wholesale Corporation (owner of Kirkland Signature)",
-    "url": "https://www.costco.com/"
-   },
-   "file_url": null,
-   "hand_note": "The listing is re-read the day after the offer ends, to see what replaced it.",
-   "once": true,
-   "last": null,
-   "due": "2026-11-16",
-   "result": null
-  },
-  {
    "id": "sams-toilet-paper-offers",
    "what": "Sam's Club toilet paper offers ending Nov 18 and Nov 29",
    "gives": "The Sam's Club comparison on Costco toilet paper",
@@ -557,9 +538,9 @@
    "file_url": null,
    "hand_note": "Read in a browser, one listing at a time, ZIP 98101. Open each back-label photo. Any line reading Manufactured for, Made by, or a new address is a new lead on the maker; so is any change in the ingredient list. Tide's coupon ends 15 Nov, so read Tide's warehouse price on the first read after that.",
    "once": false,
-   "last": "2026-11-07",
-   "due": "2026-11-16",
-   "result": "Kirkland liquid $18.49 warehouse, Tide $19.99 with coupon to 15 Nov; labels name only Costco"
+   "last": "2026-11-16",
+   "due": "2026-12-16",
+   "result": "Kirkland liquids $14.89 warehouse with $3.60 off to Dec 20; Tide liquid back to $24.99; labels still name only Costco"
   },
   {
    "id": "wam-wayback-saves",
@@ -11030,13 +11011,13 @@
   },
   {
    "path": "/kirkland-laundry-detergent/",
-   "changed": "2026-11-14",
-   "next": "2026-11-16",
+   "changed": "2026-11-16",
+   "next": "2026-12-16",
    "tasks": [
     {
      "id": "kirkland-laundry-reads",
      "what": "Kirkland laundry detergent: prices of all eight Costco lines, the Tide offer dates, and the maker lines on each back label",
-     "due": "2026-11-16"
+     "due": "2026-12-16"
     }
    ],
    "claims": 4,
@@ -11123,18 +11104,13 @@
   },
   {
    "path": "/kirkland-signature/batteries/",
-   "changed": "2026-11-04",
-   "next": "2026-11-16",
+   "changed": "2026-11-16",
+   "next": "2026-12-16",
    "tasks": [
     {
      "id": "kirkland-battery-prices",
      "what": "Kirkland and Duracell battery prices at Costco",
-     "due": "2026-12-04"
-    },
-    {
-     "id": "kirkland-battery-offer",
-     "what": "Kirkland battery offer ending Nov 15",
-     "due": "2026-11-16"
+     "due": "2026-12-16"
     }
    ],
    "claims": 2,
@@ -11222,13 +11198,13 @@
   },
   {
    "path": "/kirkland-signature/mattress/",
-   "changed": "2026-11-06",
-   "next": "2026-11-16",
+   "changed": "2026-11-16",
+   "next": "2026-12-16",
    "tasks": [
     {
      "id": "kirkland-mattress-prices",
      "what": "The two Kirkland Lakeridge mattresses: prices by size, offer dates, ratings and the law label link",
-     "due": "2026-11-16"
+     "due": "2026-12-16"
     }
    ],
    "claims": 0,
@@ -11403,7 +11379,7 @@
   },
   {
    "path": "/makers/",
-   "changed": "2026-11-11",
+   "changed": "2026-11-16",
    "next": "2026-12-03",
    "tasks": [
     {
@@ -11624,7 +11600,7 @@
   },
   {
    "path": "/corrections/",
-   "changed": "2026-11-14",
+   "changed": "2026-11-16",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -11632,7 +11608,7 @@
   },
   {
    "path": "/data/",
-   "changed": "2026-11-16",
+   "changed": "2026-11-17",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -11715,7 +11691,7 @@
   },
   {
    "path": "/makers/duracell/",
-   "changed": "2026-11-08",
+   "changed": "2026-11-16",
    "next": "2026-12-03",
    "tasks": [
     {
@@ -11737,7 +11713,7 @@
   {
    "path": "/makers/sun-products/",
    "changed": "2026-11-14",
-   "next": "2026-11-16",
+   "next": "2026-12-03",
    "tasks": [
     {
      "id": "maker-pages",
@@ -11747,7 +11723,7 @@
     {
      "id": "kirkland-laundry-reads",
      "what": "Kirkland laundry detergent: prices of all eight Costco lines, the Tide offer dates, and the maker lines on each back label",
-     "due": "2026-11-16"
+     "due": "2026-12-16"
     }
    ],
    "claims": 2,
@@ -11776,7 +11752,7 @@
   },
   {
    "path": "/about/",
-   "changed": "2026-11-16",
+   "changed": "2026-11-17",
    "next": "2027-11-08",
    "tasks": [
     {
@@ -12483,6 +12459,24 @@
    "task": "name-brand-labels",
    "what": "Weekly read of the name-brand labels the Kirkland comparison uses",
    "result": "Label files refreshed"
+  },
+  {
+   "on": "2026-11-16",
+   "task": "kirkland-mattress-prices",
+   "what": "Kirkland Lakeridge mattress listings at ZIP 98101, the day after the Pillow Top offer ended",
+   "result": "Pillow Top back to $999.99 queen and $1,199.99 king or California king; Tight Top on a new offer to Dec 20 at $849.99 queen and $949.99 king or California king; law label PDF unchanged (same SHA-256), still Sealy Mattress"
+  },
+  {
+   "on": "2026-11-16",
+   "task": "kirkland-battery-offer",
+   "what": "Kirkland AA 48-pack listing, the day after its $2 offer ended",
+   "result": "Back to $16.99 with no new offer, though the listing still prints the ended offer note; Duracell Coppertop AA 40 is now $18.49 on an offer to Dec 20"
+  },
+  {
+   "on": "2026-11-16",
+   "task": "kirkland-laundry-reads",
+   "what": "All eight Costco laundry listings and the Kirkland back-label photos, after Tide's coupon ended",
+   "result": "Tide Original liquid $24.99 warehouse; Kirkland liquid and Free & Clear $14.89 with $3.60 off to Dec 20; Tide Pods Free & Gentle $23.99 on offer to Dec 20; Pacs, Powder and Plant-Based unchanged; labels opened (liquid, Pacs, Powder) name only Costco"
   },
   {
    "on": "2026-11-15",

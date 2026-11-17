@@ -2,9 +2,9 @@
  "name": "whoactuallymakes-data",
  "id": "https://doi.org/10.5281/zenodo.23920936",
  "title": "Who Actually Makes open data",
- "description": "Who makes store-brand products, from public records. 20 datasets, 16,342 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them; Trader Joe's wine, beer and spirits label approvals (TTB); Who owns which brand: ownership links between brands, companies and their controlling holders.",
+ "description": "Who makes store-brand products, from public records. 20 datasets, 16,344 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them; Trader Joe's wine, beer and spirits label approvals (TTB); Who owns which brand: ownership links between brands, companies and their controlling holders.",
  "homepage": "https://whoactuallymakes.com/data/",
- "version": "2026-11-16",
+ "version": "2026-11-17",
  "licenses": [
   {
    "name": "CC-BY-4.0",
@@ -173,7 +173,7 @@
    "mediatype": "text/csv",
    "encoding": "utf-8",
    "bytes": 3822,
-   "hash": "sha256:3aaa336e783f8f7c07b8adcafa2ded9909e556bc4012db903f708bd8667f4730",
+   "hash": "sha256:1fc9372b6e818bbfacd0ee39f884e156b6a1111cb2a70c6039445344f9637260",
    "schema": {
     "fields": [
      {
@@ -609,8 +609,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 1406279,
-   "hash": "sha256:248f4c6bacea5b0156e40173d6f23adeab258d7d47077cc4389f5e0d68b7aab1",
+   "bytes": 1418746,
+   "hash": "sha256:8a5e5521ba3779551d3d40c8ae22d28fdb6bca3e0c5342473ee7de86d92bac93",
    "schema": {
     "fields": [
      {
@@ -888,8 +888,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 110565,
-   "hash": "sha256:260cebc34eccdd79847f4675ab0c7e79a0abdf1599761402fbcaaae5b4a35b8c",
+   "bytes": 110523,
+   "hash": "sha256:99408e577af60c813dad5f72a4e5ad1c74d7f6c901cb786c49e1f59f4885dbd4",
    "schema": {
     "fields": [
      {
@@ -1172,8 +1172,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 37220,
-   "hash": "sha256:57f04d1d847138ea8a31449769217fffa6f2a47c0cfc2c55b55cbe040ef30f2e",
+   "bytes": 39628,
+   "hash": "sha256:c3b24e9eead964f9509d76b61091d627ecc347d991def80d0fdabed1f46512c8",
    "schema": {
     "fields": [
      {
@@ -1240,8 +1240,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 20319,
-   "hash": "sha256:4323bace704764c82542a36df1b1e440e0898d3ec1f96e089fe6156fb8ea2063",
+   "bytes": 20313,
+   "hash": "sha256:25dde04937362f8baafa54a366ade23be6472d03829b61bb0b8c9bb0a5eea419",
    "schema": {
     "fields": [
      {
@@ -1411,7 +1411,7 @@
    "mediatype": "text/csv",
    "encoding": "utf-8",
    "bytes": 7931,
-   "hash": "sha256:01e3115866370976c0262d4a777e4ddc3399e44a12e8a9ff361e7fe15ffd7685",
+   "hash": "sha256:a27c270ff2ce0aa263e15f8a13b11a44bdb2c184de13d1bda6fd2f9c9ed933e3",
    "schema": {
     "fields": [
      {
