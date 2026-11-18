@@ -1,9 +1,9 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-16",
- "count": 237,
- "primary": 179,
- "by_hand": 36,
+ "generated": "2026-11-18",
+ "count": 254,
+ "primary": 193,
+ "by_hand": 43,
  "sources": [
   {
    "id": "api-eolcs",
@@ -72,7 +72,13 @@
     "due": "2027-11-15"
    },
    "credit": null,
-   "used_for": [],
+   "used_for": [
+    {
+     "label": "Where is Chanel made?",
+     "url": "/where-is-chanel-made/",
+     "note": "Chanel Limited's 2025 group accounts: its makers, watches, investment and governance"
+    }
+   ],
    "pulls": [
     {
      "what": "Are Aldi and Lidl the same company: each chain's newest US court disclosure of its parents and its UK company's newest annual accounts",
@@ -84,6 +90,17 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Both chains' newest court disclosures and UK accounts, twice a year. If either names a new owner, the page's answer is rewritten and logged."
+    },
+    {
+     "what": "Chanel Limited's group accounts at Companies House",
+     "how": "hand",
+     "every_days": 365,
+     "last": "2026-11-17",
+     "due": "2027-11-17",
+     "result": "2025 group accounts (filed 2026-06-29, scanned) read with OCR; every passage and table row used checked against the page image: subsidiary list pp.189-193, associates p.194, $724 million invested in manufacturing and métiers d'art, Watch Manufacture in La Chaux-de-Fonds.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Chanel's UK accounts are read each year when they are filed at Companies House, and the list of makers it owns updated."
     }
    ]
   },
@@ -228,6 +245,11 @@
      "label": "Who makes Genesis?",
      "url": "/who-makes-genesis/",
      "note": "Which VIN codes decode to Genesis, and from which country"
+    },
+    {
+     "label": "Who owns Jeep, Dodge and Ram?",
+     "url": "/who-owns-jeep-dodge-and-ram/",
+     "note": "The VIN codes for Stellantis's US, Canadian, Mexican and Italian plants, and the VIN check"
     }
    ],
    "pulls": [
@@ -1129,6 +1151,21 @@
      "label": "How long do refrigerators last?",
      "url": "/how-long-do-refrigerators-last/",
      "note": "The 2014 and 2029/2030 refrigerator limits"
+    },
+    {
+     "label": "Where are luxury brands made?",
+     "url": "/where-are-luxury-brands-made/",
+     "note": "US Customs' definition of country of origin, and the FTC's Made in USA rule"
+    },
+    {
+     "label": "Who owns Jeep, Dodge and Ram?",
+     "url": "/who-owns-jeep-dodge-and-ram/",
+     "note": "49 CFR 583, the parts-content label rule"
+    },
+    {
+     "label": "Made in USA: 16 CFR 323 and the spirits name-and-address rules",
+     "url": "/made-in-usa/",
+     "note": "16 CFR 323.2 and 323.5; 27 CFR 5.66 and 5.67."
     }
    ],
    "pulls": [
@@ -1138,7 +1175,7 @@
      "every_days": 365,
      "last": "2026-11-06",
      "due": "2027-11-06",
-     "result": "26 rule texts on file",
+     "result": "34 rule texts on file",
      "edition": null,
      "file_url": null,
      "hand_note": "Re-read each rule on the eCFR, check our short quote still stands, and log any change on the corrections page."
@@ -1317,6 +1354,84 @@
    ]
   },
   {
+   "id": "lvmh-urd",
+   "name": "LVMH Universal Registration Document",
+   "short": "LVMH annual report",
+   "publisher": "LVMH Moët Hennessy Louis Vuitton SE (filed with the French market regulator, AMF)",
+   "url": "https://www.lvmh.com/en/investors/investors-and-analysts",
+   "kind": "Company filings",
+   "primary": true,
+   "proves": "What LVMH told investors about its brands: Louis Vuitton's workshops by country, its owned production sites, and who controls the group.",
+   "cannot_prove": "Which workshop made a given item, or anything the report doesn't break out by brand.",
+   "terms": {
+    "url": "https://www.lvmh.com/en/legal-notice",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-17",
+    "due": "2027-11-17"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are luxury brands made?",
+     "url": "/where-are-luxury-brands-made/",
+     "note": "Louis Vuitton's workshops and LVMH's control, 2025 report"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "LVMH, Hermès and Kering annual registration documents",
+     "how": "hand",
+     "every_days": 365,
+     "last": "2026-11-17",
+     "due": "2027-04-30",
+     "result": "2025 documents read: LV 29 leather workshops (18 France, 4 Spain, 4 US, 3 Italy); Hermès 75% of objects made in France, 79 owned sites (63 in France); Kering 78% of suppliers in Italy; control stakes. Every number checked against the saved text.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The annual reports of LVMH, Hermès and Kering are read each spring when they are filed, and the workshop counts, shares and owners on the page updated."
+    }
+   ]
+  },
+  {
+   "id": "louis-vuitton-com",
+   "name": "Louis Vuitton client-service FAQ",
+   "short": "Louis Vuitton FAQ",
+   "publisher": "Louis Vuitton Malletier",
+   "url": "https://us.louisvuitton.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which countries Louis Vuitton says it makes each product category in, and which purchases it guarantees as authentic.",
+   "cannot_prove": "Where any one item was made, or what an older item's date code means: the FAQ doesn't explain date codes.",
+   "terms": {
+    "url": "https://us.louisvuitton.com/eng-us/legal-privacy",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-17",
+    "due": "2027-11-17"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are luxury brands made?",
+     "url": "/where-are-luxury-brands-made/",
+     "note": "Where LV says each category is made, and its authenticity answer"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Rolex, Louis Vuitton, Chanel and Christian Louboutin's own pages on where they make things, and Barrie's",
+     "how": "hand",
+     "every_days": 182,
+     "last": "2026-11-17",
+     "due": "2027-05-18",
+     "result": "Rolex's five production-site pages and Certified Pre-Owned page, Louis Vuitton's where-made and authenticity FAQs, and Louboutin's products FAQ read in Chrome; every quote checked against the saved copy.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The brands' own pages on where they make things are re-read every six months."
+    }
+   ]
+  },
+  {
    "id": "lowes",
    "name": "Lowe’s (lowes.com)",
    "short": "Lowe’s",
@@ -1407,6 +1522,16 @@
      "label": "Who makes Genesis?",
      "url": "/who-makes-genesis/",
      "note": "Where each Genesis model is assembled, and its US/Canada parts share"
+    },
+    {
+     "label": "Who owns Jeep, Dodge and Ram?",
+     "url": "/who-owns-jeep-dodge-and-ram/",
+     "note": "Every Stellantis row from 2018 to 2027: where each model is assembled and its US and Canadian parts share"
+    },
+    {
+     "label": "Made in USA: every version's US and Canadian parts share",
+     "url": "/made-in-usa/",
+     "note": "The newest full model year's filing."
     }
    ],
    "pulls": [
@@ -1486,6 +1611,17 @@
      "edition": null,
      "file_url": null,
      "hand_note": "The same NHTSA report as the other car pages. The page won't rebuild if a Genesis model is filed by anyone but Hyundai, or if the count of Korea-built or Alabama-built models changes, until the lines that rely on them are rewritten. Why does the filing still list a Korea-built GV70, and which Korean plants build Genesis?"
+    },
+    {
+     "what": "Who owns Jeep, Dodge and Ram: NHTSA report and Stellantis's annual 20-F",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2026-12-18",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The same NHTSA report as the other car pages, and Stellantis's annual report each spring. The page won't rebuild if a model's country, the Jeep counts or the brand list changes until the lines that rely on them are rewritten. Which plant builds the Tonale, and where is the Recon assembled?"
     }
    ]
   },
@@ -1688,6 +1824,16 @@
      "label": "Where are Coach bags made?",
      "url": "/where-are-coach-bags-made/",
      "note": "Coach's 2000 prospectus and every Coach and Tapestry annual report since: the countries named for its manufacturers, year by year"
+    },
+    {
+     "label": "Where are luxury brands made?",
+     "url": "/where-are-luxury-brands-made/",
+     "note": "Capri Holdings' 10-K on Michael Kors and Jimmy Choo, and Tapestry's on Coach and Kate Spade"
+    },
+    {
+     "label": "Who owns Jeep, Dodge and Ram?",
+     "url": "/who-owns-jeep-dodge-and-ram/",
+     "note": "Stellantis's 2025 20-F, Chrysler Group's 2013 10-K and S-1, and DaimlerChrysler's filings: who has owned Jeep, Dodge, Ram and Chrysler since 1998"
     }
    ],
    "pulls": [
@@ -1822,6 +1968,17 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Tapestry's new annual report is read when it is filed each August and its list of Coach's manufacturing countries added to the chart and checker."
+    },
+    {
+     "what": "Capri Holdings' annual report (Form 10-K)",
+     "how": "hand",
+     "every_days": 365,
+     "last": "2026-11-17",
+     "due": "2027-11-17",
+     "result": "Fiscal 2026 10-K (filed 2026-05-27) read from EDGAR: Michael Kors nearly all Asia; Jimmy Choo mostly Italy, other Europe, a small share in Asia.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Capri's annual report is read each June after it is filed."
     }
    ]
   },
@@ -1936,6 +2093,11 @@
      "label": "Who makes Kirkland Signature spirits",
      "url": "/kirkland-signature/",
      "note": "Vodka, tequila and bourbon label approvals"
+    },
+    {
+     "label": "Made in USA: 16 vodka label approvals",
+     "url": "/made-in-usa/",
+     "note": "One approval per brand, label images read by a person."
     }
    ],
    "pulls": [
@@ -2027,6 +2189,45 @@
      "edition": null,
      "file_url": null,
      "hand_note": "The Pokémon Company updates this page once a year, usually by summer, with totals to the end of March. We read it in a browser and save a copy, so the production figures can be traced."
+    }
+   ]
+  },
+  {
+   "id": "ftc",
+   "name": "US Federal Trade Commission",
+   "short": "FTC",
+   "publisher": "US Federal Trade Commission",
+   "url": "https://www.ftc.gov/business-guidance/advertising-marketing/made-in-usa",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What the FTC says a Made in USA claim requires, and which Made in USA cases, closing letters and notices it has published, with each case's own page and dates.",
+   "cannot_prove": "Whether any product not named in a case meets the standard. The FTC doesn't pre-approve claims, and a closing letter ends an inquiry without a finding.",
+   "terms": {
+    "url": "https://www.ftc.gov/site-information/privacy-policy",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-18",
+    "due": "2027-11-18"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Made in USA: the rule, the guide and the FTC's cases",
+     "url": "/made-in-usa/",
+     "note": "The FTC's Made in USA page, its business guide, and its case and closing-letter pages, read 18 Nov 2026."
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Made in USA: the FTC's Made in USA cases and closing letters, its rule and guide, NHTSA's parts report and the vodka label approvals",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2026-12-18",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The FTC's Made in USA case list, the federal car parts report and the vodka label approvals, read monthly. The page won't rebuild if a count it relies on changes until the lines are rewritten."
     }
    ]
   },
@@ -2215,6 +2416,33 @@
    },
    "credit": null,
    "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "fr-company-register",
+   "name": "French company register (Annuaire des entreprises / SIRENE)",
+   "short": "French company register",
+   "publisher": "French government (DINUM, data from INSEE's SIRENE register and the national business register)",
+   "url": "https://annuaire-entreprises.data.gouv.fr/",
+   "kind": "Government registry",
+   "primary": true,
+   "proves": "A French company's registered head office, its official main-activity code (NAF) and its listed officers.",
+   "cannot_prove": "What a company makes for whom: the activity code is the company's declared main activity, not a product list.",
+   "terms": {
+    "url": "https://recherche-entreprises.api.gouv.fr/docs/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-17",
+    "due": "2027-11-17"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where is Chanel made?",
+     "url": "/where-is-chanel-made/",
+     "note": "Where Chanel's French workshops are, and what each is registered to do"
+    }
+   ],
    "pulls": []
   },
   {
@@ -2662,6 +2890,33 @@
    "pulls": []
   },
   {
+   "id": "barrie-com",
+   "name": "Barrie (Chanel's cashmere knitwear maker)",
+   "short": "Barrie",
+   "publisher": "Barrie (a Chanel company)",
+   "url": "https://www.barrie.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Barrie says about itself: that it is a Scottish cashmere knitwear maker and joined Chanel's Métiers d'Art in 2012.",
+   "cannot_prove": "Which Chanel knitwear Barrie makes.",
+   "terms": {
+    "url": "https://www.barrie.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-17",
+    "due": "2027-11-17"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where is Chanel made?",
+     "url": "/where-is-chanel-made/",
+     "note": "Barrie's own description: Scottish cashmere knitwear, part of Chanel since 2012"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "batteries-in-a-flash",
    "name": "Batteries In A Flash guide",
    "short": "Batteries In A Flash",
@@ -2839,6 +3094,33 @@
    "pulls": []
   },
   {
+   "id": "chanel-com",
+   "name": "Chanel.com client FAQ (US)",
+   "short": "Chanel FAQ",
+   "publisher": "Chanel",
+   "url": "https://www.chanel.com/us/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Chanel itself says about where it makes each kind of fashion product, and whether it authenticates items.",
+   "cannot_prove": "Where any one item was made, or where watches, jewelry, fragrance or eyewear are made: the FAQ answers for fashion only.",
+   "terms": {
+    "url": "https://www.chanel.com/us/legal-notice/",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-17",
+    "due": "2027-11-17"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where is Chanel made?",
+     "url": "/where-is-chanel-made/",
+     "note": "Where Chanel says each kind of fashion product is made, and its answer on authentication"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-gm",
    "name": "Chevrolet owner's manuals (GM)",
    "short": "Chevrolet (GM)",
@@ -2861,6 +3143,33 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age advice to owners, in the carmakers table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "louboutin-com",
+   "name": "Christian Louboutin client FAQ",
+   "short": "Louboutin FAQ",
+   "publisher": "Christian Louboutin SAS",
+   "url": "https://us.christianlouboutin.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where Christian Louboutin says its shoes, handbags and beauty products are made.",
+   "cannot_prove": "Which country any one pair was made in, or whether a pair is genuine.",
+   "terms": {
+    "url": "https://us.christianlouboutin.com/us_en/legal-terms",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-17",
+    "due": "2027-11-17"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are luxury brands made?",
+     "url": "/where-are-luxury-brands-made/",
+     "note": "Where Louboutin shoes and bags are made"
     }
    ],
    "pulls": []
@@ -3387,6 +3696,33 @@
    "pulls": []
   },
   {
+   "id": "eur-lex",
+   "name": "EUR-Lex (EU law and Court of Justice judgments)",
+   "short": "EUR-Lex",
+   "publisher": "Publications Office of the European Union",
+   "url": "https://eur-lex.europa.eu/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What an EU regulation says or what the Court of Justice ruled, in its official text.",
+   "cannot_prove": "How a national court or customs office applied it to one product.",
+   "terms": {
+    "url": "https://eur-lex.europa.eu/content/legal-notice/legal-notice.html",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-17",
+    "due": "2027-11-17"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are luxury brands made?",
+     "url": "/where-are-luxury-brands-made/",
+     "note": "The EU customs rule on origin, and the Court of Justice's red-sole ruling"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-east-penn",
    "name": "East Penn Manufacturing website",
    "short": "East Penn",
@@ -3409,6 +3745,33 @@
      "label": "Battery date code decoder",
      "url": "/battery-date-code/",
      "note": "East Penn's date code rule"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "exor-press",
+   "name": "Exor press releases",
+   "short": "Exor",
+   "publisher": "Exor N.V.",
+   "url": "https://www.exor.com/",
+   "kind": "Other",
+   "primary": true,
+   "proves": "What Exor, the Agnelli family's holding company, announced about its own investments.",
+   "cannot_prove": "Later changes to a stake the release doesn't cover.",
+   "terms": {
+    "url": "https://www.exor.com/legal-notice",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-17",
+    "due": "2027-11-17"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are luxury brands made?",
+     "url": "/where-are-luxury-brands-made/",
+     "note": "Exor's 24% stake in Christian Louboutin, 2021"
     }
    ],
    "pulls": []
@@ -3490,6 +3853,33 @@
      "label": "Who makes Kirkland Signature toilet paper",
      "url": "/kirkland-signature/toilet-paper/",
      "note": "Clause 4.5 on labelling agreements"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "fashionunited",
+   "name": "FashionUnited (AFP reports)",
+   "short": "FashionUnited",
+   "publisher": "FashionUnited, republishing Agence France-Presse",
+   "url": "https://fashionunited.uk/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What an AFP report said, on the date FashionUnited published it.",
+   "cannot_prove": "Anything as fact: shown as reported.",
+   "terms": {
+    "url": "https://fashionunited.uk/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-17",
+    "due": "2027-11-17"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where is Chanel made?",
+     "url": "/where-is-chanel-made/",
+     "note": "Who owns Chanel, as reported by AFP (May 2026)"
     }
    ],
    "pulls": []
@@ -4098,6 +4488,33 @@
    "pulls": []
   },
   {
+   "id": "hermes-urd",
+   "name": "Hermès International Universal Registration Document",
+   "short": "Hermès annual report",
+   "publisher": "Hermès International (filed with the French market regulator, AMF)",
+   "url": "https://finance.hermes.com/en/",
+   "kind": "Company filings",
+   "primary": true,
+   "proves": "What Hermès told investors about where it makes things, its production sites and workshop openings, and who controls the company.",
+   "cannot_prove": "Where any one bag was made: the report gives shares and site lists, not product-by-product origin.",
+   "terms": {
+    "url": "https://finance.hermes.com/en/legal-notice/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-17",
+    "due": "2027-11-17"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are luxury brands made?",
+     "url": "/where-are-luxury-brands-made/",
+     "note": "Share made in France, production sites and new leather workshops, family control, 2025 report"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-highline-warren",
    "name": "Highline Warren company website",
    "short": "Highline Warren",
@@ -4595,6 +5012,33 @@
    "pulls": []
   },
   {
+   "id": "kering-urd",
+   "name": "Kering Universal Registration Document",
+   "short": "Kering annual report",
+   "publisher": "Kering SA (filed with the French market regulator, AMF)",
+   "url": "https://www.kering.com/en/finance/",
+   "kind": "Company filings",
+   "primary": true,
+   "proves": "What Kering told investors about the group's suppliers by region and who controls it.",
+   "cannot_prove": "Where Gucci in particular is made: the supplier figures cover every Kering brand together.",
+   "terms": {
+    "url": "https://www.kering.com/en/legal-notice/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-17",
+    "due": "2027-11-17"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are luxury brands made?",
+     "url": "/where-are-luxury-brands-made/",
+     "note": "Kering's suppliers by region and Artémis's stake, 2025 report"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "kdp-brands",
    "name": "Keurig Dr Pepper brand list",
    "short": "KDP brands",
@@ -4796,6 +5240,33 @@
    },
    "credit": null,
    "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "le-temps",
+   "name": "Le Temps",
+   "short": "Le Temps",
+   "publisher": "Le Temps SA (Geneva daily)",
+   "url": "https://www.letemps.ch/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What a named Swiss newspaper reported, on the date it reported it.",
+   "cannot_prove": "Anything as fact: shown as reported.",
+   "terms": {
+    "url": "https://www.letemps.ch/conditions-generales",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-17",
+    "due": "2027-11-17"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are luxury brands made?",
+     "url": "/where-are-luxury-brands-made/",
+     "note": "Who owns Rolex"
+    }
+   ],
    "pulls": []
   },
   {
@@ -5937,6 +6408,60 @@
    "pulls": []
   },
   {
+   "id": "reuters",
+   "name": "Reuters",
+   "short": "Reuters",
+   "publisher": "Thomson Reuters (republished by RNZ)",
+   "url": "https://www.reuters.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What Reuters reported, from documents it says it saw, on the date it reported it.",
+   "cannot_prove": "Anything as fact: shown as reported.",
+   "terms": {
+    "url": "https://www.rnz.co.nz/about/terms-of-use",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-17",
+    "due": "2027-11-17"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are luxury brands made?",
+     "url": "/where-are-luxury-brands-made/",
+     "note": "Milan prosecutors' document requests to 13 fashion firms, December 2025"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "rolex-com",
+   "name": "Rolex.com and the Rolex newsroom",
+   "short": "Rolex",
+   "publisher": "Rolex SA",
+   "url": "https://www.rolex.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Rolex itself says about its production sites, what each one makes, and how it checks pre-owned watches.",
+   "cannot_prove": "Where any one watch's parts were made, or who owns Rolex: its pages we read don't say.",
+   "terms": {
+    "url": "https://www.rolex.com/legal-notices",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-17",
+    "due": "2027-11-17"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are luxury brands made?",
+     "url": "/where-are-luxury-brands-made/",
+     "note": "Rolex's five production-site pages and its Certified Pre-Owned page"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "sfi-rules",
    "name": "SFI 2022 Standards and Rules, Section 6: Rules for Use of SFI On-Product Labels and Off-Product Marks",
    "short": "SFI label rules",
@@ -6487,6 +7012,33 @@
    "pulls": []
   },
   {
+   "id": "swiss-federal-law",
+   "name": "Swiss federal law (classified compilation)",
+   "short": "Swiss law",
+   "publisher": "Swiss Federal Council (Federal Chancellery publications)",
+   "url": "https://www.fedlex.admin.ch/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What a Swiss federal ordinance says, such as when a watch may be called Swiss.",
+   "cannot_prove": "Whether any one watch meets the rule.",
+   "terms": {
+    "url": "https://www.fedlex.admin.ch/en/broadcast/legal",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-17",
+    "due": "2027-11-17"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are luxury brands made?",
+     "url": "/where-are-luxury-brands-made/",
+     "note": "The \"Swiss\" watch ordinance (SR 232.119)"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "tti",
    "name": "Techtronic Industries Co. Ltd. (ttigroup.com), annual reports",
    "short": "Techtronic Industries (TTI)",
@@ -6980,6 +7532,33 @@
    "pulls": []
   },
   {
+   "id": "court-ca2",
+   "name": "US Court of Appeals for the Second Circuit opinions (GovInfo)",
+   "short": "2nd Circuit",
+   "publisher": "United States Court of Appeals for the Second Circuit, published by the US Government Publishing Office",
+   "url": "https://www.govinfo.gov/app/collection/uscourts",
+   "kind": "Court records",
+   "primary": true,
+   "proves": "What the court decided and the facts it recited, such as the registration number and wording of a trademark.",
+   "cannot_prove": "Anything decided after the opinion, or how other courts apply it.",
+   "terms": {
+    "url": "https://www.govinfo.gov/about/policies",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-17",
+    "due": "2027-11-17"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Where are luxury brands made?",
+     "url": "/where-are-luxury-brands-made/",
+     "note": "Christian Louboutin v. Yves Saint Laurent (2012): the red-sole mark"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "us-doj",
    "name": "US Justice Department press releases",
    "short": "US Justice Department press releases",
@@ -7139,6 +7718,21 @@
      "label": "Are they the same company?",
      "url": "/are-they-the-same-company/",
      "note": "Who owns whom, for the most-asked pairs of brands"
+    },
+    {
+     "label": "Where are luxury brands made?",
+     "url": "/where-are-luxury-brands-made/",
+     "note": "The US rule that imports carry their country of origin"
+    },
+    {
+     "label": "Who owns Jeep, Dodge and Ram?",
+     "url": "/who-owns-jeep-dodge-and-ram/",
+     "note": "49 USC 32304: why Ram heavy-duty trucks have no row in the parts filings"
+    },
+    {
+     "label": "Made in USA: 15 USC 45a",
+     "url": "/made-in-usa/",
+     "note": "The 1994 law behind Made in USA labels."
     }
    ],
    "pulls": []

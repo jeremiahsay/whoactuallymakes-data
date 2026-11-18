@@ -2,9 +2,9 @@
  "name": "whoactuallymakes-data",
  "id": "https://doi.org/10.5281/zenodo.23920936",
  "title": "Who Actually Makes open data",
- "description": "Who makes store-brand products, from public records. 20 datasets, 16,344 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them; Trader Joe's wine, beer and spirits label approvals (TTB); Who owns which brand: ownership links between brands, companies and their controlling holders.",
+ "description": "Who makes store-brand products, from public records. 20 datasets, 16,458 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them; Trader Joe's wine, beer and spirits label approvals (TTB); Who owns which brand: ownership links between brands, companies and their controlling holders.",
  "homepage": "https://whoactuallymakes.com/data/",
- "version": "2026-11-17",
+ "version": "2026-11-18",
  "licenses": [
   {
    "name": "CC-BY-4.0",
@@ -609,8 +609,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 1418746,
-   "hash": "sha256:8a5e5521ba3779551d3d40c8ae22d28fdb6bca3e0c5342473ee7de86d92bac93",
+   "bytes": 1487668,
+   "hash": "sha256:f4328848612a7e63f73ce6abbf4e2e68302b40147110eb041a5299be405170e2",
    "schema": {
     "fields": [
      {
@@ -697,6 +697,10 @@
     {
      "title": "https://acuranews.com/en-US/releases/production-start-of-acura-integra-signals-return-of-iconic-model-being-built-for-first-time-in-america",
      "path": "https://acuranews.com/en-US/releases/production-start-of-acura-integra-signals-return-of-iconic-model-being-built-for-first-time-in-america"
+    },
+    {
+     "title": "https://annuaire-entreprises.data.gouv.fr/",
+     "path": "https://annuaire-entreprises.data.gouv.fr/"
     },
     {
      "title": "https://annualreport2025.volkswagen-group.com/group-management-report/shares-and-bonds/shareholder-structure.html",
@@ -873,10 +877,6 @@
     {
      "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0032-2025%22",
      "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0032-2025%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0037-2021%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0037-2021%22"
     }
    ]
   },
@@ -888,8 +888,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 110523,
-   "hash": "sha256:99408e577af60c813dad5f72a4e5ad1c74d7f6c901cb786c49e1f59f4885dbd4",
+   "bytes": 118376,
+   "hash": "sha256:29d5af0126cbd4080ae6123936decc35dda055eb21320d487bb5d0bc0501349b",
    "schema": {
     "fields": [
      {
@@ -975,6 +975,10 @@
      "path": "https://acuranews.com/"
     },
     {
+     "title": "https://annuaire-entreprises.data.gouv.fr/",
+     "path": "https://annuaire-entreprises.data.gouv.fr/"
+    },
+    {
      "title": "https://annualreport2025.volkswagen-group.com/",
      "path": "https://annualreport2025.volkswagen-group.com/"
     },
@@ -1049,6 +1053,18 @@
     {
      "title": "https://engineoil.api.org/Directory/EolcsSearch",
      "path": "https://engineoil.api.org/Directory/EolcsSearch"
+    },
+    {
+     "title": "https://eur-lex.europa.eu/",
+     "path": "https://eur-lex.europa.eu/"
+    },
+    {
+     "title": "https://fashionunited.uk/",
+     "path": "https://fashionunited.uk/"
+    },
+    {
+     "title": "https://finance.hermes.com/en/",
+     "path": "https://finance.hermes.com/en/"
     },
     {
      "title": "https://find-and-update.company-information.service.gov.uk/",
@@ -1145,22 +1161,6 @@
     {
      "title": "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
      "path": "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/"
-    },
-    {
-     "title": "https://newmodernmom.com/",
-     "path": "https://newmodernmom.com/"
-    },
-    {
-     "title": "https://newsroom.genesis.com/",
-     "path": "https://newsroom.genesis.com/"
-    },
-    {
-     "title": "https://newsroom.porsche.com/",
-     "path": "https://newsroom.porsche.com/"
-    },
-    {
-     "title": "https://novolex.com/",
-     "path": "https://novolex.com/"
     }
    ]
   },
@@ -1240,8 +1240,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 20313,
-   "hash": "sha256:25dde04937362f8baafa54a366ade23be6472d03829b61bb0b8c9bb0a5eea419",
+   "bytes": 22183,
+   "hash": "sha256:1a7bf15066ce68ad88932176e3fbc2118c91e33e527d28bee7c37bafe2cea99c",
    "schema": {
     "fields": [
      {

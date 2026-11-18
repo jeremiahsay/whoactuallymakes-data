@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-17",
+ "generated": "2026-11-18",
  "title": "Who Actually Makes open data",
  "url": "https://whoactuallymakes.com/data/",
  "licence": {
@@ -14,7 +14,7 @@
   "mirror": "https://github.com/jeremiahsay/whoactuallymakes-data"
  },
  "count": 20,
- "records": 16344,
+ "records": 16458,
  "datasets": [
   {
    "id": "claims",
@@ -970,6 +970,7 @@
     "https://about.usps.com/what/financials/10k-reports/fy2026.pdf",
     "https://acdelcocanada.com/parts/batteries/battery-warranty",
     "https://acuranews.com/en-US/releases/production-start-of-acura-integra-signals-return-of-iconic-model-being-built-for-first-time-in-america",
+    "https://annuaire-entreprises.data.gouv.fr/",
     "https://annualreport2025.volkswagen-group.com/group-management-report/shares-and-bonds/shareholder-structure.html",
     "https://annualreport2025.volkswagen-group.com/group-management-report/structure-and-business-activities.html",
     "https://api.fda.gov/drug/drugsfda.json?search=application_number:ANDA075077",
@@ -1013,11 +1014,10 @@
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0014-2021%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0029-2021%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0031-2018%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0032-2025%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0037-2021%22"
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0032-2025%22"
    ],
-   "records": 2018,
-   "updated": "2026-11-16",
+   "records": 2109,
+   "updated": "2026-11-18",
    "fields": [
     {
      "name": "id",
@@ -1096,6 +1096,48 @@
      "note": "The same paragraph requires the complete physical address, month and year of manufacture, model identification and prototype number."
     },
     {
+     "id": "ev-16-cfr-323-2",
+     "source": "ecfr",
+     "publisher": "US National Archives (Office of the Federal Register)",
+     "type": "regulator-document",
+     "title": "16 CFR 323.2: the FTC's Made in USA Labeling Rule",
+     "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-B/part-323",
+     "archive_url": null,
+     "retrieved": "2026-11-17",
+     "doc_date": null,
+     "quote": "all or virtually all ingredients or components of the product are made and sourced in the United States.",
+     "sha256": "c76862aa863a179978fa49690cf7a344c9cc9902d3201639184705fe32bfcb6a",
+     "note": "An unqualified \"Made in USA\" label needs final assembly or processing in the US, all significant processing in the US, and all or virtually all parts made and sourced in the US."
+    },
+    {
+     "id": "ev-19-cfr-134-1",
+     "source": "ecfr",
+     "publisher": "US National Archives (Office of the Federal Register)",
+     "type": "regulator-document",
+     "title": "19 CFR 134.1(b): country of origin",
+     "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-134/subpart-A/section-134.1",
+     "archive_url": null,
+     "retrieved": "2026-11-17",
+     "doc_date": null,
+     "quote": "Further work or material added to an article in another country must effect a substantial transformation in order to render such other country the “country of origin” within the meaning of this part",
+     "sha256": "be2e60a88e41722c81eb712a9f6d2f37bfda5c977dc72a7d2ecdc1366bb6c750",
+     "note": "US Customs' definition: the country of origin is where the article was made; work in a second country counts only if it substantially transforms it."
+    },
+    {
+     "id": "ev-19-usc-1304",
+     "source": "govinfo-uscode",
+     "publisher": "US Government Publishing Office",
+     "type": "regulator-document",
+     "title": "19 U.S.C. 1304(a): marking of imported articles",
+     "url": "https://www.govinfo.gov/link/uscode/19/1304?link-type=html",
+     "archive_url": null,
+     "retrieved": "2026-11-17",
+     "doc_date": null,
+     "quote": "the English name of the country of origin of the article",
+     "sha256": "ac7268864bff5f7ba770407a3f86fd8914ff56a3b043b7946f79c81f9f783b14",
+     "note": "Every article of foreign origin imported into the US must be marked, legibly and permanently, with its country of origin, unless an exception applies."
+    },
+    {
      "id": "ev-21-cfr-101-5",
      "source": "ecfr",
      "publisher": "US National Archives (Office of the Federal Register)",
@@ -1108,60 +1150,18 @@
      "quote": "Where the food is not manufactured by the person whose name appears on the label, the name shall be qualified",
      "sha256": null,
      "note": null
-    },
-    {
-     "id": "ev-40-cfr-156-10",
-     "source": "ecfr",
-     "publisher": "US National Archives (Office of the Federal Register)",
-     "type": "regulator-document",
-     "title": "40 CFR 156.10: Labeling requirements",
-     "url": "https://www.ecfr.gov/current/title-40/section-156.10",
-     "archive_url": null,
-     "retrieved": "2026-11-07",
-     "doc_date": null,
-     "quote": "preceded by the phrase “EPA Est.”",
-     "sha256": "bad86354f4a6838cdcd3fa10ce3e52093682cd8b10dd9a62692a14af58f511c6",
-     "note": "The EPA pesticide label rule."
-    },
-    {
-     "id": "ev-425business-jelinek-2018",
-     "source": "business-425",
-     "publisher": "425 Business",
-     "type": "press-report",
-     "title": "Costco CEO Craig Jelinek on shareholders, Costco.com and hot dogs",
-     "url": "https://www.425business.com/news/costco-ceo-craig-jelinek-on-shareholders-costco-com-and-hot-dogs/article_5ff4b632-1f75-5e98-b9ff-6e02d676668b.html",
-     "archive_url": "https://web.archive.org/web/20261108133000/https://www.425business.com/news/costco-ceo-craig-jelinek-on-shareholders-costco-com-and-hot-dogs/article_5ff4b632-1f75-5e98-b9ff-6e02d676668b.html",
-     "retrieved": "2026-11-07",
-     "doc_date": "2018-04-18",
-     "quote": "another plant in Chicago",
-     "sha256": null,
-     "note": "Quotes Jelinek; Los Angeles appears in the editor's brackets. Reports about 135 million hot dogs a year."
-    },
-    {
-     "id": "ev-49-cfr-583",
-     "source": "ecfr",
-     "publisher": "US National Archives (Office of the Federal Register)",
-     "type": "regulator-document",
-     "title": "49 CFR Part 583: Automobile parts content labeling",
-     "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-583",
-     "archive_url": null,
-     "retrieved": "2026-11-07",
-     "doc_date": null,
-     "quote": "Carline is not distinguished by country of manufacture, final assembly point",
-     "sha256": null,
-     "note": "Section 583.5 requires each new car's label to give the final assembly point by city, state and country, with percentages rounded to the nearest 5."
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/evidence.json",
-     "bytes": 1818759,
-     "sha256": "b184ff91ac378c63be6643408c0e73178a5624379c6c690be072ece8b60ba752"
+     "bytes": 1905679,
+     "sha256": "fd1cfb51b9ad4564810c03a395ff27fcb0b5f6282bc5f5709dc37853a6040b92"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/evidence.csv",
-     "bytes": 1418746,
-     "sha256": "8a5e5521ba3779551d3d40c8ae22d28fdb6bca3e0c5342473ee7de86d92bac93"
+     "bytes": 1487668,
+     "sha256": "f4328848612a7e63f73ce6abbf4e2e68302b40147110eb041a5299be405170e2"
     }
    }
   },
@@ -1185,6 +1185,7 @@
     "https://about.usps.com/what/financials/",
     "https://acdelcocanada.com/",
     "https://acuranews.com/",
+    "https://annuaire-entreprises.data.gouv.fr/",
     "https://annualreport2025.volkswagen-group.com/",
     "https://bgr.com/",
     "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx",
@@ -1204,6 +1205,9 @@
     "https://disclosure2.edinet-fsa.go.jp/",
     "https://duracell.com/",
     "https://engineoil.api.org/Directory/EolcsSearch",
+    "https://eur-lex.europa.eu/",
+    "https://fashionunited.uk/",
+    "https://finance.hermes.com/en/",
     "https://find-and-update.company-information.service.gov.uk/",
     "https://foodlion.com/",
     "https://forests.org/",
@@ -1227,14 +1231,10 @@
     "https://mg2.com/",
     "https://mprintgroup.com/",
     "https://mygarage.honda.com/s/find-honda",
-    "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
-    "https://newmodernmom.com/",
-    "https://newsroom.genesis.com/",
-    "https://newsroom.porsche.com/",
-    "https://novolex.com/"
+    "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/"
    ],
-   "records": 237,
-   "updated": "2026-11-16",
+   "records": 254,
+   "updated": "2026-11-18",
    "fields": [
     {
      "name": "id",
@@ -1331,7 +1331,7 @@
      "terms_read": "Open license. We read it with a script.",
      "terms_checked": "2026-11-15",
      "credit": "",
-     "pulls": "every 182 days in a browser, last not yet"
+     "pulls": "every 182 days in a browser, last not yet | every 365 days in a browser, last 2026-11-17"
     },
     {
      "id": "fcc-open-data",
@@ -1382,13 +1382,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/sources.json",
-     "bytes": 269701,
-     "sha256": "925e96c85b07d29c7ac79df77fe9a580a5ce4f75ec26e9ab5da434c71816c20d"
+     "bytes": 291878,
+     "sha256": "0d742780926e2b60b93ae5016b9df60db82ae5903e6ff2b8c0ed6e77f74b834e"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/sources.csv",
-     "bytes": 110523,
-     "sha256": "99408e577af60c813dad5f72a4e5ad1c74d7f6c901cb786c49e1f59f4885dbd4"
+     "bytes": 118376,
+     "sha256": "29d5af0126cbd4080ae6123936decc35dda055eb21320d487bb5d0bc0501349b"
     }
    }
   },
@@ -1553,8 +1553,8 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 80,
-   "updated": "2026-11-17",
+   "records": 86,
+   "updated": "2026-11-18",
    "fields": [
     {
      "name": "id",
@@ -1662,13 +1662,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/schedule.json",
-     "bytes": 391096,
-     "sha256": "7d13a4f629ca12ad190357da22daaaa68a4c1472cf1a9c53ac42d7727c7dbba1"
+     "bytes": 401074,
+     "sha256": "d830485977f3793dc22ebc0f2b8a642d7205a3510a90416be77eb580aa8cce7c"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/schedule.csv",
-     "bytes": 20313,
-     "sha256": "25dde04937362f8baafa54a366ade23be6472d03829b61bb0b8c9bb0a5eea419"
+     "bytes": 22183,
+     "sha256": "1a7bf15066ce68ad88932176e3fbc2118c91e33e527d28bee7c37bafe2cea99c"
     }
    }
   },
@@ -2321,8 +2321,8 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/battery-date-codes.json",
-     "bytes": 89423,
-     "sha256": "237ba177aa1ead487da0b28bdd40d3c3fe29fb4cb766754d7d5d191a5dee2f44"
+     "bytes": 90741,
+     "sha256": "c89f8419f351ad21c8a16f9e048c84f6f40801e81b5091c9dfe3c791475d4ed9"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/battery-date-codes.csv",

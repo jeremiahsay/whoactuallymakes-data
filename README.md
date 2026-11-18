@@ -4,7 +4,7 @@
 
 Who makes store-brand products, from public records. Every list behind [Who Actually Makes](https://whoactuallymakes.com/): which company each Kirkland Signature product traces to, the companies behind store brands and the labels they're on record for, every NHTSA tire plant code, what tire makers and carmakers say about tire age, and the evidence, sources, corrections and update schedule behind it all.
 
-**20 datasets · 16,344 records · version 2026-11-17** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
+**20 datasets · 16,458 records · version 2026-11-18** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
 
 Each answer on the site carries a stamp (confirmed, documented, reported or unverified) and links to the record it rests on. The evidence file keeps the exact quote, the date it was read and a SHA-256 fingerprint of the document, so anyone can check a row against its source. How the stamps work: https://whoactuallymakes.com/how-we-know/
 
@@ -17,13 +17,13 @@ Each answer on the site carries a stamp (confirmed, documented, reported or unve
 | [Which store labels each company is on record for](#company-labels) | 214 | 2026-11-16 | [JSON](data/company-labels.json) (111 KB) · [CSV](data/company-labels.csv) (69 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
 | [Tire plant codes (NHTSA)](#tire-plants) | 1,249 | 2026-11-16 | [JSON](data/tire-plants.json) (150 KB) · [CSV](data/tire-plants.csv) (90 KB) | [/tire-dot-code-lookup/](https://whoactuallymakes.com/tire-dot-code-lookup/) |
 | [Tire age guidance from tire makers, carmakers and agencies](#tire-age) | 22 | 2026-11-12 | [JSON](data/tire-age.json) (35 KB) · [CSV](data/tire-age.csv) (20 KB) | [/tire-date-code/](https://whoactuallymakes.com/tire-date-code/) |
-| [Evidence records: every quote behind our answers](#evidence) | 2,018 | 2026-11-16 | [JSON](data/evidence.json) (1776 KB) · [CSV](data/evidence.csv) (1385 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
-| [Sources: the public records we use, and their limits](#sources) | 237 | 2026-11-16 | [JSON](data/sources.json) (263 KB) · [CSV](data/sources.csv) (108 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
+| [Evidence records: every quote behind our answers](#evidence) | 2,109 | 2026-11-18 | [JSON](data/evidence.json) (1861 KB) · [CSV](data/evidence.csv) (1453 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
+| [Sources: the public records we use, and their limits](#sources) | 254 | 2026-11-18 | [JSON](data/sources.json) (285 KB) · [CSV](data/sources.csv) (116 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
 | [Corrections log](#corrections) | 61 | 2026-11-16 | [JSON](data/corrections.json) (52 KB) · [CSV](data/corrections.csv) (39 KB) | [/corrections/](https://whoactuallymakes.com/corrections/) |
-| [Update schedule: when each list is checked](#schedule) | 80 | 2026-11-17 | [JSON](data/schedule.json) (382 KB) · [CSV](data/schedule.csv) (20 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
+| [Update schedule: when each list is checked](#schedule) | 86 | 2026-11-18 | [JSON](data/schedule.json) (392 KB) · [CSV](data/schedule.csv) (22 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
 | [Costco diaper prices: every size at every read](#costco-diaper-prices) | 60 | 2026-11-09 | [JSON](data/costco-diaper-prices.json) (18 KB) · [CSV](data/costco-diaper-prices.csv) (8 KB) | [/costco-diapers/](https://whoactuallymakes.com/costco-diapers/) |
 | [Kirkland vs name brands: every pair and its verdict](#kirkland-vs-pairs) | 22 | 2026-11-16 | [JSON](data/kirkland-vs-pairs.json) (21 KB) · [CSV](data/kirkland-vs-pairs.csv) (8 KB) | [/kirkland-vs-name-brands/](https://whoactuallymakes.com/kirkland-vs-name-brands/) |
-| [Car battery date code rules, by brand](#battery-date-codes) | 21 | 2026-11-07 | [JSON](data/battery-date-codes.json) (87 KB) · [CSV](data/battery-date-codes.csv) (4 KB) | [/battery-date-code/](https://whoactuallymakes.com/battery-date-code/) |
+| [Car battery date code rules, by brand](#battery-date-codes) | 21 | 2026-11-07 | [JSON](data/battery-date-codes.json) (89 KB) · [CSV](data/battery-date-codes.csv) (4 KB) | [/battery-date-code/](https://whoactuallymakes.com/battery-date-code/) |
 | [USDA meat, poultry and egg plants (FSIS directory)](#usda-establishments) | 7,257 | 2026-11-02 | [JSON](data/usda-establishments.json) (1621 KB) · [CSV](data/usda-establishments.csv) (1443 KB) | [/usda-establishment-number-lookup/](https://whoactuallymakes.com/usda-establishment-number-lookup/) |
 | [Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on](#car-origin-filings) | 908 | 2026-11-13 | [JSON](data/car-origin-filings.json) (395 KB) · [CSV](data/car-origin-filings.csv) (125 KB) | [/where-is-subaru-made/](https://whoactuallymakes.com/where-is-subaru-made/) |
 | [Insignia model numbers on California's appliance register](#insignia-register) | 714 | 2026-11-10 | [JSON](data/insignia-register.json) (213 KB) · [CSV](data/insignia-register.csv) (108 KB) | [/insignia/](https://whoactuallymakes.com/insignia/) |

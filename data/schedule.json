@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-17",
- "last_change": "2026-11-16",
+ "generated": "2026-11-18",
+ "last_change": "2026-11-18",
  "cadence_months": {
   "confirmed": 12,
   "documented": 6,
@@ -464,7 +464,7 @@
    "once": false,
    "last": "2026-11-06",
    "due": "2027-11-06",
-   "result": "26 rule texts on file"
+   "result": "34 rule texts on file"
   },
   {
    "id": "usda-legend-read",
@@ -1094,6 +1094,25 @@
    "result": null
   },
   {
+   "id": "stellantis-reads",
+   "what": "Who owns Jeep, Dodge and Ram: NHTSA report and Stellantis's annual 20-F",
+   "gives": "New Stellantis rows in the AALA report, Stellantis's brand groups, assembly plants and largest shareholders, for /who-owns-jeep-dodge-and-ram/",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "nhtsa-aala",
+    "name": "NHTSA Part 583 American Automobile Labeling Act reports",
+    "publisher": "US National Highway Traffic Safety Administration",
+    "url": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
+   },
+   "file_url": null,
+   "hand_note": "The same NHTSA report as the other car pages, and Stellantis's annual report each spring. The page won't rebuild if a model's country, the Jeep counts or the brand list changes until the lines that rely on them are rewritten. Which plant builds the Tonale, and where is the Recon assembled?",
+   "once": false,
+   "last": null,
+   "due": "2026-12-18",
+   "result": null
+  },
+  {
    "id": "same-company-records",
    "what": "The annual filings and pages behind the same-company check that the car and soda hubs don't hold: Whirlpool, TJX, AB InBev, Constellation, UPS, CVS, Lowe's, Home Depot, Petco, Chewy and Unilever filings, Walgreens' merger 8-K, 39 USC 201, the DOVE chocolate, ALDI SÜD, aldi.com and Schwarz Group pages",
    "gives": "The brands, owners, controlling holders and work-for links on /are-they-the-same-company/",
@@ -1529,6 +1548,101 @@
    "last": "2026-11-16",
    "due": "2027-08-20",
    "result": "Coach's 2000 prospectus and all 26 Coach/Tapestry 10-Ks (fiscal 2001-2026) read from EDGAR: 28 countries; fiscal 2026 main countries Vietnam, Cambodia, the Philippines and India; every sentence checked against the saved filing."
+  },
+  {
+   "id": "luxury-annual-reports",
+   "what": "LVMH, Hermès and Kering annual registration documents",
+   "gives": "Louis Vuitton's workshops, Hermès's share made in France and its new workshops, Kering's suppliers by region, and who controls each group, on Where are luxury brands made",
+   "how": "hand",
+   "every_days": 365,
+   "source": {
+    "id": "lvmh-urd",
+    "name": "LVMH Universal Registration Document",
+    "publisher": "LVMH Moët Hennessy Louis Vuitton SE (filed with the French market regulator, AMF)",
+    "url": "https://www.lvmh.com/en/investors/investors-and-analysts"
+   },
+   "file_url": null,
+   "hand_note": "The annual reports of LVMH, Hermès and Kering are read each spring when they are filed, and the workshop counts, shares and owners on the page updated.",
+   "once": false,
+   "last": "2026-11-17",
+   "due": "2027-04-30",
+   "result": "2025 documents read: LV 29 leather workshops (18 France, 4 Spain, 4 US, 3 Italy); Hermès 75% of objects made in France, 79 owned sites (63 in France); Kering 78% of suppliers in Italy; control stakes. Every number checked against the saved text."
+  },
+  {
+   "id": "luxury-brand-pages",
+   "what": "Rolex, Louis Vuitton, Chanel and Christian Louboutin's own pages on where they make things, and Barrie's",
+   "gives": "Each brand's countries in the label checker on Where are luxury brands made and Where is Chanel made",
+   "how": "hand",
+   "every_days": 182,
+   "source": {
+    "id": "louis-vuitton-com",
+    "name": "Louis Vuitton client-service FAQ",
+    "publisher": "Louis Vuitton Malletier",
+    "url": "https://us.louisvuitton.com/"
+   },
+   "file_url": null,
+   "hand_note": "The brands' own pages on where they make things are re-read every six months.",
+   "once": false,
+   "last": "2026-11-17",
+   "due": "2027-05-18",
+   "result": "Rolex's five production-site pages and Certified Pre-Owned page, Louis Vuitton's where-made and authenticity FAQs, and Louboutin's products FAQ read in Chrome; every quote checked against the saved copy."
+  },
+  {
+   "id": "capri-10k",
+   "what": "Capri Holdings' annual report (Form 10-K)",
+   "gives": "Where Michael Kors and Jimmy Choo are made, on Where are luxury brands made",
+   "how": "hand",
+   "every_days": 365,
+   "source": {
+    "id": "sec-edgar",
+    "name": "SEC EDGAR company filings",
+    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+    "url": "https://www.sec.gov/edgar/search/"
+   },
+   "file_url": null,
+   "hand_note": "Capri's annual report is read each June after it is filed.",
+   "once": false,
+   "last": "2026-11-17",
+   "due": "2027-11-17",
+   "result": "Fiscal 2026 10-K (filed 2026-05-27) read from EDGAR: Michael Kors nearly all Asia; Jimmy Choo mostly Italy, other Europe, a small share in Asia."
+  },
+  {
+   "id": "chanel-accounts",
+   "what": "Chanel Limited's group accounts at Companies House",
+   "gives": "The makers Chanel owns, its watch and fragrance sites, its investment in manufacturing and its board, on Where is Chanel made",
+   "how": "hand",
+   "every_days": 365,
+   "source": {
+    "id": "companies-house",
+    "name": "Companies House (UK register of companies)",
+    "publisher": "Companies House, UK government",
+    "url": "https://find-and-update.company-information.service.gov.uk/"
+   },
+   "file_url": null,
+   "hand_note": "Chanel's UK accounts are read each year when they are filed at Companies House, and the list of makers it owns updated.",
+   "once": false,
+   "last": "2026-11-17",
+   "due": "2027-11-17",
+   "result": "2025 group accounts (filed 2026-06-29, scanned) read with OCR; every passage and table row used checked against the page image: subsidiary list pp.189-193, associates p.194, $724 million invested in manufacturing and métiers d'art, Watch Manufacture in La Chaux-de-Fonds."
+  },
+  {
+   "id": "made-in-usa-reads",
+   "what": "Made in USA: the FTC's Made in USA cases and closing letters, its rule and guide, NHTSA's parts report and the vodka label approvals",
+   "gives": "New FTC Made in USA cases and closing letters with their dates, any change to 16 CFR 323 or the FTC's guide, the newest AALA rows and newer TTB approvals for the 16 vodkas, for /made-in-usa/",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "ftc",
+    "name": "US Federal Trade Commission",
+    "publisher": "US Federal Trade Commission",
+    "url": "https://www.ftc.gov/business-guidance/advertising-marketing/made-in-usa"
+   },
+   "file_url": null,
+   "hand_note": "The FTC's Made in USA case list, the federal car parts report and the vodka label approvals, read monthly. The page won't rebuild if a count it relies on changes until the lines are rewritten.",
+   "once": false,
+   "last": null,
+   "due": "2026-12-18",
+   "result": null
   }
  ],
  "terms": [
@@ -1661,6 +1775,14 @@
    "automated_read": "no"
   },
   {
+   "source": "Barrie (Chanel's cashmere knitwear maker)",
+   "publisher": "Barrie (a Chanel company)",
+   "url": "https://www.barrie.com/robots.txt",
+   "checked": "2026-11-17",
+   "due": "2027-11-17",
+   "automated_read": "yes"
+  },
+  {
    "source": "Batteries In A Flash guide",
    "publisher": "BatteriesInAFlash.com, Inc.",
    "url": "https://www.batteriesinaflash.com/robots.txt",
@@ -1733,12 +1855,28 @@
    "automated_read": "no"
   },
   {
+   "source": "Chanel.com client FAQ (US)",
+   "publisher": "Chanel",
+   "url": "https://www.chanel.com/us/legal-notice/",
+   "checked": "2026-11-17",
+   "due": "2027-11-17",
+   "automated_read": "no"
+  },
+  {
    "source": "Chevrolet owner's manuals (GM)",
    "publisher": "General Motors LLC",
    "url": "https://www.chevrolet.com/legal",
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "ask"
+  },
+  {
+   "source": "Christian Louboutin client FAQ",
+   "publisher": "Christian Louboutin SAS",
+   "url": "https://us.christianlouboutin.com/us_en/legal-terms",
+   "checked": "2026-11-17",
+   "due": "2027-11-17",
+   "automated_read": "no"
   },
   {
    "source": "Clarios Digital Library",
@@ -1949,6 +2087,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "EUR-Lex (EU law and Court of Justice judgments)",
+   "publisher": "Publications Office of the European Union",
+   "url": "https://eur-lex.europa.eu/content/legal-notice/legal-notice.html",
+   "checked": "2026-11-17",
+   "due": "2027-11-17",
+   "automated_read": "no"
+  },
+  {
    "source": "East Penn Manufacturing website",
    "publisher": "East Penn Manufacturing",
    "url": "https://www.eastpennmanufacturing.com/robots.txt",
@@ -1963,6 +2109,14 @@
    "checked": "2026-11-02",
    "due": "2027-11-02",
    "automated_read": "public-domain"
+  },
+  {
+   "source": "Exor press releases",
+   "publisher": "Exor N.V.",
+   "url": "https://www.exor.com/legal-notice",
+   "checked": "2026-11-17",
+   "due": "2027-11-17",
+   "automated_read": "yes"
   },
   {
    "source": "FCC Open Data: equipment authorization grantee registrations",
@@ -2003,6 +2157,14 @@
    "checked": "2026-11-05",
    "due": "2027-11-05",
    "automated_read": "ask"
+  },
+  {
+   "source": "FashionUnited (AFP reports)",
+   "publisher": "FashionUnited, republishing Agence France-Presse",
+   "url": "https://fashionunited.uk/robots.txt",
+   "checked": "2026-11-17",
+   "due": "2027-11-17",
+   "automated_read": "yes"
   },
   {
    "source": "Federal Register",
@@ -2075,6 +2237,14 @@
    "checked": "2026-11-05",
    "due": "2027-11-05",
    "automated_read": "ask"
+  },
+  {
+   "source": "French company register (Annuaire des entreprises / SIRENE)",
+   "publisher": "French government (DINUM, data from INSEE's SIRENE register and the national business register)",
+   "url": "https://recherche-entreprises.api.gouv.fr/docs/",
+   "checked": "2026-11-17",
+   "due": "2027-11-17",
+   "automated_read": "yes"
   },
   {
    "source": "GE Appliances support pages",
@@ -2187,6 +2357,14 @@
    "checked": "2026-11-07",
    "due": "2027-11-07",
    "automated_read": "ask"
+  },
+  {
+   "source": "Hermès International Universal Registration Document",
+   "publisher": "Hermès International (filed with the French market regulator, AMF)",
+   "url": "https://finance.hermes.com/en/legal-notice/",
+   "checked": "2026-11-17",
+   "due": "2027-11-17",
+   "automated_read": "yes"
   },
   {
    "source": "Highline Warren company website",
@@ -2357,6 +2535,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "Kering Universal Registration Document",
+   "publisher": "Kering SA (filed with the French market regulator, AMF)",
+   "url": "https://www.kering.com/en/legal-notice/",
+   "checked": "2026-11-17",
+   "due": "2027-11-17",
+   "automated_read": "yes"
+  },
+  {
    "source": "Keurig Dr Pepper brand list",
    "publisher": "Keurig Dr Pepper Inc.",
    "url": "https://www.keurigdrpepper.com/brands/",
@@ -2429,6 +2615,22 @@
    "automated_read": "yes"
   },
   {
+   "source": "LVMH Universal Registration Document",
+   "publisher": "LVMH Moët Hennessy Louis Vuitton SE (filed with the French market regulator, AMF)",
+   "url": "https://www.lvmh.com/en/legal-notice",
+   "checked": "2026-11-17",
+   "due": "2027-11-17",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Le Temps",
+   "publisher": "Le Temps SA (Geneva daily)",
+   "url": "https://www.letemps.ch/conditions-generales",
+   "checked": "2026-11-17",
+   "due": "2027-11-17",
+   "automated_read": "no"
+  },
+  {
    "source": "Lexus newsroom",
    "publisher": "Toyota Motor North America, Inc.",
    "url": "https://pressroom.lexus.com/",
@@ -2443,6 +2645,14 @@
    "checked": "2026-11-15",
    "due": "2027-11-15",
    "automated_read": "ask"
+  },
+  {
+   "source": "Louis Vuitton client-service FAQ",
+   "publisher": "Louis Vuitton Malletier",
+   "url": "https://us.louisvuitton.com/eng-us/legal-privacy",
+   "checked": "2026-11-17",
+   "due": "2027-11-17",
+   "automated_read": "no"
   },
   {
    "source": "Lowes Foods (lowesfoods.com)",
@@ -2837,6 +3047,22 @@
    "automated_read": "yes"
   },
   {
+   "source": "Reuters",
+   "publisher": "Thomson Reuters (republished by RNZ)",
+   "url": "https://www.rnz.co.nz/about/terms-of-use",
+   "checked": "2026-11-17",
+   "due": "2027-11-17",
+   "automated_read": "no"
+  },
+  {
+   "source": "Rolex.com and the Rolex newsroom",
+   "publisher": "Rolex SA",
+   "url": "https://www.rolex.com/legal-notices",
+   "checked": "2026-11-17",
+   "due": "2027-11-17",
+   "automated_read": "no"
+  },
+  {
    "source": "SEC EDGAR company filings",
    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
    "url": "https://www.sec.gov/os/accessing-edgar-data",
@@ -3029,6 +3255,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "Swiss federal law (classified compilation)",
+   "publisher": "Swiss Federal Council (Federal Chancellery publications)",
+   "url": "https://www.fedlex.admin.ch/en/broadcast/legal",
+   "checked": "2026-11-17",
+   "due": "2027-11-17",
+   "automated_read": "public-domain"
+  },
+  {
    "source": "TJ Maxx (tjmaxx.com)",
    "publisher": "The TJX Companies, Inc.",
    "url": "https://tjmaxx.tjx.com/store/jump/topic/find-help/easy-returns/18400006p",
@@ -3211,6 +3445,22 @@
    "checked": "2026-11-16",
    "due": "2027-11-16",
    "automated_read": "yes"
+  },
+  {
+   "source": "US Court of Appeals for the Second Circuit opinions (GovInfo)",
+   "publisher": "United States Court of Appeals for the Second Circuit, published by the US Government Publishing Office",
+   "url": "https://www.govinfo.gov/about/policies",
+   "checked": "2026-11-17",
+   "due": "2027-11-17",
+   "automated_read": "public-domain"
+  },
+  {
+   "source": "US Federal Trade Commission",
+   "publisher": "US Federal Trade Commission",
+   "url": "https://www.ftc.gov/site-information/privacy-policy",
+   "checked": "2026-11-18",
+   "due": "2027-11-18",
+   "automated_read": "public-domain"
   },
   {
    "source": "US Justice Department press releases",
@@ -11584,7 +11834,7 @@
   },
   {
    "path": "/how-we-know/",
-   "changed": "2026-11-16",
+   "changed": "2026-11-18",
    "next": "2026-12-08",
    "tasks": [],
    "claims": null,
@@ -11592,7 +11842,7 @@
   },
   {
    "path": "/sources/",
-   "changed": "2026-11-16",
+   "changed": "2026-11-18",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -11608,7 +11858,7 @@
   },
   {
    "path": "/data/",
-   "changed": "2026-11-17",
+   "changed": "2026-11-18",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -11733,7 +11983,7 @@
   },
   {
    "path": "/home/",
-   "changed": "2026-11-16",
+   "changed": "2026-11-18",
    "next": "2026-11-23",
    "tasks": [
     {
@@ -11752,7 +12002,7 @@
   },
   {
    "path": "/about/",
-   "changed": "2026-11-17",
+   "changed": "2026-11-18",
    "next": "2027-11-08",
    "tasks": [
     {
@@ -12433,38 +12683,90 @@
    ],
    "claims": 0,
    "stamps": {}
+  },
+  {
+   "path": "/where-are-luxury-brands-made/",
+   "changed": "2026-11-17",
+   "next": "2027-04-30",
+   "tasks": [
+    {
+     "id": "luxury-annual-reports",
+     "what": "LVMH, Hermès and Kering annual registration documents",
+     "due": "2027-04-30"
+    },
+    {
+     "id": "luxury-brand-pages",
+     "what": "Rolex, Louis Vuitton, Chanel and Christian Louboutin's own pages on where they make things, and Barrie's",
+     "due": "2027-05-18"
+    },
+    {
+     "id": "capri-10k",
+     "what": "Capri Holdings' annual report (Form 10-K)",
+     "due": "2027-11-17"
+    },
+    {
+     "id": "coach-10k",
+     "what": "Tapestry's annual report (Form 10-K)",
+     "due": "2027-08-20"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/where-is-chanel-made/",
+   "changed": "2026-11-17",
+   "next": "2027-05-18",
+   "tasks": [
+    {
+     "id": "chanel-accounts",
+     "what": "Chanel Limited's group accounts at Companies House",
+     "due": "2027-11-17"
+    },
+    {
+     "id": "luxury-brand-pages",
+     "what": "Rolex, Louis Vuitton, Chanel and Christian Louboutin's own pages on where they make things, and Barrie's",
+     "due": "2027-05-18"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/who-owns-jeep-dodge-and-ram/",
+   "changed": "2026-11-18",
+   "next": "2026-12-18",
+   "tasks": [
+    {
+     "id": "stellantis-reads",
+     "what": "Who owns Jeep, Dodge and Ram: NHTSA report and Stellantis's annual 20-F",
+     "due": "2026-12-18"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/made-in-usa/",
+   "changed": "2026-11-18",
+   "next": "2026-12-18",
+   "tasks": [
+    {
+     "id": "made-in-usa-reads",
+     "what": "Made in USA: the FTC's Made in USA cases and closing letters, its rule and guide, NHTSA's parts report and the vodka label approvals",
+     "due": "2026-12-18"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
   }
  ],
  "done": [
   {
    "on": "2026-11-16",
-   "task": "nhtsa-tire-plants",
-   "what": "Weekly pull of NHTSA tire plant codes",
-   "result": "1,249 codes; 3 added, 1 changed"
-  },
-  {
-   "on": "2026-11-16",
-   "task": "openfda-leads",
-   "what": "Weekly search of FDA recall records for store brands",
-   "result": "0 new recalls found; 18 waiting for review"
-  },
-  {
-   "on": "2026-11-16",
-   "task": "kirkland-medicine-labels",
-   "what": "Weekly read of Kirkland medicine labels and FDA approval holders",
-   "result": "50 Costco labels; 0 to review"
-  },
-  {
-   "on": "2026-11-16",
-   "task": "name-brand-labels",
-   "what": "Weekly read of the name-brand labels the Kirkland comparison uses",
-   "result": "Label files refreshed"
-  },
-  {
-   "on": "2026-11-16",
-   "task": "kirkland-mattress-prices",
-   "what": "Kirkland Lakeridge mattress listings at ZIP 98101, the day after the Pillow Top offer ended",
-   "result": "Pillow Top back to $999.99 queen and $1,199.99 king or California king; Tight Top on a new offer to Dec 20 at $849.99 queen and $949.99 king or California king; law label PDF unchanged (same SHA-256), still Sealy Mattress"
+   "task": "kirkland-laundry-reads",
+   "what": "All eight Costco laundry listings and the Kirkland back-label photos, after Tide's coupon ended",
+   "result": "Tide Original liquid $24.99 warehouse; Kirkland liquid and Free & Clear $14.89 with $3.60 off to Dec 20; Tide Pods Free & Gentle $23.99 on offer to Dec 20; Pacs, Powder and Plant-Based unchanged; labels opened (liquid, Pacs, Powder) name only Costco"
   },
   {
    "on": "2026-11-16",
@@ -12474,9 +12776,33 @@
   },
   {
    "on": "2026-11-16",
-   "task": "kirkland-laundry-reads",
-   "what": "All eight Costco laundry listings and the Kirkland back-label photos, after Tide's coupon ended",
-   "result": "Tide Original liquid $24.99 warehouse; Kirkland liquid and Free & Clear $14.89 with $3.60 off to Dec 20; Tide Pods Free & Gentle $23.99 on offer to Dec 20; Pacs, Powder and Plant-Based unchanged; labels opened (liquid, Pacs, Powder) name only Costco"
+   "task": "kirkland-mattress-prices",
+   "what": "Kirkland Lakeridge mattress listings at ZIP 98101, the day after the Pillow Top offer ended",
+   "result": "Pillow Top back to $999.99 queen and $1,199.99 king or California king; Tight Top on a new offer to Dec 20 at $849.99 queen and $949.99 king or California king; law label PDF unchanged (same SHA-256), still Sealy Mattress"
+  },
+  {
+   "on": "2026-11-16",
+   "task": "name-brand-labels",
+   "what": "Weekly read of the name-brand labels the Kirkland comparison uses",
+   "result": "Label files refreshed"
+  },
+  {
+   "on": "2026-11-16",
+   "task": "kirkland-medicine-labels",
+   "what": "Weekly read of Kirkland medicine labels and FDA approval holders",
+   "result": "50 Costco labels; 0 to review"
+  },
+  {
+   "on": "2026-11-16",
+   "task": "openfda-leads",
+   "what": "Weekly search of FDA recall records for store brands",
+   "result": "0 new recalls found; 18 waiting for review"
+  },
+  {
+   "on": "2026-11-16",
+   "task": "nhtsa-tire-plants",
+   "what": "Weekly pull of NHTSA tire plant codes",
+   "result": "1,249 codes; 3 added, 1 changed"
   },
   {
    "on": "2026-11-15",
@@ -12498,21 +12824,9 @@
   },
   {
    "on": "2026-11-09",
-   "task": "nhtsa-tire-plants",
-   "what": "Weekly pull of NHTSA tire plant codes",
-   "result": "1,246 codes; 1 changed"
-  },
-  {
-   "on": "2026-11-09",
-   "task": "openfda-leads",
-   "what": "Weekly search of FDA recall records for store brands",
-   "result": "0 new recalls found; 38 waiting for review"
-  },
-  {
-   "on": "2026-11-09",
-   "task": "kirkland-medicine-labels",
-   "what": "Weekly read of Kirkland medicine labels and FDA approval holders",
-   "result": "50 Costco labels; 0 to review"
+   "task": "costco-diaper-prices",
+   "what": "Costco Pull-Ups, Easy Ups and baby wipes, every size, read in a browser",
+   "result": "No change: training pants $39.99 at every size; Kirkland wipes $23.99 online, $19.99 at the warehouse"
   },
   {
    "on": "2026-11-09",
@@ -12522,45 +12836,27 @@
   },
   {
    "on": "2026-11-09",
-   "task": "costco-diaper-prices",
-   "what": "Costco diaper listings, every size, read in a browser",
-   "result": "Kirkland regular 15.6 to 32.4 cents; Huggies on offer to Nov 22, 14.6 to 38.5; Pampers 20.5 to 46.8"
+   "task": "kirkland-medicine-labels",
+   "what": "Weekly read of Kirkland medicine labels and FDA approval holders",
+   "result": "50 Costco labels; 0 to review"
   },
   {
    "on": "2026-11-09",
-   "task": "costco-diaper-prices",
-   "what": "Costco Pull-Ups, Easy Ups and baby wipes, every size, read in a browser",
-   "result": "No change: training pants $39.99 at every size; Kirkland wipes $23.99 online, $19.99 at the warehouse"
+   "task": "openfda-leads",
+   "what": "Weekly search of FDA recall records for store brands",
+   "result": "0 new recalls found; 38 waiting for review"
+  },
+  {
+   "on": "2026-11-09",
+   "task": "nhtsa-tire-plants",
+   "what": "Weekly pull of NHTSA tire plant codes",
+   "result": "1,246 codes; 1 changed"
   },
   {
    "on": "2026-11-08",
    "task": "ttb-kirkland",
    "what": "TTB label approvals for Kirkland (script, from the Mac)",
-   "result": "512 Kirkland approvals; 38 on the spirits pages, 7 not yet cited"
-  },
-  {
-   "on": "2026-11-08",
-   "task": "ttb-kirkland",
-   "what": "TTB label approvals for Kirkland (script, from the Mac)",
-   "result": "512 Kirkland approvals; 38 on the spirits pages, 7 not yet cited"
-  },
-  {
-   "on": "2026-11-08",
-   "task": "ttb-kirkland",
-   "what": "TTB label approvals for Kirkland (script, from the Mac)",
-   "result": "512 Kirkland approvals; 38 on the spirits pages, 7 not yet cited"
-  },
-  {
-   "on": "2026-11-08",
-   "task": "usga-balls-kirkland",
-   "what": "USGA ball list, Kirkland (browser)",
-   "result": "November list (Nov 4): same four Kirkland balls, all SM Global LLC"
-  },
-  {
-   "on": "2026-11-08",
-   "task": "usga-driver-kirkland",
-   "what": "USGA driver head list, Kirkland (browser)",
-   "result": "Edition effective Nov 2, 2026, page 937: Kirkland Signature Driver 10.5 under SM Global, LLC"
+   "result": "512 Kirkland approvals; 413 on the spirits pages, 7 not yet cited"
   },
   {
    "on": "2026-11-08",
@@ -12570,27 +12866,21 @@
   },
   {
    "on": "2026-11-08",
-   "task": "ttb-kirkland",
-   "what": "TTB label approvals for Kirkland (script, from the Mac)",
-   "result": "512 Kirkland approvals; 38 on the spirits pages, 7 not yet cited"
+   "task": "usga-driver-kirkland",
+   "what": "USGA driver head list, Kirkland (browser)",
+   "result": "Edition effective Nov 2, 2026, page 937: Kirkland Signature Driver 10.5 under SM Global, LLC"
   },
   {
    "on": "2026-11-08",
-   "task": "ttb-kirkland",
-   "what": "TTB label approvals for Kirkland (script, from the Mac)",
-   "result": "512 Kirkland approvals; 38 on the spirits pages, 7 not yet cited"
-  },
-  {
-   "on": "2026-11-08",
-   "task": "ttb-kirkland",
-   "what": "TTB label approvals for Kirkland (script, from the Mac)",
-   "result": "512 Kirkland approvals; 413 on the spirits pages, 7 not yet cited"
+   "task": "usga-balls-kirkland",
+   "what": "USGA ball list, Kirkland (browser)",
+   "result": "November list (Nov 4): same four Kirkland balls, all SM Global LLC"
   },
   {
    "on": "2026-11-04",
-   "task": "tire-age-carmaker-followup",
-   "what": "Re-check of the carmaker manuals behind the tire age table",
-   "result": "Nissan: live 2026 Rogue manual read, same advice as 2024 (technician check over 6 years, spare included). Honda manual server still down; Toyota PDF still refuses our request. Both re-booked for Nov 12."
+   "task": "kirkland-battery-prices",
+   "what": "Kirkland and Duracell battery prices at Costco (hand re-read in a browser)",
+   "result": "No change: Kirkland AA 48 $16.99, $14.99 with $2 off valid through Nov 15; Duracell Coppertop AA 40 $20.99; both in stock."
   },
   {
    "on": "2026-11-04",
@@ -12600,51 +12890,27 @@
   },
   {
    "on": "2026-11-04",
-   "task": "kirkland-battery-prices",
-   "what": "Kirkland and Duracell battery prices at Costco (hand re-read in a browser)",
-   "result": "No change: Kirkland AA 48 $16.99, $14.99 with $2 off valid through Nov 15; Duracell Coppertop AA 40 $20.99; both in stock."
+   "task": "tire-age-carmaker-followup",
+   "what": "Re-check of the carmaker manuals behind the tire age table",
+   "result": "Nissan: live 2026 Rogue manual read, same advice as 2024 (technician check over 6 years, spare included). Honda manual server still down; Toyota PDF still refuses our request. Both re-booked for Nov 12."
+  },
+  {
+   "on": "2026-11-02",
+   "task": "openfda-leads",
+   "what": "Weekly search of FDA recall records for store brands",
+   "result": "0 new recalls found; 50 waiting for review"
   },
   {
    "on": "2026-11-02",
    "task": "nhtsa-tire-plants",
-   "what": "First pull of NHTSA tire plant codes",
-   "result": "1,246 codes loaded (1,179 active, 49 closed, 18 with no status given)"
+   "what": "Weekly pull of NHTSA tire plant codes",
+   "result": "1,246 codes; no changes"
   },
   {
    "on": "2026-11-02",
    "task": "usda-establishments",
    "what": "First load of the USDA plant directory (edition of Oct 26, 2026), downloaded in a browser",
    "result": "7,257 establishments loaded"
-  },
-  {
-   "on": "2026-11-02",
-   "task": "openfda-leads",
-   "what": "First search of FDA recall records for Kirkland",
-   "result": "50 recalls mention \"Kirkland\" (25 say \"Kirkland Signature\"); all waiting for review. One is a different company (Kirkland Science Labs)."
-  },
-  {
-   "on": "2026-11-02",
-   "task": "nhtsa-tire-plants",
-   "what": "Weekly pull of NHTSA tire plant codes",
-   "result": "1,246 codes; no changes"
-  },
-  {
-   "on": "2026-11-02",
-   "task": "openfda-leads",
-   "what": "Weekly search of FDA recall records for store brands",
-   "result": "0 new recalls found; 50 waiting for review"
-  },
-  {
-   "on": "2026-11-02",
-   "task": "nhtsa-tire-plants",
-   "what": "Weekly pull of NHTSA tire plant codes",
-   "result": "1,246 codes; no changes"
-  },
-  {
-   "on": "2026-11-02",
-   "task": "openfda-leads",
-   "what": "Weekly search of FDA recall records for store brands",
-   "result": "0 new recalls found; 50 waiting for review"
   }
  ]
 }
