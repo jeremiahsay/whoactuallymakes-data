@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-18",
+ "generated": "2026-11-19",
  "title": "Who Actually Makes open data",
  "url": "https://whoactuallymakes.com/data/",
  "licence": {
@@ -1155,13 +1155,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/evidence.json",
-     "bytes": 1905679,
-     "sha256": "fd1cfb51b9ad4564810c03a395ff27fcb0b5f6282bc5f5709dc37853a6040b92"
+     "bytes": 1908592,
+     "sha256": "e7fd02715266f11c816a4381805984c81c4dce1da5480451747b6aa951d209c3"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/evidence.csv",
-     "bytes": 1487668,
-     "sha256": "f4328848612a7e63f73ce6abbf4e2e68302b40147110eb041a5299be405170e2"
+     "bytes": 1490625,
+     "sha256": "928801a2a5f1f45140ac94d46f007946304a4f026c3b7b6594c441f81b98a8a2"
     }
    }
   },
@@ -1554,7 +1554,7 @@
    "rights": "CC BY covers the whole file.",
    "based_on": [],
    "records": 86,
-   "updated": "2026-11-18",
+   "updated": "2026-11-19",
    "fields": [
     {
      "name": "id",
@@ -1663,7 +1663,7 @@
     "json": {
      "url": "https://whoactuallymakes.com/data/schedule.json",
      "bytes": 401074,
-     "sha256": "d830485977f3793dc22ebc0f2b8a642d7205a3510a90416be77eb580aa8cce7c"
+     "sha256": "e515e1d5208343999dd967de1d80fec753ff0d8a579f3e96fd1d008f5f0dd3db"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/schedule.csv",

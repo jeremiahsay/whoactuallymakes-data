@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-18",
+ "generated": "2026-11-19",
  "last_change": "2026-11-18",
  "cadence_months": {
   "confirmed": 12,
@@ -11858,7 +11858,7 @@
   },
   {
    "path": "/data/",
-   "changed": "2026-11-18",
+   "changed": "2026-11-19",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -12002,7 +12002,7 @@
   },
   {
    "path": "/about/",
-   "changed": "2026-11-18",
+   "changed": "2026-11-19",
    "next": "2027-11-08",
    "tasks": [
     {
