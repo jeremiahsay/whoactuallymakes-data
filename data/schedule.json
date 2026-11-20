@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-19",
- "last_change": "2026-11-18",
+ "generated": "2026-11-20",
+ "last_change": "2026-11-20",
  "cadence_months": {
   "confirmed": 12,
   "documented": 6,
@@ -464,7 +464,7 @@
    "once": false,
    "last": "2026-11-06",
    "due": "2027-11-06",
-   "result": "34 rule texts on file"
+   "result": "39 rule texts on file"
   },
   {
    "id": "usda-legend-read",
@@ -1643,6 +1643,178 @@
    "last": null,
    "due": "2026-12-18",
    "result": null
+  },
+  {
+   "id": "knives-maker-pages",
+   "what": "Knife makers' own pages on where they make knives (Benchmade, Case, Cutco, Zero Tolerance, Kershaw, Buck, Gerber, Spyderco, Leatherman, KA-BAR, Ontario, Lamson, Dexter-Russell, Rada, and the brands made abroad), and the USA-made catalogue counts at Spyderco, Gerber, Kershaw and Ontario",
+   "gives": "Every brand row, group and catalogue bar on Knives made in the USA",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "maker-spyderco",
+    "name": "Spyderco website",
+    "publisher": "Spyderco, Inc. (Golden, Colorado)",
+    "url": "https://spyderco.com/"
+   },
+   "file_url": null,
+   "hand_note": "The knife makers' own pages and their USA-made catalogue counts are re-read every month.",
+   "once": false,
+   "last": "2026-11-19",
+   "due": "2026-12-19",
+   "result": "33 records read and saved on 19 Nov 2026; every quote, town, count, history line and Case dating row checked against the saved copy by tools/build_knives_usa.py."
+  },
+  {
+   "id": "carseat-maker-pages",
+   "what": "Car seat makers' own pages and US manuals on how long their seats last (Graco, Evenflo, Britax, Chicco, Nuna, Clek, CYBEX, Safety 1st, Diono, UPPAbaby, Peg Perego, Doona, Baby Trend), NHTSA's after-crash page, and the federal label rule (49 CFR 571.213)",
+   "gives": "Every row of the maker table, the calculator's years and the label places on Car seat expiration",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "maker-graco",
+    "name": "Graco Baby website",
+    "publisher": "Graco (Newell Brands)",
+    "url": "https://www.gracobaby.com/"
+   },
+   "file_url": null,
+   "hand_note": "The car seat makers' own pages and manuals, and NHTSA's crash page, are re-read every three months.",
+   "once": false,
+   "last": "2026-11-19",
+   "due": "2027-02-17",
+   "result": "30 records read and saved on 19 Nov 2026; every maker line, label place and Graco's worked example checked against the saved copy by tools/build_car_seat.py, and 65 calculator checks passed."
+  },
+  {
+   "id": "cncars-uk-filings",
+   "what": "Chinese car brands in the UK: each UK selling company's Companies House accounts, register of significant control and filing history (MG, BYD, Omoda & Jaecoo, Xpeng, IM Group's GWM company, Changan, Polestar, Volvo, Lotus, Geely); the XPeng, Stellantis, Polestar and Lotus 20-Fs; CUPRA's and smart's pages; and the trade-press plant reports",
+   "gives": "Every owner, UK company and plant on Chinese car brands in the UK",
+   "how": "script",
+   "every_days": 90,
+   "source": {
+    "id": "companies-house",
+    "name": "Companies House (UK register of companies)",
+    "publisher": "Companies House, UK government",
+    "url": "https://find-and-update.company-information.service.gov.uk/"
+   },
+   "file_url": null,
+   "hand_note": "Companies House pages and the SEC are read by script, one document at a time with a declared user agent. The scanned accounts are read by OCR; quotes on the page were matched against that text, and the pages behind the MG, Omoda & Jaecoo, Xpeng, Lotus and Volvo quotes were checked by eye. Trade-press plant reports are labelled as reports. Re-read every three months, and when a UK company files a change of owner.",
+   "once": false,
+   "last": "2026-11-19",
+   "due": "2027-02-17",
+   "result": "33 records read and saved on 19 Nov 2026 (scanned accounts read by OCR, five checked by eye against the page); every owner, UK company and plant checked against its saved copy by tools/build_chinese_cars_uk.py."
+  },
+  {
+   "id": "walmart-10k-sams-club",
+   "what": "Walmart's 10-K: Sam's Club as a Walmart segment",
+   "gives": "The \"Is Sam's Club owned by Walmart?\" answer on Who makes Member's Mark products (segment, club count, share of sales)",
+   "how": "hand",
+   "every_days": 365,
+   "source": {
+    "id": "sec-edgar",
+    "name": "SEC EDGAR company filings",
+    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
+    "url": "https://www.sec.gov/edgar/search/"
+   },
+   "file_url": null,
+   "hand_note": "Each spring, after Walmart files its annual report, a person re-reads the segment description and updates the club count and sales figures.",
+   "once": false,
+   "last": "2026-11-20",
+   "due": "2027-03-31",
+   "result": "Three segments incl. Sam's Club U.S.; 601 clubs; $93.0 billion, 13% of fiscal 2026 net sales"
+  },
+  {
+   "id": "craftsman-com-origin",
+   "what": "craftsman.com: where Craftsman says each product is made",
+   "gives": "\"Is Craftsman made in the USA?\" on Who makes Craftsman tools and mowers: made-in-USA counts, towns, countries of origin",
+   "how": "hand",
+   "every_days": 182,
+   "source": {
+    "id": "maker-craftsman",
+    "name": "CRAFTSMAN brand website (Stanley Black & Decker)",
+    "publisher": "Stanley Black & Decker",
+    "url": "https://www.craftsman.com/"
+   },
+   "file_url": null,
+   "hand_note": "Every six months we re-read all of Craftsman's product pages for where each one says it's made, and update the counts.",
+   "once": false,
+   "last": "2026-11-20",
+   "due": "2027-05-20",
+   "result": "2,119 of 2,128 pages read: 80 made in USA (49 tool storage), 102 list a country (93 Taiwan), 1,937 say neither"
+  },
+  {
+   "id": "fda-ims",
+   "what": "FDA Interstate Milk Shippers List",
+   "gives": "Every dairy plant code and the plant that holds it, on the milk plant code lookup",
+   "how": "script",
+   "every_days": 30,
+   "source": {
+    "id": "fda-ims",
+    "name": "FDA Interstate Milk Shippers List",
+    "publisher": "US Food and Drug Administration",
+    "url": "https://www.fda.gov/food/federal-state-local-tribal-and-territorial-cooperative-human-food-programs/interstate-milk-shippers-list"
+   },
+   "file_url": "https://www.fda.gov/food/federal-state-local-tribal-and-territorial-cooperative-human-food-programs/interstate-milk-shippers-list",
+   "hand_note": "We check FDA's page for a new edition of the list every month and load it automatically. The loader stops if any line can't be read.",
+   "once": false,
+   "last": "2026-11-20",
+   "due": "2026-12-20",
+   "result": "2,561 entries; first pull",
+   "edition": "2026-10-01"
+  },
+  {
+   "id": "epa-ssts",
+   "what": "EPA pesticide establishments (the facility registry's copy of EPA's pesticide tracking system)",
+   "gives": "Every EPA establishment number and the site that holds it, on the EPA establishment number lookup",
+   "how": "script",
+   "every_days": 90,
+   "source": {
+    "id": "epa-frs",
+    "name": "EPA Facility Registry Service: pesticide establishments (SSTS)",
+    "publisher": "US Environmental Protection Agency",
+    "url": "https://www.epa.gov/frs"
+   },
+   "file_url": "https://data.epa.gov/efservice/frs.frs_program_facility/pgm_sys_acrnm/equals/SSTS/0:9999/CSV",
+   "hand_note": "Read from EPA's facility registry every three months. The loader stops if a number doesn't fit EPA's pattern or the count jumps.",
+   "once": false,
+   "last": "2026-11-20",
+   "due": "2027-02-18",
+   "result": "27,570 entries; first pull"
+  },
+  {
+   "id": "epa-label-rules",
+   "what": "EPA's pages on establishment numbers and its label review manual (chapter 14)",
+   "gives": "What the Est. and Reg. numbers mean, on the EPA establishment number lookup",
+   "how": "hand",
+   "every_days": 365,
+   "source": {
+    "id": "epa-pesticides",
+    "name": "EPA pesticide program pages and manuals",
+    "publisher": "US Environmental Protection Agency",
+    "url": "https://www.epa.gov/pesticides"
+   },
+   "file_url": null,
+   "hand_note": "Re-read EPA's establishment Q&A, its active-establishments page and chapter 14 of the Label Review Manual; check each saved quote still stands and log any change on the corrections page.",
+   "once": false,
+   "last": "2026-11-20",
+   "due": "2027-11-20",
+   "result": "4 rule texts on file"
+  },
+  {
+   "id": "mattress-tag-rules",
+   "what": "The bedding officials' (IABFLO) pages on registration numbers and their sample law tag",
+   "gives": "The list of jurisdictions that issue mattress registration numbers, and the final-stitch rule, on the mattress law tag page",
+   "how": "hand",
+   "every_days": 182,
+   "source": {
+    "id": "iabflo",
+    "name": "International Association of Bedding and Furniture Labeling Officials (IABFLO)",
+    "publisher": "International Association of Bedding and Furniture Labeling Officials",
+    "url": "https://iabflo.org/"
+   },
+   "file_url": null,
+   "hand_note": "The bedding officials' pages are re-read twice a year.",
+   "once": false,
+   "last": "2026-11-20",
+   "due": "2027-05-21",
+   "result": "4 rule texts on file"
   }
  ],
  "terms": [
@@ -1711,6 +1883,14 @@
    "automated_read": "no"
   },
   {
+   "source": "Acme United press releases",
+   "publisher": "Acme United Corporation",
+   "url": "https://acmeunited.gcs-web.com/",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "no"
+  },
+  {
    "source": "Acura newsroom",
    "publisher": "American Honda Motor Co., Inc.",
    "url": "https://acuranews.com/",
@@ -1743,11 +1923,27 @@
    "automated_read": "yes"
   },
   {
+   "source": "Auto Express",
+   "publisher": "Autovia",
+   "url": "https://www.autoexpress.co.uk/",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "ask"
+  },
+  {
    "source": "AutoGuide",
    "publisher": "VerticalScope Inc.",
    "url": "https://www.autoguide.com/",
    "checked": "2026-11-13",
    "due": "2027-11-13",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Autocar",
+   "publisher": "Haymarket Media Group",
+   "url": "https://www.autocar.co.uk/",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
    "automated_read": "ask"
   },
   {
@@ -1765,6 +1961,14 @@
    "checked": "2026-11-13",
    "due": "2027-11-13",
    "automated_read": "ask"
+  },
+  {
+   "source": "Baby Trend website",
+   "publisher": "Baby Trend, Inc.",
+   "url": "https://babytrend.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "yes"
   },
   {
    "source": "BabyGearLab",
@@ -1791,6 +1995,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "Benchmade website",
+   "publisher": "Benchmade Knife Company",
+   "url": "https://www.benchmade.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "no"
+  },
+  {
    "source": "Bisnow",
    "publisher": "Bisnow Media",
    "url": "https://www.bisnow.com/terms",
@@ -1812,6 +2024,30 @@
    "url": "https://www.bridgestoneamericas.com/en/terms-of-use",
    "checked": "2026-11-03",
    "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Britax US website",
+   "publisher": "Britax Child Safety, Inc.",
+   "url": "https://us.britax.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Buck Knives website",
+   "publisher": "Buck Knives, Inc.",
+   "url": "https://www.buckknives.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "ask"
+  },
+  {
+   "source": "CAR magazine",
+   "publisher": "H Bauer Publishing",
+   "url": "https://www.carmagazine.co.uk/",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
    "automated_read": "ask"
   },
   {
@@ -1839,12 +2075,44 @@
    "automated_read": "yes"
   },
   {
+   "source": "CYBEX US website",
+   "publisher": "CYBEX GmbH (US site)",
+   "url": "https://www.cybex-online.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "yes"
+  },
+  {
    "source": "California Energy Commission Modernized Appliance Efficiency Database System (MAEDbS)",
    "publisher": "California Energy Commission",
    "url": "https://www.energy.ca.gov/conditions.html",
    "checked": "2026-11-10",
    "due": "2027-11-10",
    "automated_read": "ask"
+  },
+  {
+   "source": "California Legislative Information",
+   "publisher": "State of California (Legislative Counsel)",
+   "url": "https://leginfo.legislature.ca.gov/faces/home.xhtml",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "ask"
+  },
+  {
+   "source": "CarNewsChina",
+   "publisher": "CarNewsChina",
+   "url": "https://carnewschina.com/",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Case Knives website and knowledge base",
+   "publisher": "W.R. Case & Sons Cutlery Co.",
+   "url": "https://caseknives.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "yes"
   },
   {
    "source": "Central Milling website",
@@ -1871,6 +2139,22 @@
    "automated_read": "ask"
   },
   {
+   "source": "Chicco USA website",
+   "publisher": "Artsana USA, Inc. (Chicco)",
+   "url": "https://www.chiccousa.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "yes"
+  },
+  {
+   "source": "ChinaEVHome",
+   "publisher": "ChinaEVHome",
+   "url": "https://chinaevhome.com/",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "ask"
+  },
+  {
    "source": "Christian Louboutin client FAQ",
    "publisher": "Christian Louboutin SAS",
    "url": "https://us.christianlouboutin.com/us_en/legal-terms",
@@ -1885,6 +2169,14 @@
    "checked": "2026-11-11",
    "due": "2027-11-11",
    "automated_read": "no"
+  },
+  {
+   "source": "Clek website",
+   "publisher": "Clek Inc. (Toronto, Canada)",
+   "url": "https://clekinc.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "ask"
   },
   {
    "source": "Cluster Industrial",
@@ -1991,6 +2283,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "Cutco website",
+   "publisher": "Cutco Corporation (Olean, New York)",
+   "url": "https://www.cutco.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "ask"
+  },
+  {
    "source": "DOE Compliance Certification Database",
    "publisher": "US Department of Energy",
    "url": "https://www.regulations.doe.gov/certification-data/",
@@ -2031,11 +2331,35 @@
    "automated_read": "ask"
   },
   {
+   "source": "Dexter-Russell website",
+   "publisher": "Dexter-Russell, Inc. (Southbridge, Massachusetts)",
+   "url": "https://www.dexter1818.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "yes"
+  },
+  {
    "source": "Diamond Pet Foods company website",
    "publisher": "Schell & Kampeter, Inc. (Diamond Pet Foods)",
    "url": "https://diamondpetcompany.com/diamond-pet-foods-copyright-trademark",
    "checked": "2026-11-03",
    "due": "2027-11-03",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Diono store website",
+   "publisher": "Diono, LLC",
+   "url": "https://store.diono.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Doona website",
+   "publisher": "Doona (Simple Parenting Ltd.)",
+   "url": "https://www.doona.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
    "automated_read": "yes"
   },
   {
@@ -2071,6 +2395,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "EPA Facility Registry Service: pesticide establishments (SSTS)",
+   "publisher": "US Environmental Protection Agency",
+   "url": "https://www.epa.gov/data",
+   "checked": "2026-11-20",
+   "due": "2027-11-20",
+   "automated_read": "yes"
+  },
+  {
    "source": "EPA Safer Choice product list",
    "publisher": "U.S. Environmental Protection Agency",
    "url": "https://www.epa.gov/saferchoice/products",
@@ -2084,6 +2416,14 @@
    "url": "https://www.epa.gov/web-policies-and-procedures/epa-disclaimers",
    "checked": "2026-11-10",
    "due": "2027-11-10",
+   "automated_read": "yes"
+  },
+  {
+   "source": "EPA pesticide program pages and manuals",
+   "publisher": "US Environmental Protection Agency",
+   "url": "https://www.epa.gov/web-policies-and-procedures",
+   "checked": "2026-11-20",
+   "due": "2027-11-20",
    "automated_read": "yes"
   },
   {
@@ -2111,6 +2451,14 @@
    "automated_read": "public-domain"
   },
   {
+   "source": "Evenflo website",
+   "publisher": "Evenflo Company, Inc.",
+   "url": "https://www.evenflo.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "yes"
+  },
+  {
    "source": "Exor press releases",
    "publisher": "Exor N.V.",
    "url": "https://www.exor.com/legal-notice",
@@ -2133,6 +2481,14 @@
    "checked": "2026-11-10",
    "due": "2027-11-10",
    "automated_read": "no"
+  },
+  {
+   "source": "FDA Interstate Milk Shippers List",
+   "publisher": "US Food and Drug Administration",
+   "url": "https://www.fda.gov/about-fda/about-website/website-policies",
+   "checked": "2026-11-20",
+   "due": "2027-11-20",
+   "automated_read": "yes"
   },
   {
    "source": "FDA recalls, market withdrawals and safety alerts (company announcements)",
@@ -2287,6 +2643,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "Gerber Gear website",
+   "publisher": "Gerber Gear (Portland, Oregon)",
+   "url": "https://gerbergear.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "yes"
+  },
+  {
    "source": "Golf Monthly",
    "publisher": "Future plc",
    "url": "https://www.golfmonthly.com/robots.txt",
@@ -2309,6 +2673,14 @@
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "ask"
+  },
+  {
+   "source": "Graco Baby website",
+   "publisher": "Graco (Newell Brands)",
+   "url": "https://www.gracobaby.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "no"
   },
   {
    "source": "Greenies website",
@@ -2340,6 +2712,14 @@
    "url": "https://www.happi.com/",
    "checked": "2026-11-07",
    "due": "2027-11-07",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Harbor Freight Tools: product manuals and quick-start guides",
+   "publisher": "Harbor Freight Tools",
+   "url": "https://www.harborfreight.com/terms-of-use",
+   "checked": "2026-11-20",
+   "due": "2027-11-20",
    "automated_read": "ask"
   },
   {
@@ -2503,6 +2883,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "International Association of Bedding and Furniture Labeling Officials (IABFLO)",
+   "publisher": "International Association of Bedding and Furniture Labeling Officials",
+   "url": "https://iabflo.org/",
+   "checked": "2026-11-20",
+   "due": "2027-11-20",
+   "automated_read": "yes"
+  },
+  {
    "source": "Interstate Batteries website",
    "publisher": "Interstate Batteries",
    "url": "https://www.interstatebatteries.com/robots.txt",
@@ -2533,6 +2921,30 @@
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "ask"
+  },
+  {
+   "source": "Just Auto",
+   "publisher": "GlobalData",
+   "url": "https://www.just-auto.com/",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "ask"
+  },
+  {
+   "source": "KA-BAR website",
+   "publisher": "KA-BAR Knives, Inc. (Olean, New York; owned by Cutco's parent)",
+   "url": "https://www.kabar.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Kai USA websites (Kershaw, Zero Tolerance, Shun)",
+   "publisher": "Kai USA Ltd. (Tualatin, Oregon; part of the Kai Group of Seki, Japan)",
+   "url": "https://kershaw.kaiusa.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "no"
   },
   {
    "source": "Kering Universal Registration Document",
@@ -2623,12 +3035,28 @@
    "automated_read": "yes"
   },
   {
+   "source": "Lamson website",
+   "publisher": "Lamson & Goodnow (Westfield, Massachusetts)",
+   "url": "https://lamsonproducts.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "no"
+  },
+  {
    "source": "Le Temps",
    "publisher": "Le Temps SA (Geneva daily)",
    "url": "https://www.letemps.ch/conditions-generales",
    "checked": "2026-11-17",
    "due": "2027-11-17",
    "automated_read": "no"
+  },
+  {
+   "source": "Leatherman website",
+   "publisher": "Leatherman Tool Group, Inc.",
+   "url": "https://www.leatherman.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "yes"
   },
   {
    "source": "Lexus newsroom",
@@ -2684,6 +3112,14 @@
    "url": "https://www.misaimports.com/robots.txt",
    "checked": "2026-11-08",
    "due": "2027-11-08",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Made In website",
+   "publisher": "Made In Cookware",
+   "url": "https://madeincookware.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
    "automated_read": "yes"
   },
   {
@@ -2799,6 +3235,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "Motor.es",
+   "publisher": "Motor.es",
+   "url": "https://www.motor.es/",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "ask"
+  },
+  {
    "source": "Motorcraft website",
    "publisher": "Ford Motor Company",
    "url": "https://www.motorcraft.com/robots.txt",
@@ -2820,6 +3264,14 @@
    "url": "https://www.nhtsa.gov/about-nhtsa/web-policies-notices",
    "checked": "2026-11-07",
    "due": "2027-11-07",
+   "automated_read": "no"
+  },
+  {
+   "source": "NHTSA car seat pages",
+   "publisher": "US National Highway Traffic Safety Administration",
+   "url": "https://www.nhtsa.gov/about-nhtsa/web-policies-notices",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
    "automated_read": "no"
   },
   {
@@ -2868,6 +3320,14 @@
    "url": "https://newmodernmom.com/",
    "checked": "2026-11-05",
    "due": "2027-11-05",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Niagara Bottling: its own water quality reports",
+   "publisher": "Niagara Bottling, LLC",
+   "url": "https://www.niagarawater.com/",
+   "checked": "2026-11-20",
+   "due": "2027-11-20",
    "automated_read": "ask"
   },
   {
@@ -2935,6 +3395,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "Nuna USA website",
+   "publisher": "Nuna Baby Essentials, Inc.",
+   "url": "https://nunababy.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "yes"
+  },
+  {
    "source": "ODYSSEY Battery website",
    "publisher": "ODYSSEY Battery",
    "url": "https://www.odysseybattery.com/robots.txt",
@@ -2956,6 +3424,14 @@
    "url": "https://georgia.gov/privacy-and-security",
    "checked": "2026-11-08",
    "due": "2027-11-08",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Ontario Knife Company website",
+   "publisher": "The Ontario Knife Company (brand owned by Blue Ridge Knives, Inc. since 2023)",
+   "url": "https://ontarioknife.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
    "automated_read": "yes"
   },
   {
@@ -2981,6 +3457,14 @@
    "checked": "2026-11-07",
    "due": "2027-11-07",
    "automated_read": "ask"
+  },
+  {
+   "source": "Peg Perego website and manuals",
+   "publisher": "Peg Perego S.p.A.",
+   "url": "https://www.pegperego.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "yes"
   },
   {
    "source": "PepsiCo newsroom",
@@ -3031,6 +3515,14 @@
    "automated_read": "no"
   },
   {
+   "source": "Rada Cutlery website",
+   "publisher": "Rada Mfg. Co. (Waverly, Iowa)",
+   "url": "https://www.radacutlery.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "yes"
+  },
+  {
    "source": "Radienz Living website",
    "publisher": "Radienz Living",
    "url": "https://www.radienzliving.com/",
@@ -3063,6 +3555,14 @@
    "automated_read": "no"
   },
   {
+   "source": "SEAT & CUPRA media centre",
+   "publisher": "SEAT S.A. (Volkswagen Group)",
+   "url": "https://www.seat-cupra-mediacenter.com/",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "yes"
+  },
+  {
    "source": "SEC EDGAR company filings",
    "publisher": "U.S. Securities and Exchange Commission (filings written by the company)",
    "url": "https://www.sec.gov/os/accessing-edgar-data",
@@ -3085,6 +3585,14 @@
    "checked": "2026-11-05",
    "due": "2027-11-05",
    "automated_read": "no"
+  },
+  {
+   "source": "Safety 1st website",
+   "publisher": "Dorel Juvenile Group (Safety 1st)",
+   "url": "https://safety1st.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "yes"
   },
   {
    "source": "Sam's Club website",
@@ -3135,6 +3643,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "Shawangunk Journal",
+   "publisher": "Shawangunk Journal (weekly, Ellenville, New York)",
+   "url": "https://archive.shawangunkjournal.com/",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "yes"
+  },
+  {
    "source": "ShopSavvy",
    "publisher": "ShopSavvy",
    "url": "https://shopsavvy.com/terms",
@@ -3180,6 +3696,14 @@
    "url": "https://splaitor.com/",
    "checked": "2026-11-12",
    "due": "2027-11-12",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Spyderco website",
+   "publisher": "Spyderco, Inc. (Golden, Colorado)",
+   "url": "https://spyderco.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
    "automated_read": "yes"
   },
   {
@@ -3303,6 +3827,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "The Chamberlain Group: owner's manuals for the garage door openers and remotes it makes",
+   "publisher": "The Chamberlain Group",
+   "url": "https://pdf.lowes.com/robots.txt",
+   "checked": "2026-11-20",
+   "due": "2027-11-20",
+   "automated_read": "yes"
+  },
+  {
    "source": "The Costco Connection",
    "publisher": "Costco Wholesale Corporation",
    "url": "https://www.costcoconnection.com/",
@@ -3420,6 +3952,14 @@
    "url": "https://www.usbattery.com/robots.txt",
    "checked": "2026-11-06",
    "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
+   "source": "UPPAbaby website and manuals",
+   "publisher": "UPPAbaby (Monahan Products LLC)",
+   "url": "https://uppababy.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
    "automated_read": "yes"
   },
   {
@@ -3575,6 +4115,14 @@
    "automated_read": "public-domain"
   },
   {
+   "source": "Victorinox website",
+   "publisher": "Victorinox AG (Ibach, Switzerland)",
+   "url": "https://www.victorinox.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "no"
+  },
+  {
    "source": "Volkswagen Group annual report",
    "publisher": "Volkswagen AG",
    "url": "https://annualreport2025.volkswagen-group.com/",
@@ -3607,6 +4155,14 @@
    "automated_read": "no"
   },
   {
+   "source": "WardsAuto",
+   "publisher": "Informa TechTarget",
+   "url": "https://www.wardsauto.com/",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "ask"
+  },
+  {
    "source": "Whirlpool Corporation technical manuals",
    "publisher": "Whirlpool Corporation",
    "url": "https://www.whirlpool.com/terms-of-use.html",
@@ -3631,12 +4187,28 @@
    "automated_read": "yes"
   },
   {
+   "source": "Wüsthof website",
+   "publisher": "WÜSTHOF KG (Solingen, Germany)",
+   "url": "https://wusthof.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "yes"
+  },
+  {
    "source": "Yokohama: tire life",
    "publisher": "Yokohama Tire Corporation",
    "url": "https://www.yokohamatire.com/terms-of-use",
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "ask"
+  },
+  {
+   "source": "Zwilling website",
+   "publisher": "ZWILLING J.A. Henckels (Solingen, Germany)",
+   "url": "https://www.zwilling.com/robots.txt",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
+   "automated_read": "yes"
   },
   {
    "source": "eBay listings (sellers' photos)",
@@ -3676,6 +4248,14 @@
    "url": "https://www.saturnpetcare.us/privacy-policy",
    "checked": "2026-11-03",
    "due": "2027-11-03",
+   "automated_read": "yes"
+  },
+  {
+   "source": "smart media site",
+   "publisher": "smart Automobile Co., Ltd.",
+   "url": "https://media.smart.com/",
+   "checked": "2026-11-19",
+   "due": "2027-11-19",
    "automated_read": "yes"
   }
  ],
@@ -11071,6 +11651,66 @@
    "page": "/kirkland-signature/"
   },
   {
+   "id": "c-ks-bottled-water-niagara",
+   "product": "ks-bottled-water",
+   "stamp": "reported",
+   "next_check": "2027-05-20",
+   "last_check": "2026-11-20",
+   "name": "Kirkland Signature bottled water",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-signature/"
+  },
+  {
+   "id": "c-ks-gin-frank-lin",
+   "product": "ks-gin",
+   "stamp": "documented",
+   "next_check": "2027-05-20",
+   "last_check": "2026-11-20",
+   "name": "Kirkland Signature gin",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-signature/"
+  },
+  {
+   "id": "c-ks-gin-meiers",
+   "product": "ks-gin",
+   "stamp": "documented",
+   "next_check": "2027-05-20",
+   "last_check": "2026-11-20",
+   "name": "Kirkland Signature gin",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-signature/"
+  },
+  {
+   "id": "c-ks-gin-oneill",
+   "product": "ks-gin",
+   "stamp": "documented",
+   "next_check": "2027-05-20",
+   "last_check": "2026-11-20",
+   "name": "Kirkland Signature gin",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-signature/"
+  },
+  {
+   "id": "c-ks-gin-tennessee",
+   "product": "ks-gin",
+   "stamp": "documented",
+   "next_check": "2027-05-20",
+   "last_check": "2026-11-20",
+   "name": "Kirkland Signature gin",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-signature/"
+  },
+  {
+   "id": "c-ks-irish-whiskey-misa",
+   "product": "ks-irish-whiskey",
+   "stamp": "documented",
+   "next_check": "2027-05-20",
+   "last_check": "2026-11-20",
+   "name": "Kirkland Signature Irish whiskey",
+   "brand": "kirkland-signature",
+   "page": "/kirkland-signature/"
+  },
+  {
    "id": "c-ks-beef-hot-dogs-tracy",
    "product": "ks-beef-hot-dogs",
    "stamp": "confirmed",
@@ -11156,7 +11796,7 @@
   },
   {
    "path": "/usda-establishment-number-lookup/",
-   "changed": "2026-11-02",
+   "changed": "2026-11-20",
    "next": "2026-12-02",
    "tasks": [
     {
@@ -11292,7 +11932,7 @@
   },
   {
    "path": "/kirkland-signature/",
-   "changed": "2026-11-14",
+   "changed": "2026-11-20",
    "next": "2026-11-22",
    "tasks": [
     {
@@ -11329,6 +11969,11 @@
      "id": "openfda-leads",
      "what": "FDA recall records that mention store brands",
      "due": "2026-11-23"
+    },
+    {
+     "id": "walmart-10k-sams-club",
+     "what": "Walmart's 10-K: Sam's Club as a Walmart segment",
+     "due": "2027-03-31"
     }
    ],
    "claims": 131,
@@ -11512,7 +12157,7 @@
   },
   {
    "path": "/kirkland-signature/motor-oil/",
-   "changed": "2026-11-08",
+   "changed": "2026-11-20",
    "next": "2027-04-05",
    "tasks": [
     {
@@ -11615,7 +12260,7 @@
   },
   {
    "path": "/store-brand-motor-oil/",
-   "changed": "2026-11-05",
+   "changed": "2026-11-20",
    "next": "2027-04-05",
    "tasks": [
     {
@@ -11629,7 +12274,7 @@
   },
   {
    "path": "/makers/",
-   "changed": "2026-11-16",
+   "changed": "2026-11-20",
    "next": "2026-12-03",
    "tasks": [
     {
@@ -11675,7 +12320,7 @@
   },
   {
    "path": "/makers/highline-warren/",
-   "changed": "2026-11-09",
+   "changed": "2026-11-20",
    "next": "2026-12-03",
    "tasks": [
     {
@@ -11834,7 +12479,7 @@
   },
   {
    "path": "/how-we-know/",
-   "changed": "2026-11-18",
+   "changed": "2026-11-20",
    "next": "2026-12-08",
    "tasks": [],
    "claims": null,
@@ -11842,7 +12487,7 @@
   },
   {
    "path": "/sources/",
-   "changed": "2026-11-18",
+   "changed": "2026-11-20",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -11850,7 +12495,7 @@
   },
   {
    "path": "/corrections/",
-   "changed": "2026-11-16",
+   "changed": "2026-11-20",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -11858,7 +12503,7 @@
   },
   {
    "path": "/data/",
-   "changed": "2026-11-19",
+   "changed": "2026-11-20",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -11920,7 +12565,7 @@
   },
   {
    "path": "/makers/misa-imports/",
-   "changed": "2026-11-08",
+   "changed": "2026-11-20",
    "next": "2026-11-22",
    "tasks": [
     {
@@ -11934,9 +12579,9 @@
      "due": "2026-11-22"
     }
    ],
-   "claims": 2,
+   "claims": 3,
    "stamps": {
-    "documented": 2
+    "documented": 3
    }
   },
   {
@@ -11983,7 +12628,7 @@
   },
   {
    "path": "/home/",
-   "changed": "2026-11-18",
+   "changed": "2026-11-20",
    "next": "2026-11-23",
    "tasks": [
     {
@@ -12002,7 +12647,7 @@
   },
   {
    "path": "/about/",
-   "changed": "2026-11-19",
+   "changed": "2026-11-20",
    "next": "2027-11-08",
    "tasks": [
     {
@@ -12217,6 +12862,11 @@
      "id": "craftsman-records",
      "what": "Craftsman records: California charger register, CPSC recalls and Stanley Black & Decker's newest SEC report",
      "due": "2026-12-10"
+    },
+    {
+     "id": "craftsman-com-origin",
+     "what": "craftsman.com: where Craftsman says each product is made",
+     "due": "2027-05-20"
     }
    ],
    "claims": 0,
@@ -12755,6 +13405,105 @@
      "id": "made-in-usa-reads",
      "what": "Made in USA: the FTC's Made in USA cases and closing letters, its rule and guide, NHTSA's parts report and the vodka label approvals",
      "due": "2026-12-18"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/knives-made-in-usa/",
+   "changed": "2026-11-19",
+   "next": "2026-12-19",
+   "tasks": [
+    {
+     "id": "knives-maker-pages",
+     "what": "Knife makers' own pages on where they make knives (Benchmade, Case, Cutco, Zero Tolerance, Kershaw, Buck, Gerber, Spyderco, Leatherman, KA-BAR, Ontario, Lamson, Dexter-Russell, Rada, and the brands made abroad), and the USA-made catalogue counts at Spyderco, Gerber, Kershaw and Ontario",
+     "due": "2026-12-19"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/car-seat-expiration/",
+   "changed": "2026-11-19",
+   "next": "2027-02-17",
+   "tasks": [
+    {
+     "id": "carseat-maker-pages",
+     "what": "Car seat makers' own pages and US manuals on how long their seats last (Graco, Evenflo, Britax, Chicco, Nuna, Clek, CYBEX, Safety 1st, Diono, UPPAbaby, Peg Perego, Doona, Baby Trend), NHTSA's after-crash page, and the federal label rule (49 CFR 571.213)",
+     "due": "2027-02-17"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/chinese-car-brands-uk/",
+   "changed": "2026-11-19",
+   "next": "2027-02-17",
+   "tasks": [
+    {
+     "id": "cncars-uk-filings",
+     "what": "Chinese car brands in the UK: each UK selling company's Companies House accounts, register of significant control and filing history (MG, BYD, Omoda & Jaecoo, Xpeng, IM Group's GWM company, Changan, Polestar, Volvo, Lotus, Geely); the XPeng, Stellantis, Polestar and Lotus 20-Fs; CUPRA's and smart's pages; and the trade-press plant reports",
+     "due": "2027-02-17"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/milk-plant-code-lookup/",
+   "changed": "2026-11-20",
+   "next": "2026-12-20",
+   "tasks": [
+    {
+     "id": "fda-ims",
+     "what": "FDA Interstate Milk Shippers List",
+     "due": "2026-12-20"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/epa-establishment-number-lookup/",
+   "changed": "2026-11-20",
+   "next": "2027-02-18",
+   "tasks": [
+    {
+     "id": "epa-ssts",
+     "what": "EPA pesticide establishments (the facility registry's copy of EPA's pesticide tracking system)",
+     "due": "2027-02-18"
+    },
+    {
+     "id": "epa-label-rules",
+     "what": "EPA's pages on establishment numbers and its label review manual (chapter 14)",
+     "due": "2027-11-20"
+    },
+    {
+     "id": "federal-rule-texts",
+     "what": "Federal rule texts behind our code pages",
+     "due": "2027-11-06"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/mattress-law-tag/",
+   "changed": "2026-11-20",
+   "next": "2027-05-21",
+   "tasks": [
+    {
+     "id": "mattress-tag-rules",
+     "what": "The bedding officials' (IABFLO) pages on registration numbers and their sample law tag",
+     "due": "2027-05-21"
+    },
+    {
+     "id": "federal-rule-texts",
+     "what": "Federal rule texts behind our code pages",
+     "due": "2027-11-06"
     }
    ],
    "claims": 0,

@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-16",
+ "generated": "2026-11-20",
  "count": 14,
  "rows": [
   {
@@ -146,14 +146,14 @@
    "website": "https://www.misaimports.com/",
    "category": "Wine and spirits",
    "about": "Dallas importer whose permit is on more Kirkland label approvals than any other in TTB’s registry",
-   "kirkland_claims": 2,
-   "kirkland_products": 2,
+   "kirkland_claims": 3,
+   "kirkland_products": 3,
    "register_other_companies": "",
    "fda_recalls": "",
    "fda_recall_store_names": "",
    "plants": 0,
    "page": "https://whoactuallymakes.com/makers/misa-imports/",
-   "last_checked": "2026-11-08",
+   "last_checked": "2026-11-20",
    "next_check": "2027-02-08"
   },
   {

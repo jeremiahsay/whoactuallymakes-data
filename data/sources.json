@@ -1,9 +1,9 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-18",
- "count": 254,
- "primary": 193,
- "by_hand": 43,
+ "generated": "2026-11-20",
+ "count": 305,
+ "primary": 234,
+ "by_hand": 50,
  "sources": [
   {
    "id": "api-eolcs",
@@ -77,6 +77,11 @@
      "label": "Where is Chanel made?",
      "url": "/where-is-chanel-made/",
      "note": "Chanel Limited's 2025 group accounts: its makers, watches, investment and governance"
+    },
+    {
+     "label": "Chinese car brands in the UK",
+     "url": "/chinese-car-brands-uk/",
+     "note": "Each UK selling company's accounts, register of significant control and filing history"
     }
    ],
    "pulls": [
@@ -101,6 +106,56 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Chanel's UK accounts are read each year when they are filed at Companies House, and the list of makers it owns updated."
+    },
+    {
+     "what": "Chinese car brands in the UK: each UK selling company's Companies House accounts, register of significant control and filing history (MG, BYD, Omoda & Jaecoo, Xpeng, IM Group's GWM company, Changan, Polestar, Volvo, Lotus, Geely); the XPeng, Stellantis, Polestar and Lotus 20-Fs; CUPRA's and smart's pages; and the trade-press plant reports",
+     "how": "script",
+     "every_days": 90,
+     "last": "2026-11-19",
+     "due": "2027-02-17",
+     "result": "33 records read and saved on 19 Nov 2026 (scanned accounts read by OCR, five checked by eye against the page); every owner, UK company and plant checked against its saved copy by tools/build_chinese_cars_uk.py.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Companies House pages and the SEC are read by script, one document at a time with a declared user agent. The scanned accounts are read by OCR; quotes on the page were matched against that text, and the pages behind the MG, Omoda & Jaecoo, Xpeng, Lotus and Volvo quotes were checked by eye. Trade-press plant reports are labelled as reports. Re-read every three months, and when a UK company files a change of owner."
+    }
+   ]
+  },
+  {
+   "id": "epa-frs",
+   "name": "EPA Facility Registry Service: pesticide establishments (SSTS)",
+   "short": "EPA facility registry",
+   "publisher": "US Environmental Protection Agency",
+   "url": "https://www.epa.gov/frs",
+   "kind": "Government registry",
+   "primary": true,
+   "proves": "Which site holds an EPA pesticide establishment number, with the name and address EPA has for it.",
+   "cannot_prove": "Whether the site is still active (EPA's active list is separate), which products it makes, or who owns the brand on a label.",
+   "terms": {
+    "url": "https://www.epa.gov/data",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-20",
+    "due": "2027-11-20"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "EPA establishment number lookup",
+     "url": "/epa-establishment-number-lookup/",
+     "note": "Every establishment number in EPA's registry"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "EPA pesticide establishments (the facility registry's copy of EPA's pesticide tracking system)",
+     "how": "script",
+     "every_days": 90,
+     "last": "2026-11-20",
+     "due": "2027-02-18",
+     "result": "27,570 entries; first pull",
+     "edition": null,
+     "file_url": "https://data.epa.gov/efservice/frs.frs_program_facility/pgm_sys_acrnm/equals/SSTS/0:9999/CSV",
+     "hand_note": "Read from EPA's facility registry every three months. The loader stops if a number doesn't fit EPA's pattern or the count jumps."
     }
    ]
   },
@@ -127,6 +182,11 @@
      "label": "FCC ID lookup",
      "url": "/fcc-id-lookup/",
      "note": "Whose grantee code an FCC ID starts with"
+    },
+    {
+     "label": "Who makes store-brand power tools",
+     "url": "/store-brand-tools/#icon",
+     "note": "Whose grantee code is on the Icon T10 scanner's FCC ID"
     }
    ],
    "pulls": [
@@ -643,6 +703,50 @@
    ]
   },
   {
+   "id": "maker-craftsman",
+   "name": "CRAFTSMAN brand website (Stanley Black & Decker)",
+   "short": "Craftsman",
+   "publisher": "Stanley Black & Decker",
+   "url": "https://www.craftsman.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What the brand's owner says about Craftsman products in its own words, such as the warranty it gives.",
+   "cannot_prove": "Who built a given Craftsman product. Some product pages name a US town where the product was made, but none name a factory owner or supplier.",
+   "terms": {
+    "url": "https://www.craftsman.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-10",
+    "due": "2027-11-10"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Craftsman tools and mowers",
+     "url": "/craftsman/",
+     "note": "The warranty terms for hand tools and older Sears-era model numbers"
+    },
+    {
+     "label": "Who makes Craftsman tools and mowers",
+     "url": "/craftsman/#usa",
+     "note": "Where each product page says the product is made"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "craftsman.com: where Craftsman says each product is made",
+     "how": "hand",
+     "every_days": 182,
+     "last": "2026-11-20",
+     "due": "2027-05-20",
+     "result": "2,119 of 2,128 pages read: 80 made in USA (49 tool storage), 102 list a country (93 Taiwan), 1,937 say neither",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Every six months we re-read all of Craftsman's product pages for where each one says it's made, and update the counts."
+    }
+   ]
+  },
+  {
    "id": "cec-maedbs",
    "name": "California Energy Commission Modernized Appliance Efficiency Database System (MAEDbS)",
    "short": "California appliance register (MAEDbS)",
@@ -1106,6 +1210,44 @@
    ]
   },
   {
+   "id": "epa-pesticides",
+   "name": "EPA pesticide program pages and manuals",
+   "short": "EPA pesticide program",
+   "publisher": "US Environmental Protection Agency",
+   "url": "https://www.epa.gov/pesticides",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "How EPA numbers pesticide companies, products and establishments, and what EPA says each number means.",
+   "cannot_prove": "Who made a given product: only its label's establishment number, read against EPA's list, points to the site.",
+   "terms": {
+    "url": "https://www.epa.gov/web-policies-and-procedures",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-20",
+    "due": "2027-11-20"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "EPA establishment number lookup",
+     "url": "/epa-establishment-number-lookup/"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "EPA's pages on establishment numbers and its label review manual (chapter 14)",
+     "how": "hand",
+     "every_days": 365,
+     "last": "2026-11-20",
+     "due": "2027-11-20",
+     "result": "4 rule texts on file",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Re-read EPA's establishment Q&A, its active-establishments page and chapter 14 of the Label Review Manual; check each saved quote still stands and log any change on the corrections page."
+    }
+   ]
+  },
+  {
    "id": "ecfr",
    "name": "Electronic Code of Federal Regulations",
    "short": "Federal rules (eCFR)",
@@ -1166,6 +1308,16 @@
      "label": "Made in USA: 16 CFR 323 and the spirits name-and-address rules",
      "url": "/made-in-usa/",
      "note": "16 CFR 323.2 and 323.5; 27 CFR 5.66 and 5.67."
+    },
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "19 CFR 134.43: how imported knives must be marked"
+    },
+    {
+     "label": "Car seat expiration",
+     "url": "/car-seat-expiration/",
+     "note": "49 CFR 571.213: the month and year a car seat was made, on its label"
     }
    ],
    "pulls": [
@@ -1175,10 +1327,49 @@
      "every_days": 365,
      "last": "2026-11-06",
      "due": "2027-11-06",
-     "result": "34 rule texts on file",
+     "result": "39 rule texts on file",
      "edition": null,
      "file_url": null,
      "hand_note": "Re-read each rule on the eCFR, check our short quote still stands, and log any change on the corrections page."
+    }
+   ]
+  },
+  {
+   "id": "fda-ims",
+   "name": "FDA Interstate Milk Shippers List",
+   "short": "FDA IMS List",
+   "publisher": "US Food and Drug Administration",
+   "url": "https://www.fda.gov/food/federal-state-local-tribal-and-territorial-cooperative-human-food-programs/interstate-milk-shippers-list",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "Which dairy plants, receiving stations and farm groups state milk regulators have rated for interstate shipping, with each plant's state code, plant number, place and the products it is rated for.",
+   "cannot_prove": "Which brands a plant fills, or that a given carton came from it unless the carton prints the plant's code. Plants that ship only within their own state need not be on the list.",
+   "terms": {
+    "url": "https://www.fda.gov/about-fda/about-website/website-policies",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-20",
+    "due": "2027-11-20"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Milk plant code lookup",
+     "url": "/milk-plant-code-lookup/",
+     "note": "Every carton code on the list, read each quarter"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "FDA Interstate Milk Shippers List",
+     "how": "script",
+     "every_days": 30,
+     "last": "2026-11-20",
+     "due": "2026-12-20",
+     "result": "2,561 entries; first pull",
+     "edition": "2026-10-01",
+     "file_url": "https://www.fda.gov/food/federal-state-local-tribal-and-territorial-cooperative-human-food-programs/interstate-milk-shippers-list",
+     "hand_note": "We check FDA's page for a new edition of the list every month and load it automatically. The loader stops if any line can't be read."
     }
    ]
   },
@@ -1227,6 +1418,45 @@
    ]
   },
   {
+   "id": "maker-graco",
+   "name": "Graco Baby website",
+   "short": "Graco",
+   "publisher": "Graco (Newell Brands)",
+   "url": "https://www.gracobaby.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How long the maker says its car seats last, and what it counts from, in its own words on the date we read it.",
+   "cannot_prove": "The date on your seat. The label and the manual that came with it decide; a maker can change its rule for newer seats.",
+   "terms": {
+    "url": "https://www.gracobaby.com/robots.txt",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Car seat expiration",
+     "url": "/car-seat-expiration/",
+     "note": "Graco's car seat expiration page: 10 or 7 years by belt path"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Car seat makers' own pages and US manuals on how long their seats last (Graco, Evenflo, Britax, Chicco, Nuna, Clek, CYBEX, Safety 1st, Diono, UPPAbaby, Peg Perego, Doona, Baby Trend), NHTSA's after-crash page, and the federal label rule (49 CFR 571.213)",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-19",
+     "due": "2027-02-17",
+     "result": "30 records read and saved on 19 Nov 2026; every maker line, label place and Graco's worked example checked against the saved copy by tools/build_car_seat.py, and 65 calculator checks passed.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The car seat makers' own pages and manuals, and NHTSA's crash page, are re-read every three months."
+    }
+   ]
+  },
+  {
    "id": "maker-honda",
    "name": "Honda owner's manuals",
    "short": "Honda",
@@ -1262,6 +1492,44 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Honda: read the 2026 CR-V manual on Honda’s own server (still down for maintenance on Nov 12, its third failed read; the table uses an archived 2024 copy, and the Internet Archive holds no 2026 copy). Toyota: see whether toyota.com has posted a 2026 RAV4 owner’s manual (none on Nov 12); the 2025 manual was re-read live on Nov 12 and still says the same. Nissan done Nov 4: the live 2026 Rogue manual says the same as 2024."
+    }
+   ]
+  },
+  {
+   "id": "iabflo",
+   "name": "International Association of Bedding and Furniture Labeling Officials (IABFLO)",
+   "short": "IABFLO",
+   "publisher": "International Association of Bedding and Furniture Labeling Officials",
+   "url": "https://iabflo.org/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "How the state officials who enforce bedding law labels read them, e.g. the Uniform Registration Number system and the sample law label.",
+   "cannot_prove": "What any one state's law requires (each state's own statute decides), or who made a given mattress.",
+   "terms": {
+    "url": "https://iabflo.org/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-20",
+    "due": "2027-11-20"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Mattress law tag",
+     "url": "/mattress-law-tag/"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "The bedding officials' (IABFLO) pages on registration numbers and their sample law tag",
+     "how": "hand",
+     "every_days": 182,
+     "last": "2026-11-20",
+     "due": "2027-05-21",
+     "result": "4 rule texts on file",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The bedding officials' pages are re-read twice a year."
     }
    ]
   },
@@ -1834,6 +2102,16 @@
      "label": "Who owns Jeep, Dodge and Ram?",
      "url": "/who-owns-jeep-dodge-and-ram/",
      "note": "Stellantis's 2025 20-F, Chrysler Group's 2013 10-K and S-1, and DaimlerChrysler's filings: who has owned Jeep, Dodge, Ram and Chrysler since 1998"
+    },
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "Servotronics on the Ontario Knife sale; American Outdoor Brands on Old Timer and Schrade"
+    },
+    {
+     "label": "Chinese car brands in the UK",
+     "url": "/chinese-car-brands-uk/",
+     "note": "The Xpeng, Stellantis, Polestar and Lotus 20-Fs: control and plants"
     }
    ],
    "pulls": [
@@ -1979,6 +2257,17 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Capri's annual report is read each June after it is filed."
+    },
+    {
+     "what": "Walmart's 10-K: Sam's Club as a Walmart segment",
+     "how": "hand",
+     "every_days": 365,
+     "last": "2026-11-20",
+     "due": "2027-03-31",
+     "result": "Three segments incl. Sam's Club U.S.; 601 clubs; $93.0 billion, 13% of fiscal 2026 net sales",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Each spring, after Walmart files its annual report, a person re-reads the segment description and updates the club count and sales figures."
     }
    ]
   },
@@ -2034,6 +2323,45 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Sam's Club's site can't be read automatically, so we save the page in a browser after each offer ends."
+    }
+   ]
+  },
+  {
+   "id": "maker-spyderco",
+   "name": "Spyderco website",
+   "short": "Spyderco",
+   "publisher": "Spyderco, Inc. (Golden, Colorado)",
+   "url": "https://spyderco.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its knives, in its own words, on the date we read it. Also how many knives its USA-Made collection lists.",
+   "cannot_prove": "Where any one knife in your hand was made: check the blade or the box.",
+   "terms": {
+    "url": "https://spyderco.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "Spyderco's home and about pages, and its USA-Made Knives collection count"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Knife makers' own pages on where they make knives (Benchmade, Case, Cutco, Zero Tolerance, Kershaw, Buck, Gerber, Spyderco, Leatherman, KA-BAR, Ontario, Lamson, Dexter-Russell, Rada, and the brands made abroad), and the USA-made catalogue counts at Spyderco, Gerber, Kershaw and Ontario",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-19",
+     "due": "2026-12-19",
+     "result": "33 records read and saved on 19 Nov 2026; every quote, town, count, history line and Case dating row checked against the saved copy by tools/build_knives_usa.py.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The knife makers' own pages and their USA-made catalogue counts are re-read every month."
     }
    ]
   },
@@ -2677,6 +3005,33 @@
    "pulls": []
   },
   {
+   "id": "acme-united-press",
+   "name": "Acme United press releases",
+   "short": "Acme United",
+   "publisher": "Acme United Corporation",
+   "url": "https://acmeunited.gcs-web.com/",
+   "kind": "Other",
+   "primary": true,
+   "proves": "What Acme United announced about its own purchases, on the date it announced them.",
+   "cannot_prove": "Where Camillus knives sold today are made: the 2007 release is about buying the brand.",
+   "terms": {
+    "url": "https://acmeunited.gcs-web.com/",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "Acme United buys the Camillus name after the factory closed, 2007"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "acura-newsroom",
    "name": "Acura newsroom",
    "short": "Acura newsroom",
@@ -2782,6 +3137,33 @@
    "pulls": []
   },
   {
+   "id": "auto-express",
+   "name": "Auto Express",
+   "short": "Auto Express",
+   "publisher": "Autovia",
+   "url": "https://www.autoexpress.co.uk/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the publication reported, and when.",
+   "cannot_prove": "That the report is right, or still current. We use it only where no filing or maker page we read names the plant, and say so.",
+   "terms": {
+    "url": "https://www.autoexpress.co.uk/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Chinese car brands in the UK",
+     "url": "/chinese-car-brands-uk/",
+     "note": "A plant or a UK sales change no filing we read covers"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "autoguide",
    "name": "AutoGuide",
    "short": "AutoGuide",
@@ -2804,6 +3186,33 @@
      "label": "Who makes Acura?",
      "url": "/who-makes-acura/",
      "note": "Where Acura models are built"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "autocar",
+   "name": "Autocar",
+   "short": "Autocar",
+   "publisher": "Haymarket Media Group",
+   "url": "https://www.autocar.co.uk/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the publication reported, and when.",
+   "cannot_prove": "That the report is right, or still current. We use it only where no filing or maker page we read names the plant, and say so.",
+   "terms": {
+    "url": "https://www.autocar.co.uk/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Chinese car brands in the UK",
+     "url": "/chinese-car-brands-uk/",
+     "note": "A plant or a UK sales change no filing we read covers"
     }
    ],
    "pulls": []
@@ -2858,6 +3267,33 @@
      "label": "Who owns which car brands?",
      "url": "/who-owns-which-car-brands/",
      "note": "Owners and shareholdings"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-babytrend",
+   "name": "Baby Trend website",
+   "short": "Baby Trend",
+   "publisher": "Baby Trend, Inc.",
+   "url": "https://babytrend.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How long the maker says its car seats last, and what it counts from, in its own words on the date we read it.",
+   "cannot_prove": "The date on your seat. The label and the manual that came with it decide; a maker can change its rule for newer seats.",
+   "terms": {
+    "url": "https://babytrend.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Car seat expiration",
+     "url": "/car-seat-expiration/",
+     "note": "Baby Trend's car seat safety page: about 6 years"
     }
    ],
    "pulls": []
@@ -2944,6 +3380,33 @@
    "pulls": []
   },
   {
+   "id": "maker-benchmade",
+   "name": "Benchmade website",
+   "short": "Benchmade",
+   "publisher": "Benchmade Knife Company",
+   "url": "https://www.benchmade.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its knives, in its own words, on the date we read it.",
+   "cannot_prove": "Where any one knife in your hand was made: check the blade or the box.",
+   "terms": {
+    "url": "https://www.benchmade.com/robots.txt",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "Benchmade's home page: every knife made in Oregon City"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "bisnow",
    "name": "Bisnow",
    "short": "Bisnow",
@@ -3025,6 +3488,87 @@
    "pulls": []
   },
   {
+   "id": "maker-britax",
+   "name": "Britax US website",
+   "short": "Britax",
+   "publisher": "Britax Child Safety, Inc.",
+   "url": "https://us.britax.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How long the maker says its car seats last, and what it counts from, in its own words on the date we read it.",
+   "cannot_prove": "The date on your seat. The label and the manual that came with it decide; a maker can change its rule for newer seats.",
+   "terms": {
+    "url": "https://us.britax.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Car seat expiration",
+     "url": "/car-seat-expiration/",
+     "note": "Britax's expiration guide by model, and its expiration FAQ"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-buck",
+   "name": "Buck Knives website",
+   "short": "Buck",
+   "publisher": "Buck Knives, Inc.",
+   "url": "https://www.buckknives.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its knives, in its own words, on the date we read it.",
+   "cannot_prove": "Where Buck's knives outside its USA-made collection are made: the pages we read don't say.",
+   "terms": {
+    "url": "https://www.buckknives.com/robots.txt",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "Buck's American Made Pocket Knives collection"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "car-magazine",
+   "name": "CAR magazine",
+   "short": "CAR",
+   "publisher": "H Bauer Publishing",
+   "url": "https://www.carmagazine.co.uk/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the publication reported, and when.",
+   "cannot_prove": "That the report is right, or still current. We use it only where no filing or maker page we read names the plant, and say so.",
+   "terms": {
+    "url": "https://www.carmagazine.co.uk/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Chinese car brands in the UK",
+     "url": "/chinese-car-brands-uk/",
+     "note": "A plant or a UK sales change no filing we read covers"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "cnbc",
    "name": "CNBC",
    "short": "CNBC",
@@ -3046,28 +3590,109 @@
    "pulls": []
   },
   {
-   "id": "maker-craftsman",
-   "name": "CRAFTSMAN brand website (Stanley Black & Decker)",
-   "short": "Craftsman",
-   "publisher": "Stanley Black & Decker",
-   "url": "https://www.craftsman.com/",
+   "id": "maker-cybex",
+   "name": "CYBEX US website",
+   "short": "Cybex",
+   "publisher": "CYBEX GmbH (US site)",
+   "url": "https://www.cybex-online.com/en/us/",
    "kind": "Maker's own words",
    "primary": true,
-   "proves": "What the brand's owner says about Craftsman products in its own words, such as the warranty it gives.",
-   "cannot_prove": "Who built a given Craftsman product. The site names no factories or suppliers.",
+   "proves": "How long the maker says its car seats last, and what it counts from, in its own words on the date we read it.",
+   "cannot_prove": "The date on your seat. The label and the manual that came with it decide; a maker can change its rule for newer seats.",
    "terms": {
-    "url": "https://www.craftsman.com/robots.txt",
+    "url": "https://www.cybex-online.com/robots.txt",
     "read": "Open license. We read it with a script.",
     "automated": true,
-    "checked": "2026-11-10",
-    "due": "2027-11-10"
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
    },
    "credit": null,
    "used_for": [
     {
-     "label": "Who makes Craftsman tools and mowers",
-     "url": "/craftsman/",
-     "note": "The warranty terms for hand tools and older Sears-era model numbers"
+     "label": "Car seat expiration",
+     "url": "/car-seat-expiration/",
+     "note": "CYBEX's safety FAQ (6 to 10 years) and model pages"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "ca-leginfo",
+   "name": "California Legislative Information",
+   "short": "California law",
+   "publisher": "State of California (Legislative Counsel)",
+   "url": "https://leginfo.legislature.ca.gov/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What a California statute says, in its official text.",
+   "cannot_prove": "Whether any one product meets it, or how a court applied it.",
+   "terms": {
+    "url": "https://leginfo.legislature.ca.gov/faces/home.xhtml",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "Business and Professions Code 17533.7: California's 5% and 10% Made in USA rule"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "carnewschina",
+   "name": "CarNewsChina",
+   "short": "CarNewsChina",
+   "publisher": "CarNewsChina",
+   "url": "https://carnewschina.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the publication reported, and when.",
+   "cannot_prove": "That the report is right, or still current. We use it only where no filing or maker page we read names the plant, and say so.",
+   "terms": {
+    "url": "https://carnewschina.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Chinese car brands in the UK",
+     "url": "/chinese-car-brands-uk/",
+     "note": "A plant or a UK sales change no filing we read covers"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-case",
+   "name": "Case Knives website and knowledge base",
+   "short": "Case",
+   "publisher": "W.R. Case & Sons Cutlery Co.",
+   "url": "https://caseknives.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its knives, in its own words, on the date we read it. Also Case's own guide to dating its tang stamps.",
+   "cannot_prove": "Where any one knife in your hand was made: check the blade or the box.",
+   "terms": {
+    "url": "https://caseknives.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "Case's production answer and its tang-stamp dating guide"
     }
    ],
    "pulls": []
@@ -3148,6 +3773,60 @@
    "pulls": []
   },
   {
+   "id": "maker-chicco",
+   "name": "Chicco USA website",
+   "short": "Chicco",
+   "publisher": "Artsana USA, Inc. (Chicco)",
+   "url": "https://www.chiccousa.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How long the maker says its car seats last, and what it counts from, in its own words on the date we read it. Also what Chicco says about the 2026 standards and crashes.",
+   "cannot_prove": "The date on your seat. The label and the manual that came with it decide; a maker can change its rule for newer seats.",
+   "terms": {
+    "url": "https://www.chiccousa.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Car seat expiration",
+     "url": "/car-seat-expiration/",
+     "note": "Chicco's lifespan range, crash advice and the new standards"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "chinaevhome",
+   "name": "ChinaEVHome",
+   "short": "ChinaEVHome",
+   "publisher": "ChinaEVHome",
+   "url": "https://chinaevhome.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the publication reported, and when.",
+   "cannot_prove": "That the report is right, or still current. We use it only where no filing or maker page we read names the plant, and say so.",
+   "terms": {
+    "url": "https://chinaevhome.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Chinese car brands in the UK",
+     "url": "/chinese-car-brands-uk/",
+     "note": "A plant or a UK sales change no filing we read covers"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "louboutin-com",
    "name": "Christian Louboutin client FAQ",
    "short": "Louboutin FAQ",
@@ -3197,6 +3876,33 @@
      "label": "Who makes EverStart batteries",
      "url": "/everstart/",
      "note": "The EverStart warranty sheet Walmart links to"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-clek",
+   "name": "Clek website",
+   "short": "Clek",
+   "publisher": "Clek Inc. (Toronto, Canada)",
+   "url": "https://clekinc.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How long the maker says its car seats last, and what it counts from, in its own words on the date we read it.",
+   "cannot_prove": "The date on your seat. The label and the manual that came with it decide; a maker can change its rule for newer seats.",
+   "terms": {
+    "url": "https://clekinc.com/robots.txt",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Car seat expiration",
+     "url": "/car-seat-expiration/",
+     "note": "Clek's product pages: 9-year expiration on Liing, Fllo, Foonf and Oobr"
     }
    ],
    "pulls": []
@@ -3454,6 +4160,33 @@
    "pulls": []
   },
   {
+   "id": "maker-cutco",
+   "name": "Cutco website",
+   "short": "Cutco",
+   "publisher": "Cutco Corporation (Olean, New York)",
+   "url": "https://www.cutco.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its knives, in its own words, on the date we read it.",
+   "cannot_prove": "Where Cutco's products other than knives are made: the page we read is about knives.",
+   "terms": {
+    "url": "https://www.cutco.com/robots.txt",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "Cutco's American Made page"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "doe-ccd",
    "name": "DOE Compliance Certification Database",
    "short": "DOE certification database",
@@ -3535,6 +4268,33 @@
    "pulls": []
   },
   {
+   "id": "maker-dexter-russell",
+   "name": "Dexter-Russell website",
+   "short": "Dexter-Russell",
+   "publisher": "Dexter-Russell, Inc. (Southbridge, Massachusetts)",
+   "url": "https://www.dexter1818.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its knives, in its own words, on the date we read it.",
+   "cannot_prove": "Which Dexter knives are among the ones not made in Massachusetts: the page says \"the vast majority\" without naming the rest.",
+   "terms": {
+    "url": "https://www.dexter1818.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "Dexter-Russell's home page"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-diamond-pet",
    "name": "Diamond Pet Foods company website",
    "short": "Diamond Pet Foods",
@@ -3553,6 +4313,60 @@
    },
    "credit": null,
    "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "maker-diono",
+   "name": "Diono store website",
+   "short": "Diono",
+   "publisher": "Diono, LLC",
+   "url": "https://store.diono.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How long the maker says its car seats last, and what it counts from, in its own words on the date we read it.",
+   "cannot_prove": "The date on your seat. The label and the manual that came with it decide; a maker can change its rule for newer seats. Diono's Radian counts from the purchase date.",
+   "terms": {
+    "url": "https://store.diono.com/robots.txt",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Car seat expiration",
+     "url": "/car-seat-expiration/",
+     "note": "Diono's Radian 3RXT SafePlus Max page: 10 years from purchase"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-doona",
+   "name": "Doona website",
+   "short": "Doona",
+   "publisher": "Doona (Simple Parenting Ltd.)",
+   "url": "https://www.doona.com/en-us/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How long the maker says its car seats last, and what it counts from, in its own words on the date we read it.",
+   "cannot_prove": "The date on your seat. The label and the manual that came with it decide; a maker can change its rule for newer seats.",
+   "terms": {
+    "url": "https://www.doona.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Car seat expiration",
+     "url": "/car-seat-expiration/",
+     "note": "Doona's car seat myths page: 6 years"
+    }
+   ],
    "pulls": []
   },
   {
@@ -3750,6 +4564,33 @@
    "pulls": []
   },
   {
+   "id": "maker-evenflo",
+   "name": "Evenflo website",
+   "short": "Evenflo",
+   "publisher": "Evenflo Company, Inc.",
+   "url": "https://www.evenflo.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How long the maker says its car seats last, and what it counts from, in its own words on the date we read it.",
+   "cannot_prove": "The date on your seat. The label and the manual that came with it decide; a maker can change its rule for newer seats.",
+   "terms": {
+    "url": "https://www.evenflo.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Car seat expiration",
+     "url": "/car-seat-expiration/",
+     "note": "Evenflo's 2026 expiration post (10 years) and its older FAQ (6 or 8 years)"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "exor-press",
    "name": "Exor press releases",
    "short": "Exor",
@@ -3920,6 +4761,11 @@
      "label": "How long do refrigerators last?",
      "url": "/how-long-do-refrigerators-last/",
      "note": "DOE's 2011 and 2024 refrigerator rules"
+    },
+    {
+     "label": "Car seat expiration",
+     "url": "/car-seat-expiration/",
+     "note": "The FMVSS 213a compliance date, 5 Dec 2026"
     }
    ],
    "pulls": []
@@ -4245,6 +5091,33 @@
    "pulls": []
   },
   {
+   "id": "maker-gerber",
+   "name": "Gerber Gear website",
+   "short": "Gerber",
+   "publisher": "Gerber Gear (Portland, Oregon)",
+   "url": "https://gerbergear.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How many products Gerber's own store lists as USA Made, and how many it lists as knives.",
+   "cannot_prove": "Where Gerber's other products are made: the store doesn't say on the pages we read.",
+   "terms": {
+    "url": "https://gerbergear.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "Gerber's USA Made collection against its knives collection"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "golf-monthly",
    "name": "Golf Monthly",
    "short": "Golf Monthly",
@@ -4429,6 +5302,33 @@
      "label": "Who makes Kirkland laundry detergent",
      "url": "/kirkland-laundry-detergent/",
      "note": "Maker records, label doses and prices"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-harbor-freight",
+   "name": "Harbor Freight Tools: product manuals and quick-start guides",
+   "short": "Harbor Freight manuals",
+   "publisher": "Harbor Freight Tools",
+   "url": "https://www.harborfreight.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Harbor Freight prints in a product's own guide: the item number, the product name and the regulatory marks such as an FCC ID.",
+   "cannot_prove": "Who built the product, unless a mark on it (an FCC ID's grantee code, for example) leads to a government record that names a company.",
+   "terms": {
+    "url": "https://www.harborfreight.com/terms-of-use",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-20",
+    "due": "2027-11-20"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes store-brand power tools",
+     "url": "/store-brand-tools/#icon",
+     "note": "The FCC ID printed in the Icon T10 scanner's guide"
     }
    ],
    "pulls": []
@@ -5012,6 +5912,87 @@
    "pulls": []
   },
   {
+   "id": "just-auto",
+   "name": "Just Auto",
+   "short": "Just Auto",
+   "publisher": "GlobalData",
+   "url": "https://www.just-auto.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the publication reported, and when.",
+   "cannot_prove": "That the report is right, or still current. We use it only where no filing or maker page we read names the plant, and say so.",
+   "terms": {
+    "url": "https://www.just-auto.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Chinese car brands in the UK",
+     "url": "/chinese-car-brands-uk/",
+     "note": "A plant or a UK sales change no filing we read covers"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-kabar",
+   "name": "KA-BAR website",
+   "short": "KA-BAR",
+   "publisher": "KA-BAR Knives, Inc. (Olean, New York; owned by Cutco's parent)",
+   "url": "https://www.kabar.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What KA-BAR says about its own history: where and when it made knives, and when it sold imported ones.",
+   "cannot_prove": "Where any current KA-BAR model is made: the history page doesn't list models by country.",
+   "terms": {
+    "url": "https://www.kabar.com/robots.txt",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "KA-BAR's history page"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-kai-usa",
+   "name": "Kai USA websites (Kershaw, Zero Tolerance, Shun)",
+   "short": "Kai USA",
+   "publisher": "Kai USA Ltd. (Tualatin, Oregon; part of the Kai Group of Seki, Japan)",
+   "url": "https://kershaw.kaiusa.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its knives, in its own words, on the date we read it. For Kershaw, how many items its USA-made page and its full catalogue list.",
+   "cannot_prove": "Where any one knife in your hand was made: check the blade or the box.",
+   "terms": {
+    "url": "https://kershaw.kaiusa.com/robots.txt",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "Kershaw's USA-made page and catalogue count, Zero Tolerance's manufacturing page, Shun's home page"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "kering-urd",
    "name": "Kering Universal Registration Document",
    "short": "Kering annual report",
@@ -5243,6 +6224,33 @@
    "pulls": []
   },
   {
+   "id": "maker-lamson",
+   "name": "Lamson website",
+   "short": "Lamson",
+   "publisher": "Lamson & Goodnow (Westfield, Massachusetts)",
+   "url": "https://lamsonproducts.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its knives, in its own words, on the date we read it.",
+   "cannot_prove": "Where Lamson's Premier Forged blades are made: the pages we read don't say.",
+   "terms": {
+    "url": "https://lamsonproducts.com/robots.txt",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "Lamson's Vintage chef's knife page"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "le-temps",
    "name": "Le Temps",
    "short": "Le Temps",
@@ -5265,6 +6273,33 @@
      "label": "Where are luxury brands made?",
      "url": "/where-are-luxury-brands-made/",
      "note": "Who owns Rolex"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-leatherman",
+   "name": "Leatherman website",
+   "short": "Leatherman",
+   "publisher": "Leatherman Tool Group, Inc.",
+   "url": "https://www.leatherman.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its knives, in its own words, on the date we read it.",
+   "cannot_prove": "Whether every part of a Leatherman tool is made in the US: the page talks about building tools, not sourcing parts.",
+   "terms": {
+    "url": "https://www.leatherman.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "The Leatherman Story: tools built in Portland, Oregon"
     }
    ],
    "pulls": []
@@ -5388,6 +6423,33 @@
      "label": "MISA Imports",
      "url": "/makers/misa-imports/",
      "note": "Where it is based and what it does"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-made-in",
+   "name": "Made In website",
+   "short": "Made In",
+   "publisher": "Made In Cookware",
+   "url": "https://madeincookware.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its knives, in its own words, on the date we read it.",
+   "cannot_prove": "Where any one knife in your hand was made: check the blade or the box.",
+   "terms": {
+    "url": "https://madeincookware.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "Made In's 8-inch chef knife page"
     }
    ],
    "pulls": []
@@ -5770,6 +6832,33 @@
    "pulls": []
   },
   {
+   "id": "motor-es",
+   "name": "Motor.es",
+   "short": "Motor.es",
+   "publisher": "Motor.es",
+   "url": "https://www.motor.es/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the publication reported, and when.",
+   "cannot_prove": "That the report is right, or still current. We use it only where no filing or maker page we read names the plant, and say so.",
+   "terms": {
+    "url": "https://www.motor.es/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Chinese car brands in the UK",
+     "url": "/chinese-car-brands-uk/",
+     "note": "A plant or a UK sales change no filing we read covers"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-motorcraft",
    "name": "Motorcraft website",
    "short": "Motorcraft",
@@ -5815,6 +6904,33 @@
    },
    "credit": null,
    "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "nhtsa-car-seats",
+   "name": "NHTSA car seat pages",
+   "short": "NHTSA",
+   "publisher": "US National Highway Traffic Safety Administration",
+   "url": "https://www.nhtsa.gov/vehicle-safety/car-seats-and-booster-seats",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What NHTSA advises about car seats, in its own words on the date we read it.",
+   "cannot_prove": "Whether your seat was in a minor crash, or what your seat's maker says: NHTSA says to follow it too.",
+   "terms": {
+    "url": "https://www.nhtsa.gov/about-nhtsa/web-policies-notices",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Car seat expiration",
+     "url": "/car-seat-expiration/",
+     "note": "NHTSA's five tests for a minor crash"
+    }
+   ],
    "pulls": []
   },
   {
@@ -5888,6 +7004,33 @@
      "label": "Who makes Kirkland Signature diapers",
      "url": "/kirkland-signature/diapers/",
      "note": "A hands-on comparison that includes Kirkland"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-niagara",
+   "name": "Niagara Bottling: its own water quality reports",
+   "short": "Niagara Bottling",
+   "publisher": "Niagara Bottling, LLC",
+   "url": "https://www.niagarawater.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Niagara Bottling says about itself and its water in its own reports: its address, plants' testing and process.",
+   "cannot_prove": "Which store brands it fills. Its reports say it bottles private label water but name no customer.",
+   "terms": {
+    "url": "https://www.niagarawater.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-20",
+    "due": "2027-11-20"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Kirkland Signature store hub",
+     "url": "/kirkland-signature/#p-ks-bottled-water",
+     "note": "Who bottled the water report Consumer Reports filed for Kirkland"
     }
    ],
    "pulls": []
@@ -6081,6 +7224,33 @@
    "pulls": []
   },
   {
+   "id": "maker-nuna",
+   "name": "Nuna USA website",
+   "short": "Nuna",
+   "publisher": "Nuna Baby Essentials, Inc.",
+   "url": "https://nunababy.com/usa/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where Nuna says to find a seat's use period.",
+   "cannot_prove": "How many years any Nuna seat lasts: the page we read gives no number.",
+   "terms": {
+    "url": "https://nunababy.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Car seat expiration",
+     "url": "/car-seat-expiration/",
+     "note": "Nuna's car seat headquarters page"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-odyssey",
    "name": "ODYSSEY Battery website",
    "short": "ODYSSEY",
@@ -6162,6 +7332,33 @@
    "pulls": []
   },
   {
+   "id": "maker-ontario",
+   "name": "Ontario Knife Company website",
+   "short": "Ontario",
+   "publisher": "The Ontario Knife Company (brand owned by Blue Ridge Knives, Inc. since 2023)",
+   "url": "https://ontarioknife.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Ontario's history in its own words, and how many products its store tags Made in USA.",
+   "cannot_prove": "Where Ontario's untagged products are made: the store doesn't say.",
+   "terms": {
+    "url": "https://ontarioknife.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "Ontario's history page and its store's Made in USA tag count"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "open-food-facts",
    "name": "Open Food Facts product photos",
    "short": "Open Food Facts photos",
@@ -6238,6 +7435,33 @@
      "label": "Who makes Kirkland laundry detergent",
      "url": "/kirkland-laundry-detergent/",
      "note": "Maker records, label doses and prices"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-pegperego",
+   "name": "Peg Perego website and manuals",
+   "short": "Peg Perego",
+   "publisher": "Peg Perego S.p.A.",
+   "url": "https://www.pegperego.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How long the maker says its car seats last, and what it counts from, in its own words on the date we read it.",
+   "cannot_prove": "The date on your seat. The label and the manual that came with it decide; a maker can change its rule for newer seats.",
+   "terms": {
+    "url": "https://www.pegperego.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Car seat expiration",
+     "url": "/car-seat-expiration/",
+     "note": "Peg Perego's US Primo Viaggio manuals: 12 or 7 years from purchase"
     }
    ],
    "pulls": []
@@ -6354,6 +7578,33 @@
    "pulls": []
   },
   {
+   "id": "maker-rada",
+   "name": "Rada Cutlery website",
+   "short": "Rada",
+   "publisher": "Rada Mfg. Co. (Waverly, Iowa)",
+   "url": "https://www.radacutlery.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its knives, in its own words, on the date we read it.",
+   "cannot_prove": "Where any one knife in your hand was made: check the blade or the box.",
+   "terms": {
+    "url": "https://www.radacutlery.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "Rada's blog page on where it makes its cutlery"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-radienz",
    "name": "Radienz Living website",
    "short": "Radienz Living",
@@ -6462,6 +7713,33 @@
    "pulls": []
   },
   {
+   "id": "maker-cupra-media",
+   "name": "SEAT & CUPRA media centre",
+   "short": "CUPRA",
+   "publisher": "SEAT S.A. (Volkswagen Group)",
+   "url": "https://www.seat-cupra-mediacenter.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What CUPRA says about its own cars, including where it says a model is built.",
+   "cannot_prove": "Where any one car was built; a later change of plant.",
+   "terms": {
+    "url": "https://www.seat-cupra-mediacenter.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Chinese car brands in the UK",
+     "url": "/chinese-car-brands-uk/",
+     "note": "Where the CUPRA Tavascan is built"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "sfi-rules",
    "name": "SFI 2022 Standards and Rules, Section 6: Rules for Use of SFI On-Product Labels and Off-Product Marks",
    "short": "SFI label rules",
@@ -6484,6 +7762,33 @@
      "label": "Who makes Kirkland Signature diapers",
      "url": "/kirkland-signature/diapers/",
      "note": "Rules 2.3 and 2.16 on who can use a label number"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-safety1st",
+   "name": "Safety 1st website",
+   "short": "Safety 1st",
+   "publisher": "Dorel Juvenile Group (Safety 1st)",
+   "url": "https://safety1st.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How long the maker says its car seats last, and what it counts from, in its own words on the date we read it.",
+   "cannot_prove": "The date on your seat. The label and the manual that came with it decide; a maker can change its rule for newer seats.",
+   "terms": {
+    "url": "https://safety1st.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Car seat expiration",
+     "url": "/car-seat-expiration/",
+     "note": "Safety 1st's car seat expiration page: 8 to 12 years"
     }
    ],
    "pulls": []
@@ -6610,6 +7915,33 @@
      "label": "Who makes Costco hot dogs",
      "url": "/costco-hot-dogs/",
      "note": "Plants, history and numbers sold"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "shawangunk-journal",
+   "name": "Shawangunk Journal",
+   "short": "Shawangunk Journal",
+   "publisher": "Shawangunk Journal (weekly, Ellenville, New York)",
+   "url": "https://archive.shawangunkjournal.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What a named local newspaper reported, on the date it reported it.",
+   "cannot_prove": "Anything as fact: shown as reported.",
+   "terms": {
+    "url": "https://archive.shawangunkjournal.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "The Imperial Schrade plant in Ellenville shut in 2004"
     }
    ],
    "pulls": []
@@ -7114,6 +8446,33 @@
    "pulls": []
   },
   {
+   "id": "maker-chamberlain",
+   "name": "The Chamberlain Group: owner's manuals for the garage door openers and remotes it makes",
+   "short": "Chamberlain manuals",
+   "publisher": "The Chamberlain Group",
+   "url": "https://www.chamberlaingroup.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which company gives the warranty on, and holds the copyright to, a garage door opener's manual, in the manual's own words.",
+   "cannot_prove": "Which plant built a given opener, or who made openers whose manual we haven't read.",
+   "terms": {
+    "url": "https://pdf.lowes.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-20",
+    "due": "2027-11-20"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Craftsman tools and mowers",
+     "url": "/craftsman/#garage-door-openers",
+     "note": "Who warrants Craftsman garage door openers"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "costco-connection",
    "name": "The Costco Connection",
    "short": "Costco Connection",
@@ -7469,6 +8828,33 @@
    "pulls": []
   },
   {
+   "id": "maker-uppababy",
+   "name": "UPPAbaby website and manuals",
+   "short": "UPPAbaby",
+   "publisher": "UPPAbaby (Monahan Products LLC)",
+   "url": "https://uppababy.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How long the maker says its car seats last, and what it counts from, in its own words on the date we read it.",
+   "cannot_prove": "The date on your seat. The label and the manual that came with it decide; a maker can change its rule for newer seats. UPPAbaby's newer manuals may differ from the ones we read.",
+   "terms": {
+    "url": "https://uppababy.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Car seat expiration",
+     "url": "/car-seat-expiration/",
+     "note": "UPPAbaby's US Mesa V3 and Mesa Max manuals: 7 years"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "ups-investors",
    "name": "UPS investor relations releases",
    "short": "UPS investor relations releases",
@@ -7765,6 +9151,33 @@
    "pulls": []
   },
   {
+   "id": "maker-victorinox",
+   "name": "Victorinox website",
+   "short": "Victorinox",
+   "publisher": "Victorinox AG (Ibach, Switzerland)",
+   "url": "https://www.victorinox.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "The country of origin Victorinox gives on a product's own page.",
+   "cannot_prove": "Where other Victorinox knives are made: we read one product page.",
+   "terms": {
+    "url": "https://www.victorinox.com/robots.txt",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "The Fibrox chef's knife page: country of origin Switzerland"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "vw-group-ir",
    "name": "Volkswagen Group annual report",
    "short": "VW annual report",
@@ -7846,6 +9259,33 @@
    "pulls": []
   },
   {
+   "id": "wardsauto",
+   "name": "WardsAuto",
+   "short": "WardsAuto",
+   "publisher": "Informa TechTarget",
+   "url": "https://www.wardsauto.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the publication reported, and when.",
+   "cannot_prove": "That the report is right, or still current. We use it only where no filing or maker page we read names the plant, and say so.",
+   "terms": {
+    "url": "https://www.wardsauto.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Chinese car brands in the UK",
+     "url": "/chinese-car-brands-uk/",
+     "note": "A plant or a UK sales change no filing we read covers"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-whirlpool",
    "name": "Whirlpool Corporation technical manuals",
    "short": "Whirlpool",
@@ -7897,6 +9337,33 @@
    "pulls": []
   },
   {
+   "id": "maker-wusthof",
+   "name": "Wüsthof website",
+   "short": "Wüsthof",
+   "publisher": "WÜSTHOF KG (Solingen, Germany)",
+   "url": "https://wusthof.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its knives, in its own words, on the date we read it.",
+   "cannot_prove": "Where Wüsthof's knives that aren't forged are made: the pages speak of its forged knives.",
+   "terms": {
+    "url": "https://wusthof.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "Wüsthof's production and German knives pages"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-yokohama",
    "name": "Yokohama: tire life",
    "short": "Yokohama",
@@ -7919,6 +9386,33 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age recommendation, in the Who says what table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-zwilling",
+   "name": "Zwilling website",
+   "short": "Zwilling",
+   "publisher": "ZWILLING J.A. Henckels (Solingen, Germany)",
+   "url": "https://www.zwilling.com/us/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where Zwilling says its group's factories are, by brand.",
+   "cannot_prove": "Which Henckels line comes from which factory: the page names countries, not lines.",
+   "terms": {
+    "url": "https://www.zwilling.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Knives made in the USA",
+     "url": "/knives-made-in-usa/",
+     "note": "Zwilling's Our Factories page: Zwilling in Solingen, Henckels from Spain to India"
     }
    ],
    "pulls": []
@@ -7996,6 +9490,33 @@
    },
    "credit": null,
    "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "maker-smart-media",
+   "name": "smart media site",
+   "short": "smart",
+   "publisher": "smart Automobile Co., Ltd.",
+   "url": "https://media.smart.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Who owns smart, in smart's own words.",
+   "cannot_prove": "The share each owner holds today, or where a given car was built.",
+   "terms": {
+    "url": "https://media.smart.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-19",
+    "due": "2027-11-19"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Chinese car brands in the UK",
+     "url": "/chinese-car-brands-uk/",
+     "note": "smart's 50/50 owners"
+    }
+   ],
    "pulls": []
   }
  ]

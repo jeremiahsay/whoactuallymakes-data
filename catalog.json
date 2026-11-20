@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-19",
+ "generated": "2026-11-20",
  "title": "Who Actually Makes open data",
  "url": "https://whoactuallymakes.com/data/",
  "licence": {
@@ -14,7 +14,7 @@
   "mirror": "https://github.com/jeremiahsay/whoactuallymakes-data"
  },
  "count": 20,
- "records": 16458,
+ "records": 16653,
  "datasets": [
   {
    "id": "claims",
@@ -34,8 +34,8 @@
    ],
    "rights": "Quoted words belong to their publishers; most records are US government work. CC BY covers our rows.",
    "based_on": [],
-   "records": 741,
-   "updated": "2026-11-14",
+   "records": 747,
+   "updated": "2026-11-20",
    "fields": [
     {
      "name": "claim_id",
@@ -243,13 +243,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/claims.json",
-     "bytes": 668683,
-     "sha256": "b30622b7c77b75015641857bca7694e68d1a8859d0facf3a4fde86bf5028720d"
+     "bytes": 674289,
+     "sha256": "f2fe1945d7a8fc795bf44afd151c39282c0ee48a8e73b99bacfa8e03f4d96b72"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/claims.csv",
-     "bytes": 413094,
-     "sha256": "5723c5985bfcc714a5777ed5518632d50ff11a6354a45b1d3f171402298841be"
+     "bytes": 416628,
+     "sha256": "df573197ca7f978ef5e143292fd52e2ef03a6af7f73c67422073f79f00336009"
     }
    }
   },
@@ -276,7 +276,7 @@
     "https://open.fda.gov/apis/drug/enforcement/"
    ],
    "records": 14,
-   "updated": "2026-11-16",
+   "updated": "2026-11-20",
    "fields": [
     {
      "name": "company_slug",
@@ -445,12 +445,12 @@
     "json": {
      "url": "https://whoactuallymakes.com/data/companies.json",
      "bytes": 8201,
-     "sha256": "d3e8ef958d331c0e0aca22788a2148d728afc8e56b9068e2906aebc3c543fa66"
+     "sha256": "98997e2a85d412ce0196d9557a07c5158c591580b56cd1a80f14e77ec8f5feb8"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/companies.csv",
      "bytes": 3822,
-     "sha256": "1fc9372b6e818bbfacd0ee39f884e156b6a1111cb2a70c6039445344f9637260"
+     "sha256": "19d15a051e05ac559d2e6be0c67b92e9859baa9055e04984296a3099d40c6ab0"
     }
    }
   },
@@ -476,8 +476,8 @@
     "https://open.fda.gov/apis/food/enforcement/",
     "https://open.fda.gov/apis/drug/enforcement/"
    ],
-   "records": 214,
-   "updated": "2026-11-16",
+   "records": 215,
+   "updated": "2026-11-20",
    "fields": [
     {
      "name": "company_slug",
@@ -605,13 +605,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/company-labels.json",
-     "bytes": 113268,
-     "sha256": "40e3aebfe89647aa3ae21df06e7c9bc0906c2107057c5cff417e7bb77a4c0b0f"
+     "bytes": 113738,
+     "sha256": "c4b2d0b8398bfa0e8017afbc9de8dd9559d1f66b51ac141f693282c033a3f0ab"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/company-labels.csv",
-     "bytes": 70925,
-     "sha256": "4c2d07f699e21a00a48585295de406cf2e8f01da28f583029fdeb87a33d2432c"
+     "bytes": 71197,
+     "sha256": "08f3476b6692d0974ffb6f1ddb63e0cf872072335862cd33b63a35706c22a73e"
     }
    }
   },
@@ -967,8 +967,10 @@
    "based_on": [
     "http://www.fda.gov/Safety/Recalls/ucm303034.htm",
     "http://www.usga.org/ConformingGolfBall/gball_list.pdf",
+    "https://19january2021snapshot.epa.gov/sites/static/files/documents/chap-14.pdf",
     "https://about.usps.com/what/financials/10k-reports/fy2026.pdf",
     "https://acdelcocanada.com/parts/batteries/battery-warranty",
+    "https://acmeunited.gcs-web.com/node/7291",
     "https://acuranews.com/en-US/releases/production-start-of-acura-integra-signals-return-of-iconic-model-being-built-for-first-time-in-america",
     "https://annuaire-entreprises.data.gouv.fr/",
     "https://annualreport2025.volkswagen-group.com/group-management-report/shares-and-bonds/shareholder-structure.html",
@@ -1012,12 +1014,10 @@
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2858-2015%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22H-0023-2026%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0014-2021%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0029-2021%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0031-2018%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0032-2025%22"
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0029-2021%22"
    ],
-   "records": 2109,
-   "updated": "2026-11-18",
+   "records": 2236,
+   "updated": "2026-11-20",
    "fields": [
     {
      "name": "id",
@@ -1082,6 +1082,20 @@
    ],
    "preview": [
     {
+     "id": "ev-16-cfr-1632-31",
+     "source": "ecfr",
+     "publisher": "US National Archives (Office of the Federal Register)",
+     "type": "regulator-document",
+     "title": "16 CFR 1632.31: Mattress labeling, records and the tag-removal rule",
+     "url": "https://www.ecfr.gov/current/title-16/section-1632.31",
+     "archive_url": null,
+     "retrieved": "2026-11-20",
+     "doc_date": null,
+     "quote": "No person, other than the ultimate consumer, shall remove or mutilate",
+     "sha256": "24029140f86dddbaf9f248f9b3e9976eb689b0a1468647b0f61aaf2d2b33f686",
+     "note": "Paragraph (b)(5). Paragraph (b)(3) requires the month and year of manufacture and the manufacturer's location on every mattress."
+    },
+    {
      "id": "ev-16-cfr-1633-12",
      "source": "ecfr",
      "publisher": "US National Archives (Office of the Federal Register)",
@@ -1124,44 +1138,30 @@
      "note": "US Customs' definition: the country of origin is where the article was made; work in a second country counts only if it substantially transforms it."
     },
     {
-     "id": "ev-19-usc-1304",
-     "source": "govinfo-uscode",
-     "publisher": "US Government Publishing Office",
-     "type": "regulator-document",
-     "title": "19 U.S.C. 1304(a): marking of imported articles",
-     "url": "https://www.govinfo.gov/link/uscode/19/1304?link-type=html",
-     "archive_url": null,
-     "retrieved": "2026-11-17",
-     "doc_date": null,
-     "quote": "the English name of the country of origin of the article",
-     "sha256": "ac7268864bff5f7ba770407a3f86fd8914ff56a3b043b7946f79c81f9f783b14",
-     "note": "Every article of foreign origin imported into the US must be marked, legibly and permanently, with its country of origin, unless an exception applies."
-    },
-    {
-     "id": "ev-21-cfr-101-5",
+     "id": "ev-19-cfr-134-43",
      "source": "ecfr",
      "publisher": "US National Archives (Office of the Federal Register)",
      "type": "regulator-document",
-     "title": "21 CFR 101.5: Food labeling, name and place of business",
-     "url": "https://www.law.cornell.edu/cfr/text/21/101.5",
-     "archive_url": "https://web.archive.org/web/20261108132839/https://www.law.cornell.edu/cfr/text/21/101.5",
-     "retrieved": "2026-11-06",
+     "title": "19 CFR 134.43(a): how imported knives must be marked",
+     "url": "https://www.ecfr.gov/current/title-19/chapter-I/part-134/subpart-D/section-134.43",
+     "archive_url": null,
+     "retrieved": "2026-11-19",
      "doc_date": null,
-     "quote": "Where the food is not manufactured by the person whose name appears on the label, the name shall be qualified",
-     "sha256": null,
-     "note": null
+     "quote": "shall be marked legibly and conspicuously by die stamping, cast-in-the-mold lettering, etching (acid or electrolytic), engraving, or by means of metal plates",
+     "sha256": "9ab979a59f618e60edeb6223364903ac91003a0a23f37f20ccc62d96ff182c34",
+     "note": "US Customs' rule. Knives, forks, cleavers, shears, scissors, pliers and their parts must carry the country of origin by one of those permanent methods; goods of a USMCA country (Canada, Mexico) may use any reasonable method that is legible, conspicuous and permanent."
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/evidence.json",
-     "bytes": 1908592,
-     "sha256": "e7fd02715266f11c816a4381805984c81c4dce1da5480451747b6aa951d209c3"
+     "bytes": 1867221,
+     "sha256": "4a3205df52dc875264693c706cc5c2d6f98a2f783adb3b4891a0d16b4736dfba"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/evidence.csv",
-     "bytes": 1490625,
-     "sha256": "928801a2a5f1f45140ac94d46f007946304a4f026c3b7b6594c441f81b98a8a2"
+     "bytes": 1569407,
+     "sha256": "021160a5e6eb9d67a7407c44cef2babed503fb332b315fbfc8b89bdbbdcc80ae"
     }
    }
   },
@@ -1184,13 +1184,20 @@
    "based_on": [
     "https://about.usps.com/what/financials/",
     "https://acdelcocanada.com/",
+    "https://acmeunited.gcs-web.com/",
     "https://acuranews.com/",
     "https://annuaire-entreprises.data.gouv.fr/",
     "https://annualreport2025.volkswagen-group.com/",
+    "https://archive.shawangunkjournal.com/",
+    "https://babytrend.com/",
     "https://bgr.com/",
     "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx",
+    "https://carnewschina.com/",
+    "https://caseknives.com/",
     "https://centralmilling.com/",
+    "https://chinaevhome.com/",
     "https://clariosdigitallibrary.widencollective.com/",
+    "https://clekinc.com/",
     "https://clusterindustrial.com.mx/",
     "https://community.qvc.com/",
     "https://corporate.aldi.us/",
@@ -1213,28 +1220,21 @@
     "https://forests.org/",
     "https://fortune.com/",
     "https://fsc.org/",
+    "https://gerbergear.com/",
     "https://global.honda/en/newsroom/",
     "https://global.nissannews.com/",
     "https://global.toyota/en/company/profile/facilities/manufacturing-worldwide/",
     "https://gov.georgia.gov/",
     "https://gruppe.schwarz/en",
     "https://hip2save.com/",
+    "https://iabflo.org/",
     "https://investors.ups.com/news-events/press-releases",
     "https://investors.volvocars.com/",
     "https://itstillruns.com/",
-    "https://kiaoldnewsroom.newsmarket.com/",
-    "https://lars.ndda.nd.gov/public/productsearch/3",
-    "https://manufacturing.honda.com/",
-    "https://media.jlr.com/",
-    "https://media.subaru.com/",
-    "https://mexicobusiness.news/",
-    "https://mg2.com/",
-    "https://mprintgroup.com/",
-    "https://mygarage.honda.com/s/find-honda",
-    "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/"
+    "https://kershaw.kaiusa.com/"
    ],
-   "records": 254,
-   "updated": "2026-11-18",
+   "records": 305,
+   "updated": "2026-11-20",
    "fields": [
     {
      "name": "id",
@@ -1331,7 +1331,22 @@
      "terms_read": "Open license. We read it with a script.",
      "terms_checked": "2026-11-15",
      "credit": "",
-     "pulls": "every 182 days in a browser, last not yet | every 365 days in a browser, last 2026-11-17"
+     "pulls": "every 182 days in a browser, last not yet | every 365 days in a browser, last 2026-11-17 | every 90 days by script, last 2026-11-19"
+    },
+    {
+     "id": "epa-frs",
+     "name": "EPA Facility Registry Service: pesticide establishments (SSTS)",
+     "publisher": "US Environmental Protection Agency",
+     "url": "https://www.epa.gov/frs",
+     "kind": "Government registry",
+     "primary": true,
+     "proves": "Which site holds an EPA pesticide establishment number, with the name and address EPA has for it.",
+     "cannot_prove": "Whether the site is still active (EPA's active list is separate), which products it makes, or who owns the brand on a label.",
+     "terms_url": "https://www.epa.gov/data",
+     "terms_read": "Open license. We read it with a script.",
+     "terms_checked": "2026-11-20",
+     "credit": "",
+     "pulls": "every 90 days by script, last 2026-11-20"
     },
     {
      "id": "fcc-open-data",
@@ -1362,33 +1377,18 @@
      "terms_checked": "2026-11-12",
      "credit": "",
      "pulls": "every 90 days in a browser, last 2026-11-05"
-    },
-    {
-     "id": "nhtsa-vpic",
-     "name": "NHTSA vPIC: tire plant codes and vehicle identification",
-     "publisher": "US National Highway Traffic Safety Administration",
-     "url": "https://vpic.nhtsa.dot.gov/api/",
-     "kind": "Government registry",
-     "primary": true,
-     "proves": "Which factory a DOT tire plant code was assigned to (49 CFR 574), with its name, address and status; which maker a VIN prefix belongs to.",
-     "cannot_prove": "Which brand or product line a plant made. A plant code names the factory, not the brand on the sidewall.",
-     "terms_url": "https://vpic.nhtsa.dot.gov/api/",
-     "terms_read": "Public domain (US government work). We read it with a script.",
-     "terms_checked": "2026-11-02",
-     "credit": "",
-     "pulls": "every 7 days by script, last 2026-11-16"
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/sources.json",
-     "bytes": 291878,
-     "sha256": "0d742780926e2b60b93ae5016b9df60db82ae5903e6ff2b8c0ed6e77f74b834e"
+     "bytes": 345669,
+     "sha256": "7c4942f9477adc2717b444f81820c5e4c02c68988c2db6363ad4ad276869b1fa"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/sources.csv",
-     "bytes": 118376,
-     "sha256": "29d5af0126cbd4080ae6123936decc35dda055eb21320d487bb5d0bc0501349b"
+     "bytes": 141075,
+     "sha256": "a1c3a5e9a68e633f94892cbaa952dc0e460718d16e0e04f3edaad3404681e6dd"
     }
    }
   },
@@ -1408,8 +1408,8 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 61,
-   "updated": "2026-11-16",
+   "records": 62,
+   "updated": "2026-11-20",
    "fields": [
     {
      "name": "id",
@@ -1464,6 +1464,18 @@
    ],
    "preview": [
     {
+     "id": "c-2026-11-20-usda-egg-pack-date",
+     "on": "2026-11-20",
+     "kind": "update",
+     "page": "/usda-establishment-number-lookup/",
+     "what": "How to read an egg carton's three-digit pack date",
+     "was": "The page said USDA-graded egg cartons show a plant number with P in front, but didn't explain the three-digit number near it.",
+     "now": "A new section quotes the federal grading rule (7 CFR 56.37): the number is the day of the year the eggs were packed. A box turns it into a date and counts the days since.",
+     "why": "Egg cartons were the one pack this page covered without saying how to read the date code on it.",
+     "flagged_by": "Our own re-check",
+     "evidence": ""
+    },
+    {
      "id": "c-2026-11-16-laundry-prices-after-tide-coupon",
      "on": "2026-11-16",
      "kind": "update",
@@ -1510,30 +1522,18 @@
      "why": "Readers asking who makes Kirkland tequila also ask whether it’s really 100% agave; we read the docket, the complaint and the order before adding it.",
      "flagged_by": "Our own re-check",
      "evidence": ""
-    },
-    {
-     "id": "c-2026-11-14-sun-products-sds-label",
-     "on": "2026-11-14",
-     "kind": "correction",
-     "page": "/makers/sun-products/",
-     "what": "How the Sun Products page labels its tie to Kirkland Pacs and fabric softener",
-     "was": "The page called Sun Products the “Listed manufacturer” of both, with an explanation written for golf ball listings, and its picture called Sun the manufacturer.",
-     "now": "The page calls Sun Products the “Supplier on the safety sheet”, explains what a safety sheet’s supplier line does and doesn’t prove, and its picture says supplier.",
-     "why": "Costco’s 2012 safety sheets name Sun Products as supplier and never use the word maker or manufacturer.",
-     "flagged_by": "Our own re-check",
-     "evidence": ""
     }
    ],
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/corrections.json",
-     "bytes": 53592,
-     "sha256": "4fe271d37d0aa5b9522157288bf78ff4d26f85510402023e2c55e0e512b6f668"
+     "bytes": 54309,
+     "sha256": "a6badb378858563ebb33cf89e9c4f57fd3177e77dfee5af94601093eca1d1d2e"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/corrections.csv",
-     "bytes": 39628,
-     "sha256": "c3b24e9eead964f9509d76b61091d627ecc347d991def80d0fdabed1f46512c8"
+     "bytes": 40176,
+     "sha256": "7524a9382866e7180b98d69f3173963926966f84706088e808f7bdc056fcd888"
     }
    }
   },
@@ -1553,8 +1553,8 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 86,
-   "updated": "2026-11-19",
+   "records": 95,
+   "updated": "2026-11-20",
    "fields": [
     {
      "name": "id",
@@ -1662,13 +1662,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/schedule.json",
-     "bytes": 401074,
-     "sha256": "e515e1d5208343999dd967de1d80fec753ff0d8a579f3e96fd1d008f5f0dd3db"
+     "bytes": 426007,
+     "sha256": "4c19b52f249d581d34ac87a3a7acb8af90e0fdc34c894a23d8cdb2e733151bdf"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/schedule.csv",
-     "bytes": 22183,
-     "sha256": "1a7bf15066ce68ad88932176e3fbc2118c91e33e527d28bee7c37bafe2cea99c"
+     "bytes": 25203,
+     "sha256": "fcff3c3cc1c88dec122be8a2f9c9d06d22c48c0b58d5d760b3cc29ad70814e77"
     }
    }
   },

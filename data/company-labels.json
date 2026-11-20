@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-16",
- "count": 214,
+ "generated": "2026-11-20",
+ "count": 215,
  "rows": [
   {
    "company_slug": "diamond-pet-foods",
@@ -1328,6 +1328,19 @@
    "record_url": "https://api.fda.gov/drug/enforcement.json?search=recall_number:%22D-1630-2019%22",
    "read_on": "2026-11-03",
    "company_page": "https://whoactuallymakes.com/makers/lnk-international/"
+  },
+  {
+   "company_slug": "misa-imports",
+   "company": "MISA Imports",
+   "label": "Kirkland Signature",
+   "link_kind": "claim",
+   "detail": "Imported by: Kirkland Signature Irish whiskey",
+   "count": 1,
+   "first": "2017-06",
+   "last": "",
+   "record_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicFormDisplay&ttbid=17159001000536",
+   "read_on": "2026-11-20",
+   "company_page": "https://whoactuallymakes.com/makers/misa-imports/"
   },
   {
    "company_slug": "misa-imports",

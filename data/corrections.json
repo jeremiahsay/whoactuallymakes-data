@@ -1,13 +1,26 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-16",
+ "generated": "2026-11-20",
  "started": "2026-11-02",
  "count": {
   "correction": 25,
-  "update": 25,
+  "update": 26,
   "clarification": 11
  },
  "items": [
+  {
+   "id": "c-2026-11-20-usda-egg-pack-date",
+   "on": "2026-11-20",
+   "kind": "update",
+   "page": "/usda-establishment-number-lookup/",
+   "what": "How to read an egg carton's three-digit pack date",
+   "was": "The page said USDA-graded egg cartons show a plant number with P in front, but didn't explain the three-digit number near it.",
+   "now": "A new section quotes the federal grading rule (7 CFR 56.37): the number is the day of the year the eggs were packed. A box turns it into a date and counts the days since.",
+   "why": "Egg cartons were the one pack this page covered without saying how to read the date code on it.",
+   "flagged_by": "Our own re-check",
+   "event": "none",
+   "evidence": []
+  },
   {
    "id": "c-2026-11-16-laundry-prices-after-tide-coupon",
    "on": "2026-11-16",

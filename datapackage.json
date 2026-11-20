@@ -2,9 +2,9 @@
  "name": "whoactuallymakes-data",
  "id": "https://doi.org/10.5281/zenodo.23920936",
  "title": "Who Actually Makes open data",
- "description": "Who makes store-brand products, from public records. 20 datasets, 16,458 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them; Trader Joe's wine, beer and spirits label approvals (TTB); Who owns which brand: ownership links between brands, companies and their controlling holders.",
+ "description": "Who makes store-brand products, from public records. 20 datasets, 16,653 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them; Trader Joe's wine, beer and spirits label approvals (TTB); Who owns which brand: ownership links between brands, companies and their controlling holders.",
  "homepage": "https://whoactuallymakes.com/data/",
- "version": "2026-11-19",
+ "version": "2026-11-20",
  "licenses": [
   {
    "name": "CC-BY-4.0",
@@ -59,8 +59,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 413094,
-   "hash": "sha256:5723c5985bfcc714a5777ed5518632d50ff11a6354a45b1d3f171402298841be",
+   "bytes": 416628,
+   "hash": "sha256:df573197ca7f978ef5e143292fd52e2ef03a6af7f73c67422073f79f00336009",
    "schema": {
     "fields": [
      {
@@ -173,7 +173,7 @@
    "mediatype": "text/csv",
    "encoding": "utf-8",
    "bytes": 3822,
-   "hash": "sha256:1fc9372b6e818bbfacd0ee39f884e156b6a1111cb2a70c6039445344f9637260",
+   "hash": "sha256:19d15a051e05ac559d2e6be0c67b92e9859baa9055e04984296a3099d40c6ab0",
    "schema": {
     "fields": [
      {
@@ -278,8 +278,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 70925,
-   "hash": "sha256:4c2d07f699e21a00a48585295de406cf2e8f01da28f583029fdeb87a33d2432c",
+   "bytes": 71197,
+   "hash": "sha256:08f3476b6692d0974ffb6f1ddb63e0cf872072335862cd33b63a35706c22a73e",
    "schema": {
     "fields": [
      {
@@ -609,8 +609,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 1490625,
-   "hash": "sha256:928801a2a5f1f45140ac94d46f007946304a4f026c3b7b6594c441f81b98a8a2",
+   "bytes": 1569407,
+   "hash": "sha256:021160a5e6eb9d67a7407c44cef2babed503fb332b315fbfc8b89bdbbdcc80ae",
    "schema": {
     "fields": [
      {
@@ -687,12 +687,20 @@
      "path": "http://www.usga.org/ConformingGolfBall/gball_list.pdf"
     },
     {
+     "title": "https://19january2021snapshot.epa.gov/sites/static/files/documents/chap-14.pdf",
+     "path": "https://19january2021snapshot.epa.gov/sites/static/files/documents/chap-14.pdf"
+    },
+    {
      "title": "https://about.usps.com/what/financials/10k-reports/fy2026.pdf",
      "path": "https://about.usps.com/what/financials/10k-reports/fy2026.pdf"
     },
     {
      "title": "https://acdelcocanada.com/parts/batteries/battery-warranty",
      "path": "https://acdelcocanada.com/parts/batteries/battery-warranty"
+    },
+    {
+     "title": "https://acmeunited.gcs-web.com/node/7291",
+     "path": "https://acmeunited.gcs-web.com/node/7291"
     },
     {
      "title": "https://acuranews.com/en-US/releases/production-start-of-acura-integra-signals-return-of-iconic-model-being-built-for-first-time-in-america",
@@ -869,14 +877,6 @@
     {
      "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0029-2021%22",
      "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0029-2021%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0031-2018%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0031-2018%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0032-2025%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0032-2025%22"
     }
    ]
   },
@@ -888,8 +888,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 118376,
-   "hash": "sha256:29d5af0126cbd4080ae6123936decc35dda055eb21320d487bb5d0bc0501349b",
+   "bytes": 141075,
+   "hash": "sha256:a1c3a5e9a68e633f94892cbaa952dc0e460718d16e0e04f3edaad3404681e6dd",
    "schema": {
     "fields": [
      {
@@ -971,6 +971,10 @@
      "path": "https://acdelcocanada.com/"
     },
     {
+     "title": "https://acmeunited.gcs-web.com/",
+     "path": "https://acmeunited.gcs-web.com/"
+    },
+    {
      "title": "https://acuranews.com/",
      "path": "https://acuranews.com/"
     },
@@ -983,6 +987,14 @@
      "path": "https://annualreport2025.volkswagen-group.com/"
     },
     {
+     "title": "https://archive.shawangunkjournal.com/",
+     "path": "https://archive.shawangunkjournal.com/"
+    },
+    {
+     "title": "https://babytrend.com/",
+     "path": "https://babytrend.com/"
+    },
+    {
      "title": "https://bgr.com/",
      "path": "https://bgr.com/"
     },
@@ -991,12 +1003,28 @@
      "path": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
     },
     {
+     "title": "https://carnewschina.com/",
+     "path": "https://carnewschina.com/"
+    },
+    {
+     "title": "https://caseknives.com/",
+     "path": "https://caseknives.com/"
+    },
+    {
      "title": "https://centralmilling.com/",
      "path": "https://centralmilling.com/"
     },
     {
+     "title": "https://chinaevhome.com/",
+     "path": "https://chinaevhome.com/"
+    },
+    {
      "title": "https://clariosdigitallibrary.widencollective.com/",
      "path": "https://clariosdigitallibrary.widencollective.com/"
+    },
+    {
+     "title": "https://clekinc.com/",
+     "path": "https://clekinc.com/"
     },
     {
      "title": "https://clusterindustrial.com.mx/",
@@ -1087,6 +1115,10 @@
      "path": "https://fsc.org/"
     },
     {
+     "title": "https://gerbergear.com/",
+     "path": "https://gerbergear.com/"
+    },
+    {
      "title": "https://global.honda/en/newsroom/",
      "path": "https://global.honda/en/newsroom/"
     },
@@ -1111,6 +1143,10 @@
      "path": "https://hip2save.com/"
     },
     {
+     "title": "https://iabflo.org/",
+     "path": "https://iabflo.org/"
+    },
+    {
      "title": "https://investors.ups.com/news-events/press-releases",
      "path": "https://investors.ups.com/news-events/press-releases"
     },
@@ -1123,44 +1159,8 @@
      "path": "https://itstillruns.com/"
     },
     {
-     "title": "https://kiaoldnewsroom.newsmarket.com/",
-     "path": "https://kiaoldnewsroom.newsmarket.com/"
-    },
-    {
-     "title": "https://lars.ndda.nd.gov/public/productsearch/3",
-     "path": "https://lars.ndda.nd.gov/public/productsearch/3"
-    },
-    {
-     "title": "https://manufacturing.honda.com/",
-     "path": "https://manufacturing.honda.com/"
-    },
-    {
-     "title": "https://media.jlr.com/",
-     "path": "https://media.jlr.com/"
-    },
-    {
-     "title": "https://media.subaru.com/",
-     "path": "https://media.subaru.com/"
-    },
-    {
-     "title": "https://mexicobusiness.news/",
-     "path": "https://mexicobusiness.news/"
-    },
-    {
-     "title": "https://mg2.com/",
-     "path": "https://mg2.com/"
-    },
-    {
-     "title": "https://mprintgroup.com/",
-     "path": "https://mprintgroup.com/"
-    },
-    {
-     "title": "https://mygarage.honda.com/s/find-honda",
-     "path": "https://mygarage.honda.com/s/find-honda"
-    },
-    {
-     "title": "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/",
-     "path": "https://na.nokiantyres.com/tips/tire-care-and-maintenance/how-long-do-tires-last/"
+     "title": "https://kershaw.kaiusa.com/",
+     "path": "https://kershaw.kaiusa.com/"
     }
    ]
   },
@@ -1172,8 +1172,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 39628,
-   "hash": "sha256:c3b24e9eead964f9509d76b61091d627ecc347d991def80d0fdabed1f46512c8",
+   "bytes": 40176,
+   "hash": "sha256:7524a9382866e7180b98d69f3173963926966f84706088e808f7bdc056fcd888",
    "schema": {
     "fields": [
      {
@@ -1240,8 +1240,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 22183,
-   "hash": "sha256:1a7bf15066ce68ad88932176e3fbc2118c91e33e527d28bee7c37bafe2cea99c",
+   "bytes": 25203,
+   "hash": "sha256:fcff3c3cc1c88dec122be8a2f9c9d06d22c48c0b58d5d760b3cc29ad70814e77",
    "schema": {
     "fields": [
      {
