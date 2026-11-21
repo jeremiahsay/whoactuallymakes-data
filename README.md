@@ -4,7 +4,7 @@
 
 Who makes store-brand products, from public records. Every list behind [Who Actually Makes](https://whoactuallymakes.com/): which company each Kirkland Signature product traces to, the companies behind store brands and the labels they're on record for, every NHTSA tire plant code, what tire makers and carmakers say about tire age, and the evidence, sources, corrections and update schedule behind it all.
 
-**20 datasets · 16,653 records · version 2026-11-20** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
+**21 datasets · 16,865 records · version 2026-11-21** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
 
 Each answer on the site carries a stamp (confirmed, documented, reported or unverified) and links to the record it rests on. The evidence file keeps the exact quote, the date it was read and a SHA-256 fingerprint of the document, so anyone can check a row against its source. How the stamps work: https://whoactuallymakes.com/how-we-know/
 
@@ -17,10 +17,10 @@ Each answer on the site carries a stamp (confirmed, documented, reported or unve
 | [Which store labels each company is on record for](#company-labels) | 215 | 2026-11-20 | [JSON](data/company-labels.json) (111 KB) · [CSV](data/company-labels.csv) (70 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
 | [Tire plant codes (NHTSA)](#tire-plants) | 1,249 | 2026-11-16 | [JSON](data/tire-plants.json) (150 KB) · [CSV](data/tire-plants.csv) (90 KB) | [/tire-dot-code-lookup/](https://whoactuallymakes.com/tire-dot-code-lookup/) |
 | [Tire age guidance from tire makers, carmakers and agencies](#tire-age) | 22 | 2026-11-12 | [JSON](data/tire-age.json) (35 KB) · [CSV](data/tire-age.csv) (20 KB) | [/tire-date-code/](https://whoactuallymakes.com/tire-date-code/) |
-| [Evidence records: every quote behind our answers](#evidence) | 2,236 | 2026-11-20 | [JSON](data/evidence.json) (1823 KB) · [CSV](data/evidence.csv) (1533 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
-| [Sources: the public records we use, and their limits](#sources) | 305 | 2026-11-20 | [JSON](data/sources.json) (338 KB) · [CSV](data/sources.csv) (138 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
+| [Evidence records: every quote behind our answers](#evidence) | 2,375 | 2026-11-21 | [JSON](data/evidence.json) (1937 KB) · [CSV](data/evidence.csv) (1628 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
+| [Sources: the public records we use, and their limits](#sources) | 317 | 2026-11-21 | [JSON](data/sources.json) (352 KB) · [CSV](data/sources.csv) (143 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
 | [Corrections log](#corrections) | 62 | 2026-11-20 | [JSON](data/corrections.json) (53 KB) · [CSV](data/corrections.csv) (39 KB) | [/corrections/](https://whoactuallymakes.com/corrections/) |
-| [Update schedule: when each list is checked](#schedule) | 95 | 2026-11-20 | [JSON](data/schedule.json) (416 KB) · [CSV](data/schedule.csv) (25 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
+| [Update schedule: when each list is checked](#schedule) | 99 | 2026-11-21 | [JSON](data/schedule.json) (428 KB) · [CSV](data/schedule.csv) (27 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
 | [Costco diaper prices: every size at every read](#costco-diaper-prices) | 60 | 2026-11-09 | [JSON](data/costco-diaper-prices.json) (18 KB) · [CSV](data/costco-diaper-prices.csv) (8 KB) | [/costco-diapers/](https://whoactuallymakes.com/costco-diapers/) |
 | [Kirkland vs name brands: every pair and its verdict](#kirkland-vs-pairs) | 22 | 2026-11-16 | [JSON](data/kirkland-vs-pairs.json) (21 KB) · [CSV](data/kirkland-vs-pairs.csv) (8 KB) | [/kirkland-vs-name-brands/](https://whoactuallymakes.com/kirkland-vs-name-brands/) |
 | [Car battery date code rules, by brand](#battery-date-codes) | 21 | 2026-11-07 | [JSON](data/battery-date-codes.json) (89 KB) · [CSV](data/battery-date-codes.csv) (4 KB) | [/battery-date-code/](https://whoactuallymakes.com/battery-date-code/) |
@@ -32,6 +32,7 @@ Each answer on the site carries a stamp (confirmed, documented, reported or unve
 | [Onn TV model numbers and the manufacturers California's appliance register lists for them](#onn-tv-register) | 533 | 2026-11-10 | [JSON](data/onn-tv-register.json) (129 KB) · [CSV](data/onn-tv-register.csv) (56 KB) | [/onn-tv/](https://whoactuallymakes.com/onn-tv/) |
 | [Trader Joe's wine, beer and spirits label approvals (TTB)](#trader-joes-alcohol) | 954 | 2026-11-11 | [JSON](data/trader-joes-alcohol.json) (498 KB) · [CSV](data/trader-joes-alcohol.csv) (265 KB) | [/trader-joes/](https://whoactuallymakes.com/trader-joes/) |
 | [Who owns which brand: ownership links between brands, companies and their controlling holders](#ownership-links) | 140 | 2026-11-13 | [JSON](data/ownership-links.json) (55 KB) · [CSV](data/ownership-links.csv) (29 KB) | [/are-they-the-same-company/](https://whoactuallymakes.com/are-they-the-same-company/) |
+| [How old are the water heaters in US homes? Ages by state and fuel, 2020](#water-heater-ages) | 57 | 2026-11-20 | [JSON](data/water-heater-ages.json) (29 KB) · [CSV](data/water-heater-ages.csv) (10 KB) | [/how-long-do-water-heaters-last/](https://whoactuallymakes.com/how-long-do-water-heaters-last/) |
 
 <a id="claims"></a>
 
@@ -665,6 +666,41 @@ One row per link behind the same-company check: a brand belonging to a company, 
 | `as_of` | string | Date of the share |
 | `record_title` | string | The record the link comes from |
 | `record_url` | string | Its URL |
+
+</details>
+
+<a id="water-heater-ages"></a>
+
+### How old are the water heaters in US homes? Ages by state and fuel, 2020
+
+The share of homes' main water heaters in each age band, nationally for tanks and tankless heaters and by fuel, and the share of tank heaters 10 and 15 or more years old in each state and DC. Our weighted analysis of EIA's 2020 Residential Energy Consumption Survey public file, with standard errors from EIA's 60 jackknife replicate weights.
+
+- **Limits:** Ages are reported by households in bands, and EIA imputed about 13% of them. Heaters serving a whole apartment building are left out. A survey share isn't a lifespan: it mixes how long heaters last with when homes were built and when heaters were bought. State differences don't show why. Only figures meeting EIA's publication rule (relative standard error 50% or less, at least 10 households) are included.
+- **Kept fresh:** When EIA publishes water heater ages from the 2024 survey
+- **Rights:** CC BY covers our analysis. The underlying survey is EIA's, a US government work.
+- **Based on:** 1 public source, listed in `catalog.json` (`based_on`)
+- **Files:** `data/water-heater-ages.json`, `data/water-heater-ages.csv` · live: https://whoactuallymakes.com/data/water-heater-ages.json
+
+<details><summary>The 16 fields</summary>
+
+| Field | Type | What it holds |
+|---|---|---|
+| `area` | text | United States, or a state or DC. |
+| `area_code` | text | US, or the state's postal code. |
+| `heater` | text | Which heaters: Tank (any fuel), Tank, electric, Tank, fuel oil, Tank, natural gas, Tank, propane or Tankless. |
+| `homes_in_sample` | number | Survey homes behind the figure (unweighted). |
+| `share_under_2` | number | Share of heaters under 2 years old (0 to 1). Empty for states. |
+| `share_2_to_4` | number | Share 2 to 4 years old. Empty for states. |
+| `share_5_to_9` | number | Share 5 to 9 years old. Empty for states. |
+| `share_10_to_14` | number | Share 10 to 14 years old. Empty for states. |
+| `share_15_to_19` | number | Share 15 to 19 years old. Empty for states. |
+| `share_20_plus` | number | Share 20 or more years old. Empty for states. |
+| `share_10_plus` | number | Share 10 or more years old (0 to 1). |
+| `se_10_plus` | number | Standard error of share_10_plus, from EIA's replicate weights. |
+| `share_15_plus` | number | Share 15 or more years old (0 to 1). |
+| `se_15_plus` | number | Standard error of share_15_plus. |
+| `survey` | text | The survey and file version. |
+| `source_url` | text | Where EIA publishes the file. |
 
 </details>
 

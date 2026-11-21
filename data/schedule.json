@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-20",
- "last_change": "2026-11-20",
+ "generated": "2026-11-21",
+ "last_change": "2026-11-21",
  "cadence_months": {
   "confirmed": 12,
   "documented": 6,
@@ -557,9 +557,9 @@
    "file_url": null,
    "hand_note": "Our server asks the Internet Archive to save a copy of every source we cite that has none yet, a few each hour. Costco and Sam's Club refuse archiving, and a few pages that saved as the wrong page need a copy found another way (for eCFR, the government's annual PDF edition).",
    "once": true,
-   "last": "2026-11-14",
-   "due": "2026-11-21",
-   "result": "Not finished: 1,169 evidence records still have no archive copy. The job had saved copies every hour but failed at its rebuild from 13 Nov 03:47 UTC, so none were applied (the car brands build needed pdftotext, which the jobs server lacks; fixed). Re-booked for 21 Nov"
+   "last": "2026-11-21",
+   "due": "2026-11-28",
+   "result": "Not finished, and losing ground. The hourly job is healthy and saved 48 copies overnight, but the queue of sources with no archive copy grew from 825 URLs on 14 Nov to 931 on 21 Nov, because new pages add evidence faster than the Internet Archive lets one server save: most hourly turns end without a single new copy. Re-booked for 28 Nov, when the save rate gets looked at if the queue is still rising"
   },
   {
    "id": "subaru-origin-reads",
@@ -1815,6 +1815,82 @@
    "last": "2026-11-20",
    "due": "2027-05-21",
    "result": "4 rule texts on file"
+  },
+  {
+   "id": "water-heater-rules",
+   "what": "Serial-date rules for water heaters (Bradford White's own pages, CPSC recall notices), DOE's water heater rules, and CPSC's water heater recall list",
+   "gives": "The serial decoder, the lifetime figures, the 2029 note and the recall list on the water heater age page",
+   "how": "hand",
+   "every_days": 182,
+   "source": {
+    "id": "maker-bradford-white",
+    "name": "Bradford White Corporation: its own help pages (bradfordwhite.com)",
+    "publisher": "Bradford White Corporation",
+    "url": "https://www.bradfordwhite.com/"
+   },
+   "file_url": null,
+   "hand_note": "The serial rules, DOE's rules and the recall list are re-read twice a year.",
+   "once": false,
+   "last": "2026-11-20",
+   "due": "2027-05-21",
+   "result": "16 rule texts on file"
+  },
+  {
+   "id": "isitdue-rules",
+   "what": "The replace-by rules behind Is it due?: NFPA 72 Chapter 29 and NFPA 10 (NFPA's public committee reports), 49 CFR 180.205, 180.209 and 180.213, Kidde's and First Alert's alarm and extinguisher pages, and North Carolina's RIN/VIN page",
+   "gives": "Every year count, maker row and worked example on the smoke alarm, fire extinguisher and propane tank pages",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "nfpa-reports",
+    "name": "NFPA committee reports (public draft and revision reports)",
+    "publisher": "National Fire Protection Association",
+    "url": "https://www.nfpa.org/"
+   },
+   "file_url": null,
+   "hand_note": "The fire codes, federal cylinder rules and makers' pages behind these pages are re-read every three months.",
+   "once": false,
+   "last": "2026-11-21",
+   "due": "2027-02-19",
+   "result": "16 rule records read and saved on 21 Nov 2026; every line checked against the saved copy by tools/build_is_it_due.py, and 47 date checks passed (Kidde's own code example, CPSC's collar example, the CFR's stamp example)."
+  },
+  {
+   "id": "isitdue-recalls",
+   "what": "CPSC recalls of smoke and CO alarms, home fire extinguishers and propane cylinders (CPSC recall API)",
+   "gives": "The recall tables on the smoke alarm, fire extinguisher and propane tank pages",
+   "how": "script",
+   "every_days": 90,
+   "source": {
+    "id": "cpsc-recalls",
+    "name": "CPSC recalls database (SaferProducts.gov recall API)",
+    "publisher": "US Consumer Product Safety Commission",
+    "url": "https://www.saferproducts.gov/"
+   },
+   "file_url": null,
+   "hand_note": "CPSC's recall list for these products is searched every three months.",
+   "once": false,
+   "last": "2026-11-21",
+   "due": "2027-02-19",
+   "result": "24 recalls saved on 21 Nov 2026 from CPSC's API; each label's model and date words checked against CPSC's own description."
+  },
+  {
+   "id": "hvac-rules",
+   "what": "The rules behind the HVAC age page: DOE's consumer furnace rule (2023) and central AC and heat pump rule (2016) with their technical support documents, EPA's Technology Transitions rule (May 2026) and HCFC phaseout page, Energy Trust of Oregon's two equipment-age field guides, and CPSC recalls that name HVAC serial numbers",
+   "gives": "The serial decoder, DOE's lifetimes and survival odds, the refrigerant table and the recall list on the HVAC age page",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "doe-rulemaking-dockets",
+    "name": "DOE appliance standards technical support documents (regulations.gov dockets and energy.gov)",
+    "publisher": "US Department of Energy, Appliance and Equipment Standards Program",
+    "url": "https://www.energy.gov/eere/buildings/appliance-and-equipment-standards-program"
+   },
+   "file_url": null,
+   "hand_note": "DOE's and EPA's rules, the field guides and CPSC's recall list behind this page are re-read every three months.",
+   "once": false,
+   "last": "2026-11-21",
+   "due": "2027-02-19",
+   "result": "29 records read and saved on 21 Nov 2026; every line checked against the saved copy by tools/build_hvac_age.py, and 81 decoder checks passed (each family's own examples and every CPSC serial range against its sale dates)."
   }
  ],
  "terms": [
@@ -2017,6 +2093,22 @@
    "checked": "2026-11-05",
    "due": "2027-11-05",
    "automated_read": "no"
+  },
+  {
+   "source": "Bradford White Corporation: its corporate site (bradfordwhitecorporation.com)",
+   "publisher": "Bradford White Corporation",
+   "url": "https://www.bradfordwhitecorporation.com/robots.txt",
+   "checked": "2026-11-20",
+   "due": "2027-11-20",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Bradford White Corporation: its own help pages (bradfordwhite.com)",
+   "publisher": "Bradford White Corporation",
+   "url": "https://www.bradfordwhite.com/robots.txt",
+   "checked": "2026-11-20",
+   "due": "2027-11-20",
+   "automated_read": "yes"
   },
   {
    "source": "Bridgestone: tire replacement guidance",
@@ -2387,6 +2479,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "EIA Residential Energy Consumption Survey (RECS)",
+   "publisher": "US Energy Information Administration",
+   "url": "https://www.eia.gov/about/copyrights_reuse.php",
+   "checked": "2026-11-20",
+   "due": "2027-11-20",
+   "automated_read": "yes"
+  },
+  {
    "source": "ENERGY STAR certified products data (data.energystar.gov)",
    "publisher": "US Environmental Protection Agency",
    "url": "https://data.energystar.gov/",
@@ -2419,6 +2519,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "EPA ozone layer protection pages (ODS phaseout)",
+   "publisher": "US Environmental Protection Agency",
+   "url": "https://www.epa.gov/web-policies-and-procedures/epa-disclaimers",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "public-domain"
+  },
+  {
    "source": "EPA pesticide program pages and manuals",
    "publisher": "US Environmental Protection Agency",
    "url": "https://www.epa.gov/web-policies-and-procedures",
@@ -2449,6 +2557,14 @@
    "checked": "2026-11-02",
    "due": "2027-11-02",
    "automated_read": "public-domain"
+  },
+  {
+   "source": "Energy Trust of Oregon: contractor field guides to equipment age (CPF Age Information, CPF Furnace Age)",
+   "publisher": "Energy Trust of Oregon (a utility-funded efficiency program)",
+   "url": "https://www.energytrust.org/",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "yes"
   },
   {
    "source": "Evenflo website",
@@ -2552,6 +2668,14 @@
    "url": "https://www.ferrara.com/",
    "checked": "2026-11-06",
    "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
+   "source": "First Alert (US website)",
+   "publisher": "First Alert (BRK Brands)",
+   "url": "https://www.firstalert.com/robots.txt",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
    "automated_read": "yes"
   },
   {
@@ -2883,6 +3007,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "Insurance Institute for Business & Home Safety (IBHS) research pages",
+   "publisher": "Insurance Institute for Business & Home Safety",
+   "url": "https://web.archive.org/",
+   "checked": "2026-11-20",
+   "due": "2027-11-20",
+   "automated_read": "yes"
+  },
+  {
    "source": "International Association of Bedding and Furniture Labeling Officials (IABFLO)",
    "publisher": "International Association of Bedding and Furniture Labeling Officials",
    "url": "https://iabflo.org/",
@@ -3001,6 +3133,14 @@
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "ask"
+  },
+  {
+   "source": "Kidde (US home safety website)",
+   "publisher": "Kidde",
+   "url": "https://www.kidde.com/llms.txt",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "yes"
   },
   {
    "source": "Kodak customer stories",
@@ -3259,6 +3399,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "NFPA committee reports (public draft and revision reports)",
+   "publisher": "National Fire Protection Association",
+   "url": "https://www.nfpa.org/for-professionals/codes-and-standards/list-of-codes-and-standards/free-access",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "yes"
+  },
+  {
    "source": "NHTSA Part 583 American Automobile Labeling Act reports",
    "publisher": "US National Highway Traffic Safety Administration",
    "url": "https://www.nhtsa.gov/about-nhtsa/web-policies-notices",
@@ -3379,6 +3527,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "North Carolina Department of Agriculture: LP-gas pages",
+   "publisher": "North Carolina Department of Agriculture and Consumer Services, Standards Division",
+   "url": "https://www.ncagr.gov/",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "yes"
+  },
+  {
    "source": "North Dakota Department of Agriculture pet food product registrations",
    "publisher": "North Dakota Department of Agriculture",
    "url": "https://www.nd.gov/disclaimer",
@@ -3440,6 +3596,14 @@
    "url": "https://world.openfoodfacts.org/terms-of-use",
    "checked": "2026-11-11",
    "due": "2027-11-11",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Pacific Northwest National Laboratory technical reports",
+   "publisher": "Pacific Northwest National Laboratory (for the US Department of Energy)",
+   "url": "https://www.pnnl.gov/robots.txt",
+   "checked": "2026-11-20",
+   "due": "2027-11-20",
    "automated_read": "yes"
   },
   {
@@ -3545,6 +3709,14 @@
    "checked": "2026-11-17",
    "due": "2027-11-17",
    "automated_read": "no"
+  },
+  {
+   "source": "Rheem Manufacturing Company: brand websites and manuals",
+   "publisher": "Rheem Manufacturing Company",
+   "url": "https://www.rheem.com/",
+   "checked": "2026-11-20",
+   "due": "2027-11-20",
+   "automated_read": "yes"
   },
   {
    "source": "Rolex.com and the Rolex newsroom",
@@ -12487,7 +12659,7 @@
   },
   {
    "path": "/sources/",
-   "changed": "2026-11-20",
+   "changed": "2026-11-21",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -12503,7 +12675,7 @@
   },
   {
    "path": "/data/",
-   "changed": "2026-11-20",
+   "changed": "2026-11-21",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -12628,7 +12800,7 @@
   },
   {
    "path": "/home/",
-   "changed": "2026-11-20",
+   "changed": "2026-11-21",
    "next": "2026-11-23",
    "tasks": [
     {
@@ -12647,7 +12819,7 @@
   },
   {
    "path": "/about/",
-   "changed": "2026-11-20",
+   "changed": "2026-11-21",
    "next": "2027-11-08",
    "tasks": [
     {
@@ -13508,9 +13680,128 @@
    ],
    "claims": 0,
    "stamps": {}
+  },
+  {
+   "path": "/how-old-is-my-water-heater/",
+   "changed": "2026-11-20",
+   "next": "2027-05-21",
+   "tasks": [
+    {
+     "id": "water-heater-rules",
+     "what": "Serial-date rules for water heaters (Bradford White's own pages, CPSC recall notices), DOE's water heater rules, and CPSC's water heater recall list",
+     "due": "2027-05-21"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/bradford-white-water-heater-age/",
+   "changed": "2026-11-20",
+   "next": "2027-05-21",
+   "tasks": [
+    {
+     "id": "water-heater-rules",
+     "what": "Serial-date rules for water heaters (Bradford White's own pages, CPSC recall notices), DOE's water heater rules, and CPSC's water heater recall list",
+     "due": "2027-05-21"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/how-long-do-water-heaters-last/",
+   "changed": "2026-11-20",
+   "next": "2027-05-21",
+   "tasks": [
+    {
+     "id": "water-heater-rules",
+     "what": "Serial-date rules for water heaters (Bradford White's own pages, CPSC recall notices), DOE's water heater rules, and CPSC's water heater recall list",
+     "due": "2027-05-21"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/smoke-detector-expiration/",
+   "changed": "2026-11-21",
+   "next": "2027-02-19",
+   "tasks": [
+    {
+     "id": "isitdue-rules",
+     "what": "The replace-by rules behind Is it due?: NFPA 72 Chapter 29 and NFPA 10 (NFPA's public committee reports), 49 CFR 180.205, 180.209 and 180.213, Kidde's and First Alert's alarm and extinguisher pages, and North Carolina's RIN/VIN page",
+     "due": "2027-02-19"
+    },
+    {
+     "id": "isitdue-recalls",
+     "what": "CPSC recalls of smoke and CO alarms, home fire extinguishers and propane cylinders (CPSC recall API)",
+     "due": "2027-02-19"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/fire-extinguisher-expiration/",
+   "changed": "2026-11-21",
+   "next": "2027-02-19",
+   "tasks": [
+    {
+     "id": "isitdue-rules",
+     "what": "The replace-by rules behind Is it due?: NFPA 72 Chapter 29 and NFPA 10 (NFPA's public committee reports), 49 CFR 180.205, 180.209 and 180.213, Kidde's and First Alert's alarm and extinguisher pages, and North Carolina's RIN/VIN page",
+     "due": "2027-02-19"
+    },
+    {
+     "id": "isitdue-recalls",
+     "what": "CPSC recalls of smoke and CO alarms, home fire extinguishers and propane cylinders (CPSC recall API)",
+     "due": "2027-02-19"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/propane-tank-expiration/",
+   "changed": "2026-11-21",
+   "next": "2027-02-19",
+   "tasks": [
+    {
+     "id": "isitdue-rules",
+     "what": "The replace-by rules behind Is it due?: NFPA 72 Chapter 29 and NFPA 10 (NFPA's public committee reports), 49 CFR 180.205, 180.209 and 180.213, Kidde's and First Alert's alarm and extinguisher pages, and North Carolina's RIN/VIN page",
+     "due": "2027-02-19"
+    },
+    {
+     "id": "isitdue-recalls",
+     "what": "CPSC recalls of smoke and CO alarms, home fire extinguishers and propane cylinders (CPSC recall API)",
+     "due": "2027-02-19"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/hvac-serial-number-lookup/",
+   "changed": "2026-11-21",
+   "next": "2027-02-19",
+   "tasks": [
+    {
+     "id": "hvac-rules",
+     "what": "The rules behind the HVAC age page: DOE's consumer furnace rule (2023) and central AC and heat pump rule (2016) with their technical support documents, EPA's Technology Transitions rule (May 2026) and HCFC phaseout page, Energy Trust of Oregon's two equipment-age field guides, and CPSC recalls that name HVAC serial numbers",
+     "due": "2027-02-19"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
   }
  ],
  "done": [
+  {
+   "on": "2026-11-21",
+   "task": "wam-wayback-saves",
+   "what": "Checked the Wayback save job and its queue",
+   "result": "Not finished, and losing ground. The hourly job is healthy and saved 48 copies overnight, but the queue of sources with no archive copy grew from 825 URLs on 14 Nov to 931 on 21 Nov, because new pages add evidence faster than the Internet Archive lets one server save: most hourly turns end without a single new copy. Re-booked for 28 Nov, when the save rate gets looked at if the queue is still rising"
+  },
   {
    "on": "2026-11-16",
    "task": "kirkland-laundry-reads",

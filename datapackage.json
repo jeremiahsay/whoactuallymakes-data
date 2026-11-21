@@ -2,9 +2,9 @@
  "name": "whoactuallymakes-data",
  "id": "https://doi.org/10.5281/zenodo.23920936",
  "title": "Who Actually Makes open data",
- "description": "Who makes store-brand products, from public records. 20 datasets, 16,653 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them; Trader Joe's wine, beer and spirits label approvals (TTB); Who owns which brand: ownership links between brands, companies and their controlling holders.",
+ "description": "Who makes store-brand products, from public records. 21 datasets, 16,865 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them; Trader Joe's wine, beer and spirits label approvals (TTB); Who owns which brand: ownership links between brands, companies and their controlling holders; How old are the water heaters in US homes? Ages by state and fuel, 2020.",
  "homepage": "https://whoactuallymakes.com/data/",
- "version": "2026-11-20",
+ "version": "2026-11-21",
  "licenses": [
   {
    "name": "CC-BY-4.0",
@@ -609,8 +609,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 1569407,
-   "hash": "sha256:021160a5e6eb9d67a7407c44cef2babed503fb332b315fbfc8b89bdbbdcc80ae",
+   "bytes": 1667448,
+   "hash": "sha256:d7180982baeb951d853374ea9ae09ead2916064f888226e5aa456342bbe1e070",
    "schema": {
     "fields": [
      {
@@ -678,6 +678,10 @@
     ]
    },
    "sources": [
+    {
+     "title": "http://www.disastersafety.org/studies-reports/water-heater-failure-risks/",
+     "path": "http://www.disastersafety.org/studies-reports/water-heater-failure-risks/"
+    },
     {
      "title": "http://www.fda.gov/Safety/Recalls/ucm303034.htm",
      "path": "http://www.fda.gov/Safety/Recalls/ucm303034.htm"
@@ -873,10 +877,6 @@
     {
      "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0014-2021%22",
      "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0014-2021%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0029-2021%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0029-2021%22"
     }
    ]
   },
@@ -888,8 +888,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 141075,
-   "hash": "sha256:a1c3a5e9a68e633f94892cbaa952dc0e460718d16e0e04f3edaad3404681e6dd",
+   "bytes": 146885,
+   "hash": "sha256:067bd1796c30cc4414b41ec719f5c4815abf1b6f5a7e9523054b0525be613637",
    "schema": {
     "fields": [
      {
@@ -1147,6 +1147,10 @@
      "path": "https://iabflo.org/"
     },
     {
+     "title": "https://ibhs.org/",
+     "path": "https://ibhs.org/"
+    },
+    {
      "title": "https://investors.ups.com/news-events/press-releases",
      "path": "https://investors.ups.com/news-events/press-releases"
     },
@@ -1157,10 +1161,6 @@
     {
      "title": "https://itstillruns.com/",
      "path": "https://itstillruns.com/"
-    },
-    {
-     "title": "https://kershaw.kaiusa.com/",
-     "path": "https://kershaw.kaiusa.com/"
     }
    ]
   },
@@ -1240,8 +1240,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 25203,
-   "hash": "sha256:fcff3c3cc1c88dec122be8a2f9c9d06d22c48c0b58d5d760b3cc29ad70814e77",
+   "bytes": 27223,
+   "hash": "sha256:de2b535ee3bb20e462d0873767843c1eee0068b06f219a9fee4da1a2f7b0c11e",
    "schema": {
     "fields": [
      {
@@ -2307,6 +2307,107 @@
     {
      "title": "https://www.sec.gov/edgar/search/",
      "path": "https://www.sec.gov/edgar/search/"
+    }
+   ]
+  },
+  {
+   "name": "water-heater-ages",
+   "path": "data/water-heater-ages.csv",
+   "title": "How old are the water heaters in US homes? Ages by state and fuel, 2020",
+   "description": "The share of homes' main water heaters in each age band, nationally for tanks and tankless heaters and by fuel, and the share of tank heaters 10 and 15 or more years old in each state and DC. Our weighted analysis of EIA's 2020 Residential Energy Consumption Survey public file, with standard errors from EIA's 60 jackknife replicate weights.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 10482,
+   "hash": "sha256:961c9fa19e85ca99fc24bf3651a3930fb918bd5bbb056786546589c04d133796",
+   "schema": {
+    "fields": [
+     {
+      "name": "area",
+      "type": "string",
+      "description": "United States, or a state or DC."
+     },
+     {
+      "name": "area_code",
+      "type": "string",
+      "description": "US, or the state's postal code."
+     },
+     {
+      "name": "heater",
+      "type": "string",
+      "description": "Which heaters: Tank (any fuel), Tank, electric, Tank, fuel oil, Tank, natural gas, Tank, propane or Tankless."
+     },
+     {
+      "name": "homes_in_sample",
+      "type": "number",
+      "description": "Survey homes behind the figure (unweighted)."
+     },
+     {
+      "name": "share_under_2",
+      "type": "number",
+      "description": "Share of heaters under 2 years old (0 to 1). Empty for states."
+     },
+     {
+      "name": "share_2_to_4",
+      "type": "number",
+      "description": "Share 2 to 4 years old. Empty for states."
+     },
+     {
+      "name": "share_5_to_9",
+      "type": "number",
+      "description": "Share 5 to 9 years old. Empty for states."
+     },
+     {
+      "name": "share_10_to_14",
+      "type": "number",
+      "description": "Share 10 to 14 years old. Empty for states."
+     },
+     {
+      "name": "share_15_to_19",
+      "type": "number",
+      "description": "Share 15 to 19 years old. Empty for states."
+     },
+     {
+      "name": "share_20_plus",
+      "type": "number",
+      "description": "Share 20 or more years old. Empty for states."
+     },
+     {
+      "name": "share_10_plus",
+      "type": "number",
+      "description": "Share 10 or more years old (0 to 1)."
+     },
+     {
+      "name": "se_10_plus",
+      "type": "number",
+      "description": "Standard error of share_10_plus, from EIA's replicate weights."
+     },
+     {
+      "name": "share_15_plus",
+      "type": "number",
+      "description": "Share 15 or more years old (0 to 1)."
+     },
+     {
+      "name": "se_15_plus",
+      "type": "number",
+      "description": "Standard error of share_15_plus."
+     },
+     {
+      "name": "survey",
+      "type": "string",
+      "description": "The survey and file version."
+     },
+     {
+      "name": "source_url",
+      "type": "string",
+      "description": "Where EIA publishes the file."
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "https://www.eia.gov/consumption/residential/data/2020/index.php?view=microdata",
+     "path": "https://www.eia.gov/consumption/residential/data/2020/index.php?view=microdata"
     }
    ]
   }

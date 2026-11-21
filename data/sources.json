@@ -1,8 +1,8 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-20",
- "count": 305,
- "primary": 234,
+ "generated": "2026-11-21",
+ "count": 317,
+ "primary": 245,
  "by_hand": 50,
  "sources": [
   {
@@ -592,6 +592,39 @@
    ]
   },
   {
+   "id": "maker-bradford-white",
+   "name": "Bradford White Corporation: its own help pages (bradfordwhite.com)",
+   "short": "Bradford White",
+   "publisher": "Bradford White Corporation",
+   "url": "https://www.bradfordwhite.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How Bradford White says its serial numbers carry the build date, in its own words.",
+   "cannot_prove": "When one particular heater was installed, or how long it will last.",
+   "terms": {
+    "url": "https://www.bradfordwhite.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-20",
+    "due": "2027-11-20"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": [
+    {
+     "what": "Serial-date rules for water heaters (Bradford White's own pages, CPSC recall notices), DOE's water heater rules, and CPSC's water heater recall list",
+     "how": "hand",
+     "every_days": 182,
+     "last": "2026-11-20",
+     "due": "2027-05-21",
+     "result": "16 rule texts on file",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The serial rules, DOE's rules and the recall list are re-read twice a year."
+    }
+   ]
+  },
+  {
    "id": "cpsc-recalls",
    "name": "CPSC recalls database (SaferProducts.gov recall API)",
    "short": "CPSC recalls",
@@ -653,6 +686,26 @@
      "label": "How long do refrigerators last?",
      "url": "/how-long-do-refrigerators-last/",
      "note": "35 household fridge, freezer and minifridge recalls, 1977 to 2026, and two old-appliance warnings"
+    },
+    {
+     "label": "Smoke and CO alarm expiration",
+     "url": "/smoke-detector-expiration/",
+     "note": "Smoke and CO alarm recalls since 2009"
+    },
+    {
+     "label": "Fire extinguisher expiration",
+     "url": "/fire-extinguisher-expiration/",
+     "note": "Household fire extinguisher recalls"
+    },
+    {
+     "label": "Propane tank expiration",
+     "url": "/propane-tank-expiration/",
+     "note": "Propane cylinder recalls"
+    },
+    {
+     "label": "How old is my furnace, AC or heat pump?",
+     "url": "/hvac-serial-number-lookup/",
+     "note": "HVAC recalls whose serial ranges show the date format"
     }
    ],
    "pulls": [
@@ -699,6 +752,17 @@
      "edition": null,
      "file_url": null,
      "hand_note": "CPSC’s recall list for both stores, every month."
+    },
+    {
+     "what": "CPSC recalls of smoke and CO alarms, home fire extinguishers and propane cylinders (CPSC recall API)",
+     "how": "script",
+     "every_days": 90,
+     "last": "2026-11-21",
+     "due": "2027-02-19",
+     "result": "24 recalls saved on 21 Nov 2026 from CPSC's API; each label's model and date words checked against CPSC's own description.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "CPSC's recall list for these products is searched every three months."
     }
    ]
   },
@@ -1143,6 +1207,11 @@
     {
      "label": "How long do dishwashers last?",
      "url": "/how-long-do-dishwashers-last/"
+    },
+    {
+     "label": "How old is my furnace, AC or heat pump?",
+     "url": "/hvac-serial-number-lookup/",
+     "note": "DOE survival curves for gas furnaces, central AC and heat pumps"
     }
    ],
    "pulls": [
@@ -1156,6 +1225,17 @@
      "edition": null,
      "file_url": null,
      "hand_note": "The Federal Register for each product's newest efficiency rule and the lifetime it assumes, GE's serial chart and label pages, and Whirlpool's technical manuals for year codes. A changed lifetime or rule is a correction approved by the site owner, and the page's diagrams are redrawn."
+    },
+    {
+     "what": "The rules behind the HVAC age page: DOE's consumer furnace rule (2023) and central AC and heat pump rule (2016) with their technical support documents, EPA's Technology Transitions rule (May 2026) and HCFC phaseout page, Energy Trust of Oregon's two equipment-age field guides, and CPSC recalls that name HVAC serial numbers",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-21",
+     "due": "2027-02-19",
+     "result": "29 records read and saved on 21 Nov 2026; every line checked against the saved copy by tools/build_hvac_age.py, and 81 decoder checks passed (each family's own examples and every CPSC serial range against its sale dates).",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "DOE's and EPA's rules, the field guides and CPSC's recall list behind this page are re-read every three months."
     }
    ]
   },
@@ -1729,6 +1809,50 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Both stores’ price-match pages, every month."
+    }
+   ]
+  },
+  {
+   "id": "nfpa-reports",
+   "name": "NFPA committee reports (public draft and revision reports)",
+   "short": "NFPA reports",
+   "publisher": "National Fire Protection Association",
+   "url": "https://www.nfpa.org/",
+   "kind": "Other",
+   "primary": true,
+   "proves": "The wording NFPA's technical committees adopted for a section of a standard in a revision cycle, as printed in NFPA's own public first and second draft reports.",
+   "cannot_prove": "The final printed edition word for word, or whether your state or city has adopted that edition. Draft reports show changes as struck and added text, which plain-text copies lose.",
+   "terms": {
+    "url": "https://www.nfpa.org/for-professionals/codes-and-standards/list-of-codes-and-standards/free-access",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Smoke and CO alarm expiration",
+     "url": "/smoke-detector-expiration/",
+     "note": "NFPA 72 Chapter 29: replace smoke and CO alarms 10 years from the date of manufacture unless the maker says otherwise; the date format on the alarm"
+    },
+    {
+     "label": "Fire extinguisher expiration",
+     "url": "/fire-extinguisher-expiration/",
+     "note": "NFPA 10 (2025) 7.3.6 and 7.3.6.3: 6-year examination, 12-year limit for disposable extinguishers"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "The replace-by rules behind Is it due?: NFPA 72 Chapter 29 and NFPA 10 (NFPA's public committee reports), 49 CFR 180.205, 180.209 and 180.213, Kidde's and First Alert's alarm and extinguisher pages, and North Carolina's RIN/VIN page",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-21",
+     "due": "2027-02-19",
+     "result": "16 rule records read and saved on 21 Nov 2026; every line checked against the saved copy by tools/build_is_it_due.py, and 47 date checks passed (Kidde's own code example, CPSC's collar example, the CFR's stamp example).",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The fire codes, federal cylinder rules and makers' pages behind these pages are re-read every three months."
     }
    ]
   },
@@ -2628,9 +2752,9 @@
      "what": "Internet Archive copies of every source we cite",
      "how": "hand",
      "every_days": 0,
-     "last": "2026-11-14",
-     "due": "2026-11-21",
-     "result": "Not finished: 1,169 evidence records still have no archive copy. The job had saved copies every hour but failed at its rebuild from 13 Nov 03:47 UTC, so none were applied (the car brands build needed pdftotext, which the jobs server lacks; fixed). Re-booked for 21 Nov",
+     "last": "2026-11-21",
+     "due": "2026-11-28",
+     "result": "Not finished, and losing ground. The hourly job is healthy and saved 48 copies overnight, but the queue of sources with no archive copy grew from 825 URLs on 14 Nov to 931 on 21 Nov, because new pages add evidence faster than the Internet Archive lets one server save: most hourly turns end without a single new copy. Re-booked for 28 Nov, when the save rate gets looked at if the queue is still rising",
      "edition": null,
      "file_url": null,
      "hand_note": "Our server asks the Internet Archive to save a copy of every source we cite that has none yet, a few each hour. Costco and Sam's Club refuse archiving, and a few pages that saved as the wrong page need a copy found another way (for eCFR, the government's annual PDF edition)."
@@ -3461,6 +3585,27 @@
    "pulls": []
   },
   {
+   "id": "maker-bradford-white-corp",
+   "name": "Bradford White Corporation: its corporate site (bradfordwhitecorporation.com)",
+   "short": "Bradford White (corporate site)",
+   "publisher": "Bradford White Corporation",
+   "url": "https://www.bradfordwhitecorporation.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where Bradford White says it has plants, and what it says about where its products are made.",
+   "cannot_prove": "Which plant built one particular heater, or where each part came from.",
+   "terms": {
+    "url": "https://www.bradfordwhitecorporation.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-20",
+    "due": "2027-11-20"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "maker-bridgestone",
    "name": "Bridgestone: tire replacement guidance",
    "short": "Bridgestone",
@@ -4015,6 +4160,11 @@
      "label": "How long do refrigerators last?",
      "url": "/how-long-do-refrigerators-last/",
      "note": "The 1993 and 2001 refrigerator limits, 2002 edition"
+    },
+    {
+     "label": "Propane tank expiration",
+     "url": "/propane-tank-expiration/",
+     "note": "49 CFR 180.209 and 180.213: when a propane cylinder must be requalified, and how the stamp reads"
     }
    ],
    "pulls": []
@@ -4424,6 +4574,33 @@
    "pulls": []
   },
   {
+   "id": "eia-recs",
+   "name": "EIA Residential Energy Consumption Survey (RECS)",
+   "short": "EIA RECS",
+   "publisher": "US Energy Information Administration",
+   "url": "https://www.eia.gov/consumption/residential/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What a national sample of US households reported about their homes and equipment, weighted to all US homes.",
+   "cannot_prove": "Anything about one home or heater; the age is reported in bands, by the household, and some answers are imputed.",
+   "terms": {
+    "url": "https://www.eia.gov/about/copyrights_reuse.php",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-20",
+    "due": "2027-11-20"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "How old is my furnace, AC or heat pump?",
+     "url": "/hvac-serial-number-lookup/",
+     "note": "How old furnaces, heat pumps and central ACs in US homes are (2020 RECS)"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "energy-star-data",
    "name": "ENERGY STAR certified products data (data.energystar.gov)",
    "short": "ENERGY STAR data",
@@ -4510,6 +4687,33 @@
    "pulls": []
   },
   {
+   "id": "epa-ozone-pages",
+   "name": "EPA ozone layer protection pages (ODS phaseout)",
+   "short": "EPA",
+   "publisher": "US Environmental Protection Agency",
+   "url": "https://www.epa.gov/ozone-layer-protection",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "EPA's own summary of when production and import of HCFC refrigerants such as R-22 ended, and which uses continue.",
+   "cannot_prove": "The legal text itself (40 CFR part 82 decides), or what refrigerant is in one unit (its label decides).",
+   "terms": {
+    "url": "https://www.epa.gov/web-policies-and-procedures/epa-disclaimers",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "How old is my furnace, AC or heat pump?",
+     "url": "/hvac-serial-number-lookup/",
+     "note": "R-22: production and import ended for new equipment from 2010 and entirely in 2020"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "eur-lex",
    "name": "EUR-Lex (EU law and Court of Justice judgments)",
    "short": "EUR-Lex",
@@ -4559,6 +4763,33 @@
      "label": "Battery date code decoder",
      "url": "/battery-date-code/",
      "note": "East Penn's date code rule"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "energy-trust-field-guides",
+   "name": "Energy Trust of Oregon: contractor field guides to equipment age (CPF Age Information, CPF Furnace Age)",
+   "short": "Energy Trust of Oregon",
+   "publisher": "Energy Trust of Oregon (a utility-funded efficiency program)",
+   "url": "https://www.energytrust.org/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "How an efficiency program tells its contractors to read the build date in HVAC serial numbers, brand by brand, as printed in its guides (PDFs dated November 2025).",
+   "cannot_prove": "A maker's own rule. The guides say makers have used different codes at different plants and times; any one serial can follow another format.",
+   "terms": {
+    "url": "https://www.energytrust.org/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "How old is my furnace, AC or heat pump?",
+     "url": "/hvac-serial-number-lookup/",
+     "note": "Serial date formats for Carrier, Goodman, Lennox, Rheem, Trane, Nordyne and ICP brands"
     }
    ],
    "pulls": []
@@ -4766,6 +4997,11 @@
      "label": "Car seat expiration",
      "url": "/car-seat-expiration/",
      "note": "The FMVSS 213a compliance date, 5 Dec 2026"
+    },
+    {
+     "label": "How old is my furnace, AC or heat pump?",
+     "url": "/hvac-serial-number-lookup/",
+     "note": "DOE average lifetimes; EPA's 2026 R-410A rule"
     }
    ],
    "pulls": []
@@ -4810,6 +5046,33 @@
    },
    "credit": null,
    "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "maker-first-alert",
+   "name": "First Alert (US website)",
+   "short": "First Alert",
+   "publisher": "First Alert (BRK Brands)",
+   "url": "https://www.firstalert.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What First Alert says about replacing its smoke and CO alarms, on the date we read it.",
+   "cannot_prove": "The date on your alarm or the years your own model's manual gives.",
+   "terms": {
+    "url": "https://www.firstalert.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Smoke and CO alarm expiration",
+     "url": "/smoke-detector-expiration/",
+     "note": "Replace alarms 10 years old or older; the date is on the back"
+    }
+   ],
    "pulls": []
   },
   {
@@ -5831,6 +6094,27 @@
    "pulls": []
   },
   {
+   "id": "ibhs",
+   "name": "Insurance Institute for Business & Home Safety (IBHS) research pages",
+   "short": "IBHS",
+   "publisher": "Insurance Institute for Business & Home Safety",
+   "url": "https://ibhs.org/",
+   "kind": "Other",
+   "primary": true,
+   "proves": "What IBHS found in the insurance claims it reviewed.",
+   "cannot_prove": "Failure rates for all water heaters: only heaters whose failure led to an insurance claim are in it.",
+   "terms": {
+    "url": "https://web.archive.org/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-20",
+    "due": "2027-11-20"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "it-still-runs",
    "name": "It Still Runs how-to articles",
    "short": "It Still Runs",
@@ -6144,6 +6428,38 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "Its tire age advice to owners, in the carmakers table"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-kidde",
+   "name": "Kidde (US home safety website)",
+   "short": "Kidde",
+   "publisher": "Kidde",
+   "url": "https://www.kidde.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Kidde says about its own alarms and extinguishers: how long they last, where the date is, and what its warning sounds mean, on the date we read it.",
+   "cannot_prove": "The date or condition of your alarm or extinguisher; your own label and manual decide.",
+   "terms": {
+    "url": "https://www.kidde.com/llms.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Smoke and CO alarm expiration",
+     "url": "/smoke-detector-expiration/",
+     "note": "CO alarm life by year made, end-of-life warnings"
+    },
+    {
+     "label": "Fire extinguisher expiration",
+     "url": "/fire-extinguisher-expiration/",
+     "note": "Where the date is, the 10-digit date code, the 12-year line"
     }
    ],
    "pulls": []
@@ -7203,6 +7519,33 @@
    "pulls": []
   },
   {
+   "id": "ncda-lp-gas",
+   "name": "North Carolina Department of Agriculture: LP-gas pages",
+   "short": "NC Agriculture",
+   "publisher": "North Carolina Department of Agriculture and Consumer Services, Standards Division",
+   "url": "https://www.ncagr.gov/divisions/standards",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "How a state LP-gas regulator explains who may requalify a propane cylinder.",
+   "cannot_prove": "Federal rules themselves (49 CFR decides), or rules in other states.",
+   "terms": {
+    "url": "https://www.ncagr.gov/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Propane tank expiration",
+     "url": "/propane-tank-expiration/",
+     "note": "RIN and VIN holders; a VIN allows only visual requalification"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-novolex",
    "name": "Novolex and Pactiv Evergreen product pages",
    "short": "Novolex",
@@ -7383,6 +7726,27 @@
      "note": "The USDA plant number on a photographed Mandarin Orange Chicken bag"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "pnnl-reports",
+   "name": "Pacific Northwest National Laboratory technical reports",
+   "short": "PNNL",
+   "publisher": "Pacific Northwest National Laboratory (for the US Department of Energy)",
+   "url": "https://www.pnnl.gov/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What a DOE national laboratory's literature review found and recommends.",
+   "cannot_prove": "Measured effects in homes unless the report says it measured them: much of PNNL-22921 summarises other sources.",
+   "terms": {
+    "url": "https://www.pnnl.gov/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-20",
+    "due": "2027-11-20"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -7683,6 +8047,27 @@
      "note": "Milan prosecutors' document requests to 13 fashion firms, December 2025"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "maker-rheem",
+   "name": "Rheem Manufacturing Company: brand websites and manuals",
+   "short": "Rheem",
+   "publisher": "Rheem Manufacturing Company",
+   "url": "https://www.rheem.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which brands Rheem puts its name to: the copyright line on a brand's own website, and the maker named in a manual.",
+   "cannot_prove": "Which plant built one particular heater, or anything about heaters whose manual we haven't read.",
+   "terms": {
+    "url": "https://www.rheem.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-20",
+    "due": "2027-11-20"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {

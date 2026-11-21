@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-20",
+ "generated": "2026-11-21",
  "title": "Who Actually Makes open data",
  "url": "https://whoactuallymakes.com/data/",
  "licence": {
@@ -13,8 +13,8 @@
   "doi_note": "Concept DOI: always resolves to the newest archived version on Zenodo.",
   "mirror": "https://github.com/jeremiahsay/whoactuallymakes-data"
  },
- "count": 20,
- "records": 16653,
+ "count": 21,
+ "records": 16865,
  "datasets": [
   {
    "id": "claims",
@@ -965,6 +965,7 @@
    ],
    "rights": "Quotes belong to their publishers and are short so you can check our work. CC BY covers our records: titles, notes, dates and fingerprints.",
    "based_on": [
+    "http://www.disastersafety.org/studies-reports/water-heater-failure-risks/",
     "http://www.fda.gov/Safety/Recalls/ucm303034.htm",
     "http://www.usga.org/ConformingGolfBall/gball_list.pdf",
     "https://19january2021snapshot.epa.gov/sites/static/files/documents/chap-14.pdf",
@@ -1013,11 +1014,10 @@
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2857-2015%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2858-2015%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22H-0023-2026%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0014-2021%22",
-    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0029-2021%22"
+    "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0014-2021%22"
    ],
-   "records": 2236,
-   "updated": "2026-11-20",
+   "records": 2375,
+   "updated": "2026-11-21",
    "fields": [
     {
      "name": "id",
@@ -1155,13 +1155,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/evidence.json",
-     "bytes": 1867221,
-     "sha256": "4a3205df52dc875264693c706cc5c2d6f98a2f783adb3b4891a0d16b4736dfba"
+     "bytes": 1983735,
+     "sha256": "475e660c7e71886efc44b9354702b3c2135f72954e89457cabc39dad2cbdaab7"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/evidence.csv",
-     "bytes": 1569407,
-     "sha256": "021160a5e6eb9d67a7407c44cef2babed503fb332b315fbfc8b89bdbbdcc80ae"
+     "bytes": 1667448,
+     "sha256": "d7180982baeb951d853374ea9ae09ead2916064f888226e5aa456342bbe1e070"
     }
    }
   },
@@ -1228,13 +1228,13 @@
     "https://gruppe.schwarz/en",
     "https://hip2save.com/",
     "https://iabflo.org/",
+    "https://ibhs.org/",
     "https://investors.ups.com/news-events/press-releases",
     "https://investors.volvocars.com/",
-    "https://itstillruns.com/",
-    "https://kershaw.kaiusa.com/"
+    "https://itstillruns.com/"
    ],
-   "records": 305,
-   "updated": "2026-11-20",
+   "records": 317,
+   "updated": "2026-11-21",
    "fields": [
     {
      "name": "id",
@@ -1382,13 +1382,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/sources.json",
-     "bytes": 345669,
-     "sha256": "7c4942f9477adc2717b444f81820c5e4c02c68988c2db6363ad4ad276869b1fa"
+     "bytes": 360944,
+     "sha256": "d33999b537c1c35ef6055aa3793f0e19d368ae21da97e8f5d1d0a4b4d530100e"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/sources.csv",
-     "bytes": 141075,
-     "sha256": "a1c3a5e9a68e633f94892cbaa952dc0e460718d16e0e04f3edaad3404681e6dd"
+     "bytes": 146885,
+     "sha256": "067bd1796c30cc4414b41ec719f5c4815abf1b6f5a7e9523054b0525be613637"
     }
    }
   },
@@ -1553,8 +1553,8 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 95,
-   "updated": "2026-11-20",
+   "records": 99,
+   "updated": "2026-11-21",
    "fields": [
     {
      "name": "id",
@@ -1662,13 +1662,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/schedule.json",
-     "bytes": 426007,
-     "sha256": "4c19b52f249d581d34ac87a3a7acb8af90e0fdc34c894a23d8cdb2e733151bdf"
+     "bytes": 437799,
+     "sha256": "6c0812fe79e633922dc8fb0dacc84c1d360a62abd4fec159793dddcf3786f74a"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/schedule.csv",
-     "bytes": 25203,
-     "sha256": "fcff3c3cc1c88dec122be8a2f9c9d06d22c48c0b58d5d760b3cc29ad70814e77"
+     "bytes": 27223,
+     "sha256": "de2b535ee3bb20e462d0873767843c1eee0068b06f219a9fee4da1a2f7b0c11e"
     }
    }
   },
@@ -2322,7 +2322,7 @@
     "json": {
      "url": "https://whoactuallymakes.com/data/battery-date-codes.json",
      "bytes": 90741,
-     "sha256": "c89f8419f351ad21c8a16f9e048c84f6f40801e81b5091c9dfe3c791475d4ed9"
+     "sha256": "b99038fc402edd335934e6b5b51fd2a9e740e3ff89d49ec7982f27a9dd532895"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/battery-date-codes.csv",
@@ -3744,6 +3744,214 @@
      "url": "https://whoactuallymakes.com/data/ownership-links.csv",
      "bytes": 29367,
      "sha256": "82726c56df70087b5ac47a52969abf585480f57f2c3be1b13c2ef21136645dd5"
+    }
+   }
+  },
+  {
+   "id": "water-heater-ages",
+   "title": "How old are the water heaters in US homes? Ages by state and fuel, 2020",
+   "short": "Water heater ages",
+   "what": "The share of homes' main water heaters in each age band, nationally for tanks and tankless heaters and by fuel, and the share of tank heaters 10 and 15 or more years old in each state and DC. Our weighted analysis of EIA's 2020 Residential Energy Consumption Survey public file, with standard errors from EIA's 60 jackknife replicate weights.",
+   "limits": "Ages are reported by households in bands, and EIA imputed about 13% of them. Heaters serving a whole apartment building are left out. A survey share isn't a lifespan: it mixes how long heaters last with when homes were built and when heaters were bought. State differences don't show why. Only figures meeting EIA's publication rule (relative standard error 50% or less, at least 10 households) are included.",
+   "use": "Powers the age-of-US-water-heaters table and the state lookup on the water heater lifespan page.",
+   "page": "/how-long-do-water-heaters-last/",
+   "refresh": "When EIA publishes water heater ages from the 2024 survey",
+   "keywords": [
+    "water heater age",
+    "how old are water heaters",
+    "water heater lifespan by state",
+    "RECS water heater"
+   ],
+   "rights": "CC BY covers our analysis. The underlying survey is EIA's, a US government work.",
+   "based_on": [
+    "https://www.eia.gov/consumption/residential/data/2020/index.php?view=microdata"
+   ],
+   "records": 57,
+   "updated": "2026-11-20",
+   "fields": [
+    {
+     "name": "area",
+     "type": "text",
+     "about": "United States, or a state or DC."
+    },
+    {
+     "name": "area_code",
+     "type": "text",
+     "about": "US, or the state's postal code."
+    },
+    {
+     "name": "heater",
+     "type": "text",
+     "about": "Which heaters: Tank (any fuel), Tank, electric, Tank, fuel oil, Tank, natural gas, Tank, propane or Tankless."
+    },
+    {
+     "name": "homes_in_sample",
+     "type": "number",
+     "about": "Survey homes behind the figure (unweighted)."
+    },
+    {
+     "name": "share_under_2",
+     "type": "number",
+     "about": "Share of heaters under 2 years old (0 to 1). Empty for states."
+    },
+    {
+     "name": "share_2_to_4",
+     "type": "number",
+     "about": "Share 2 to 4 years old. Empty for states."
+    },
+    {
+     "name": "share_5_to_9",
+     "type": "number",
+     "about": "Share 5 to 9 years old. Empty for states."
+    },
+    {
+     "name": "share_10_to_14",
+     "type": "number",
+     "about": "Share 10 to 14 years old. Empty for states."
+    },
+    {
+     "name": "share_15_to_19",
+     "type": "number",
+     "about": "Share 15 to 19 years old. Empty for states."
+    },
+    {
+     "name": "share_20_plus",
+     "type": "number",
+     "about": "Share 20 or more years old. Empty for states."
+    },
+    {
+     "name": "share_10_plus",
+     "type": "number",
+     "about": "Share 10 or more years old (0 to 1)."
+    },
+    {
+     "name": "se_10_plus",
+     "type": "number",
+     "about": "Standard error of share_10_plus, from EIA's replicate weights."
+    },
+    {
+     "name": "share_15_plus",
+     "type": "number",
+     "about": "Share 15 or more years old (0 to 1)."
+    },
+    {
+     "name": "se_15_plus",
+     "type": "number",
+     "about": "Standard error of share_15_plus."
+    },
+    {
+     "name": "survey",
+     "type": "text",
+     "about": "The survey and file version."
+    },
+    {
+     "name": "source_url",
+     "type": "text",
+     "about": "Where EIA publishes the file."
+    }
+   ],
+   "preview": [
+    {
+     "area": "United States",
+     "area_code": "US",
+     "heater": "Tank (any fuel)",
+     "homes_in_sample": 15404,
+     "share_under_2": 0.1459,
+     "share_2_to_4": 0.1897,
+     "share_5_to_9": 0.3189,
+     "share_10_to_14": 0.1987,
+     "share_15_to_19": 0.0826,
+     "share_20_plus": 0.0642,
+     "share_10_plus": 0.3455,
+     "se_10_plus": 0.0043,
+     "share_15_plus": 0.1468,
+     "se_15_plus": 0.0033,
+     "survey": "EIA RECS 2020 (public file v7)",
+     "source_url": "https://www.eia.gov/consumption/residential/data/2020/index.php?view=microdata"
+    },
+    {
+     "area": "United States",
+     "area_code": "US",
+     "heater": "Tankless",
+     "homes_in_sample": 1204,
+     "share_under_2": 0.2701,
+     "share_2_to_4": 0.2436,
+     "share_5_to_9": 0.2713,
+     "share_10_to_14": 0.1486,
+     "share_15_to_19": 0.0288,
+     "share_20_plus": 0.0375,
+     "share_10_plus": 0.2149,
+     "se_10_plus": 0.0133,
+     "share_15_plus": 0.0663,
+     "se_15_plus": 0.0069,
+     "survey": "EIA RECS 2020 (public file v7)",
+     "source_url": "https://www.eia.gov/consumption/residential/data/2020/index.php?view=microdata"
+    },
+    {
+     "area": "United States",
+     "area_code": "US",
+     "heater": "Tank, electric",
+     "homes_in_sample": 7067,
+     "share_under_2": 0.146,
+     "share_2_to_4": 0.1979,
+     "share_5_to_9": 0.322,
+     "share_10_to_14": 0.1973,
+     "share_15_to_19": 0.0765,
+     "share_20_plus": 0.0604,
+     "share_10_plus": 0.3341,
+     "se_10_plus": 0.0061,
+     "share_15_plus": 0.1369,
+     "se_15_plus": 0.0045,
+     "survey": "EIA RECS 2020 (public file v7)",
+     "source_url": "https://www.eia.gov/consumption/residential/data/2020/index.php?view=microdata"
+    },
+    {
+     "area": "United States",
+     "area_code": "US",
+     "heater": "Tank, natural gas",
+     "homes_in_sample": 7326,
+     "share_under_2": 0.1492,
+     "share_2_to_4": 0.1875,
+     "share_5_to_9": 0.3193,
+     "share_10_to_14": 0.1977,
+     "share_15_to_19": 0.0853,
+     "share_20_plus": 0.061,
+     "share_10_plus": 0.344,
+     "se_10_plus": 0.0058,
+     "share_15_plus": 0.1462,
+     "se_15_plus": 0.0049,
+     "survey": "EIA RECS 2020 (public file v7)",
+     "source_url": "https://www.eia.gov/consumption/residential/data/2020/index.php?view=microdata"
+    },
+    {
+     "area": "United States",
+     "area_code": "US",
+     "heater": "Tank, propane",
+     "homes_in_sample": 542,
+     "share_under_2": 0.1297,
+     "share_2_to_4": 0.155,
+     "share_5_to_9": 0.286,
+     "share_10_to_14": 0.2214,
+     "share_15_to_19": 0.0955,
+     "share_20_plus": 0.1125,
+     "share_10_plus": 0.4294,
+     "se_10_plus": 0.0279,
+     "share_15_plus": 0.208,
+     "se_15_plus": 0.0197,
+     "survey": "EIA RECS 2020 (public file v7)",
+     "source_url": "https://www.eia.gov/consumption/residential/data/2020/index.php?view=microdata"
+    }
+   ],
+   "files": {
+    "json": {
+     "url": "https://whoactuallymakes.com/data/water-heater-ages.json",
+     "bytes": 29819,
+     "sha256": "a6dd1bee7836b4f1ef010f1d4be46ca46995c5e4a8bec3dd7d6917ccfdaea98f"
+    },
+    "csv": {
+     "url": "https://whoactuallymakes.com/data/water-heater-ages.csv",
+     "bytes": 10482,
+     "sha256": "961c9fa19e85ca99fc24bf3651a3930fb918bd5bbb056786546589c04d133796"
     }
    }
   }
