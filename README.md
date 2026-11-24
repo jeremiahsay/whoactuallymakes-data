@@ -4,7 +4,7 @@
 
 Who makes store-brand products, from public records. Every list behind [Who Actually Makes](https://whoactuallymakes.com/): which company each Kirkland Signature product traces to, the companies behind store brands and the labels they're on record for, every NHTSA tire plant code, what tire makers and carmakers say about tire age, and the evidence, sources, corrections and update schedule behind it all.
 
-**21 datasets · 16,865 records · version 2026-11-21** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
+**22 datasets · 17,471 records · version 2026-11-24** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
 
 Each answer on the site carries a stamp (confirmed, documented, reported or unverified) and links to the record it rests on. The evidence file keeps the exact quote, the date it was read and a SHA-256 fingerprint of the document, so anyone can check a row against its source. How the stamps work: https://whoactuallymakes.com/how-we-know/
 
@@ -15,17 +15,18 @@ Each answer on the site carries a stamp (confirmed, documented, reported or unve
 | [Who makes what: store-brand answers (Kirkland Signature)](#claims) | 747 | 2026-11-20 | [JSON](data/claims.json) (658 KB) · [CSV](data/claims.csv) (407 KB) | [/kirkland-signature/](https://whoactuallymakes.com/kirkland-signature/) |
 | [Companies behind store brands (maker pages)](#companies) | 14 | 2026-11-20 | [JSON](data/companies.json) (8 KB) · [CSV](data/companies.csv) (4 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
 | [Which store labels each company is on record for](#company-labels) | 215 | 2026-11-20 | [JSON](data/company-labels.json) (111 KB) · [CSV](data/company-labels.csv) (70 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
-| [Tire plant codes (NHTSA)](#tire-plants) | 1,249 | 2026-11-16 | [JSON](data/tire-plants.json) (150 KB) · [CSV](data/tire-plants.csv) (90 KB) | [/tire-dot-code-lookup/](https://whoactuallymakes.com/tire-dot-code-lookup/) |
+| [Tire plant codes (NHTSA)](#tire-plants) | 1,249 | 2026-11-24 | [JSON](data/tire-plants.json) (150 KB) · [CSV](data/tire-plants.csv) (90 KB) | [/tire-dot-code-lookup/](https://whoactuallymakes.com/tire-dot-code-lookup/) |
+| [Tire brands: trademark owner, recall filers and factories](#tire-brands) | 67 | 2026-11-24 | [JSON](data/tire-brands.json) (228 KB) · [CSV](data/tire-brands.csv) (20 KB) | [/who-makes-tire-brands/](https://whoactuallymakes.com/who-makes-tire-brands/) |
 | [Tire age guidance from tire makers, carmakers and agencies](#tire-age) | 22 | 2026-11-12 | [JSON](data/tire-age.json) (35 KB) · [CSV](data/tire-age.csv) (20 KB) | [/tire-date-code/](https://whoactuallymakes.com/tire-date-code/) |
-| [Evidence records: every quote behind our answers](#evidence) | 2,375 | 2026-11-21 | [JSON](data/evidence.json) (1937 KB) · [CSV](data/evidence.csv) (1628 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
-| [Sources: the public records we use, and their limits](#sources) | 317 | 2026-11-21 | [JSON](data/sources.json) (352 KB) · [CSV](data/sources.csv) (143 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
-| [Corrections log](#corrections) | 62 | 2026-11-20 | [JSON](data/corrections.json) (53 KB) · [CSV](data/corrections.csv) (39 KB) | [/corrections/](https://whoactuallymakes.com/corrections/) |
-| [Update schedule: when each list is checked](#schedule) | 99 | 2026-11-21 | [JSON](data/schedule.json) (428 KB) · [CSV](data/schedule.csv) (27 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
+| [Evidence records: every quote behind our answers](#evidence) | 2,777 | 2026-11-24 | [JSON](data/evidence.json) (2261 KB) · [CSV](data/evidence.csv) (1900 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
+| [Sources: the public records we use, and their limits](#sources) | 367 | 2026-11-24 | [JSON](data/sources.json) (405 KB) · [CSV](data/sources.csv) (165 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
+| [Corrections log](#corrections) | 63 | 2026-11-23 | [JSON](data/corrections.json) (54 KB) · [CSV](data/corrections.csv) (40 KB) | [/corrections/](https://whoactuallymakes.com/corrections/) |
+| [Update schedule: when each list is checked](#schedule) | 109 | 2026-11-24 | [JSON](data/schedule.json) (452 KB) · [CSV](data/schedule.csv) (29 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
 | [Costco diaper prices: every size at every read](#costco-diaper-prices) | 60 | 2026-11-09 | [JSON](data/costco-diaper-prices.json) (18 KB) · [CSV](data/costco-diaper-prices.csv) (8 KB) | [/costco-diapers/](https://whoactuallymakes.com/costco-diapers/) |
-| [Kirkland vs name brands: every pair and its verdict](#kirkland-vs-pairs) | 22 | 2026-11-16 | [JSON](data/kirkland-vs-pairs.json) (21 KB) · [CSV](data/kirkland-vs-pairs.csv) (8 KB) | [/kirkland-vs-name-brands/](https://whoactuallymakes.com/kirkland-vs-name-brands/) |
+| [Kirkland vs name brands: every pair and its verdict](#kirkland-vs-pairs) | 22 | 2026-11-24 | [JSON](data/kirkland-vs-pairs.json) (21 KB) · [CSV](data/kirkland-vs-pairs.csv) (8 KB) | [/kirkland-vs-name-brands/](https://whoactuallymakes.com/kirkland-vs-name-brands/) |
 | [Car battery date code rules, by brand](#battery-date-codes) | 21 | 2026-11-07 | [JSON](data/battery-date-codes.json) (89 KB) · [CSV](data/battery-date-codes.csv) (4 KB) | [/battery-date-code/](https://whoactuallymakes.com/battery-date-code/) |
 | [USDA meat, poultry and egg plants (FSIS directory)](#usda-establishments) | 7,257 | 2026-11-02 | [JSON](data/usda-establishments.json) (1621 KB) · [CSV](data/usda-establishments.csv) (1443 KB) | [/usda-establishment-number-lookup/](https://whoactuallymakes.com/usda-establishment-number-lookup/) |
-| [Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on](#car-origin-filings) | 908 | 2026-11-13 | [JSON](data/car-origin-filings.json) (395 KB) · [CSV](data/car-origin-filings.csv) (125 KB) | [/where-is-subaru-made/](https://whoactuallymakes.com/where-is-subaru-made/) |
+| [Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on](#car-origin-filings) | 984 | 2026-11-24 | [JSON](data/car-origin-filings.json) (429 KB) · [CSV](data/car-origin-filings.csv) (137 KB) | [/where-is-subaru-made/](https://whoactuallymakes.com/where-is-subaru-made/) |
 | [Insignia model numbers on California's appliance register](#insignia-register) | 714 | 2026-11-10 | [JSON](data/insignia-register.json) (213 KB) · [CSV](data/insignia-register.csv) (108 KB) | [/insignia/](https://whoactuallymakes.com/insignia/) |
 | [Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register](#store-tools-register) | 657 | 2026-11-10 | [JSON](data/store-tools-register.json) (335 KB) · [CSV](data/store-tools-register.csv) (136 KB) | [/store-brand-tools/](https://whoactuallymakes.com/store-brand-tools/) |
 | [Craftsman model numbers and the companies government records name for them](#craftsman-records) | 442 | 2026-11-10 | [JSON](data/craftsman-records.json) (153 KB) · [CSV](data/craftsman-records.csv) (96 KB) | [/craftsman/](https://whoactuallymakes.com/craftsman/) |
@@ -158,6 +159,40 @@ Every plant code NHTSA has assigned to a tire factory: the code from the start o
 | `state` | text | State, province or region of the factory. |
 | `country` | text | Country of the factory. |
 | `status` | text | Active, Closed, or blank when NHTSA gives no status. |
+
+</details>
+
+<a id="tire-brands"></a>
+
+### Tire brands: trademark owner, recall filers and factories
+
+One row per tire brand on the A to Z: who holds the US tire trademark, who filed its NHTSA recalls, and which factories those recall reports name by plant code, with the years of those recalls.
+
+- **Limits:** A factory named in a recall report made the tires that recall covered, not necessarily every tire of the brand. Owners are the live US trademark registration for tires, or a parent's SEC filing; brands with no recall have no factory here.
+- **Kept fresh:** Recalls weekly, by script, from NHTSA's recall file; trademarks every 90 days by hand
+- **Rights:** Recall and plant data are US government work (NHTSA), in the public domain in the US. CC BY covers our compiled file.
+- **Based on:** 3 public sources, listed in `catalog.json` (`based_on`)
+- **Files:** `data/tire-brands.json`, `data/tire-brands.csv` · live: https://whoactuallymakes.com/data/tire-brands.json
+
+<details><summary>The 15 fields</summary>
+
+| Field | Type | What it holds |
+|---|---|---|
+| `brand` | text | The brand name on the tire. |
+| `how_sure` | text | How far the records go: factory, filer or owner. factory = a recall report names the plant; filer = recalls on file but no readable plant code; owner = trademark or parent only; none = nothing traced yet. |
+| `trademark_owner` | text | Holder of the live US tire trademark, as USPTO lists it. Blank when we didn't read one. |
+| `owner_country` | text | Country of the trademark owner. |
+| `trademark_serial` | text | USPTO serial number of that registration. |
+| `trademark_registered` | date | Date the registration was issued. |
+| `owner_factories` | integer | Active factories NHTSA's plant list registers under the owner's group name. 0 means the owner registers none. |
+| `parent` | text | Parent company, when the brand's tie comes from a company filing (Goodyear's 10-K, ATD's S-1/A). |
+| `store_brand` | text | The store chain, for a store brand. |
+| `recall_filers` | text | Companies that filed the brand's NHTSA tire recalls, with years; separated by \|. |
+| `factories` | text | Factories named in those recall reports: name, place, plant code and recall years; separated by \|. |
+| `factory_countries` | text | Countries of those factories; separated by \|. |
+| `recalls` | integer | NHTSA tire recalls since 2010 that name the brand. |
+| `tires_recalled` | integer | Tires those recalls covered, as filed. |
+| `recall_ids` | text | NHTSA campaign numbers, newest first, up to the newest 12; separated by \|. |
 
 </details>
 

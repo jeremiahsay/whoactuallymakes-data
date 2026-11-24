@@ -1,12 +1,12 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-16",
+ "generated": "2026-11-24",
  "source": {
   "publisher": "NHTSA",
   "name": "vPIC tire plant codes",
   "url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetEquipmentPlantCodes?year=2016&equipmentType=1&reportType=All&format=json",
-  "list_changed": "2026-11-16",
-  "raw_sha256": "dd952cd9d1946546ab842587bf738c5031ef0d1c4000a3854354fd0d8250b772"
+  "list_changed": "2026-11-24",
+  "raw_sha256": "3c8764efb22756f0ea4b0f5b9bca94140dd00004d9590171cff77f4f7229cada"
  },
  "rule": {
   "cite": "49 CFR 574.5",

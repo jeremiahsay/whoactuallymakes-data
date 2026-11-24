@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-16",
+ "generated": "2026-11-24",
  "count": 22,
  "rows": [
   {
@@ -32,7 +32,7 @@
    "price_read_on": "2026-11-16",
    "evidence": "ev-wsbtv-ks-batteries-2016",
    "answer_page": "https://whoactuallymakes.com/kirkland-signature/batteries/#vs",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "starbucks",
@@ -63,7 +63,7 @@
    "price_read_on": "",
    "evidence": "ev-costco-ks-decaf-house-blend",
    "answer_page": "https://whoactuallymakes.com/kirkland-signature/coffee/",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "buffalo-trace",
@@ -94,7 +94,7 @@
    "price_read_on": "",
    "evidence": "ev-ttb-ks-bourbon-small-batch-2026 | ev-ttb-ks-bourbon-bib-2026",
    "answer_page": "https://whoactuallymakes.com/kirkland-signature/bourbon/",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "kleenex",
@@ -125,7 +125,7 @@
    "price_read_on": "2026-11-06",
    "evidence": "ev-costco-ks-facial-tissue-pack-fsc | ev-fsc-c068161-kimberly-clark | ev-fsc-std-50-001-labelling | ev-kmb-10k-2025-brands",
    "answer_page": "https://whoactuallymakes.com/kirkland-signature/toilet-paper/",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "ocean-spray",
@@ -156,7 +156,7 @@
    "price_read_on": "",
    "evidence": "ev-costco-ocean-spray-bottle",
    "answer_page": "https://whoactuallymakes.com/kirkland-signature/rumors/#cranberry",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "stearns-foster",
@@ -187,7 +187,7 @@
    "price_read_on": "",
    "evidence": "ev-costco-lakeridge-law-tag | ev-sgi-10k-2025",
    "answer_page": "https://whoactuallymakes.com/kirkland-signature/mattress/",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "huggies",
@@ -218,7 +218,7 @@
    "price_read_on": "2026-11-09",
    "evidence": "ev-bloomberg-2024-12-diapers | ev-fortune-2025-04-diapers | ev-kmb-q3-2024-call | ev-kmb-8k-2026-01 | ev-kmb-10k-2025 | ev-costco-ks-diapers-pack-sfi | ev-sfi-01644-first-quality | ev-sfi-rules-section6 | ev-fq-sfi-certificate-2024 | ev-kmb-10k-2025-brands",
    "answer_page": "https://whoactuallymakes.com/kirkland-signature/diapers/#huggies",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "bumble-bee",
@@ -249,7 +249,7 @@
    "price_read_on": "",
    "evidence": "ev-fda-ks-albacore-bumble-bee-2020",
    "answer_page": "",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "charmin",
@@ -280,7 +280,7 @@
    "price_read_on": "2026-11-05",
    "evidence": "ev-costco-ks-bath-tissue-pack-fsc | ev-fsc-c108208-georgia-pacific | ev-fsc-std-50-001-labelling | ev-costco-ks-ultra-soft-pack-fsc | ev-fsc-c104904-kruger | ev-pg-10k-2026",
    "answer_page": "https://whoactuallymakes.com/kirkland-signature/toilet-paper/",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "grey-goose",
@@ -311,7 +311,7 @@
    "price_read_on": "",
    "evidence": "ev-grey-goose-faq-kirkland",
    "answer_page": "https://whoactuallymakes.com/kirkland-signature/vodka/",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "greenies",
@@ -342,7 +342,7 @@
    "price_read_on": "",
    "evidence": "ev-nd-ks-dental-nylabone | ev-greenies-footer",
    "answer_page": "https://whoactuallymakes.com/kirkland-signature/dog-food/",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "purina-pro-plan",
@@ -373,7 +373,7 @@
    "price_read_on": "",
    "evidence": "ev-nd-ks-dry-dog-diamond | ev-nd-ks-natures-domain-label-diamond | ev-nestle-petcare-brands",
    "answer_page": "https://whoactuallymakes.com/kirkland-signature/dog-food/",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "blue-buffalo",
@@ -404,7 +404,7 @@
    "price_read_on": "",
    "evidence": "ev-nd-ks-dry-dog-diamond | ev-nd-ks-natures-domain-label-diamond | ev-gis-10k-2026-brands",
    "answer_page": "https://whoactuallymakes.com/kirkland-signature/dog-food/",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "mobil-1",
@@ -435,7 +435,7 @@
    "price_read_on": "",
    "evidence": "ev-api-ks-motor-oil-highline-warren | ev-costco-ks-motor-oil-hw-contact | ev-xom-10k-2025-mobil",
    "answer_page": "https://whoactuallymakes.com/kirkland-signature/motor-oil/",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "pro-v1",
@@ -466,7 +466,7 @@
    "price_read_on": "",
    "evidence": "ev-usga-ks-golf-balls-sm-global | ev-costco-ks-golf-ball-v3 | ev-gold-10k-2025-brands",
    "answer_page": "https://whoactuallymakes.com/kirkland-signature/golf-balls/",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "pampers",
@@ -497,7 +497,7 @@
    "price_read_on": "2026-11-09",
    "evidence": "ev-costco-ks-diapers-pack-sfi | ev-sfi-01644-first-quality | ev-sfi-rules-section6 | ev-fq-sfi-certificate-2024 | ev-bloomberg-2024-12-diapers | ev-fortune-2025-04-diapers | ev-pg-10k-2026-brands",
    "answer_page": "https://whoactuallymakes.com/costco-diapers/",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "reynolds-wrap",
@@ -528,7 +528,7 @@
    "price_read_on": "",
    "evidence": "ev-costco-reynolds-foil-box | ev-reyn-10k-2019",
    "answer_page": "https://whoactuallymakes.com/kirkland-signature/rumors/#foil",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "bounty",
@@ -559,7 +559,7 @@
    "price_read_on": "2026-11-06",
    "evidence": "ev-pg-10k-2026",
    "answer_page": "https://whoactuallymakes.com/kirkland-signature/#open",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "oxiclean",
@@ -590,7 +590,7 @@
    "price_read_on": "",
    "evidence": "ev-chd-10k-2025-brands",
    "answer_page": "",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "tide",
@@ -621,7 +621,7 @@
    "price_read_on": "2026-11-06",
    "evidence": "ev-pg-10k-2026-brands",
    "answer_page": "https://whoactuallymakes.com/kirkland-laundry-detergent/",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "dawn",
@@ -652,7 +652,7 @@
    "price_read_on": "2026-11-06",
    "evidence": "ev-pg-10k-2026-brands",
    "answer_page": "",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   },
   {
    "pair": "cascade",
@@ -683,7 +683,7 @@
    "price_read_on": "",
    "evidence": "ev-pg-10k-2026-brands",
    "answer_page": "",
-   "read_on": "2026-11-16"
+   "read_on": "2026-11-24"
   }
  ]
 }

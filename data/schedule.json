@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-21",
- "last_change": "2026-11-21",
+ "generated": "2026-11-24",
+ "last_change": "2026-11-24",
  "cadence_months": {
   "confirmed": 12,
   "documented": 6,
@@ -24,9 +24,28 @@
    "file_url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetEquipmentPlantCodes?year=2016&equipmentType=1&reportType=All&format=json",
    "hand_note": null,
    "once": false,
-   "last": "2026-11-16",
-   "due": "2026-11-23",
-   "result": "1,249 entries; 4 changes since the previous pull"
+   "last": "2026-11-24",
+   "due": "2026-12-01",
+   "result": "1,249 entries; no changes since the previous pull"
+  },
+  {
+   "id": "nhtsa-tire-recalls",
+   "what": "NHTSA tire recalls and their Part 573 reports",
+   "gives": "Who filed each tire brand's recalls and the factory plant codes the reports print, on Who makes tire brands",
+   "how": "script",
+   "every_days": 7,
+   "source": {
+    "id": "nhtsa-recalls",
+    "name": "NHTSA recall reports and recall file",
+    "publisher": "National Highway Traffic Safety Administration",
+    "url": "https://www.nhtsa.gov/recalls"
+   },
+   "file_url": "https://static.nhtsa.gov/odi/ffdd/rcl/FLAT_RCL_POST_2010.zip",
+   "hand_note": null,
+   "once": false,
+   "last": "2026-11-24",
+   "due": "2026-12-01",
+   "result": "203 entries; first pull"
   },
   {
    "id": "usda-establishments",
@@ -63,8 +82,8 @@
    "file_url": null,
    "hand_note": null,
    "once": false,
-   "last": "2026-11-16",
-   "due": "2026-11-23",
+   "last": "2026-11-24",
+   "due": "2026-12-01",
    "result": "18 recalls waiting for review"
   },
   {
@@ -82,8 +101,8 @@
    "file_url": null,
    "hand_note": null,
    "once": false,
-   "last": "2026-11-16",
-   "due": "2026-11-23",
+   "last": "2026-11-24",
+   "due": "2026-12-01",
    "result": "50 Costco labels; 0 to review"
   },
   {
@@ -330,7 +349,7 @@
    "hand_note": "Read in a browser at ZIP 98101, size by size on all six listings plus Newborn. Offers are re-read the day after they end. The page won't publish if these prices and the Kirkland diaper page disagree.",
    "once": false,
    "last": "2026-11-09",
-   "due": "2026-11-23",
+   "due": "2026-11-24",
    "result": "Kirkland regular 15.6 to 32.4 cents; Huggies on offer to Nov 22, 14.6 to 38.5; Pampers 20.5 to 46.8"
   },
   {
@@ -368,7 +387,7 @@
    "hand_note": "Costco's search pages, read in a browser one at a time, for the shelf prices the comparison uses.",
    "once": false,
    "last": "2026-11-06",
-   "due": "2026-12-16",
+   "due": "2026-12-24",
    "result": "Four pairs read; OxiClean is warehouse-only with no price shown"
   },
   {
@@ -424,8 +443,8 @@
    "file_url": null,
    "hand_note": null,
    "once": false,
-   "last": "2026-11-16",
-   "due": "2026-11-23",
+   "last": "2026-11-24",
+   "due": "2026-12-01",
    "result": "Label files refreshed"
   },
   {
@@ -652,9 +671,9 @@
    "file_url": null,
    "hand_note": "A weekly read of TTB's label approvals for Kirkland (Sundays). TTB doesn't answer our servers, so it runs from a desktop computer. A person reads each new label before it is added.",
    "once": false,
-   "last": "2026-11-15",
-   "due": "2026-11-22",
-   "result": "512 Kirkland approvals; 413 on the spirits pages, 7 not yet cited"
+   "last": "2026-11-22",
+   "due": "2026-11-29",
+   "result": "513 Kirkland approvals; 414 on the spirits pages, 8 not yet cited"
   },
   {
    "id": "usga-balls-kirkland",
@@ -1113,6 +1132,25 @@
    "result": null
   },
   {
+   "id": "gm-brands-reads",
+   "what": "Who makes Cadillac, Buick and GMC: NHTSA report, GM's 10-K and GM's plant statements",
+   "gives": "New Cadillac, Buick, GMC, Hummer EV and Corvette rows in the AALA report, GM's brand list and the plants GM names, for /who-makes-cadillac-buick-and-gmc/",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "nhtsa-aala",
+    "name": "NHTSA Part 583 American Automobile Labeling Act reports",
+    "publisher": "US National Highway Traffic Safety Administration",
+    "url": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
+   },
+   "file_url": null,
+   "hand_note": "The same NHTSA report as the other car pages, and GM's annual report each winter. The page won't rebuild if a model's country or the Buick, Cadillac or Corvette figures change until the lines that rely on them are rewritten. Is the next Envision built in Kansas, and does GM ever confirm a Corvette brand?",
+   "once": false,
+   "last": null,
+   "due": "2026-12-22",
+   "result": null
+  },
+  {
    "id": "same-company-records",
    "what": "The annual filings and pages behind the same-company check that the car and soda hubs don't hold: Whirlpool, TJX, AB InBev, Constellation, UPS, CVS, Lowe's, Home Depot, Petco, Chewy and Unilever filings, Walgreens' merger 8-K, 39 USC 201, the DOVE chocolate, ALDI SÜD, aldi.com and Schwarz Group pages",
    "gives": "The brands, owners, controlling holders and work-for links on /are-they-the-same-company/",
@@ -1531,6 +1569,25 @@
    "result": "Fender's amp article (US) and Fender Japan's copy read from the help centres' public feeds: QA sticker A-K (1990-2000), tube chart A-S (1951-69), EIA 606 transformer rule; every letter checked against the saved copy."
   },
   {
+   "id": "gibson-serial-rules",
+   "what": "Gibson's serial number guide",
+   "gives": "The schemes, plant rules and examples on the Gibson serial number lookup",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "gibson-serial-guide",
+    "name": "Gibson serial number guide (gibson.com)",
+    "publisher": "Gibson Brands, Inc.",
+    "url": "https://www.gibson.com/pages/serial-number-search"
+   },
+   "file_url": null,
+   "hand_note": "Gibson's serial guide is read again and compared with our saved copy; any change goes into the decoder, and into the list of what changed, after the site owner approves it.",
+   "once": false,
+   "last": "2026-11-24",
+   "due": "2027-02-24",
+   "result": "Gibson's serial guide read as it stands and in five Internet Archive copies (2012-2021); the Blue Book chapter Gibson hosted for pre-1975 numbers. 22 schemes, 106 1960s ranges, each line checked against its saved copy; 168 decoder checks."
+  },
+  {
    "id": "coach-10k",
    "what": "Tapestry's annual report (Form 10-K)",
    "gives": "The countries named for Coach's manufacturers on Where are Coach bags made",
@@ -1891,6 +1948,139 @@
    "last": "2026-11-21",
    "due": "2027-02-19",
    "result": "29 records read and saved on 21 Nov 2026; every line checked against the saved copy by tools/build_hvac_age.py, and 81 decoder checks passed (each family's own examples and every CPSC serial range against its sale dates)."
+  },
+  {
+   "id": "shoes-maker-pages",
+   "what": "Shoe and boot makers' own pages on where they make them (New Balance, Red Wing, Danner, Quoddy, White's, Nicks, Thorogood, Okabashi, Rancourt, Lucchese, Origin), New Balance's Made in USA model list, the Caleres, Rocky Brands and Wolverine 10-Ks, and the FTC's footwear cases",
+   "gives": "Every brand row, label row and timeline line on Shoes made in the USA",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "maker-new-balance",
+    "name": "New Balance website and newsroom",
+    "publisher": "New Balance Athletics, Inc. (Boston, Massachusetts)",
+    "url": "https://www.newbalance.com/"
+   },
+   "file_url": null,
+   "hand_note": "The shoe makers' own pages, their owners' filings and the FTC's footwear cases are re-read every month.",
+   "once": false,
+   "last": "2026-11-21",
+   "due": "2026-12-21",
+   "result": "26 records read and saved on 21 Nov 2026; every quote, place, New Balance model and timeline line checked against the saved copy by tools/build_shoes_usa.py."
+  },
+  {
+   "id": "shoes-qcew",
+   "what": "BLS QCEW annual averages for footwear manufacturing (NAICS 316210), private, by state",
+   "gives": "The factory jobs table and hero bars on Shoes made in the USA",
+   "how": "hand",
+   "every_days": 182,
+   "source": {
+    "id": "bls-qcew",
+    "name": "BLS Quarterly Census of Employment and Wages",
+    "publisher": "US Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cew/"
+   },
+   "file_url": null,
+   "hand_note": "BLS's footwear factory counts are read when each new annual file comes out.",
+   "once": false,
+   "last": "2026-11-21",
+   "due": "2027-05-22",
+   "result": "2024 annual file read on 21 Nov 2026: 11,620 jobs at 400 private establishments; 19 states shown, 19 withheld."
+  },
+  {
+   "id": "tire-brands-owners",
+   "what": "Tire brand trademark owners (USPTO)",
+   "gives": "The owner column on Who makes tire brands",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "uspto-tsdr",
+    "name": "USPTO Trademark Search and Trademark Status & Document Retrieval (TSDR)",
+    "publisher": "United States Patent and Trademark Office",
+    "url": "https://tsdr.uspto.gov/"
+   },
+   "file_url": null,
+   "hand_note": "Each brand's US trademark record is re-read at USPTO, and we search again for the brands whose tire trademark we haven't found yet.",
+   "once": false,
+   "last": null,
+   "due": "2027-02-22",
+   "result": null
+  },
+  {
+   "id": "aoc-energystar",
+   "what": "ENERGY STAR's certified displays, brands AOC and Philips",
+   "gives": "The model lookup and the counts on the AOC page",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "energy-star-data",
+    "name": "ENERGY STAR certified products data (data.energystar.gov)",
+    "publisher": "US Environmental Protection Agency",
+    "url": "https://data.energystar.gov/"
+   },
+   "file_url": null,
+   "hand_note": "ENERGY STAR's list of certified AOC and Philips displays is read again and the lookup rebuilt from it.",
+   "once": false,
+   "last": "2026-11-24",
+   "due": "2027-02-24",
+   "result": "72 AOC models, all certified by Top Victory Electronics (Taiwan); 305 Philips displays, all by MMD. Lookup checked against every model: 1,145 checks."
+  },
+  {
+   "id": "aoc-tpv-filings",
+   "what": "TPV Technology's annual report (Shenzhen 000727) and its own site",
+   "gives": "Ownership, factories, sales and the Philips licence on the AOC page",
+   "how": "hand",
+   "every_days": 365,
+   "source": {
+    "id": "tpv-000727-filings",
+    "name": "TPV Technology Co., Ltd. (Shenzhen Stock Exchange 000727) annual reports, on CNINFO",
+    "publisher": "TPV Technology Co., Ltd. (冠捷电子科技股份有限公司)",
+    "url": "http://www.cninfo.com.cn/new/disclosure/stock?stockCode=000727&orgId=gssz0000727"
+   },
+   "file_url": null,
+   "hand_note": "TPV's yearly report and its own pages are read again for ownership, factories and the Philips licence.",
+   "once": false,
+   "last": "2026-11-24",
+   "due": "2027-05-15",
+   "result": "2025 annual report (filed 28 Apr 2026): CEC actual controller, Panda 24.51%, 51% of TPV Ltd, 41.3M monitors, Philips monitor licence to 31 Dec 2030. TPV site: 11 bases."
+  },
+  {
+   "id": "mazda-origin-reads",
+   "what": "Who makes Mazda: NHTSA report, Mazda releases and shareholder list",
+   "gives": "New Mazda rows in the AALA report, Mazda's top shareholders and any new plant statement, for /who-makes-mazda/",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "nhtsa-aala",
+    "name": "NHTSA Part 583 American Automobile Labeling Act reports",
+    "publisher": "US National Highway Traffic Safety Administration",
+    "url": "https://www.nhtsa.gov/part-583-american-automobile-labeling-act-reports"
+   },
+   "file_url": null,
+   "hand_note": "The same NHTSA report, plus Mazda's shareholder list and monthly production figures. Has Mazda said where the new CX-5 for North America is built?",
+   "once": false,
+   "last": null,
+   "due": "2026-12-24",
+   "result": null
+  },
+  {
+   "id": "oil-filter-wix-catalog",
+   "what": "WIX's interchange and product catalog",
+   "gives": "Every match, measurement and count on the oil filter cross reference",
+   "how": "hand",
+   "every_days": 180,
+   "source": {
+    "id": "wix-filters",
+    "name": "WIX Filters (Mann+Hummel): catalogs",
+    "publisher": "Mann+Hummel Filtration Technology, Inc.",
+    "url": "https://www.wixfilters.com/"
+   },
+   "file_url": null,
+   "hand_note": "WIX's catalog is checked for a newer edition; a new one replaces every match after the reader's checks pass.",
+   "once": false,
+   "last": "2026-11-24",
+   "due": "2027-05-24",
+   "result": "WIX's 2024 Interchange and Product Numeric Catalog (1,157 pages, last changed 2 Aug 2024): 52,236 oil filter rows, 46,636 numbers from 1,100 brands against 822 WIX filters; spin-on measurements for 418; 210 numbers listed against WIX filters that measure differently."
   }
  ],
  "terms": [
@@ -1909,6 +2099,14 @@
    "checked": "2026-11-06",
    "due": "2027-11-06",
    "automated_read": "yes"
+  },
+  {
+   "source": "AB Electrolux annual reports",
+   "publisher": "AB Electrolux (publ)",
+   "url": "https://www.electroluxgroup.com/en/terms-of-use/",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "ask"
   },
   {
    "source": "ACDelco Battery Warranty Information",
@@ -1951,12 +2149,28 @@
    "automated_read": "ask"
   },
   {
+   "source": "AOC (aoc.com)",
+   "publisher": "AOC (TPV Technology)",
+   "url": "https://www.aoc.com/robots.txt",
+   "checked": "2026-11-24",
+   "due": "2027-11-24",
+   "automated_read": "yes"
+  },
+  {
    "source": "API Engine Oil Licensing and Certification System (EOLCS): Directory of Licensees",
    "publisher": "American Petroleum Institute (API)",
    "url": "https://www.api.org/terms-and-conditions",
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "no"
+  },
+  {
+   "source": "AUDI AG reports and company history",
+   "publisher": "AUDI AG",
+   "url": "https://www.audi.com/en/legal-notice.html",
+   "checked": "2026-11-23",
+   "due": "2027-11-23",
+   "automated_read": "ask"
   },
   {
    "source": "Acme United press releases",
@@ -2023,12 +2237,28 @@
    "automated_read": "ask"
   },
   {
+   "source": "Automobili Lamborghini website",
+   "publisher": "Automobili Lamborghini S.p.A.",
+   "url": "https://www.lamborghini.com/en-en/legal-area",
+   "checked": "2026-11-23",
+   "due": "2027-11-23",
+   "automated_read": "ask"
+  },
+  {
    "source": "BGR",
    "publisher": "BGR (Static Media)",
    "url": "https://bgr.com/robots.txt",
    "checked": "2026-11-08",
    "due": "2027-11-08",
    "automated_read": "yes"
+  },
+  {
+   "source": "BLS Quarterly Census of Employment and Wages",
+   "publisher": "US Bureau of Labor Statistics",
+   "url": "https://www.bls.gov/bls/linksite.htm",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "public-domain"
   },
   {
    "source": "BMW Group company pages",
@@ -2053,6 +2283,14 @@
    "checked": "2026-11-05",
    "due": "2027-11-05",
    "automated_read": "no"
+  },
+  {
+   "source": "Bangkok Post (Kyodo News)",
+   "publisher": "Post Publishing PCL",
+   "url": "https://www.bangkokpost.com/",
+   "checked": "2026-11-24",
+   "due": "2027-11-24",
+   "automated_read": "ask"
   },
   {
    "source": "Barrie (Chanel's cashmere knitwear maker)",
@@ -2093,6 +2331,14 @@
    "checked": "2026-11-05",
    "due": "2027-11-05",
    "automated_read": "no"
+  },
+  {
+   "source": "Blue Book of Electric Guitars (6th ed.), Gibson serialization chapter, as hosted on gibson.com",
+   "publisher": "Blue Book Publications, Inc. (edited by S.P. Fjestad)",
+   "url": "https://web.archive.org/web/2012/http://www.gibson.com/Files/downloads/bluebook/GibsonSERIALNUMBERS.pdf",
+   "checked": "2026-11-24",
+   "due": "2027-11-24",
+   "automated_read": "yes"
   },
   {
    "source": "Bradford White Corporation: its corporate site (bradfordwhitecorporation.com)",
@@ -2140,6 +2386,14 @@
    "url": "https://www.carmagazine.co.uk/",
    "checked": "2026-11-19",
    "due": "2027-11-19",
+   "automated_read": "ask"
+  },
+  {
+   "source": "CBS News",
+   "publisher": "CBS News (Paramount)",
+   "url": "https://www.paramount.com/terms-of-use",
+   "checked": "2026-11-22",
+   "due": "2027-11-22",
    "automated_read": "ask"
   },
   {
@@ -2236,6 +2490,14 @@
    "url": "https://www.chiccousa.com/robots.txt",
    "checked": "2026-11-19",
    "due": "2027-11-19",
+   "automated_read": "yes"
+  },
+  {
+   "source": "China Electronics Corporation (cec.com.cn)",
+   "publisher": "China Electronics Information Industry Group Co., Ltd. (CEC)",
+   "url": "https://www.cec.com.cn/robots.txt",
+   "checked": "2026-11-24",
+   "due": "2027-11-24",
    "automated_read": "yes"
   },
   {
@@ -2383,6 +2645,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "D.G. Yuengling & Son news releases",
+   "publisher": "D.G. Yuengling & Son, Inc.",
+   "url": "https://www.yuengling.com/",
+   "checked": "2026-11-23",
+   "due": "2027-11-23",
+   "automated_read": "ask"
+  },
+  {
    "source": "DOE Compliance Certification Database",
    "publisher": "US Department of Energy",
    "url": "https://www.regulations.doe.gov/certification-data/",
@@ -2399,6 +2669,14 @@
    "automated_read": "public-domain"
   },
   {
+   "source": "Daikin Industries press releases",
+   "publisher": "Daikin Industries, Ltd.",
+   "url": "https://www.daikin.com/terms",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "ask"
+  },
+  {
    "source": "DailyMed drug labels",
    "publisher": "US National Library of Medicine",
    "url": "https://dailymed.nlm.nih.gov/dailymed/about-dailymed.cfm",
@@ -2407,12 +2685,28 @@
    "automated_read": "public-domain"
   },
   {
+   "source": "Danner website",
+   "publisher": "Danner (Portland, Oregon)",
+   "url": "https://global.danner.com/robots.txt",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "no"
+  },
+  {
    "source": "Dealmoon",
    "publisher": "Dealmoon",
    "url": "https://www.dealmoon.com/en/terms-of-service",
    "checked": "2026-11-06",
    "due": "2027-11-06",
    "automated_read": "ask"
+  },
+  {
+   "source": "Defense Logistics Agency news",
+   "publisher": "US Defense Logistics Agency",
+   "url": "https://www.dla.mil/Privacy-Security/",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "no"
   },
   {
    "source": "Deseret News",
@@ -2549,6 +2843,14 @@
    "checked": "2026-11-06",
    "due": "2027-11-06",
    "automated_read": "yes"
+  },
+  {
+   "source": "Electrolux Group website",
+   "publisher": "AB Electrolux",
+   "url": "https://www.electroluxgroup.com/en/terms-of-use/",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "ask"
   },
   {
    "source": "Electronic Code of Federal Regulations",
@@ -2711,6 +3013,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "Formula1.com news",
+   "publisher": "Formula One World Championship Limited",
+   "url": "https://www.formula1.com/en/information/legal-notices",
+   "checked": "2026-11-22",
+   "due": "2027-11-22",
+   "automated_read": "ask"
+  },
+  {
    "source": "Fortune",
    "publisher": "Fortune Media",
    "url": "https://fortune.com/terms-of-use/",
@@ -2727,6 +3037,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "GE Appliances and Hotpoint websites",
+   "publisher": "GE Appliances, a Haier company",
+   "url": "https://www.geappliances.com/plcy/tandc2.htm",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "ask"
+  },
+  {
    "source": "GE Appliances support pages",
    "publisher": "GE Appliances, a Haier company",
    "url": "https://www.geappliances.com/ge/terms-of-use.htm",
@@ -2735,12 +3053,44 @@
    "automated_read": "yes"
   },
   {
+   "source": "GM Authority",
+   "publisher": "GM Authority (independent GM news site, not owned by GM)",
+   "url": "https://gmauthority.com/blog/terms-of-use/",
+   "checked": "2026-11-22",
+   "due": "2027-11-22",
+   "automated_read": "no"
+  },
+  {
+   "source": "GM News (General Motors newsroom)",
+   "publisher": "General Motors Company",
+   "url": "https://www.gm.com/copyright-trademark",
+   "checked": "2026-11-22",
+   "due": "2027-11-22",
+   "automated_read": "no"
+  },
+  {
    "source": "GOV.UK: Department for Transport and DVSA",
    "publisher": "UK Department for Transport; Driver and Vehicle Standards Agency",
    "url": "https://www.gov.uk/help/terms-conditions",
    "checked": "2026-11-03",
    "due": "2027-11-03",
    "automated_read": "yes"
+  },
+  {
+   "source": "Garage Beer Co. press releases",
+   "publisher": "Garage Beer",
+   "url": "https://www.garagebeer.co/",
+   "checked": "2026-11-23",
+   "due": "2027-11-23",
+   "automated_read": "ask"
+  },
+  {
+   "source": "General Electric press releases",
+   "publisher": "General Electric Company",
+   "url": "https://www.ge.com/terms",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "ask"
   },
   {
    "source": "Genesis Motor America releases",
@@ -2772,6 +3122,22 @@
    "url": "https://gerbergear.com/robots.txt",
    "checked": "2026-11-19",
    "due": "2027-11-19",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Gibson serial number guide (gibson.com)",
+   "publisher": "Gibson Brands, Inc.",
+   "url": "https://www.gibson.com/robots.txt",
+   "checked": "2026-11-24",
+   "due": "2027-11-24",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Gibson serial number guide, older versions (Internet Archive copies)",
+   "publisher": "Gibson (copies held by the Internet Archive)",
+   "url": "https://archive.org/about/terms.php",
+   "checked": "2026-11-24",
+   "due": "2027-11-24",
    "automated_read": "yes"
   },
   {
@@ -2823,6 +3189,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "HKEX filings: TPV Technology Limited privatisation, 2019",
+   "publisher": "TPV Technology Limited and CEIEC (H.K.) Limited",
+   "url": "https://www.hkexnews.hk/",
+   "checked": "2026-11-24",
+   "due": "2027-11-24",
+   "automated_read": "yes"
+  },
+  {
    "source": "Hankook technical bulletin: tire replacement recommendations",
    "publisher": "Hankook Tire America Corp.",
    "url": "https://www.hankooktire.com/us/en/privacy-policy.html",
@@ -2844,6 +3218,14 @@
    "url": "https://www.harborfreight.com/terms-of-use",
    "checked": "2026-11-20",
    "due": "2027-11-20",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Heineken N.V. brand pages",
+   "publisher": "Heineken N.V.",
+   "url": "https://www.theheinekencompany.com/",
+   "checked": "2026-11-23",
+   "due": "2027-11-23",
    "automated_read": "ask"
   },
   {
@@ -2924,6 +3306,14 @@
    "url": "https://www.honda.com/",
    "checked": "2026-11-03",
    "due": "2027-11-03",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Hotpoint UK website",
+   "publisher": "Hotpoint UK Appliances Limited",
+   "url": "https://www.hotpoint.co.uk/terms-and-conditions",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
    "automated_read": "ask"
   },
   {
@@ -3077,6 +3467,14 @@
    "checked": "2026-11-19",
    "due": "2027-11-19",
    "automated_read": "no"
+  },
+  {
+   "source": "Kenmore website",
+   "publisher": "Transform SR Brands LLC",
+   "url": "https://www.kenmore.com/terms-of-use/",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "ask"
   },
   {
    "source": "Kering Universal Registration Document",
@@ -3239,6 +3637,14 @@
    "automated_read": "no"
   },
   {
+   "source": "Lucchese website",
+   "publisher": "Lucchese Bootmaker",
+   "url": "https://www.lucchese.com/robots.txt",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "yes"
+  },
+  {
    "source": "MG2 project pages",
    "publisher": "MG2",
    "url": "https://mg2.com/",
@@ -3308,6 +3714,14 @@
    "url": "https://www.cand.uscourts.gov/",
    "checked": "2026-11-07",
    "due": "2027-11-07",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Mazda Motor Corporation: news releases and company pages",
+   "publisher": "Mazda Motor Corporation",
+   "url": "https://www.mazda.com/en/",
+   "checked": "2026-11-24",
+   "due": "2027-11-24",
    "automated_read": "yes"
   },
   {
@@ -3391,6 +3805,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "MusicRadar",
+   "publisher": "Future Publishing",
+   "url": "https://www.musicradar.com/robots.txt",
+   "checked": "2026-11-24",
+   "due": "2027-11-24",
+   "automated_read": "yes"
+  },
+  {
    "source": "NBC News (Associated Press stories)",
    "publisher": "NBCUniversal",
    "url": "https://www.nbcuniversal.com/terms",
@@ -3463,6 +3885,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "New Balance website and newsroom",
+   "publisher": "New Balance Athletics, Inc. (Boston, Massachusetts)",
+   "url": "https://www.newbalance.com/robots.txt",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "no"
+  },
+  {
    "source": "New Modern Mom",
    "publisher": "New Modern Mom",
    "url": "https://newmodernmom.com/",
@@ -3477,6 +3907,14 @@
    "checked": "2026-11-20",
    "due": "2027-11-20",
    "automated_read": "ask"
+  },
+  {
+   "source": "Nicks Handmade Boots website",
+   "publisher": "Nicks Handmade Boots (Spokane, Washington)",
+   "url": "https://nicksboots.com/robots.txt",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "yes"
   },
   {
    "source": "Nintendo annual securities report (EDINET)",
@@ -3583,6 +4021,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "Okabashi website",
+   "publisher": "Okabashi Brands (Buford, Georgia)",
+   "url": "https://www.okabashi.com/robots.txt",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "yes"
+  },
+  {
    "source": "Ontario Knife Company website",
    "publisher": "The Ontario Knife Company (brand owned by Blue Ridge Knives, Inc. since 2023)",
    "url": "https://ontarioknife.com/robots.txt",
@@ -3596,6 +4042,14 @@
    "url": "https://world.openfoodfacts.org/terms-of-use",
    "checked": "2026-11-11",
    "due": "2027-11-11",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Origin USA website",
+   "publisher": "Origin USA (Maine)",
+   "url": "https://originmaine.com/robots.txt",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
    "automated_read": "yes"
   },
   {
@@ -3663,6 +4117,22 @@
    "automated_read": "no"
   },
   {
+   "source": "Porsche AG investor relations and annual report",
+   "publisher": "Dr. Ing. h.c. F. Porsche AG",
+   "url": "https://investorrelations.porsche.com/en/",
+   "checked": "2026-11-23",
+   "due": "2027-11-23",
+   "automated_read": "ask"
+  },
+  {
+   "source": "Porsche Automobil Holding SE investor pages",
+   "publisher": "Porsche Automobil Holding SE",
+   "url": "https://www.porsche-se.com/en/imprint",
+   "checked": "2026-11-23",
+   "due": "2027-11-23",
+   "automated_read": "ask"
+  },
+  {
    "source": "Porsche Newsroom",
    "publisher": "Dr. Ing. h.c. F. Porsche AG",
    "url": "https://newsroom.porsche.com/",
@@ -3671,11 +4141,35 @@
    "automated_read": "ask"
   },
   {
+   "source": "Premium Guard Inc.: press releases",
+   "publisher": "Premium Guard Inc.",
+   "url": "https://premiumguard.com/robots.txt",
+   "checked": "2026-11-24",
+   "due": "2027-11-24",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Purolator (Mann+Hummel): catalogs",
+   "publisher": "Mann+Hummel Purolator Filters LLC",
+   "url": "https://www.purolatornow.com/robots.txt",
+   "checked": "2026-11-24",
+   "due": "2027-11-24",
+   "automated_read": "yes"
+  },
+  {
    "source": "QVC community forum",
    "publisher": "QVC community forum members",
    "url": "https://community.qvc.com/",
    "checked": "2026-11-06",
    "due": "2027-11-06",
+   "automated_read": "no"
+  },
+  {
+   "source": "Quoddy website",
+   "publisher": "Quoddy (Lewiston, Maine)",
+   "url": "https://www.quoddy.com/robots.txt",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
    "automated_read": "no"
   },
   {
@@ -3695,12 +4189,28 @@
    "automated_read": "ask"
   },
   {
+   "source": "Rancourt & Co. website",
+   "publisher": "Rancourt & Co. (Lewiston, Maine)",
+   "url": "https://www.rancourtandcompany.com/robots.txt",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "yes"
+  },
+  {
    "source": "Reader's Digest",
    "publisher": "Reader's Digest",
    "url": "https://www.rd.com/",
    "checked": "2026-11-07",
    "due": "2027-11-07",
    "automated_read": "yes"
+  },
+  {
+   "source": "Red Wing Shoes website",
+   "publisher": "Red Wing Shoe Company (Red Wing, Minnesota)",
+   "url": "https://www.redwingshoes.com/robots.txt",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "no"
   },
   {
    "source": "Reuters",
@@ -3879,6 +4389,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "Stars and Stripes",
+   "publisher": "Stars and Stripes (Washington, DC)",
+   "url": "https://www.stripes.com/terms-of-use/",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "no"
+  },
+  {
    "source": "Stretch-Tite website",
    "publisher": "Stretch-Tite (Polyvinyl family of food wraps)",
    "url": "https://www.stretchtite.com/",
@@ -3965,6 +4483,22 @@
    "checked": "2026-11-16",
    "due": "2027-11-16",
    "automated_read": "no"
+  },
+  {
+   "source": "TPV Technology (tpv-tech.com, tpvision.com)",
+   "publisher": "TPV Technology",
+   "url": "https://tpv-tech.com/robots.txt",
+   "checked": "2026-11-24",
+   "due": "2027-11-24",
+   "automated_read": "yes"
+  },
+  {
+   "source": "TPV Technology Co., Ltd. (Shenzhen Stock Exchange 000727) annual reports, on CNINFO",
+   "publisher": "TPV Technology Co., Ltd. (冠捷电子科技股份有限公司)",
+   "url": "http://www.cninfo.com.cn/",
+   "checked": "2026-11-24",
+   "due": "2027-11-24",
+   "automated_read": "yes"
   },
   {
    "source": "TTB Public COLA Registry (label approvals)",
@@ -4071,6 +4605,22 @@
    "automated_read": "yes"
   },
   {
+   "source": "Thorogood website",
+   "publisher": "Weinbrenner Shoe Company (Marshfield, Wisconsin), maker of Thorogood",
+   "url": "https://www.thorogoodusa.com/robots.txt",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Tireco, Inc. (tireco.com)",
+   "publisher": "Tireco, Inc.",
+   "url": "https://www.tireco.com/",
+   "checked": "2026-11-22",
+   "due": "2027-11-22",
+   "automated_read": "yes"
+  },
+  {
    "source": "Tires Plus date code sheet",
    "publisher": "Tires Plus (Bridgestone Retail Operations)",
    "url": "https://www.tiresplus.com/robots.txt",
@@ -4173,6 +4723,14 @@
    "checked": "2026-11-18",
    "due": "2027-11-18",
    "automated_read": "public-domain"
+  },
+  {
+   "source": "US International Trade Commission",
+   "publisher": "US International Trade Commission",
+   "url": "https://www.usitc.gov/website_policies",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "no"
   },
   {
    "source": "US Justice Department press releases",
@@ -4303,12 +4861,28 @@
    "automated_read": "ask"
   },
   {
+   "source": "Volkswagen Group brand histories",
+   "publisher": "Volkswagen AG",
+   "url": "https://www.volkswagen-group.com/en/imprint-15736",
+   "checked": "2026-11-23",
+   "due": "2027-11-23",
+   "automated_read": "ask"
+  },
+  {
    "source": "Volvo Cars investor relations",
    "publisher": "Volvo Car AB (publ)",
    "url": "https://investors.volvocars.com/",
    "checked": "2026-11-13",
    "due": "2027-11-13",
    "automated_read": "ask"
+  },
+  {
+   "source": "WIX Filters (Mann+Hummel): catalogs",
+   "publisher": "Mann+Hummel Filtration Technology, Inc.",
+   "url": "https://www.wixfilters.com/robots.txt",
+   "checked": "2026-11-24",
+   "due": "2027-11-24",
+   "automated_read": "yes"
   },
   {
    "source": "WSB-TV Channel 2 Atlanta",
@@ -4343,6 +4917,14 @@
    "automated_read": "no"
   },
   {
+   "source": "White's Boots website",
+   "publisher": "White's Boots (Spokane, Washington)",
+   "url": "https://whitesboots.com/robots.txt",
+   "checked": "2026-11-21",
+   "due": "2027-11-21",
+   "automated_read": "no"
+  },
+  {
    "source": "Whiting-Turner project pages",
    "publisher": "The Whiting-Turner Contracting Company",
    "url": "https://www.whiting-turner.com/",
@@ -4356,6 +4938,14 @@
    "url": "https://whoreallymakes.com/",
    "checked": "2026-11-06",
    "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Wikipedia",
+   "publisher": "Wikimedia Foundation",
+   "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+   "checked": "2026-11-24",
+   "due": "2027-11-24",
    "automated_read": "yes"
   },
   {
@@ -11906,13 +12496,13 @@
  "pages": [
   {
    "path": "/tire-dot-code-lookup/",
-   "changed": "2026-11-16",
-   "next": "2026-11-23",
+   "changed": "2026-11-24",
+   "next": "2026-12-01",
    "tasks": [
     {
      "id": "nhtsa-tire-plants",
      "what": "NHTSA tire plant codes",
-     "due": "2026-11-23"
+     "due": "2026-12-01"
     },
     {
      "id": "federal-rule-texts",
@@ -12009,12 +12599,12 @@
   {
    "path": "/costco-diapers/",
    "changed": "2026-11-09",
-   "next": "2026-11-23",
+   "next": "2026-11-24",
    "tasks": [
     {
      "id": "costco-diaper-prices",
      "what": "Kirkland, Huggies Plus, Pampers Swaddlers Ultra, Pull-Ups, Easy Ups and baby wipes at Costco: every size, offers, ratings, Seattle shelf",
-     "due": "2026-11-23"
+     "due": "2026-11-24"
     },
     {
      "id": "sams-diaper-prices",
@@ -12104,13 +12694,13 @@
   },
   {
    "path": "/kirkland-signature/",
-   "changed": "2026-11-20",
-   "next": "2026-11-22",
+   "changed": "2026-11-22",
+   "next": "2026-11-29",
    "tasks": [
     {
      "id": "ttb-kirkland",
      "what": "TTB label approvals for Kirkland",
-     "due": "2026-11-22"
+     "due": "2026-11-29"
     }
    ],
    "claims": null,
@@ -12119,12 +12709,12 @@
   {
    "path": "/aldi/",
    "changed": "2026-11-09",
-   "next": "2026-11-23",
+   "next": "2026-12-01",
    "tasks": [
     {
      "id": "openfda-leads",
      "what": "FDA recall records that mention store brands",
-     "due": "2026-11-23"
+     "due": "2026-12-01"
     }
    ],
    "claims": 47,
@@ -12135,12 +12725,12 @@
   {
    "path": "/members-mark/",
    "changed": "2026-11-09",
-   "next": "2026-11-23",
+   "next": "2026-12-01",
    "tasks": [
     {
      "id": "openfda-leads",
      "what": "FDA recall records that mention store brands",
-     "due": "2026-11-23"
+     "due": "2026-12-01"
     },
     {
      "id": "walmart-10k-sams-club",
@@ -12156,12 +12746,12 @@
   {
    "path": "/trader-joes/",
    "changed": "2026-11-11",
-   "next": "2026-11-23",
+   "next": "2026-12-01",
    "tasks": [
     {
      "id": "openfda-leads",
      "what": "FDA recall records that mention store brands",
-     "due": "2026-11-23"
+     "due": "2026-12-01"
     }
    ],
    "claims": 402,
@@ -12236,12 +12826,12 @@
   {
    "path": "/kirkland-signature/medicine/",
    "changed": "2026-11-07",
-   "next": "2026-11-23",
+   "next": "2026-12-01",
    "tasks": [
     {
      "id": "kirkland-medicine-labels",
      "what": "Kirkland medicine labels and FDA approval holders",
-     "due": "2026-11-23"
+     "due": "2026-12-01"
     }
    ],
    "claims": 40,
@@ -12365,13 +12955,13 @@
   },
   {
    "path": "/kirkland-signature/vodka/",
-   "changed": "2026-11-08",
-   "next": "2026-11-22",
+   "changed": "2026-11-22",
+   "next": "2026-11-29",
    "tasks": [
     {
      "id": "ttb-kirkland",
      "what": "TTB label approvals for Kirkland",
-     "due": "2026-11-22"
+     "due": "2026-11-29"
     }
    ],
    "claims": 5,
@@ -12382,12 +12972,12 @@
   {
    "path": "/kirkland-signature/tequila/",
    "changed": "2026-11-14",
-   "next": "2026-11-22",
+   "next": "2026-11-29",
    "tasks": [
     {
      "id": "ttb-kirkland",
      "what": "TTB label approvals for Kirkland",
-     "due": "2026-11-22"
+     "due": "2026-11-29"
     }
    ],
    "claims": 8,
@@ -12398,12 +12988,12 @@
   {
    "path": "/kirkland-signature/bourbon/",
    "changed": "2026-11-08",
-   "next": "2026-11-22",
+   "next": "2026-11-29",
    "tasks": [
     {
      "id": "ttb-kirkland",
      "what": "TTB label approvals for Kirkland",
-     "due": "2026-11-22"
+     "due": "2026-11-29"
     }
    ],
    "claims": 3,
@@ -12413,18 +13003,18 @@
   },
   {
    "path": "/kirkland-vs-name-brands/",
-   "changed": "2026-11-16",
-   "next": "2026-11-23",
+   "changed": "2026-11-24",
+   "next": "2026-12-01",
    "tasks": [
     {
      "id": "kirkland-vs-prices",
      "what": "Kirkland vs name brands: Bounty, Kleenex, Tide and Dawn shelf prices at ZIP 98101",
-     "due": "2026-12-16"
+     "due": "2026-12-24"
     },
     {
      "id": "name-brand-labels",
      "what": "Name-brand labels compared with Kirkland",
-     "due": "2026-11-23"
+     "due": "2026-12-01"
     }
    ],
    "claims": 0,
@@ -12546,7 +13136,7 @@
   {
    "path": "/makers/perrigo/",
    "changed": "2026-11-12",
-   "next": "2026-11-23",
+   "next": "2026-12-01",
    "tasks": [
     {
      "id": "maker-pages",
@@ -12556,7 +13146,7 @@
     {
      "id": "kirkland-medicine-labels",
      "what": "Kirkland medicine labels and FDA approval holders",
-     "due": "2026-11-23"
+     "due": "2026-12-01"
     }
    ],
    "claims": 39,
@@ -12567,7 +13157,7 @@
   {
    "path": "/makers/lnk-international/",
    "changed": "2026-11-12",
-   "next": "2026-11-23",
+   "next": "2026-12-01",
    "tasks": [
     {
      "id": "maker-pages",
@@ -12577,7 +13167,7 @@
     {
      "id": "kirkland-medicine-labels",
      "what": "Kirkland medicine labels and FDA approval holders",
-     "due": "2026-11-23"
+     "due": "2026-12-01"
     }
    ],
    "claims": 13,
@@ -12651,7 +13241,7 @@
   },
   {
    "path": "/how-we-know/",
-   "changed": "2026-11-20",
+   "changed": "2026-11-24",
    "next": "2026-12-08",
    "tasks": [],
    "claims": null,
@@ -12659,7 +13249,7 @@
   },
   {
    "path": "/sources/",
-   "changed": "2026-11-21",
+   "changed": "2026-11-24",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -12667,7 +13257,7 @@
   },
   {
    "path": "/corrections/",
-   "changed": "2026-11-20",
+   "changed": "2026-11-23",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -12675,7 +13265,7 @@
   },
   {
    "path": "/data/",
-   "changed": "2026-11-21",
+   "changed": "2026-11-24",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -12737,8 +13327,8 @@
   },
   {
    "path": "/makers/misa-imports/",
-   "changed": "2026-11-20",
-   "next": "2026-11-22",
+   "changed": "2026-11-22",
+   "next": "2026-11-29",
    "tasks": [
     {
      "id": "maker-pages",
@@ -12748,7 +13338,7 @@
     {
      "id": "ttb-kirkland",
      "what": "TTB label approvals for Kirkland",
-     "due": "2026-11-22"
+     "due": "2026-11-29"
     }
    ],
    "claims": 3,
@@ -12800,8 +13390,8 @@
   },
   {
    "path": "/home/",
-   "changed": "2026-11-21",
-   "next": "2026-11-23",
+   "changed": "2026-11-24",
+   "next": "2026-12-01",
    "tasks": [
     {
      "id": "maker-pages",
@@ -12811,7 +13401,7 @@
     {
      "id": "nhtsa-tire-plants",
      "what": "NHTSA tire plant codes",
-     "due": "2026-11-23"
+     "due": "2026-12-01"
     }
    ],
    "claims": null,
@@ -12819,7 +13409,7 @@
   },
   {
    "path": "/about/",
-   "changed": "2026-11-21",
+   "changed": "2026-11-24",
    "next": "2027-11-08",
    "tasks": [
     {
@@ -12932,12 +13522,12 @@
   {
    "path": "/kirkland-signature/wine/",
    "changed": "2026-11-08",
-   "next": "2026-11-22",
+   "next": "2026-11-29",
    "tasks": [
     {
      "id": "ttb-kirkland",
      "what": "TTB label approvals for Kirkland",
-     "due": "2026-11-22"
+     "due": "2026-11-29"
     },
     {
      "id": "federal-rule-texts",
@@ -12951,12 +13541,12 @@
   {
    "path": "/kirkland-signature/beer/",
    "changed": "2026-11-08",
-   "next": "2026-11-22",
+   "next": "2026-11-29",
    "tasks": [
     {
      "id": "ttb-kirkland",
      "what": "TTB label approvals for Kirkland",
-     "due": "2026-11-22"
+     "due": "2026-11-29"
     },
     {
      "id": "federal-rule-texts",
@@ -12970,12 +13560,12 @@
   {
    "path": "/great-value/",
    "changed": "2026-11-09",
-   "next": "2026-11-23",
+   "next": "2026-12-01",
    "tasks": [
     {
      "id": "openfda-leads",
      "what": "FDA recall records that mention store brands",
-     "due": "2026-11-23"
+     "due": "2026-12-01"
     }
    ],
    "claims": 49,
@@ -13793,9 +14383,195 @@
    ],
    "claims": 0,
    "stamps": {}
+  },
+  {
+   "path": "/who-owns-which-appliance-brands/",
+   "changed": "2026-11-21",
+   "next": null,
+   "tasks": [],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/shoes-made-in-usa/",
+   "changed": "2026-11-21",
+   "next": "2026-12-21",
+   "tasks": [
+    {
+     "id": "shoes-maker-pages",
+     "what": "Shoe and boot makers' own pages on where they make them (New Balance, Red Wing, Danner, Quoddy, White's, Nicks, Thorogood, Okabashi, Rancourt, Lucchese, Origin), New Balance's Made in USA model list, the Caleres, Rocky Brands and Wolverine 10-Ks, and the FTC's footwear cases",
+     "due": "2026-12-21"
+    },
+    {
+     "id": "shoes-qcew",
+     "what": "BLS QCEW annual averages for footwear manufacturing (NAICS 316210), private, by state",
+     "due": "2027-05-22"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/who-makes-cadillac-buick-and-gmc/",
+   "changed": "2026-11-22",
+   "next": "2026-12-22",
+   "tasks": [
+    {
+     "id": "gm-brands-reads",
+     "what": "Who makes Cadillac, Buick and GMC: NHTSA report, GM's 10-K and GM's plant statements",
+     "due": "2026-12-22"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/who-makes-tire-brands/",
+   "changed": "2026-11-24",
+   "next": "2026-12-01",
+   "tasks": [
+    {
+     "id": "nhtsa-tire-recalls",
+     "what": "NHTSA tire recalls and their Part 573 reports",
+     "due": "2026-12-01"
+    },
+    {
+     "id": "tire-brands-owners",
+     "what": "Tire brand trademark owners (USPTO)",
+     "due": "2027-02-22"
+    },
+    {
+     "id": "nhtsa-tire-plants",
+     "what": "NHTSA tire plant codes",
+     "due": "2026-12-01"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/gibson-serial-number-lookup/",
+   "changed": "2026-11-24",
+   "next": "2027-02-24",
+   "tasks": [
+    {
+     "id": "gibson-serial-rules",
+     "what": "Gibson's serial number guide",
+     "due": "2027-02-24"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/who-makes-aoc-monitors/",
+   "changed": "2026-11-24",
+   "next": "2027-02-24",
+   "tasks": [
+    {
+     "id": "aoc-energystar",
+     "what": "ENERGY STAR's certified displays, brands AOC and Philips",
+     "due": "2027-02-24"
+    },
+    {
+     "id": "aoc-tpv-filings",
+     "what": "TPV Technology's annual report (Shenzhen 000727) and its own site",
+     "due": "2027-05-15"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/who-makes-beer-brands/",
+   "changed": "2026-11-23",
+   "next": null,
+   "tasks": [],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/who-makes-range-rover-land-rover-and-jaguar/",
+   "changed": "2026-11-23",
+   "next": null,
+   "tasks": [],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/who-makes-audi-porsche-bentley-and-lamborghini/",
+   "changed": "2026-11-23",
+   "next": null,
+   "tasks": [],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/who-makes-mazda/",
+   "changed": "2026-11-24",
+   "next": "2026-12-24",
+   "tasks": [
+    {
+     "id": "mazda-origin-reads",
+     "what": "Who makes Mazda: NHTSA report, Mazda releases and shareholder list",
+     "due": "2026-12-24"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/oil-filter-cross-reference/",
+   "changed": "2026-11-24",
+   "next": "2027-05-24",
+   "tasks": [
+    {
+     "id": "oil-filter-wix-catalog",
+     "what": "WIX's interchange and product catalog",
+     "due": "2027-05-24"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
   }
  ],
  "done": [
+  {
+   "on": "2026-11-24",
+   "task": "name-brand-labels",
+   "what": "Weekly read of the name-brand labels the Kirkland comparison uses",
+   "result": "Label files refreshed"
+  },
+  {
+   "on": "2026-11-24",
+   "task": "kirkland-medicine-labels",
+   "what": "Weekly read of Kirkland medicine labels and FDA approval holders",
+   "result": "50 Costco labels; 0 to review"
+  },
+  {
+   "on": "2026-11-24",
+   "task": "openfda-leads",
+   "what": "Weekly search of FDA recall records for store brands",
+   "result": "0 new recalls found; 18 waiting for review"
+  },
+  {
+   "on": "2026-11-24",
+   "task": "nhtsa-tire-recalls",
+   "what": "Weekly read of NHTSA tire recalls and their Part 573 reports",
+   "result": "203 tire recalls; 115 print a plant code; 0 new reports read"
+  },
+  {
+   "on": "2026-11-24",
+   "task": "nhtsa-tire-plants",
+   "what": "Weekly pull of NHTSA tire plant codes",
+   "result": "1,249 codes; no changes"
+  },
+  {
+   "on": "2026-11-22",
+   "task": "ttb-kirkland",
+   "what": "TTB label approvals for Kirkland (script, from the Mac)",
+   "result": "513 Kirkland approvals; 414 on the spirits pages, 8 not yet cited"
+  },
   {
    "on": "2026-11-21",
    "task": "wam-wayback-saves",

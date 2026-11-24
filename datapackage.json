@@ -2,9 +2,9 @@
  "name": "whoactuallymakes-data",
  "id": "https://doi.org/10.5281/zenodo.23920936",
  "title": "Who Actually Makes open data",
- "description": "Who makes store-brand products, from public records. 21 datasets, 16,865 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them; Trader Joe's wine, beer and spirits label approvals (TTB); Who owns which brand: ownership links between brands, companies and their controlling holders; How old are the water heaters in US homes? Ages by state and fuel, 2020.",
+ "description": "Who makes store-brand products, from public records. 22 datasets, 17,471 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire brands: trademark owner, recall filers and factories; Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them; Trader Joe's wine, beer and spirits label approvals (TTB); Who owns which brand: ownership links between brands, companies and their controlling holders; How old are the water heaters in US homes? Ages by state and fuel, 2020.",
  "homepage": "https://whoactuallymakes.com/data/",
- "version": "2026-11-21",
+ "version": "2026-11-24",
  "licenses": [
   {
    "name": "CC-BY-4.0",
@@ -46,9 +46,9 @@
   "tire factory",
   "NHTSA",
   "49 CFR 574.5",
-  "tire age",
-  "how old is too old",
-  "tire replacement"
+  "tire brands",
+  "who makes tires",
+  "tire manufacturers"
  ],
  "resources": [
   {
@@ -417,6 +417,110 @@
    ]
   },
   {
+   "name": "tire-brands",
+   "path": "data/tire-brands.csv",
+   "title": "Tire brands: trademark owner, recall filers and factories",
+   "description": "One row per tire brand on the A to Z: who holds the US tire trademark, who filed its NHTSA recalls, and which factories those recall reports name by plant code, with the years of those recalls.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "bytes": 20196,
+   "hash": "sha256:3704d37439dde21971c4cb1221d47c591f90e6d6680eaa775daa0e4cd1f0d7c4",
+   "schema": {
+    "fields": [
+     {
+      "name": "brand",
+      "type": "string",
+      "description": "The brand name on the tire."
+     },
+     {
+      "name": "how_sure",
+      "type": "string",
+      "description": "How far the records go: factory, filer or owner. factory = a recall report names the plant; filer = recalls on file but no readable plant code; owner = trademark or parent only; none = nothing traced yet."
+     },
+     {
+      "name": "trademark_owner",
+      "type": "string",
+      "description": "Holder of the live US tire trademark, as USPTO lists it. Blank when we didn't read one."
+     },
+     {
+      "name": "owner_country",
+      "type": "string",
+      "description": "Country of the trademark owner."
+     },
+     {
+      "name": "trademark_serial",
+      "type": "string",
+      "description": "USPTO serial number of that registration."
+     },
+     {
+      "name": "trademark_registered",
+      "type": "string",
+      "description": "Date the registration was issued."
+     },
+     {
+      "name": "owner_factories",
+      "type": "string",
+      "description": "Active factories NHTSA's plant list registers under the owner's group name. 0 means the owner registers none."
+     },
+     {
+      "name": "parent",
+      "type": "string",
+      "description": "Parent company, when the brand's tie comes from a company filing (Goodyear's 10-K, ATD's S-1/A)."
+     },
+     {
+      "name": "store_brand",
+      "type": "string",
+      "description": "The store chain, for a store brand."
+     },
+     {
+      "name": "recall_filers",
+      "type": "string",
+      "description": "Companies that filed the brand's NHTSA tire recalls, with years; separated by |."
+     },
+     {
+      "name": "factories",
+      "type": "string",
+      "description": "Factories named in those recall reports: name, place, plant code and recall years; separated by |."
+     },
+     {
+      "name": "factory_countries",
+      "type": "string",
+      "description": "Countries of those factories; separated by |."
+     },
+     {
+      "name": "recalls",
+      "type": "string",
+      "description": "NHTSA tire recalls since 2010 that name the brand."
+     },
+     {
+      "name": "tires_recalled",
+      "type": "string",
+      "description": "Tires those recalls covered, as filed."
+     },
+     {
+      "name": "recall_ids",
+      "type": "string",
+      "description": "NHTSA campaign numbers, newest first, up to the newest 12; separated by |."
+     }
+    ]
+   },
+   "sources": [
+    {
+     "title": "https://static.nhtsa.gov/odi/ffdd/rcl/FLAT_RCL_POST_2010.zip",
+     "path": "https://static.nhtsa.gov/odi/ffdd/rcl/FLAT_RCL_POST_2010.zip"
+    },
+    {
+     "title": "https://vpic.nhtsa.dot.gov/api/",
+     "path": "https://vpic.nhtsa.dot.gov/api/"
+    },
+    {
+     "title": "https://tsdr.uspto.gov/",
+     "path": "https://tsdr.uspto.gov/"
+    }
+   ]
+  },
+  {
    "name": "tire-age",
    "path": "data/tire-age.csv",
    "title": "Tire age guidance from tire makers, carmakers and agencies",
@@ -609,8 +713,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 1667448,
-   "hash": "sha256:d7180982baeb951d853374ea9ae09ead2916064f888226e5aa456342bbe1e070",
+   "bytes": 1945494,
+   "hash": "sha256:64e69477332ba7bd81ff0c4a7ff307f2fefa03fd99897b3a2d86aa95a6b6ac92",
    "schema": {
     "fields": [
      {
@@ -679,6 +783,10 @@
    },
    "sources": [
     {
+     "title": "http://static.cninfo.com.cn/finalpage/2026-04-28/1225203682.PDF",
+     "path": "http://static.cninfo.com.cn/finalpage/2026-04-28/1225203682.PDF"
+    },
+    {
      "title": "http://www.disastersafety.org/studies-reports/water-heater-failure-risks/",
      "path": "http://www.disastersafety.org/studies-reports/water-heater-failure-risks/"
     },
@@ -713,6 +821,10 @@
     {
      "title": "https://annuaire-entreprises.data.gouv.fr/",
      "path": "https://annuaire-entreprises.data.gouv.fr/"
+    },
+    {
+     "title": "https://annualreport2020.volkswagenag.com/notes/basis-of-presentation/key-events.html",
+     "path": "https://annualreport2020.volkswagenag.com/notes/basis-of-presentation/key-events.html"
     },
     {
      "title": "https://annualreport2025.volkswagen-group.com/group-management-report/shares-and-bonds/shareholder-structure.html",
@@ -869,14 +981,6 @@
     {
      "title": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2858-2015%22",
      "path": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2858-2015%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22H-0023-2026%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22H-0023-2026%22"
-    },
-    {
-     "title": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0014-2021%22",
-     "path": "https://api.fda.gov/food/enforcement.json?search=recall_number:%22F-0014-2021%22"
     }
    ]
   },
@@ -888,8 +992,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 146885,
-   "hash": "sha256:067bd1796c30cc4414b41ec719f5c4815abf1b6f5a7e9523054b0525be613637",
+   "bytes": 168801,
+   "hash": "sha256:407a172340496f2e96d04dbf7a459f5a34b8886e776df173af0a59eff2e65342",
    "schema": {
     "fields": [
      {
@@ -962,6 +1066,10 @@
     ]
    },
    "sources": [
+    {
+     "title": "http://www.cninfo.com.cn/new/disclosure/stock?stockCode=000727&orgId=gssz0000727",
+     "path": "http://www.cninfo.com.cn/new/disclosure/stock?stockCode=000727&orgId=gssz0000727"
+    },
     {
      "title": "https://about.usps.com/what/financials/",
      "path": "https://about.usps.com/what/financials/"
@@ -1079,6 +1187,10 @@
      "path": "https://duracell.com/"
     },
     {
+     "title": "https://en.wikipedia.org/",
+     "path": "https://en.wikipedia.org/"
+    },
+    {
      "title": "https://engineoil.api.org/Directory/EolcsSearch",
      "path": "https://engineoil.api.org/Directory/EolcsSearch"
     },
@@ -1119,6 +1231,10 @@
      "path": "https://gerbergear.com/"
     },
     {
+     "title": "https://global.danner.com/",
+     "path": "https://global.danner.com/"
+    },
+    {
      "title": "https://global.honda/en/newsroom/",
      "path": "https://global.honda/en/newsroom/"
     },
@@ -1129,6 +1245,10 @@
     {
      "title": "https://global.toyota/en/company/profile/facilities/manufacturing-worldwide/",
      "path": "https://global.toyota/en/company/profile/facilities/manufacturing-worldwide/"
+    },
+    {
+     "title": "https://gmauthority.com/",
+     "path": "https://gmauthority.com/"
     },
     {
      "title": "https://gov.georgia.gov/",
@@ -1145,22 +1265,6 @@
     {
      "title": "https://iabflo.org/",
      "path": "https://iabflo.org/"
-    },
-    {
-     "title": "https://ibhs.org/",
-     "path": "https://ibhs.org/"
-    },
-    {
-     "title": "https://investors.ups.com/news-events/press-releases",
-     "path": "https://investors.ups.com/news-events/press-releases"
-    },
-    {
-     "title": "https://investors.volvocars.com/",
-     "path": "https://investors.volvocars.com/"
-    },
-    {
-     "title": "https://itstillruns.com/",
-     "path": "https://itstillruns.com/"
     }
    ]
   },
@@ -1172,8 +1276,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 40176,
-   "hash": "sha256:7524a9382866e7180b98d69f3173963926966f84706088e808f7bdc056fcd888",
+   "bytes": 40731,
+   "hash": "sha256:059a4efc0e1ed6460578009e6492eed8bbb4f780726850f1e62dac29ad295b29",
    "schema": {
     "fields": [
      {
@@ -1240,8 +1344,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 27223,
-   "hash": "sha256:de2b535ee3bb20e462d0873767843c1eee0068b06f219a9fee4da1a2f7b0c11e",
+   "bytes": 30183,
+   "hash": "sha256:9c8de4c7f06d62a3cf7f1071c4d8970d26be5f26d58c430d00a2235fe8b4b750",
    "schema": {
     "fields": [
      {
@@ -1411,7 +1515,7 @@
    "mediatype": "text/csv",
    "encoding": "utf-8",
    "bytes": 7931,
-   "hash": "sha256:a27c270ff2ce0aa263e15f8a13b11a44bdb2c184de13d1bda6fd2f9c9ed933e3",
+   "hash": "sha256:28a55b66fb863d07503dccbde6071bf92ce5447e2151b4b64032d3f84a85119d",
    "schema": {
     "fields": [
      {
@@ -1737,8 +1841,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 128397,
-   "hash": "sha256:d417e128e9a6319a756a3557f8f95909ebae8a7b9d5e68f1d276e3e412512263",
+   "bytes": 139822,
+   "hash": "sha256:19745f0f0cc1e15ebccf774c3ebca9504d1bad2ade062c3dee74b0e3906e3c01",
    "schema": {
     "fields": [
      {

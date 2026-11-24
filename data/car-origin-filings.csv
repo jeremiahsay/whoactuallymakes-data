@@ -582,6 +582,82 @@ model_year,manufacturer,make,carline,vehicle_type,us_canada_pct,foreign_1_pct,fo
 2026,Toyota,Lexus,TX 500h,MPV,50,40,J,,,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
 2026,Toyota,Lexus,TX 550h+,MPV,30,60,J,,,US,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
 2026,Toyota,Lexus,UX 300h,MPV,0,100,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2018,Mazda Motor Corporation,Mazda,CX-3,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Mazda Motor Corporation,Mazda,CX-5,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Mazda Motor Corporation,Mazda,CX-9,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Mazda Motor Corporation,Mazda,Fiat 124 Spider,PC,0,75,J,15,I,J,I,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Mazda Motor Corporation,Mazda,MX-5 Miata,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Mazda Motor Corporation,Mazda,Mazda2,PC,5,70,M,20,J,M,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Mazda Motor Corporation,Mazda,Mazda3,PC,0,90,J,,,J+M,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Mazda Motor Corporation,Mazda,Mazda3,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Mazda Motor Corporation,Mazda,Mazda6,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2018,Fiat Chrysler,Mazda,Spider 124,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
+2019,Mazda Motor Corporation,Mazda,CX-3,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Mazda Motor Corporation,Mazda,CX-5,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Mazda Motor Corporation,Mazda,CX-9,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Mazda Motor Corporation,Mazda,MX-5 Miata,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Mazda Motor Corporation,Mazda,Mazda2,PC,5,70,MX,20,J,MX,MX,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Mazda Motor Corporation,Mazda,Mazda3,PC,0,80,J,,,,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Mazda Motor Corporation,Mazda,Mazda3,PC,5,65,MX,20,J,MX,MX,J+TH,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Mazda Motor Corporation,Mazda,Mazda6,PC,0,90,,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2019,Fiat Chrysler,Mazda,Spider 124,PC,,,,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2019_aala_alpha_06042019.pdf
+2020,Mazda Motor Corporation,Mazda,CX-30,PC,5,65,MX,,,,,,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Mazda Motor Corporation,Mazda,CX-5,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Mazda Motor Corporation,Mazda,CX-9,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Mazda Motor Corporation,Mazda,Mazda3,PC,0,75,J,,,,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Mazda Motor Corporation,Mazda,Mazda3,PC,5,70,MX,25,J,MX,MX,TH,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2020,Mazda Motor Corporation,Mazda,Mazda6,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2020_aala_alpha_1-26-21.pdf
+2021,Mazda Motor Corporation,Mazda,CX-3,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Mazda Motor Corporation,Mazda,CX-30,PC,5,65,M,15,J,M,M,TH,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Mazda Motor Corporation,Mazda,CX-5,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Mazda Motor Corporation,Mazda,CX-9,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Mazda Motor Corporation,Mazda,Mazda2,PC,5,70,M,25,J,M,M,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Mazda Motor Corporation,Mazda,Mazda3,PC,0,80,J,,,,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Mazda Motor Corporation,Mazda,Mazda3,PC,5,65,M,15,J,M,M,TH,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2021,Mazda Motor Corporation,Mazda,Mazda6,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2022-04/MY2021-AALA-Alphabetical_4-27-22.pdf
+2022,Mazda Motor Corporation,Mazda,CX-30,PC,5,65,M,20,J,M,M,TH,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Mazda Motor Corporation,Mazda,CX-5,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Mazda Motor Corporation,Mazda,CX-9,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Mazda Motor Corporation,Mazda,MX-30,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Mazda Motor Corporation,Mazda,MX-5 Miata,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Mazda Motor Corporation,Mazda,Mazda3,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2022,Mazda Motor Corporation,Mazda,Mazda3,PC,5,70,M,20,J,M,M,TH,https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/MY2022-AALA-Alphabetical-4-11-24_0.pdf
+2023,Mazda Motor Corporation,Mazda,CX-30,PC,5,65,M,25,J,M,M+J,TH+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Mazda Motor Corporation,Mazda,CX-5,MPV,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Mazda Motor Corporation,Mazda,CX-50,MPV,50,25,M,20,J,US,M+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Mazda Motor Corporation,Mazda,Mazda3,PC,0,85,J,,,,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2023,Mazda Motor Corporation,Mazda,Mazda3,PC,5,65,M,25,J,M,M+J,TH+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2023-AALA-Alphabetical-02042025.pdf
+2024,Mazda Motor Corporation,Mazda,CX-5,MPV,5,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Mazda Motor Corporation,Mazda,CX-50,MPV,50,30,M,15,J,US,M+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Mazda Motor Corporation,Mazda,CX-70 MHEV,MPV,0,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Mazda Motor Corporation,Mazda,CX-70 PHEV,MPV,0,95,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Mazda Motor Corporation,Mazda,CX-90 MHEV,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Mazda Motor Corporation,Mazda,CX-90 PHEV,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Mazda Motor Corporation,Mazda,MX-5 Miata,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Mazda Motor Corporation,Mazda,Mazda3,PC,0,85,J,,,,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2024,Mazda Motor Corporation,Mazda,Mazda3,PC,10,70,M,15,J,M,M+J,TH+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-02/MY2024-AALA-Alphabetical-2.4.25.pdf
+2025,Mazda Motor Corporation,Mazda,CX-30,PC,10,65,M,15,J,M,M+J,TH+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Mazda Motor Corporation,Mazda,CX-5,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Mazda Motor Corporation,Mazda,CX-50,MPV,60,25,M,15,J,US,M+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Mazda Motor Corporation,Mazda,CX-50 Hybrid,MPV,50,30,M,15,J,US,M+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Mazda Motor Corporation,Mazda,CX-70 MHEV,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Mazda Motor Corporation,Mazda,CX-70 PHEV,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Mazda Motor Corporation,Mazda,CX-90 MHEV,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Mazda Motor Corporation,Mazda,CX-90 PHEV,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Mazda Motor Corporation,Mazda,MX-5 Miata,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Mazda Motor Corporation,Mazda,Mazda3,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2025,Mazda Motor Corporation,Mazda,Mazda3,PC,10,65,M,15,J,M,M+J,TH+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/MY2025-AALA-Alphabetical%204_7_2025.pdf
+2026,Mazda Motor Corporation,Mazda,CX-30,PC,10,65,M,15,J,M,M+J,TH+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Mazda Motor Corporation,Mazda,CX-5,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Mazda Motor Corporation,Mazda,CX-50,MPV,65,15,M,15,J,US,M+J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Mazda Motor Corporation,Mazda,CX-50 Hybrid,MPV,65,25,M,10,J,US,US,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Mazda Motor Corporation,Mazda,CX-70 MHEV,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Mazda Motor Corporation,Mazda,CX-70 PHEV,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Mazda Motor Corporation,Mazda,CX-90 MHEV,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Mazda Motor Corporation,Mazda,CX-90 PHEV,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Mazda Motor Corporation,Mazda,MX-5 Miata,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Mazda Motor Corporation,Mazda,Mazda3,PC,0,85,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
+2026,Mazda Motor Corporation,Mazda,Mazda3,PC,10,70,M,15,J,M,M+J,TH+J,https://www.nhtsa.gov/sites/nhtsa.gov/files/2026-06/MY2026-AALA-Alphabetical-06-08-26.pdf
 2018,Subaru,Subaru,BRZ,PC,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
 2018,Subaru,Subaru,Crosstrek,MPV,5,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf
 2018,Subaru,Subaru,Forester,MPV,0,90,J,,,J,J,J,https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/2018_aala_alpha_09102018_0.pdf

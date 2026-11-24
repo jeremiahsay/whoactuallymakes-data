@@ -1,9 +1,9 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-21",
- "count": 317,
- "primary": 245,
- "by_hand": 50,
+ "generated": "2026-11-24",
+ "count": 367,
+ "primary": 288,
+ "by_hand": 60,
  "sources": [
   {
    "id": "api-eolcs",
@@ -82,6 +82,21 @@
      "label": "Chinese car brands in the UK",
      "url": "/chinese-car-brands-uk/",
      "note": "Each UK selling company's accounts, register of significant control and filing history"
+    },
+    {
+     "label": "Who owns which appliance brands?",
+     "url": "/who-owns-which-appliance-brands/",
+     "note": "Hotpoint UK Appliances Ltd and the companies above it, up to Beko Europe B.V."
+    },
+    {
+     "label": "Who makes Range Rover, Land Rover and Jaguar?",
+     "url": "/who-makes-range-rover-land-rover-and-jaguar/",
+     "note": "JLR's ownership chain, its companies' old names, and JLR Automotive plc's 2026 accounts"
+    },
+    {
+     "label": "Who makes Audi, Porsche, Bentley and Lamborghini?",
+     "url": "/who-makes-audi-porsche-bentley-and-lamborghini/",
+     "note": "Bentley Motors Limited: who controls it and its earlier names"
     }
    ],
    "pulls": [
@@ -310,6 +325,21 @@
      "label": "Who owns Jeep, Dodge and Ram?",
      "url": "/who-owns-jeep-dodge-and-ram/",
      "note": "The VIN codes for Stellantis's US, Canadian, Mexican and Italian plants, and the VIN check"
+    },
+    {
+     "label": "Who makes Cadillac, Buick, GMC, Hummer and Corvette?",
+     "url": "/who-makes-cadillac-buick-and-gmc/",
+     "note": "GM maker codes for the VIN check"
+    },
+    {
+     "label": "Who makes Range Rover, Land Rover and Jaguar?",
+     "url": "/who-makes-range-rover-land-rover-and-jaguar/",
+     "note": "JLR's maker codes and what the 11th character of a JLR VIN says about the plant"
+    },
+    {
+     "label": "Who makes Audi, Porsche, Bentley and Lamborghini?",
+     "url": "/who-makes-audi-porsche-bentley-and-lamborghini/",
+     "note": "Maker codes and what each VIN plant character means"
     }
    ],
    "pulls": [
@@ -317,9 +347,9 @@
      "what": "NHTSA tire plant codes",
      "how": "script",
      "every_days": 7,
-     "last": "2026-11-16",
-     "due": "2026-11-23",
-     "result": "1,249 entries; 4 changes since the previous pull",
+     "last": "2026-11-24",
+     "due": "2026-12-01",
+     "result": "1,249 entries; no changes since the previous pull",
      "edition": null,
      "file_url": "https://vpic.nhtsa.dot.gov/api/vehicles/GetEquipmentPlantCodes?year=2016&equipmentType=1&reportType=All&format=json",
      "hand_note": null
@@ -575,6 +605,11 @@
      "label": "Who makes EverStart batteries",
      "url": "/everstart/",
      "note": "Walmart's EverStart trademarks"
+    },
+    {
+     "label": "Who makes Ironman, Milestar, Lionhart and other tire brands?",
+     "url": "/who-makes-tire-brands/",
+     "note": "42 tire trademark status pages: the owner of each brand's US mark"
     }
    ],
    "pulls": [
@@ -588,6 +623,56 @@
      "edition": null,
      "file_url": null,
      "hand_note": "The US trademark register's DOVE marks and both companies' own pages, twice a year. If a count or owner changes, the page rebuilds from the new numbers; if a product changes hands, its line is rewritten and logged."
+    },
+    {
+     "what": "Tire brand trademark owners (USPTO)",
+     "how": "hand",
+     "every_days": 90,
+     "last": null,
+     "due": "2027-02-22",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Each brand's US trademark record is re-read at USPTO, and we search again for the brands whose tire trademark we haven't found yet."
+    }
+   ]
+  },
+  {
+   "id": "bls-qcew",
+   "name": "BLS Quarterly Census of Employment and Wages",
+   "short": "BLS QCEW",
+   "publisher": "US Bureau of Labor Statistics",
+   "url": "https://www.bls.gov/cew/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "How many private establishments and jobs an industry had in each state in a year, from employers' unemployment insurance reports.",
+   "cannot_prove": "Which companies they are, or where their products are sold. States with too few employers are withheld.",
+   "terms": {
+    "url": "https://www.bls.gov/bls/linksite.htm",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "2024 footwear manufacturing (NAICS 316210) jobs and establishments by state"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "BLS QCEW annual averages for footwear manufacturing (NAICS 316210), private, by state",
+     "how": "hand",
+     "every_days": 182,
+     "last": "2026-11-21",
+     "due": "2027-05-22",
+     "result": "2024 annual file read on 21 Nov 2026: 11,620 jobs at 400 private establishments; 19 states shown, 19 withheld.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "BLS's footwear factory counts are read when each new annual file comes out."
     }
    ]
   },
@@ -1085,7 +1170,7 @@
      "how": "hand",
      "every_days": 30,
      "last": "2026-11-09",
-     "due": "2026-11-23",
+     "due": "2026-11-24",
      "result": "Kirkland regular 15.6 to 32.4 cents; Huggies on offer to Nov 22, 14.6 to 38.5; Pampers 20.5 to 46.8",
      "edition": null,
      "file_url": null,
@@ -1096,7 +1181,7 @@
      "how": "hand",
      "every_days": 30,
      "last": "2026-11-06",
-     "due": "2026-12-16",
+     "due": "2026-12-24",
      "result": "Four pairs read; OxiClean is warehouse-only with no price shown",
      "edition": null,
      "file_url": null,
@@ -1269,8 +1354,8 @@
      "what": "Kirkland medicine labels and FDA approval holders",
      "how": "script",
      "every_days": 7,
-     "last": "2026-11-16",
-     "due": "2026-11-23",
+     "last": "2026-11-24",
+     "due": "2026-12-01",
      "result": "50 Costco labels; 0 to review",
      "edition": null,
      "file_url": null,
@@ -1280,12 +1365,56 @@
      "what": "Name-brand labels compared with Kirkland",
      "how": "script",
      "every_days": 7,
-     "last": "2026-11-16",
-     "due": "2026-11-23",
+     "last": "2026-11-24",
+     "due": "2026-12-01",
      "result": "Label files refreshed",
      "edition": null,
      "file_url": null,
      "hand_note": null
+    }
+   ]
+  },
+  {
+   "id": "energy-star-data",
+   "name": "ENERGY STAR certified products data (data.energystar.gov)",
+   "short": "ENERGY STAR data",
+   "publisher": "US Environmental Protection Agency",
+   "url": "https://data.energystar.gov/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "Which models are ENERGY STAR certified under a brand, and, in the datasets that carry it, the partner company that certified them.",
+   "cannot_prove": "Who built the product. The partner is the company that holds the certification, often the brand owner, not the factory.",
+   "terms": {
+    "url": "https://data.energystar.gov/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-10",
+    "due": "2027-11-10"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Insignia TVs and appliances",
+     "url": "/insignia/",
+     "note": "The manufacturer listed for each Insignia model number"
+    },
+    {
+     "label": "Who makes Onn TVs",
+     "url": "/onn-tv/",
+     "note": "Searched the TV list for Onn; none listed"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "ENERGY STAR's certified displays, brands AOC and Philips",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-24",
+     "due": "2027-02-24",
+     "result": "72 AOC models, all certified by Top Victory Electronics (Taiwan); 305 Philips displays, all by MMD. Lookup checked against every model: 1,145 checks.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "ENERGY STAR's list of certified AOC and Philips displays is read again and the lookup rebuilt from it."
     }
    ]
   },
@@ -1494,6 +1623,39 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Fender's amp dating article, in English and Fender Japan's copy, is read again and compared with our saved copy; if Fender extends its QA sticker chart, the reader follows after the site owner approves."
+    }
+   ]
+  },
+  {
+   "id": "gibson-serial-guide",
+   "name": "Gibson serial number guide (gibson.com)",
+   "short": "Gibson guide",
+   "publisher": "Gibson Brands, Inc.",
+   "url": "https://www.gibson.com/pages/serial-number-search",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "How Gibson itself says its serial numbers are laid out, and which factories it names for them.",
+   "cannot_prove": "The build date or factory of one guitar where Gibson's own words leave it open, whether a guitar is genuine, or its value.",
+   "terms": {
+    "url": "https://www.gibson.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-24",
+    "due": "2027-11-24"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": [
+    {
+     "what": "Gibson's serial number guide",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-24",
+     "due": "2027-02-24",
+     "result": "Gibson's serial guide read as it stands and in five Internet Archive copies (2012-2021); the Blue Book chapter Gibson hosted for pre-1975 numbers. 22 schemes, 106 1960s ranges, each line checked against its saved copy; 168 decoder checks.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Gibson's serial guide is read again and compared with our saved copy; any change goes into the decoder, and into the list of what changed, after the site owner approves it."
     }
    ]
   },
@@ -1924,6 +2086,21 @@
      "label": "Made in USA: every version's US and Canadian parts share",
      "url": "/made-in-usa/",
      "note": "The newest full model year's filing."
+    },
+    {
+     "label": "Who makes Cadillac, Buick, GMC, Hummer and Corvette?",
+     "url": "/who-makes-cadillac-buick-and-gmc/",
+     "note": "Every GM row from 2018 to 2026 for Cadillac, Buick, GMC, the Hummer EV and the Corvette: where each is assembled and its US and Canadian parts share"
+    },
+    {
+     "label": "Who makes Range Rover, Land Rover and Jaguar?",
+     "url": "/who-makes-range-rover-land-rover-and-jaguar/",
+     "note": "Every JLR row from 2023 to 2026: where each Range Rover, Defender, Discovery and Jaguar is assembled, and its parts shares"
+    },
+    {
+     "label": "Who makes Audi, Porsche, Bentley and Lamborghini?",
+     "url": "/who-makes-audi-porsche-bentley-and-lamborghini/",
+     "note": "Every model's assembly country and parts shares, 2023 to 2027"
     }
    ],
    "pulls": [
@@ -2014,6 +2191,28 @@
      "edition": null,
      "file_url": null,
      "hand_note": "The same NHTSA report as the other car pages, and Stellantis's annual report each spring. The page won't rebuild if a model's country, the Jeep counts or the brand list changes until the lines that rely on them are rewritten. Which plant builds the Tonale, and where is the Recon assembled?"
+    },
+    {
+     "what": "Who makes Cadillac, Buick and GMC: NHTSA report, GM's 10-K and GM's plant statements",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2026-12-22",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The same NHTSA report as the other car pages, and GM's annual report each winter. The page won't rebuild if a model's country or the Buick, Cadillac or Corvette figures change until the lines that rely on them are rewritten. Is the next Envision built in Kansas, and does GM ever confirm a Corvette brand?"
+    },
+    {
+     "what": "Who makes Mazda: NHTSA report, Mazda releases and shareholder list",
+     "how": "hand",
+     "every_days": 30,
+     "last": null,
+     "due": "2026-12-24",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The same NHTSA report, plus Mazda's shareholder list and monthly production figures. Has Mazda said where the new CX-5 for North America is built?"
     }
    ]
   },
@@ -2040,9 +2239,25 @@
      "label": "Battery date code decoder",
      "url": "/battery-date-code/",
      "note": "NHTSA recalls's date code rule"
+    },
+    {
+     "label": "Who makes Ironman, Milestar, Lionhart and other tire brands?",
+     "url": "/who-makes-tire-brands/",
+     "note": "Every tire recall since 2010 and the plant codes printed in their Part 573 reports"
     }
    ],
    "pulls": [
+    {
+     "what": "NHTSA tire recalls and their Part 573 reports",
+     "how": "script",
+     "every_days": 7,
+     "last": "2026-11-24",
+     "due": "2026-12-01",
+     "result": "203 entries; first pull",
+     "edition": null,
+     "file_url": "https://static.nhtsa.gov/odi/ffdd/rcl/FLAT_RCL_POST_2010.zip",
+     "hand_note": null
+    },
     {
      "what": "NHTSA recalls of lead-acid starter batteries",
      "how": "hand",
@@ -2092,6 +2307,45 @@
      "edition": null,
      "file_url": null,
      "hand_note": "A person re-reads each maker's and agency's page, checks the quote still stands, keeps a new dated copy, and logs any change on the corrections page."
+    }
+   ]
+  },
+  {
+   "id": "maker-new-balance",
+   "name": "New Balance website and newsroom",
+   "short": "New Balance",
+   "publisher": "New Balance Athletics, Inc. (Boston, Massachusetts)",
+   "url": "https://www.newbalance.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its shoes or boots, in its own words, on the date we read it. Also how it defines its own Made in USA label, and how many items its Made in USA collection lists.",
+   "cannot_prove": "Which New Balance shoes meet the FTC's all-or-virtually-all standard: its own label is a 70% domestic value line.",
+   "terms": {
+    "url": "https://www.newbalance.com/robots.txt",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "Its Made in USA collection, label definition, factories and footprint report"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Shoe and boot makers' own pages on where they make them (New Balance, Red Wing, Danner, Quoddy, White's, Nicks, Thorogood, Okabashi, Rancourt, Lucchese, Origin), New Balance's Made in USA model list, the Caleres, Rocky Brands and Wolverine 10-Ks, and the FTC's footwear cases",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-21",
+     "due": "2026-12-21",
+     "result": "26 records read and saved on 21 Nov 2026; every quote, place, New Balance model and timeline line checked against the saved copy by tools/build_shoes_usa.py.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The shoe makers' own pages, their owners' filings and the FTC's footwear cases are re-read every month."
     }
    ]
   },
@@ -2236,6 +2490,31 @@
      "label": "Chinese car brands in the UK",
      "url": "/chinese-car-brands-uk/",
      "note": "The Xpeng, Stellantis, Polestar and Lotus 20-Fs: control and plants"
+    },
+    {
+     "label": "Who owns which appliance brands?",
+     "url": "/who-owns-which-appliance-brands/",
+     "note": "Whirlpool's 10-Ks for 2006 and 2025, Maytag's for 2001, Goodman's for 2009 and Electrolux's 2004 20-F: who bought which appliance brand, and when"
+    },
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "Caleres on Allen Edmonds' plants; Rocky Brands and Wolverine World Wide on where they make and source shoes"
+    },
+    {
+     "label": "Who makes Cadillac, Buick, GMC, Hummer and Corvette?",
+     "url": "/who-makes-cadillac-buick-and-gmc/",
+     "note": "GM brand list, plant count, the Hummer, Saab and Opel sales, Factory ZERO; AM General’s Hummer trademark transfer"
+    },
+    {
+     "label": "Who makes Ironman, Milestar, Lionhart and other tire brands?",
+     "url": "/who-makes-tire-brands/",
+     "note": "Goodyear's 2025 10-K: its brands, the Dunlop sale to Sumitomo Rubber, and Exhibit 21 (Wingfoot Brands, owner of the Douglas mark)"
+    },
+    {
+     "label": "Who makes Range Rover, Land Rover and Jaguar?",
+     "url": "/who-makes-range-rover-land-rover-and-jaguar/",
+     "note": "Ford's purchase of Land Rover from BMW in 2000 and its sale of Jaguar Land Rover to Tata Motors in 2008"
     }
    ],
    "pulls": [
@@ -2523,6 +2802,39 @@
    ]
   },
   {
+   "id": "tpv-000727-filings",
+   "name": "TPV Technology Co., Ltd. (Shenzhen Stock Exchange 000727) annual reports, on CNINFO",
+   "short": "TPV annual report",
+   "publisher": "TPV Technology Co., Ltd. (冠捷电子科技股份有限公司)",
+   "url": "http://www.cninfo.com.cn/new/disclosure/stock?stockCode=000727&orgId=gssz0000727",
+   "kind": "Company filings",
+   "primary": true,
+   "proves": "Who controls TPV, how much of it the listed company owns, its monitor sales and market share as it reports them, and the terms of its Philips licences.",
+   "cannot_prove": "Anything about one model, or who holds the 49% of TPV Technology Limited the listed company doesn't.",
+   "terms": {
+    "url": "http://www.cninfo.com.cn/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-24",
+    "due": "2027-11-24"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": [
+    {
+     "what": "TPV Technology's annual report (Shenzhen 000727) and its own site",
+     "how": "hand",
+     "every_days": 365,
+     "last": "2026-11-24",
+     "due": "2027-05-15",
+     "result": "2025 annual report (filed 28 Apr 2026): CEC actual controller, Panda 24.51%, 51% of TPV Ltd, 41.3M monitors, Philips monitor licence to 31 Dec 2030. TPV site: 11 bases.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "TPV's yearly report and its own pages are read again for ownership, factories and the Philips licence."
+    }
+   ]
+  },
+  {
    "id": "ttb-cola",
    "name": "TTB Public COLA Registry (label approvals)",
    "short": "TTB label approvals",
@@ -2557,9 +2869,9 @@
      "what": "TTB label approvals for Kirkland",
      "how": "script",
      "every_days": 7,
-     "last": "2026-11-15",
-     "due": "2026-11-22",
-     "result": "512 Kirkland approvals; 413 on the spirits pages, 7 not yet cited",
+     "last": "2026-11-22",
+     "due": "2026-11-29",
+     "result": "513 Kirkland approvals; 414 on the spirits pages, 8 not yet cited",
      "edition": null,
      "file_url": null,
      "hand_note": "A weekly read of TTB's label approvals for Kirkland (Sundays). TTB doesn't answer our servers, so it runs from a desktop computer. A person reads each new label before it is added."
@@ -2667,6 +2979,11 @@
      "label": "Made in USA: the rule, the guide and the FTC's cases",
      "url": "/made-in-usa/",
      "note": "The FTC's Made in USA page, its business guide, and its case and closing-letter pages, read 18 Nov 2026."
+    },
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "Footwear Made in USA matters: Oak Street, Chaucer/Bates, the SAS closing letter"
     }
    ],
    "pulls": [
@@ -2680,6 +2997,39 @@
      "edition": null,
      "file_url": null,
      "hand_note": "The FTC's Made in USA case list, the federal car parts report and the vodka label approvals, read monthly. The page won't rebuild if a count it relies on changes until the lines are rewritten."
+    }
+   ]
+  },
+  {
+   "id": "wix-filters",
+   "name": "WIX Filters (Mann+Hummel): catalogs",
+   "short": "WIX",
+   "publisher": "Mann+Hummel Filtration Technology, Inc.",
+   "url": "https://www.wixfilters.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which WIX filter WIX lists in place of another brand's number, and each WIX filter's published measurements.",
+   "cannot_prove": "That two brands' filters are the same inside, or that a cross fits a given engine: WIX ties its warranty to the vehicle listing.",
+   "terms": {
+    "url": "https://www.wixfilters.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-24",
+    "due": "2027-11-24"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": [
+    {
+     "what": "WIX's interchange and product catalog",
+     "how": "hand",
+     "every_days": 180,
+     "last": "2026-11-24",
+     "due": "2027-05-24",
+     "result": "WIX's 2024 Interchange and Product Numeric Catalog (1,157 pages, last changed 2 Aug 2024): 52,236 oil filter rows, 46,636 numbers from 1,100 brands against 822 WIX filters; spin-on measurements for 418; 210 numbers listed against WIX filters that measure differently.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "WIX's catalog is checked for a newer edition; a new one replaces every match after the reader's checks pass."
     }
    ]
   },
@@ -2829,8 +3179,8 @@
      "what": "FDA recall records that mention store brands",
      "how": "script",
      "every_days": 7,
-     "last": "2026-11-16",
-     "due": "2026-11-23",
+     "last": "2026-11-24",
+     "due": "2026-12-01",
      "result": "18 recalls waiting for review",
      "edition": null,
      "file_url": null,
@@ -3006,6 +3356,33 @@
    "pulls": []
   },
   {
+   "id": "electrolux-ir",
+   "name": "AB Electrolux annual reports",
+   "short": "Electrolux",
+   "publisher": "AB Electrolux (publ)",
+   "url": "https://www.electroluxgroup.com/en/annual-reports-27641/",
+   "kind": "Company filings",
+   "primary": true,
+   "proves": "What Electrolux tells its shareholders about itself: its brands, results and sites, in a report its board signs.",
+   "cannot_prove": "Which plant or supplier made a given model.",
+   "terms": {
+    "url": "https://www.electroluxgroup.com/en/terms-of-use/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which appliance brands?",
+     "url": "/who-owns-which-appliance-brands/",
+     "note": "The 2025 annual report: Electrolux, AEG and Frigidaire as its three main brands"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-acdelco-warranty-sheet",
    "name": "ACDelco Battery Warranty Information",
    "short": "ACDelco warranty sheet",
@@ -3126,6 +3503,54 @@
    },
    "credit": null,
    "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "aoc-site",
+   "name": "AOC (aoc.com)",
+   "short": "AOC's own site",
+   "publisher": "AOC (TPV Technology)",
+   "url": "https://www.aoc.com/us/about-us",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What AOC says about itself.",
+   "cannot_prove": "Who owns AOC: the page doesn't say.",
+   "terms": {
+    "url": "https://www.aoc.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-24",
+    "due": "2027-11-24"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "audi-ag",
+   "name": "AUDI AG reports and company history",
+   "short": "Audi",
+   "publisher": "AUDI AG",
+   "url": "https://www.audi.com/en/company/investor-relations.html",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What AUDI AG reports about its brand group (Audi, Bentley, Lamborghini, Ducati), its plants, the models each builds and how many vehicles each built.",
+   "cannot_prove": "Which plant built a particular car; for that, the car's VIN.",
+   "terms": {
+    "url": "https://www.audi.com/en/legal-notice.html",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-23",
+    "due": "2027-11-23"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Audi, Porsche, Bentley and Lamborghini?",
+     "url": "/who-makes-audi-porsche-bentley-and-lamborghini/",
+     "note": "Ownership, plants and history"
+    }
+   ],
    "pulls": []
   },
   {
@@ -3342,6 +3767,33 @@
    "pulls": []
   },
   {
+   "id": "lamborghini-com",
+   "name": "Automobili Lamborghini website",
+   "short": "Lamborghini",
+   "publisher": "Automobili Lamborghini S.p.A.",
+   "url": "https://www.lamborghini.com/en-en",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Lamborghini states about itself in its company notice and history.",
+   "cannot_prove": "Holdings above Audi; for those, Audi's and Volkswagen's reports.",
+   "terms": {
+    "url": "https://www.lamborghini.com/en-en/legal-area",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-23",
+    "due": "2027-11-23"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Audi, Porsche, Bentley and Lamborghini?",
+     "url": "/who-makes-audi-porsche-bentley-and-lamborghini/",
+     "note": "Ownership, plants and history"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "bgr",
    "name": "BGR",
    "short": "BGR",
@@ -3391,6 +3843,11 @@
      "label": "Who owns which car brands?",
      "url": "/who-owns-which-car-brands/",
      "note": "Owners and shareholdings"
+    },
+    {
+     "label": "Who makes Audi, Porsche, Bentley and Lamborghini?",
+     "url": "/who-makes-audi-porsche-bentley-and-lamborghini/",
+     "note": "Rolls-Royce as a BMW brand"
     }
    ],
    "pulls": []
@@ -3447,6 +3904,27 @@
      "note": "Its note withdrawing its old Kirkland review"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "bangkok-post",
+   "name": "Bangkok Post (Kyodo News)",
+   "short": "Bangkok Post",
+   "publisher": "Post Publishing PCL",
+   "url": "https://www.bangkokpost.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What the news agency reported, and when.",
+   "cannot_prove": "That the report is right. We use it only where no company record exists.",
+   "terms": {
+    "url": "https://www.bangkokpost.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-24",
+    "due": "2027-11-24"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -3585,6 +4063,27 @@
    "pulls": []
   },
   {
+   "id": "bluebook-gibson",
+   "name": "Blue Book of Electric Guitars (6th ed.), Gibson serialization chapter, as hosted on gibson.com",
+   "short": "Blue Book (Gibson-hosted)",
+   "publisher": "Blue Book Publications, Inc. (edited by S.P. Fjestad)",
+   "url": "https://web.archive.org/web/2012/http://www.gibson.com/Files/downloads/bluebook/GibsonSERIALNUMBERS.pdf",
+   "kind": "Other",
+   "primary": false,
+   "proves": "The approximate serial ranges and factory order codes Gibson pointed owners to for guitars made before 1975.",
+   "cannot_prove": "An exact year: the chapter calls its ranges approximate, and some 1960s numbers were used up to four times.",
+   "terms": {
+    "url": "https://web.archive.org/web/2012/http://www.gibson.com/Files/downloads/bluebook/GibsonSERIALNUMBERS.pdf",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-24",
+    "due": "2027-11-24"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "maker-bradford-white-corp",
    "name": "Bradford White Corporation: its corporate site (bradfordwhitecorporation.com)",
    "short": "Bradford White (corporate site)",
@@ -3709,6 +4208,33 @@
      "label": "Chinese car brands in the UK",
      "url": "/chinese-car-brands-uk/",
      "note": "A plant or a UK sales change no filing we read covers"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "cbs-news",
+   "name": "CBS News",
+   "short": "CBS News",
+   "publisher": "CBS News (Paramount)",
+   "url": "https://www.cbsnews.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What CBS News reported, including statements a company gave it, on the date it reported them.",
+   "cannot_prove": "Anything as fact: shown as reported.",
+   "terms": {
+    "url": "https://www.paramount.com/terms-of-use",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-22",
+    "due": "2027-11-22"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Cadillac, Buick, GMC, Hummer and Corvette?",
+     "url": "/who-makes-cadillac-buick-and-gmc/",
+     "note": "GM’s plan to build the next Buick Envision in Kansas from 2028"
     }
    ],
    "pulls": []
@@ -3942,6 +4468,27 @@
      "note": "Chicco's lifespan range, crash advice and the new standards"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "cec-site",
+   "name": "China Electronics Corporation (cec.com.cn)",
+   "short": "CEC's own site",
+   "publisher": "China Electronics Information Industry Group Co., Ltd. (CEC)",
+   "url": "https://www.cec.com.cn/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What CEC says about itself: when it was founded, who manages it, what it does.",
+   "cannot_prove": "Anything about AOC or TPV directly: the page doesn't name them.",
+   "terms": {
+    "url": "https://www.cec.com.cn/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-24",
+    "due": "2027-11-24"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -4337,6 +4884,33 @@
    "pulls": []
   },
   {
+   "id": "yuengling",
+   "name": "D.G. Yuengling & Son news releases",
+   "short": "D.G. Yuengling & Son, Inc.",
+   "publisher": "D.G. Yuengling & Son, Inc.",
+   "url": "https://www.yuengling.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What America's oldest brewery says about its own brewing and its joint venture with Molson Coors.",
+   "cannot_prove": "Which states get beer from which brewery today.",
+   "terms": {
+    "url": "https://www.yuengling.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-23",
+    "due": "2027-11-23"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Garage Beer, Yuengling, Corona and other beers?",
+     "url": "/who-makes-beer-brands/",
+     "note": "Ownership"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "doe-ccd",
    "name": "DOE Compliance Certification Database",
    "short": "DOE certification database",
@@ -4364,6 +4938,60 @@
    "pulls": []
   },
   {
+   "id": "daikin-press",
+   "name": "Daikin Industries press releases",
+   "short": "Daikin",
+   "publisher": "Daikin Industries, Ltd.",
+   "url": "https://www.daikin.com/press",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Daikin announced about its own deals, in its own words, on the date it announced them.",
+   "cannot_prove": "Anything after the release's date, such as which brands the companies it bought still sell.",
+   "terms": {
+    "url": "https://www.daikin.com/terms",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which appliance brands?",
+     "url": "/who-owns-which-appliance-brands/",
+     "note": "Daikin's English release of 2 Nov 2012 on completing the Goodman purchase"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-danner",
+   "name": "Danner website",
+   "short": "Danner",
+   "publisher": "Danner (Portland, Oregon)",
+   "url": "https://global.danner.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its shoes or boots, in its own words, on the date we read it. Also the origin filters its own store uses.",
+   "cannot_prove": "Where any one pair was made: check the label inside the shoe or on the box.",
+   "terms": {
+    "url": "https://global.danner.com/robots.txt",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "Danner's USA collection and factory tour pages"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "dealmoon",
    "name": "Dealmoon",
    "short": "Dealmoon",
@@ -4386,6 +5014,33 @@
      "label": "Costco diapers: prices and sales",
      "url": "/costco-diapers/",
      "note": "Past offer dates"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "dla",
+   "name": "Defense Logistics Agency news",
+   "short": "DLA",
+   "publisher": "US Defense Logistics Agency",
+   "url": "https://www.dla.mil/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What the agency that buys the military's clothing and shoes says it must buy, and when.",
+   "cannot_prove": "Which shoes a recruit receives today, or who made them.",
+   "terms": {
+    "url": "https://www.dla.mil/Privacy-Security/",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "2017: recruit athletic shoes must meet the Berry Amendment"
     }
    ],
    "pulls": []
@@ -4601,38 +5256,6 @@
    "pulls": []
   },
   {
-   "id": "energy-star-data",
-   "name": "ENERGY STAR certified products data (data.energystar.gov)",
-   "short": "ENERGY STAR data",
-   "publisher": "US Environmental Protection Agency",
-   "url": "https://data.energystar.gov/",
-   "kind": "Regulator",
-   "primary": true,
-   "proves": "Which models are ENERGY STAR certified under a brand, and, in the datasets that carry it, the partner company that certified them.",
-   "cannot_prove": "Who built the product. The partner is the company that holds the certification, often the brand owner, not the factory.",
-   "terms": {
-    "url": "https://data.energystar.gov/",
-    "read": "Open license. We read it with a script.",
-    "automated": true,
-    "checked": "2026-11-10",
-    "due": "2027-11-10"
-   },
-   "credit": null,
-   "used_for": [
-    {
-     "label": "Who makes Insignia TVs and appliances",
-     "url": "/insignia/",
-     "note": "The manufacturer listed for each Insignia model number"
-    },
-    {
-     "label": "Who makes Onn TVs",
-     "url": "/onn-tv/",
-     "note": "Searched the TV list for Onn; none listed"
-    }
-   ],
-   "pulls": []
-  },
-  {
    "id": "epa-safer-choice",
    "name": "EPA Safer Choice product list",
    "short": "EPA Safer Choice",
@@ -4763,6 +5386,33 @@
      "label": "Battery date code decoder",
      "url": "/battery-date-code/",
      "note": "East Penn's date code rule"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "electrolux-group-web",
+   "name": "Electrolux Group website",
+   "short": "Electrolux Group",
+   "publisher": "AB Electrolux",
+   "url": "https://www.electroluxgroup.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where Electrolux says its factories are, and what it says they make.",
+   "cannot_prove": "Which plant built a given Frigidaire or Electrolux model.",
+   "terms": {
+    "url": "https://www.electroluxgroup.com/en/terms-of-use/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which appliance brands?",
+     "url": "/who-owns-which-appliance-brands/#made",
+     "note": "Electrolux's North American plants"
     }
    ],
    "pulls": []
@@ -5002,6 +5652,11 @@
      "label": "How old is my furnace, AC or heat pump?",
      "url": "/hvac-serial-number-lookup/",
      "note": "DOE average lifetimes; EPA's 2026 R-410A rule"
+    },
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "The 2021 Made in USA rule traces all-or-virtually-all to the 1994 New Balance and Hyde shoe cases"
     }
    ],
    "pulls": []
@@ -5184,6 +5839,33 @@
    "pulls": []
   },
   {
+   "id": "formula1-com",
+   "name": "Formula1.com news",
+   "short": "Formula1.com",
+   "publisher": "Formula One World Championship Limited",
+   "url": "https://www.formula1.com/",
+   "kind": "Other",
+   "primary": true,
+   "proves": "What Formula 1 and the FIA announced about a team's entry or an engine supplier's approval, on the date it was announced.",
+   "cannot_prove": "What happens on track, or any later change to a team's engine deal.",
+   "terms": {
+    "url": "https://www.formula1.com/en/information/legal-notices",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-22",
+    "due": "2027-11-22"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Cadillac, Buick, GMC, Hummer and Corvette?",
+     "url": "/who-makes-cadillac-buick-and-gmc/",
+     "note": "Cadillac F1 power units: Ferrari until GM’s own from 2029"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "fortune",
    "name": "Fortune",
    "short": "Fortune",
@@ -5206,6 +5888,33 @@
      "label": "Who makes Kirkland Signature diapers",
      "url": "/kirkland-signature/diapers/",
      "note": "Costco's on-record response in April 2025"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "ge-appliances-web",
+   "name": "GE Appliances and Hotpoint websites",
+   "short": "GE Appliances",
+   "publisher": "GE Appliances, a Haier company",
+   "url": "https://www.geappliances.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which brands GE Appliances says it sells, and what it says about itself and its trademark licence.",
+   "cannot_prove": "Which factory or supplier built a given model.",
+   "terms": {
+    "url": "https://www.geappliances.com/plcy/tandc2.htm",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which appliance brands?",
+     "url": "/who-owns-which-appliance-brands/",
+     "note": "Its brand list (Monogram, Café, GE, GE Profile, Haier, Hotpoint), its trademark-licence footer and hotpoint.com's history"
     }
    ],
    "pulls": []
@@ -5246,6 +5955,60 @@
    "pulls": []
   },
   {
+   "id": "gm-authority",
+   "name": "GM Authority",
+   "short": "GM Authority",
+   "publisher": "GM Authority (independent GM news site, not owned by GM)",
+   "url": "https://gmauthority.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What GM Authority reported from its own sources, on the date it reported it.",
+   "cannot_prove": "Anything as fact: GM hasn't confirmed what its unnamed sources say. Shown as reported.",
+   "terms": {
+    "url": "https://gmauthority.com/blog/terms-of-use/",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-22",
+    "due": "2027-11-22"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Cadillac, Buick, GMC, Hummer and Corvette?",
+     "url": "/who-makes-cadillac-buick-and-gmc/",
+     "note": "Report that the Corvette model expansion was shelved (Oct 2026)"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "gm-newsroom",
+   "name": "GM News (General Motors newsroom)",
+   "short": "GM newsroom",
+   "publisher": "General Motors Company",
+   "url": "https://news.gm.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What GM itself announced about its plants and which vehicles each one builds.",
+   "cannot_prove": "Where one car was built, or that a plan announced for a future year happened. It's the company's own announcement.",
+   "terms": {
+    "url": "https://www.gm.com/copyright-trademark",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-22",
+    "due": "2027-11-22"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Cadillac, Buick, GMC, Hummer and Corvette?",
+     "url": "/who-makes-cadillac-buick-and-gmc/",
+     "note": "The plants GM names for the Escalade IQ, Hummer EV, Lyriq, Vistiq and XT5"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "gov-uk-dft",
    "name": "GOV.UK: Department for Transport and DVSA",
    "short": "GOV.UK (tyre age law)",
@@ -5268,6 +6031,60 @@
      "label": "Tire date code: how old are my tires?",
      "url": "/tire-date-code/",
      "note": "The UK 10-year tyre rule for heavy vehicles"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "garage-beer",
+   "name": "Garage Beer Co. press releases",
+   "short": "Garage Beer",
+   "publisher": "Garage Beer",
+   "url": "https://www.garagebeer.co/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Garage Beer's company says about its owners.",
+   "cannot_prove": "Where the beer is brewed: its releases say where it was founded, not where it's made.",
+   "terms": {
+    "url": "https://www.garagebeer.co/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-23",
+    "due": "2027-11-23"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Garage Beer, Yuengling, Corona and other beers?",
+     "url": "/who-makes-beer-brands/",
+     "note": "Ownership"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "ge-newsroom",
+   "name": "General Electric press releases",
+   "short": "GE",
+   "publisher": "General Electric Company",
+   "url": "https://www.ge.com/news/press-releases",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What GE announced about its own deals, in its own words, on the date it announced them.",
+   "cannot_prove": "What the business it sold did afterwards.",
+   "terms": {
+    "url": "https://www.ge.com/terms",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which appliance brands?",
+     "url": "/who-owns-which-appliance-brands/",
+     "note": "GE's 6 Jun 2016 release on completing the sale of GE Appliances to Haier"
     }
    ],
    "pulls": []
@@ -5378,6 +6195,27 @@
      "note": "Gerber's USA Made collection against its knives collection"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "gibson-serial-guide-archive",
+   "name": "Gibson serial number guide, older versions (Internet Archive copies)",
+   "short": "Gibson guide, older copy",
+   "publisher": "Gibson (copies held by the Internet Archive)",
+   "url": "https://web.archive.org/web/2012*/www2.gibson.com/Support/Serial-Number-Search.aspx",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Gibson's guide said on the date the Internet Archive saved it.",
+   "cannot_prove": "Why Gibson changed the wording, or which version is right where they disagree.",
+   "terms": {
+    "url": "https://archive.org/about/terms.php",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-24",
+    "due": "2027-11-24"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -5516,6 +6354,27 @@
    "pulls": []
   },
   {
+   "id": "hkex-tpv",
+   "name": "HKEX filings: TPV Technology Limited privatisation, 2019",
+   "short": "HKEX filing",
+   "publisher": "TPV Technology Limited and CEIEC (H.K.) Limited",
+   "url": "https://www.hkexnews.hk/",
+   "kind": "Company filings",
+   "primary": true,
+   "proves": "Who proposed taking TPV private, what it already held, and when the listing ended.",
+   "cannot_prove": "Who owns TPV today: the 2020 restructuring came after these filings.",
+   "terms": {
+    "url": "https://www.hkexnews.hk/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-24",
+    "due": "2027-11-24"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "maker-hankook",
    "name": "Hankook technical bulletin: tire replacement recommendations",
    "short": "Hankook",
@@ -5592,6 +6451,33 @@
      "label": "Who makes store-brand power tools",
      "url": "/store-brand-tools/#icon",
      "note": "The FCC ID printed in the Icon T10 scanner's guide"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "heineken",
+   "name": "Heineken N.V. brand pages",
+   "short": "Heineken N.V.",
+   "publisher": "Heineken N.V.",
+   "url": "https://www.theheinekencompany.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which beer brands Heineken lists as its own.",
+   "cannot_prove": "Who brews or imports each brand in the US.",
+   "terms": {
+    "url": "https://www.theheinekencompany.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-23",
+    "due": "2027-11-23"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Garage Beer, Yuengling, Corona and other beers?",
+     "url": "/who-makes-beer-brands/",
+     "note": "Ownership"
     }
    ],
    "pulls": []
@@ -5823,6 +6709,33 @@
      "label": "Who makes Acura?",
      "url": "/who-makes-acura/",
      "note": "Where Acura models are built"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "hotpoint-uk-site",
+   "name": "Hotpoint UK website",
+   "short": "Hotpoint UK",
+   "publisher": "Hotpoint UK Appliances Limited",
+   "url": "https://www.hotpoint.co.uk/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which company runs Hotpoint's UK website and puts its name to it.",
+   "cannot_prove": "Who owns the Hotpoint trademark, or which factory built a given model.",
+   "terms": {
+    "url": "https://www.hotpoint.co.uk/terms-and-conditions",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which appliance brands?",
+     "url": "/who-owns-which-appliance-brands/",
+     "note": "The company named in the site's footer"
     }
    ],
    "pulls": []
@@ -6277,6 +7190,33 @@
    "pulls": []
   },
   {
+   "id": "kenmore-site",
+   "name": "Kenmore website",
+   "short": "Kenmore",
+   "publisher": "Transform SR Brands LLC",
+   "url": "https://www.kenmore.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Who owns the Kenmore name, and what Kenmore says about how its appliances are made.",
+   "cannot_prove": "Which manufacturer built a given Kenmore model.",
+   "terms": {
+    "url": "https://www.kenmore.com/terms-of-use/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who owns which appliance brands?",
+     "url": "/who-owns-which-appliance-brands/",
+     "note": "The Kenmore trademark owner and its own words on using other manufacturers"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "kering-urd",
    "name": "Kering Universal Registration Document",
    "short": "Kering annual report",
@@ -6690,6 +7630,33 @@
    "pulls": []
   },
   {
+   "id": "maker-lucchese",
+   "name": "Lucchese website",
+   "short": "Lucchese",
+   "publisher": "Lucchese Bootmaker",
+   "url": "https://www.lucchese.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its shoes or boots, in its own words, on the date we read it.",
+   "cannot_prove": "Which Lucchese boots are made in Texas and which elsewhere: the home page names a line made in Italy without a full list.",
+   "terms": {
+    "url": "https://www.lucchese.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "Lucchese's home page"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "mg2",
    "name": "MG2 project pages",
    "short": "MG2",
@@ -6924,6 +7891,27 @@
      "note": "Maker records, label doses and prices"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "mazda-newsroom",
+   "name": "Mazda Motor Corporation: news releases and company pages",
+   "short": "Mazda",
+   "publisher": "Mazda Motor Corporation",
+   "url": "https://newsroom.mazda.com/en/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Mazda itself says about its plants, partners, production and shareholders, and when it said it.",
+   "cannot_prove": "Where one car was built: that is in its VIN, or on its window sticker.",
+   "terms": {
+    "url": "https://www.mazda.com/en/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-24",
+    "due": "2027-11-24"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -7202,6 +8190,27 @@
    "pulls": []
   },
   {
+   "id": "musicradar",
+   "name": "MusicRadar",
+   "short": "MusicRadar",
+   "publisher": "Future Publishing",
+   "url": "https://www.musicradar.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What its reporters saw and what Gibson told them.",
+   "cannot_prove": "Anything Gibson's own records don't also show.",
+   "terms": {
+    "url": "https://www.musicradar.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-24",
+    "due": "2027-11-24"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "nbc-news",
    "name": "NBC News (Associated Press stories)",
    "short": "AP via NBC News",
@@ -7347,6 +8356,33 @@
      "label": "Kirkland Signature store hub",
      "url": "/kirkland-signature/#p-ks-bottled-water",
      "note": "Who bottled the water report Consumer Reports filed for Kirkland"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-nicks-boots",
+   "name": "Nicks Handmade Boots website",
+   "short": "Nicks",
+   "publisher": "Nicks Handmade Boots (Spokane, Washington)",
+   "url": "https://nicksboots.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its shoes or boots, in its own words, on the date we read it.",
+   "cannot_prove": "Where any one pair was made: check the label inside the shoe or on the box.",
+   "terms": {
+    "url": "https://nicksboots.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "Nicks's home page and story"
     }
    ],
    "pulls": []
@@ -7675,6 +8711,33 @@
    "pulls": []
   },
   {
+   "id": "maker-okabashi",
+   "name": "Okabashi website",
+   "short": "Okabashi",
+   "publisher": "Okabashi Brands (Buford, Georgia)",
+   "url": "https://www.okabashi.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its shoes or boots, in its own words, on the date we read it.",
+   "cannot_prove": "Where any one pair was made: check the label inside the shoe or on the box.",
+   "terms": {
+    "url": "https://www.okabashi.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "Okabashi's home page"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-ontario",
    "name": "Ontario Knife Company website",
    "short": "Ontario",
@@ -7724,6 +8787,33 @@
      "label": "Who makes Trader Joe's products",
      "url": "/trader-joes/",
      "note": "The USDA plant number on a photographed Mandarin Orange Chicken bag"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-origin-usa",
+   "name": "Origin USA website",
+   "short": "Origin",
+   "publisher": "Origin USA (Maine)",
+   "url": "https://originmaine.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its shoes or boots, in its own words, on the date we read it.",
+   "cannot_prove": "Where any one pair was made: check the label inside the shoe or on the box.",
+   "terms": {
+    "url": "https://originmaine.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "Origin's home page"
     }
    ],
    "pulls": []
@@ -7894,6 +8984,60 @@
    "pulls": []
   },
   {
+   "id": "porsche-ag-ir",
+   "name": "Porsche AG investor relations and annual report",
+   "short": "Porsche AG",
+   "publisher": "Dr. Ing. h.c. F. Porsche AG",
+   "url": "https://investorrelations.porsche.com/en/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Porsche AG reports about its shareholders, its plants and how many cars each built.",
+   "cannot_prove": "Which plant built a particular car; for that, the car's VIN.",
+   "terms": {
+    "url": "https://investorrelations.porsche.com/en/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-23",
+    "due": "2027-11-23"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Audi, Porsche, Bentley and Lamborghini?",
+     "url": "/who-makes-audi-porsche-bentley-and-lamborghini/",
+     "note": "Ownership, plants and history"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "porsche-se",
+   "name": "Porsche Automobil Holding SE investor pages",
+   "short": "Porsche SE",
+   "publisher": "Porsche Automobil Holding SE",
+   "url": "https://www.porsche-se.com/en/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Porsche SE, the holding company that controls Volkswagen AG, says about its own shareholders and its stakes in Volkswagen AG and Porsche AG.",
+   "cannot_prove": "How the Porsche and Piëch families split the ordinary shares among themselves; Porsche SE says only that they hold all of them, indirectly.",
+   "terms": {
+    "url": "https://www.porsche-se.com/en/imprint",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-23",
+    "due": "2027-11-23"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Audi, Porsche, Bentley and Lamborghini?",
+     "url": "/who-makes-audi-porsche-bentley-and-lamborghini/",
+     "note": "Ownership, plants and history"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "porsche-newsroom",
    "name": "Porsche Newsroom",
    "short": "Porsche Newsroom",
@@ -7916,8 +9060,55 @@
      "label": "Who owns which car brands?",
      "url": "/who-owns-which-car-brands/",
      "note": "Owners and shareholdings"
+    },
+    {
+     "label": "Who makes Audi, Porsche, Bentley and Lamborghini?",
+     "url": "/who-makes-audi-porsche-bentley-and-lamborghini/",
+     "note": "The Bugatti Rimac sale"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "premium-guard",
+   "name": "Premium Guard Inc.: press releases",
+   "short": "Premium Guard",
+   "publisher": "Premium Guard Inc.",
+   "url": "https://premiumguard.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Premium Guard says it bought from First Brands Group, and when.",
+   "cannot_prove": "Where a given FRAM filter was made.",
+   "terms": {
+    "url": "https://premiumguard.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-24",
+    "due": "2027-11-24"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "purolator",
+   "name": "Purolator (Mann+Hummel): catalogs",
+   "short": "Purolator",
+   "publisher": "Mann+Hummel Purolator Filters LLC",
+   "url": "https://www.purolatornow.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which Purolator filter Purolator lists for a vehicle, and who answers its filter line.",
+   "cannot_prove": "Other brands' numbers: the catalog is by vehicle.",
+   "terms": {
+    "url": "https://www.purolatornow.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-24",
+    "due": "2027-11-24"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -7939,6 +9130,33 @@
    },
    "credit": null,
    "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "maker-quoddy",
+   "name": "Quoddy website",
+   "short": "Quoddy",
+   "publisher": "Quoddy (Lewiston, Maine)",
+   "url": "https://www.quoddy.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its shoes or boots, in its own words, on the date we read it.",
+   "cannot_prove": "Where any one pair was made: check the label inside the shoe or on the box.",
+   "terms": {
+    "url": "https://www.quoddy.com/robots.txt",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "Quoddy's About page"
+    }
+   ],
    "pulls": []
   },
   {
@@ -7996,6 +9214,33 @@
    "pulls": []
   },
   {
+   "id": "maker-rancourt",
+   "name": "Rancourt & Co. website",
+   "short": "Rancourt",
+   "publisher": "Rancourt & Co. (Lewiston, Maine)",
+   "url": "https://www.rancourtandcompany.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its shoes or boots, in its own words, on the date we read it.",
+   "cannot_prove": "Where any one pair was made: check the label inside the shoe or on the box.",
+   "terms": {
+    "url": "https://www.rancourtandcompany.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "Rancourt's home page"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "readers-digest",
    "name": "Reader's Digest",
    "short": "Reader's Digest",
@@ -8018,6 +9263,33 @@
      "label": "Who makes Costco hot dogs",
      "url": "/costco-hot-dogs/",
      "note": "Plants, history and numbers sold"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-red-wing",
+   "name": "Red Wing Shoes website",
+   "short": "Red Wing",
+   "publisher": "Red Wing Shoe Company (Red Wing, Minnesota)",
+   "url": "https://www.redwingshoes.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its shoes or boots, in its own words, on the date we read it. Also the four origin labels it defines for its own boots.",
+   "cannot_prove": "Where any one pair was made: check the label inside the shoe or on the box.",
+   "terms": {
+    "url": "https://www.redwingshoes.com/robots.txt",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "Red Wing's Made in USA page: four label tiers, plants and tannery"
     }
    ],
    "pulls": []
@@ -8493,6 +9765,33 @@
    "pulls": []
   },
   {
+   "id": "stars-and-stripes",
+   "name": "Stars and Stripes",
+   "short": "Stars and Stripes",
+   "publisher": "Stars and Stripes (Washington, DC)",
+   "url": "https://www.stripes.com/",
+   "kind": "Press",
+   "primary": false,
+   "proves": "What a named news outlet reported, on the date it reported it.",
+   "cannot_prove": "Anything as fact: shown as reported.",
+   "terms": {
+    "url": "https://www.stripes.com/terms-of-use/",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "2026 recruit-shoe contracts to San Antonio Shoemakers and New Balance"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "maker-stretch-tite",
    "name": "Stretch-Tite website",
    "short": "Stretch-Tite",
@@ -8756,6 +10055,27 @@
    "pulls": []
   },
   {
+   "id": "tpv-site",
+   "name": "TPV Technology (tpv-tech.com, tpvision.com)",
+   "short": "TPV's own site",
+   "publisher": "TPV Technology",
+   "url": "https://tpv-tech.com/en/info.html",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What TPV says about its own history, brands, licences and factories.",
+   "cannot_prove": "Which factory built one monitor, or which other brands TPV builds for.",
+   "terms": {
+    "url": "https://tpv-tech.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-24",
+    "due": "2027-11-24"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "tti",
    "name": "Techtronic Industries Co. Ltd. (ttigroup.com), annual reports",
    "short": "Techtronic Industries (TTI)",
@@ -9014,6 +10334,60 @@
      "label": "Who makes Costco hot dogs",
      "url": "/costco-hot-dogs/",
      "note": "Plants, history and numbers sold"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-thorogood",
+   "name": "Thorogood website",
+   "short": "Thorogood",
+   "publisher": "Weinbrenner Shoe Company (Marshfield, Wisconsin), maker of Thorogood",
+   "url": "https://www.thorogoodusa.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its shoes or boots, in its own words, on the date we read it.",
+   "cannot_prove": "Which Thorogood styles are made in the US: the home page links a US-made range without listing it.",
+   "terms": {
+    "url": "https://www.thorogoodusa.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "Thorogood's home page"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "tireco",
+   "name": "Tireco, Inc. (tireco.com)",
+   "short": "Tireco",
+   "publisher": "Tireco, Inc.",
+   "url": "https://www.tireco.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which tire brands Tireco says it markets and distributes.",
+   "cannot_prove": "Who owns a brand's trademark, or which factory made a tire.",
+   "terms": {
+    "url": "https://www.tireco.com/",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-22",
+    "due": "2027-11-22"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Ironman, Milestar, Lionhart and other tire brands?",
+     "url": "/who-makes-tire-brands/",
+     "note": "Tireco's own brand list (Milestar, Westlake, Nankang)"
     }
    ],
    "pulls": []
@@ -9330,6 +10704,33 @@
    "pulls": []
   },
   {
+   "id": "usitc",
+   "name": "US International Trade Commission",
+   "short": "USITC",
+   "publisher": "US International Trade Commission",
+   "url": "https://www.usitc.gov/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "US trade figures and the Commission's own analysis of them, e.g. how much of the US footwear market was imported in a year.",
+   "cannot_prove": "Where any one brand or pair is made.",
+   "terms": {
+    "url": "https://www.usitc.gov/website_policies",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "Footwear trade shifts 2018: imports 99% of the US market"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "us-doj",
    "name": "US Justice Department press releases",
    "short": "US Justice Department press releases",
@@ -9504,6 +10905,11 @@
      "label": "Made in USA: 15 USC 45a",
      "url": "/made-in-usa/",
      "note": "The 1994 law behind Made in USA labels."
+    },
+    {
+     "label": "Who makes Cadillac, Buick, GMC, Hummer and Corvette?",
+     "url": "/who-makes-cadillac-buick-and-gmc/",
+     "note": "What the parts-content label covers (49 USC 32304)"
     }
    ],
    "pulls": []
@@ -9585,6 +10991,38 @@
      "label": "Who owns which car brands?",
      "url": "/who-owns-which-car-brands/",
      "note": "Owners and shareholdings"
+    },
+    {
+     "label": "Who makes Audi, Porsche, Bentley and Lamborghini?",
+     "url": "/who-makes-audi-porsche-bentley-and-lamborghini/",
+     "note": "Shareholders, brand groups and the 2020 Audi buyout"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "vw-group-history",
+   "name": "Volkswagen Group brand histories",
+   "short": "VW Group history",
+   "publisher": "Volkswagen AG",
+   "url": "https://www.volkswagen-group.com/en/the-history-of-the-brands-17668",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "When Volkswagen says it acquired each brand, in its own history pages.",
+   "cannot_prove": "Deal terms or prices; the history pages give dates and what was bought.",
+   "terms": {
+    "url": "https://www.volkswagen-group.com/en/imprint-15736",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-23",
+    "due": "2027-11-23"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Who makes Audi, Porsche, Bentley and Lamborghini?",
+     "url": "/who-makes-audi-porsche-bentley-and-lamborghini/",
+     "note": "Ownership, plants and history"
     }
    ],
    "pulls": []
@@ -9701,6 +11139,33 @@
    "pulls": []
   },
   {
+   "id": "maker-whites-boots",
+   "name": "White's Boots website",
+   "short": "White's",
+   "publisher": "White's Boots (Spokane, Washington)",
+   "url": "https://whitesboots.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Where the maker says it makes its shoes or boots, in its own words, on the date we read it.",
+   "cannot_prove": "Where any one pair was made: check the label inside the shoe or on the box.",
+   "terms": {
+    "url": "https://whitesboots.com/robots.txt",
+    "read": "The site refuses scripts, so single pages or files are read in a browser, not by script.",
+    "automated": false,
+    "checked": "2026-11-21",
+    "due": "2027-11-21"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "White's Our Legacy page"
+    }
+   ],
+   "pulls": []
+  },
+  {
    "id": "whoreallymakes",
    "name": "Who Really Makes (whoreallymakes.com)",
    "short": "Who Really Makes",
@@ -9716,6 +11181,27 @@
     "automated": true,
     "checked": "2026-11-06",
     "due": "2027-11-06"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "wikipedia",
+   "name": "Wikipedia",
+   "short": "Wikipedia",
+   "publisher": "Wikimedia Foundation",
+   "url": "https://en.wikipedia.org/",
+   "kind": "Other",
+   "primary": false,
+   "proves": "What the article said on the day we read it, with its citation.",
+   "cannot_prove": "Anything on its own: we use it only where it cites a record we couldn't read.",
+   "terms": {
+    "url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-24",
+    "due": "2027-11-24"
    },
    "credit": null,
    "used_for": [],

@@ -1,13 +1,26 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-20",
+ "generated": "2026-11-23",
  "started": "2026-11-02",
  "count": {
-  "correction": 25,
+  "correction": 26,
   "update": 26,
   "clarification": 11
  },
  "items": [
+  {
+   "id": "c-2026-11-23-tire-brands-cooper-texarkana",
+   "on": "2026-11-23",
+   "kind": "correction",
+   "page": "/who-makes-tire-brands/",
+   "what": "The state of Cooper's Texarkana plant",
+   "was": "Cooper's note in the A to Z said its recall reports name Cooper's plants in Ohio, Mississippi and Texas.",
+   "now": "Ohio, Mississippi and Arkansas: NHTSA's plant list puts Cooper's Texarkana plant (code 1UT, printed UT in older reports) in Texarkana, Arkansas.",
+   "why": "Found while writing a Cooper answer for the page. The plant list's state field says Arkansas; the note had it wrong since the page went live on 22 November.",
+   "flagged_by": "Our own re-check",
+   "event": "we-were-wrong",
+   "evidence": []
+  },
   {
    "id": "c-2026-11-20-usda-egg-pack-date",
    "on": "2026-11-20",
