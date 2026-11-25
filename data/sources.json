@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-24",
+ "generated": "2026-11-25",
  "count": 367,
  "primary": 288,
  "by_hand": 60,
@@ -1169,9 +1169,9 @@
      "what": "Kirkland, Huggies Plus, Pampers Swaddlers Ultra, Pull-Ups, Easy Ups and baby wipes at Costco: every size, offers, ratings, Seattle shelf",
      "how": "hand",
      "every_days": 30,
-     "last": "2026-11-09",
-     "due": "2026-11-24",
-     "result": "Kirkland regular 15.6 to 32.4 cents; Huggies on offer to Nov 22, 14.6 to 38.5; Pampers 20.5 to 46.8",
+     "last": "2026-11-24",
+     "due": "2026-12-07",
+     "result": "No diaper offer: Kirkland 15.6 to 32.4 cents, Huggies 19.8 to 48.1, Pampers 20.5 to 46.8; Kudos $10 off to Dec 6; Pull-Ups and Easy Ups $8 off to Dec 20",
      "edition": null,
      "file_url": null,
      "hand_note": "Read in a browser at ZIP 98101, size by size on all six listings plus Newborn. Offers are re-read the day after they end. The page won't publish if these prices and the Kirkland diaper page disagree."
@@ -1695,45 +1695,6 @@
      "edition": null,
      "file_url": null,
      "hand_note": "The car seat makers' own pages and manuals, and NHTSA's crash page, are re-read every three months."
-    }
-   ]
-  },
-  {
-   "id": "maker-honda",
-   "name": "Honda owner's manuals",
-   "short": "Honda",
-   "publisher": "American Honda Motor Co., Inc.",
-   "url": "https://mygarage.honda.com/s/find-honda",
-   "kind": "Maker's own words",
-   "primary": true,
-   "proves": "What this vehicle maker itself tells owners about tire age, in its own published words.",
-   "cannot_prove": "How old any one tire is, or whether it is safe. The advice covers the models and years named; other models or years may say something different.",
-   "terms": {
-    "url": "https://www.honda.com/",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
-    "automated": true,
-    "checked": "2026-11-03",
-    "due": "2027-11-03"
-   },
-   "credit": null,
-   "used_for": [
-    {
-     "label": "Tire date code: how old are my tires?",
-     "url": "/tire-date-code/",
-     "note": "Its tire age advice to owners, in the carmakers table"
-    }
-   ],
-   "pulls": [
-    {
-     "what": "Tire age: carmaker manuals to re-check",
-     "how": "hand",
-     "every_days": 0,
-     "last": "2026-11-12",
-     "due": "2026-11-26",
-     "result": "Every carmaker on the list has a row",
-     "edition": null,
-     "file_url": null,
-     "hand_note": "Honda: read the 2026 CR-V manual on Honda’s own server (still down for maintenance on Nov 12, its third failed read; the table uses an archived 2024 copy, and the Internet Archive holds no 2026 copy). Toyota: see whether toyota.com has posted a 2026 RAV4 owner’s manual (none on Nov 12); the 2025 manual was re-read live on Nov 12 and still says the same. Nissan done Nov 4: the live 2026 Rogue manual says the same as 2024."
     }
    ]
   },
@@ -2301,9 +2262,9 @@
      "what": "Tire age guidance: who says what",
      "how": "hand",
      "every_days": 365,
-     "last": "2026-11-12",
-     "due": "2027-11-12",
-     "result": "10 rows and 12 carmakers from 24 documents",
+     "last": "2026-11-25",
+     "due": "2027-11-25",
+     "result": "10 rows and 12 carmakers from 25 documents",
      "edition": null,
      "file_url": null,
      "hand_note": "A person re-reads each maker's and agency's page, checks the quote still stands, keeps a new dated copy, and logs any change on the corrections page."
@@ -2953,6 +2914,45 @@
      "edition": null,
      "file_url": null,
      "hand_note": "The Pokémon Company updates this page once a year, usually by summer, with totals to the end of March. We read it in a browser and save a copy, so the production figures can be traced."
+    }
+   ]
+  },
+  {
+   "id": "maker-toyota",
+   "name": "Toyota owner's manuals",
+   "short": "Toyota",
+   "publisher": "Toyota Motor North America, Inc.",
+   "url": "https://www.toyota.com/owners/warranty-owners-manuals/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What this vehicle maker itself tells owners about tire age, in its own published words.",
+   "cannot_prove": "How old any one tire is, or whether it is safe. The advice covers the models and years named; other models or years may say something different.",
+   "terms": {
+    "url": "https://www.toyota.com/support/legal-terms",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-03",
+    "due": "2027-11-03"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Tire date code: how old are my tires?",
+     "url": "/tire-date-code/",
+     "note": "Its tire age advice to owners, in the carmakers table"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "Tire age: Toyota’s 2026 RAV4 manual",
+     "how": "hand",
+     "every_days": 0,
+     "last": "2026-11-25",
+     "due": "2026-12-10",
+     "result": "Every carmaker on the list has a row",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Toyota: see whether toyota.com has posted a 2026 RAV4 owner’s manual (none on Nov 12; its owners’ manuals page would not load in a browser on Nov 25). The table quotes the 2025 manual, re-read live on Nov 12. Honda done Nov 25: the live 2026 CR-V manual says the same as 2024. Nissan done Nov 4."
     }
    ]
   },
@@ -6709,6 +6709,33 @@
      "label": "Who makes Acura?",
      "url": "/who-makes-acura/",
      "note": "Where Acura models are built"
+    }
+   ],
+   "pulls": []
+  },
+  {
+   "id": "maker-honda",
+   "name": "Honda owner's manuals",
+   "short": "Honda",
+   "publisher": "American Honda Motor Co., Inc.",
+   "url": "https://mygarage.honda.com/s/find-honda",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What this vehicle maker itself tells owners about tire age, in its own published words.",
+   "cannot_prove": "How old any one tire is, or whether it is safe. The advice covers the models and years named; other models or years may say something different.",
+   "terms": {
+    "url": "https://www.honda.com/",
+    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
+    "automated": true,
+    "checked": "2026-11-03",
+    "due": "2027-11-03"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Tire date code: how old are my tires?",
+     "url": "/tire-date-code/",
+     "note": "Its tire age advice to owners, in the carmakers table"
     }
    ],
    "pulls": []
@@ -10501,33 +10528,6 @@
      "label": "Who makes Lexus?",
      "url": "/who-makes-lexus/",
      "note": "Which plant builds each Lexus model"
-    }
-   ],
-   "pulls": []
-  },
-  {
-   "id": "maker-toyota",
-   "name": "Toyota owner's manuals",
-   "short": "Toyota",
-   "publisher": "Toyota Motor North America, Inc.",
-   "url": "https://www.toyota.com/owners/warranty-owners-manuals/",
-   "kind": "Maker's own words",
-   "primary": true,
-   "proves": "What this vehicle maker itself tells owners about tire age, in its own published words.",
-   "cannot_prove": "How old any one tire is, or whether it is safe. The advice covers the models and years named; other models or years may say something different.",
-   "terms": {
-    "url": "https://www.toyota.com/support/legal-terms",
-    "read": "A company's own page. We read it once, keep a dated copy, and re-read it in a browser each year. We never scrape it.",
-    "automated": true,
-    "checked": "2026-11-03",
-    "due": "2027-11-03"
-   },
-   "credit": null,
-   "used_for": [
-    {
-     "label": "Tire date code: how old are my tires?",
-     "url": "/tire-date-code/",
-     "note": "Its tire age advice to owners, in the carmakers table"
     }
    ],
    "pulls": []

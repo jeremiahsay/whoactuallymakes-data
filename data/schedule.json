@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-24",
- "last_change": "2026-11-24",
+ "generated": "2026-11-25",
+ "last_change": "2026-11-25",
  "cadence_months": {
   "confirmed": 12,
   "documented": 6,
@@ -120,27 +120,27 @@
    "file_url": null,
    "hand_note": "A person re-reads each maker's and agency's page, checks the quote still stands, keeps a new dated copy, and logs any change on the corrections page.",
    "once": false,
-   "last": "2026-11-12",
-   "due": "2027-11-12",
-   "result": "10 rows and 12 carmakers from 24 documents"
+   "last": "2026-11-25",
+   "due": "2027-11-25",
+   "result": "10 rows and 12 carmakers from 25 documents"
   },
   {
    "id": "tire-age-carmaker-followup",
-   "what": "Tire age: carmaker manuals to re-check",
+   "what": "Tire age: Toyota’s 2026 RAV4 manual",
    "gives": "Finish the carmaker table on Tire date code: how old are my tires?",
    "how": "hand",
    "every_days": 0,
    "source": {
-    "id": "maker-honda",
-    "name": "Honda owner's manuals",
-    "publisher": "American Honda Motor Co., Inc.",
-    "url": "https://mygarage.honda.com/s/find-honda"
+    "id": "maker-toyota",
+    "name": "Toyota owner's manuals",
+    "publisher": "Toyota Motor North America, Inc.",
+    "url": "https://www.toyota.com/owners/warranty-owners-manuals/"
    },
    "file_url": null,
-   "hand_note": "Honda: read the 2026 CR-V manual on Honda’s own server (still down for maintenance on Nov 12, its third failed read; the table uses an archived 2024 copy, and the Internet Archive holds no 2026 copy). Toyota: see whether toyota.com has posted a 2026 RAV4 owner’s manual (none on Nov 12); the 2025 manual was re-read live on Nov 12 and still says the same. Nissan done Nov 4: the live 2026 Rogue manual says the same as 2024.",
+   "hand_note": "Toyota: see whether toyota.com has posted a 2026 RAV4 owner’s manual (none on Nov 12; its owners’ manuals page would not load in a browser on Nov 25). The table quotes the 2025 manual, re-read live on Nov 12. Honda done Nov 25: the live 2026 CR-V manual says the same as 2024. Nissan done Nov 4.",
    "once": true,
-   "last": "2026-11-12",
-   "due": "2026-11-26",
+   "last": "2026-11-25",
+   "due": "2026-12-10",
    "result": "Every carmaker on the list has a row"
   },
   {
@@ -348,9 +348,9 @@
    "file_url": null,
    "hand_note": "Read in a browser at ZIP 98101, size by size on all six listings plus Newborn. Offers are re-read the day after they end. The page won't publish if these prices and the Kirkland diaper page disagree.",
    "once": false,
-   "last": "2026-11-09",
-   "due": "2026-11-24",
-   "result": "Kirkland regular 15.6 to 32.4 cents; Huggies on offer to Nov 22, 14.6 to 38.5; Pampers 20.5 to 46.8"
+   "last": "2026-11-24",
+   "due": "2026-12-07",
+   "result": "No diaper offer: Kirkland 15.6 to 32.4 cents, Huggies 19.8 to 48.1, Pampers 20.5 to 46.8; Kudos $10 off to Dec 6; Pull-Ups and Easy Ups $8 off to Dec 20"
   },
   {
    "id": "sams-diaper-prices",
@@ -12515,18 +12515,18 @@
   },
   {
    "path": "/tire-date-code/",
-   "changed": "2026-11-12",
-   "next": "2026-11-26",
+   "changed": "2026-11-25",
+   "next": "2026-12-10",
    "tasks": [
     {
      "id": "tire-age-guidance",
      "what": "Tire age guidance: who says what",
-     "due": "2027-11-12"
+     "due": "2027-11-25"
     },
     {
      "id": "tire-age-carmaker-followup",
-     "what": "Tire age: carmaker manuals to re-check",
-     "due": "2026-11-26"
+     "what": "Tire age: Toyota’s 2026 RAV4 manual",
+     "due": "2026-12-10"
     },
     {
      "id": "federal-rule-texts",
@@ -12598,13 +12598,13 @@
   },
   {
    "path": "/costco-diapers/",
-   "changed": "2026-11-09",
-   "next": "2026-11-24",
+   "changed": "2026-11-24",
+   "next": "2026-12-06",
    "tasks": [
     {
      "id": "costco-diaper-prices",
      "what": "Kirkland, Huggies Plus, Pampers Swaddlers Ultra, Pull-Ups, Easy Ups and baby wipes at Costco: every size, offers, ratings, Seattle shelf",
-     "due": "2026-11-24"
+     "due": "2026-12-07"
     },
     {
      "id": "sams-diaper-prices",
@@ -13241,7 +13241,7 @@
   },
   {
    "path": "/how-we-know/",
-   "changed": "2026-11-24",
+   "changed": "2026-11-25",
    "next": "2026-12-08",
    "tasks": [],
    "claims": null,
@@ -13249,7 +13249,7 @@
   },
   {
    "path": "/sources/",
-   "changed": "2026-11-24",
+   "changed": "2026-11-25",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -13265,7 +13265,7 @@
   },
   {
    "path": "/data/",
-   "changed": "2026-11-24",
+   "changed": "2026-11-25",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -13390,7 +13390,7 @@
   },
   {
    "path": "/home/",
-   "changed": "2026-11-24",
+   "changed": "2026-11-25",
    "next": "2026-12-01",
    "tasks": [
     {
@@ -13409,7 +13409,7 @@
   },
   {
    "path": "/about/",
-   "changed": "2026-11-24",
+   "changed": "2026-11-25",
    "next": "2027-11-08",
    "tasks": [
     {
@@ -14536,6 +14536,18 @@
   }
  ],
  "done": [
+  {
+   "on": "2026-11-25",
+   "task": "tire-age-carmaker-followup",
+   "what": "Honda’s 2026 CR-V manual, from Honda’s own server at last",
+   "result": "Honda’s manual server answered for the first time after three failed reads, and the 2026 CR-V manual gives the same advice word for word as the archived 2024 copy: a yearly inspection once tires reach five, and every tire, spare included, out of service 10 years after it was made. The Honda row now cites the 2026 manual. Toyota’s owners’ manuals page would not load, so the RAV4 half moves to Dec 10."
+  },
+  {
+   "on": "2026-11-24",
+   "task": "costco-diaper-prices",
+   "what": "Costco diaper listings, every size, read in a browser",
+   "result": "Huggies offer over, no diaper offer: Kirkland 15.6 to 32.4 cents, Huggies 19.8 to 48.1, Pampers 20.5 to 46.8; Kudos $10 off to Dec 6; Pull-Ups and Easy Ups $8 off to Dec 20; wipes unchanged"
+  },
   {
    "on": "2026-11-24",
    "task": "name-brand-labels",

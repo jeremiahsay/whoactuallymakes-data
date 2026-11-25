@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-12",
+ "generated": "2026-11-25",
  "rows": [
   {
    "who": "NHTSA",
@@ -473,13 +473,23 @@
   {
    "who": "Honda",
    "slug": "honda",
-   "covers": "2024 CR-V owner’s manual (US)",
+   "covers": "2026 CR-V owner’s manual (US)",
    "replace_at": "10 years; yearly inspection from 5",
    "years": 10,
    "from": "The date of manufacture",
    "spare": "Included",
    "line": "Honda’s CR-V manual says to have tires inspected every year once they’re five, and to take all tires, spare included, out of service 10 years after they were made.",
    "sources": [
+    {
+     "id": "ev-honda-crv-2026-ten-years",
+     "title": "2026 Honda CR-V owner's manual (US), Tire Service Life",
+     "url": "https://techinfo.honda.com/rjanisis/pubs/OM/AH/A3A02626OM/enu/A3A02626OMEN.PDF",
+     "quote": "In addition to regular inspections and inflation pressure maintenance, it is recommended that you have annual inspections performed once the tires reach five years old. All tires, including the spare, should be removed from service after 10 years from the date of manufacture, regardless of their condition or state of wear.",
+     "read": "2026-11-25",
+     "doc_date": null,
+     "archive_url": "https://web.archive.org/web/20261125021507/https://techinfo.honda.com/rjanisis/pubs/OM/AH/A3A02626OM/enu/A3A02626OMEN.PDF",
+     "publisher": "American Honda Motor Co., Inc."
+    },
     {
      "id": "ev-honda-crv-2024-ten-years",
      "title": "2024 Honda CR-V owner's manual (US), Tire Service Life",

@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-24",
+ "generated": "2026-11-25",
  "title": "Who Actually Makes open data",
  "url": "https://whoactuallymakes.com/data/",
  "licence": {
@@ -14,7 +14,7 @@
   "mirror": "https://github.com/jeremiahsay/whoactuallymakes-data"
  },
  "count": 22,
- "records": 17471,
+ "records": 17503,
  "datasets": [
   {
    "id": "claims",
@@ -928,7 +928,7 @@
     "json": {
      "url": "https://whoactuallymakes.com/data/tire-brands.json",
      "bytes": 233421,
-     "sha256": "2061b293790336690ccffcd1e8ab1e9b6c374253ff52a451174ded547550822d"
+     "sha256": "df78a122d55c337aa6161fe3ee4c94f6c421897a790faa49ceff840d871352d0"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/tire-brands.csv",
@@ -962,6 +962,7 @@
     "https://ownersmanual.hyundai.com/full_pdf/NX4/2025/en_US",
     "https://ownersmanual.kia.com/full_webhelp/NQ5KH/2025/en_US/topics/chapter9_15_8.html",
     "https://techinfo.honda.com/rjanisis/pubs/OM/AH/A3A02424OM/enu/A3A02424OMEN.PDF",
+    "https://techinfo.honda.com/rjanisis/pubs/OM/AH/A3A02626OM/enu/A3A02626OMEN.PDF",
     "https://vehicleinfo.mopar.com/assets/publications/en-us/Jeep/2025/Grand_Cherokee/106039_45_WL_OM_EN_USC_DIGITAL_E4.pdf",
     "https://vehicleinfo.mopar.com/assets/publications/en-us/Ram/2025/1500_DT/103222_25_DT_OM_EN_USC_DIGITAL_E4_RD.pdf",
     "https://www.bridgestoneamericas.com/en/company/safety/choosing-tires/replacement-guidance",
@@ -981,7 +982,7 @@
     "https://www.yokohamatire.com/tires-101/maintenance-care-1/tire-life"
    ],
    "records": 22,
-   "updated": "2026-11-12",
+   "updated": "2026-11-25",
    "fields": [
     {
      "name": "group",
@@ -1139,13 +1140,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/tire-age.json",
-     "bytes": 35924,
-     "sha256": "34733ce4d473ca627382b8ca32b100a05577d31f37a3be2684e916ce6a35ca34"
+     "bytes": 36733,
+     "sha256": "63214775a92376678bd026d1f0fa45f2e9127d2855e69b66d75acd2d56563cf5"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/tire-age.csv",
-     "bytes": 20583,
-     "sha256": "1f8b9036f976f7af566619b090c9164a7e922dd1f3f17a7362af43dda44d04d5"
+     "bytes": 21172,
+     "sha256": "e52bd75ef2db6cfb8e74bfd35bfaeac8255589a89746a061eca59b25f7c1165a"
     }
    }
   },
@@ -1218,8 +1219,8 @@
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2857-2015%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2858-2015%22"
    ],
-   "records": 2777,
-   "updated": "2026-11-24",
+   "records": 2779,
+   "updated": "2026-11-25",
    "fields": [
     {
      "name": "id",
@@ -1357,13 +1358,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/evidence.json",
-     "bytes": 2315072,
-     "sha256": "c05de7d56bc04b0e06d1ab36b5d52f5253548da656a2538b0180ff52a2f640a7"
+     "bytes": 2321243,
+     "sha256": "aa9bb2ef397200fcbb2745fab57f5e4070ab3b386eb48c9449532346221bbf1e"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/evidence.csv",
-     "bytes": 1945494,
-     "sha256": "64e69477332ba7bd81ff0c4a7ff307f2fefa03fd99897b3a2d86aa95a6b6ac92"
+     "bytes": 1951467,
+     "sha256": "897ce33abf53001dcf35af01d89ce04f5e5b99d44b6cd7408921a24b2d7c6b97"
     }
    }
   },
@@ -1436,7 +1437,7 @@
     "https://iabflo.org/"
    ],
    "records": 367,
-   "updated": "2026-11-24",
+   "updated": "2026-11-25",
    "fields": [
     {
      "name": "id",
@@ -1584,13 +1585,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/sources.json",
-     "bytes": 414852,
-     "sha256": "2655d0f8157292d44052b0d03b6424fd1016a811d47d3b49778208dc21cbe691"
+     "bytes": 414775,
+     "sha256": "a34cedb980c3f442746c421d9807ff2b0d8a238c985c52038486e801f0ab0850"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/sources.csv",
      "bytes": 168801,
-     "sha256": "407a172340496f2e96d04dbf7a459f5a34b8886e776df173af0a59eff2e65342"
+     "sha256": "bf4be8513ae063a4140ce729d0bd5c72463d109aa80c66af0a5b3c4323b58d04"
     }
    }
   },
@@ -1756,7 +1757,7 @@
    "rights": "CC BY covers the whole file.",
    "based_on": [],
    "records": 109,
-   "updated": "2026-11-24",
+   "updated": "2026-11-25",
    "fields": [
     {
      "name": "id",
@@ -1864,13 +1865,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/schedule.json",
-     "bytes": 462870,
-     "sha256": "954625fc9bfcb8b0e6729ca72f83a1568b77ba0ca0602b6ae22a5f2758a09986"
+     "bytes": 463724,
+     "sha256": "9f5d53ff9b327e579acb44c07ed878d8a0c7b66cbd0d463df9b88b5a23239fa6"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/schedule.csv",
-     "bytes": 30183,
-     "sha256": "9c8de4c7f06d62a3cf7f1071c4d8970d26be5f26d58c430d00a2235fe8b4b750"
+     "bytes": 30236,
+     "sha256": "49606f18fea88f042d8f9e9044990d5d5227131b8b6ef84021f00fe6a660612a"
     }
    }
   },
@@ -1901,8 +1902,8 @@
     "https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-1---2/4000436297",
     "https://www.costco.com/p/-/pampers-swaddlers-ultra-diapers-sizes-3---7/4000423015"
    ],
-   "records": 60,
-   "updated": "2026-11-09",
+   "records": 90,
+   "updated": "2026-11-24",
    "fields": [
     {
      "name": "read_on",
@@ -2030,13 +2031,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/costco-diaper-prices.json",
-     "bytes": 18928,
-     "sha256": "46bd7ffe261c2eb7b2a36f61519b6a8e2255ebf5b6b30ad021ff5e6b33df7001"
+     "bytes": 28351,
+     "sha256": "2d8188703b8feb409807bdfeb34a7c6a2125c74d125f8cc403e16f07686a7a7c"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/costco-diaper-prices.csv",
-     "bytes": 8596,
-     "sha256": "9e379fd9b5d5d1d9d67782b52648b45821271876d2f3619cc279a5af5739f835"
+     "bytes": 12859,
+     "sha256": "98ce0a361eb6edb6cbe105dd1669ac854a41e691d667d827cb0fb66b9471c238"
     }
    }
   },
@@ -2368,12 +2369,12 @@
     "json": {
      "url": "https://whoactuallymakes.com/data/kirkland-vs-pairs.json",
      "bytes": 21461,
-     "sha256": "9afe35fa653077cf73418d74e4e45c9bc62f26c551bf6d4335860fc168f653ce"
+     "sha256": "a2c0c04b19c8eb79d3a7c6a1da1653daa622143519ca294e9579b0a58ba08079"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/kirkland-vs-pairs.csv",
      "bytes": 7931,
-     "sha256": "28a55b66fb863d07503dccbde6071bf92ce5447e2151b4b64032d3f84a85119d"
+     "sha256": "884d616f211df9a5d1347ecdd26f3cb0d32cc8f64e9f1b97a53f04914fa3deb7"
     }
    }
   },

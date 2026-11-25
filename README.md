@@ -4,7 +4,7 @@
 
 Who makes store-brand products, from public records. Every list behind [Who Actually Makes](https://whoactuallymakes.com/): which company each Kirkland Signature product traces to, the companies behind store brands and the labels they're on record for, every NHTSA tire plant code, what tire makers and carmakers say about tire age, and the evidence, sources, corrections and update schedule behind it all.
 
-**22 datasets · 17,471 records · version 2026-11-24** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
+**22 datasets · 17,503 records · version 2026-11-25** · JSON and CSV (UTF-8) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · Live copy and API: https://whoactuallymakes.com/data/
 
 Each answer on the site carries a stamp (confirmed, documented, reported or unverified) and links to the record it rests on. The evidence file keeps the exact quote, the date it was read and a SHA-256 fingerprint of the document, so anyone can check a row against its source. How the stamps work: https://whoactuallymakes.com/how-we-know/
 
@@ -17,12 +17,12 @@ Each answer on the site carries a stamp (confirmed, documented, reported or unve
 | [Which store labels each company is on record for](#company-labels) | 215 | 2026-11-20 | [JSON](data/company-labels.json) (111 KB) · [CSV](data/company-labels.csv) (70 KB) | [/makers/](https://whoactuallymakes.com/makers/) |
 | [Tire plant codes (NHTSA)](#tire-plants) | 1,249 | 2026-11-24 | [JSON](data/tire-plants.json) (150 KB) · [CSV](data/tire-plants.csv) (90 KB) | [/tire-dot-code-lookup/](https://whoactuallymakes.com/tire-dot-code-lookup/) |
 | [Tire brands: trademark owner, recall filers and factories](#tire-brands) | 67 | 2026-11-24 | [JSON](data/tire-brands.json) (228 KB) · [CSV](data/tire-brands.csv) (20 KB) | [/who-makes-tire-brands/](https://whoactuallymakes.com/who-makes-tire-brands/) |
-| [Tire age guidance from tire makers, carmakers and agencies](#tire-age) | 22 | 2026-11-12 | [JSON](data/tire-age.json) (35 KB) · [CSV](data/tire-age.csv) (20 KB) | [/tire-date-code/](https://whoactuallymakes.com/tire-date-code/) |
-| [Evidence records: every quote behind our answers](#evidence) | 2,777 | 2026-11-24 | [JSON](data/evidence.json) (2261 KB) · [CSV](data/evidence.csv) (1900 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
-| [Sources: the public records we use, and their limits](#sources) | 367 | 2026-11-24 | [JSON](data/sources.json) (405 KB) · [CSV](data/sources.csv) (165 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
+| [Tire age guidance from tire makers, carmakers and agencies](#tire-age) | 22 | 2026-11-25 | [JSON](data/tire-age.json) (36 KB) · [CSV](data/tire-age.csv) (21 KB) | [/tire-date-code/](https://whoactuallymakes.com/tire-date-code/) |
+| [Evidence records: every quote behind our answers](#evidence) | 2,779 | 2026-11-25 | [JSON](data/evidence.json) (2267 KB) · [CSV](data/evidence.csv) (1906 KB) | [/how-we-know/](https://whoactuallymakes.com/how-we-know/) |
+| [Sources: the public records we use, and their limits](#sources) | 367 | 2026-11-25 | [JSON](data/sources.json) (405 KB) · [CSV](data/sources.csv) (165 KB) | [/sources/](https://whoactuallymakes.com/sources/) |
 | [Corrections log](#corrections) | 63 | 2026-11-23 | [JSON](data/corrections.json) (54 KB) · [CSV](data/corrections.csv) (40 KB) | [/corrections/](https://whoactuallymakes.com/corrections/) |
-| [Update schedule: when each list is checked](#schedule) | 109 | 2026-11-24 | [JSON](data/schedule.json) (452 KB) · [CSV](data/schedule.csv) (29 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
-| [Costco diaper prices: every size at every read](#costco-diaper-prices) | 60 | 2026-11-09 | [JSON](data/costco-diaper-prices.json) (18 KB) · [CSV](data/costco-diaper-prices.csv) (8 KB) | [/costco-diapers/](https://whoactuallymakes.com/costco-diapers/) |
+| [Update schedule: when each list is checked](#schedule) | 109 | 2026-11-25 | [JSON](data/schedule.json) (453 KB) · [CSV](data/schedule.csv) (30 KB) | [/update-schedule/](https://whoactuallymakes.com/update-schedule/) |
+| [Costco diaper prices: every size at every read](#costco-diaper-prices) | 90 | 2026-11-24 | [JSON](data/costco-diaper-prices.json) (28 KB) · [CSV](data/costco-diaper-prices.csv) (13 KB) | [/costco-diapers/](https://whoactuallymakes.com/costco-diapers/) |
 | [Kirkland vs name brands: every pair and its verdict](#kirkland-vs-pairs) | 22 | 2026-11-24 | [JSON](data/kirkland-vs-pairs.json) (21 KB) · [CSV](data/kirkland-vs-pairs.csv) (8 KB) | [/kirkland-vs-name-brands/](https://whoactuallymakes.com/kirkland-vs-name-brands/) |
 | [Car battery date code rules, by brand](#battery-date-codes) | 21 | 2026-11-07 | [JSON](data/battery-date-codes.json) (89 KB) · [CSV](data/battery-date-codes.csv) (4 KB) | [/battery-date-code/](https://whoactuallymakes.com/battery-date-code/) |
 | [USDA meat, poultry and egg plants (FSIS directory)](#usda-establishments) | 7,257 | 2026-11-02 | [JSON](data/usda-establishments.json) (1621 KB) · [CSV](data/usda-establishments.csv) (1443 KB) | [/usda-establishment-number-lookup/](https://whoactuallymakes.com/usda-establishment-number-lookup/) |
@@ -205,7 +205,7 @@ What each tire maker, carmaker and safety agency says about replacing tires by a
 - **Limits:** Each row speaks only for the maker’s own tires, or for the vehicle model and year named. It is advice, not law, except the UK row, which describes a legal ban on tires over 10 years old for some heavy vehicles.
 - **Kept fresh:** Re-read in a browser every year, and whenever a maker changes its advice
 - **Rights:** Quoted words in the source columns belong to their publishers; we quote them so you can check each row. CC BY covers our rows and wording.
-- **Based on:** 24 public sources, listed in `catalog.json` (`based_on`)
+- **Based on:** 25 public sources, listed in `catalog.json` (`based_on`)
 - **Files:** `data/tire-age.json`, `data/tire-age.csv` · live: https://whoactuallymakes.com/data/tire-age.json
 
 <details><summary>The 14 fields</summary>
