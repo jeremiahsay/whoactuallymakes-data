@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-25",
+ "generated": "2026-11-26",
  "title": "Who Actually Makes open data",
  "url": "https://whoactuallymakes.com/data/",
  "licence": {
@@ -928,7 +928,7 @@
     "json": {
      "url": "https://whoactuallymakes.com/data/tire-brands.json",
      "bytes": 233421,
-     "sha256": "df78a122d55c337aa6161fe3ee4c94f6c421897a790faa49ceff840d871352d0"
+     "sha256": "2061b293790336690ccffcd1e8ab1e9b6c374253ff52a451174ded547550822d"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/tire-brands.csv",
@@ -1358,13 +1358,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/evidence.json",
-     "bytes": 2321243,
-     "sha256": "aa9bb2ef397200fcbb2745fab57f5e4070ab3b386eb48c9449532346221bbf1e"
+     "bytes": 2321690,
+     "sha256": "96ef51b88ed0fdfa64950905a061f52283bef0fca88effe6243e51dda451132e"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/evidence.csv",
-     "bytes": 1951467,
-     "sha256": "897ce33abf53001dcf35af01d89ce04f5e5b99d44b6cd7408921a24b2d7c6b97"
+     "bytes": 1951924,
+     "sha256": "64b5e39fdbb98b8caa2ee92e559bbdf6c62581fff7c046949e90efb2188db293"
     }
    }
   },
@@ -1757,7 +1757,7 @@
    "rights": "CC BY covers the whole file.",
    "based_on": [],
    "records": 109,
-   "updated": "2026-11-25",
+   "updated": "2026-11-26",
    "fields": [
     {
      "name": "id",
@@ -1866,7 +1866,7 @@
     "json": {
      "url": "https://whoactuallymakes.com/data/schedule.json",
      "bytes": 463724,
-     "sha256": "9f5d53ff9b327e579acb44c07ed878d8a0c7b66cbd0d463df9b88b5a23239fa6"
+     "sha256": "53cdebadcf277203e77f8c155fec92c773109ebc6bb0f0b7a6436278a794da35"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/schedule.csv",
