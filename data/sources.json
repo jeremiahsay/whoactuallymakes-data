@@ -1,8 +1,8 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-25",
- "count": 367,
- "primary": 288,
+ "generated": "2026-11-26",
+ "count": 377,
+ "primary": 298,
  "by_hand": 60,
  "sources": [
   {
@@ -848,6 +848,39 @@
      "edition": null,
      "file_url": null,
      "hand_note": "CPSC's recall list for these products is searched every three months."
+    },
+    {
+     "what": "CPSC recalls naming LR41 or AG3 cells",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-26",
+     "due": "2027-02-24",
+     "result": "4 recalls name LR41 or AG3 cells (22024, 26274, 26305, 26424); recall 24161 matched AG3 only in a boiler model list and was left out.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "CPSC's recall database is searched again for LR41 and AG3 every month."
+    },
+    {
+     "what": "CPSC recalls naming LR1130, AG10, LR54, SR1130, SR54 or L1131 cells",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-26",
+     "due": "2027-02-24",
+     "result": "No recall names any of the six (18 queries: description, title and product name; control query LR41 returned 3).",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "CPSC's recall database is searched again for LR1130, AG10, LR54, SR1130, SR54 and L1131 every month."
+    },
+    {
+     "what": "CPSC recalls naming LR44, AG13, A76, SR44, L1154, LR1154, 357A or PX76A cells",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-26",
+     "due": "2027-02-24",
+     "result": "2 recalls name LR44: 26089 (Great Lakes Select battery packs, 2025) and 17166 (Hobby Lobby spinner toys, 2017).",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "CPSC's recall database is searched again for LR44 and its other names every month."
     }
    ]
   },
@@ -1544,6 +1577,61 @@
    ]
   },
   {
+   "id": "maker-energizer",
+   "name": "Energizer: product data sheets and handbooks",
+   "short": "Energizer",
+   "publisher": "Energizer Brands, LLC",
+   "url": "https://data.energizer.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Energizer publishes about its own cells: chemistry, IEC designation, voltage and capacity under a stated test load.",
+   "cannot_prove": "How long a cell lasts in your device, or who makes Energizer's button cells.",
+   "terms": {
+    "url": "https://data.energizer.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-26",
+    "due": "2027-11-26"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": [
+    {
+     "what": "Energizer 192 and 392/384 data sheets, Multicomp Pro LR41 sheet, Panasonic LR41P page, GP 192F manual",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-26",
+     "due": "2027-02-24",
+     "result": "Energizer 192: 45 mAh to 0.9 V on 15K ohm; 392/384: 44 mAh to 1.2 V on 15K ohm; Multicomp Pro: 41 mAh to 0.9 V on 15,000 ohm; Panasonic and GP print no capacity.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The makers' data sheets are read again for changed figures."
+    },
+    {
+     "what": "Energizer 189, 389 and 390 data sheets, Panasonic LR1130P page, GP 189F manual",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-26",
+     "due": "2027-02-24",
+     "result": "Energizer 189: 80 mAh to 0.9 V on 15K ohm; 389: 85 mAh to 1.3 V; 390: 84 mAh to 1.2 V (both 15K ohm); Murata LR1130 (2022 Wayback copy): 70 mAh to 0.9 V on 10 kOhm; Panasonic and GP print no capacity. murata.com showed a maintenance page 26 Nov.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The makers' data sheets are read again for changed figures."
+    },
+    {
+     "what": "Energizer A76, 357/303, 357, 2L76 and A544 data sheets, Panasonic LR44 page, GP A76F manual",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-26",
+     "due": "2027-02-24",
+     "result": "A76: 150 mAh to 0.9 V on 6.8K ohm; 357/303: 150 mAh to 1.2 V on 6.8K ohm; 357-only sheet: 175 mAh to 1.3 V on 6.5k ohm; 2L76 11.60 x 10.80 mm 3.0 V; A544 four LR44 in series, 6.0 V. Murata LR44 sheet not found (site down, Wayback offline 26 Nov).",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The makers' data sheets are read again for changed figures."
+    }
+   ]
+  },
+  {
    "id": "fda-ims",
    "name": "FDA Interstate Milk Shippers List",
    "short": "FDA IMS List",
@@ -1579,6 +1667,73 @@
      "edition": "2026-10-01",
      "file_url": "https://www.fda.gov/food/federal-state-local-tribal-and-territorial-cooperative-human-food-programs/interstate-milk-shippers-list",
      "hand_note": "We check FDA's page for a new edition of the list every month and load it automatically. The loader stops if any line can't be read."
+    }
+   ]
+  },
+  {
+   "id": "federal-register",
+   "name": "Federal Register",
+   "short": "Federal Register",
+   "publisher": "US National Archives (Office of the Federal Register), via govinfo.gov",
+   "url": "https://www.govinfo.gov/app/collection/fr",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "What a rule said when it was made, and when it took effect, e.g. the 1999 rule that moved the tire date code from three digits to four.",
+   "cannot_prove": "How a rule reads today (see the eCFR), or how any maker applied it.",
+   "terms": {
+    "url": "https://www.govinfo.gov/about/policies",
+    "read": "Public domain (US government work). We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-03",
+    "due": "2027-11-03"
+   },
+   "credit": null,
+   "used_for": [
+    {
+     "label": "Tire date code: how old are my tires?",
+     "url": "/tire-date-code/",
+     "note": "When the four-digit date code began (64 FR 36807)"
+    },
+    {
+     "label": "How old is my appliance, and is it due?",
+     "url": "/how-old-is-my-appliance/"
+    },
+    {
+     "label": "How long do dishwashers last?",
+     "url": "/how-long-do-dishwashers-last/"
+    },
+    {
+     "label": "How long do refrigerators last?",
+     "url": "/how-long-do-refrigerators-last/",
+     "note": "DOE's 2011 and 2024 refrigerator rules"
+    },
+    {
+     "label": "Car seat expiration",
+     "url": "/car-seat-expiration/",
+     "note": "The FMVSS 213a compliance date, 5 Dec 2026"
+    },
+    {
+     "label": "How old is my furnace, AC or heat pump?",
+     "url": "/hvac-serial-number-lookup/",
+     "note": "DOE average lifetimes; EPA's 2026 R-410A rule"
+    },
+    {
+     "label": "Shoes made in the USA",
+     "url": "/shoes-made-in-usa/",
+     "note": "The 2021 Made in USA rule traces all-or-virtually-all to the 1994 New Balance and Hyde shoe cases"
+    }
+   ],
+   "pulls": [
+    {
+     "what": "CPSC direct final rule on UL 4200A-2026 (91 FR 74086): did a significant adverse comment arrive?",
+     "how": "hand",
+     "every_days": 0,
+     "last": null,
+     "due": "2026-12-19",
+     "result": null,
+     "edition": null,
+     "file_url": null,
+     "hand_note": "Whether the February 2027 button battery rule takes effect as published."
     }
    ]
   },
@@ -2340,6 +2495,39 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Both chains’ price-match pages, every month."
+    }
+   ]
+  },
+  {
+   "id": "maker-renata",
+   "name": "Renata SA (Swatch Group): documents and pages",
+   "short": "Renata",
+   "publisher": "Renata SA",
+   "url": "https://www.renata.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Renata's own sizes, capacities and IEC codes, and which other brands' names its cross reference guide prints against each Renata cell.",
+   "cannot_prove": "That another brand's cell is made by Renata or the same inside.",
+   "terms": {
+    "url": "https://www.renata.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-26",
+    "due": "2027-11-26"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": [
+    {
+     "what": "The makers' button cell cross reference charts (Renata, Maxell, Murata, Duracell, Ansmann)",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-26",
+     "due": "2027-02-24",
+     "result": "Renata Scope of Supply, Consumer (PDF of 27 Jul 2026), Maxell's 2017 guide, Murata's selection guide, Duracell's 2024 specs chart and Ansmann's 5015473 sheet: 72 cells, 677 lookup names, 7 disagreements between charts.",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The battery makers' charts are re-read for new editions; a new one replaces the names after the lookup's checks pass."
     }
    ]
   },
@@ -3653,6 +3841,27 @@
      "note": "Past offer dates"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "maker-ansmann",
+   "name": "Ansmann AG: product information sheets",
+   "short": "Ansmann",
+   "publisher": "Ansmann AG",
+   "url": "https://www.ansmann.de/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which AG, LR and number names Ansmann prints for its own alkaline button cells.",
+   "cannot_prove": "What other brands call those cells.",
+   "terms": {
+    "url": "https://media.ansmann.de/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-26",
+    "due": "2027-11-26"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -5607,61 +5816,6 @@
    "pulls": []
   },
   {
-   "id": "federal-register",
-   "name": "Federal Register",
-   "short": "Federal Register",
-   "publisher": "US National Archives (Office of the Federal Register), via govinfo.gov",
-   "url": "https://www.govinfo.gov/app/collection/fr",
-   "kind": "Regulator",
-   "primary": true,
-   "proves": "What a rule said when it was made, and when it took effect, e.g. the 1999 rule that moved the tire date code from three digits to four.",
-   "cannot_prove": "How a rule reads today (see the eCFR), or how any maker applied it.",
-   "terms": {
-    "url": "https://www.govinfo.gov/about/policies",
-    "read": "Public domain (US government work). We read it with a script.",
-    "automated": true,
-    "checked": "2026-11-03",
-    "due": "2027-11-03"
-   },
-   "credit": null,
-   "used_for": [
-    {
-     "label": "Tire date code: how old are my tires?",
-     "url": "/tire-date-code/",
-     "note": "When the four-digit date code began (64 FR 36807)"
-    },
-    {
-     "label": "How old is my appliance, and is it due?",
-     "url": "/how-old-is-my-appliance/"
-    },
-    {
-     "label": "How long do dishwashers last?",
-     "url": "/how-long-do-dishwashers-last/"
-    },
-    {
-     "label": "How long do refrigerators last?",
-     "url": "/how-long-do-refrigerators-last/",
-     "note": "DOE's 2011 and 2024 refrigerator rules"
-    },
-    {
-     "label": "Car seat expiration",
-     "url": "/car-seat-expiration/",
-     "note": "The FMVSS 213a compliance date, 5 Dec 2026"
-    },
-    {
-     "label": "How old is my furnace, AC or heat pump?",
-     "url": "/hvac-serial-number-lookup/",
-     "note": "DOE average lifetimes; EPA's 2026 R-410A rule"
-    },
-    {
-     "label": "Shoes made in the USA",
-     "url": "/shoes-made-in-usa/",
-     "note": "The 2021 Made in USA rule traces all-or-virtually-all to the 1994 New Balance and Hyde shoe cases"
-    }
-   ],
-   "pulls": []
-  },
-  {
    "id": "fender-serial-lookup",
    "name": "Fender serial number lookup (serialnumberlookup.fender.com)",
    "short": "Fender lookup",
@@ -6033,6 +6187,27 @@
      "note": "The UK 10-year tyre rule for heavy vehicles"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "maker-gp-batteries",
+   "name": "GP Batteries product documents",
+   "short": "GP Batteries",
+   "publisher": "GP Batteries International Limited",
+   "url": "https://www.gpbatteries.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What GP says about its own batteries: chemistry and the codes it crosses them to.",
+   "cannot_prove": "Where a given GP cell was made, or a capacity GP doesn't print.",
+   "terms": {
+    "url": "https://be.gpbatteries.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-26",
+    "due": "2027-11-26"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -7921,6 +8096,27 @@
    "pulls": []
   },
   {
+   "id": "maker-maxell",
+   "name": "Maxell, Ltd.: micro battery cross reference",
+   "short": "Maxell",
+   "publisher": "Maxell, Ltd.",
+   "url": "https://biz.maxell.com/en/primary_batteries/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which other brands' names Maxell printed against each Maxell cell in October 2017, with sizes and voltages.",
+   "cannot_prove": "Anything after 2017, or that the cells are the same inside. Maxell says its data and dimensions are not guaranteed.",
+   "terms": {
+    "url": "https://files.batteryjunction.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-26",
+    "due": "2027-11-26"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "mazda-newsroom",
    "name": "Mazda Motor Corporation: news releases and company pages",
    "short": "Mazda",
@@ -8214,6 +8410,48 @@
      "note": "Motorcraft's battery terms"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "multicomp-pro",
+   "name": "Multicomp Pro data sheets (Farnell / Newark)",
+   "short": "Multicomp Pro",
+   "publisher": "Premier Farnell Limited (Avnet)",
+   "url": "https://www.farnell.com/",
+   "kind": "Retailer",
+   "primary": true,
+   "proves": "The ratings Farnell publishes for its own-brand Multicomp Pro parts.",
+   "cannot_prove": "Which factory makes a Multicomp Pro part: the sheets name the Avnet group, not a maker.",
+   "terms": {
+    "url": "https://www.farnell.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-26",
+    "due": "2027-11-26"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "maker-murata",
+   "name": "Murata Manufacturing: micro battery guide and notices",
+   "short": "Murata",
+   "publisher": "Murata Manufacturing Co., Ltd.",
+   "url": "https://www.murata.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "Which names Murata's watch battery guide prints against each cell, and what Murata said about buying the line from Sony and selling it to Maxell.",
+   "cannot_prove": "Where a given cell was made, or what Maxell does with the line now.",
+   "terms": {
+    "url": "https://www.murata.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-26",
+    "due": "2027-11-26"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -8921,6 +9159,27 @@
    "pulls": []
   },
   {
+   "id": "maker-panasonic",
+   "name": "Panasonic battery product pages",
+   "short": "Panasonic",
+   "publisher": "Panasonic Energy Co., Ltd.",
+   "url": "https://panasonic.jp/battery/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Panasonic says about its own batteries: size, voltage, uses and the codes it lists as equivalent.",
+   "cannot_prove": "Where a given cell was made, or how long it lasts in your device.",
+   "terms": {
+    "url": "https://panasonic.jp/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-26",
+    "due": "2027-11-26"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
    "id": "maker-pegperego",
    "name": "Peg Perego website and manuals",
    "short": "Peg Perego",
@@ -9005,6 +9264,27 @@
     "automated": false,
     "checked": "2026-11-15",
     "due": "2027-11-15"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "poison-control",
+   "name": "Poison Control (National Capital Poison Center)",
+   "short": "Poison Control",
+   "publisher": "National Capital Poison Center",
+   "url": "https://www.poison.org/",
+   "kind": "Other",
+   "primary": true,
+   "proves": "What the center that runs the National Battery Ingestion Hotline tells people to do when a battery is swallowed.",
+   "cannot_prove": "Medical advice for a given child: call the hotline.",
+   "terms": {
+    "url": "https://www.poison.org/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-26",
+    "due": "2027-11-26"
    },
    "credit": null,
    "used_for": [],
@@ -10650,6 +10930,27 @@
     "automated": false,
     "checked": "2026-11-14",
     "due": "2027-11-14"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": []
+  },
+  {
+   "id": "cdc",
+   "name": "US Centers for Disease Control and Prevention",
+   "short": "CDC",
+   "publisher": "Centers for Disease Control and Prevention",
+   "url": "https://www.cdc.gov/",
+   "kind": "Regulator",
+   "primary": true,
+   "proves": "US public health guidance as the CDC publishes it.",
+   "cannot_prove": "Medical advice for a given child: call a doctor or poison center.",
+   "terms": {
+    "url": "https://www.cdc.gov/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-26",
+    "due": "2027-11-26"
    },
    "credit": null,
    "used_for": [],

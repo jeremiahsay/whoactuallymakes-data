@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-26",
+ "generated": "2026-11-27",
  "title": "Who Actually Makes open data",
  "url": "https://whoactuallymakes.com/data/",
  "licence": {
@@ -14,7 +14,7 @@
   "mirror": "https://github.com/jeremiahsay/whoactuallymakes-data"
  },
  "count": 22,
- "records": 17503,
+ "records": 17567,
  "datasets": [
   {
    "id": "claims",
@@ -928,7 +928,7 @@
     "json": {
      "url": "https://whoactuallymakes.com/data/tire-brands.json",
      "bytes": 233421,
-     "sha256": "2061b293790336690ccffcd1e8ab1e9b6c374253ff52a451174ded547550822d"
+     "sha256": "119ea46e8701dfee5612463febd56901d8d70e830cdab8de252714555fa7de88"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/tire-brands.csv",
@@ -1219,8 +1219,8 @@
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2857-2015%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2858-2015%22"
    ],
-   "records": 2779,
-   "updated": "2026-11-25",
+   "records": 2825,
+   "updated": "2026-11-26",
    "fields": [
     {
      "name": "id",
@@ -1358,13 +1358,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/evidence.json",
-     "bytes": 2321690,
-     "sha256": "96ef51b88ed0fdfa64950905a061f52283bef0fca88effe6243e51dda451132e"
+     "bytes": 2352388,
+     "sha256": "e7d63f1d7c3e52771a1e321b1e1795b1bb97e3974abd9b9955a52bef91d50109"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/evidence.csv",
-     "bytes": 1951924,
-     "sha256": "64b5e39fdbb98b8caa2ee92e559bbdf6c62581fff7c046949e90efb2188db293"
+     "bytes": 1976440,
+     "sha256": "f54b5cb12d58fff1fc3e2462df52f735c994affef6d7662a4f5968b3cd88a657"
     }
    }
   },
@@ -1395,6 +1395,7 @@
     "https://archive.shawangunkjournal.com/",
     "https://babytrend.com/",
     "https://bgr.com/",
+    "https://biz.maxell.com/en/primary_batteries/",
     "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx",
     "https://carnewschina.com/",
     "https://caseknives.com/",
@@ -1409,6 +1410,7 @@
     "https://costco.interstatebatteries.com/",
     "https://customerservice.costco.com/",
     "https://dailymed.nlm.nih.gov/dailymed/",
+    "https://data.energizer.com/",
     "https://data.energystar.gov/",
     "https://delcoline.com/wp-content/uploads/2016/08/ACDelco-battery-warranty-information.pdf",
     "https://delcoline.com/wp-content/uploads/2016/08/Motorcraft-Battery-Warranty-Information.pdf",
@@ -1432,12 +1434,10 @@
     "https://global.toyota/en/company/profile/facilities/manufacturing-worldwide/",
     "https://gmauthority.com/",
     "https://gov.georgia.gov/",
-    "https://gruppe.schwarz/en",
-    "https://hip2save.com/",
-    "https://iabflo.org/"
+    "https://gruppe.schwarz/en"
    ],
-   "records": 367,
-   "updated": "2026-11-25",
+   "records": 377,
+   "updated": "2026-11-26",
    "fields": [
     {
      "name": "id",
@@ -1585,13 +1585,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/sources.json",
-     "bytes": 414775,
-     "sha256": "a34cedb980c3f442746c421d9807ff2b0d8a238c985c52038486e801f0ab0850"
+     "bytes": 426070,
+     "sha256": "76a4da0661552d6123dfe6945ae7dd6a788977226804e2888942719d58d05958"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/sources.csv",
-     "bytes": 168801,
-     "sha256": "bf4be8513ae063a4140ce729d0bd5c72463d109aa80c66af0a5b3c4323b58d04"
+     "bytes": 173085,
+     "sha256": "d83d6556ad8a95da048bd01c5f67b85ef3d9ade5b2a3efae58948d78b35c9857"
     }
    }
   },
@@ -1756,8 +1756,8 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 109,
-   "updated": "2026-11-26",
+   "records": 117,
+   "updated": "2026-11-27",
    "fields": [
     {
      "name": "id",
@@ -1865,13 +1865,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/schedule.json",
-     "bytes": 463724,
-     "sha256": "53cdebadcf277203e77f8c155fec92c773109ebc6bb0f0b7a6436278a794da35"
+     "bytes": 475630,
+     "sha256": "26bab285d568f0047019d63b351b4b30e8e6ca648aaa91883099cdaeee7ac8aa"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/schedule.csv",
-     "bytes": 30236,
-     "sha256": "49606f18fea88f042d8f9e9044990d5d5227131b8b6ef84021f00fe6a660612a"
+     "bytes": 32920,
+     "sha256": "27ecc71c005f03680d39b58d32aa6ec3e6d3913d95690e67400b6080f308f70f"
     }
    }
   },

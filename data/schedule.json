@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-26",
- "last_change": "2026-11-25",
+ "generated": "2026-11-27",
+ "last_change": "2026-11-26",
  "cadence_months": {
   "confirmed": 12,
   "documented": 6,
@@ -2081,6 +2081,158 @@
    "last": "2026-11-24",
    "due": "2027-05-24",
    "result": "WIX's 2024 Interchange and Product Numeric Catalog (1,157 pages, last changed 2 Aug 2024): 52,236 oil filter rows, 46,636 numbers from 1,100 brands against 822 WIX filters; spin-on measurements for 418; 210 numbers listed against WIX filters that measure differently."
+  },
+  {
+   "id": "button-batteries-charts",
+   "what": "The makers' button cell cross reference charts (Renata, Maxell, Murata, Duracell, Ansmann)",
+   "gives": "Every name, size and capacity on Button battery equivalents",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "maker-renata",
+    "name": "Renata SA (Swatch Group): documents and pages",
+    "publisher": "Renata SA",
+    "url": "https://www.renata.com/"
+   },
+   "file_url": null,
+   "hand_note": "The battery makers' charts are re-read for new editions; a new one replaces the names after the lookup's checks pass.",
+   "once": false,
+   "last": "2026-11-26",
+   "due": "2027-02-24",
+   "result": "Renata Scope of Supply, Consumer (PDF of 27 Jul 2026), Maxell's 2017 guide, Murata's selection guide, Duracell's 2024 specs chart and Ansmann's 5015473 sheet: 72 cells, 677 lookup names, 7 disagreements between charts."
+  },
+  {
+   "id": "button-batteries-ul4200a-rule",
+   "what": "CPSC direct final rule on UL 4200A-2026 (91 FR 74086): did a significant adverse comment arrive?",
+   "gives": "The safety section on Button battery equivalents",
+   "how": "hand",
+   "every_days": 0,
+   "source": {
+    "id": "federal-register",
+    "name": "Federal Register",
+    "publisher": "US National Archives (Office of the Federal Register), via govinfo.gov",
+    "url": "https://www.govinfo.gov/app/collection/fr"
+   },
+   "file_url": null,
+   "hand_note": "Whether the February 2027 button battery rule takes effect as published.",
+   "once": true,
+   "last": null,
+   "due": "2026-12-19",
+   "result": null
+  },
+  {
+   "id": "lr41-cpsc-recalls",
+   "what": "CPSC recalls naming LR41 or AG3 cells",
+   "gives": "The recall table on LR41 battery equivalent",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "cpsc-recalls",
+    "name": "CPSC recalls database (SaferProducts.gov recall API)",
+    "publisher": "US Consumer Product Safety Commission",
+    "url": "https://www.saferproducts.gov/"
+   },
+   "file_url": null,
+   "hand_note": "CPSC's recall database is searched again for LR41 and AG3 every month.",
+   "once": false,
+   "last": "2026-11-26",
+   "due": "2027-02-24",
+   "result": "4 recalls name LR41 or AG3 cells (22024, 26274, 26305, 26424); recall 24161 matched AG3 only in a boiler model list and was left out."
+  },
+  {
+   "id": "lr41-sheets",
+   "what": "Energizer 192 and 392/384 data sheets, Multicomp Pro LR41 sheet, Panasonic LR41P page, GP 192F manual",
+   "gives": "The capacity, load and cut-off figures on LR41 battery equivalent",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "maker-energizer",
+    "name": "Energizer: product data sheets and handbooks",
+    "publisher": "Energizer Brands, LLC",
+    "url": "https://data.energizer.com/"
+   },
+   "file_url": null,
+   "hand_note": "The makers' data sheets are read again for changed figures.",
+   "once": false,
+   "last": "2026-11-26",
+   "due": "2027-02-24",
+   "result": "Energizer 192: 45 mAh to 0.9 V on 15K ohm; 392/384: 44 mAh to 1.2 V on 15K ohm; Multicomp Pro: 41 mAh to 0.9 V on 15,000 ohm; Panasonic and GP print no capacity."
+  },
+  {
+   "id": "lr1130-cpsc-recalls",
+   "what": "CPSC recalls naming LR1130, AG10, LR54, SR1130, SR54 or L1131 cells",
+   "gives": "The recall line on LR1130 battery equivalent",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "cpsc-recalls",
+    "name": "CPSC recalls database (SaferProducts.gov recall API)",
+    "publisher": "US Consumer Product Safety Commission",
+    "url": "https://www.saferproducts.gov/"
+   },
+   "file_url": null,
+   "hand_note": "CPSC's recall database is searched again for LR1130, AG10, LR54, SR1130, SR54 and L1131 every month.",
+   "once": false,
+   "last": "2026-11-26",
+   "due": "2027-02-24",
+   "result": "No recall names any of the six (18 queries: description, title and product name; control query LR41 returned 3)."
+  },
+  {
+   "id": "lr1130-sheets",
+   "what": "Energizer 189, 389 and 390 data sheets, Panasonic LR1130P page, GP 189F manual",
+   "gives": "The capacity, load and cut-off figures on LR1130 battery equivalent",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "maker-energizer",
+    "name": "Energizer: product data sheets and handbooks",
+    "publisher": "Energizer Brands, LLC",
+    "url": "https://data.energizer.com/"
+   },
+   "file_url": null,
+   "hand_note": "The makers' data sheets are read again for changed figures.",
+   "once": false,
+   "last": "2026-11-26",
+   "due": "2027-02-24",
+   "result": "Energizer 189: 80 mAh to 0.9 V on 15K ohm; 389: 85 mAh to 1.3 V; 390: 84 mAh to 1.2 V (both 15K ohm); Murata LR1130 (2022 Wayback copy): 70 mAh to 0.9 V on 10 kOhm; Panasonic and GP print no capacity. murata.com showed a maintenance page 26 Nov."
+  },
+  {
+   "id": "lr44-cpsc-recalls",
+   "what": "CPSC recalls naming LR44, AG13, A76, SR44, L1154, LR1154, 357A or PX76A cells",
+   "gives": "The recall table on LR44 battery equivalent",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "cpsc-recalls",
+    "name": "CPSC recalls database (SaferProducts.gov recall API)",
+    "publisher": "US Consumer Product Safety Commission",
+    "url": "https://www.saferproducts.gov/"
+   },
+   "file_url": null,
+   "hand_note": "CPSC's recall database is searched again for LR44 and its other names every month.",
+   "once": false,
+   "last": "2026-11-26",
+   "due": "2027-02-24",
+   "result": "2 recalls name LR44: 26089 (Great Lakes Select battery packs, 2025) and 17166 (Hobby Lobby spinner toys, 2017)."
+  },
+  {
+   "id": "lr44-sheets",
+   "what": "Energizer A76, 357/303, 357, 2L76 and A544 data sheets, Panasonic LR44 page, GP A76F manual",
+   "gives": "The capacity, load, cut-off and stack figures on LR44 battery equivalent",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "maker-energizer",
+    "name": "Energizer: product data sheets and handbooks",
+    "publisher": "Energizer Brands, LLC",
+    "url": "https://data.energizer.com/"
+   },
+   "file_url": null,
+   "hand_note": "The makers' data sheets are read again for changed figures.",
+   "once": false,
+   "last": "2026-11-26",
+   "due": "2027-02-24",
+   "result": "A76: 150 mAh to 0.9 V on 6.8K ohm; 357/303: 150 mAh to 1.2 V on 6.8K ohm; 357-only sheet: 175 mAh to 1.3 V on 6.5k ohm; 2L76 11.60 x 10.80 mm 3.0 V; A544 four LR44 in series, 6.0 V. Murata LR44 sheet not found (site down, Wayback offline 26 Nov)."
   }
  ],
  "terms": [
@@ -2203,6 +2355,14 @@
    "checked": "2026-11-06",
    "due": "2027-11-06",
    "automated_read": "ask"
+  },
+  {
+   "source": "Ansmann AG: product information sheets",
+   "publisher": "Ansmann AG",
+   "url": "https://media.ansmann.de/robots.txt",
+   "checked": "2026-11-26",
+   "due": "2027-11-26",
+   "automated_read": "yes"
   },
   {
    "source": "AppliancePartsPros blog",
@@ -2861,6 +3021,14 @@
    "automated_read": "public-domain"
   },
   {
+   "source": "Energizer: product data sheets and handbooks",
+   "publisher": "Energizer Brands, LLC",
+   "url": "https://data.energizer.com/robots.txt",
+   "checked": "2026-11-26",
+   "due": "2027-11-26",
+   "automated_read": "yes"
+  },
+  {
    "source": "Energy Trust of Oregon: contractor field guides to equipment age (CPF Age Information, CPF Furnace Age)",
    "publisher": "Energy Trust of Oregon (a utility-funded efficiency program)",
    "url": "https://www.energytrust.org/",
@@ -3074,6 +3242,14 @@
    "url": "https://www.gov.uk/help/terms-conditions",
    "checked": "2026-11-03",
    "due": "2027-11-03",
+   "automated_read": "yes"
+  },
+  {
+   "source": "GP Batteries product documents",
+   "publisher": "GP Batteries International Limited",
+   "url": "https://be.gpbatteries.com/robots.txt",
+   "checked": "2026-11-26",
+   "due": "2027-11-26",
    "automated_read": "yes"
   },
   {
@@ -3717,6 +3893,14 @@
    "automated_read": "yes"
   },
   {
+   "source": "Maxell, Ltd.: micro battery cross reference",
+   "publisher": "Maxell, Ltd.",
+   "url": "https://files.batteryjunction.com/robots.txt",
+   "checked": "2026-11-26",
+   "due": "2027-11-26",
+   "automated_read": "yes"
+  },
+  {
    "source": "Mazda Motor Corporation: news releases and company pages",
    "publisher": "Mazda Motor Corporation",
    "url": "https://www.mazda.com/en/",
@@ -3802,6 +3986,22 @@
    "url": "https://www.motorcraft.com/robots.txt",
    "checked": "2026-11-06",
    "due": "2027-11-06",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Multicomp Pro data sheets (Farnell / Newark)",
+   "publisher": "Premier Farnell Limited (Avnet)",
+   "url": "https://www.farnell.com/robots.txt",
+   "checked": "2026-11-26",
+   "due": "2027-11-26",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Murata Manufacturing: micro battery guide and notices",
+   "publisher": "Murata Manufacturing Co., Ltd.",
+   "url": "https://www.murata.com/robots.txt",
+   "checked": "2026-11-26",
+   "due": "2027-11-26",
    "automated_read": "yes"
   },
   {
@@ -4077,6 +4277,14 @@
    "automated_read": "ask"
   },
   {
+   "source": "Panasonic battery product pages",
+   "publisher": "Panasonic Energy Co., Ltd.",
+   "url": "https://panasonic.jp/robots.txt",
+   "checked": "2026-11-26",
+   "due": "2027-11-26",
+   "automated_read": "yes"
+  },
+  {
    "source": "Peg Perego website and manuals",
    "publisher": "Peg Perego S.p.A.",
    "url": "https://www.pegperego.com/robots.txt",
@@ -4115,6 +4323,14 @@
    "checked": "2026-11-15",
    "due": "2027-11-15",
    "automated_read": "no"
+  },
+  {
+   "source": "Poison Control (National Capital Poison Center)",
+   "publisher": "National Capital Poison Center",
+   "url": "https://www.poison.org/robots.txt",
+   "checked": "2026-11-26",
+   "due": "2027-11-26",
+   "automated_read": "yes"
   },
   {
    "source": "Porsche AG investor relations and annual report",
@@ -4211,6 +4427,14 @@
    "checked": "2026-11-21",
    "due": "2027-11-21",
    "automated_read": "no"
+  },
+  {
+   "source": "Renata SA (Swatch Group): documents and pages",
+   "publisher": "Renata SA",
+   "url": "https://www.renata.com/robots.txt",
+   "checked": "2026-11-26",
+   "due": "2027-11-26",
+   "automated_read": "yes"
   },
   {
    "source": "Reuters",
@@ -4699,6 +4923,14 @@
    "checked": "2026-11-14",
    "due": "2027-11-14",
    "automated_read": "no"
+  },
+  {
+   "source": "US Centers for Disease Control and Prevention",
+   "publisher": "Centers for Disease Control and Prevention",
+   "url": "https://www.cdc.gov/robots.txt",
+   "checked": "2026-11-26",
+   "due": "2027-11-26",
+   "automated_read": "yes"
   },
   {
    "source": "US Consumer Product Safety Commission news releases (cpsc.gov)",
@@ -13241,7 +13473,7 @@
   },
   {
    "path": "/how-we-know/",
-   "changed": "2026-11-25",
+   "changed": "2026-11-26",
    "next": "2026-12-08",
    "tasks": [],
    "claims": null,
@@ -13249,7 +13481,7 @@
   },
   {
    "path": "/sources/",
-   "changed": "2026-11-25",
+   "changed": "2026-11-26",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -13265,7 +13497,7 @@
   },
   {
    "path": "/data/",
-   "changed": "2026-11-25",
+   "changed": "2026-11-27",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -13390,7 +13622,7 @@
   },
   {
    "path": "/home/",
-   "changed": "2026-11-25",
+   "changed": "2026-11-26",
    "next": "2026-12-01",
    "tasks": [
     {
@@ -13409,7 +13641,7 @@
   },
   {
    "path": "/about/",
-   "changed": "2026-11-25",
+   "changed": "2026-11-27",
    "next": "2027-11-08",
    "tasks": [
     {
@@ -14529,6 +14761,112 @@
      "id": "oil-filter-wix-catalog",
      "what": "WIX's interchange and product catalog",
      "due": "2027-05-24"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/button-battery-equivalents/",
+   "changed": "2026-11-26",
+   "next": "2026-12-19",
+   "tasks": [
+    {
+     "id": "button-batteries-charts",
+     "what": "The makers' button cell cross reference charts (Renata, Maxell, Murata, Duracell, Ansmann)",
+     "due": "2027-02-24"
+    },
+    {
+     "id": "button-batteries-ul4200a-rule",
+     "what": "CPSC direct final rule on UL 4200A-2026 (91 FR 74086): did a significant adverse comment arrive?",
+     "due": "2026-12-19"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/lr41-battery-equivalent/",
+   "changed": "2026-11-26",
+   "next": "2026-12-19",
+   "tasks": [
+    {
+     "id": "button-batteries-charts",
+     "what": "The makers' button cell cross reference charts (Renata, Maxell, Murata, Duracell, Ansmann)",
+     "due": "2027-02-24"
+    },
+    {
+     "id": "button-batteries-ul4200a-rule",
+     "what": "CPSC direct final rule on UL 4200A-2026 (91 FR 74086): did a significant adverse comment arrive?",
+     "due": "2026-12-19"
+    },
+    {
+     "id": "lr41-cpsc-recalls",
+     "what": "CPSC recalls naming LR41 or AG3 cells",
+     "due": "2027-02-24"
+    },
+    {
+     "id": "lr41-sheets",
+     "what": "Energizer 192 and 392/384 data sheets, Multicomp Pro LR41 sheet, Panasonic LR41P page, GP 192F manual",
+     "due": "2027-02-24"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/lr1130-battery-equivalent/",
+   "changed": "2026-11-26",
+   "next": "2026-12-19",
+   "tasks": [
+    {
+     "id": "button-batteries-charts",
+     "what": "The makers' button cell cross reference charts (Renata, Maxell, Murata, Duracell, Ansmann)",
+     "due": "2027-02-24"
+    },
+    {
+     "id": "button-batteries-ul4200a-rule",
+     "what": "CPSC direct final rule on UL 4200A-2026 (91 FR 74086): did a significant adverse comment arrive?",
+     "due": "2026-12-19"
+    },
+    {
+     "id": "lr1130-cpsc-recalls",
+     "what": "CPSC recalls naming LR1130, AG10, LR54, SR1130, SR54 or L1131 cells",
+     "due": "2027-02-24"
+    },
+    {
+     "id": "lr1130-sheets",
+     "what": "Energizer 189, 389 and 390 data sheets, Panasonic LR1130P page, GP 189F manual",
+     "due": "2027-02-24"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/lr44-battery-equivalent/",
+   "changed": "2026-11-26",
+   "next": "2026-12-19",
+   "tasks": [
+    {
+     "id": "button-batteries-charts",
+     "what": "The makers' button cell cross reference charts (Renata, Maxell, Murata, Duracell, Ansmann)",
+     "due": "2027-02-24"
+    },
+    {
+     "id": "button-batteries-ul4200a-rule",
+     "what": "CPSC direct final rule on UL 4200A-2026 (91 FR 74086): did a significant adverse comment arrive?",
+     "due": "2026-12-19"
+    },
+    {
+     "id": "lr44-cpsc-recalls",
+     "what": "CPSC recalls naming LR44, AG13, A76, SR44, L1154, LR1154, 357A or PX76A cells",
+     "due": "2027-02-24"
+    },
+    {
+     "id": "lr44-sheets",
+     "what": "Energizer A76, 357/303, 357, 2L76 and A544 data sheets, Panasonic LR44 page, GP A76F manual",
+     "due": "2027-02-24"
     }
    ],
    "claims": 0,

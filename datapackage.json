@@ -2,9 +2,9 @@
  "name": "whoactuallymakes-data",
  "id": "https://doi.org/10.5281/zenodo.23920936",
  "title": "Who Actually Makes open data",
- "description": "Who makes store-brand products, from public records. 22 datasets, 17,503 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire brands: trademark owner, recall filers and factories; Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them; Trader Joe's wine, beer and spirits label approvals (TTB); Who owns which brand: ownership links between brands, companies and their controlling holders; How old are the water heaters in US homes? Ages by state and fuel, 2020.",
+ "description": "Who makes store-brand products, from public records. 22 datasets, 17,567 records: Who makes what: store-brand answers (Kirkland Signature); Companies behind store brands (maker pages); Which store labels each company is on record for; Tire plant codes (NHTSA); Tire brands: trademark owner, recall filers and factories; Tire age guidance from tire makers, carmakers and agencies; Evidence records: every quote behind our answers; Sources: the public records we use, and their limits; Corrections log; Update schedule: when each list is checked; Costco diaper prices: every size at every read; Kirkland vs name brands: every pair and its verdict; Car battery date code rules, by brand; USDA meat, poultry and egg plants (FSIS directory); Subaru, Kia and Toyota rows in NHTSA's AALA reports, model years 2018 on; Insignia model numbers on California's appliance register; Hart, Hyper Tough, Husky and Harbor Freight battery chargers on California's appliance register; Craftsman model numbers and the companies government records name for them; Onn TV model numbers and the manufacturers California's appliance register lists for them; Trader Joe's wine, beer and spirits label approvals (TTB); Who owns which brand: ownership links between brands, companies and their controlling holders; How old are the water heaters in US homes? Ages by state and fuel, 2020.",
  "homepage": "https://whoactuallymakes.com/data/",
- "version": "2026-11-26",
+ "version": "2026-11-27",
  "licenses": [
   {
    "name": "CC-BY-4.0",
@@ -717,8 +717,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 1951924,
-   "hash": "sha256:64b5e39fdbb98b8caa2ee92e559bbdf6c62581fff7c046949e90efb2188db293",
+   "bytes": 1976440,
+   "hash": "sha256:f54b5cb12d58fff1fc3e2462df52f735c994affef6d7662a4f5968b3cd88a657",
    "schema": {
     "fields": [
      {
@@ -996,8 +996,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 168801,
-   "hash": "sha256:bf4be8513ae063a4140ce729d0bd5c72463d109aa80c66af0a5b3c4323b58d04",
+   "bytes": 173085,
+   "hash": "sha256:d83d6556ad8a95da048bd01c5f67b85ef3d9ade5b2a3efae58948d78b35c9857",
    "schema": {
     "fields": [
      {
@@ -1111,6 +1111,10 @@
      "path": "https://bgr.com/"
     },
     {
+     "title": "https://biz.maxell.com/en/primary_batteries/",
+     "path": "https://biz.maxell.com/en/primary_batteries/"
+    },
+    {
      "title": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx",
      "path": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
     },
@@ -1165,6 +1169,10 @@
     {
      "title": "https://dailymed.nlm.nih.gov/dailymed/",
      "path": "https://dailymed.nlm.nih.gov/dailymed/"
+    },
+    {
+     "title": "https://data.energizer.com/",
+     "path": "https://data.energizer.com/"
     },
     {
      "title": "https://data.energystar.gov/",
@@ -1261,14 +1269,6 @@
     {
      "title": "https://gruppe.schwarz/en",
      "path": "https://gruppe.schwarz/en"
-    },
-    {
-     "title": "https://hip2save.com/",
-     "path": "https://hip2save.com/"
-    },
-    {
-     "title": "https://iabflo.org/",
-     "path": "https://iabflo.org/"
     }
    ]
   },
@@ -1348,8 +1348,8 @@
    "format": "csv",
    "mediatype": "text/csv",
    "encoding": "utf-8",
-   "bytes": 30236,
-   "hash": "sha256:49606f18fea88f042d8f9e9044990d5d5227131b8b6ef84021f00fe6a660612a",
+   "bytes": 32920,
+   "hash": "sha256:27ecc71c005f03680d39b58d32aa6ec3e6d3913d95690e67400b6080f308f70f",
    "schema": {
     "fields": [
      {
