@@ -1,7 +1,7 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-27",
- "last_change": "2026-11-26",
+ "generated": "2026-11-28",
+ "last_change": "2026-11-28",
  "cadence_months": {
   "confirmed": 12,
   "documented": 6,
@@ -576,9 +576,9 @@
    "file_url": null,
    "hand_note": "Our server asks the Internet Archive to save a copy of every source we cite that has none yet, a few each hour. Costco and Sam's Club refuse archiving, and a few pages that saved as the wrong page need a copy found another way (for eCFR, the government's annual PDF edition).",
    "once": true,
-   "last": "2026-11-21",
-   "due": "2026-11-28",
-   "result": "Not finished, and losing ground. The hourly job is healthy and saved 48 copies overnight, but the queue of sources with no archive copy grew from 825 URLs on 14 Nov to 931 on 21 Nov, because new pages add evidence faster than the Internet Archive lets one server save: most hourly turns end without a single new copy. Re-booked for 28 Nov, when the save rate gets looked at if the queue is still rising"
+   "last": "2026-11-28",
+   "due": "2026-12-05",
+   "result": "The cause was our job, not the Internet Archive. It went through sources in a fixed order and started each turn by retrying the ones that had failed, so about two dozen pages the Archive never saves (NHTSA's yearly parts-content reports had each been refused 469 times) filled every 50-minute turn, and 940 of the 1,143 waiting sources had never been tried. Our 21 Nov note blamed new pages outpacing the Archive; that was wrong. The job now tries untried sources first and leaves repeat failures until last. Re-booked for 5 Dec to confirm the queue is falling"
   },
   {
    "id": "subaru-origin-reads",
@@ -2233,6 +2233,82 @@
    "last": "2026-11-26",
    "due": "2027-02-24",
    "result": "A76: 150 mAh to 0.9 V on 6.8K ohm; 357/303: 150 mAh to 1.2 V on 6.8K ohm; 357-only sheet: 175 mAh to 1.3 V on 6.5k ohm; 2L76 11.60 x 10.80 mm 3.0 V; A544 four LR44 in series, 6.0 V. Murata LR44 sheet not found (site down, Wayback offline 26 Nov)."
+  },
+  {
+   "id": "tool-origin-cpsc",
+   "what": "CPSC recalls naming Milwaukee or DeWalt",
+   "gives": "The recall tables, country charts and model lookup on Where are Milwaukee tools made and Where are DeWalt tools made",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "cpsc-recalls",
+    "name": "CPSC recalls database (SaferProducts.gov recall API)",
+    "publisher": "US Consumer Product Safety Commission",
+    "url": "https://www.saferproducts.gov/"
+   },
+   "file_url": null,
+   "hand_note": "CPSC's recall database is searched again for Milwaukee and DeWalt each month, and any new recall added with the country it names.",
+   "once": false,
+   "last": "2026-11-28",
+   "due": "2026-12-28",
+   "result": "36 recalls returned (6 Milwaukee and 28 DeWalt listed; 2 Eaton switch recalls skipped); 20 DeWalt and 2 Milwaukee since 2005 name a country"
+  },
+  {
+   "id": "tool-origin-makers",
+   "what": "TTI annual report, Stanley Black & Decker 10-K, DeWalt's and Milwaukee's US-made pages",
+   "gives": "Where each brand's owner says it makes tools, and each brand's own Made in USA list",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "maker-dewalt",
+    "name": "DEWALT website (dewalt.com) and DEWALT press releases",
+    "publisher": "DEWALT (Stanley Black & Decker)",
+    "url": "https://www.dewalt.com/"
+   },
+   "file_url": null,
+   "hand_note": "The brands' own US-made pages are read again every three months, and the owners' annual reports when they are filed.",
+   "once": false,
+   "last": "2026-11-28",
+   "due": "2026-12-28",
+   "result": "TTI 2025: Milwaukee in Vietnam, Mexico and the US; SBD 2025 10-K: power tool production shifting to Mexico; DeWalt's USA page lists 6 products"
+  },
+  {
+   "id": "tool-origin-cec",
+   "what": "California appliance register: DeWalt and Milwaukee battery chargers",
+   "gives": "Who filed each DeWalt- and Milwaukee-brand charger, on both tool origin pages",
+   "how": "hand",
+   "every_days": 90,
+   "source": {
+    "id": "cec-maedbs",
+    "name": "California Energy Commission Modernized Appliance Efficiency Database System (MAEDbS)",
+    "publisher": "California Energy Commission",
+    "url": "https://cacertappliances.energy.ca.gov/Pages/Search/AdvancedSearch.aspx"
+   },
+   "file_url": null,
+   "hand_note": "California's appliance register is searched again every three months for DeWalt- and Milwaukee-brand chargers, saved with the date of the read.",
+   "once": false,
+   "last": "2026-11-28",
+   "due": "2026-12-28",
+   "result": "DeWalt 370 filings (62 Stanley Black & Decker, 250 E-filliate, 5 other filers); Milwaukee 92 (91 Milwaukee Electric Tool, 1 Techtronic Industries (Dongguan), 2956-20)"
+  },
+  {
+   "id": "tool-origin-lun",
+   "what": "Xu Lun v. Milwaukee Electric Tool: the Seventh Circuit appeal (No. 25-3347)",
+   "gives": "Whether the court of appeals has decided the glove forced-labor appeal, on Where are Milwaukee tools made",
+   "how": "hand",
+   "every_days": 30,
+   "source": {
+    "id": "courtlistener-recap",
+    "name": "CourtListener RECAP archive (federal court filings)",
+    "publisher": "Free Law Project (copies of US federal court records from PACER)",
+    "url": "https://www.courtlistener.com/recap/"
+   },
+   "file_url": null,
+   "hand_note": "The court docket of the glove lawsuit is read again each month for a decision on the appeal.",
+   "once": false,
+   "last": "2026-11-28",
+   "due": "2026-12-28",
+   "result": "Appeal open as to Milwaukee Electric Tool; dismissed as to TTI by stipulation (order 21 Apr 2026); district docket's last entry 29 Apr 2026"
   }
  ],
  "terms": [
@@ -2370,6 +2446,14 @@
    "url": "https://www.appliancepartspros.com/terms-of-use.aspx",
    "checked": "2026-11-12",
    "due": "2027-11-12",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Atlas Copco Group press releases",
+   "publisher": "Atlas Copco AB",
+   "url": "https://www.atlascopcogroup.com/robots.txt",
+   "checked": "2026-11-28",
+   "due": "2027-11-28",
    "automated_read": "yes"
   },
   {
@@ -2811,6 +2895,14 @@
    "checked": "2026-11-23",
    "due": "2027-11-23",
    "automated_read": "ask"
+  },
+  {
+   "source": "DEWALT website (dewalt.com) and DEWALT press releases",
+   "publisher": "DEWALT (Stanley Black & Decker)",
+   "url": "https://www.dewalt.com/robots.txt",
+   "checked": "2026-11-28",
+   "due": "2027-11-28",
+   "automated_read": "yes"
   },
   {
    "source": "DOE Compliance Certification Database",
@@ -3962,6 +4054,14 @@
    "url": "https://mprintgroup.com/",
    "checked": "2026-11-12",
    "due": "2027-11-12",
+   "automated_read": "yes"
+  },
+  {
+   "source": "Milwaukee Tool website (milwaukeetool.com): press releases and product pages",
+   "publisher": "Milwaukee Electric Tool Corporation",
+   "url": "https://www.milwaukeetool.com/robots.txt",
+   "checked": "2026-11-28",
+   "due": "2027-11-28",
    "automated_read": "yes"
   },
   {
@@ -13473,7 +13573,7 @@
   },
   {
    "path": "/how-we-know/",
-   "changed": "2026-11-26",
+   "changed": "2026-11-28",
    "next": "2026-12-08",
    "tasks": [],
    "claims": null,
@@ -13481,7 +13581,7 @@
   },
   {
    "path": "/sources/",
-   "changed": "2026-11-26",
+   "changed": "2026-11-28",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -13497,7 +13597,7 @@
   },
   {
    "path": "/data/",
-   "changed": "2026-11-27",
+   "changed": "2026-11-28",
    "next": null,
    "tasks": [],
    "claims": 0,
@@ -13622,7 +13722,7 @@
   },
   {
    "path": "/home/",
-   "changed": "2026-11-26",
+   "changed": "2026-11-28",
    "next": "2026-12-01",
    "tasks": [
     {
@@ -13641,7 +13741,7 @@
   },
   {
    "path": "/about/",
-   "changed": "2026-11-27",
+   "changed": "2026-11-28",
    "next": "2027-11-08",
    "tasks": [
     {
@@ -14871,9 +14971,68 @@
    ],
    "claims": 0,
    "stamps": {}
+  },
+  {
+   "path": "/where-are-milwaukee-tools-made/",
+   "changed": "2026-11-28",
+   "next": "2026-12-28",
+   "tasks": [
+    {
+     "id": "tool-origin-cpsc",
+     "what": "CPSC recalls naming Milwaukee or DeWalt",
+     "due": "2026-12-28"
+    },
+    {
+     "id": "tool-origin-makers",
+     "what": "TTI annual report, Stanley Black & Decker 10-K, DeWalt's and Milwaukee's US-made pages",
+     "due": "2026-12-28"
+    },
+    {
+     "id": "tool-origin-cec",
+     "what": "California appliance register: DeWalt and Milwaukee battery chargers",
+     "due": "2026-12-28"
+    },
+    {
+     "id": "tool-origin-lun",
+     "what": "Xu Lun v. Milwaukee Electric Tool: the Seventh Circuit appeal (No. 25-3347)",
+     "due": "2026-12-28"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
+  },
+  {
+   "path": "/where-are-dewalt-tools-made/",
+   "changed": "2026-11-28",
+   "next": "2026-12-28",
+   "tasks": [
+    {
+     "id": "tool-origin-cpsc",
+     "what": "CPSC recalls naming Milwaukee or DeWalt",
+     "due": "2026-12-28"
+    },
+    {
+     "id": "tool-origin-makers",
+     "what": "TTI annual report, Stanley Black & Decker 10-K, DeWalt's and Milwaukee's US-made pages",
+     "due": "2026-12-28"
+    },
+    {
+     "id": "tool-origin-cec",
+     "what": "California appliance register: DeWalt and Milwaukee battery chargers",
+     "due": "2026-12-28"
+    }
+   ],
+   "claims": 0,
+   "stamps": {}
   }
  ],
  "done": [
+  {
+   "on": "2026-11-28",
+   "task": "wam-wayback-saves",
+   "what": "Looked at why the archive queue kept growing",
+   "result": "The cause was our job, not the Internet Archive. It went through sources in a fixed order and started each turn by retrying the ones that had failed, so about two dozen pages the Archive never saves (NHTSA's yearly parts-content reports had each been refused 469 times) filled every 50-minute turn, and 940 of the 1,143 waiting sources had never been tried. Our 21 Nov note blamed new pages outpacing the Archive; that was wrong. The job now tries untried sources first and leaves repeat failures until last. Re-booked for 5 Dec to confirm the queue is falling"
+  },
   {
    "on": "2026-11-25",
    "task": "tire-age-carmaker-followup",

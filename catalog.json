@@ -1,6 +1,6 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-27",
+ "generated": "2026-11-28",
  "title": "Who Actually Makes open data",
  "url": "https://whoactuallymakes.com/data/",
  "licence": {
@@ -14,7 +14,7 @@
   "mirror": "https://github.com/jeremiahsay/whoactuallymakes-data"
  },
  "count": 22,
- "records": 17567,
+ "records": 17592,
  "datasets": [
   {
    "id": "claims",
@@ -928,7 +928,7 @@
     "json": {
      "url": "https://whoactuallymakes.com/data/tire-brands.json",
      "bytes": 233421,
-     "sha256": "119ea46e8701dfee5612463febd56901d8d70e830cdab8de252714555fa7de88"
+     "sha256": "a48a158ceac6126160f539f1c003c50cee8cc085928e94c956a3b42f82f3dddd"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/tire-brands.csv",
@@ -1219,8 +1219,8 @@
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2857-2015%22",
     "https://api.fda.gov/food/enforcement.json?search=recall_number%3A%22F-2858-2015%22"
    ],
-   "records": 2825,
-   "updated": "2026-11-26",
+   "records": 2843,
+   "updated": "2026-11-28",
    "fields": [
     {
      "name": "id",
@@ -1358,13 +1358,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/evidence.json",
-     "bytes": 2352388,
-     "sha256": "e7d63f1d7c3e52771a1e321b1e1795b1bb97e3974abd9b9955a52bef91d50109"
+     "bytes": 2372056,
+     "sha256": "31a979be72a7ecd2816b544d8d712c0d4625753fc4081fdcab13a40a8b8837f4"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/evidence.csv",
-     "bytes": 1976440,
-     "sha256": "f54b5cb12d58fff1fc3e2462df52f735c994affef6d7662a4f5968b3cd88a657"
+     "bytes": 1993772,
+     "sha256": "55e63c65516aa7549e7eb272b0cd398ab5dacc6448b6690be41519f4e5cd8304"
     }
    }
   },
@@ -1436,8 +1436,8 @@
     "https://gov.georgia.gov/",
     "https://gruppe.schwarz/en"
    ],
-   "records": 377,
-   "updated": "2026-11-26",
+   "records": 380,
+   "updated": "2026-11-28",
    "fields": [
     {
      "name": "id",
@@ -1585,13 +1585,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/sources.json",
-     "bytes": 426070,
-     "sha256": "76a4da0661552d6123dfe6945ae7dd6a788977226804e2888942719d58d05958"
+     "bytes": 430637,
+     "sha256": "42e2468226d26fca425697087b64168f7a28a48cb155daac6e4be4c74fd3d80d"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/sources.csv",
-     "bytes": 173085,
-     "sha256": "d83d6556ad8a95da048bd01c5f67b85ef3d9ade5b2a3efae58948d78b35c9857"
+     "bytes": 174524,
+     "sha256": "d0419e22029196b164fa8a7b9e0956a0495d5e1f749427de38c0c010b176994a"
     }
    }
   },
@@ -1756,8 +1756,8 @@
    ],
    "rights": "CC BY covers the whole file.",
    "based_on": [],
-   "records": 117,
-   "updated": "2026-11-27",
+   "records": 121,
+   "updated": "2026-11-28",
    "fields": [
     {
      "name": "id",
@@ -1865,13 +1865,13 @@
    "files": {
     "json": {
      "url": "https://whoactuallymakes.com/data/schedule.json",
-     "bytes": 475630,
-     "sha256": "26bab285d568f0047019d63b351b4b30e8e6ca648aaa91883099cdaeee7ac8aa"
+     "bytes": 482242,
+     "sha256": "44dded3a5fdb0abe92f14795a48e170d16bccedb64ca41ef6eff21717259127c"
     },
     "csv": {
      "url": "https://whoactuallymakes.com/data/schedule.csv",
-     "bytes": 32920,
-     "sha256": "27ecc71c005f03680d39b58d32aa6ec3e6d3913d95690e67400b6080f308f70f"
+     "bytes": 34403,
+     "sha256": "16d5bb14c26cf1069357a21636d5bf4669a55f09378e8b27c571d7a672d4f953"
     }
    }
   },

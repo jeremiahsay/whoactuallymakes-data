@@ -1,8 +1,8 @@
 {
  "schema": "wam-data/v1",
- "generated": "2026-11-26",
- "count": 377,
- "primary": 298,
+ "generated": "2026-11-28",
+ "count": 380,
+ "primary": 301,
  "by_hand": 60,
  "sources": [
   {
@@ -881,6 +881,17 @@
      "edition": null,
      "file_url": null,
      "hand_note": "CPSC's recall database is searched again for LR44 and its other names every month."
+    },
+    {
+     "what": "CPSC recalls naming Milwaukee or DeWalt",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-28",
+     "due": "2026-12-28",
+     "result": "36 recalls returned (6 Milwaukee and 28 DeWalt listed; 2 Eaton switch recalls skipped); 20 DeWalt and 2 Milwaukee since 2005 name a country",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "CPSC's recall database is searched again for Milwaukee and DeWalt each month, and any new recall added with the country it names."
     }
    ]
   },
@@ -1039,6 +1050,17 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Every Kobalt and Husky charger filing, every month. A new shared maker shows up after a person has read it."
+    },
+    {
+     "what": "California appliance register: DeWalt and Milwaukee battery chargers",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-28",
+     "due": "2026-12-28",
+     "result": "DeWalt 370 filings (62 Stanley Black & Decker, 250 E-filliate, 5 other filers); Milwaukee 92 (91 Milwaukee Electric Tool, 1 Techtronic Industries (Dongguan), 2956-20)",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "California's appliance register is searched again every three months for DeWalt- and Milwaukee-brand chargers, saved with the date of the read."
     }
    ]
   },
@@ -1296,6 +1318,50 @@
      "edition": null,
      "file_url": null,
      "hand_note": "Both companies' newest court disclosures and the two Aldi groups' own pages, twice a year. If either names a new parent, the page's answer is rewritten and logged; the shared-maker counts follow our store pages."
+    },
+    {
+     "what": "Xu Lun v. Milwaukee Electric Tool: the Seventh Circuit appeal (No. 25-3347)",
+     "how": "hand",
+     "every_days": 30,
+     "last": "2026-11-28",
+     "due": "2026-12-28",
+     "result": "Appeal open as to Milwaukee Electric Tool; dismissed as to TTI by stipulation (order 21 Apr 2026); district docket's last entry 29 Apr 2026",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The court docket of the glove lawsuit is read again each month for a decision on the appeal."
+    }
+   ]
+  },
+  {
+   "id": "maker-dewalt",
+   "name": "DEWALT website (dewalt.com) and DEWALT press releases",
+   "short": "DEWALT",
+   "publisher": "DEWALT (Stanley Black & Decker)",
+   "url": "https://www.dewalt.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What DeWalt says in its own words about its history and about products it makes in the US.",
+   "cannot_prove": "Where a product it doesn't list is made, or which plant made any one tool.",
+   "terms": {
+    "url": "https://www.dewalt.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-28",
+    "due": "2027-11-28"
+   },
+   "credit": null,
+   "used_for": [],
+   "pulls": [
+    {
+     "what": "TTI annual report, Stanley Black & Decker 10-K, DeWalt's and Milwaukee's US-made pages",
+     "how": "hand",
+     "every_days": 90,
+     "last": "2026-11-28",
+     "due": "2026-12-28",
+     "result": "TTI 2025: Milwaukee in Vietnam, Mexico and the US; SBD 2025 10-K: power tool production shifting to Mexico; DeWalt's USA page lists 6 products",
+     "edition": null,
+     "file_url": null,
+     "hand_note": "The brands' own US-made pages are read again every three months, and the owners' annual reports when they are filed."
     }
    ]
   },
@@ -3290,9 +3356,9 @@
      "what": "Internet Archive copies of every source we cite",
      "how": "hand",
      "every_days": 0,
-     "last": "2026-11-21",
-     "due": "2026-11-28",
-     "result": "Not finished, and losing ground. The hourly job is healthy and saved 48 copies overnight, but the queue of sources with no archive copy grew from 825 URLs on 14 Nov to 931 on 21 Nov, because new pages add evidence faster than the Internet Archive lets one server save: most hourly turns end without a single new copy. Re-booked for 28 Nov, when the save rate gets looked at if the queue is still rising",
+     "last": "2026-11-28",
+     "due": "2026-12-05",
+     "result": "The cause was our job, not the Internet Archive. It went through sources in a fixed order and started each turn by retrying the ones that had failed, so about two dozen pages the Archive never saves (NHTSA's yearly parts-content reports had each been refused 469 times) filled every 50-minute turn, and 940 of the 1,143 waiting sources had never been tried. Our 21 Nov note blamed new pages outpacing the Archive; that was wrong. The job now tries untried sources first and leaves repeat failures until last. Re-booked for 5 Dec to confirm the queue is falling",
      "edition": null,
      "file_url": null,
      "hand_note": "Our server asks the Internet Archive to save a copy of every source we cite that has none yet, a few each hour. Costco and Sam's Club refuse archiving, and a few pages that saved as the wrong page need a copy found another way (for eCFR, the government's annual PDF edition)."
@@ -3892,6 +3958,27 @@
      "url": "/how-long-do-dishwashers-last/"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "atlas-copco-press",
+   "name": "Atlas Copco Group press releases",
+   "short": "Atlas Copco",
+   "publisher": "Atlas Copco AB",
+   "url": "https://www.atlascopcogroup.com/en/media",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Atlas Copco said about businesses it bought and sold, on the date of each release.",
+   "cannot_prove": "What happened to a business after Atlas Copco sold it.",
+   "terms": {
+    "url": "https://www.atlascopcogroup.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-28",
+    "due": "2027-11-28"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
@@ -8329,6 +8416,27 @@
      "note": "Owned by The Pokémon Company International; sites in North Carolina and the Netherlands"
     }
    ],
+   "pulls": []
+  },
+  {
+   "id": "maker-milwaukee",
+   "name": "Milwaukee Tool website (milwaukeetool.com): press releases and product pages",
+   "short": "Milwaukee Tool",
+   "publisher": "Milwaukee Electric Tool Corporation",
+   "url": "https://www.milwaukeetool.com/",
+   "kind": "Maker's own words",
+   "primary": true,
+   "proves": "What Milwaukee Tool says in its own words about where it has plants and where a product is made.",
+   "cannot_prove": "Which plant made any one tool. A press release lists sites as they were announced; plans can change after it.",
+   "terms": {
+    "url": "https://www.milwaukeetool.com/robots.txt",
+    "read": "Open license. We read it with a script.",
+    "automated": true,
+    "checked": "2026-11-28",
+    "due": "2027-11-28"
+   },
+   "credit": null,
+   "used_for": [],
    "pulls": []
   },
   {
